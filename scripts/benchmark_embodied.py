@@ -15,8 +15,18 @@ import statistics
 import subprocess
 import sys
 import time
+import platform
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def git_revision():
+    try:
+        return subprocess.check_output(
+            ['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True,
+            stderr=subprocess.DEVNULL).strip()
+    except Exception:
+        return None
 
 
 def write(path, value):
@@ -115,7 +125,8 @@ def main():
     cfg = connection()
     protocol = {k:getattr(args,k) for k in ('providers','tasks','seeds','observation','control','max_cycles','timeout','reasoning_tokens','intervention')}
     protocol.update(model=cfg['model'], endpoint=cfg['url'], threshold=0, shuffle_candidates=True,
-        upstream_commit='59a00c60e0f80fa32d14df1a365166267505980c',
+        project_revision=git_revision(),
+        python_version=platform.python_version(), platform=platform.platform(),
         adapter_sha256=hashlib.sha256((ROOT/'omnijev/embodied_policy.py').read_bytes()).hexdigest(),
         timing='session wall time; includes policy, previews and physics; no model loading; natural backend cache')
     out = args.output.resolve();out.mkdir(parents=True,exist_ok=True)

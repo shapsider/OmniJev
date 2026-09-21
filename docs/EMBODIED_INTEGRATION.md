@@ -1,34 +1,32 @@
-# OmniJev 完整项目：具身工作台与 benchmark
+# OmniJev Vision Preview：具身工作台与 benchmark
 
-## 来源与实际实现
+## 项目范围
 
-深度参考并集成的是 [FBddcz/embodied-jev](https://github.com/FBddcz/embodied-jev)，固定 commit `59a00c60e0f80fa32d14df1a365166267505980c`。不是把上游截图或成绩包装成 OmniJev 的结果。
+本目录提供可以从零安装、运行、记录和复现的 MuJoCo 机械臂实验台。它把有限候选决策、RGB 观测、模拟本体状态、物理执行和终态验证放在同一个本地工作流中。实验结果面板读取本地 `results/`，不会把没有实际运行的模型结果显示成成功。
 
-| 模块 | 上游实现 / 本项目处理 |
+| 模块 | 当前实现 |
 |---|---|
-| `physics.py`、Panda 资产 | 保留 MuJoCo 物理、IK、接触、抓持、支撑与终态判断；Panda 资产 Apache-2.0 许可证保留 |
-| `planning.py`、`incremental.py` | 保留技能菜单与固定 21 个 XYZ / 夹爪动作；两种模式独立标记 |
-| `perception.py` | 保留外部 / 腕部 RGB、RGB-D 估计、时间戳与观测归档 |
-| `runtime.py`、`comparison.py` | 保留暂停、停止、动作预演、回放和独立同种子仿真；新增 OmniJev 策略及逐请求导出 |
-| Three.js 浏览器工作台 | 保留真实轨迹渲染、视觉输入检查、扰动、比较、导出；改为 OmniJev 入口并加入 benchmark 导航 |
-| `omnijev/embodied_policy.py` | 新增本机四种策略，共享 OmniJev 提示构造与候选分数解析，稳定动作 ID 映射，无规则代答 |
-| `scripts/benchmark_embodied.py` | 新增独立进程、同任务种子、固定随机顺序、失败留存、协议校验续跑、token 及物理指标 |
-| `omnijev/embodied_web.py` 与 `web/benchmarks.html` | 新增本地模型状态与真实结果面板，分开展示公开问答和具身回合 |
+| `physics.py`、Panda 资产 | MuJoCo 物理、IK、接触、抓持、支撑与终态判断；资产许可见 `embodied/src/embodied_jev/assets/panda/LICENSE` |
+| `planning.py`、`incremental.py` | 技能菜单与固定 21 个 XYZ / 夹爪动作；技能和增量控制独立记录 |
+| `perception.py` | 外部 / 腕部 RGB、RGB-D 估计、时间戳与观测归档 |
+| `runtime.py`、`comparison.py` | 暂停、停止、动作预演、回放、独立同种子仿真、模型对比和导出 |
+| 浏览器工作台 | 轨迹渲染、视觉输入检查、扰动、比较、导出和 benchmark 导航 |
+| `omnijev/embodied_policy.py` | 四种本地策略、提示构造、候选分数解析、稳定动作 ID 映射；模型错误不自动代答 |
+| `scripts/benchmark_embodied.py` | 独立进程、固定随机顺序、失败留存、协议校验续跑、token / 物理指标和运行环境记录 |
+| `omnijev/embodied_web.py` 与 `web/benchmarks.html` | 本地模型状态与结果面板，分开展示公开问答和具身回合 |
 
-上游源码 MIT 许可证保留在 `embodied/LICENSE`。机器人资产与依赖版权见 `embodied/THIRD_PARTY_NOTICES.md`。导入时未复制上游的视频、成绩或实验记录。原始上游 README 保留用于来源核对，不代表本机验证。
+项目许可证和第三方依赖说明见 `embodied/LICENSE` 与 `embodied/THIRD_PARTY_NOTICES.md`。本项目使用本地兼容 API 调用视觉骨干，不实现 TypeSafe Jev 的内部架构、原生决策协议或 RLCD 训练。
 
-一个关键区别是，上游 MiniCPM 路径直接读取最后一个隐藏状态并只投影候选字母权重；本项目使用已有 Nemotron GGUF 的生成 API，不能把 4-token 生成包装成同一种单次前向内核。两者共享有限候选决策思路，但计算路径、分数覆盖和运行时不同。本项目也没有实现官方 Jev 的多问题共享状态服务或 RLCD 训练。
-
-## 启动与浏览器用法
+## 从零安装、启动与浏览器用法
 
 ```sh
-# 仅首次；Python 3.12+。不会下载任何模型。
+# 仅首次；Python 3.12+。不会下载模型权重。
 ./setup_embodied.sh
 # 本机已有环境时直接运行
 ./run_embodied.sh
 ```
 
-访问 `http://127.0.0.1:8766`，结果面板为 `/benchmarks`。服务仅监听回环地址，默认内存模式，不读取钥匙串或保存云端 API Key。前端构建资源已包含，运行不需要 Node；改前端时才需要重新构建。
+访问 `http://127.0.0.1:8766`，结果面板为 `/benchmarks`。服务仅监听回环地址，默认内存模式。前端构建资源已包含，运行不需要 Node；改前端时才需要重新构建。模型权重必须由用户从所用推理后端的官方页面下载并放入后端模型目录，OmniJev 只访问后端 API。
 
 1. 保持“规则基线”，选搬运入盘 / 堆叠 / 越障，再点运行，检查安装和物理环境。规则调用数为零。
 2. Bionic 加载现有 Nemotron 后选择“OmniJev · 快速决策”，可单步、暂停、停止、重置、回放与导出。这才是真实本机模型决策。
@@ -85,7 +83,7 @@ OMNIJEV_REASONING_TOKENS=4096 \
   --output results/embodied/my-vision-shift
 ```
 
-每个回合由独立进程执行，保存原始场景哈希、策略版本、动作 / 观测 / 轨迹、逐请求配置、输入哈希、实际用量、失败与相机归档。固定排序种子 20260921，生成种子 20260919。完整协议写入 manifest；已有输出只能用同样协议续跑，不能覆盖失败。汇总分母包含全部回合。
+每个回合由独立进程执行，保存原始场景哈希、策略版本、动作 / 观测 / 轨迹、逐请求配置、输入哈希、实际用量、失败与相机归档。`manifest.json` 还记录项目 git revision、Python 版本、平台、模型端点和适配器哈希。固定排序种子 20260921，生成种子 20260919。完整协议写入 manifest；已有输出只能用同样协议续跑，不能覆盖失败。汇总分母包含全部回合。
 
 报告任务成功率、回合墙钟时间、API 调用次数、输入与输出 tokens、禁止接触次数、预算耗尽 / 停滞 / 拒答 / 错误。零模型调用的规则策略不能以推理准确率来解释；技能基线成功也不证明端到端视觉规划。
 

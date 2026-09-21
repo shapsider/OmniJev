@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "omnijev"
 version = "0.3.0"
-description = "Local frozen-model decisions for dynamic visual and text scenarios"
+description = "Multimodal finite-choice decisions and a reproducible MuJoCo workbench"
 requires-python = ">=3.9"
 dependencies = []
 

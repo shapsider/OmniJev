@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SKIP = {'.git', '.venv', '.venv-eval', '.venv-embodied', 'node_modules',
         '__pycache__', 'dist', '.pytest_cache', 'playwright-results',
         'test-results', 'playwright-report', '.agents', '.codex'}
-TOP = {'README.md', 'THIRD_PARTY_NOTICES.md', 'pyproject.toml', '.gitignore',
+TOP = {'README.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff',
+       'THIRD_PARTY_NOTICES.md', 'pyproject.toml', '.gitignore',
        'run_local.sh', 'run_embodied.sh', 'setup_embodied.sh', 'omnijev',
        'embodied', 'scripts', 'tests', 'docs', 'examples', 'data', 'results'}
 

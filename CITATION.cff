@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "OmniJev Vision Preview"
+type: software
+version: "0.3.0"
+authors:
+  - name: "OmniJev contributors"
+license: MIT
+abstract: "A multimodal finite-choice decision interface and MuJoCo embodied research workbench."

@@ -1,0 +1,33 @@
+{
+  "task": "transfer",
+  "seed": 0,
+  "provider": "omnijev",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 13.19,
+  "model_calls": 13,
+  "input_tokens": 8769,
+  "output_tokens": 39,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
+  "message": null,
+  "model_latency_ms": [
+    1374.616526067257,
+    528.6249108612537,
+    363.60450834035873,
+    608.7431125342846,
+    338.6872820556164,
+    663.7177467346191,
+    610.7655912637711,
+    368.19425597786903,
+    500.32544881105423,
+    368.9115345478058,
+    420.5060452222824,
+    337.0659723877907,
+    503.6523789167404
+  ],
+  "episode_file": "transfer-0-omnijev.json"
+}

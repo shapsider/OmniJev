@@ -1,29 +1,29 @@
-# OmniJev v0.2 架构
+# OmniJev v0.2 Architecture
 
-浏览器 / SDK / HTTP 调用方 → 动态场景定义 → 冻结 VLM → 短标签与候选分数 → 策略检查 → 稳定动作 ID。
+Browser / SDK / HTTP caller → Dynamic scenario definition → Frozen VLM → Short labels and candidate scores → Policy checks → Stable action IDs.
 
-## 输入契约
+## Input contract
 
-问题、业务状态和候选都在请求时定义。动作 ID 与用于模型读出的 A/B/C 标签分离，因此应用只依赖语义稳定的 ID。新的场景无需修改模型和服务代码。拒答是显式候选元数据，不根据字符串猜测。
+Questions, business status, and candidates are defined at request time. Action ID is separated from the A/B/C labels used for model reading, so the application depends only on semantically stable IDs. New scenarios require no changes to the model or service code. Abstention is explicit candidate metadata, not guessed from strings.
 
-## 执行路径
+## Execution path
 
-模型处理图片和文字，服务只负责适配。模式为短标签或受限 JSON。当前未增加分类头、不改权重、不训练。SDK 核心延续 v0.1 的后端，实现可以替换，但可用接口不意味着模型对所有场景都具有足够能力。
+The model processes images and text; the service only adapts. Mode is short label or constrained JSON. No classification head added, no weight changes, no training. SDK core continues v0.1 backend; implementation can be replaced, but available interfaces do not guarantee sufficient capability for all scenarios.
 
-## 动态输入
+## Dynamic input
 
-浏览器一次只发一个请求；请求完成后获取最新摄像头帧。切换配置递增版本号，旧版本响应不呈现；模型调用本身不取消。HTTP 只允许一个在途请求，其他返回 429，不构建陈旧帧队列。多客户端不提供公平排队。
+The browser sends one request at a time; after completion, the latest camera frame is obtained. Configuration version is incrementally updated; old version responses are not shown; the model call itself is not cancelled. HTTP allows only one in-flight request; others return 429 and do not build stale frame queues. Multi-client does not provide fair queuing.
 
-SDK 允许由业务方管理帧序号和状态。服务返回 request_id，业务方应结合自己的捕获时间与场景版本再次检查时效。max_latency_ms 从 SDK 开始算起，不包含上游排队和媒体实际年龄；服务无法知道调用者传入图片是什么时候拍摄的。
+SDK allows the business side to manage frame numbers and status. The service returns request_id; the business side should combine its capture time and scenario version to recheck timeliness. max_latency_ms starts from the SDK, excluding upstream queue and actual media age; the service cannot know when the caller captured the image.
 
-## 输出与校准
+## Output and calibration
 
-decided / abstained / invalid / stale 显式区分。仅 decided 返回 action，selected 保留模型选择。分数是候选条件分布，不是正确率。启发式门槛默认关闭，不能把阈值当作统计保证。当前没有执行设备动作、工具调用或自动闭环控制。
+decided / abstained / invalid / stale are explicitly distinguished. Only decided returns action; selected retains model selection. Scores are candidate condition distributions, not accuracy. Heuristic thresholds are disabled by default and cannot be treated as statistical guarantees. No execution device actions, tool calls, or automatic closed-loop control currently exist.
 
-## 性能边界
+## Performance boundaries
 
-连续模式是采样调度，不是原生视频模型流。多图以顺序消息传入，但服务不自动抽帧或同步音轨。没有共享前缀调度、视觉特征缓存、自适应模型路由或后处理校准。服务上层串行避免本机大模型竞争；backend 自身缓存按其配置执行。
+Continuous mode is sampling scheduling, not native video model streaming. Multiple images are sent in order, but the service does not automatically extract frames or sync audio. No shared prefix scheduling, visual feature caching, adaptive model routing, or post-processing calibration. Service layer serializes to avoid native large model competition; backend itself caches according to its configuration.
 
-## 适用场景
+## Applicable scenarios
 
-适合先在明确候选的视觉分拣、界面状态检查、简单质检、工单路由等场景做有标签的试验。精确计数、细粒度自然图像、长时序与开放集都需要独立验证。闭集之外的问题必须设计其他/未知选项，不能用一个大分数表示世界中不存在其他答案。
+Start with labeled experiments in visual sorting, interface state checks, simple quality inspection, and ticket routing with clearly defined candidates. Exact counting, fine-grained natural images, long sequences, and open-set tasks require independent validation. Questions outside the closed set require other/unknown options; a high score cannot establish that no other answer exists in the world.

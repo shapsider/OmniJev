@@ -7,7 +7,7 @@ export class RobotScene {
   constructor(
     container,
     {
-      label = "MuJoCo 机械臂三维场景",
+      label = "MuJoCo Robotic arm 3D scene",
       pixelRatio = 2,
       onError = () => {},
     } = {},
@@ -69,7 +69,7 @@ export class RobotScene {
     this.scene.add(this.robot);
     this.controls.addEventListener("change", () => this.requestRender());
     this.renderer.domElement.addEventListener("webglcontextlost", () => {
-      if (!this.disposed) onError("三维渲染上下文已丢失，请刷新页面");
+      if (!this.disposed) onError("3D rendering context lost, please refresh page");
     });
     this.observer = new ResizeObserver(() => {
       if (!container.clientWidth || !container.clientHeight) return;

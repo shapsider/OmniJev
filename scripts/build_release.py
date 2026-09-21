@@ -11,8 +11,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {'.git', '.venv', '.venv-eval', '.venv-embodied', 'node_modules',
         '__pycache__', 'dist', '.pytest_cache', 'playwright-results',
-        'test-results', 'playwright-report', '.agents', '.codex'}
-TOP = {'README.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff',
+        'test-results', 'playwright-report', '.agents', '.codex', '.cache', 'models'}
+TOP = {'CHANGELOG.md', 'README.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff',
        'THIRD_PARTY_NOTICES.md', 'pyproject.toml', '.gitignore',
        'run_local.sh', 'run_embodied.sh', 'setup_embodied.sh', 'omnijev',
        'embodied', 'scripts', 'tests', 'docs', 'examples', 'data', 'results'}
@@ -31,8 +31,9 @@ def included(path):
 def main():
     dest=ROOT/'dist';dest.mkdir(exist_ok=True)
     files=sorted(p for p in ROOT.rglob('*') if included(p))
-    archive=dest/'OmniJev-v0.3.0.zip'
+    archive=dest/'OmniJev-release.zip'
     manifest={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
+    (ROOT/'RELEASE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in files:z.write(p,'OmniJev/'+str(p.relative_to(ROOT)))
         z.writestr('OmniJev/RELEASE_MANIFEST.json',json.dumps(manifest,indent=2)+'\n')

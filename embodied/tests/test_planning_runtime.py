@@ -174,7 +174,7 @@ def test_incompatible_vision_modes_fail_before_allocating_any_resources(monkeypa
     monkeypatch.setattr(runtime, "RobotWorld", resource)
     monkeypatch.setattr(runtime, "DecisionPolicy", resource)
     monkeypatch.setattr("embodied_jev.perception.ImageObserver", resource)
-    with pytest.raises(ValueError, match="直接图像模式"):
+    with pytest.raises(ValueError, match="Direct image mode"):
         runtime.Session(provider=provider, control_mode=control_mode, observation_mode="vision")
     assert allocations == []
 
@@ -259,7 +259,7 @@ def test_visual_modes_with_no_camera_fail_before_allocating_resources(monkeypatc
     monkeypatch.setattr(runtime, "DecisionPolicy", resource)
     monkeypatch.setattr("embodied_jev.perception.ImageObserver", resource)
     monkeypatch.setattr("embodied_jev.perception.VisualObserver", resource)
-    with pytest.raises(ValueError, match="至少需要一种相机"):
+    with pytest.raises(ValueError, match="At least one camera required"):
         runtime.Session(provider="chat", control_mode="incremental", observation_mode=mode, camera_views=[])
     assert allocations == []
 
@@ -286,7 +286,7 @@ def test_selected_collision_is_logged_and_next_model_receives_rejection_without_
     assert [row["action"]["id"] for row in session.history] == ["x_pos_10", "z_pos_10"]
     assert len(checked) == 2 and len(executed) == 1
     assert first["executed"] is False and first["action"]["admitted"] is False
-    assert "接触" in first["rejection"]
+    assert "contact" in first["rejection"]
     assert first["before"]["tcp"] == first["after"]["tcp"]
     assert first["before"]["sim_seconds"] == first["after"]["sim_seconds"]
     outcome = session.policy.seen[1]["state"]["recent_outcomes"][0]
@@ -335,7 +335,7 @@ def test_failed_perception_capture_is_archived_before_runtime_stops(sessions):
             "metadata": {"source": "vision", "capture_id": "failed-frame", "status": "unavailable",
                          "camera_views": ["wrist"], "objects": [], "sim_time": 0},
             "views": {"wrist": {"rgb": failed_pixels}}, "rgb": failed_pixels}
-        raise PerceptionUnavailable("感知失效测试")
+        raise PerceptionUnavailable("Perception failure test")
 
     session.observer.observe = failed_observation
     session.start()

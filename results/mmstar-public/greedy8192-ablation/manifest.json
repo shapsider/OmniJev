@@ -18,7 +18,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/150.jpg"
+        "results/mmstar-public/images/150.jpg"
       ],
       "gold": "B",
       "image_sha256": "fbb9338c4553a853ddb44b3d37d307f448c33dfc6cbeee72573ce1e39cba403f"
@@ -36,7 +36,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/161.jpg"
+        "results/mmstar-public/images/161.jpg"
       ],
       "gold": "D",
       "image_sha256": "ccc1269df3cfb294bd1b2b5246f89d3a099a6be8317c6810410f0abebefa9f3e"
@@ -54,7 +54,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/181.jpg"
+        "results/mmstar-public/images/181.jpg"
       ],
       "gold": "B",
       "image_sha256": "d444dee180eb103671651516de519faaf8118e73db4f53d326079ee5aa96023c"
@@ -72,7 +72,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/71.jpg"
+        "results/mmstar-public/images/71.jpg"
       ],
       "gold": "C",
       "image_sha256": "207028033a9cadbe3611778d779d3c91be2c81c11bca41c4c09d5aca3980597c"
@@ -90,7 +90,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/32.jpg"
+        "results/mmstar-public/images/32.jpg"
       ],
       "gold": "D",
       "image_sha256": "1f4996b0be96b6966c761e3c83e7c44be500530bf24104875d56b2fbb5167ece"
@@ -108,7 +108,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/115.jpg"
+        "results/mmstar-public/images/115.jpg"
       ],
       "gold": "B",
       "image_sha256": "3c51cfcf5feb073797282433def79314278f87c2d1389b49735757b862680858"
@@ -126,7 +126,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/230.jpg"
+        "results/mmstar-public/images/230.jpg"
       ],
       "gold": "B",
       "image_sha256": "33b20d572502823293b6112fc8b7c52fcf6a0aea00fc09841c5a9c850aa6e69e"
@@ -144,7 +144,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/208.jpg"
+        "results/mmstar-public/images/208.jpg"
       ],
       "gold": "C",
       "image_sha256": "7b9086f5e3865f2178595e13e86dff0123adcdef41f2b180d21b019395e2da5c"
@@ -162,7 +162,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/104.jpg"
+        "results/mmstar-public/images/104.jpg"
       ],
       "gold": "D",
       "image_sha256": "335c5f080f7f00dde8a3aa0df62b6527453081167fbc976555697e9869372bc3"
@@ -180,7 +180,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/88.jpg"
+        "results/mmstar-public/images/88.jpg"
       ],
       "gold": "B",
       "image_sha256": "7e772f0761ab9357cacddbb18ab247ef44c9b285a52e09b12c5f35b188bc760f"
@@ -198,7 +198,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/61.jpg"
+        "results/mmstar-public/images/61.jpg"
       ],
       "gold": "B",
       "image_sha256": "824c389c40eeaaca8a69e7b1fc30ab6d4e2a35c3e4abab8e7b50c4bb65cc11bb"
@@ -216,7 +216,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/112.jpg"
+        "results/mmstar-public/images/112.jpg"
       ],
       "gold": "D",
       "image_sha256": "30faeccb642110c0c1ec65c0dc70e29b58c3730977769e3f1e9ceb5e9d782f1b"
@@ -234,7 +234,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/240.jpg"
+        "results/mmstar-public/images/240.jpg"
       ],
       "gold": "D",
       "image_sha256": "11d4bd1b7ed537b10ee22e579881248180becb28d6bb861229c7e881180783ad"
@@ -252,7 +252,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/5.jpg"
+        "results/mmstar-public/images/5.jpg"
       ],
       "gold": "D",
       "image_sha256": "a4aaa8547745c7b47d01465c1c9ef854c483a093fbf95d5e1b8f74f5f4afeee4"
@@ -270,7 +270,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/245.jpg"
+        "results/mmstar-public/images/245.jpg"
       ],
       "gold": "C",
       "image_sha256": "66e29e1538cb1a06da2d2cdb38d7bcd6899b6a05a58cfbc1570323a3026d7675"
@@ -288,7 +288,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/185.jpg"
+        "results/mmstar-public/images/185.jpg"
       ],
       "gold": "B",
       "image_sha256": "1c88a7a1fe89d28d408e691594ac498e13c6ce3a4d3e4bfd00bdef6f54cdf02b"
@@ -306,7 +306,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/74.jpg"
+        "results/mmstar-public/images/74.jpg"
       ],
       "gold": "A",
       "image_sha256": "210fe6a843e28253f179d8b9ff20d0ed0bee1fa69035c1611f54749abc5edcf9"
@@ -324,7 +324,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/130.jpg"
+        "results/mmstar-public/images/130.jpg"
       ],
       "gold": "C",
       "image_sha256": "ec3bda532dc81ad387e03f6bea90be1c78c5bce3b8b48a7f5154e918ffe35e5e"
@@ -342,7 +342,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/120.jpg"
+        "results/mmstar-public/images/120.jpg"
       ],
       "gold": "A",
       "image_sha256": "9dfe42e5da8ecd6c538040aeb12b7fc379add1429caa6d7b071b285c42195ab0"
@@ -360,7 +360,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/225.jpg"
+        "results/mmstar-public/images/225.jpg"
       ],
       "gold": "B",
       "image_sha256": "99e4b3a56907e21f513feb7d6485a811dc27f11b510c271f84474ce3d80f7534"
@@ -378,7 +378,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/209.jpg"
+        "results/mmstar-public/images/209.jpg"
       ],
       "gold": "A",
       "image_sha256": "a521afa56d8aec45ec3c8497c3c71491e702a76fe22114425af424e2bb2d5f3d"
@@ -396,7 +396,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/221.jpg"
+        "results/mmstar-public/images/221.jpg"
       ],
       "gold": "C",
       "image_sha256": "3499df03dc8837c1719686149f64de67b9c826d1e5f5f71faa056009be8e0576"
@@ -414,7 +414,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/100.jpg"
+        "results/mmstar-public/images/100.jpg"
       ],
       "gold": "C",
       "image_sha256": "3c8dcbbcceeae53e58a62128515d186445f901f4b91a68700d68d2b24a5776c2"
@@ -432,7 +432,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/31.jpg"
+        "results/mmstar-public/images/31.jpg"
       ],
       "gold": "A",
       "image_sha256": "3b245961cfc7b327521a94f7f05c76a456c08a80ea9875f7751d48d912bcfb90"
@@ -450,7 +450,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/17.jpg"
+        "results/mmstar-public/images/17.jpg"
       ],
       "gold": "C",
       "image_sha256": "1e7ef181d0a6e1454b5d67b8eca11bff5df3607948119493822bf3b360f2d847"
@@ -468,7 +468,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/48.jpg"
+        "results/mmstar-public/images/48.jpg"
       ],
       "gold": "B",
       "image_sha256": "67d68fd425572da4a26c518f78ada87b1a670e02507584d970065987bf146800"
@@ -486,7 +486,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/64.jpg"
+        "results/mmstar-public/images/64.jpg"
       ],
       "gold": "B",
       "image_sha256": "2fba53f046d563338883947d4d446b62a5f2e9b047a9bbe88e97f6024da91c06"
@@ -504,7 +504,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/109.jpg"
+        "results/mmstar-public/images/109.jpg"
       ],
       "gold": "A",
       "image_sha256": "107e90b20f987b77eadee6c0400eb1df2f6bfde5f29dc2b5a59bff9f9b5e9979"
@@ -522,7 +522,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/215.jpg"
+        "results/mmstar-public/images/215.jpg"
       ],
       "gold": "D",
       "image_sha256": "5fbc2b285c99cbfe500a7cacc015dd5d18f472fec348d94b52e9e050415cdbd7"
@@ -540,7 +540,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/47.jpg"
+        "results/mmstar-public/images/47.jpg"
       ],
       "gold": "C",
       "image_sha256": "0541b6cdfa0aedd3f45b9d59fe83438abe30fe03dd77f13214ad22d1d5d95fe0"
@@ -558,7 +558,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/96.jpg"
+        "results/mmstar-public/images/96.jpg"
       ],
       "gold": "A",
       "image_sha256": "a32d40f878dee099257227ee7269fd668c55e77f20b5affe923a8c5886467d9a"
@@ -576,7 +576,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/126.jpg"
+        "results/mmstar-public/images/126.jpg"
       ],
       "gold": "D",
       "image_sha256": "09cf88dda2c341d4832a426e2d5612b85fc03aad13924d28cade34647ef5eb9b"
@@ -594,7 +594,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/122.jpg"
+        "results/mmstar-public/images/122.jpg"
       ],
       "gold": "D",
       "image_sha256": "b026aa5cd0fa8af24d64eedf8ce6be31609b79c6b763593805729f382a55752f"
@@ -612,7 +612,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/143.jpg"
+        "results/mmstar-public/images/143.jpg"
       ],
       "gold": "C",
       "image_sha256": "92ba7132df9c10a03888efb0feec18ca593739c6ed67446aab4b99d8601c7fec"
@@ -630,7 +630,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/56.jpg"
+        "results/mmstar-public/images/56.jpg"
       ],
       "gold": "A",
       "image_sha256": "069c8da46e4fc3b27c81ab456e19560dd57864789c52a5370b723437b3daa141"
@@ -648,7 +648,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/82.jpg"
+        "results/mmstar-public/images/82.jpg"
       ],
       "gold": "D",
       "image_sha256": "40623f908f37fc842c474e069d7c3eb39bb01a390f104665d6e3156101a9b1e1"
@@ -666,7 +666,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/177.jpg"
+        "results/mmstar-public/images/177.jpg"
       ],
       "gold": "A",
       "image_sha256": "fc02a7690403f5a8147c6408efc62ae089649de510999fb7127f10499efe2b1f"
@@ -684,7 +684,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/167.jpg"
+        "results/mmstar-public/images/167.jpg"
       ],
       "gold": "A",
       "image_sha256": "f8ee0be189721737c673c12f37ba5172198c43475a6026b7e48d4acf06003926"
@@ -702,7 +702,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/203.jpg"
+        "results/mmstar-public/images/203.jpg"
       ],
       "gold": "A",
       "image_sha256": "fbce7042d1b331b521a5e4805d3aa1ef38132f68dcf3e244d1099be33d62dd06"
@@ -720,7 +720,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/133.jpg"
+        "results/mmstar-public/images/133.jpg"
       ],
       "gold": "D",
       "image_sha256": "ee626ff70e9ea6e7692906174e16dda58f80ac781da70fad5cb530c8a3149aec"
@@ -738,7 +738,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/229.jpg"
+        "results/mmstar-public/images/229.jpg"
       ],
       "gold": "C",
       "image_sha256": "c627ac446a69919b08553ec690c5da42fb9ba658341da9066847dd40ecf06da5"
@@ -756,7 +756,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/127.jpg"
+        "results/mmstar-public/images/127.jpg"
       ],
       "gold": "A",
       "image_sha256": "02c795a66db2ebd0551832a32eb7da2c4175f052a81705a387cac778c78749b8"
@@ -774,7 +774,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/91.jpg"
+        "results/mmstar-public/images/91.jpg"
       ],
       "gold": "A",
       "image_sha256": "8ae272ba05303c7f746d3c50a872e7bdf6741d0ff431499f601a0abde9d97ff9"
@@ -792,7 +792,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/119.jpg"
+        "results/mmstar-public/images/119.jpg"
       ],
       "gold": "D",
       "image_sha256": "d919bcbdcf284e825694e34bd759356b3fadd3bedd625f6d733cc269dfe37cac"
@@ -810,7 +810,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/58.jpg"
+        "results/mmstar-public/images/58.jpg"
       ],
       "gold": "B",
       "image_sha256": "468fc8933d6190331ed8ba414d856ab5a2ff2d1e3dbd3262d53d0d634a20979e"
@@ -828,7 +828,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/140.jpg"
+        "results/mmstar-public/images/140.jpg"
       ],
       "gold": "A",
       "image_sha256": "066f1df36c99bc55d3690976e35a23f40264b6a044732fc781f983b73ef633da"
@@ -846,7 +846,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/107.jpg"
+        "results/mmstar-public/images/107.jpg"
       ],
       "gold": "D",
       "image_sha256": "b1fd07e2bea20060cda29df72fdbdcf1b9a10ec4a9af298bd93d1ce72e3d3e9e"
@@ -864,7 +864,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/158.jpg"
+        "results/mmstar-public/images/158.jpg"
       ],
       "gold": "B",
       "image_sha256": "e55bc5a0f0b45e8941f92a1c559a1ec66b00ba0ff1c23b175e922331e4905f57"
@@ -882,7 +882,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/55.jpg"
+        "results/mmstar-public/images/55.jpg"
       ],
       "gold": "A",
       "image_sha256": "4455cf52bd41ce193589291bd68899b7b3ca0cd44dd8e2055643838506dfb3fb"
@@ -900,7 +900,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/8.jpg"
+        "results/mmstar-public/images/8.jpg"
       ],
       "gold": "B",
       "image_sha256": "502f8c24cdc7957018bac22da3b44a7860c2787c837b22a0253b2283e0f19d92"
@@ -918,7 +918,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/287.jpg"
+        "results/mmstar-public/images/287.jpg"
       ],
       "gold": "B",
       "image_sha256": "24df28880f63c07372ae6c76918406cd1b0426a1063b0ad435cd50d2271f26b6"
@@ -936,7 +936,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/341.jpg"
+        "results/mmstar-public/images/341.jpg"
       ],
       "gold": "B",
       "image_sha256": "22dd45befed2aadd414be2c1422b39298b3767605597121fc2b3ef7c61471295"
@@ -954,7 +954,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/363.jpg"
+        "results/mmstar-public/images/363.jpg"
       ],
       "gold": "A",
       "image_sha256": "7803a05a77f147e0311adc4854c6b8c2a6224c34afc1a026ae1f5a14f74303ff"
@@ -972,7 +972,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/394.jpg"
+        "results/mmstar-public/images/394.jpg"
       ],
       "gold": "C",
       "image_sha256": "5ecbf2fbad35b135c4b8017acbf3c5b65ec24e5beab817424926cb6c0b36fce1"
@@ -990,7 +990,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/423.jpg"
+        "results/mmstar-public/images/423.jpg"
       ],
       "gold": "A",
       "image_sha256": "b34e134cfe5f761f765fca55e13c28e27448392cf43d597e318fbcb32c4ea154"
@@ -1008,7 +1008,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/386.jpg"
+        "results/mmstar-public/images/386.jpg"
       ],
       "gold": "B",
       "image_sha256": "947d34a265ab5349626bd6895ace1aa1c9d617f790a9e783d3a14b4c991754ad"
@@ -1026,7 +1026,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/448.jpg"
+        "results/mmstar-public/images/448.jpg"
       ],
       "gold": "D",
       "image_sha256": "d554bfb9302471e1334a60d1f9666fd8fa44fcf418b5fd40cee30c3e69ed474c"
@@ -1044,7 +1044,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/404.jpg"
+        "results/mmstar-public/images/404.jpg"
       ],
       "gold": "C",
       "image_sha256": "53912aa1a784f15d2ee431570565353ef1da3af6dea9a2ed566346370586bbb9"
@@ -1062,7 +1062,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/269.jpg"
+        "results/mmstar-public/images/269.jpg"
       ],
       "gold": "D",
       "image_sha256": "0c9c462403aa5931f2031d7d20108aa0ac4a58424e47d50bdcba383c3eab5f14"
@@ -1080,7 +1080,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/422.jpg"
+        "results/mmstar-public/images/422.jpg"
       ],
       "gold": "B",
       "image_sha256": "40a38060999844fa8d689a7cb779465fc0dbeb4c2958694a49162ec07a9e3e5a"
@@ -1098,7 +1098,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/329.jpg"
+        "results/mmstar-public/images/329.jpg"
       ],
       "gold": "D",
       "image_sha256": "0734e4bef81b47c1c0910223d142f89fc56cd1656f08a1afaa4e69116386c555"
@@ -1116,7 +1116,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/318.jpg"
+        "results/mmstar-public/images/318.jpg"
       ],
       "gold": "A",
       "image_sha256": "a87356e11e8813ba1fe0859c1fc532dc5da0d15fb47f0588506acb7115a42a07"
@@ -1134,7 +1134,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/296.jpg"
+        "results/mmstar-public/images/296.jpg"
       ],
       "gold": "B",
       "image_sha256": "04cedca799b4102018eead116461063551dcbaad9a10365a6d78fafe4d910d0a"
@@ -1152,7 +1152,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/299.jpg"
+        "results/mmstar-public/images/299.jpg"
       ],
       "gold": "A",
       "image_sha256": "613c70364840d7a061a3b241e119140dd6e1487a3be580a0780e914874822eaa"
@@ -1170,7 +1170,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/306.jpg"
+        "results/mmstar-public/images/306.jpg"
       ],
       "gold": "D",
       "image_sha256": "feab9be7a6c5f691e57ac0c40a90ae4f1d8ff4e6008d2dfdd83699eacb7f1725"
@@ -1188,7 +1188,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/325.jpg"
+        "results/mmstar-public/images/325.jpg"
       ],
       "gold": "A",
       "image_sha256": "1ef9321ef17b843e1779c66267906e2b58ee7f9c5d85772eec5d813e86ed8770"
@@ -1206,7 +1206,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/298.jpg"
+        "results/mmstar-public/images/298.jpg"
       ],
       "gold": "B",
       "image_sha256": "d6a9652e389d19230b93e7a8a637a771912fcb4abae81db0702814fbee584f93"
@@ -1224,7 +1224,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/424.jpg"
+        "results/mmstar-public/images/424.jpg"
       ],
       "gold": "B",
       "image_sha256": "d71200efc2858db3543f3e6cee604512a50bd6ecc8b52339369bc6681fb9d2e9"
@@ -1242,7 +1242,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/313.jpg"
+        "results/mmstar-public/images/313.jpg"
       ],
       "gold": "D",
       "image_sha256": "f628e11c082c3a9acd4adfa583f0171900bce6741404c3a3137f79bb0d5855b1"
@@ -1260,7 +1260,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/271.jpg"
+        "results/mmstar-public/images/271.jpg"
       ],
       "gold": "B",
       "image_sha256": "5f5a5c51000b5bb309b0797f85df904c37c602bd2dff9bdf669eaac3f1f8d5dc"
@@ -1278,7 +1278,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/473.jpg"
+        "results/mmstar-public/images/473.jpg"
       ],
       "gold": "C",
       "image_sha256": "9b86bc692012d4a69cd0df8c7b9b7fa9e7875d64163f9f040c620549f8c6c8d0"
@@ -1296,7 +1296,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/485.jpg"
+        "results/mmstar-public/images/485.jpg"
       ],
       "gold": "C",
       "image_sha256": "1dd12f4327606c5d06da62bb5282a21913fab32450eb10f18478659ee8eac2f4"
@@ -1314,7 +1314,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/418.jpg"
+        "results/mmstar-public/images/418.jpg"
       ],
       "gold": "B",
       "image_sha256": "a76b5f68bb4e62e160e7559b0955a84ca28a8f4e49e7cd2c5d45a26990f717e9"
@@ -1332,7 +1332,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/383.jpg"
+        "results/mmstar-public/images/383.jpg"
       ],
       "gold": "D",
       "image_sha256": "1dbe4d514291f42cd7ff12de575da079a4966e2390e6d2c0249b45dfad98ae3a"
@@ -1350,7 +1350,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/488.jpg"
+        "results/mmstar-public/images/488.jpg"
       ],
       "gold": "B",
       "image_sha256": "4bd67f54c5e7d3cfd1e12611a9cd26f4bf1233231804c06bac14f1471dd65478"
@@ -1368,7 +1368,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/259.jpg"
+        "results/mmstar-public/images/259.jpg"
       ],
       "gold": "A",
       "image_sha256": "9add0c0d2e82019d82e67cb534ee917d59df1011bdaa3b495204b43fa37ee8cf"
@@ -1386,7 +1386,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/429.jpg"
+        "results/mmstar-public/images/429.jpg"
       ],
       "gold": "B",
       "image_sha256": "42b5c6b2554825d951c840d8ee59bfcdb738621a6bfe292abd663f76211143a6"
@@ -1404,7 +1404,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/427.jpg"
+        "results/mmstar-public/images/427.jpg"
       ],
       "gold": "D",
       "image_sha256": "03aaf8b8c4c04b76dfe8f4d7ea175258714dda58da92a47bb299c51e7ef93f58"
@@ -1422,7 +1422,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/268.jpg"
+        "results/mmstar-public/images/268.jpg"
       ],
       "gold": "A",
       "image_sha256": "c9a37a5819a8b6c73c98ef2b986de6a3176016e1fd8e9983772381fa05b83068"
@@ -1440,7 +1440,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/377.jpg"
+        "results/mmstar-public/images/377.jpg"
       ],
       "gold": "B",
       "image_sha256": "b180eb86d43fd4da30de0069564e08931f030ff50d4b6d07f449380902e9a7f2"
@@ -1458,7 +1458,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/252.jpg"
+        "results/mmstar-public/images/252.jpg"
       ],
       "gold": "B",
       "image_sha256": "f4895acb1b0fea4bedb29ed811bdc480d47a34c11f6d72072dac9b7faccd2f87"
@@ -1476,7 +1476,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/373.jpg"
+        "results/mmstar-public/images/373.jpg"
       ],
       "gold": "B",
       "image_sha256": "937731f301e005e84a3d713a6f49f07d05f993307cc8034d2192adc7dbdf89b0"
@@ -1494,7 +1494,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/319.jpg"
+        "results/mmstar-public/images/319.jpg"
       ],
       "gold": "A",
       "image_sha256": "60187ce1b22f17582218aa91edf763d16a67b974a27196354250a94316d17a01"
@@ -1512,7 +1512,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/361.jpg"
+        "results/mmstar-public/images/361.jpg"
       ],
       "gold": "B",
       "image_sha256": "d539c47ad078fba682adb61c9916e52e8e429f0bf4c1e73c2dff0c3676731788"
@@ -1530,7 +1530,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/364.jpg"
+        "results/mmstar-public/images/364.jpg"
       ],
       "gold": "D",
       "image_sha256": "c17269042306af10a57df49a8c47e86b433e56af6d3079b433967ab20236137d"
@@ -1548,7 +1548,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/490.jpg"
+        "results/mmstar-public/images/490.jpg"
       ],
       "gold": "D",
       "image_sha256": "6908e098b527bf319bcb4303ba815a5667d2bf4ee0c5c707f38ff0933a41270a"
@@ -1566,7 +1566,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/480.jpg"
+        "results/mmstar-public/images/480.jpg"
       ],
       "gold": "B",
       "image_sha256": "52a36aa9c04c0193fb75676d5f1bc0a667619b19e72dcdbed22b1ba72c5dd2f7"
@@ -1584,7 +1584,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/396.jpg"
+        "results/mmstar-public/images/396.jpg"
       ],
       "gold": "B",
       "image_sha256": "2f7960f2c453b62c168ae5d60cc287c48305860858f341e3ec5232696ed0b75d"
@@ -1602,7 +1602,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/425.jpg"
+        "results/mmstar-public/images/425.jpg"
       ],
       "gold": "C",
       "image_sha256": "14c70cde6301c88568d07cfb2de92a78120e6a62de1b3d2f91dc2f7be981f085"
@@ -1620,7 +1620,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/497.jpg"
+        "results/mmstar-public/images/497.jpg"
       ],
       "gold": "D",
       "image_sha256": "c837e6775bfca3ecd082921a3a55812655a0bac2108f2f4822b133ce90b7ef44"
@@ -1638,7 +1638,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/391.jpg"
+        "results/mmstar-public/images/391.jpg"
       ],
       "gold": "D",
       "image_sha256": "a11d16d60b4f55c11cb85d79dcc5f58e20099ea48c78e1457333b0a49787e013"
@@ -1656,7 +1656,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/348.jpg"
+        "results/mmstar-public/images/348.jpg"
       ],
       "gold": "A",
       "image_sha256": "06d9ad1ea9b58187db946be5745452f7900f68bf3b2ff91ff541c0e3048155f3"
@@ -1674,7 +1674,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/324.jpg"
+        "results/mmstar-public/images/324.jpg"
       ],
       "gold": "C",
       "image_sha256": "9cf0cde31af675cbe744c880a7800d0188dac187fc65311af980d5b411f0e50c"
@@ -1692,7 +1692,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/413.jpg"
+        "results/mmstar-public/images/413.jpg"
       ],
       "gold": "D",
       "image_sha256": "ab4be418f7257ae295156be446aa94bd3612711a9a2a7f1abb0eda8d21cf0694"
@@ -1710,7 +1710,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/395.jpg"
+        "results/mmstar-public/images/395.jpg"
       ],
       "gold": "A",
       "image_sha256": "01099d7c47a1ec60d864ce88cf5640a3e25589fc690408d1d10cbc415cbd39a5"
@@ -1728,7 +1728,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/302.jpg"
+        "results/mmstar-public/images/302.jpg"
       ],
       "gold": "D",
       "image_sha256": "0bd3b436cf2b0cb5bcb13fc640acb5f4429ca4c8e01e397f099bb049ce2f702b"
@@ -1746,7 +1746,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/371.jpg"
+        "results/mmstar-public/images/371.jpg"
       ],
       "gold": "A",
       "image_sha256": "74ec82115a153388646eb9ba9875ff53c400babfcdf2663dc6fb57ecc774a132"
@@ -1764,7 +1764,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/431.jpg"
+        "results/mmstar-public/images/431.jpg"
       ],
       "gold": "C",
       "image_sha256": "7a4ef3ddcfef0a807aa17261c2f13f4c8fcbe53b4f6837e62ee5d8ed9b76923f"
@@ -1782,7 +1782,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/266.jpg"
+        "results/mmstar-public/images/266.jpg"
       ],
       "gold": "C",
       "image_sha256": "7ba684b8230c410ff451c4b03e3a114c1ac6c55406f7202bab85952c3ed7fc1e"
@@ -1800,7 +1800,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/327.jpg"
+        "results/mmstar-public/images/327.jpg"
       ],
       "gold": "D",
       "image_sha256": "e332d0a6c6f61394d2bfcde15ecd3a25cb528e955c8097a35d4b83e16476b227"
@@ -1818,7 +1818,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/687.jpg"
+        "results/mmstar-public/images/687.jpg"
       ],
       "gold": "A",
       "image_sha256": "7f5fe90e53290c1c8a558df7208db867219b2e335c7f97d284a3e522e0fe1f9a"
@@ -1836,7 +1836,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/684.jpg"
+        "results/mmstar-public/images/684.jpg"
       ],
       "gold": "B",
       "image_sha256": "69f9ca749cacb47c984405e5ea205b2c7a2c734dbcb7f8ced6e90cd0809900d7"
@@ -1854,7 +1854,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/506.jpg"
+        "results/mmstar-public/images/506.jpg"
       ],
       "gold": "C",
       "image_sha256": "85fd03d2b913502a04dbff19cbfface6f27ee9638f09e5953c78aa3504b0a1c5"
@@ -1872,7 +1872,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/728.jpg"
+        "results/mmstar-public/images/728.jpg"
       ],
       "gold": "D",
       "image_sha256": "76690bf2f71532be2e38c9d873ba5392c0c104d6bcae70c4fb8fac413d5a346b"
@@ -1890,7 +1890,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/699.jpg"
+        "results/mmstar-public/images/699.jpg"
       ],
       "gold": "A",
       "image_sha256": "a59073d361d3319429875d2e1c3e3e179d3ba112554c78646fa22b495f719f8e"
@@ -1908,7 +1908,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/543.jpg"
+        "results/mmstar-public/images/543.jpg"
       ],
       "gold": "C",
       "image_sha256": "192babc43f9765543cc19edabe4b295af3eeae832561b5f03f29969e140e0dfb"
@@ -1926,7 +1926,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/622.jpg"
+        "results/mmstar-public/images/622.jpg"
       ],
       "gold": "C",
       "image_sha256": "460f19d776844bdf6670f9c96275da4e83d43b307ecfa2b17a462ce6a7b25bff"
@@ -1944,7 +1944,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/547.jpg"
+        "results/mmstar-public/images/547.jpg"
       ],
       "gold": "A",
       "image_sha256": "6e31a2b9043c056e309f80d99cfac2bb8b03d441267746552b2275d851a04898"
@@ -1962,7 +1962,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/627.jpg"
+        "results/mmstar-public/images/627.jpg"
       ],
       "gold": "A",
       "image_sha256": "c05c28f5f9abb63999dd8ace21ddaf1c50c71dc146776c03a15c5fd40e9651cd"
@@ -1980,7 +1980,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/579.jpg"
+        "results/mmstar-public/images/579.jpg"
       ],
       "gold": "C",
       "image_sha256": "ccd2d82a6892f92d1b1735b3ef23fb7224f48f1ca4fa94a3d0f7e0fed208bec4"
@@ -1998,7 +1998,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/612.jpg"
+        "results/mmstar-public/images/612.jpg"
       ],
       "gold": "B",
       "image_sha256": "4cb7e205f4fc224b8321d5712e391cae8fa917c7bc98c0571ee0fafd758d9331"
@@ -2016,7 +2016,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/519.jpg"
+        "results/mmstar-public/images/519.jpg"
       ],
       "gold": "D",
       "image_sha256": "9bb97b7e3cf1ccabe57ed80bec62c965872a4f7556db4372f0742f282cb1aff2"
@@ -2034,7 +2034,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/657.jpg"
+        "results/mmstar-public/images/657.jpg"
       ],
       "gold": "A",
       "image_sha256": "d72ea370c5a8ed284148895f540c0448960cf872a2bc9ca35a525cbc44a5d908"
@@ -2052,7 +2052,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/577.jpg"
+        "results/mmstar-public/images/577.jpg"
       ],
       "gold": "A",
       "image_sha256": "5000b1f5138619215a307a58627666751324aad390bd8062752d60076c620380"
@@ -2070,7 +2070,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/624.jpg"
+        "results/mmstar-public/images/624.jpg"
       ],
       "gold": "B",
       "image_sha256": "f38e99c8a783a96ea29ce3a49c1823edf58d5ae374d5bf772e91e85719733ea6"
@@ -2088,7 +2088,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/511.jpg"
+        "results/mmstar-public/images/511.jpg"
       ],
       "gold": "C",
       "image_sha256": "2f8fc0ecb19f4ae972fdcb15d29022380c200f0d2dad54a0d47caeef8527eb1e"
@@ -2106,7 +2106,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/716.jpg"
+        "results/mmstar-public/images/716.jpg"
       ],
       "gold": "D",
       "image_sha256": "2a02902374c858b0b89530159b0b1ffdcd0f8dfc5f8ea53510c404ca266485fb"
@@ -2124,7 +2124,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/570.jpg"
+        "results/mmstar-public/images/570.jpg"
       ],
       "gold": "B",
       "image_sha256": "fff2f786a6c6e1d226660ff49647856cec205fca1f6ad2c9040755a6d0943d2a"
@@ -2142,7 +2142,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/715.jpg"
+        "results/mmstar-public/images/715.jpg"
       ],
       "gold": "C",
       "image_sha256": "d5d9ab0ea74ce72c1df10ee9db1aa8abb910ad178255a0d31555059f7deb8a60"
@@ -2160,7 +2160,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/661.jpg"
+        "results/mmstar-public/images/661.jpg"
       ],
       "gold": "D",
       "image_sha256": "d043df3c0aecb11ccbf12c850c60642fd247775d7014699a23579cd8414d8b45"
@@ -2178,7 +2178,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/538.jpg"
+        "results/mmstar-public/images/538.jpg"
       ],
       "gold": "B",
       "image_sha256": "b0216a01412d65ecd57a85df0ef5ac86a125409a4cc4eec4058bbd72168886a2"
@@ -2196,7 +2196,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/701.jpg"
+        "results/mmstar-public/images/701.jpg"
       ],
       "gold": "C",
       "image_sha256": "6a24eedeec50703b775968675bd1266d1fc0be8a0ddcadef6c04599bb3f7283c"
@@ -2214,7 +2214,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/659.jpg"
+        "results/mmstar-public/images/659.jpg"
       ],
       "gold": "B",
       "image_sha256": "9310abdb6b8cfd08e6a0c9737632227e623bb2ac94e3f6001da2dacd091886b4"
@@ -2232,7 +2232,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/736.jpg"
+        "results/mmstar-public/images/736.jpg"
       ],
       "gold": "C",
       "image_sha256": "ae84e0eadcdf7867f431000813b584d1be98da3c605f2971ff066e6780daf018"
@@ -2250,7 +2250,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/723.jpg"
+        "results/mmstar-public/images/723.jpg"
       ],
       "gold": "C",
       "image_sha256": "f49ee1670c644b4863a2d3cdb112a5154c70423c49f591867a2eb9e533a29057"
@@ -2268,7 +2268,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/705.jpg"
+        "results/mmstar-public/images/705.jpg"
       ],
       "gold": "C",
       "image_sha256": "23a84e26b862bd93e153a7ea04e6563145026dd4db690ba6a062d4191bed97f9"
@@ -2286,7 +2286,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/521.jpg"
+        "results/mmstar-public/images/521.jpg"
       ],
       "gold": "C",
       "image_sha256": "0ebeb5fac45a0fcde254172c66bd695e6f597193ebd157cf6de9a0c7a407e083"
@@ -2304,7 +2304,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/526.jpg"
+        "results/mmstar-public/images/526.jpg"
       ],
       "gold": "D",
       "image_sha256": "68fc5c943e66ecfa750aff4cc3d2bb13863093da4330c8ea708753b78c0df525"
@@ -2322,7 +2322,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/610.jpg"
+        "results/mmstar-public/images/610.jpg"
       ],
       "gold": "C",
       "image_sha256": "e5602b45d6cc089fb959545a7ae43613382d387a85ba5b046d5e83ecc66470bc"
@@ -2340,7 +2340,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/593.jpg"
+        "results/mmstar-public/images/593.jpg"
       ],
       "gold": "C",
       "image_sha256": "06da9e002689fcc875c4212dc13d9f899df94db8248abe599ab8c2c5b7317176"
@@ -2358,7 +2358,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/740.jpg"
+        "results/mmstar-public/images/740.jpg"
       ],
       "gold": "B",
       "image_sha256": "3c1b9db4dbfa48302b6c7777b1e12ffddd5ff91e71e19d3de01a26a49b16672d"
@@ -2376,7 +2376,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/608.jpg"
+        "results/mmstar-public/images/608.jpg"
       ],
       "gold": "C",
       "image_sha256": "f5867a4ada5cd79a577cbd0f4ffb8b90b97a48dd9beaf31fa2ac6718ff4c8441"
@@ -2394,7 +2394,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/725.jpg"
+        "results/mmstar-public/images/725.jpg"
       ],
       "gold": "B",
       "image_sha256": "c0bf5c2db2298ac5d5bea4ae9d438c85d0328aac38d6a48ee234a7cab29e88c3"
@@ -2412,7 +2412,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/633.jpg"
+        "results/mmstar-public/images/633.jpg"
       ],
       "gold": "C",
       "image_sha256": "32ca76d980bfffefa3c0af59de6c8136b7e8a4b94bab6031dcc760f53a42446b"
@@ -2430,7 +2430,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/717.jpg"
+        "results/mmstar-public/images/717.jpg"
       ],
       "gold": "B",
       "image_sha256": "ac99b06b49160e2d2db93a9a98039d90249adb45f38b831d271d4e0df869d332"
@@ -2448,7 +2448,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/554.jpg"
+        "results/mmstar-public/images/554.jpg"
       ],
       "gold": "C",
       "image_sha256": "ed0b4670a5aa96e6bdc15f0fcde7f4d6931589142f153f1b5f6543b7ffd3d55c"
@@ -2466,7 +2466,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/641.jpg"
+        "results/mmstar-public/images/641.jpg"
       ],
       "gold": "C",
       "image_sha256": "a0de8d0d3de8caaf2e225a8b9d7e6462d492b3344380d7c4f8846a5c2497ce02"
@@ -2484,7 +2484,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/571.jpg"
+        "results/mmstar-public/images/571.jpg"
       ],
       "gold": "A",
       "image_sha256": "27c6f56e4e2ea3f8b7a3eaa9a89e652ffd18bca037be626cb8039157292493c6"
@@ -2502,7 +2502,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/536.jpg"
+        "results/mmstar-public/images/536.jpg"
       ],
       "gold": "D",
       "image_sha256": "4d73cc7175f6f08c14f69c497c19db9558b65e5452171bf238aad30918194072"
@@ -2520,7 +2520,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/616.jpg"
+        "results/mmstar-public/images/616.jpg"
       ],
       "gold": "C",
       "image_sha256": "d31b02983fc2f4352f45c54a7eae7023733095d4f59c675d995d18f8daac49de"
@@ -2538,7 +2538,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/566.jpg"
+        "results/mmstar-public/images/566.jpg"
       ],
       "gold": "A",
       "image_sha256": "00d9d5249668e684fc7699a36547baf70ece27db00574fadb48edc2df8d9d870"
@@ -2556,7 +2556,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/594.jpg"
+        "results/mmstar-public/images/594.jpg"
       ],
       "gold": "B",
       "image_sha256": "bc07115496a8b0b8118242f5624feda367a2276f3568f4c1bc6a8cc9dad1cab8"
@@ -2574,7 +2574,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/545.jpg"
+        "results/mmstar-public/images/545.jpg"
       ],
       "gold": "B",
       "image_sha256": "27d502a2894e5d93b1787cf7c1779735ddb92e9c207ec229652ae119eaaa60ab"
@@ -2592,7 +2592,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/503.jpg"
+        "results/mmstar-public/images/503.jpg"
       ],
       "gold": "C",
       "image_sha256": "32d11e3c81ebad87e54e51cfad0aae3cc115d68aff2a80d288e22da86e662721"
@@ -2610,7 +2610,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/700.jpg"
+        "results/mmstar-public/images/700.jpg"
       ],
       "gold": "B",
       "image_sha256": "17d43bdcf122d540b94ca3f528f77bff2912b59f50c44f47f27b254fbdbe20a0"
@@ -2628,7 +2628,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/611.jpg"
+        "results/mmstar-public/images/611.jpg"
       ],
       "gold": "A",
       "image_sha256": "59cf6bab78de48cdcef3c5914d4c858a9d40c254d0fb9638eb918805aeb5d135"
@@ -2646,7 +2646,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/561.jpg"
+        "results/mmstar-public/images/561.jpg"
       ],
       "gold": "B",
       "image_sha256": "b452b5a42a493ecf75e14ffece131528ced6d0c378de72fd754c42e834891776"
@@ -2664,7 +2664,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/584.jpg"
+        "results/mmstar-public/images/584.jpg"
       ],
       "gold": "D",
       "image_sha256": "7bbd8b66319daf5924495f06cc4e9660269ed726085bf1fc1127672beb87b436"
@@ -2682,7 +2682,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/623.jpg"
+        "results/mmstar-public/images/623.jpg"
       ],
       "gold": "A",
       "image_sha256": "c0fed93f8dc000c97376413b720a8258c9fbbf04714eedb87cc81f69f36c265d"
@@ -2700,7 +2700,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/662.jpg"
+        "results/mmstar-public/images/662.jpg"
       ],
       "gold": "A",
       "image_sha256": "14f45e738cf5d923d8dd13bc5f40fe1b23419d1d1617d1da28be0b5940936d7b"
@@ -2718,7 +2718,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/765.jpg"
+        "results/mmstar-public/images/765.jpg"
       ],
       "gold": "B",
       "image_sha256": "04e8713ec4a65bbb459ae8d932dc6ce10302632baadb983e7547017406d68e9e"
@@ -2736,7 +2736,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/874.jpg"
+        "results/mmstar-public/images/874.jpg"
       ],
       "gold": "B",
       "image_sha256": "9ce13c18f95b53cb86c02578aa055f1bb4cdf59c83baf7315575b0da537a50a2"
@@ -2754,7 +2754,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/829.jpg"
+        "results/mmstar-public/images/829.jpg"
       ],
       "gold": "C",
       "image_sha256": "413f7249bb022af7bc639ac897959ec09b973e15b470314171de1371158c7ee7"
@@ -2772,7 +2772,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/753.jpg"
+        "results/mmstar-public/images/753.jpg"
       ],
       "gold": "D",
       "image_sha256": "b19b49b2af50e7f7e1dec368b9381a53029c1915e0fdf00667d61686893d2850"
@@ -2790,7 +2790,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/936.jpg"
+        "results/mmstar-public/images/936.jpg"
       ],
       "gold": "B",
       "image_sha256": "b5f8ca958a7489fcc2a781244e7d0be0e079b75e717bd1e745270c0275d516d8"
@@ -2808,7 +2808,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/927.jpg"
+        "results/mmstar-public/images/927.jpg"
       ],
       "gold": "C",
       "image_sha256": "91a4ed582389c0c92f8c461631b0080572f81d12b31eaec1d31d2a60d396f2b8"
@@ -2826,7 +2826,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/906.jpg"
+        "results/mmstar-public/images/906.jpg"
       ],
       "gold": "D",
       "image_sha256": "e7e40dbc0b288630eeb7b6bb899c9bfa1ab834dcbf0116e20e1f55caa3c2701f"
@@ -2844,7 +2844,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/832.jpg"
+        "results/mmstar-public/images/832.jpg"
       ],
       "gold": "B",
       "image_sha256": "6c323a9c3a4539ddadc4c4adff126375c7706322d46ccb247b61ccdd3e3afe42"
@@ -2862,7 +2862,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/989.jpg"
+        "results/mmstar-public/images/989.jpg"
       ],
       "gold": "A",
       "image_sha256": "e0ee5a179c8c08874d9ce314101fc483826353263761b43cf8ea6d3eac5a862c"
@@ -2880,7 +2880,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/764.jpg"
+        "results/mmstar-public/images/764.jpg"
       ],
       "gold": "A",
       "image_sha256": "f3036fbf8c3f2e6f5e6f7a5eeb984de27106917f51336b6d470d4ad015b60929"
@@ -2898,7 +2898,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/921.jpg"
+        "results/mmstar-public/images/921.jpg"
       ],
       "gold": "B",
       "image_sha256": "707833326600b1f84ae466d7cb8b50c8df936fe595695a3f5356642f3b0dcb20"
@@ -2916,7 +2916,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/769.jpg"
+        "results/mmstar-public/images/769.jpg"
       ],
       "gold": "D",
       "image_sha256": "b8cc7ff4cb6251316d4972de46e65f41847e976cfc255df1fec97fc6e374768a"
@@ -2934,7 +2934,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/915.jpg"
+        "results/mmstar-public/images/915.jpg"
       ],
       "gold": "B",
       "image_sha256": "ed9af7e7161d81d80b90b8b9d4cc16c35d3af9b347caa390a6b00e8530d80915"
@@ -2952,7 +2952,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/845.jpg"
+        "results/mmstar-public/images/845.jpg"
       ],
       "gold": "B",
       "image_sha256": "81c98e83f2a9f184dc8436cc8820a9f8f3510e38d5bde6cf254764b0d0e3c9e3"
@@ -2970,7 +2970,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/932.jpg"
+        "results/mmstar-public/images/932.jpg"
       ],
       "gold": "D",
       "image_sha256": "a1f9530d4eee0ceca53065adcf8885eeffa5b282ac01cf52887041fd7908fe53"
@@ -2988,7 +2988,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/770.jpg"
+        "results/mmstar-public/images/770.jpg"
       ],
       "gold": "C",
       "image_sha256": "3cc1e35b53d0141371b3926c8c988896417d96b203d792088586cc7bdbee369c"
@@ -3006,7 +3006,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/771.jpg"
+        "results/mmstar-public/images/771.jpg"
       ],
       "gold": "D",
       "image_sha256": "5ec21f58b52f3770150a73211b393b1f23487fce3fab4b88107edc4e57be2c25"
@@ -3024,7 +3024,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/754.jpg"
+        "results/mmstar-public/images/754.jpg"
       ],
       "gold": "B",
       "image_sha256": "c375e02b3ae04995072f3f23718b07634e2905e929b0ab7d3a53ab92590a611b"
@@ -3042,7 +3042,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/889.jpg"
+        "results/mmstar-public/images/889.jpg"
       ],
       "gold": "B",
       "image_sha256": "f6cb378067f936210ef46ce2dcdafe954b5844fef5f23a964b9ef4e3de302bda"
@@ -3060,7 +3060,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/983.jpg"
+        "results/mmstar-public/images/983.jpg"
       ],
       "gold": "B",
       "image_sha256": "b804a0a5f9769f2e2e3fe514d15ddf87c2a75b4c86f7631f840b33ea481f60e0"
@@ -3078,7 +3078,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/993.jpg"
+        "results/mmstar-public/images/993.jpg"
       ],
       "gold": "A",
       "image_sha256": "2fe2f2a6746e1d5608957c5cce47815b362fde67c8e4b1f3d31aa167648d649d"
@@ -3096,7 +3096,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/823.jpg"
+        "results/mmstar-public/images/823.jpg"
       ],
       "gold": "A",
       "image_sha256": "9af3939412a2b8e5ed64dd8a0df0cdb12cee0a236123349d5ac7106afc379abd"
@@ -3114,7 +3114,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/807.jpg"
+        "results/mmstar-public/images/807.jpg"
       ],
       "gold": "D",
       "image_sha256": "e3daf3fdc2258b90e5e8c2f592e0511884d52244e990f24460a6b293a2293931"
@@ -3132,7 +3132,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/834.jpg"
+        "results/mmstar-public/images/834.jpg"
       ],
       "gold": "C",
       "image_sha256": "b8c52b35f048c9e5c01f883d08c5e2aa4875a3884bcbe7cff7ababc7af950c95"
@@ -3150,7 +3150,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/836.jpg"
+        "results/mmstar-public/images/836.jpg"
       ],
       "gold": "D",
       "image_sha256": "f9ff9dff1a949c5fc9ee6a9c49f11fe82a5c0e76742f323d240fced1a1e2c01d"
@@ -3168,7 +3168,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/940.jpg"
+        "results/mmstar-public/images/940.jpg"
       ],
       "gold": "D",
       "image_sha256": "9a8cb74574ba387224d29f650fa547ddde0ea0164cbde4700fbdb14e4eae817f"
@@ -3186,7 +3186,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/849.jpg"
+        "results/mmstar-public/images/849.jpg"
       ],
       "gold": "A",
       "image_sha256": "b1102d2c68084030bd8bdbbc07538f57ec8be6bfe8e905e2f78107283dc7e912"
@@ -3204,7 +3204,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/980.jpg"
+        "results/mmstar-public/images/980.jpg"
       ],
       "gold": "A",
       "image_sha256": "13866b0fd8c9be77bd3fcf18f1982f85239c9106536d825339fd50501a137b02"
@@ -3222,7 +3222,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/804.jpg"
+        "results/mmstar-public/images/804.jpg"
       ],
       "gold": "A",
       "image_sha256": "085717cdbaf25d9df7afcbe3d9c0552b8bddb979bbe2eacab7834fbb6ff3db0f"
@@ -3240,7 +3240,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/974.jpg"
+        "results/mmstar-public/images/974.jpg"
       ],
       "gold": "B",
       "image_sha256": "528d488d338fbbbf158213c0e72ba66b23e02eef396e52ccea1083572226c53c"
@@ -3258,7 +3258,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/959.jpg"
+        "results/mmstar-public/images/959.jpg"
       ],
       "gold": "A",
       "image_sha256": "db40ac7991c560452f83786ad8a5ff70477ec314ec28362ac68c0d82c0c71b97"
@@ -3276,7 +3276,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/815.jpg"
+        "results/mmstar-public/images/815.jpg"
       ],
       "gold": "A",
       "image_sha256": "ee7150ab26189c1f8a77abe4a7393c17a255241e7158886afd4b839709eed442"
@@ -3294,7 +3294,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/917.jpg"
+        "results/mmstar-public/images/917.jpg"
       ],
       "gold": "B",
       "image_sha256": "0a4034cfb05e1649964b03ae3c9628ee764347039af7e3215205ae763e2ffd8e"
@@ -3312,7 +3312,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/777.jpg"
+        "results/mmstar-public/images/777.jpg"
       ],
       "gold": "D",
       "image_sha256": "e9a7a7a5992fa478a620e8f90abb4b05c45aa0adb375cfbb57e7f817d5010718"
@@ -3330,7 +3330,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/907.jpg"
+        "results/mmstar-public/images/907.jpg"
       ],
       "gold": "C",
       "image_sha256": "f7ff53d5bf0c0f03ae69a29d04087a4ae6f9cc1479c3bf80365615defe2b44b6"
@@ -3348,7 +3348,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/855.jpg"
+        "results/mmstar-public/images/855.jpg"
       ],
       "gold": "C",
       "image_sha256": "fda4006dd806bed383ed5529f13d68fd5c4d7af7e35f0fe4b3e628d65a20e753"
@@ -3366,7 +3366,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/862.jpg"
+        "results/mmstar-public/images/862.jpg"
       ],
       "gold": "B",
       "image_sha256": "7c45f0916f995c0f1bbffe775d0a4f0f4945537dde172aebd8adb31198ae5485"
@@ -3384,7 +3384,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/942.jpg"
+        "results/mmstar-public/images/942.jpg"
       ],
       "gold": "B",
       "image_sha256": "097a66aa5faf548a1110ef90715bc5bf17a3464c71864fade7b082b3a63ea32e"
@@ -3402,7 +3402,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/903.jpg"
+        "results/mmstar-public/images/903.jpg"
       ],
       "gold": "D",
       "image_sha256": "253f83d2156ece2c368d9fb1bcac4a5f31c38cf4841e66cc4c4dd100c2a95f53"
@@ -3420,7 +3420,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/755.jpg"
+        "results/mmstar-public/images/755.jpg"
       ],
       "gold": "B",
       "image_sha256": "e20e7af0b29c7733deefb656eae1a31d36f0285cfdb125b3f58877a0319196ed"
@@ -3438,7 +3438,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/775.jpg"
+        "results/mmstar-public/images/775.jpg"
       ],
       "gold": "A",
       "image_sha256": "ee2db02dce38b8bffc7a42c9d32e2151bef2afe6dbd4e3a389d7ffa88aa1f385"
@@ -3456,7 +3456,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/884.jpg"
+        "results/mmstar-public/images/884.jpg"
       ],
       "gold": "B",
       "image_sha256": "42f7cf4e913016bfb15c37f2020f61c4c8b350450f2ccd74b7261310f69d7447"
@@ -3474,7 +3474,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/916.jpg"
+        "results/mmstar-public/images/916.jpg"
       ],
       "gold": "A",
       "image_sha256": "1404c2a85b7e82a006227d998a6c6efbbb3c5555f929276dfe1cd12b76d2ef02"
@@ -3492,7 +3492,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/887.jpg"
+        "results/mmstar-public/images/887.jpg"
       ],
       "gold": "D",
       "image_sha256": "65439f81841a5df79686466fb0a32bea60dd477d80aec4d592e285e8daa8f4fb"
@@ -3510,7 +3510,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/947.jpg"
+        "results/mmstar-public/images/947.jpg"
       ],
       "gold": "B",
       "image_sha256": "0fb176f88b7a6bf17f0b85d524aba5eecf04bef0874b6cbb0b65b612ac8cd23e"
@@ -3528,7 +3528,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/763.jpg"
+        "results/mmstar-public/images/763.jpg"
       ],
       "gold": "D",
       "image_sha256": "d30d847fe342508fdfe609e499c53caff3fd8a80f6312db21c24347614ffef78"
@@ -3546,7 +3546,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/929.jpg"
+        "results/mmstar-public/images/929.jpg"
       ],
       "gold": "B",
       "image_sha256": "2a57566ce711594ca02938eaeb6f1bf8b2a12f5366abba92be7d915bf14b4a9c"
@@ -3564,7 +3564,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/958.jpg"
+        "results/mmstar-public/images/958.jpg"
       ],
       "gold": "B",
       "image_sha256": "78d40244733dc0aa4cc08032c92fdb1be2e51035aeaa9d64729bf602349ab674"
@@ -3582,7 +3582,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/824.jpg"
+        "results/mmstar-public/images/824.jpg"
       ],
       "gold": "C",
       "image_sha256": "e9becc8c402fbcc44e02f9b89033646408fcfeba588bb04b1e251cb77714307a"
@@ -3600,7 +3600,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/957.jpg"
+        "results/mmstar-public/images/957.jpg"
       ],
       "gold": "A",
       "image_sha256": "d4e94a5e18fbd628cb9b630f43aa07c46e990da38aece391c74d563fdd703be8"
@@ -3618,7 +3618,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1078.jpg"
+        "results/mmstar-public/images/1078.jpg"
       ],
       "gold": "A",
       "image_sha256": "8a5d50bb7de292954223cc98700bd81cc923f13cab9dbfaf10320f437a377af3"
@@ -3636,7 +3636,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1227.jpg"
+        "results/mmstar-public/images/1227.jpg"
       ],
       "gold": "D",
       "image_sha256": "6a360c8d76386d71cd7b841c33a584d486c5c31cb2fa9ede5bcca63ff3e07f7e"
@@ -3654,7 +3654,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1156.jpg"
+        "results/mmstar-public/images/1156.jpg"
       ],
       "gold": "D",
       "image_sha256": "82e683f7fe3aa24569ff0e5bc926b4b39ae83e0d93a30dc81b9e930666ad175d"
@@ -3672,7 +3672,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1182.jpg"
+        "results/mmstar-public/images/1182.jpg"
       ],
       "gold": "A",
       "image_sha256": "9828855c5e8397a124fca7b0d8f6eed60a1cf7d93a7f2ece3166d0d84df43444"
@@ -3690,7 +3690,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1247.jpg"
+        "results/mmstar-public/images/1247.jpg"
       ],
       "gold": "C",
       "image_sha256": "6186f8f7a17e1495c0703a63e77f721d09580f3236d068f3822bbcc5fca5ecad"
@@ -3708,7 +3708,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1049.jpg"
+        "results/mmstar-public/images/1049.jpg"
       ],
       "gold": "D",
       "image_sha256": "d4c61875ec492e6771925abe46b938511c2819c478a9cd2c81e2cf7c388e5f63"
@@ -3726,7 +3726,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1222.jpg"
+        "results/mmstar-public/images/1222.jpg"
       ],
       "gold": "D",
       "image_sha256": "3e745bdedca880f951101d93425b0da016435ad1b0f1636d9ef9a3161aa63ddd"
@@ -3744,7 +3744,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1211.jpg"
+        "results/mmstar-public/images/1211.jpg"
       ],
       "gold": "A",
       "image_sha256": "c6010bc7abc602ed1085030466e1e83eb973aee73088331f17ff4055ff206d6f"
@@ -3762,7 +3762,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1125.jpg"
+        "results/mmstar-public/images/1125.jpg"
       ],
       "gold": "A",
       "image_sha256": "cf50ffd2bb13752429f378bc10c65e2a5800bbcba29d8428c5c4e07b799a53b4"
@@ -3780,7 +3780,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1244.jpg"
+        "results/mmstar-public/images/1244.jpg"
       ],
       "gold": "D",
       "image_sha256": "20eaed68e150c48e2190f78042bc399be80f9d2a7002d5537c91354868fd4bb8"
@@ -3798,7 +3798,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1175.jpg"
+        "results/mmstar-public/images/1175.jpg"
       ],
       "gold": "D",
       "image_sha256": "e2cafb1db5243b039d30b94cd6e5f24349ffdad452a7585e4da2881591536d55"
@@ -3808,7 +3808,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，AB是⊙O的直径，EF，EB是⊙O的弦，点E是FEB的中点，EF与AB交于点C，连接OF，若∠AOF＝40°，则∠F的度数是（）\nChoices:\n(A) 20°\n(B) 35°\n(C) 40°\n(D) 55°",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown, AB is a diameter of circle O. EF and EB are chords of circle O, and E is the midpoint of FEB. EF and AB intersect at C. Connect OF. If ∠AOF = 40°, what is the measure of ∠F? ()\nChoices:\n(A) 20°\n(B) 35°\n(C) 40°\n(D) 55°",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -3816,7 +3816,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1050.jpg"
+        "results/mmstar-public/images/1050.jpg"
       ],
       "gold": "B",
       "image_sha256": "a792aacee87c00f476696c1c1d1037a42e42b09c1ffc6fcb468cf0ef06431321"
@@ -3834,7 +3834,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1126.jpg"
+        "results/mmstar-public/images/1126.jpg"
       ],
       "gold": "C",
       "image_sha256": "658d0b0e0c3409706aaaf062d7827aebd4c58427128104d003416f4bee19c8e5"
@@ -3852,7 +3852,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1160.jpg"
+        "results/mmstar-public/images/1160.jpg"
       ],
       "gold": "C",
       "image_sha256": "6fd7ce42cd3474c7ef7fd10779d1bb6223315e76f901b0f18e483f6f5a5aec39"
@@ -3870,7 +3870,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1220.jpg"
+        "results/mmstar-public/images/1220.jpg"
       ],
       "gold": "C",
       "image_sha256": "f6960cf26e8dab33afac317ab242065407da36ee424819824356282324f6604b"
@@ -3888,7 +3888,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1151.jpg"
+        "results/mmstar-public/images/1151.jpg"
       ],
       "gold": "D",
       "image_sha256": "d5646a009fe07ef60f445bcf813d329f3e5c51a1f1e33948bc8c6c4afa9dfa77"
@@ -3906,7 +3906,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1016.jpg"
+        "results/mmstar-public/images/1016.jpg"
       ],
       "gold": "B",
       "image_sha256": "c14782c8ef9f8d1fbac799278989d613e1fdb6dbd3ddf4c1d98d6054a8ff8d82"
@@ -3924,7 +3924,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1084.jpg"
+        "results/mmstar-public/images/1084.jpg"
       ],
       "gold": "C",
       "image_sha256": "5d4b3b1f6ebf5fb0981ac09e474bd8af286e6459a84b21002cbd20fce0f5e14f"
@@ -3942,7 +3942,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1064.jpg"
+        "results/mmstar-public/images/1064.jpg"
       ],
       "gold": "D",
       "image_sha256": "b3e3f5e5d66c788e571067cdd5d394a79faa87d02f93b1b0086ed353bb8c70cb"
@@ -3960,7 +3960,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1135.jpg"
+        "results/mmstar-public/images/1135.jpg"
       ],
       "gold": "C",
       "image_sha256": "308cad6fd04fa19326616e126e40e57008de934e9f28f281052ae884d66c56fe"
@@ -3978,7 +3978,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1221.jpg"
+        "results/mmstar-public/images/1221.jpg"
       ],
       "gold": "A",
       "image_sha256": "3bd99babdb2dad1524395bf4cf8ac338d31d9ddab36f71cc46442bdc35fa4250"
@@ -3996,7 +3996,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1024.jpg"
+        "results/mmstar-public/images/1024.jpg"
       ],
       "gold": "C",
       "image_sha256": "5774c5e2127e5fbfc71b3f880d031d20177829f3e28e6df8d8afd7e577afce78"
@@ -4014,7 +4014,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1199.jpg"
+        "results/mmstar-public/images/1199.jpg"
       ],
       "gold": "A",
       "image_sha256": "87790c4580fc98331063a3e82e54ba11bfd6f6092bf27dce4ef2177d01f5c9a5"
@@ -4032,7 +4032,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1009.jpg"
+        "results/mmstar-public/images/1009.jpg"
       ],
       "gold": "A",
       "image_sha256": "6d7eff461c6342878939d1f16413630e14acae2450572c5fb68812211090c40e"
@@ -4050,7 +4050,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1052.jpg"
+        "results/mmstar-public/images/1052.jpg"
       ],
       "gold": "D",
       "image_sha256": "1ca82e4fd84d1ace786040adf9909980df761a7e97dc03399dc7588b6c157a1d"
@@ -4060,7 +4060,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，在Rt△ABC中，∠BAC＝90°，以Rt△ABC的三边为边分别向外作等边三角形△A'BC，△AB'C，△ABC'，若△A'BC，△AB'C的面积分别是10和4，则△ABC'的面积是（）\nChoices:\n(A) 4\n(B) 6\n(C) 8\n(D) 9",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown, in right triangle ABC, ∠BAC = 90°. Equilateral triangles A′BC, AB′C, and ABC′ are constructed outward on its three sides. If the areas of A′BC and AB′C are 10 and 4, respectively, what is the area of ABC′? ()\nChoices:\n(A) 4\n(B) 6\n(C) 8\n(D) 9",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -4068,7 +4068,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1074.jpg"
+        "results/mmstar-public/images/1074.jpg"
       ],
       "gold": "B",
       "image_sha256": "e640cea3f4cfeef2e013c556ffa94d107b218967fbd94ab356141ef08647e97b"
@@ -4086,7 +4086,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1243.jpg"
+        "results/mmstar-public/images/1243.jpg"
       ],
       "gold": "D",
       "image_sha256": "6ba4fc2fc9a3df851b9c922fe06be1e4da91e779d1da6a6cc372a3f42c0b1f9f"
@@ -4104,7 +4104,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1187.jpg"
+        "results/mmstar-public/images/1187.jpg"
       ],
       "gold": "A",
       "image_sha256": "79f5042cea54f193d671fd173143b1b3fbef1720ca7c8d724718c70a2acc3401"
@@ -4122,7 +4122,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1152.jpg"
+        "results/mmstar-public/images/1152.jpg"
       ],
       "gold": "D",
       "image_sha256": "7bdf9a44c238c4a9cc7837360ba65339ebbd8fcf8079ef379493ad12c8debdb7"
@@ -4140,7 +4140,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1130.jpg"
+        "results/mmstar-public/images/1130.jpg"
       ],
       "gold": "B",
       "image_sha256": "abf792ba7df6f5b11d7ef840791edb8f033e05cad367e1a489e3ca284d2ccda3"
@@ -4158,7 +4158,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1015.jpg"
+        "results/mmstar-public/images/1015.jpg"
       ],
       "gold": "D",
       "image_sha256": "27024c7f60896f08c92a2c07b0393429600dc607a81983bbdbafac5f156a7292"
@@ -4176,7 +4176,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1112.jpg"
+        "results/mmstar-public/images/1112.jpg"
       ],
       "gold": "C",
       "image_sha256": "bf2056e97e04d7d2df5460ebb49ef856fd81ec690bc0adb37b0b00f99c73ed6e"
@@ -4194,7 +4194,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1167.jpg"
+        "results/mmstar-public/images/1167.jpg"
       ],
       "gold": "A",
       "image_sha256": "c6b73834f070836b0f1dc59b9bd8917a87fa6b9213c9eebfa9ec2660c835ad84"
@@ -4212,7 +4212,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1092.jpg"
+        "results/mmstar-public/images/1092.jpg"
       ],
       "gold": "B",
       "image_sha256": "757141cfe3b954029e09e85eb7f8b1a64000131451c7d69b82ec934926613a87"
@@ -4222,7 +4222,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: △ABC的两内角平分线OB、OC相交于点O，若∠A＝110°，则∠BOC＝（）\nChoices:\n(A) 145°\n(B) 140°\n(C) 135°\n(D) 150°",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: The two internal angle bisectors OB and OC of triangle ABC intersect at O. If ∠A = 110°, then ∠BOC = ()\nChoices:\n(A) 145°\n(B) 140°\n(C) 135°\n(D) 150°",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -4230,7 +4230,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1216.jpg"
+        "results/mmstar-public/images/1216.jpg"
       ],
       "gold": "A",
       "image_sha256": "b1212b4475e4e2c6e129b15f26c9727c197dcad913961dd82d2f3cd37a7f7e17"
@@ -4248,7 +4248,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1158.jpg"
+        "results/mmstar-public/images/1158.jpg"
       ],
       "gold": "D",
       "image_sha256": "717dbd49a6f3c6575cdfb0cd237b2a9d824f9a6fbcda81905f1a547d29644515"
@@ -4266,7 +4266,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1089.jpg"
+        "results/mmstar-public/images/1089.jpg"
       ],
       "gold": "B",
       "image_sha256": "86aad123efb7acc7abd4d98fdab351bb5bc83659661b7362e107d872fb201c41"
@@ -4284,7 +4284,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1061.jpg"
+        "results/mmstar-public/images/1061.jpg"
       ],
       "gold": "D",
       "image_sha256": "5f7dffb6393b6f6e6d73bd8b1cc2bbf005a9506f14b0693787e49dc69712fa80"
@@ -4294,7 +4294,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，在Rt△ABC中，∠ABC＝90°，点D、E、F分别是边AB、BC、CA的中点，若DE+BF＝8，则BF的值为（）\nChoices:\n(A) 3\n(B) 4\n(C) 5\n(D) 6",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown, in right triangle ABC, ∠ABC = 90°. D, E, and F are the midpoints of AB, BC, and CA, respectively. If DE + BF = 8, what is the value of BF? ()\nChoices:\n(A) 3\n(B) 4\n(C) 5\n(D) 6",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -4302,7 +4302,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1231.jpg"
+        "results/mmstar-public/images/1231.jpg"
       ],
       "gold": "B",
       "image_sha256": "4cf7832165ec7bc83cde54ff742d42ac025d5ec0763428f14993f69a31db0d0c"
@@ -4312,7 +4312,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，A，B两点被池塘隔开，在AB外选一点C，使点C能直接到达点A和点B，连接AC和BC，并分别找出AC和BC的中点M，N．如果测得MN＝20m，那么A，B两点的距离是（）\nChoices:\n(A) 10m\n(B) 20m\n(C) 35m\n(D) 40m",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown, points A and B are separated by a pond. Choose C outside AB so that A and B can be reached directly from C. Connect AC and BC and find their respective midpoints M and N. If MN = 20m, what is the distance between A and B? ()\nChoices:\n(A) 10m\n(B) 20m\n(C) 35m\n(D) 40m",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -4320,7 +4320,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1226.jpg"
+        "results/mmstar-public/images/1226.jpg"
       ],
       "gold": "D",
       "image_sha256": "0b83c310c3a377406c3fd2acf9b579d25d92375380d55e1f27402078ddc631ff"
@@ -4330,7 +4330,7 @@
       "category": "math",
       "subcategory": "geometry",
       "origin": "MathVista",
-      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，AB∥CD，BD⊥CF，垂足为B，∠ABF＝35°，则∠BDC的度数为（）\nChoices:\n(A) 25°\n(B) 35°\n(C) 45°\n(D) 55°",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown, AB ∥ CD and BD ⟂ CF, with B the foot of the perpendicular. If ∠ABF = 35°, what is the measure of ∠BDC? ()\nChoices:\n(A) 25°\n(B) 35°\n(C) 45°\n(D) 55°",
       "options": [
         "Option A in the question",
         "Option B in the question",
@@ -4338,7 +4338,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1079.jpg"
+        "results/mmstar-public/images/1079.jpg"
       ],
       "gold": "D",
       "image_sha256": "564db989fb456e6bd7dd3f1b56c1eb7fbe9a360f30d5720684dca50e81a10ad2"
@@ -4356,7 +4356,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1225.jpg"
+        "results/mmstar-public/images/1225.jpg"
       ],
       "gold": "C",
       "image_sha256": "872aef065fb899864a5278b60b27e9622eee7a4aa27b8da38e5b7008f123ac6c"
@@ -4374,7 +4374,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1237.jpg"
+        "results/mmstar-public/images/1237.jpg"
       ],
       "gold": "B",
       "image_sha256": "c76a6124cede224c536219cb280f7a66e6d51b78c99ea4b693a19ebbc05f83cf"
@@ -4392,7 +4392,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1205.jpg"
+        "results/mmstar-public/images/1205.jpg"
       ],
       "gold": "A",
       "image_sha256": "46a830ca4d4d6eee6152d39339ea6c627839b66788a70562838c28a015b28cbf"
@@ -4410,7 +4410,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1028.jpg"
+        "results/mmstar-public/images/1028.jpg"
       ],
       "gold": "B",
       "image_sha256": "ee1adeceef390563a151059f2b0008cb9b99d44f35be65ccf1ea2319d5ba196b"
@@ -4428,7 +4428,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1235.jpg"
+        "results/mmstar-public/images/1235.jpg"
       ],
       "gold": "A",
       "image_sha256": "22e690479bd5edca641d2827af18cd4a7d7f82fb6aa258105e31c26c4943974c"
@@ -4446,7 +4446,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1017.jpg"
+        "results/mmstar-public/images/1017.jpg"
       ],
       "gold": "C",
       "image_sha256": "e30398376107d6c17eae076b1ba0de39fc1413f49cbc57555c75595d8277e7c3"
@@ -4464,7 +4464,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1155.jpg"
+        "results/mmstar-public/images/1155.jpg"
       ],
       "gold": "A",
       "image_sha256": "33812eeaf00488906e7e2bfec3c9a870019970040ec4b66225e3f0ac1c8df731"
@@ -4482,7 +4482,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1058.jpg"
+        "results/mmstar-public/images/1058.jpg"
       ],
       "gold": "D",
       "image_sha256": "ddd5c037d6d250fc715cd73b48be3b26cda29ace7d0c88386df19b32bd8d6563"
@@ -4500,7 +4500,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1110.jpg"
+        "results/mmstar-public/images/1110.jpg"
       ],
       "gold": "A",
       "image_sha256": "0cbf521be4fc3057d4bdc14a820c2cc0db565efda9d2fbef43c13b60dc08001d"
@@ -4518,7 +4518,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1460.jpg"
+        "results/mmstar-public/images/1460.jpg"
       ],
       "gold": "B",
       "image_sha256": "fa62fbead07dc5df0f956961eed64719448e1a261dcb70a4d2beb6f8b71ff271"
@@ -4536,7 +4536,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1319.jpg"
+        "results/mmstar-public/images/1319.jpg"
       ],
       "gold": "A",
       "image_sha256": "fe0b8361ec06b4dea5c32797dd954ad55310eef9e686da5e8b70cad7ad025f79"
@@ -4554,7 +4554,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1294.jpg"
+        "results/mmstar-public/images/1294.jpg"
       ],
       "gold": "D",
       "image_sha256": "ca66618af7edad939341a4c72f9e3f8c84280224b65c102770b1063406ae9416"
@@ -4572,7 +4572,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1491.jpg"
+        "results/mmstar-public/images/1491.jpg"
       ],
       "gold": "C",
       "image_sha256": "bbf09c6e67571a862f20130600f449b14be1e9d467219a5472e69f629a5a163a"
@@ -4590,7 +4590,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1429.jpg"
+        "results/mmstar-public/images/1429.jpg"
       ],
       "gold": "B",
       "image_sha256": "35babc7a0e5f5b8bd38379c0e7da59f7d89eeab8084477aa66687559dff2a3a8"
@@ -4608,7 +4608,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1354.jpg"
+        "results/mmstar-public/images/1354.jpg"
       ],
       "gold": "A",
       "image_sha256": "a58f98ee08e506b34a39dc65660fae2acb5ec3ebc21f6dd596e8a02c05112d1e"
@@ -4626,7 +4626,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1329.jpg"
+        "results/mmstar-public/images/1329.jpg"
       ],
       "gold": "A",
       "image_sha256": "ee46398fb8993b79a8b09d6377ced5e90af7305df6b7cf3a127c3f68f08b5c56"
@@ -4644,7 +4644,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1339.jpg"
+        "results/mmstar-public/images/1339.jpg"
       ],
       "gold": "B",
       "image_sha256": "f8efc374ccb4ec9f9e68e4702a284e04bd68e766cde6f55091aebf27fd3a16d0"
@@ -4662,7 +4662,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1342.jpg"
+        "results/mmstar-public/images/1342.jpg"
       ],
       "gold": "C",
       "image_sha256": "43e1f54282c050a4b35c5bea2a37dcf0bce2997e1fbfc702ee837b853370335c"
@@ -4680,7 +4680,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1438.jpg"
+        "results/mmstar-public/images/1438.jpg"
       ],
       "gold": "A",
       "image_sha256": "b89d277806f3a93bdc513c51d2fb3722aeb8e99cdbbcccd6556ca9a9a5dccdf1"
@@ -4698,7 +4698,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1337.jpg"
+        "results/mmstar-public/images/1337.jpg"
       ],
       "gold": "D",
       "image_sha256": "f0cca8f4cb660647561f03f530f0e027870d812acd32e83eb78c1a4d7120d812"
@@ -4716,7 +4716,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1468.jpg"
+        "results/mmstar-public/images/1468.jpg"
       ],
       "gold": "C",
       "image_sha256": "1a8d0a73e5ffddf913ab7b7109c4e65e8e5fad476d0bbe72bc3fe1e74366fe07"
@@ -4734,7 +4734,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1370.jpg"
+        "results/mmstar-public/images/1370.jpg"
       ],
       "gold": "A",
       "image_sha256": "383b0a514c0d4c078263ffebd760889aa4bf8b6869d823ec112247a527bf6252"
@@ -4752,7 +4752,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1485.jpg"
+        "results/mmstar-public/images/1485.jpg"
       ],
       "gold": "A",
       "image_sha256": "55e55ba443c35456ab973fb42633dbc9f9cd2de4f63897d88ed43e72a9e0c7f4"
@@ -4770,7 +4770,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1365.jpg"
+        "results/mmstar-public/images/1365.jpg"
       ],
       "gold": "D",
       "image_sha256": "0035f6c9543ee755d344929665125cd68b7df677f1d773fd3a1856e73b65ad3b"
@@ -4788,7 +4788,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1290.jpg"
+        "results/mmstar-public/images/1290.jpg"
       ],
       "gold": "D",
       "image_sha256": "e6f61c2c61932967d6a72f649c9eccd7383638a205a35b1da0c355ffc585af85"
@@ -4806,7 +4806,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1456.jpg"
+        "results/mmstar-public/images/1456.jpg"
       ],
       "gold": "C",
       "image_sha256": "ab1570c85a01e29f21b21de59abc70d54d2fed962ce54ea8afafff23949dbb44"
@@ -4824,7 +4824,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1335.jpg"
+        "results/mmstar-public/images/1335.jpg"
       ],
       "gold": "A",
       "image_sha256": "35f2118f69a7cfa747903889616d5c839359dae1666f76eaa81e2dc3fbe80653"
@@ -4842,7 +4842,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1420.jpg"
+        "results/mmstar-public/images/1420.jpg"
       ],
       "gold": "B",
       "image_sha256": "254011eafd05e80bcf1c155a5c5844395547fbd7114799dca72271e37c18b2f8"
@@ -4860,7 +4860,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1488.jpg"
+        "results/mmstar-public/images/1488.jpg"
       ],
       "gold": "D",
       "image_sha256": "b9fce14645c29049c1e6e2fcc5ec990eb04f8fe8807dd8d6be0303283ed93801"
@@ -4878,7 +4878,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1327.jpg"
+        "results/mmstar-public/images/1327.jpg"
       ],
       "gold": "C",
       "image_sha256": "5b994d7599b227d305a6753cfd1c03300340e62bb55b59b780ef31d600ed2d97"
@@ -4896,7 +4896,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1496.jpg"
+        "results/mmstar-public/images/1496.jpg"
       ],
       "gold": "C",
       "image_sha256": "96079b8b988a59e0302bbd42449c540d33ef7fbe7f91ba0f3d8eb8d539331e92"
@@ -4914,7 +4914,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1418.jpg"
+        "results/mmstar-public/images/1418.jpg"
       ],
       "gold": "B",
       "image_sha256": "3e676068c8abe69c1e90313097baac9e386ddc7c5362633132728f88bf5215cc"
@@ -4932,7 +4932,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1431.jpg"
+        "results/mmstar-public/images/1431.jpg"
       ],
       "gold": "A",
       "image_sha256": "97b5adefcf88141abd6d910c1ee8ee708819090af68b93a09d12286e77a100de"
@@ -4950,7 +4950,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1381.jpg"
+        "results/mmstar-public/images/1381.jpg"
       ],
       "gold": "B",
       "image_sha256": "6add002661fd2c08b2c1f8266b674d5f2800589388c648ca2ebe144cc2316755"
@@ -4968,7 +4968,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1395.jpg"
+        "results/mmstar-public/images/1395.jpg"
       ],
       "gold": "A",
       "image_sha256": "29405c4c6f5896946afa70f15ff85552ab38d847213bfd0b12b7cc67b623de34"
@@ -4986,7 +4986,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1324.jpg"
+        "results/mmstar-public/images/1324.jpg"
       ],
       "gold": "D",
       "image_sha256": "862fe377f684a5a333c7c39429732b7a1ed0104da88a313d69341d0b7f8e9406"
@@ -5004,7 +5004,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1325.jpg"
+        "results/mmstar-public/images/1325.jpg"
       ],
       "gold": "B",
       "image_sha256": "4470c4eba8fc26d653f8ebf835c0a1abaac6366cb041614cb1196374987504ef"
@@ -5022,7 +5022,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1311.jpg"
+        "results/mmstar-public/images/1311.jpg"
       ],
       "gold": "B",
       "image_sha256": "62f216c9d70fc1d5178320854adcce941353e65bd2acff557291dc0f3e6b9499"
@@ -5040,7 +5040,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1390.jpg"
+        "results/mmstar-public/images/1390.jpg"
       ],
       "gold": "C",
       "image_sha256": "ba766cc0e9ff17170c08af365d87704e6d146bbb91d52401ad6e00d60366a783"
@@ -5058,7 +5058,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1430.jpg"
+        "results/mmstar-public/images/1430.jpg"
       ],
       "gold": "A",
       "image_sha256": "f02a330258c3bede4ee04519bd41ba3bee356ae36129f7613d6923517df90228"
@@ -5076,7 +5076,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1475.jpg"
+        "results/mmstar-public/images/1475.jpg"
       ],
       "gold": "A",
       "image_sha256": "65280d8ee151b5ffa409da5a4ccac28af1dc81a4134ce61c802d85dbdf717f26"
@@ -5094,7 +5094,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1346.jpg"
+        "results/mmstar-public/images/1346.jpg"
       ],
       "gold": "D",
       "image_sha256": "26d47ea2a7534288c0c3c6215f7ca1293390cad5a41cc754a6cdce4d07d323ff"
@@ -5112,7 +5112,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1302.jpg"
+        "results/mmstar-public/images/1302.jpg"
       ],
       "gold": "C",
       "image_sha256": "63dd8c8d224a10eeef771a5d3dd226254cde86931d1d13d127db4f87d6c23a61"
@@ -5130,7 +5130,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1362.jpg"
+        "results/mmstar-public/images/1362.jpg"
       ],
       "gold": "A",
       "image_sha256": "5dd33bb5b555537e0e917680b4f4c06e7f4040156430ae181899915bb186bf7c"
@@ -5148,7 +5148,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1391.jpg"
+        "results/mmstar-public/images/1391.jpg"
       ],
       "gold": "A",
       "image_sha256": "bcef80224137359b6d71632706f6c6ba49cae8cac2b49bf79f3ef38576bc6816"
@@ -5166,7 +5166,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1323.jpg"
+        "results/mmstar-public/images/1323.jpg"
       ],
       "gold": "D",
       "image_sha256": "56ed89008e746bdb7e7912548e25c8740cc8a7377d1ebc3ce1fefdab304862b3"
@@ -5184,7 +5184,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1479.jpg"
+        "results/mmstar-public/images/1479.jpg"
       ],
       "gold": "B",
       "image_sha256": "058471fc16e0a076327d19e9f2c52edc1ac4e47818252b329b754473912124d8"
@@ -5202,7 +5202,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1306.jpg"
+        "results/mmstar-public/images/1306.jpg"
       ],
       "gold": "C",
       "image_sha256": "4dd722afd453028bcf24b54f1c3882f4327b5c7783127b5ffbfceab6ed5f33eb"
@@ -5220,7 +5220,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1443.jpg"
+        "results/mmstar-public/images/1443.jpg"
       ],
       "gold": "C",
       "image_sha256": "d420ad6b3f9745e375739accfc21236e5501f7bd05ece24a4d1ff416c72fb8f2"
@@ -5238,7 +5238,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1263.jpg"
+        "results/mmstar-public/images/1263.jpg"
       ],
       "gold": "B",
       "image_sha256": "d26f748b3fdc226612472e779cc167edfc5666d8e54156b98e505f8690cb8971"
@@ -5256,7 +5256,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1486.jpg"
+        "results/mmstar-public/images/1486.jpg"
       ],
       "gold": "D",
       "image_sha256": "6862b0dec1fecde2a32fee77c5d15d9e8f84241eb386974a0f972155ee6f6283"
@@ -5274,7 +5274,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1427.jpg"
+        "results/mmstar-public/images/1427.jpg"
       ],
       "gold": "C",
       "image_sha256": "008d4fc09570b0a28f8b655145721071dd7cec7fbc41bbfe5d625af97c1ffd69"
@@ -5292,7 +5292,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1259.jpg"
+        "results/mmstar-public/images/1259.jpg"
       ],
       "gold": "D",
       "image_sha256": "415525dd77625550da3af5e0f9630b75beb441521182aff8e632e364a153610a"
@@ -5310,7 +5310,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1366.jpg"
+        "results/mmstar-public/images/1366.jpg"
       ],
       "gold": "B",
       "image_sha256": "9d437ac42505edd50b0b0f2995eb3a6dea10c841bdf9df3bc2a8a27127f02d7a"
@@ -5328,7 +5328,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1399.jpg"
+        "results/mmstar-public/images/1399.jpg"
       ],
       "gold": "B",
       "image_sha256": "28897a6692f2f1897dc19859d45f94d1ade02b26dddaa202d72c607b2746a8a0"
@@ -5346,7 +5346,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1338.jpg"
+        "results/mmstar-public/images/1338.jpg"
       ],
       "gold": "D",
       "image_sha256": "ab77ad9c8106644307d839bb1b54be1de73b2ed3616171e71adf3b4812ad8fb8"
@@ -5364,7 +5364,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1442.jpg"
+        "results/mmstar-public/images/1442.jpg"
       ],
       "gold": "A",
       "image_sha256": "ffde66bc84e48798f55dd00557587d6627b7d44c82d13ebece50c8cd0df1f298"
@@ -5382,7 +5382,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1355.jpg"
+        "results/mmstar-public/images/1355.jpg"
       ],
       "gold": "C",
       "image_sha256": "de04cab44e3c10e55f351aeab279febef95ae2e7e6b4e2a9535b517efe05fd15"
@@ -5400,7 +5400,7 @@
         "Option D in the question"
       ],
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmstar-public/images/1439.jpg"
+        "results/mmstar-public/images/1439.jpg"
       ],
       "gold": "B",
       "image_sha256": "3258b3beb89847f9fd5732f50638c142a8ed3ce60895f1891d73b720d52c33ef"

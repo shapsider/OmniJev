@@ -1,41 +1,41 @@
-# OmniJev Vision Preview：具身工作台与 benchmark
+# OmniJev Vision Preview: Embodied Workbench and benchmark
 
-## 项目范围
+## Project Scope
 
-本目录提供可以从零安装、运行、记录和复现的 MuJoCo 机械臂实验台。它把有限候选决策、RGB 观测、模拟本体状态、物理执行和终态验证放在同一个本地工作流中。实验结果面板读取本地 `results/`，不会把没有实际运行的模型结果显示成成功。
+This directory provides a MuJoCo robotic arm workbench that can be installed, run, recorded, and reproduced from scratch. It combines finite-choice decision-making, RGB observations, simulated body states, physical execution, and terminal verification within a single local workflow. Experiment result panels are read locally from `results/`, and results of models that were not actually run are not shown as successful.
 
-| 模块 | 当前实现 |
+| Module | Current Implementation |
 |---|---|
-| `physics.py`、Panda 资产 | MuJoCo 物理、IK、接触、抓持、支撑与终态判断；资产许可见 `embodied/src/embodied_jev/assets/panda/LICENSE` |
-| `planning.py`、`incremental.py` | 技能菜单与固定 21 个 XYZ / 夹爪动作；技能和增量控制独立记录 |
-| `perception.py` | 外部 / 腕部 RGB、RGB-D 估计、时间戳与观测归档 |
-| `runtime.py`、`comparison.py` | 暂停、停止、动作预演、回放、独立同种子仿真、模型对比和导出 |
-| 浏览器工作台 | 轨迹渲染、视觉输入检查、扰动、比较、导出和 benchmark 导航 |
-| `omnijev/embodied_policy.py` | 四种本地策略、提示构造、候选分数解析、稳定动作 ID 映射；模型错误不自动代答 |
-| `scripts/benchmark_embodied.py` | 独立进程、固定随机顺序、失败留存、协议校验续跑、token / 物理指标和运行环境记录 |
-| `omnijev/embodied_web.py` 与 `web/benchmarks.html` | 本地模型状态与结果面板，分开展示公开问答和具身回合 |
+| `physics.py`, Panda assets | MuJoCo physics, IK, contact, grasping, support, and terminal verification; assets visible at `embodied/src/embodied_jev/assets/panda/LICENSE` |
+| `planning.py`, `incremental.py` | Skill menu and fixed 21 XYZ / gripper actions; skills and incremental control recorded separately |
+| `perception.py` | External / wrist RGB, RGB-D estimation, timestamps, and observation archiving |
+| `runtime.py`, `comparison.py` | Pause, stop, action preview, replay, independent same-seed simulation, model comparison, and export |
+| Browser workbench | Trajectory rendering, visual input inspection, perturbation, comparison, export, and benchmark navigation |
+| `omnijev/embodied_policy.py` | Four local strategies, prompt construction, candidate score parsing, stable action ID mapping; model errors do not auto-answer |
+| `scripts/benchmark_embodied.py` | Independent process, fixed random order, failures retained, protocol-resume reruns, token / physical metrics and runtime environment recording |
+| `omnijev/embodied_web.py` and `web/benchmarks.html` | Local model state and result panels, separately showing public Q&A and embodied rounds |
 
-项目许可证和第三方依赖说明见 `embodied/LICENSE` 与 `embodied/THIRD_PARTY_NOTICES.md`。本项目使用本地兼容 API 调用视觉骨干，不实现 TypeSafe Jev 的内部架构、原生决策协议或 RLCD 训练。
+Project license and third-party notices are in `embodied/LICENSE` and `embodied/THIRD_PARTY_NOTICES.md`. This project uses locally compatible API calls for visual backbones, does not implement TypeSafe Jev's internal architecture, native decision protocol, or RLCD training.
 
-## 从零安装、启动与浏览器用法
+## Installation from scratch, startup, and browser usage
 
 ```sh
-# 仅首次；Python 3.12+。不会下载模型权重。
+# First installation only; Python 3.12+.Model weights are not downloaded.
 ./setup_embodied.sh
-# 本机已有环境时直接运行
+# Start the workbench
 ./run_embodied.sh
 ```
 
-访问 `http://127.0.0.1:8766`，结果面板为 `/benchmarks`。服务仅监听回环地址，默认内存模式。前端构建资源已包含，运行不需要 Node；改前端时才需要重新构建。模型权重必须由用户从所用推理后端的官方页面下载并放入后端模型目录，OmniJev 只访问后端 API。
+Visit `http://127.0.0.1:8766`; the results panel is at `/benchmarks`. The service listens only on the loopback address and uses memory mode by default. Built frontend assets are included, so Node is not required to run it; rebuild only after modifying the frontend. Model download, directory, and backend startup steps are in [README](../README.md).
 
-1. 保持“规则基线”，选搬运入盘 / 堆叠 / 越障，再点运行，检查安装和物理环境。规则调用数为零。
-2. Bionic 加载现有 Nemotron 后选择“OmniJev · 快速决策”，可单步、暂停、停止、重置、回放与导出。这才是真实本机模型决策。
-3. “预设技能选择 + 仿真真值”用于技能决策验收，程序执行技能内部轨迹，模型看不到相机图像。
-4. 视觉实验选择“逐步 XYZ + 直接图像 + 外部或双相机”。模型获得 RGB 与本体反馈，不获得对象 / 目标真值坐标；安全预演与终态评估仍使用仿真真值。用“视觉”页查看实际输入，下载相机归档核对。
-5. 在“模型对比”选择 2–3 路策略，默认串行避免本地资源竞争。每路独立世界；回放按仿真时间对齐，不代表真实推理耗时。
-6. 在执行设置启用目标 / 物体位移扰动，观察后续调整。扰动不是模型动作，是否恢复必须由实际轨迹判断。
+1. Keep the "rule baseline", choose transfer to tray / block stacking / transfer over barrier, then click run to check installation and physical environment. Rule call count is zero.
+2. After inference backend is ready, select "OmniJev · Fast decision", which allows single step, pause, stop, reset, replay, and export. Model requests and execution results are recorded in round export.
+3. "Preset skill selection + simulation ground truth" is used for skill decision acceptance; the program executes skill internal trajectory, and the model does not see camera images.
+4. Visual experiment selection "incremental XYZ + direct image + external or dual-camera". The model receives RGB and body feedback, but not object / target true coordinates; safety preview and terminal assessment still use simulated ground truth. View actual input on the "Visual" page and download camera archives for verification.
+5. In "Model Comparison" select 2–3 strategies, default serial to avoid local resource contention. Each path is an independent world; replay is aligned by simulation time, not actual reasoning duration.
+6. Enable target / object displacement perturbation in execution settings to observe subsequent adjustments. Perturbation is not a model action; whether recovery must be judged by actual trajectory.
 
-模型参数通过启动环境设置：
+Set model parameters through environment variables at startup:
 
 ```sh
 OMNIJEV_MODEL=omnijev-nemotron \
@@ -44,26 +44,26 @@ OMNIJEV_REASONING_TOKENS=4096 \
 ./run_embodied.sh
 ```
 
-`OMNIJEV_REQUEST_TIMEOUT` 默认 180 秒；`OMNIJEV_PORT` 默认 8766。模型离线时界面明确显示未就绪，规则演示仍可用；模型请求错误会终止回合，不会自动切换规则策略。
+`OMNIJEV_REQUEST_TIMEOUT` default 180 seconds; `OMNIJEV_PORT` default 8766. When the model is offline, the interface explicitly shows not ready, but rule demonstration remains available; model request errors terminate the round and do not automatically switch rule strategy.
 
-## 四种本地策略
+## Four local strategies
 
-| 策略 | 实际调用 | 注意事项 |
+| Strategy | Actual Call | Notes |
 |---|---|---|
-| OmniJev | 单字母生成，4-token 上限，关闭思考，top-10 logprobs | 沿用现有生成 API，非零解码新架构 |
-| Direct | 同样输入、采样与 4-token 上限，不索取 logprobs | 必须保留的强基线 |
-| Reasoning | medium，T=0.6 / top_p=0.95，默认总输出上限 4096 | 与之前公开问答的 20480 上限不同，分别报告 |
-| Adaptive | 先快速请求；分数缺失或 margin < 0.2 时再真实请求推理 | 启发式实验功能，未校准或证明优于基线；两次成本都记账 |
+| OmniJev | Single-letter generation, 4-token limit, thinking disabled, top-10 logprobs | Uses the existing generation API, not a new zero-decoding architecture |
+| Direct | Same input, sampling and 4-token upper limit, no logprobs requested | Baseline without logprobs |
+| Reasoning | medium, T=0.6 / top_p=0.95, default total output limit 4096 | Different from public QA evaluation 20480 upper limit, report separately |
+| Adaptive | First fast request; if score missing or margin < 0.2 then real request reasoning | Heuristic experimental feature, uncalibrated or unproven better than baseline; both costs billed |
 
-21 个动作通常超过 top-10 的覆盖范围，因此分数可能不可用；不能凭空补齐概率。Adaptive 在缺失分数时升级推理，可能比固定推理更贵。输出无效、截断或快速路径意外产生思考时均记错误，保留已知 token 成本，不代选动作。
+21 actions usually exceed top-10 coverage, so score may be unavailable; cannot fabricate probability. Adaptive upgrades to reasoning when score missing, possibly more expensive than fixed reasoning. Invalid output, truncation, or fast path thinking all record error, retain known token cost, do not select action.
 
-浏览器切换到本地策略时，额外候选分数门槛默认为零，因为 token softmax 不是校准后的任务成功率；仿真动作预演保持开启。用户仍可选择非零门槛进行拒答实验。benchmark 固定门槛为零，避免仅对有分数的策略额外施加筛选。
+When browser switches to local strategy, additional candidate score threshold defaults to zero because token softmax is not calibrated task success rate; simulation action preview remains on. User can still choose non-zero threshold for abstention experiment. benchmark fixed threshold zero, avoiding extra filtering only for strategies with scores.
 
-## 可复现 benchmark
+## Reproducible benchmark
 
-公开问答：既有 425 题 × 4 方法的记录、统计与图表继续保留。见 [公开协议](PUBLIC_EVALUATION_PROTOCOL.md)，不是具身成功率。
+Public QA: existing 425 questions × 4 methods records, statistics, and charts remain. See [Public Protocol](PUBLIC_EVALUATION_PROTOCOL.md), not embodied success rate.
 
-具身技能先导：
+Embodied skill pilot experiment:
 
 ```sh
 .venv-embodied/bin/python scripts/benchmark_embodied.py \
@@ -73,7 +73,7 @@ OMNIJEV_REASONING_TOKENS=4096 \
   --output results/embodied/my-skills-run
 ```
 
-直接视觉与扰动实验应另开目录：
+Direct visual and perturbation experiments should be in separate directory:
 
 ```sh
 .venv-embodied/bin/python scripts/benchmark_embodied.py \
@@ -83,28 +83,28 @@ OMNIJEV_REASONING_TOKENS=4096 \
   --output results/embodied/my-vision-shift
 ```
 
-每个回合由独立进程执行，保存原始场景哈希、策略版本、动作 / 观测 / 轨迹、逐请求配置、输入哈希、实际用量、失败与相机归档。`manifest.json` 还记录项目 git revision、Python 版本、平台、模型端点和适配器哈希。固定排序种子 20260921，生成种子 20260919。完整协议写入 manifest；已有输出只能用同样协议续跑，不能覆盖失败。汇总分母包含全部回合。
+Each round executed by independent process, saving original scene hash, strategy version, action / observation / trajectory, incremental request configuration, input hash, actual usage, failure, and camera archive. `manifest.json` also records project git revision, Python version, platform, model endpoint, and adapter hash. Fixed sort seed 20260921, generated seed 20260919. Full protocol written to manifest; existing output can only continue with same protocol, cannot overwrite failure. Denominator includes all rounds.
 
-报告任务成功率、回合墙钟时间、API 调用次数、输入与输出 tokens、禁止接触次数、预算耗尽 / 停滞 / 拒答 / 错误。零模型调用的规则策略不能以推理准确率来解释；技能基线成功也不证明端到端视觉规划。
+Report task success rate, round wall-clock time, API call count, input and output tokens, prohibited contact count, budget exhausted / stall / abstention / error. Zero model call rule strategy cannot be explained by reasoning accuracy; skill baseline success does not prove end-to-end visual planning.
 
-物理仿真在等待模型时暂停，因而该 benchmark 尚不能测量环境在推理期间继续演化的控制风险。小样本不能证实非劣、泛化或真实机器人的可靠性。上游未公开的 Jev 分层 XYZ 开发模式没有被声称已复现。
+Physical simulation pauses while waiting for model, so this benchmark cannot measure control risk of environment evolving during inference. Small sample cannot confirm non-inferiority, generalization, or reliability on real machines. Upstream unpublished Jev hierarchical XYZ development mode not claimed reproduced.
 
-## 开发与验证
+## Development and validation
 
 ```sh
 .venv-embodied/bin/python -m pytest embodied/tests -q
 python3 -m unittest discover -s tests
-# 前端源码修改后
+# After modifying the frontend source
 cd embodied
 pnpm install --frozen-lockfile
 pnpm run build
 ```
 
-本地核心 SDK 仍可不安装 MuJoCo 单独使用；具身工作台依赖放在 `.venv-embodied`。上游测试、OmniJev 适配契约、真实物理回合与浏览器验收分别记录，不把 stub 测试冒充真实模型评测。
+Local core SDK can still be used without separate MuJoCo installation; embodied workbench depends on `.venv-embodied`. Upstream tests, OmniJev adaptation contract, real physical rounds, and browser acceptance are recorded separately, not conflating stub tests with real model evaluation.
 
-## 重新评测公开子集（保留旧成绩）
+## Re-evaluating public subset
 
-源码包包含成绩与脚本，不分发第三方原始媒体。先运行 `python3 scripts/download_public_data.py`；图表依赖 `matplotlib`，视频准备依赖 `imageio-ffmpeg`（按需安装）。准备和评测应使用新目录，例如：
+Source package includes scores and scripts, not third-party original media. First run `python3 scripts/download_public_data.py`; charts depend on `matplotlib`, video preparation depends on `imageio-ffmpeg` (install as needed). Preparation and evaluation should use new directory, e.g.:
 
 ```sh
 python3 scripts/public_benchmark.py --prepare-only --out results/mmstar-new
@@ -114,4 +114,4 @@ python3 scripts/report_public_benchmark.py --out results/mmbench-new
 python3 scripts/audit_public_results.py --out results/mmbench-new
 ```
 
-MMAD 和 StreamingBench 分别将准备命令的名称改为 `mmad`、`streaming`。公开问答脚本目前固定调用本地 `omnijev-nemotron`；更换骨干需同时修改协议与调用配置并另存结果。旧 manifest 中的绝对媒体路径是原实验来源记录，新机器需重新准备媒体，不能直接据此推理。
+MMAD and StreamingBench rename preparation command names to `mmad` and `streaming`. Public QA script currently calls local `omnijev-nemotron`; changing backbone requires modifying protocol and call configuration and saving results separately. Old manifest absolute media paths record original experiment source; new machines must re-prepare media, cannot infer directly from them.

@@ -1,11 +1,11 @@
 {
   "request_id": "support-routing",
-  "question": "根据用户消息，选择合适的处理队列。",
-  "state": "我的包裹三天没有更新物流信息，请帮我查询。",
+  "question": "Select appropriate processing queue based on user message.",
+  "state": "My package has not updated logistics information for three days; please help me check.",
   "options": [
-    {"id": "delivery", "description": "物流与配送问题"},
-    {"id": "refund", "description": "退款与退货问题"},
-    {"id": "technical", "description": "软件与设备技术问题"},
-    {"id": "unknown", "description": "其他类型或证据不足", "abstain": true}
+    {"id": "delivery", "description": "Logistics and delivery problems"},
+    {"id": "refund", "description": "Refund and return problems"},
+    {"id": "technical", "description": "Software and device technical issues"},
+    {"id": "unknown", "description": "Other types or insufficient evidence", "abstain": true}
   ]
 }

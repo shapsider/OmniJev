@@ -1,121 +1,121 @@
-# Jev 快速推理与开源实现
+# Jev Fast Reasoning and Open Source Implementation
 
-Jev 机械臂演示的速度，来自状态整理、有限候选选择、合并请求和连续运动控制。模型通常在动作之间做决策，物理引擎和画面则按各自的频率更新。
+The speed of the Jev robotic arm demonstration comes from state organization, limited candidate selection, merge request, and continuous motion control. The model typically makes decisions between actions, while the physics engine and visuals update at their respective frequencies.
 
-以下核对于 **2026-09-20**。TypeSafe Jev 通过 API 提供服务；这里参考的机器人集成项目是开源的，Jev 权重并未公开。
+The following information was checked on **2026-09-20**. TypeSafe Jev is served through an API; the robot integration projects referenced here are open source, but Jev weights have not been released.
 
-## 官方接口
+## Official Interface
 
-Jev 接收 `state + questions`，返回 `answers`。程序给出候选，模型输出选择和概率，省去长篇文本生成。
+Jev receives `state + questions`, returns `answers`. The program provides candidates, the model outputs selection and probability, eliminating lengthy text generation.
 
-| 能力 | 文档说明 | 机械臂中的用途 |
+| Capability | Documentation Description | Use in Robotic Arm |
 | --- | --- | --- |
-| `Choice` | 从给定候选中选择，返回各项概率 | 选择阶段、移动方向、夹爪命令 |
-| `Noul` | 返回是/否问题的概率 | 判断语义条件，精确接触仍由代码检测 |
-| `Score` | 在描述的等级间评分 | 表达偏好，精确距离仍由代码计算 |
-| 多问题请求 | 同一状态读入一次，各问题并行评估 | 一次询问 XYZ 与夹爪等独立问题 |
+| `Choice` | Select from given candidates, return probability for each item | Selection phase, movement direction, gripper command |
+| `Noul` | Return probability for yes/no questions | Semantic condition judgment, precise contact still detected by code |
+| `Score` | Rate within described levels | Express preference, precise distance still calculated by code |
+| Multi-question request | Read once into the same state, evaluate each question in parallel | Ask independent questions such as XYZ and gripper at once |
 
-官方将训练方法称为 RLCD，目标包括结构化决策和概率校准。公开接口没有给出足以确认网络结构、参数规模或推理内核的资料。概率校准描述多次预测的统计行为，也不保证单次动作正确。
+Officially, the training method is called RLCD, with goals including structured decision-making and probability calibration. The public interface does not provide enough information to confirm network structure, parameter scale, or reasoning kernel. Probability calibration describes statistical behavior across multiple predictions and does not guarantee correctness of a single action.
 
-来源：[System One](https://docs.typesafe.ai/concepts/system-one)、[API](https://docs.typesafe.ai/api)、[模型与状态复用](https://docs.typesafe.ai/models)、[训练目标](https://docs.typesafe.ai/introduction/machine-learning-primer)。
+Source: [System One](https://docs.typesafe.ai/concepts/system-one), [API](https://docs.typesafe.ai/api), [Model and State Reuse](https://docs.typesafe.ai/models), [Training Objective](https://docs.typesafe.ai/introduction/machine-learning-primer).
 
-## 开源机械臂项目怎么用
+## How to Use the Open Source Robotic Arm Project
 
-### 先选意图，再合并动作问题
+### First select intent, then merge action questions
 
-[openroboto-ai/jev-robot-control](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_policy.py) 先请求 `intent`，再把选中的意图写入状态，第二次请求同时询问 **X、Y、Z、gripper**。两阶段有依赖，仍需串行；合并四个动作通道省去了逐轴请求。
+[openroboto-ai/jev-robot-control](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_policy.py) First request `intent`, then write the selected intent into the state; the second request simultaneously asks **X, Y, Z, gripper**. The two stages are dependent and still require serial execution; merging the four action channels eliminates sequential requests per axis.
 
-它的 Jev 分支调用 OpenRouter 实验性 decisions 接口，模型为 `typesafe/jev-1.13`。普通语言模型走另一个分支。使用这组地址时需要 OpenRouter 的相应权限，不能填进 TypeSafe 官方入口。
+Its Jev branch calls the OpenRouter experimental decisions interface, using model `typesafe/jev-1.13`. The regular language model takes another branch. When using this set of addresses, OpenRouter corresponding permissions are required and cannot be entered into the TypeSafe official entrance.
 
-### 代码计算、预演，模型选择
+### Code calculation, preview, model selection
 
-[FazalAAli/jev-robotics-demo](https://github.com/FazalAAli/jev-robotics-demo/blob/531de61a75f386b0847f5f6f809a11424a75c29b/jev_agent.py) 先计算距离与方向，提出小动作，在 MuJoCo 副本中预演；剔除不可达、碰倒物体或掉落的动作后，将预测结果写进候选描述。只有一个合法候选时直接执行。
+[FazalAAli/jev-robotics-demo](https://github.com/FazalAAli/jev-robotics-demo/blob/531de61a75f386b0847f5f6f809a11424a75c29b/jev_agent.py) First calculate distance and direction, propose small actions, simulate in MuJoCo replica; after filtering unreachable, collidable, or falling actions, write prediction results into candidate description. Only one valid candidate leads to direct execution.
 
-到达路点后，它还会合并“下一目标”“是否完成”和可选的“抓取/松开”问题。源码分别累计模型等待、预演和执行耗时，便于判断哪部分最慢。这里的状态提取、候选生成、碰撞检查和运动控制均由代码承担。
+After reaching waypoints, it also merges "next target", "whether completed", and optional "grab/release" questions. Source code separately accumulates model wait, preview, and execution time, facilitating determination of which part is slowest. State extraction, candidate generation, collision check, and motion control are all handled by code.
 
-### 画面频率与模型频率分开
+### Visual frequency and model frequency are separate
 
-openroboto 的 [物理循环](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_env.py) 步长为 `0.002 s`，约每 16 步输出一帧，即每仿真秒 500 步、31.25 帧。[运行脚本](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_run.py) 则在每轮依次请求意图、动作，再执行。整局实际用时还包含模型等待，不能从帧率推算推理速度。
+openroboto's [physical loop](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_env.py) step size is `0.002 s`, approximately one frame per 16 steps, i.e., 500 simulation steps per second and 31.25 frames. [Run script](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_run.py) sequentially requests intent and action per round and then executes. The actual runtime of the entire simulation also includes model waiting time and cannot be derived from frame rate to estimate inference speed.
 
-行知也采用这种分工。比较时需要分别看模型耗时、调用次数、仿真时间和整局实际用时。
+Xingzhi also uses this division of labor. When comparing, need to separately look at model duration, number of calls, simulation time, and actual total runtime of the whole simulation.
 
-## 三栏演示是怎样播放的
+## How the three-column demo plays
 
-openroboto 的 “Same task. Different decisions.” 页面同时展示 Jev 1.13、GPT-6 Astra、GPT-4.1 mini，并标注 **RECORDED EXECUTION**。核对时仓库 `main` 为上文固定的 `7a4ed8b`。
+openroboto's "Same task. Different decisions." page simultaneously displays Jev 1.13, GPT-6 Astra, and GPT-4.1 mini, and marks **RECORDED EXECUTION**. During verification, the repository `main` is the fixed `7a4ed8b` mentioned above.
 
-[三栏服务器](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple_app.py) 读取已有 JSON、图片和 MP4；[前端](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple.html) 按同一仿真时间轴播放。点击 Play 不会发起模型请求，播放也跳过了 API 等待。页面上的 wall time 来自完整运行记录，包含这些等待。
+[Three-column server](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple_app.py) reads existing JSON, images, and MP4; [frontend](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple.html) plays back using the same simulation time axis. Clicking Play does not initiate model requests, and playback also skips API waits. The wall time on the page comes from the full run record, including these waits.
 
-其[结果说明](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/docs/RESULTS.md)列出：
+Its [result description](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/docs/RESULTS.md) lists:
 
-| 控制器 | 仿真时间 | 实际用时，含 API 等待 | 该次结果 |
+| Controller | Simulation time | Actual runtime, including API waits | This result |
 | --- | --- | --- | --- |
-| Jev 1.13 | 36.16 秒 | 181.847 秒 | 放置成功 |
-| GPT-6 Astra | 33.92 秒 | 707.274 秒 | 放置成功 |
-| GPT-4.1 mini | 51.20 秒 | 704.253 秒 | 达到 160 轮上限 |
+| Jev 1.13 | 36.16 seconds | 181.847 seconds | Placement successful |
+| GPT-6 Astra | 33.92 seconds | 707.274 seconds | Placement successful |
+| GPT-4.1 mini | 51.20 seconds | 704.253 seconds | Reached 160 round limit |
 
-[数据清单](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple_data.py)显示，Jev 与 GPT-6 来自 `20260919-200239-715974-0`，mini 来自较早的 `20260919-193012-198478-0`。加载器检查相同初始观察、物理源码哈希、seed 0 和 160 轮上限，并记录文件来源及哈希。动作选项和指令相同，但参数及超时不同：mini 使用 35 秒 HTTP 超时，较新的配对使用 90 秒。每个模型仅一段 seed-0 记录，还不足以比较通用成功率。
+[Data list](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_triple_data.py) shows that Jev and GPT-6 come from `20260919-200239-715974-0`, while mini comes from an earlier `20260919-193012-198478-0`. The loader checks the same initial observation, physical source code hash, seed 0 and 160 round limit, and records file source and hash. Action options and commands are the same, but parameters and timeouts differ: mini uses 35-second HTTP timeout, newer pairs use 90 seconds. Each model has only one seed-0 record, which is insufficient to compare general success rate.
 
-仓库也能运行真实实验：[双模型配对脚本](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_pair.py) 用两个工作线程并发调用，[复现命令](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/reproduce.py) 的 `--controller all` 则依次运行三组。它们与只读回放是不同入口。
+The repository can also run real experiments: [dual-model pairing script](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_pair.py) uses two worker threads to call concurrently, [reproduce command](https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/reproduce.py) with `--controller all` runs the three groups sequentially. They are different entry points from just reading playback.
 
-行知借鉴了并排展示，但将实时运行和回放分开标注。还需注意，原演示的 Jev 概率来自接口，两种 GPT 的数值来自模型生成的 JSON，含义并不相同。以上结论来自公开源码和记录，本机没有重跑该项目的模型实验或轨迹验证器。
+Xingzhi borrowed and displayed side-by-side, but separates real-time operation and playback with labels. Also need to note that the Jev probability in the original demo comes from the interface, while the values for the two GPTs come from model-generated JSON, and their meanings are not the same. The above conclusions are based on public source code and records; this machine did not rerun the project's model experiments or trajectory verifier.
 
-## MiniCPM 如何直接给候选打分
+## How MiniCPM directly scores candidates
 
-本地路径参考 [SemIf direct.py](https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/direct.py)：
+Local path reference [SemIf direct.py](https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/direct.py):
 
 ```text
-状态 + 问题 + A/B/C 候选
-          ↓ 一次前向计算
-读取最后位置对应 A/B/C 的 logits
-          ↓ 候选之间做 softmax
-得到评分并选择
+Status + Question + A/B/C Candidate
+          ↓ One forward pass
+Read the value at the last position corresponding to A/B/C of logits
+          ↓ across candidates softmax
+Obtain scores and select
 ```
 
-行知只投影候选字母对应的输出权重，减少完整词表的输出计算，并检查字母在完整提示词边界处确实是单个 token。整个输入仍要经过模型，长状态和重复历史仍会增加耗时。
+Xingzhi only projects the output weights corresponding to candidate letters, reducing the output computation of the full vocabulary, and checks that letters are indeed single tokens at the boundaries of the full prompt. The entire input still needs to pass through the model, and long state and repeated history will still increase latency.
 
-这种方式得到候选之间的相对评分，尚未在我们的机械臂任务上校准。它使用 MiniCPM 权重，训练方法和服务端实现都与官方 Jev 不同。界面展示候选评分与选择，不展示隐藏思考过程。
+This method yields relative scores among candidates, which have not yet been calibrated on our robotic arm tasks. It uses MiniCPM weights, with training methods and server implementations differing from the official Jev. The interface displays candidate scores and selection, but does not show hidden reasoning processes.
 
-## M2 上的实测与输入优化
+## Real-world testing and input optimization on M2
 
-早期基准为本项目提交 [`72beb40`](https://github.com/FBddcz/embodied-jev/tree/72beb407d17fa1c0d072ad472ddc258717a1a628)，提示版本 `phase-conditions-v2`。当时每轮最多调用两次模型，发送完整观察与最近三次完整结果，使用 `use_cache=False`，没有跨问题前缀复用。
+The early baseline for this project submission [`72beb40`](https://github.com/FBddcz/embodied-jev/tree/72beb407d17fa1c0d072ad472ddc258717a1a628), hint version `phase-conditions-v2`. At that time, each round could call the model at most twice, sending the full observation and the last three full results, using `use_cache=False`, with no reuse of cross-question prefixes.
 
-M2 / 16 GB、Torch 2.6.0、Transformers 4.57.6 的 FP16 开发实验中，加载加一次预热约 **18.75–29.35 秒**，阈值为 0 时单次决策约 **1.13–5.57 秒**。后台负载不固定，这些数字仅描述当时运行。完整数据见 [验证记录](VALIDATION.md) 和 [测量汇总](results/minicpm-fp16-2026-09-20.json)。
+M2 / 16 GB, Torch 2.6.0, Transformers 4.57.6 FP16 development experiment, loading once with warm-up takes about **18.75–29.35 seconds**, single decision with threshold 0 takes about **1.13–5.57 seconds**. Background load is not fixed, these numbers only describe the running at that time. Full data see [validation record](VALIDATION.md) and [measurement summary](results/minicpm-fp16-2026-09-20.json).
 
-当前预设技能实现包含两项优化：
+The current preset skill implementation includes two optimizations:
 
-- 输入改为紧凑几何、接触关系和最近两次动作结果；v4 加入阶段实际规划的位移与夹爪命令。
-- HTTP 适配器使用 `httpx.Client` 复用连接，并记录失败请求的调用与延迟。
+- Input changed to compact geometry, contact relationships, and results of the last two actions; v4 adds displacement and gripper command from actual staged planning.
+- HTTP adapter uses `httpx.Client` to reuse connections and logs calls and latency of failed requests.
 
-紧凑输入实验仍为 **0/3 成功**，模型会重复接近而没有完成抓取。减少输入或提前停止后的较短用时，不能作为控制质量或整体加速结论。HTTP 连接复用可减少握手开销，但服务端计算、排队与网络仍需实测，见 [HTTPX 说明](https://www.python-httpx.org/advanced/clients/)。
+Tight input experiments remain **0/3 successful**, the model repeatedly approaches without completing the grasp. Shorter runtime after reducing input or stopping early cannot serve as a conclusion for control quality or overall acceleration. HTTP connection reuse can reduce handshake overhead, but server-side computation, queuing, and network still require real-world testing, see [HTTPX documentation](https://www.python-httpx.org/advanced/clients/).
 
-## 接下来值得测试的方向
+## Next directions worth testing
 
-### 状态与候选描述
+### State and Candidate Description
 
-精确几何计算交给代码，模型输入保留位置、相对位移、对齐关系、夹爪和接触事实，并说明单位与阈值。历史重点记录“执行了什么、发生了什么变化”。测试候选顺序变化，避免仅因排在前面而被选中。
+Precise geometric calculations are delegated to code, with the model retaining position, relative displacement, alignment relationships, gripper, and contact facts, and specifying units and thresholds. Historical focus records "what was executed" and "what changes occurred". Test candidate order changes to avoid selection based solely on prior positioning.
 
-这也符合 [Jev 1.13 已知局限](https://docs.typesafe.ai/model-jaggedness/jev-1.13) 的建议：由代码完成算术，过滤无关状态，减少复杂间接推理。
+This also aligns with the recommendation in [Jev 1.13 Known Limitations](https://docs.typesafe.ai/model-jaggedness/jev-1.13): let code perform arithmetic, filter irrelevant state, and reduce complex indirect reasoning.
 
-### 合并同一状态下的独立问题
+### Merge independent questions under the same state
 
-动作依赖阶段选择时，仍需先选阶段；也可以为各阶段预先准备动作问题，收到结果后采用选中阶段的答案。官方称后一种方式为 [speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)，应同时比较额外 token、预演成本和延迟。
+When selecting the action-dependency stage, you must first choose the stage; you can also pre-prepare action questions for each stage, and after receiving the results, use the selected stage's answer. The official term for the latter method is [speculative fan-out](https://docs.typesafe.ai/patterns/fan-out), which requires simultaneously comparing additional tokens, preview costs, and latency.
 
-官方各题独立评估，问题名不会进入模型，含义需要写在 `instructions` 和候选描述中。普通聊天 API 返回 JSON 不代表它采用同样的并行评估机制。
+Official independent evaluation for each question; the question name will not be passed to the model, and its meaning must be written in `instructions` and the candidate description. The standard chat API returns JSON, which does not mean it uses the same parallel evaluation mechanism.
 
-### 前缀缓存与量化
+### Prefix Cache and Quantization
 
-[SemIf shared.py](https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/shared.py) 先计算同一状态的 KV 前缀，再复制缓存、并行处理问题后缀，同时检查完整 token 前缀、后缀位置和 padding。机器人移动后状态已改变，只能复用确认未变的前缀；缓存还会占额外内存。单独打开 `use_cache` 而不复用返回值不会带来跨请求收益。
+[SemIf shared.py](https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/shared.py) First calculate the KV prefix of the same state, then copy the cache and process the problem suffix in parallel, while checking the complete token prefix, suffix position, and padding. After the robot moves, the state has changed and only the prefix confirmed unchanged can be reused; the cache will also occupy additional memory. Enabling `use_cache` separately without reusing the return value will not bring cross-request benefits.
 
-MiniCPM 官方提供 [MLX](https://huggingface.co/openbmb/MiniCPM5-2B-MLX) 和 [GGUF](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF) 量化权重。接入后需要与 FP16 比较候选概率、动作选择、延迟和整局成功率，速度数字应来自同一模型与设备。
+MiniCPM official provides [MLX](https://huggingface.co/openbmb/MiniCPM5-2B-MLX) and [GGUF](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF) quantized weights. After integration, it needs to be compared with FP16 on candidate probabilities, action selection, latency, and overall success rate; speed numbers should come from the same model and device.
 
-## 速度测试怎么记录
+## How to record speed test
 
-先在固定状态上短测，再运行完整任务。建议记录：
+First conduct a short test on the fixed state, then run the full task. Suggest recording:
 
-- 代码、提示词、实际模型版本、权重修订、精度、设备和推理库版本。
-- 完整状态、问题、候选、输入 token 数，以及单阶段/两阶段/合并请求设置。
-- 冷启动、单次选择、整轮决策、预演、执行和整局用时；报告样本数、中位数、P95，保留失败与超时。
-- GPU 同步和计时边界；MLX 需显式求值，API 端到端时间包含网络。
-- 合法输出率、任务成功率、重复动作、停止原因、调用数和 token；费用按真实计费依据计算。
+- Code, prompt, actual model version, weight revision, precision, device, and inference library version.
+- Complete state, question, candidate, input token count, and single-stage/two-stage/merged request settings.
+- Cold start, single selection, round decision, preview, execution, and total runtime; report sample count, median, P95, retain failures and timeouts.
+- GPU synchronization and timing boundary; MLX requires explicit evaluation, API end-to-end time includes network.
+- Legal output rate, task success rate, repeated actions, stop reason, call count and token; cost calculated based on actual billing.
 
-官方 [13 题示例](https://docs.typesafe.ai/cookbooks/parallel_questions)中，合并请求约 **0.27 秒**，13 次串行请求共 **2.71 秒**。它使用 `jev-1.12`、约 5.4 万字符的 GDPR 文档，每种方式重复 5 次。这是多问题合并的示例，不能直接套用为机械臂或本机 MiniCPM 的速度；若把串行请求改成客户端并发，比较结果也会变化。
+In the official [13 example questions](https://docs.typesafe.ai/cookbooks/parallel_questions), the merge request takes about **0.27 seconds**, and 13 serial requests take **2.71 seconds**. It uses `jev-1.12`, processes a GDPR document of about 54,000 characters, and repeats each method 5 times. This is an example of multi-question merging and cannot be directly applied to robotic arms or local MiniCPM speed; if serial requests are changed to client concurrency, the comparison results will also change.

@@ -52,7 +52,7 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
     page.locator('#cmp-provider-0 option[value="jev"]'),
   ).toHaveJSProperty("disabled", true);
   await page.locator("#cmp-start").click();
-  await expect(page.locator("#cmp-status")).toHaveText("运行中");
+  await expect(page.locator("#cmp-status")).toHaveText("Running");
   await expect(page.locator(".comparison-card canvas")).toHaveCount(2);
   await expect
     .poll(
@@ -65,7 +65,7 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
   expect(firstState.mode).toBe("sequential");
   expect(firstState.lanes[1].status).toBe("queued");
   await page.locator("#cmp-pause").click();
-  await expect(page.locator("#cmp-status")).toHaveText("已暂停");
+  await expect(page.locator("#cmp-status")).toHaveText("Paused");
   const pausedState = await (await page.request.get("/api/comparison")).json();
   expect(
     pausedState.lanes.filter((lane) => lane.status === "running"),
@@ -83,7 +83,7 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
     .not.toBe(checksum);
   await page.locator('.comparison-card [data-camera="home"]').first().click();
   await page.locator("#cmp-pause").click();
-  await expect(page.locator("#cmp-status")).toHaveText("全部结束", {
+  await expect(page.locator("#cmp-status")).toHaveText("All finished", {
     timeout: 90000,
   });
   const finished = await (await page.request.get("/api/comparison")).json();
@@ -103,7 +103,7 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
     ),
   ).toBe(true);
   await expect(page.locator(".lane-source").first()).toHaveText(
-    "规则选择 · 无模型概率",
+    "Rule selection · No model probability",
   );
   await page.screenshot({
     path: testInfo.outputPath("comparison-desktop.png"),
@@ -113,8 +113,8 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
     input.value = "0";
     input.dispatchEvent(new Event("input", { bubbles: true }));
   });
-  await expect(page.locator("#cmp-time-mode")).toContainText("录制回放");
-  await expect(page.locator(".lane-phase").first()).toContainText("等待决策");
+  await expect(page.locator("#cmp-time-mode")).toContainText("Record playback");
+  await expect(page.locator(".lane-phase").first()).toContainText("Waiting for decision");
   await page.waitForResponse(
     (response) =>
       response.request().method() === "GET" &&
@@ -140,7 +140,7 @@ test("two real baselines run sequentially, pause, replay by simulation time and 
   await page.locator("#cmp-replay-play").click();
   await page.locator("#cmp-live").click();
   await expect(page.locator("#cmp-time-mode")).toHaveText(
-    "实时 · 各路独立推进",
+    "Real-time · Independent advancement of each route",
   );
   await expect(page.locator("#cmp-time")).toHaveText(
     `${finished.replay.max_time.toFixed(2)} s`,
@@ -241,7 +241,7 @@ test("three real lanes cap parallel work at two, reject duplicate start and stop
   await page.locator("#comparison-open").click();
   try {
     await expect.poll(() => waitingScenes).toBe(previous.lanes.length);
-    await expect(page.locator("#cmp-status")).toHaveText("加载场景…");
+    await expect(page.locator("#cmp-status")).toHaveText("Loading scene...");
     await expect(page.locator("#cmp-start")).toBeDisabled();
     await expect(page.locator("#cmp-count")).toBeDisabled();
     await expect(page.locator("#cmp-mode")).toBeDisabled();
@@ -267,7 +267,7 @@ test("three real lanes cap parallel work at two, reject duplicate start and stop
     .evaluate((button) =>
       button.dispatchEvent(new MouseEvent("click", { bubbles: true })),
     );
-  await expect(page.locator("#cmp-status")).toHaveText("运行中");
+  await expect(page.locator("#cmp-status")).toHaveText("Running");
   await expect(page.locator(".comparison-card")).toHaveCount(3);
   expect(creates).toBe(1);
   const running = await (await page.request.get("/api/comparison")).json();
@@ -277,7 +277,7 @@ test("three real lanes cap parallel work at two, reject duplicate start and stop
   ).toBeLessThanOrEqual(2);
   expect(running.lanes[2].status).toBe("queued");
   await page.locator("#cmp-stop").click();
-  await expect(page.locator("#cmp-status")).toHaveText("已停止");
+  await expect(page.locator("#cmp-status")).toHaveText("Stopped");
   await expect(page.locator("#cmp-start")).toBeEnabled();
   await expect(page.locator("#cmp-stop")).toBeDisabled();
 });

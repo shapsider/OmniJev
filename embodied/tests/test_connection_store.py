@@ -53,7 +53,7 @@ def test_roundtrip_reads_only_own_metadata_refs_and_no_key_is_written(tmp_path):
     backend = FakeKeyring()
     store = SystemConnectionStore(tmp_path, backend=backend)
     assert store.save_connection("chat", settings())["persistent"]
-    profile = {**settings(key="profile-synthetic-secret"), "provider": "chat", "id": "ab12cd34ef56", "name": "平台一"}
+    profile = {**settings(key="profile-synthetic-secret"), "provider": "chat", "id": "ab12cd34ef56", "name": "Platform 1"}
     assert store.save_profile(profile)["persistent"]
     metadata = json.loads(store.path.read_text())
     assert metadata["format"] == FORMAT
@@ -162,7 +162,7 @@ def test_saved_connections_and_profiles_restore_after_server_restart(tmp_path):
     backend = FakeKeyring()
     with TestClient(create_app(store=SystemConnectionStore(tmp_path, backend=backend))) as client:
         saved = client.post("/api/connections", json=payload()).json()
-        profile = client.post("/api/model-profiles", json={**payload(), "name": "平台二", "url": "https://profile.invalid/v1"}).json()
+        profile = client.post("/api/model-profiles", json={**payload(), "name": "Platform 2", "url": "https://profile.invalid/v1"}).json()
         assert saved["storage"]["persistent"] and profile["storage"]["persistent"]
     with TestClient(create_app(store=SystemConnectionStore(tmp_path, backend=backend))) as client:
         connection = client.get("/api/connections").json()["chat"]
@@ -238,7 +238,7 @@ def test_interleaved_store_instances_do_not_restore_deleted_old_references(tmp_p
     old_ref = stale.metadata["connections"]["chat"]["secret_ref"]
     first.save_connection("chat", settings(key="rotated-synthetic-key", url="https://rotated.invalid/v1/chat/completions"))
     assert (SERVICE, old_ref) not in backend.values
-    profile = {**settings(key="profile-key"), "provider": "chat", "id": "ab12cd34ef56", "name": "独立平台"}
+    profile = {**settings(key="profile-key"), "provider": "chat", "id": "ab12cd34ef56", "name": "Independent platform"}
     assert stale.save_profile(profile)["persistent"]
     restored = SystemConnectionStore(tmp_path, backend=backend).load()
     assert restored["connections"]["chat"]["url"].startswith("https://rotated.invalid")

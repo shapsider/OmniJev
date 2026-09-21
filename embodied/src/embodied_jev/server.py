@@ -32,9 +32,9 @@ def _bounded_json(value, limit=8192):
     try:
         encoded = json.dumps(value, ensure_ascii=False, allow_nan=False, separators=(",", ":")).encode("utf-8")
     except (ValueError, TypeError, RecursionError):
-        raise ValueError("请提供包含有限数值的有效 JSON。") from None
+        raise ValueError("Please provide valid with limited numeric values JSON.") from None
     if len(encoded) > limit:
-        raise ValueError(f"JSON 内容不能超过 {limit // 1024} KB。")
+        raise ValueError(f"JSON Content cannot exceed {limit // 1024} KB.")
     return value
 
 
@@ -145,7 +145,7 @@ class ModelProfileInput(ConnectionInput):
     @classmethod
     def validate_name(cls, value):
         if not value.strip():
-            raise ValueError("模型配置名称不能为空。")
+            raise ValueError("Model configuration name cannot be empty.")
         return value.strip()
 
 
@@ -164,7 +164,7 @@ class DecisionProbe(ComparisonLane):
     @classmethod
     def validate_question(cls, value):
         if not value.strip():
-            raise ValueError("决策问题不能为空。")
+            raise ValueError("Decision problem cannot be empty.")
         return value.strip()
 
     @field_validator("options")
@@ -172,7 +172,7 @@ class DecisionProbe(ComparisonLane):
     def validate_options(cls, value):
         if any(not 1 <= len(key) <= 80 or key != key.strip() or any(ord(char) < 32 for char in key)
                or not description.strip() or len(description) > 1000 for key, description in value.items()):
-            raise ValueError("候选名称需为 1–80 个可见字符，描述需为 1–1000 个字符。")
+            raise ValueError("Candidate name needs to be 1–80 visible characters, description needs to be 1–1000 characters.")
         return value
 
 
@@ -196,7 +196,7 @@ def _without_keys(value, secrets):
     if isinstance(value, str):
         for key in secrets:
             if key:
-                value = value.replace(key, "[已隐藏]")
+                value = value.replace(key, "[Hidden]")
         return value
     if isinstance(value, dict):
         return {_without_keys(key, secrets): _without_keys(item, secrets) for key, item in value.items()}
@@ -208,7 +208,7 @@ def _without_keys(value, secrets):
 def _reject_saved_keys(value, secrets):
     encoded = json.dumps(value, ensure_ascii=False)
     if any(key and key in encoded for key in secrets):
-        raise HTTPException(422, "输入包含已保存的 API Key，请移除凭证后再提交。")
+        raise HTTPException(422, "Input contains saved API Key, Please remove credentials before submitting.")
 
 
 def _public_profile(profile):
@@ -221,28 +221,28 @@ def _connection_error_message(exc):
     if isinstance(exc, httpx.HTTPStatusError):
         status = exc.response.status_code
         messages = {
-            401: "认证失败（HTTP 401）：请检查 API Key 是否正确或已过期。",
-            403: "访问被拒绝（HTTP 403）：请确认账号已获 API 和所选模型的访问权限。",
-            404: "未找到接口或模型（HTTP 404）：请检查 API 地址和模型名称。",
-            429: "请求受限（HTTP 429）：请检查额度与请求频率，稍后重试。",
+            401: "Authentication failed ( HTTP 401): Please check API Key Is it correct or expired.",
+            403: "Access denied ( HTTP 403): Please confirm the account has been API access permission to the selected model",
+            404: "Interface or model not found ( HTTP 404): Please check API Address and model name.",
+            429: "Request limited ( HTTP 429): Check quota and request frequency, retry later.",
         }
         if status in messages:
             return messages[status]
         if status >= 500:
-            return f"服务暂时不可用（HTTP {status}）：请稍后重试。"
-        return f"服务拒绝了连接测试（HTTP {status}）：请检查地址、模型与 API 配置。"
+            return f"Service temporarily unavailable ( HTTP {status}): Please try again later."
+        return f"Service refused connection test ( HTTP {status}): Check address, model and API Configuration."
     if isinstance(exc, httpx.TimeoutException):
-        return "连接测试超时：请检查网络或模型服务负载，稍后重试。"
+        return "Connection test timeout: please check network or model service load and retry later."
     if isinstance(exc, httpx.RequestError):
-        return "无法连接模型服务：请检查 API 地址、网络和本地服务是否已启动。"
+        return "Unable to connect to model service: please check API Address, network, and local services are started."
     if isinstance(exc, (ValueError, KeyError, TypeError, IndexError, AttributeError, OverflowError)):
-        return "响应格式不符合决策接口：请检查所选接口类型、模型和结构化输出支持。"
-    return "连接测试未完成：请检查模型服务状态后重试。"
+        return "Response format does not match decision interface: please check selected interface type, model, and structured output support."
+    return "Connection test not completed: please check the model service status and retry."
 
 
 def _untested_connection():
     return {"status": "untested", "checked_at": None, "model": None, "latency_ms": None,
-            "message": "尚未测试。保存配置不会验证 API。"}
+            "message": "Not tested. Saving configuration will not verify API."}
 
 
 def _public_model(model, connection, *, required=True):
@@ -251,7 +251,7 @@ def _public_model(model, connection, *, required=True):
             raise ValueError("Invalid model in provider response")
         return None
     key = connection.get("key", "")
-    return model.replace(key, "[已隐藏]") if key else model
+    return model.replace(key, "[Hidden]") if key else model
 
 
 def create_app(store=None):
@@ -281,7 +281,7 @@ def create_app(store=None):
             app.state.profile_storage = restored["profile_storage"]
             app.state.storage = restored["storage"]
         except Exception:
-            app.state.storage = memory_storage("无法恢复系统保存的连接，当前使用内存模式；未读取其他凭证，也未写入明文 Key。")
+            app.state.storage = memory_storage("Unable to recover the system-saved connection, currently using memory mode; no other credentials read, nor plaintext written Key.")
     app.state.verifications = {}
     app.state.connection_test_ids = {}
     app.state.connection_test_slots = threading.BoundedSemaphore(2)
@@ -303,16 +303,16 @@ def create_app(store=None):
         with app.state.comparison_lock:
             comparison = app.state.comparison
             if comparison is None:
-                raise HTTPException(404, "尚未创建模型比较。")
+                raise HTTPException(404, "Model comparison not yet created.")
             if comparison.id != comparison_id:
-                raise HTTPException(409, "比较已更新，请刷新比较状态后再操作。")
+                raise HTTPException(409, "Compare updated, please refresh comparison status before operating.")
             return comparison
 
     def check_episode(expected, session):
         if expected is not None and expected != session.id:
             logger.info("stale_episode_request episode_id=%s", session.id,
                         extra={"event": "stale_episode_request", "episode_id": session.id})
-            raise HTTPException(409, "实验已被其他页面重置，请刷新当前实验状态后再操作。")
+            raise HTTPException(409, "The experiment has been reset by other pages; please refresh the current experiment state before operating.")
 
     def connection_snapshot(provider):
         item = app.state.connections.get(provider, environment_connection(provider))
@@ -338,7 +338,7 @@ def create_app(store=None):
                 storage = (app.state.store.save_connection(provider, value) if kind == "connection"
                            else app.state.store.save_profile(value))
             except Exception:
-                storage = memory_storage("安全存储未完成，本次修改仅保留内存；未写入明文 Key，重启后本次修改不会恢复。")
+                storage = memory_storage("Security storage not completed, this modification retains only memory; not written in plaintext Key, After restart, this change will not be restored.")
         with app.state.lock:
             app.state.storage = storage
             if kind == "connection":
@@ -364,7 +364,7 @@ def create_app(store=None):
 
     @app.get("/api/config")
     def config():
-        return {"name": "EmbodiedJev", "chinese_name": "行知", "version": "0.1.0", "tasks": TASKS,
+        return {"name": "EmbodiedJev", "chinese_name": "Xingzhi", "version": "0.1.0", "tasks": TASKS,
                 "providers": configurations(app.state.connections), "robot": "Franka Panda", "physics": "MuJoCo 3.13"}
 
     @app.get("/api/connections")
@@ -411,7 +411,7 @@ def create_app(store=None):
             with app.state.lock:
                 previous = app.state.model_profiles.get(value.id) if value.id else None
                 if value.id and previous is None:
-                    raise HTTPException(404, "未找到该模型配置，请刷新配置列表。")
+                    raise HTTPException(404, "Model configuration not found, please refresh the configuration list.")
                 profile = {**_connection_settings(value, previous or {}), "id": value.id or uuid.uuid4().hex[:12],
                            "name": value.name, "provider": value.provider}
                 _reject_saved_keys({key: profile[key] for key in ("url", "model", "name")},
@@ -423,7 +423,7 @@ def create_app(store=None):
     @app.post("/api/decision/probe")
     def decision_probe(value: DecisionProbe):
         if not app.state.connection_test_slots.acquire(blocking=False):
-            raise HTTPException(429, "已有两个连接或决策测试正在进行，请稍后重试。", headers={"Retry-After": "1"})
+            raise HTTPException(429, "Two connection or decision tests are already running; please try again later.", headers={"Retry-After": "1"})
         policy = None
         try:
             with app.state.lock:
@@ -442,13 +442,13 @@ def create_app(store=None):
                 decision = policy.choose(value.observation, value.question, value.options, next(iter(value.options)), [])
                 result = {"provider": value.provider, "profile_id": value.profile_id, "model": policy.model,
                           "decision": decision, "decision_input": policy.last_input,
-                          "message": "规则基线固定选择第一个候选；未调用模型，也未验证语义。" if value.provider == "baseline"
-                          else "本次只进行了候选决策，没有执行机器人动作。"}
+                          "message": "The rule baseline always selects the first candidate; no model is called and semantics are not verified." if value.provider == "baseline"
+                          else "Only candidate decisions were made this time, no robot actions were executed."}
                 logger.info("decision_probe_finished provider=%s", value.provider,
                             extra={"event": "decision_probe_finished", "provider": value.provider})
                 return public_result(result, secrets)
             except Exception as exc:
-                raise HTTPException(502, _connection_error_message(exc).replace("连接测试", "决策测试")) from None
+                raise HTTPException(502, _connection_error_message(exc).replace("Connection test", "Decision test")) from None
         finally:
             try:
                 if policy is not None:
@@ -480,7 +480,7 @@ def create_app(store=None):
         policy = None
         try:
             if not connection["url"] or not connection["model"] or (provider in {"jev", "claude"} and not connection["key"]):
-                message = "请先填写并保存 API 地址、模型和所需的 API Key，再测试连接。"
+                message = "Please fill in and save the API address, model, and required API Key before testing the connection."
                 raise ValueError("Missing connection configuration")
             policy = DecisionPolicy(provider, connection)
             result = policy.choose({"purpose": "Connection test; no robot command will execute"},
@@ -491,7 +491,7 @@ def create_app(store=None):
                 raise ValueError("Invalid connection test latency")
             verification = {"status": "passed", "checked_at": datetime.now(timezone.utc).isoformat(),
                             "model": model, "latency_ms": round(latency),
-                            "message": "连接测试通过，模型已返回有效候选动作；机器人未执行动作。"}
+                            "message": "Connection test passed, model returned valid candidate actions; robot did not execute actions."}
         except Exception as exc:
             message = message or _connection_error_message(exc)
             verification = {"status": "failed", "checked_at": datetime.now(timezone.utc).isoformat(),
@@ -504,7 +504,7 @@ def create_app(store=None):
             if app.state.connection_test_ids[provider] != test_id or connection_snapshot(provider) != connection:
                 logger.info("connection_test_superseded provider=%s", provider,
                             extra={"event": "connection_test_superseded", "provider": provider})
-                raise HTTPException(409, "配置或连接测试已更新，此次结果已丢弃，请查看当前状态后重试。")
+                raise HTTPException(409, "Configuration or connection test updated, this result discarded, please check current status then retry.")
             app.state.verifications[provider] = {"connection": connection, "result": verification}
         logger.info("connection_test_finished provider=%s status=%s latency_ms=%s",
                     provider, verification["status"], verification["latency_ms"],
@@ -520,7 +520,7 @@ def create_app(store=None):
         if not app.state.connection_test_slots.acquire(blocking=False):
             logger.info("connection_test_busy provider=%s", provider,
                         extra={"event": "connection_test_busy", "provider": provider})
-            raise HTTPException(429, "已有两个连接测试正在进行，请等待其中一个完成后重试。", headers={"Retry-After": "1"})
+            raise HTTPException(429, "Two connection tests are currently running, please wait for one to complete before retrying.", headers={"Retry-After": "1"})
         try:
             return run_connection_test(provider)
         finally:
@@ -541,12 +541,12 @@ def create_app(store=None):
         session = current_session()
         check_episode(episode_id, session)
         if view is not None and hasattr(session, "camera_views") and view not in session.camera_views:
-            raise HTTPException(404, "该实验未启用所选相机视角")
+            raise HTTPException(404, "Selected camera view not enabled for this experiment")
         snapshot = session.camera_snapshot()
         if not snapshot:
-            raise HTTPException(404, "当前实验没有相机观测，请先启用相机。")
+            raise HTTPException(404, "Current experiment has no camera observations, please enable camera first.")
         if capture_id is not None and str(snapshot["metadata"]["capture_id"]) != capture_id:
-            raise HTTPException(409, "相机帧已更新，请读取最新观测。")
+            raise HTTPException(409, "Camera frame updated, please read latest observations.")
         return snapshot
 
     @app.get("/api/perception")
@@ -565,7 +565,7 @@ def create_app(store=None):
         # authoritative: never substitute its top-level image for a missing view.
         selected = snapshot if views is None and view == "external" else (views or {}).get(view)
         if selected is None:
-            raise HTTPException(404, "该感知帧没有所选相机视角")
+            raise HTTPException(404, "Perception frame does not have selected camera view")
         data = selected["rgb"] if image_name == "rgb" else selected.get("depth_display", selected["depth"])
         return Response(data, media_type="image/png", headers={"Cache-Control": "no-store"})
 
@@ -649,11 +649,11 @@ def create_app(store=None):
             previous = app.state.comparison
             expected = setup.expected_comparison_id
             if (previous is not None and expected != previous.id) or (previous is None and expected is not None):
-                raise HTTPException(409, "比较已更新，请刷新比较状态后再创建。")
+                raise HTTPException(409, "Comparison updated, please refresh comparison status before creating.")
             if previous is not None:
                 previous.stop()
                 if previous.has_live_workers():
-                    raise HTTPException(409, "比较已停止，仍在等待上一轮请求结束，请稍后重建。")
+                    raise HTTPException(409, "Comparison stopped, still waiting for previous request to end, please try later.")
             try:
                 comparison = Comparison(lanes, **setup.model_dump(exclude={"lanes", "expected_comparison_id"}), secrets=secrets)
             except ValueError as exc:
@@ -666,9 +666,9 @@ def create_app(store=None):
         with app.state.comparison_lock:
             comparison = app.state.comparison
             if comparison is None:
-                raise HTTPException(404, "尚未创建模型比较。")
+                raise HTTPException(404, "Model comparison not yet created.")
             if comparison.id != options.comparison_id:
-                raise HTTPException(409, "比较已更新，请刷新比较状态后再操作。")
+                raise HTTPException(409, "Compare updated, please refresh comparison status before operating.")
             try:
                 getattr(comparison, action)()
             except ValueError as exc:

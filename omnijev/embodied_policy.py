@@ -13,7 +13,7 @@ import time
 from . import core
 
 PROVIDERS = ('omnijev', 'omni_direct', 'omni_reasoning', 'omni_adaptive')
-NAMES = ('OmniJev · 快速决策', 'Direct · 普通短答案', 'Reasoning · 有限预算推理', 'Adaptive · 实验性按需推理')
+NAMES = ('OmniJev · Fast decision', 'Direct · Direct short answer', 'Reasoning · Budgeted reasoning', 'Adaptive · Experimental on-demand reasoning')
 
 
 def connection():

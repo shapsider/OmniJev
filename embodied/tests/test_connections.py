@@ -26,7 +26,7 @@ def test_connection_save_redacts_key_and_does_not_call_provider(monkeypatch):
         assert saved["url"] == "https://example.invalid/v1/chat/completions"
         assert saved["verification"] == {
             "status": "untested", "checked_at": None, "model": None, "latency_ms": None,
-            "message": "尚未测试。保存配置不会验证 API。"}
+            "message": "Not tested. Saving configuration will not verify API."}
         assert client.post("/api/reset", json={"provider": "chat", "max_cycles": 1}).status_code == 200
         # A key is never implicitly reused at a different address.
         client.post("/api/connections", json={**payload, "url": "https://other.invalid/v1", "api_key": ""})
@@ -256,7 +256,7 @@ def test_missing_connection_is_reported_without_external_call(monkeypatch):
     with TestClient(create_app()) as client:
         response = client.post("/api/connections/jev/test")
         assert response.status_code == 502
-        assert "先填写并保存" in response.json()["detail"]
+        assert "fill in and save" in response.json()["detail"]
         assert client.get("/api/connections").json()["jev"]["verification"]["status"] == "failed"
 
 

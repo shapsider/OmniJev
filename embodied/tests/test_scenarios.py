@@ -19,7 +19,7 @@ def test_normalized_defaults_preserve_seeded_scene_and_template_goal(task):
     np.testing.assert_array_equal(target, normalized_target)
     np.testing.assert_array_equal(source, normalized_source)
     np.testing.assert_array_equal(source[:2], np.array([.43, -.17]) + np.random.default_rng(7).uniform(-.025, .025, 2))
-    renamed = RobotWorld(task, 7, {"name": "我的场景"})
+    renamed = RobotWorld(task, 7, {"name": "My scene"})
     original = RobotWorld(task, 7)
     assert renamed.scene_hash == original.scene_hash
     assert renamed.observe()["task"] == TASKS[task]["goal"]
@@ -99,14 +99,14 @@ def test_endpoint_precheck_rejects_gripper_collision_even_when_objects_are_separ
     # The cube clears the wall, but an open finger at the grasp pose intersects it.
     config = {"source_xy": [.43, -.05]}
     validate_scene_config("barrier", config)
-    with pytest.raises(ValueError, match="关键位姿.*相交"):
+    with pytest.raises(ValueError, match="key poses.*intersect"):
         RobotWorld("barrier", scene_config=config)
 
 
 def test_presets_metadata_and_clones_do_not_mutate_builtin_or_live_geometry():
     defaults = copy.deepcopy(SCENE_DEFAULTS)
     tasks = copy.deepcopy(TASKS)
-    config = {"name": "偏右目标", "source_xy": [.42, -.18], "target_xy": [.46, .20]}
+    config = {"name": "Right-offset target", "source_xy": [.42, -.18], "target_xy": [.46, .20]}
     world = RobotWorld("transfer", scene_config=config)
     config["source_xy"][0] = .5
     assert world.scene_config["source_xy"] == [.42, -.18]
@@ -120,11 +120,11 @@ def test_presets_metadata_and_clones_do_not_mutate_builtin_or_live_geometry():
     assert world.scene_config["source_xy"] == [.42, -.18]
     assert world.target[0] == .46 and world.source[0] == .42
     assert SCENE_DEFAULTS == defaults and TASKS == tasks
-    assert world.scene()["scene_name"] == "偏右目标"
+    assert world.scene()["scene_name"] == "Right-offset target"
 
 
 def test_custom_scene_completes_a_real_contact_based_baseline_episode():
-    config = {"name": "移动源与目标", "source_xy": [.42, -.18], "target_xy": [.46, .20]}
+    config = {"name": "Move source and target", "source_xy": [.42, -.18], "target_xy": [.46, .20]}
     session = run_headless("transfer", seed=7, scene_config=config, max_cycles=12)
     assert session.status == "completed", session.message
     assert session.world.success() and session.world.unsafe_contacts == 0

@@ -224,8 +224,8 @@ def test_public_summaries_and_text_inputs_cannot_echo_key_and_input_is_snapshot(
                                image={**FRAMES[0], "capture_id": f"frame-{SECRET}"})
     assert chosen.last_input["state"]["tcp"][0] == .4
     assert chosen.last_input["decision"]["criteria"]["x_pos"] == OPTIONS["x_pos"]
-    assert answer["intent"] == "Move [已隐藏]"
-    assert answer["visual_evidence"] == "Cube near fingers [已隐藏]"
+    assert answer["intent"] == "Move [Hidden]"
+    assert answer["visual_evidence"] == "Cube near fingers [Hidden]"
     assert SECRET not in json.dumps({"answer": answer, "input": chosen.last_input, "model": chosen.model})
     chosen.close()
 

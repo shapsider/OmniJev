@@ -1,23 +1,23 @@
-# 🙏 参考映射
+# 🙏 Reference Mapping
 
-感谢这些开源项目提供的思路与实践。以下为架构参考，整理于 **2026-09-20**；行知的实现与实验结果独立记录。
+Thanks to these open-source projects for their ideas and practices. The following are architecture references, organized on **2026-09-20**; Xingzhi's implementation and experimental results are recorded separately.
 
-| 参考项目 | 借鉴点 | 行知中的实现 |
+| Reference Project | Borrowed Insight | Implementation in Xingzhi |
 | --- | --- | --- |
-| [openroboto / jev-robot-control](https://github.com/openroboto-ai/jev-robot-control) | 意图与动作分层、多模型展示 | 两阶段候选选择、独立对比与轨迹回放 |
-| [jev-robotics-demo](https://github.com/FazalAAli/jev-robotics-demo) | 执行前仿真预演 | 在 MuJoCo 副本中检查接触与抓取状态 |
-| [jev_fsd](https://github.com/BrendanH18/jev_fsd) | 程序生成候选，模型做选择 | 有限动作菜单与结果校验 |
-| [jev-askable-arm](https://github.com/TarunTomar122/jev-askable-arm) | 机器人动作基元 | 有界目标位姿与 IK 执行 |
-| [jev-drone](https://github.com/RomanSlack/jev-drone) | 感知、决策与控制分离 | 可选视觉观察、有限候选决策与独立控制循环 |
-| [jevduck](https://github.com/amazedsaint/jevduck) | 可检查、可控制的实验 | 暂停、停止、结果反馈与日志 |
-| [openarm-jev-lab](https://github.com/tripathiarpan20/openarm-jev-lab) | 仿真与界面分离、LIBERO-PRO 实验 | 后台实验与浏览器工作台；本项目尚未接入 LIBERO |
-| [SemIf](https://github.com/TheoLeeCJ/SemIf) | 有限候选概率读出 | MiniCPM5-2B 本地决策适配 |
-| [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) | Franka Panda 模型与资产 | 机器人模型，保留上游许可与来源 |
+| [openroboto / jev-robot-control](https://github.com/openroboto-ai/jev-robot-control) | Layered intent and action, multi-model display | Two-stage candidate selection, independent comparison and trajectory replay |
+| [jev-robotics-demo](https://github.com/FazalAAli/jev-robotics-demo) | Pre-execution simulation preview | Checks contact and grasp status in MuJoCo fork |
+| [jev_fsd](https://github.com/BrendanH18/jev_fsd) | Program-generated candidates, model selection | Limited action menu and result verification |
+| [jev-askable-arm](https://github.com/TarunTomar122/jev-askable-arm) | Robot action primitives | Bounded target poses and IK execution |
+| [jev-drone](https://github.com/RomanSlack/jev-drone) | Perception, decision, and control separation | Optional visual observations, finite-choice decisions, independent control loop |
+| [jevduck](https://github.com/amazedsaint/jevduck) | Checkable, controllable experiments | Pause, stop, result feedback, and logging |
+| [openarm-jev-lab](https://github.com/tripathiarpan20/openarm-jev-lab) | Simulation and interface separation, LIBERO-PRO experiments | Backend experiments and browser workbench; this project has not yet integrated LIBERO |
+| [SemIf](https://github.com/TheoLeeCJ/SemIf) | Limited candidate probability readout | MiniCPM5-2B local decision adaptation |
+| [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) | Franka Panda models and assets | Robot models, preserving upstream license and source |
 
-🎬 **演示参考**：[Dmytro Hrybov 的 MuJoCo 演示](https://x.com/dimentary/status/2101018760371171420)及[后续说明](https://x.com/dimentary/status/2101018934095003720)，展示了结构化几何、接触状态与两阶段决策。
+🎬 **Demo Reference**: [Dmytro Hrybov's MuJoCo demo](https://x.com/dimentary/status/2101018760371171420) and [follow-up explanation](https://x.com/dimentary/status/2101018934095003720), showcasing structured geometry, contact states, and two-stage decision-making.
 
-SemIf 已公开支持 MiniCPM5-2B；它是独立开源项目。行知的本地 MiniCPM 模式使用 MiniCPM 权重，官方 Jev 则通过 [TypeSafe API](https://docs.typesafe.ai/api) 接入。候选概率不等同于物理任务成功率。
+SemIf has publicly supported MiniCPM5-2B; it is an independent open-source project. Xingzhi's local MiniCPM mode uses MiniCPM weights, while the official Jev accesses via [TypeSafe API](https://docs.typesafe.ai/api). Candidate probability does not equal physical task success rate.
 
-本次查阅的公开对比中，OpenRoboto 比较 Jev 与 GPT，jev-robotics-demo 比较 Jev 与 Claude；[openarm-jev-lab](https://github.com/tripathiarpan20/openarm-jev-lab/blob/c89a73f6ff10094acc3d27e45ef91a31791eadb2/README.md#what-improved)比较同一 Jev 控制器的动作菜单改进。虽然它已经运行 LIBERO-PRO，这些资料并未报告与 OpenVLA、SmolVLA 或 π0 的同条件实测对比。不能据此声称 Jev 优于 VLA。
+In the public comparisons reviewed, OpenRoboto compares Jev with GPT, jev-robotics-demo compares Jev with Claude; [openarm-jev-lab](https://github.com/tripathiarpan20/openarm-jev-lab/blob/c89a73f6ff10094acc3d27e45ef91a31791eadb2/README.md#what-improved) compares action menu improvements for the same Jev controller. Although it runs LIBERO-PRO, these materials do not report same-condition tests against OpenVLA, SmolVLA, or π0. Cannot claim Jev outperforms VLA based on this.
 
-进一步阅读：[👁️ 视觉模式](VISION.md) · [⚡ 快速推理与源码分析](FAST_INFERENCE.md) · [🆚 模型对比](COMPARISON.md) · [📊 实测结果](VALIDATION.md) · [📄 第三方许可](../THIRD_PARTY_NOTICES.md)
+Further reading: [👁️ Visual Mode](VISION.md) · [⚡ Fast Inference and Source Analysis](FAST_INFERENCE.md) · [🆚 Model Comparison](COMPARISON.md) · [📊 Validation Results](VALIDATION.md) · [📄 Third-Party Licenses](../THIRD_PARTY_NOTICES.md)

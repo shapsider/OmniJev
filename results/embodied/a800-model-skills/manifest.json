@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T08:54:58.037219+00:00",
+  "protocol": {
+    "providers": [
+      "omnijev"
+    ],
+    "tasks": [
+      "transfer",
+      "stack",
+      "barrier"
+    ],
+    "seeds": [
+      0
+    ],
+    "observation": "privileged",
+    "control": "skills",
+    "max_cycles": 20,
+    "timeout": 600,
+    "reasoning_tokens": 4096,
+    "intervention": null,
+    "model": "omnijev-nemotron",
+    "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+    "threshold": 0,
+    "shuffle_candidates": true,
+    "project_revision": "89a5cdad155963d7004e2b184145112d4d3ca42e",
+    "python_version": "3.12.1",
+    "platform": "Linux-5.4.250-2-velinux1u1-amd64-x86_64-with-glibc2.35",
+    "adapter_sha256": "0df7054315db3591a96ffb6187486e5482d2fcb78af1056cfd9998ebd4f04344",
+    "timing": "session wall time; includes policy, previews and physics; no model loading; natural backend cache"
+  }
+}

@@ -1,12 +1,12 @@
-# OmniJev 本机小规模实验报告
+# OmniJev Small-scale experiment report
 
-日期：2026-09-19。硬件：Apple M5 Pro，48 GB 统一内存。全部使用已有本地权重，无训练、无新增权重下载。
+Date: 2026-09-19.Hardware: Apple M5 Pro, 48 GB Unified memory. All using existing local weights, no training, no new weight downloads.
 
-## 结果
+## Result
 
-基础集包含 17 个文本/图像问题；补充集包含 9 个诊断。每个模型、每种方法各运行两轮。部分问题共享媒体，不是独立样本；重复运行只用于诊断稳定性。音频能力探针单独计数。
+The basic package contains 17 text/Image question; supplement set includes 9 diagnosis. Each model and each method runs two rounds. Some questions share media and are not independent samples; repeated runs are only for diagnosing stability. Audio capability probes are counted separately.
 
-| 模型/集合 | 方法 | 正确/有效请求 | API 错误 | 请求耗时中位数 |
+| Model/Dataset | Method | Correct/Valid request | API Error | Median request latency |
 |---|---|---:|---:|---:|
 | nemotron-v1 | letter | 34/34 | 4 | 0.564 s |
 | nemotron-v1 | json | 34/34 | 4 | 0.687 s |
@@ -17,37 +17,37 @@
 | qwen-stress | letter | 18/18 | 0 | 0.594 s |
 | qwen-stress | json | 18/18 | 0 | 0.908 s |
 
-耗时从发送 API 请求计到收到完整响应，包含服务端媒体处理和推理，不包含模型加载及客户端媒体编码。请求随机交错，运行前热身；缓存采用后端默认策略，没有隔离冷/热缓存。不能从这些数字推导独立方法的加速比或统计显著性。
+Time from sending API Request to completion, including server-side media processing and inference, excluding model loading and client-side media encoding. Requests are interleaved randomly, with warm-up before execution; cache uses backend default policy, no isolation for cold/Hot cache. Cannot derive acceleration ratio or statistical significance of independent methods from these numbers.
 
-## 雏形已实现
+## Prototype implemented
 
-- 文本、单图、多图有序帧输入；运行时传入 2–26 个选项。
-- 非思考短标签输出，以及受 JSON Schema 约束的 JSON 对照。
-- 读取首个答案位置的规范候选字母分数。候选不全时返回 null，不补零；只给相对分数，不声称校准。
-- 严格候选校验、完整响应留存、固定种子、fixture 哈希、错误记录和可重复运行脚本。
+- Text, single-image, multi-image sequential frame input; passed at runtime 2–26 Option.
+- Non-thinking short-label output, plus a JSON Schema constrained JSON baseline.
+- Read scores for canonical candidate letters at the first answer position. If the candidate set is incomplete, return null, No zero padding; only relative scores, no claim of calibration.
+- Strict candidate validation, full response retention, fixed seed, fixture Hash, error log, and repeatable run script.
 
-## 音频未接通：已确认的限制
+## Audio not connected: confirmed restriction
 
-Bionic 兼容接口拒绝 input_audio（HTTP 400）。使用附带 llama.cpp 2.41.0 直接加载同一权重和 mmproj 后，音频仍被拒绝（HTTP 500）。服务 /props 明确返回 vision=true、video=true、audio=false，证据见 native-props.json 和 nemotron-native-audio.jsonl。
+Bionic compatible interface rejected input_audio(HTTP 400).Using the included llama.cpp 2.41.0 Directly load the same weight and mmproj After, the audio is still rejected ( HTTP 500).Service /props Clearly return vision=true, video=true, audio=false, Evidence see native-props.json and nemotron-native-audio.jsonl.
 
-此结果只说明当前本机导出文件与运行时组合无法进行原生音频推理，并不否定 NVIDIA 原始 Omni 模型的音频能力。没有用语音转录替代，也没有把拒绝请求的耗时纳入有效推理速度。下阶段需验证包含音频编码器的兼容导出与运行时；不要仅凭 Omni 名称判定能力。
+This result only indicates that the measured exported file and runtime combination cannot perform native audio inference, and does not negate NVIDIA Original Omni model audio capability. Speech transcription was not substituted, and rejected-request latency was not included in effective inference speed. Native audio support still requires validation of exports containing an audio encoder and a compatible runtime.
 
-## 调试过程与可审计性
+## Debugging process and auditability
 
-- nemotron-pilot.jsonl 是第一次探针：max_tokens=1 被隐藏结构 token 消耗，短标签全部截断。保留原始记录，但不纳入有效方法比较。
-- 有效运行把短标签预算改为 4、JSON 预算为 32，reasoning_effort=none。这仍是短标签生成，不是零生成内部 forward。
-- Nemotron 基础轮请求 top_logprobs=20；MLX 报错上限为 10 后，后续运行及当前代码统一为 10。只影响返回的候选覆盖范围，不假设缺失项为零。
-- 初轮概率提取把空格变体视为歧义。现有汇总只读取规范裸字母 token，已从原始响应重新计算，原始文件不覆盖。
-- 后期运行逐条保存请求配置和代码哈希；早期运行用上述说明记录配置差异。模型文件路径、大小、修改时间和小配置哈希在 environment.json 中；未计算完整权重哈希。
+- nemotron-pilot.jsonl is the first probe: max_tokens=1 Hidden structure token Consumption, short tags all truncated. Retain original records, but do not include in valid method comparison.
+- Effectively run changes short tags to budget 4, JSON Budget is 32, reasoning_effort=none.This is still short-label generation, not internal zero-generation forward.
+- Nemotron The initial run requested top_logprobs=20; MLX Error upper limit is 10 After that, subsequent runs and current code are unified as 10.Only affects the coverage range of the returned candidates, without assuming missing items are zero.
+- Initial round probability extraction treats space variants as ambiguous. Existing summary only reads bare letters from the specification. token, Recomputed from the original response; original files are not overwritten.
+- Later runs save request configurations and code hashes individually; the notes above document configuration differences in earlier runs. Model file paths, sizes, modification times, and hashes of small configuration files are in environment.json ; full weight hashes were not computed.
 
-## 对课题的判断
+## Assessment of the research topic
 
-工程可行：两个本地模型都能作为免训练的视觉/文本有限选项决策器。补充诊断检查了选项置换、候选外颜色、空白图像、不可见声音属性和双帧顺序。
+Engineering feasibility: both local models can serve as training-free visual/and text finite-choice decision makers. Additional diagnostics checked option permutations, out-of-candidate colors, blank images, invisible audio attributes, and two-frame order.
 
-研究优势尚未证实：这些程序生成任务太简单，准确率饱和；没有足够错误样本评价拒答、校准或选择性风险。当前分数很高不说明可靠性很高。没有实施自适应感知/推理策略、共享前缀并行引擎，也没有与同一提示的单 token 原始 forward 做对照。
+Research advantages remain unproven: these programmatically generated tasks are too simple and accuracy is saturated; there are too few errors to evaluate abstention, calibration, or selective risk. High scores here do not imply high reliability. No adaptive perception/reasoning policy or shared-prefix parallel engine was implemented, and no comparison was made with a single token Original forward using the same prompt.
 
-建议继续验证音频执行通路，再引入真实、有歧义、跨模态冲突的测试集。只有在相同错误率和覆盖率下，计入所有检查/回退成本后仍有收益，才能支持方法研究。
+Continue validating the audio execution path, then introduce realistic, ambiguous, and cross-modal conflicting test sets. Method research can be supported only if gains remain at the same error rate and coverage after accounting for all checking/and fallback costs.
 
-## 查看和复现
+## Viewing and reproduction
 
-在项目根目录运行 README 中的命令。原始结果为 results/*.jsonl；可用 scripts/summarize.py 从原始响应重新汇总，scripts/write_report.py 生成本报告。
+Run the commands in the project root from README . Original results are in results/*.jsonl; Use scripts/summarize.py to recompute summaries from the original responses, and scripts/write_report.py to generate this report.

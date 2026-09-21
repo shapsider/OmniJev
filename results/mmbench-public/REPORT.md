@@ -1,31 +1,31 @@
-# MMBench DEV EN pilot 本机公开数据评测
+# MMBench DEV EN pilot Public data evaluation
 
-完成 240/240 次请求；固定分层样本 60 题。
+Completed 240/240 requests; fixed stratified sampling of 60 items.
 
-模型：Nemotron 3 Nano Omni Q4_K_M；无训练；seed=20260920。
-抽样协议：3 canonical (index < 1000000) questions per category, seed fixed; one option order only. NOT official circular evaluation.
-所有方法使用相同图像与题目。OmniJev 调用现有 core.decide；direct 使用相同提示词和 4-token 上限，但不请求 logprobs。
-reasoning 使用相同提示词，reasoning_effort=medium，temperature=0.6、top_p=0.95，总输出上限 20480 tokens。实测 Bionic 约在 8192 个思考 token 后可插入强制回答提示；这不是无限预算或完整 NVIDIA vLLM 配置。JSON 使用现有受约束输出实现，上限 32 tokens。
-主正确率允许从最终输出末行明确解析选项；严格正确率要求完全遵守返回格式。原始记录的 correct 保持严格口径，未改写。
+Model: Nemotron 3 Nano Omni Q4_K_M; no training; seed=20260920.
+Sampling protocol: 3 canonical (index < 1000000) questions per category, seed fixed; one option order only. NOT official circular evaluation.
+All methods use the same image and question. OmniJev calls existing core.decide; direct uses the same prompt and 4-token limit, but does not request logprobs.
+reasoning Using the same prompt, reasoning_effort=medium, temperature=0.6, top_p=0.95, total output limit 20480 tokens. In practice, Bionic can insert a forced answer prompt after about 8192 reasoning tokens; this is not an unlimited budget or full NVIDIA vLLM configuration. JSON uses existing constrained output implementation, limit 32 tokens.
+Main accuracy allows explicit parsing of options from the final output line; strict accuracy requires strict adherence to the return format. The original record's correct remains strictly defined, unchanged.
 
-| 方法 | 题数 | 答案正确率 | 严格正确率 | P50 秒 | P95 秒 | 平均生成 tokens | 平均总 tokens | 严格无效 / 截断 |
+| Method | Questions | Answer Accuracy | Strict Accuracy | P50 sec | P95 sec | Avg Generated Tokens | Avg Total Tokens | Strict Invalid / Truncated |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | omnijev | 60 | 90.00% | 90.00% | 0.611 | 1.186 | 3.0 | 366.6 | 0 / 0 |
 | direct | 60 | 90.00% | 90.00% | 0.580 | 1.229 | 3.0 | 366.6 | 0 / 0 |
 | json | 60 | 90.00% | 90.00% | 0.860 | 1.344 | 11.0 | 381.6 | 0 / 0 |
 | reasoning | 60 | 90.00% | 90.00% | 6.109 | 36.923 | 719.5 | 1083.0 | 0 / 0 |
 
-## 配对准确率差：OmniJev − 基线
+## Paired accuracy difference: OmniJev − Baseline
 
-| 基线 | 配对题数 | 差值百分点 | 保守 95% 区间 | 非劣检验 |
+| Baseline | Paired questions | Difference in percentage points | Conservative 95% interval | Non-inferiority test |
 |---|---:|---:|---|---|
-| direct | 60 | 0.00 | [-7.04, 7.04] | 未证实 2pp 非劣 |
-| json | 60 | 0.00 | [-7.04, 7.04] | 未证实 2pp 非劣 |
-| reasoning | 60 | 0.00 | [-12.58, 12.58] | 未证实 2pp 非劣 |
+| direct | 60 | 0.00 | [-7.04, 7.04] | Unconfirmed 2pp non-inferior |
+| json | 60 | 0.00 | [-7.04, 7.04] | Unconfirmed 2pp non-inferior |
+| reasoning | 60 | 0.00 | [-12.58, 12.58] | Unconfirmed 2pp non-inferior |
 
-## 各类别正确题数
+## Number of correct questions by category
 
-| 类别 | OmniJev | Direct | JSON | Reasoning |
+| Category | OmniJev | Direct | JSON | Reasoning |
 |---|---:|---:|---:|---:|
 | action_recognition | 3/3 | 3/3 | 3/3 | 3/3 |
 | attribute_comparison | 3/3 | 3/3 | 3/3 | 2/3 |
@@ -48,22 +48,22 @@ reasoning 使用相同提示词，reasoning_effort=medium，temperature=0.6、to
 | spatial_relationship | 2/3 | 2/3 | 2/3 | 2/3 |
 | structuralized_imagetext_understanding | 3/3 | 3/3 | 3/3 | 3/3 |
 
-## 解释范围
+## Explanation scope
 
-- 这是公开数据的固定先导子集，不是官方全量榜单成绩。
-- 准确率分母包含所有请求；无法明确解析、超时和无最终答案的截断均不会被剔除。严格格式不合规与答案错误分开报告。
-- 完成耗时从客户端开始编码媒体到解析回答；包含 HTTP，排除模型加载；不是 TTFT。
-- 服务自然缓存开启，请求全局随机排序。没有清空缓存，因此不能把结果称作冷启动延迟。
-- completion_tokens 包含服务报告的思考 token；不得再把 reasoning_tokens 相加。
-- token 统计采用后端口径；不能据此断言视觉编码计算量或能耗按相同比例下降。
-- summary.json 的 usage_coverage 记录用量报告覆盖数。接口错误未报告的 token 成本未知，不会虚构为零。
-- reasoning_budget_forced 单独统计后端插入强制回答提示的次数；它与 finish_reason=length 的截断不同，即使 finish_reason=stop 也可能已触发内部思考预算。
-- 图像选择题和因果视频回放均不证明音视频联合能力、持续流式执行或闭环任务完成率。
-- 非劣界限预设为 2 个百分点；bootstrap 结果为先导分析，不能把无显著差异等同于等效。
-- 主区间对配对 win/loss 概率采用 Bonferroni + Clopper-Pearson 保守界，避免零差异时 bootstrap 区间退化为零；仅用于独立图像。分层抽样推断仅面向该均衡类别混合。
-- 推理组采用推荐温度 0.6、单种子单次采样；没有重复采样来估计解码随机性的影响。
-- 模型可能接触过公开数据；这里主要比较同一骨干的推理策略，不声称排除预训练污染。
-- 原始逐题记录、原始响应、用量、哈希与抽样清单都保存在本目录。
+- This is a fixed subset of public data, not the official full leaderboard score.
+- The denominator of accuracy includes all requests; failures to parse, timeouts, and truncated cases without a final answer are not removed. Strict format non-compliance and answer errors are reported separately.
+- Completed duration from client-side media encoding to response parsing; includes HTTP, excludes model loading; not TTFT.
+- Service natural cache is enabled, requests global random ordering. Cache is not cleared, so results cannot be called cold start latency.
+- completion_tokens contains the thought token of the service report; do not add reasoning_tokens again.
+- Token statistics follow backend reporting conventions; they do not establish a proportional reduction in visual encoding computation or energy consumption.
+- summary.json's usage_coverage records the number of usage reports covered. The cost of tokens not reported as interface errors is unknown and will not be fabricated as zero.
+- reasoning_budget_forced separately counts the number of times the backend is forced to answer a prompt; it differs from finish_reason=length truncation, as even finish_reason=stop may have triggered internal reasoning budget.
+- Image multiple-choice and causal video replay do not prove joint audio-visual capability, continuous streaming execution, or closed-loop task completion.
+- The non-inferiority margin is set to 2 percentage points; bootstrap results are pilot analyses and cannot equate lack of significant difference with equivalence.
+- The main interval uses Bonferroni + Clopper-Pearson conservative bounds for paired win/loss probability to avoid bootstrap interval degeneration to zero when there is no difference; it is used only for independent images, with stratified sampling inference limited to this balanced class mix.
+- The reasoning group uses recommended temperature 0.6, single-seed single-sample; no repeated sampling to estimate the impact of decoding randomness.
+- The model may have been exposed to public data; this primarily compares reasoning strategies of the same backbone and does not claim to exclude pretraining contamination.
+- Original per-question records, original responses, usage, hash, and sampling lists are all saved in this directory.
 
-数据来源：https://github.com/open-compass/MMBench
-复现：python3 scripts/public_benchmark.py --out /Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public；汇总：python3 scripts/report_public_benchmark.py --out /Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public
+Data source: https://github.com/open-compass/MMBench
+Reproduce: python3 scripts/public_benchmark.py --out results/mmbench-public; summarize: python3 scripts/report_public_benchmark.py --out results/mmbench-public

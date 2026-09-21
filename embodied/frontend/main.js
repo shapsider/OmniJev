@@ -41,36 +41,36 @@ const escape = (s) =>
       ],
   );
 const phaseNames = {
-  approach: "移至物体上方",
-  descend: "下降对准",
-  grasp: "闭合夹爪",
-  lift: "抬升物体",
-  carry: "移向目标",
-  lower: "降低放置",
-  release: "松开夹爪",
-  withdraw: "向上撤离",
-  recover: "张开重试",
-  finish: "完成",
-  incremental: "逐步 XYZ 决策",
+  approach: "Move above object",
+  descend: "Lower to align",
+  grasp: "Close the gripper",
+  lift: "Lift object",
+  carry: "Move toward target",
+  lower: "Lower to place",
+  release: "Release the gripper",
+  withdraw: "Withdraw upward",
+  recover: "Open and retry",
+  finish: "Complete",
+  incremental: "Incremental XYZ Decision",
 };
 const stateNames = {
-  idle: "待命",
-  running: "运行中",
-  paused: "已暂停",
-  uncertain: "等待人工处理",
-  completed: "验证通过",
-  stopped: "已停止",
-  error: "执行异常",
-  exhausted: "预算耗尽",
-  stalled: "决策停滞",
+  idle: "Standby",
+  running: "Running",
+  paused: "Paused",
+  uncertain: "Waiting for manual processing",
+  completed: "Verification passed",
+  stopped: "Stopped",
+  error: "Execution error",
+  exhausted: "Budget exhausted",
+  stalled: "Decision stalled",
 };
 const stageNames = {
-  ready: "就绪",
-  deciding: "决策中",
-  previewing: "动作预演",
-  executing: "执行中",
-  observing: "读取反馈",
-  verified: "已验证",
+  ready: "Ready",
+  deciding: "Deciding",
+  previewing: "Action preview",
+  executing: "Executing",
+  observing: "Reading feedback",
+  verified: "Verified",
 };
 const cameraSelections = {
   none: [],
@@ -90,7 +90,7 @@ function cameraSelection(views) {
   return views.length === 2 ? "both" : views[0] || "none";
 }
 function cameraNames(views) {
-  return views.map((view) => (view === "wrist" ? "腕部" : "外部")).join("与");
+  return views.map((view) => (view === "wrist" ? "Wrist" : "External")).join("With");
 }
 let config,
   profileValues = [],
@@ -113,75 +113,75 @@ $("#app").innerHTML = `
 <div class="app-shell">
  <header class="header">
   <div class="brand"><div class="brand-mark">${icon("scan-line")}</div><div><strong>OmniJev</strong><span>Embodied Lab</span></div></div>
-  <div class="header-divider"></div><div class="header-context">本地具身决策 · <span id="omni-health">检测模型…</span></div>
-  <nav class="view-switch" aria-label="工作模式"><button class="active" id="workbench-view" type="button">实验台</button><button id="comparison-open" type="button">模型对比</button><button id="extensions-open" type="button">扩展</button></nav>
-  <div class="header-right"><span class="engine-label"><span class="dot"></span>MUJOCO / PANDA</span><a class="version" href="/benchmarks">Benchmark ↗</a><button class="icon-button mobile-settings" id="settings-open" title="实验参数" aria-label="实验参数">${icon("sliders-horizontal")}</button><button class="icon-button" id="export" title="导出实验记录" aria-label="导出实验记录">${icon("download")}</button></div>
+  <div class="header-divider"></div><div class="header-context">Local embodied decision · <span id="omni-health">Detecting model...</span></div>
+  <nav class="view-switch" aria-label="Work mode"><button class="active" id="workbench-view" type="button">Lab</button><button id="comparison-open" type="button">Compare</button><button id="extensions-open" type="button">Extensions</button></nav>
+  <div class="header-right"><span class="engine-label"><span class="dot"></span>MUJOCO / PANDA</span><a class="version" href="/benchmarks">Benchmark ↗</a><button class="icon-button mobile-settings" id="settings-open" title="Experiment parameters" aria-label="Experiment parameters">${icon("sliders-horizontal")}</button><button class="icon-button" id="export" title="Export experiment records" aria-label="Export experiment records">${icon("download")}</button></div>
  </header>
  <div class="body-grid">
  <div class="scrim" id="scrim"></div>
  <aside class="sidebar" id="sidebar">
-  <section><div class="section-topline"><h2>实验任务</h2><button class="icon-button close-settings" id="settings-close" aria-label="关闭参数">${icon("x")}</button></div>
-   <div class="task-options"><button class="task-option active" data-task="transfer">${icon("move-up-right")}<span>搬运入盘</span><span class="task-number">01</span></button><button class="task-option" data-task="stack">${icon("layers-2")}<span>方块堆叠</span><span class="task-number">02</span></button><button class="task-option" data-task="barrier">${icon("route")}<span>越障搬运</span><span class="task-number">03</span></button></div>
+  <section><div class="section-topline"><h2>Experiment tasks</h2><button class="icon-button close-settings" id="settings-close" aria-label="Close parameters">${icon("x")}</button></div>
+   <div class="task-options"><button class="task-option active" data-task="transfer">${icon("move-up-right")}<span>Transfer to tray</span><span class="task-number">01</span></button><button class="task-option" data-task="stack">${icon("layers-2")}<span>Block stacking</span><span class="task-number">02</span></button><button class="task-option" data-task="barrier">${icon("route")}<span>Transfer over barrier</span><span class="task-number">03</span></button></div>
    <p class="task-goal" id="task-goal"></p></section>
   <div class="divider"></div>
-  <section><div class="section-topline"><h2>决策模型</h2><button class="icon-button connection-button" id="model-connect" title="模型连接" aria-label="模型连接">${icon("plug-zap")}</button></div><div class="select-wrap"><select id="provider" aria-label="决策模型"></select>${icon("chevron-down")}</div><div class="provider-status"><span class="dot"></span><span id="provider-note">离线 · 确定性策略</span></div></section>
-  <section class="observation-setting"><label class="field-label" for="control-mode">动作决策方式</label><div class="select-wrap"><select id="control-mode" aria-describedby="control-help"><option value="skills">预设技能选择</option><option value="incremental">逐步 XYZ · 闭环规划</option></select>${icon("chevron-down")}</div><p id="control-help">选择预设技能，技能内部轨迹由程序执行。</p></section>
-  <section class="observation-setting"><label class="field-label" for="observation-mode">观测来源</label><div class="select-wrap"><select id="observation-mode" aria-describedby="observation-help"><option value="privileged">仿真真值 · 默认</option><option value="rgbd">RGB-D 视觉 · 实验</option><option value="vision">直接图像 · 多模态模型</option></select>${icon("chevron-down")}</div><p id="observation-help">直接读取仿真中的物体位置。</p></section>
-  <section class="observation-setting"><label class="field-label" for="camera-mode">启用相机</label><div class="select-wrap"><select id="camera-mode" aria-describedby="camera-help"><option value="none">无相机</option><option value="external">仅外部相机</option><option value="wrist">仅腕部相机</option><option value="both">双相机</option></select>${icon("chevron-down")}</div><p id="camera-help">无相机 · 模型使用仿真真值，非视觉输入。</p></section>
+  <section><div class="section-topline"><h2>Decision model</h2><button class="icon-button connection-button" id="model-connect" title="Model connection" aria-label="Model connection">${icon("plug-zap")}</button></div><div class="select-wrap"><select id="provider" aria-label="Decision model"></select>${icon("chevron-down")}</div><div class="provider-status"><span class="dot"></span><span id="provider-note">Offline · Deterministic policy</span></div></section>
+  <section class="observation-setting"><label class="field-label" for="control-mode">Action decision method</label><div class="select-wrap"><select id="control-mode" aria-describedby="control-help"><option value="skills">Preset skill selection</option><option value="incremental">Incremental XYZ · Closed-loop planning</option></select>${icon("chevron-down")}</div><p id="control-help">Select preset skill, skill internal trajectory executed by program.</p></section>
+  <section class="observation-setting"><label class="field-label" for="observation-mode">Observation source</label><div class="select-wrap"><select id="observation-mode" aria-describedby="observation-help"><option value="privileged">Simulation ground truth · Default</option><option value="rgbd">RGB-D Visual · Experiment</option><option value="vision">Direct image · Multimodal model</option></select>${icon("chevron-down")}</div><p id="observation-help">Directly read object positions in simulation.</p></section>
+  <section class="observation-setting"><label class="field-label" for="camera-mode">Enable camera</label><div class="select-wrap"><select id="camera-mode" aria-describedby="camera-help"><option value="none">No camera</option><option value="external">Only external camera</option><option value="wrist">Only wrist camera</option><option value="both">Dual camera</option></select>${icon("chevron-down")}</div><p id="camera-help">No camera · The model uses simulated ground truth, Non-visual input.</p></section>
   <div class="divider"></div>
-  <section class="input-section" id="input-section"><div class="section-topline"><h2>输入状态</h2><span class="eyebrow">m</span></div><p class="input-context" id="input-context">实时观测</p><table class="input-table"><thead><tr><th>位置</th><th>X</th><th>Y</th><th>Z</th></tr></thead><tbody id="input-positions"></tbody></table><div class="input-contacts" id="input-contacts">等待观测</div></section>
-  <details class="advanced-settings" id="advanced-settings"><summary>执行设置 <span>预演 / 速度 / 预算</span></summary><section>
-   <div class="settings-row"><label for="seed">随机种子</label><input class="number-input" id="seed" type="number" min="0" max="99999" value="0"></div>
-   <div class="settings-row"><label for="budget">动作预算</label><input class="number-input" id="budget" type="number" min="1" max="200" value="30"></div>
-   <div class="settings-row"><span>动作预演</span><label class="switch"><input id="preview" type="checkbox" checked aria-label="动作预演"><span></span></label></div>
-   <div class="settings-row"><label for="threshold">决策门槛</label><span class="range-label" id="threshold-value">0.55</span></div><input class="range" id="threshold" type="range" min="0" max="1" step="0.05" value="0.55"><div class="range-ticks"><span>0.00</span><span>1.00</span></div>
-   <div class="settings-row"><label for="speed">执行速度</label><span class="range-label" id="speed-value">1.5×</span></div><input class="range" id="speed" type="range" min="0.5" max="4" step="0.5" value="1.5"><div class="range-ticks"><span>0.5×</span><span>4×</span></div>
-   <div class="evaluation-settings"><label class="field-label" for="intervention-kind">外部评测扰动</label><div class="select-wrap"><select id="intervention-kind" aria-describedby="intervention-help"><option value="none">不施加扰动</option><option value="object_shift">移动方块</option><option value="target_shift">移动目标</option></select>${icon("chevron-down")}</div><p id="intervention-help">在指定动作后注入外部位移，用于观察后续调整。它不是模型动作；设置在重置或开始实验时应用。</p><div id="intervention-fields" hidden><div class="settings-row"><label for="intervention-cycle">第几步后</label><input class="number-input" id="intervention-cycle" type="number" min="1" max="199" step="1" value="5" required></div><div class="settings-row"><label for="intervention-x">X 位移 / m</label><input class="number-input" id="intervention-x" type="number" min="-0.06" max="0.06" step="0.01" value="0.04" required></div><div class="settings-row"><label for="intervention-y">Y 位移 / m</label><input class="number-input" id="intervention-y" type="number" min="-0.06" max="0.06" step="0.01" value="0" required></div></div><p id="intervention-status" role="status" hidden></p><label class="evaluation-checkbox"><input id="shuffle-candidates" type="checkbox">打乱候选顺序</label><p>逐步 XYZ 模式按种子重排动作菜单，用于检查选择是否依赖排列位置。</p></div>
-  </section></details><div class="sidebar-bottom"><span>FRANKA PANDA</span><span>7 自由度 · 双指夹爪</span></div>
+  <section class="input-section" id="input-section"><div class="section-topline"><h2>Input state</h2><span class="eyebrow">m</span></div><p class="input-context" id="input-context">Real-time observation</p><table class="input-table"><thead><tr><th>Position</th><th>X</th><th>Y</th><th>Z</th></tr></thead><tbody id="input-positions"></tbody></table><div class="input-contacts" id="input-contacts">Waiting for observation</div></section>
+  <details class="advanced-settings" id="advanced-settings"><summary>Execution settings <span>Preview / Speed / Budget</span></summary><section>
+   <div class="settings-row"><label for="seed">Random seed</label><input class="number-input" id="seed" type="number" min="0" max="99999" value="0"></div>
+   <div class="settings-row"><label for="budget">Action budget</label><input class="number-input" id="budget" type="number" min="1" max="200" value="30"></div>
+   <div class="settings-row"><span>Action preview</span><label class="switch"><input id="preview" type="checkbox" checked aria-label="Action preview"><span></span></label></div>
+   <div class="settings-row"><label for="threshold">Decision threshold</label><span class="range-label" id="threshold-value">0.55</span></div><input class="range" id="threshold" type="range" min="0" max="1" step="0.05" value="0.55"><div class="range-ticks"><span>0.00</span><span>1.00</span></div>
+   <div class="settings-row"><label for="speed">Execution speed</label><span class="range-label" id="speed-value">1.5×</span></div><input class="range" id="speed" type="range" min="0.5" max="4" step="0.5" value="1.5"><div class="range-ticks"><span>0.5×</span><span>4×</span></div>
+   <div class="evaluation-settings"><label class="field-label" for="intervention-kind">External evaluation perturbation</label><div class="select-wrap"><select id="intervention-kind" aria-describedby="intervention-help"><option value="none">No perturbation applied</option><option value="object_shift">Move block</option><option value="target_shift">Move target</option></select>${icon("chevron-down")}</div><p id="intervention-help">Inject external displacement after specified action to observe subsequent adjustments. It is not a model action; set at reset or start of experiment.</p><div id="intervention-fields" hidden><div class="settings-row"><label for="intervention-cycle">After step</label><input class="number-input" id="intervention-cycle" type="number" min="1" max="199" step="1" value="5" required></div><div class="settings-row"><label for="intervention-x">X Displacement / m</label><input class="number-input" id="intervention-x" type="number" min="-0.06" max="0.06" step="0.01" value="0.04" required></div><div class="settings-row"><label for="intervention-y">Y Displacement / m</label><input class="number-input" id="intervention-y" type="number" min="-0.06" max="0.06" step="0.01" value="0" required></div></div><p id="intervention-status" role="status" hidden></p><label class="evaluation-checkbox"><input id="shuffle-candidates" type="checkbox">Shuffle candidate order</label><p>Incremental XYZ Reorder action menu by seed to check if selection depends on position.</p></div>
+  </section></details><div class="sidebar-bottom"><span>FRANKA PANDA</span><span>7 Degrees of freedom · Two-finger gripper</span></div>
  </aside>
  <main class="workspace">
-  <div class="scene-toolbar"><nav class="tabs" aria-label="实验视图"><button class="tab active" data-tab="scene">${icon("box")} 场景</button><button class="tab" data-tab="vision">${icon("scan-line")} 视觉</button><button class="tab" data-tab="data">${icon("braces")} 观测</button><button class="tab decision-tab" id="decision-open">${icon("git-branch")} 决策</button></nav><div class="scene-tools"><button class="icon-button" id="camera-top" title="俯视" aria-label="俯视">${icon("scan")}</button><button class="icon-button" id="camera-home" title="复位视角" aria-label="复位视角">${icon("focus")}</button></div></div>
-  <div class="viewport" id="viewport"><div class="viewport-label"><h1>Franka Panda</h1><p>MANIPULATION / <span id="scene-task">TRANSFER</span></p></div><div class="scene-status" id="scene-status"><span class="dot"></span><span id="status-text">待命</span></div><div class="scene-axis"><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span><span>WORLD / m</span></div><span class="scene-bottom-right" id="scene-time">t = 0.00 s</span><div class="success-stamp" id="success-stamp">${icon("circle-check")}物体稳定 · 夹爪已撤离</div><div class="loading" id="loading">加载机器人场景…</div><pre class="raw-state" id="raw-state"></pre></div>
-  <div class="telemetry"><div class="metric"><div class="metric-label">末端 X</div><div class="metric-value"><span id="tcp-x">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">末端 Y</div><div class="metric-value"><span id="tcp-y">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">末端 Z</div><div class="metric-value"><span id="tcp-z">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">物体抬升</div><div class="metric-value"><span id="lift">0</span><small>mm</small></div></div></div>
-  <div class="timeline"><button class="icon-button" id="replay-play" aria-label="播放轨迹" title="播放轨迹">${icon("play")}</button><div class="timeline-track"><div class="timeline-caption"><span id="timeline-label">EPISODE TIMELINE</span><span id="frame-label">0000 / 0000</span></div><input id="timeline" type="range" min="0" max="0" value="0" aria-label="轨迹时间轴"></div><button class="live-link" id="live">LIVE</button></div>
-  <div class="controls"><button class="primary" id="run">${icon("play")}<span id="run-label">运行实验</span></button><button class="icon-button" id="step" title="单步执行" aria-label="单步执行">${icon("step-forward")}</button><button class="icon-button stop" id="stop" title="停止实验" aria-label="停止实验">${icon("square")}</button><button class="icon-button" id="reset" title="重置实验" aria-label="重置实验">${icon("rotate-ccw")}</button><span class="run-budget" id="run-budget">00 / 30 ACTIONS</span></div>
+  <div class="scene-toolbar"><nav class="tabs" aria-label="Experiment view"><button class="tab active" data-tab="scene">${icon("box")} Scene</button><button class="tab" data-tab="vision">${icon("scan-line")} Visual</button><button class="tab" data-tab="data">${icon("braces")} Observation</button><button class="tab decision-tab" id="decision-open">${icon("git-branch")} Decision</button></nav><div class="scene-tools"><button class="icon-button" id="camera-top" title="Top-down view" aria-label="Top-down view">${icon("scan")}</button><button class="icon-button" id="camera-home" title="Reset view" aria-label="Reset view">${icon("focus")}</button></div></div>
+  <div class="viewport" id="viewport"><div class="viewport-label"><h1>Franka Panda</h1><p>MANIPULATION / <span id="scene-task">TRANSFER</span></p></div><div class="scene-status" id="scene-status"><span class="dot"></span><span id="status-text">Standby</span></div><div class="scene-axis"><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span><span>WORLD / m</span></div><span class="scene-bottom-right" id="scene-time">t = 0.00 s</span><div class="success-stamp" id="success-stamp">${icon("circle-check")} Object stable · Gripper retracted</div><div class="loading" id="loading">Loading robot scene...</div><pre class="raw-state" id="raw-state"></pre></div>
+  <div class="telemetry"><div class="metric"><div class="metric-label">End effector X</div><div class="metric-value"><span id="tcp-x">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">End effector Y</div><div class="metric-value"><span id="tcp-y">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">End effector Z</div><div class="metric-value"><span id="tcp-z">—</span><small>m</small></div></div><div class="metric"><div class="metric-label">Object lifted</div><div class="metric-value"><span id="lift">0</span><small>mm</small></div></div></div>
+  <div class="timeline"><button class="icon-button" id="replay-play" aria-label="Play trajectory" title="Play trajectory">${icon("play")}</button><div class="timeline-track"><div class="timeline-caption"><span id="timeline-label">EPISODE TIMELINE</span><span id="frame-label">0000 / 0000</span></div><input id="timeline" type="range" min="0" max="0" value="0" aria-label="Trajectory timeline"></div><button class="live-link" id="live">LIVE</button></div>
+  <div class="controls"><button class="primary" id="run">${icon("play")}<span id="run-label">Run experiment</span></button><button class="icon-button" id="step" title="Step execution" aria-label="Step execution">${icon("step-forward")}</button><button class="icon-button stop" id="stop" title="Stop experiment" aria-label="Stop experiment">${icon("square")}</button><button class="icon-button" id="reset" title="Reset experiment" aria-label="Reset experiment">${icon("rotate-ccw")}</button><span class="run-budget" id="run-budget">00 / 30 ACTIONS</span></div>
  </main>
- <aside class="inspector" id="inspector" aria-label="决策与执行记录">
-  <section class="inspector-section decision-section" id="decision-section" tabindex="-1"><div class="section-topline"><h2 id="decision-heading">当前决策</h2><span class="eyebrow" id="stage">READY</span></div><div class="decision-context"><span id="decision-context" role="status">实时 · 等待开始</span><button type="button" class="text-button" id="decision-live" hidden>返回实时</button></div><div class="decision-title">${icon("git-branch")}<span id="decision-title">等待开始</span></div><div class="decision-meta"><span id="decision-provider">RULE BASELINE</span><span id="latency">— ms</span></div><div id="intent-panel" hidden><div class="decision-meta"><span>01 · 操作阶段</span><span id="intent-latency"></span></div><div class="probabilities" id="intent-probabilities"></div><div class="decision-meta"><span>02 · 执行动作</span></div></div><div class="probabilities" id="probabilities"><div class="empty">尚无候选动作</div></div><p class="decision-note" id="decision-note"></p><div class="history-observations" id="history-observations" hidden><details><summary>执行前 · 结构化观测</summary><pre id="history-before"></pre></details><details><summary>执行后 · 结构化观测</summary><pre id="history-after"></pre></details><details><summary>候选与模型返回</summary><pre id="history-payload"></pre></details><details id="history-inputs-detail" hidden><summary>本步模型输入</summary><pre id="history-inputs"></pre></details></div></section>
-  <section class="inspector-section"><div class="section-topline"><h2 id="feedback-heading">物理反馈</h2><span class="eyebrow">FEEDBACK</span></div><div class="sensors"><span class="name">夹爪状态</span><span class="sensor-value" id="gripper">OPEN</span><span class="name">双侧接触</span><div class="contacts"><span class="contact" id="contact-l">L</span><span class="contact" id="contact-r">R</span></div><span class="name">目标支撑接触</span><span class="sensor-value" id="support">NO</span><span class="name">稳定时长</span><span class="sensor-value" id="stable">0.00 s</span><span class="name">动作预演</span><span class="sensor-value" id="preview-state">ON</span></div></section>
-  <div class="event-heading"><div class="section-topline"><h2>执行记录</h2><span class="eyebrow" id="event-count">0 步</span></div></div><ol class="events" id="events"><li class="empty">暂无执行记录</li></ol><details class="runtime-log" id="runtime-log"><summary>运行日志 <span id="log-count">0 条</span></summary><ol id="log-entries"></ol><p>仅展示最近 12 条，完整日志可随实验导出。</p></details><div class="inspector-footer"><span id="model-calls">调用 0 次</span><span id="tokens">输入 0 tokens</span></div>
- </aside></div><footer class="bottom-bar"><div class="bottom-left"><span id="connection">连接中</span><span>物理仿真 500 Hz</span><span id="observation-source">仿真真值 · 几何与接触</span></div><span class="bottom-right" id="episode-id">实验 / —</span></footer>
+ <aside class="inspector" id="inspector" aria-label="Decision and execution log">
+  <section class="inspector-section decision-section" id="decision-section" tabindex="-1"><div class="section-topline"><h2 id="decision-heading">Current decision</h2><span class="eyebrow" id="stage">READY</span></div><div class="decision-context"><span id="decision-context" role="status">Real-time · Waiting to start</span><button type="button" class="text-button" id="decision-live" hidden>Return to real-time</button></div><div class="decision-title">${icon("git-branch")}<span id="decision-title">Waiting to start</span></div><div class="decision-meta"><span id="decision-provider">RULE BASELINE</span><span id="latency">— ms</span></div><div id="intent-panel" hidden><div class="decision-meta"><span>01 · Operation phase</span><span id="intent-latency"></span></div><div class="probabilities" id="intent-probabilities"></div><div class="decision-meta"><span>02 · Execute action</span></div></div><div class="probabilities" id="probabilities"><div class="empty">No candidate actions</div></div><p class="decision-note" id="decision-note"></p><div class="history-observations" id="history-observations" hidden><details><summary>Pre-execution · Structured observation</summary><pre id="history-before"></pre></details><details><summary>Post-execution · Structured observation</summary><pre id="history-after"></pre></details><details><summary>Candidate and model response</summary><pre id="history-payload"></pre></details><details id="history-inputs-detail" hidden><summary>Current model input</summary><pre id="history-inputs"></pre></details></div></section>
+  <section class="inspector-section"><div class="section-topline"><h2 id="feedback-heading">Physical feedback</h2><span class="eyebrow">FEEDBACK</span></div><div class="sensors"><span class="name">Gripper status</span><span class="sensor-value" id="gripper">OPEN</span><span class="name">Bilateral contact</span><div class="contacts"><span class="contact" id="contact-l">L</span><span class="contact" id="contact-r">R</span></div><span class="name">Target support contact</span><span class="sensor-value" id="support">NO</span><span class="name">Stable duration</span><span class="sensor-value" id="stable">0.00 s</span><span class="name">Action preview</span><span class="sensor-value" id="preview-state">ON</span></div></section>
+  <div class="event-heading"><div class="section-topline"><h2>Execution record</h2><span class="eyebrow" id="event-count">0 Step</span></div></div><ol class="events" id="events"><li class="empty">No execution record</li></ol><details class="runtime-log" id="runtime-log"><summary>Run log <span id="log-count">0 Item</span></summary><ol id="log-entries"></ol><p>Show only latest 12 Item, full log can be exported with the experiment.</p></details><div class="inspector-footer"><span id="model-calls">Call 0 Times</span><span id="tokens">Input 0 tokens</span></div>
+ </aside></div><footer class="bottom-bar"><div class="bottom-left"><span id="connection">Connecting</span><span>Physical simulation 500 Hz</span><span id="observation-source">Simulation ground truth · Geometry and contact</span></div><span class="bottom-right" id="episode-id">Experiment / —</span></footer>
 </div><div class="toast" id="toast" role="status"></div>
 <dialog id="connection-dialog" class="connection-dialog" aria-labelledby="connection-title">
  <form id="connection-form">
-  <div class="dialog-heading"><div><span class="eyebrow">MODEL CONNECTION</span><h2 id="connection-title">模型连接</h2></div><button type="button" class="icon-button" id="connection-close" aria-label="关闭模型连接">${icon("x")}</button></div>
-  <label class="field-label" for="api-provider">接口类型</label><select id="api-provider"><option value="chat">OpenAI 兼容 API</option><option value="claude">Claude 原生 API</option><option value="jev">TypeSafe Jev</option><option value="local">Jev / 结构化决策 API</option></select>
-  <label class="field-label" for="profile-name">配置名称 <span>保存具名配置时填写</span></label><input id="profile-name" maxlength="80" placeholder="例如：OpenAI · GPT6" autocomplete="off">
-  <label class="field-label" for="api-url">Base URL / 接口地址</label><input id="api-url" type="url" required placeholder="https://your-provider.example/v1" autocomplete="off">
-  <label class="field-label" for="api-model">模型 ID</label><input id="api-model" required placeholder="平台提供的模型名称" autocomplete="off">
-  <label class="field-label" for="api-key">API Key <span id="key-state">未配置</span></label><input id="api-key" type="password" placeholder="API Key" autocomplete="off" spellcheck="false">
-  <label class="json-mode" id="json-mode-row"><input id="api-json" type="checkbox" checked>JSON 模式</label>
+  <div class="dialog-heading"><div><span class="eyebrow">MODEL CONNECTION</span><h2 id="connection-title">Model connection</h2></div><button type="button" class="icon-button" id="connection-close" aria-label="Close model connection">${icon("x")}</button></div>
+  <label class="field-label" for="api-provider">Interface type</label><select id="api-provider"><option value="chat">OpenAI Compatible API</option><option value="claude">Claude Native API</option><option value="jev">TypeSafe Jev</option><option value="local">Jev / Structured decision API</option></select>
+  <label class="field-label" for="profile-name">Configuration name <span>Fill in when saving named configuration</span></label><input id="profile-name" maxlength="80" placeholder="For example: OpenAI · GPT6" autocomplete="off">
+  <label class="field-label" for="api-url">Base URL / Interface address</label><input id="api-url" type="url" required placeholder="https://your-provider.example/v1" autocomplete="off">
+  <label class="field-label" for="api-model">Model ID</label><input id="api-model" required placeholder="Model name provided by platform" autocomplete="off">
+  <label class="field-label" for="api-key">API Key <span id="key-state">Not configured</span></label><input id="api-key" type="password" placeholder="API Key" autocomplete="off" spellcheck="false">
+  <label class="json-mode" id="json-mode-row"><input id="api-json" type="checkbox" checked>JSON Mode</label>
   <p class="connection-retention" id="provider-help"></p>
-  <button type="button" class="text-button api-preset" id="api-official-preset">填入 OpenAI 官方示例</button>
-  <p class="connection-retention" id="typesafe-links" hidden><a href="https://console.typesafe.ai" target="_blank" rel="noopener noreferrer">管理 TypeSafe Key ↗</a> · <a href="https://typesafe.ai" target="_blank" rel="noopener noreferrer">申请访问 ↗</a> · <a href="https://docs.typesafe.ai/api" target="_blank" rel="noopener noreferrer">接口说明 ↗</a></p>
-  <p class="connection-retention" id="connection-storage">正在读取本机存储状态…</p>
-  <div id="connection-verification" class="connection-verification"><span class="dot"></span><span id="verification-label">尚未验证</span></div>
+  <button type="button" class="text-button api-preset" id="api-official-preset">Fill in OpenAI Official example</button>
+  <p class="connection-retention" id="typesafe-links" hidden><a href="https://console.typesafe.ai" target="_blank" rel="noopener noreferrer">Manage TypeSafe Key ↗</a> · <a href="https://typesafe.ai" target="_blank" rel="noopener noreferrer">Request access ↗</a> · <a href="https://docs.typesafe.ai/api" target="_blank" rel="noopener noreferrer">Interface description ↗</a></p>
+  <p class="connection-retention" id="connection-storage">Reading local storage state...</p>
+  <div id="connection-verification" class="connection-verification"><span class="dot"></span><span id="verification-label">Not yet verified</span></div>
   <div id="connection-result" class="connection-result" role="status"></div>
-  <p class="connection-retention" id="profile-help">另存为具名配置时请重新填写 Key；不会复制默认连接的密钥。</p><div class="dialog-actions"><button type="button" class="secondary" id="connection-profile">另存为模型配置</button><button type="button" class="secondary" id="connection-test">${icon("plug-zap")}测试调用</button><button type="submit" class="primary" id="connection-save">保存连接</button></div>
+  <p class="connection-retention" id="profile-help">When saving as a named configuration, please fill in again Key; Cannot copy the default connection key.</p><div class="dialog-actions"><button type="button" class="secondary" id="connection-profile">Save model configuration</button><button type="button" class="secondary" id="connection-test">${icon("plug-zap")} Test call</button><button type="submit" class="primary" id="connection-save">Save connection</button></div>
  </form>
 </dialog>`;
 const visionPanel = document.createElement("section");
 visionPanel.id = "vision-panel";
 visionPanel.className = "vision-panel";
 visionPanel.hidden = true;
-visionPanel.setAttribute("aria-label", "相机视觉观测");
+visionPanel.setAttribute("aria-label", "Camera vision observation");
 visionPanel.innerHTML = `
-  <div class="vision-heading"><div><span class="eyebrow" id="vision-source-heading">PERCEPTION / RGB-D</span><h2>相机最近观测</h2></div><div class="vision-switch" aria-label="相机通道"><button type="button" data-vision-channel="rgb" aria-pressed="true" disabled>RGB</button><button type="button" data-vision-channel="depth" aria-pressed="false" disabled>深度</button></div></div>
-  <div class="vision-view-row"><div class="vision-switch" aria-label="相机视角"><button type="button" data-vision-view="external" aria-pressed="true" disabled>外部相机</button><button type="button" data-vision-view="wrist" aria-pressed="false" disabled>腕部相机</button></div><span id="vision-view-help">外部相机 · 固定机位</span></div>
-  <p class="vision-explanation">颜色检测已知物体，结合深度估计位置；夹爪与接触来自传感器。动作预演仍使用仿真安全筛选。</p>
-  <div class="vision-image-wrap"><div id="vision-image-container"></div><p id="vision-empty" role="status">选择「RGB-D 视觉」并重置实验后，显示实际相机画面。</p><span id="vision-image-label" hidden>最近感知帧</span></div>
-  <div class="vision-meta" id="vision-meta" hidden><div><span>观测来源</span><strong id="vision-source-label">RGB-D · 颜色检测</strong></div><div><span>感知耗时</span><strong id="vision-latency">—</strong></div><div><span>采集时刻</span><strong id="vision-time">—</strong></div><div><span id="vision-visibility-label">可见物体</span><strong id="vision-visibility">—</strong></div></div>
-  <p class="vision-status" id="vision-status" role="status"></p><div class="vision-download-row"><button type="button" class="text-button" id="vision-retry" hidden>重试读取</button><button type="button" class="text-button" id="vision-export" disabled>下载观测帧</button><span>全部 RGB 视角 + SHA-256 清单 · ZIP</span></div><p class="vision-note" id="vision-note">这里显示最近一次感知画面；场景页展示当前仿真。此模式支持已知颜色物体，尚不具备通用视觉识别能力。</p>`;
+  <div class="vision-heading"><div><span class="eyebrow" id="vision-source-heading">PERCEPTION / RGB-D</span><h2>Camera recent observation</h2></div><div class="vision-switch" aria-label="Camera channel"><button type="button" data-vision-channel="rgb" aria-pressed="true" disabled>RGB</button><button type="button" data-vision-channel="depth" aria-pressed="false" disabled>Depth</button></div></div>
+  <div class="vision-view-row"><div class="vision-switch" aria-label="Camera view"><button type="button" data-vision-view="external" aria-pressed="true" disabled>External camera</button><button type="button" data-vision-view="wrist" aria-pressed="false" disabled>Wrist camera</button></div><span id="vision-view-help">External camera · Fixed position</span></div>
+  <p class="vision-explanation">Known objects are detected by color, and their positions are estimated using depth; gripper state and contacts come from sensors. Action previews still use simulation-based safety filtering.</p>
+  <div class="vision-image-wrap"><div id="vision-image-container"></div><p id="vision-empty" role="status">Select “ RGB-D Vision” and reset the experiment to display the actual camera images.</p><span id="vision-image-label" hidden>Recent perception frame</span></div>
+  <div class="vision-meta" id="vision-meta" hidden><div><span>Observation source</span><strong id="vision-source-label">RGB-D · Color detection</strong></div><div><span>Perception time</span><strong id="vision-latency">—</strong></div><div><span>Capture moment</span><strong id="vision-time">—</strong></div><div><span id="vision-visibility-label">Visible object</span><strong id="vision-visibility">—</strong></div></div>
+  <p class="vision-status" id="vision-status" role="status"></p><div class="vision-download-row"><button type="button" class="text-button" id="vision-retry" hidden>Retry reading</button><button type="button" class="text-button" id="vision-export" disabled>Download observation frame</button><span>All RGB Viewpoint + SHA-256 List · ZIP</span></div><p class="vision-note" id="vision-note">Here displays the most recent perception image; scene page shows current simulation. This mode supports objects with known colors, but lacks general visual recognition capability.</p>`;
 $("#viewport").append(visionPanel);
 const comparisonContainer = document.createElement("main");
 comparisonContainer.id = "comparison-view";
@@ -200,7 +200,7 @@ let comparisonView,
   extensionsLoading;
 function moduleFailure(container) {
   container.innerHTML =
-    '<div class="view-load-state" role="status"><h1>页面已更新或模块加载失败</h1><p>刷新后可重新加载界面。未保存的配置需要重新填写，当前仿真实验不会因刷新而重置。</p><button class="secondary module-reload" type="button">刷新页面重试</button></div>';
+    '<div class="view-load-state" role="status"><h1>Page updated or module load failed</h1><p>After refresh, interface can be reloaded. Unsaved configurations need to be filled again; current simulation experiment will not be reset by refresh.</p><button class="secondary module-reload" type="button">Refresh page retry</button></div>';
   container.querySelector(".module-reload").onclick = () =>
     window.location.reload();
 }
@@ -208,7 +208,7 @@ async function ensureComparison() {
   if (comparisonView) return comparisonView;
   if (!comparisonLoading) {
     comparisonContainer.innerHTML =
-      '<div class="view-load-state" role="status">正在加载模型对比…</div>';
+      '<div class="view-load-state" role="status">Loading model comparison...</div>';
     comparisonLoading = import("./comparison.js")
       .then(({ createComparison }) =>
         createComparison(comparisonContainer, { api, toast }),
@@ -217,7 +217,7 @@ async function ensureComparison() {
       .catch(() => {
         comparisonLoading = null;
         moduleFailure(comparisonContainer);
-        throw new Error("模型对比加载失败，可点击刷新页面重试。");
+        throw new Error("Model comparison load failed, can click to refresh page and retry.");
       });
   }
   return comparisonLoading;
@@ -226,7 +226,7 @@ async function ensureExtensions() {
   if (extensionsView) return extensionsView;
   if (!extensionsLoading) {
     extensionsContainer.innerHTML =
-      '<div class="view-load-state" role="status">正在加载扩展…</div>';
+      '<div class="view-load-state" role="status">Loading extension...</div>';
     extensionsLoading = import("./extensions.js")
       .then(({ createExtensions }) =>
         createExtensions(extensionsContainer, {
@@ -240,7 +240,7 @@ async function ensureExtensions() {
       .catch(() => {
         extensionsLoading = null;
         moduleFailure(extensionsContainer);
-        throw new Error("扩展页面加载失败，可点击刷新页面重试。");
+        throw new Error("Extension page load failed, can click to refresh page and retry.");
       });
   }
   return extensionsLoading;
@@ -306,7 +306,7 @@ async function applyExtensionPreset(preset, target) {
     resetting ||
     controlPending
   )
-    throw new Error("请先停止当前实验，再应用预设。");
+    throw new Error("Please stop current experiment first, then apply preset.");
   const previous = {
     task: currentTask,
     scene: configuredScene,
@@ -319,7 +319,7 @@ async function applyExtensionPreset(preset, target) {
     currentTask = previous.task;
     configuredScene = previous.scene;
     configuredContext = previous.context;
-    throw new Error("预设未应用，已保留原实验。请检查场景校验提示。");
+    throw new Error("Preset not applied, original experiment retained. Please check scene validation prompt.");
   }
 }
 async function applyExtensionModel(profileId, target) {
@@ -330,10 +330,10 @@ async function applyExtensionModel(profileId, target) {
     resetting ||
     controlPending
   )
-    throw new Error("请先停止当前实验，再切换模型配置。");
+    throw new Error("Please stop current experiment first, then switch model configuration.");
   await refreshProviders();
   $("#provider").value = "profile:" + profileId;
-  if (!(await reset())) throw new Error("模型配置未应用，请检查服务提示。");
+  if (!(await reset())) throw new Error("Model configuration not applied, please check service prompt.");
 }
 const intentPanel = $("#intent-panel");
 intentPanel.lastElementChild.remove();
@@ -344,25 +344,25 @@ liveInputs.id = "live-inputs-detail";
 liveInputs.className = "live-inputs";
 liveInputs.hidden = true;
 liveInputs.innerHTML =
-  '<summary>本轮模型输入</summary><pre id="live-inputs"></pre>';
+  '<summary>Current round model input</summary><pre id="live-inputs"></pre>';
 $("#history-observations").before(liveInputs);
 const planningOutput = document.createElement("div");
 planningOutput.id = "planning-output";
 planningOutput.className = "planning-output";
 planningOutput.hidden = true;
 planningOutput.innerHTML =
-  '<p class="planning-caption">本步模型说明 · 用于检查决策依据</p><dl><dt>行动意图</dt><dd id="planning-intent"></dd><dt>视觉依据</dt><dd id="planning-evidence"></dd><dt>选中动作</dt><dd id="planning-action"></dd><dt>输入图像</dt><dd id="planning-image"></dd></dl>';
+  '<p class="planning-caption">Current step model description · Used to check decision basis</p><dl><dt>Action intention</dt><dd id="planning-intent"></dd><dt>Visual basis</dt><dd id="planning-evidence"></dd><dt>Selected action</dt><dd id="planning-action"></dd><dt>Input image</dt><dd id="planning-image"></dd></dl>';
 $("#probabilities").before(planningOutput);
 const historyList = document.createElement("details");
 historyList.className = "history-list";
 historyList.id = "history-list";
 historyList.innerHTML =
-  '<summary>执行记录 <span id="history-count"></span></summary>';
+  '<summary>Execution record <span id="history-count"></span></summary>';
 $(".event-heading").before(historyList);
 historyList.append($(".event-heading"), $("#events"));
 const feedbackDetails = document.createElement("details");
 feedbackDetails.className = "feedback-details";
-feedbackDetails.innerHTML = "<summary>物理反馈</summary>";
+feedbackDetails.innerHTML = "<summary>Physical feedback</summary>";
 const feedbackSection = $("#feedback-heading").closest("section");
 feedbackSection.before(feedbackDetails);
 feedbackDetails.append(feedbackSection);
@@ -418,13 +418,13 @@ async function api(path, body) {
   if (!response.ok) {
     const error = await response.json();
     throw new Error(
-      typeof error.detail === "string" ? error.detail : "参数或服务异常",
+      typeof error.detail === "string" ? error.detail : "Parameter or service abnormal",
     );
   }
   return response.json();
 }
 const sceneView = new RobotScene($("#viewport"), { onError: toast });
-$(".viewport-label p").firstChild.textContent = "仿真画面 / ";
+$(".viewport-label p").firstChild.textContent = "Simulation view / ";
 let visionChannel = "rgb",
   visionView = "external",
   cameraExportPending = false,
@@ -445,15 +445,15 @@ function renderVisionImage() {
   if (!visionMetadata?.capture_id || !state?.id) return;
   const key = `${state.id}:${visionMetadata.capture_id}:${visionView}:${visionChannel}`;
   if (key === visionImageKey) return;
-  clearVisionImage("读取已采集画面…");
+  clearVisionImage("Reading collected image...");
   visionImageKey = key;
   const image = new Image();
   image.id = "vision-image";
   image.alt =
-    `${visionView === "wrist" ? "腕部" : "外部"} · ` +
+    `${visionView === "wrist" ? "Wrist" : "External"} · ` +
     (visionChannel === "rgb"
-      ? "MuJoCo 相机实际 RGB 画面"
-      : "MuJoCo 相机实际深度画面");
+      ? "MuJoCo Actual camera RGB screen"
+      : "MuJoCo Camera actual depth image");
   image.hidden = true;
   image.onload = () => {
     if (visionImageKey !== key) return;
@@ -461,11 +461,11 @@ function renderVisionImage() {
     $("#vision-empty").hidden = true;
     $("#vision-image-label").hidden = false;
     $("#vision-image-label").textContent =
-      `${visionChannel === "rgb" ? "RGB" : "深度"} · 最近感知帧${visionView === "wrist" ? " · 腕部相机" : ""}`;
+      `${visionChannel === "rgb" ? "RGB" : "Depth"} · Recent perception frame ${visionView === "wrist" ? " · Wrist camera" : ""}`;
   };
   image.onerror = () => {
     if (visionImageKey !== key) return;
-    $("#vision-empty").textContent = "这张感知帧已更新或读取失败，请重试。";
+    $("#vision-empty").textContent = "This perception frame has been updated or read failed, please retry.";
     $("#vision-retry").hidden = false;
   };
   const query = new URLSearchParams({
@@ -494,7 +494,7 @@ function renderVisionMetadata(metadata) {
     );
   }
   $("#vision-view-help").textContent =
-    visionView === "wrist" ? "腕部相机 · 随机械臂移动" : "外部相机 · 固定机位";
+    visionView === "wrist" ? "Wrist camera · Moves with the robotic arm" : "External camera · Fixed position";
   if (direct && visionChannel !== "rgb") {
     visionChannel = "rgb";
     for (const button of document.querySelectorAll("[data-vision-channel]"))
@@ -504,15 +504,15 @@ function renderVisionMetadata(metadata) {
       );
   }
   $("#vision-source-label").textContent = direct
-    ? "RGB 图像 → 多模态模型"
+    ? "RGB Image → Multimodal model"
     : previewOnly
-      ? "RGB 相机预览 · 不发送模型"
-      : "RGB-D · 颜色检测";
+      ? "RGB Camera preview · Do not send model"
+      : "RGB-D · Color detection";
   $("#vision-visibility-label").textContent = direct
-    ? "空间关系"
+    ? "Spatial relationship"
     : previewOnly
-      ? "用途"
-      : "可见物体";
+      ? "Use"
+      : "Visible object";
   $("#vision-latency").textContent = Number.isFinite(metadata.latency_ms)
     ? `${metadata.latency_ms.toFixed(1)} ms`
     : "—";
@@ -528,9 +528,9 @@ function renderVisionMetadata(metadata) {
       }));
   const visible = objects.filter((object) => object.visible).length;
   $("#vision-visibility").textContent = direct
-    ? "由图像判断"
+    ? "Determine from image"
     : previewOnly
-      ? "仅预览"
+      ? "Preview only"
       : objects.length
         ? `${visible} / ${objects.length}`
         : "—";
@@ -539,15 +539,15 @@ function renderVisionMetadata(metadata) {
     .map((object) => object.label || object.id);
   $("#vision-status").textContent =
     (previewOnly
-      ? "相机仅供查看；模型使用仿真真值，非视觉输入。"
+      ? "Camera for viewing only; model uses simulated ground truth, Non-visual input."
       : metadata.message) ||
     (direct
-      ? "模型直接接收 RGB 图像；不提供物体或目标坐标。"
+      ? "The model directly receives RGB Image; no object or target coordinates provided."
       : missing.length
-        ? `遮挡或未检测到：${missing.join("、")}`
+        ? `Obstructed or not detected: ${missing.join(", ")}`
         : objects.length
-          ? "当前已知物体可见"
-          : "等待检测结果");
+          ? "Currently known objects are visible"
+          : "Waiting for detection results");
   $("#vision-status").classList.toggle(
     "has-alert",
     missing.length > 0 ||
@@ -565,28 +565,28 @@ function renderVision(s) {
   $("#vision-export").disabled =
     cameraExportPending || !s.id || !s.perception?.capture_id;
   $("#camera-help").textContent = !camera
-    ? "无相机 · 模型使用仿真真值，非视觉输入。"
+    ? "No camera · The model uses simulated ground truth, Non-visual input."
     : direct
-      ? `模型接收${cameraLabel}相机图像。`
+      ? `Model receives ${cameraLabel} Camera image.`
       : rgbd
-        ? `${cameraLabel}相机用于 RGB-D 位置估计，模型接收检测坐标。`
-        : `${cameraLabel}相机仅供查看；模型使用仿真真值，非视觉输入。`;
+        ? `${cameraLabel} Camera used for RGB-D Position estimation, model receives detection coordinates.`
+        : `${cameraLabel} Camera for viewing only; model uses simulated ground truth, Non-visual input.`;
   for (const button of document.querySelectorAll("[data-vision-view]"))
     button.hidden = !cameras.includes(button.dataset.visionView);
   $("#control-help").textContent =
     s.control_mode === "incremental"
-      ? `${s.provider === "baseline" ? "规则基线" : "模型"}每步选择 XYZ 位移与夹爪动作，执行后重新观测。是否能规划须由实验检验。`
-      : "选择预设技能，技能内部轨迹由程序执行。";
+      ? `${s.provider === "baseline" ? "Rule baseline" : "Model"} Select each step XYZ Displacement and gripper action, re-observe after execution. Planning must be verified by experiment.`
+      : "Select preset skill, skill internal trajectory executed by program.";
   $("#observation-help").textContent = direct
-    ? `发送${cameraLabel} RGB 图像及机器人自身状态，不提供物体/目标坐标。需要逐步 XYZ 和 OmniJev 或支持图像的 Chat / Claude 模型。`
+    ? `Send ${cameraLabel} RGB images and robot proprioceptive state, without object/Target coordinates. Incremental XYZ and OmniJev or support image Chat / Claude model.`
     : rgbd
-      ? "发送颜色检测与深度估计的物体坐标；模型不直接接收图像。"
-      : "模型读取仿真中的物体位置，不接收图像（非视觉输入）。";
+      ? "Send object coordinates obtained from color detection and depth estimation; the model does not receive images directly."
+      : "Model reads object positions in simulation, does not receive images (non-visual input).";
   $("#observation-source").textContent = direct
-    ? `模型输入 · ${cameraLabel} RGB + 自身状态`
+    ? `Model input · ${cameraLabel} RGB + Own state`
     : rgbd
-      ? "RGB-D 感知 + 接触传感器"
-      : "非视觉输入 · 仿真真值与接触";
+      ? "RGB-D Perception + Contact sensor"
+      : "Non-visual input · Simulation ground truth and contact";
   if (visionPanel.hidden || comparisonVisible || extensionsVisible) return;
   $("#vision-source-heading").textContent = direct
     ? "MODEL INPUT / RGB"
@@ -594,14 +594,14 @@ function renderVision(s) {
       ? "PERCEPTION / RGB-D"
       : "CAMERA PREVIEW";
   $(".vision-explanation").textContent = direct
-    ? `${cameraLabel} RGB 图像直接送入多模态模型。模型结合末端位置、夹爪与接触反馈判断空间关系，再选择下一步动作；不提供物体和目标坐标。`
+    ? `${cameraLabel} RGB Images are sent directly to the multimodal model. The model combines end-effector position, gripper state, and contact feedback to infer spatial relationships and select the next action; object and target coordinates are not provided.`
     : rgbd
-      ? "颜色检测已知物体，结合深度估计位置；模型接收检测坐标，夹爪与接触来自传感器。动作预演仍使用仿真安全筛选。"
+      ? "Known objects are detected by color and located using depth estimates; the model receives detected coordinates, while gripper state and contacts come from sensors. Action previews still use simulation-based safety filtering."
       : camera
-        ? "相机仅供查看仿真画面；本轮模型读取仿真真值，不发送图像。"
-        : "当前未启用相机；本轮模型读取仿真真值，属于非视觉实验。";
+        ? "Camera is for viewing simulation scenes only; this round the model reads simulation ground truth, does not send images."
+        : "Camera not enabled; this round the model reads simulation ground truth, belongs to non-visual experiment.";
   $("#vision-note").textContent =
-    `${replayMode ? "正在回放轨迹；这里仍是最近一次感知画面。" : "相机在决策与动作边界采集，等待模型返回时画面暂停，并非实时视频。"}${rgbd ? "此模式支持已知颜色物体，尚不具备通用视觉识别能力。" : `${cameras.includes("external") ? "外部相机机位固定。" : ""}${cameras.includes("wrist") ? "腕部相机随机械臂移动。" : ""}${direct ? "每步图像与简短视觉依据可随实验导出。" : "图像仅用于查看，不发送给模型。"}`}`;
+    `${replayMode ? "Replaying trajectory; here is still the most recent perception image." : "Cameras capture at decision and action boundaries. Images pause while waiting for the model response; this is not real-time video."}${rgbd ? "This mode supports known-color objects, but does not yet have general visual recognition capability." : `${cameras.includes("external") ? "External camera position is fixed." : ""}${cameras.includes("wrist") ? "Wrist camera moves with robotic arm." : ""}${direct ? "Each step image and brief visual basis can be exported with the experiment." : "Image is for viewing only, not sent to model."}`}`;
   const capture = s.perception?.capture_id;
   if (!camera || !capture) {
     visionRequest++;
@@ -613,13 +613,13 @@ function renderVision(s) {
       button.disabled = true;
     $("#vision-meta").hidden = true;
     $("#vision-status").textContent = camera
-      ? s.perception?.message || "等待感知采集"
+      ? s.perception?.message || "Waiting for perception collection"
       : "";
     $("#vision-retry").hidden = true;
     clearVisionImage(
       camera
-        ? "尚无相机画面。感知就绪后将在这里显示。"
-        : "选择「RGB-D 视觉」或「直接图像」会启用相机；也可在「启用相机」中单独开启预览。",
+        ? "No camera view yet. Will display after perception is ready."
+        : "Select “ RGB-D Visual or Direct Image will enable camera; preview can also be enabled separately in Enable Camera.",
     );
     return;
   }
@@ -630,7 +630,7 @@ function renderVision(s) {
   $("#vision-meta").hidden = true;
   $("#vision-retry").hidden = true;
   $("#vision-status").textContent = "";
-  clearVisionImage("读取已采集画面…");
+  clearVisionImage("Reading collected image...");
   const request = ++visionRequest;
   const query = new URLSearchParams({ episode_id: s.id, capture_id: capture });
   api(`/api/perception?${query}`)
@@ -641,7 +641,7 @@ function renderVision(s) {
     })
     .catch((error) => {
       if (request !== visionRequest) return;
-      clearVisionImage("相机画面暂不可用");
+      clearVisionImage("Camera view temporarily unavailable");
       $("#vision-status").textContent = error.message;
       $("#vision-retry").hidden = false;
     });
@@ -669,7 +669,7 @@ $("#vision-export").onclick = async () => {
   const episodeId = state.id;
   cameraExportPending = true;
   $("#vision-export").disabled = true;
-  $("#vision-export").textContent = "读取观测帧…";
+  $("#vision-export").textContent = "Reading observation frame...";
   try {
     const response = await fetch(
       `/api/export/cameras.zip?${new URLSearchParams({ episode_id: episodeId })}`,
@@ -679,7 +679,7 @@ $("#vision-export").onclick = async () => {
       throw new Error(
         typeof error.detail === "string"
           ? error.detail
-          : "观测帧下载失败，请重试。",
+          : "Observation frame download failed, please retry.",
       );
     }
     const file = await response.blob();
@@ -695,7 +695,7 @@ $("#vision-export").onclick = async () => {
     toast(error.message);
   } finally {
     cameraExportPending = false;
-    $("#vision-export").textContent = "下载观测帧";
+    $("#vision-export").textContent = "Download observation frame";
     $("#vision-export").disabled = !state?.id || !state.perception?.capture_id;
   }
 };
@@ -755,7 +755,7 @@ function decisionSnapshot(s) {
 }
 
 function selectedActionSummary(action, before) {
-  if (!action) return "等待选择";
+  if (!action) return "Waiting for selection";
   const delta =
     action.delta_xyz ||
     (action.target?.length === 3 && before?.tcp?.length === 3
@@ -763,8 +763,8 @@ function selectedActionSummary(action, before) {
       : null);
   const motion = delta?.every(Number.isFinite)
     ? `ΔXYZ (${delta.map((value) => `${value >= 0 ? "+" : ""}${value.toFixed(3)}`).join(", ")}) m`
-    : "ΔXYZ 未记录";
-  return `${motion} · 夹爪${{ open: "张开", close: "闭合", closed: "闭合" }[action.gripper] || "保持"}`;
+    : "ΔXYZ Not recorded";
+  return `${motion} · Gripper ${{ open: "Open", close: "Close", closed: "Close" }[action.gripper] || "Keep"}`;
 }
 
 function renderDecision(s) {
@@ -792,60 +792,60 @@ function renderDecision(s) {
     history?.before ||
     (replayMode ? lastFrame?.observation : s.frame?.observation);
   $("#input-context").textContent = history
-    ? `历史第 ${history.cycle} 步 · 执行前观测`
+    ? `History step ${history.cycle} Step · Pre-execution observation`
     : replayMode
-      ? "回放观测"
+      ? "Playback observation"
       : direct
-        ? `模型输入 · ${cameraNames(enabledCameras(s))} RGB + 自身状态`
+        ? `Model input · ${cameraNames(enabledCameras(s))} RGB + Own state`
         : s.observation_mode === "rgbd"
-          ? "最近 RGB-D 位置估计 · 接触传感器"
-          : "仿真真值 · 位置与接触";
+          ? "Recently RGB-D Position estimation · Contact sensor"
+          : "Simulation ground truth · Position and contact";
   $("#input-positions").innerHTML = [
-    ["末端", "tcp"],
-    ["方块", "object"],
-    ["目标", "destination"],
+    ["End effector", "tcp"],
+    ["Block", "object"],
+    ["Target", "destination"],
   ]
     .map(
       ([label, key]) =>
-        `<tr><th>${label}</th>${direct && key !== "tcp" ? '<td colspan="3" class="image-position">由图像判断</td>' : [0, 1, 2].map((index) => `<td>${Number.isFinite(observation?.[key]?.[index]) ? observation[key][index].toFixed(3) : "—"}</td>`).join("")}</tr>`,
+        `<tr><th>${label}</th>${direct && key !== "tcp" ? '<td colspan="3" class="image-position">Determine from image</td>' : [0, 1, 2].map((index) => `<td>${Number.isFinite(observation?.[key]?.[index]) ? observation[key][index].toFixed(3) : "—"}</td>`).join("")}</tr>`,
     )
     .join("");
   $("#input-contacts").textContent = observation
-    ? `夹爪${observation.gripper === "closed" ? "闭合" : "张开"} · ${observation.held ? "双侧抓持" : observation.finger_contacts?.length ? "单侧接触" : "未接触物体"}`
-    : "等待观测";
+    ? `Gripper ${observation.gripper === "closed" ? "Close" : "Open"} · ${observation.held ? "Two-sided grip" : observation.finger_contacts?.length ? "Single-sided contact" : "Not contacted object"}`
+    : "Waiting for observation";
   $("#intent-heading").textContent = history
-    ? "阶段选择 · 历史"
+    ? "Stage selection · History"
     : previous
-      ? "阶段选择 · 上一条"
-      : "阶段选择";
+      ? "Stage selection · Previous"
+      : "Stage selection";
   $("#decision-heading").textContent = history
-    ? `历史输出 · 第 ${history.cycle} 步`
-    : "动作输出";
+    ? `History output · Step ${history.cycle} Step`
+    : "Action output";
   $("#decision-live").hidden = !history;
   $("#decision-section").classList.toggle("viewing-history", !!history);
   $("#stage").textContent = history
-    ? "历史"
+    ? "History"
     : loading
-      ? "加载中"
+      ? "Loading"
       : stageNames[s.stage] || s.stage;
   $("#decision-context").textContent = history
-    ? `历史记录 · ${history.after.sim_seconds.toFixed(2)} s`
+    ? `History · ${history.after.sim_seconds.toFixed(2)} s`
     : previous
-      ? `上一条决策 · ${pending ? "正在计算新决策" : stateNames[s.status] || s.status}`
+      ? `Previous decision · ${pending ? "Computing new decision" : stateNames[s.status] || s.status}`
       : loading
-        ? "正在加载 MiniCPM5-2B 权重"
+        ? "Loading MiniCPM5-2B Weight"
         : pending
-          ? "实时 · 正在计算新决策"
-          : `实时 · ${stateNames[s.status] || s.status}`;
+          ? "Real-time · Computing new decision"
+          : `Real-time · ${stateNames[s.status] || s.status}`;
   $("#decision-title").textContent =
     candidates.find((candidate) => candidate.id === decision?.choice)?.label ||
-    (loading ? "首次加载模型" : "等待开始");
+    (loading ? "Loading model for the first time" : "Waiting to start");
   $("#planning-output").hidden = !incremental;
   $("#planning-intent").textContent =
-    decision?.intent || (decision ? "模型未提供行动意图" : "等待模型决策");
+    decision?.intent || (decision ? "Model did not provide action intent" : "Waiting for model decision");
   $("#planning-evidence").textContent =
     decision?.visual_evidence ||
-    (direct ? "模型尚未提供视觉依据" : "本步输入为结构化观测");
+    (direct ? "Model did not provide visual basis" : "Current input is structured observation");
   const chosenAction =
     candidates.find((candidate) => candidate.id === decision?.choice) ||
     shown.action;
@@ -857,13 +857,13 @@ function renderDecision(s) {
   $("#planning-image").textContent = imageHash
     ? `SHA-256 ${typeof imageHash === "string" ? imageHash : JSON.stringify(imageHash)}`
     : direct
-      ? "等待本步图像记录"
-      : "未发送图像";
+      ? "Waiting for image recording of this step"
+      : "Image not sent";
   $("#decision-provider").textContent =
     decision?.model ||
     intent?.model ||
     {
-      baseline: "规则基线",
+      baseline: "Rule baseline",
       chat: "CHAT / JSON",
       claude: "CLAUDE / TOOL",
     }[s.provider] ||
@@ -871,26 +871,26 @@ function renderDecision(s) {
   $("#latency").textContent = decision?.model_call
     ? Number(decision.latency_ms).toFixed(0) + " ms"
     : decision
-      ? "无模型调用"
+      ? "No model call"
       : "— ms";
   $("#feedback-heading").textContent = replayMode
-    ? "回放物理反馈"
-    : "实时物理反馈";
+    ? "Replay physical feedback"
+    : "Real-time physical feedback";
   const failure = ["error", "uncertain", "exhausted", "stalled"].includes(
     s.status,
   );
   $("#decision-note").classList.toggle("failure", !history && failure);
   $("#decision-note").textContent = history
-    ? `正在查看该步记录，三维场景保持${replayMode ? "轨迹回放" : "实时显示"}。${history.candidates ? "" : "旧记录未保存完整候选，仅显示已选动作。"}`
+    ? `Viewing this step record, 3D scene remains ${replayMode ? "Trajectory replay" : "Real-time display"}.${history.candidates ? "" : "Older records did not save all candidates; only the selected action is shown."}`
     : failure && s.message
       ? s.message
       : previous
-        ? "保留上一次完整选择，新结果返回后自动更新。"
+        ? "Keep last complete selection; automatically update after new result returns"
         : decision
           ? incremental
-            ? `${s.provider === "baseline" ? "规则基线" : "模型"}逐步选择位移和夹爪动作；物理成功不等于已验证规划能力。`
-            : "候选由任务控制器生成；概率不代表任务成功率。"
-          : "运行实验后查看动作选择。";
+            ? `${s.provider === "baseline" ? "Rule baseline" : "Model"} Incrementally select displacement and gripper actions; physical success does not equal verified planning capability`
+            : "Candidate generated by task controller; probability does not represent task success rate"
+          : "View action selection after running experiment";
   $("#history-observations").hidden = !history;
   $("#live-inputs-detail").hidden =
     !!history ||
@@ -912,8 +912,8 @@ function renderDecision(s) {
   $("#intent-latency").textContent = intent?.model_call
     ? Number(intent.latency_ms).toFixed(0) + " ms"
     : intent?.reason === "only_eligible_action"
-      ? "单一可行阶段 · 无模型调用"
-      : "规则选择";
+      ? "Single feasible stage · No model call"
+      : "Rule selection";
   $("#intent-probabilities").innerHTML = intent
     ? (Object.entries(intent.probabilities || {}).length
         ? Object.entries(intent.probabilities)
@@ -921,7 +921,7 @@ function renderDecision(s) {
       )
         .map(
           ([choice, probability]) =>
-            `<div class="prob-row ${choice === intent.choice ? "selected" : ""}"><div class="prob-top"><span>${escape(phaseNames[choice] || choice)}</span><span>${probability === null ? "已选择" : (probability * 100).toFixed(1) + "%"}</span></div>${probability === null ? "" : `<div class="bar"><div class="bar-fill" style="width:${probability * 100}%"></div></div>`}</div>`,
+            `<div class="prob-row ${choice === intent.choice ? "selected" : ""}"><div class="prob-top"><span>${escape(phaseNames[choice] || choice)}</span><span>${probability === null ? "Selected" : (probability * 100).toFixed(1) + "%"}</span></div>${probability === null ? "" : `<div class="bar"><div class="bar-fill" style="width:${probability * 100}%"></div></div>`}</div>`,
         )
         .join("")
     : "";
@@ -933,20 +933,20 @@ function renderDecision(s) {
           const rejected = candidate.admitted === false;
           const probability = probabilities[candidate.id];
           const label = rejected
-            ? "已拦截"
+            ? "Intercepted"
             : probability !== undefined
               ? (probability * 100).toFixed(1) + "%"
               : selected
-                ? "已选择"
+                ? "Selected"
                 : decision
-                  ? "未选择"
-                  : "等待决策";
+                  ? "Not selected"
+                  : "Waiting for decision";
           const width =
             probability !== undefined ? probability * 100 : selected ? 100 : 0;
           return `<div class="prob-row ${selected ? "selected" : ""} ${rejected ? "rejected" : ""}" title="${escape(candidate.rejection || "")}"><div class="prob-top"><span>${escape(candidate.label || candidate.id)}</span><span>${label}</span></div><div class="bar"><div class="bar-fill" style="width:${width}%"></div></div></div>`;
         })
         .join("")
-    : `<div class="empty">${pending ? "等待模型返回候选选择…" : "尚无候选动作"}</div>`;
+    : `<div class="empty">${pending ? "Waiting for model to return candidate selection..." : "No candidate actions"}</div>`;
   if (history) {
     $("#history-before").textContent = JSON.stringify(history.before, null, 2);
     $("#history-after").textContent = JSON.stringify(history.after, null, 2);
@@ -1018,7 +1018,7 @@ function renderLogs(s) {
         level: "warning",
         time: intervention.sim_time,
         cycle: intervention.after_cycle,
-        message: `外部评测扰动：${intervention.kind === "object_shift" ? "移动方块" : "移动目标"}，不是模型动作。`,
+        message: `External evaluation disturbance: ${intervention.kind === "object_shift" ? "Move block" : "Move target"}, Not a model action.`,
       });
   }
   const signature = JSON.stringify(events.slice(-12));
@@ -1028,7 +1028,7 @@ function renderLogs(s) {
     ["error", "warning"].includes(event.level),
   ).length;
   $("#log-count").textContent =
-    `${events.length} 条${errors ? ` · ${errors} 条提醒` : ""}`;
+    `${events.length} Item ${errors ? ` · ${errors} Reminder` : ""}`;
   $("#runtime-log").classList.toggle("has-alert", errors > 0);
   $("#log-entries").innerHTML =
     events
@@ -1044,9 +1044,9 @@ function renderLogs(s) {
             : String(event.time || "")
                 .replace(/^.*T/, "")
                 .slice(0, 8);
-        return `<li class="log-item ${level}"><span>${escape(time)} · 第 ${escape(event.cycle ?? 0)} 步</span><p>${escape(event.message || event.event || "")}</p></li>`;
+        return `<li class="log-item ${level}"><span>${escape(time)} · Step ${escape(event.cycle ?? 0)} Step</span><p>${escape(event.message || event.event || "")}</p></li>`;
       })
-      .join("") || '<li class="empty">暂无运行日志</li>';
+      .join("") || '<li class="empty">No running logs</li>';
 }
 
 function renderState(s) {
@@ -1093,7 +1093,7 @@ function renderState(s) {
   }
   if (!replayMode) renderFrame(s.frame);
   $("#status-text").textContent = replayMode
-    ? "轨迹回放"
+    ? "Trajectory replay"
     : stateNames[s.status];
   $("#scene-status").classList.toggle(
     "error",
@@ -1107,10 +1107,10 @@ function renderState(s) {
     const runtime = s.model_runtime;
     const device = (runtime.device || "AUTO").toUpperCase();
     $("#provider-note").textContent = {
-      not_loaded: "本地 · 首次决策加载权重",
-      loading: `正在加载权重 · ${device}`,
-      ready: `本地就绪 · ${device} · 候选概率`,
-      error: `加载失败 · ${runtime.error || "请检查服务日志"}`,
+      not_loaded: "Local · First decision loads weights",
+      loading: `Loading weights · ${device}`,
+      ready: `Locally ready · ${device} · Candidate probability`,
+      error: `Load failed · ${runtime.error || "Check the service logs"}`,
     }[runtime.status];
   }
   renderDecision(s);
@@ -1118,16 +1118,16 @@ function renderState(s) {
   renderLogs(s);
   $("#intervention-status").hidden = !s.interventions?.length;
   $("#intervention-status").textContent = s.interventions?.length
-    ? `已注入 ${s.interventions.length} 次外部评测扰动；详见运行日志。`
+    ? `Injected ${s.interventions.length} External evaluation disturbance; see run log.`
     : "";
   $("#run-budget").textContent =
-    String(s.cycles).padStart(2, "0") + " / " + s.max_cycles + " 步";
+    String(s.cycles).padStart(2, "0") + " / " + s.max_cycles + " Step";
   $("#run-label").textContent =
     s.status === "running"
-      ? "暂停实验"
+      ? "Pause experiment"
       : ["paused", "uncertain"].includes(s.status)
-        ? "继续实验"
-        : "运行实验";
+        ? "Continue experiment"
+        : "Run experiment";
   const runIcon = s.status === "running" ? "pause" : "play";
   if ($("#run").dataset.icon !== runIcon) {
     $("#run").dataset.icon = runIcon;
@@ -1136,9 +1136,9 @@ function renderState(s) {
   }
   updateControlAvailability();
   $("#preview-state").textContent = s.preview ? "ON" : "OFF";
-  $("#model-calls").textContent = "调用 " + s.model_calls + " 次";
+  $("#model-calls").textContent = "Call " + s.model_calls + " Times";
   $("#tokens").textContent =
-    "输入 " + s.input_tokens.toLocaleString() + " tokens";
+    "Input " + s.input_tokens.toLocaleString() + " tokens";
   $("#timeline").max = Math.max(0, s.frame_count - 1);
   if (!replayMode) {
     $("#timeline").value = s.frame_count - 1;
@@ -1151,16 +1151,16 @@ function renderState(s) {
   const hsig = s.id + "-" + s.history.length + "-" + selectedCycle;
   if (hsig !== historySignature) {
     historySignature = hsig;
-    $("#event-count").textContent = s.history.length + " 步";
-    $("#history-count").textContent = s.history.length + " 步";
+    $("#event-count").textContent = s.history.length + " Step";
+    $("#history-count").textContent = s.history.length + " Step";
     $("#events").innerHTML = s.history.length
       ? s.history
           .map(
             (h) =>
-              `<li class="event ${h.cycle === selectedCycle ? "active" : ""}"><button type="button" class="event-button" data-cycle="${h.cycle}" aria-pressed="${h.cycle === selectedCycle}" aria-label="查看第 ${h.cycle} 步决策：${escape(h.label)}"><span class="event-line"><span>${escape(h.label)}</span><small>${h.after.sim_seconds.toFixed(1)} s</small></span><span class="event-detail">第 ${h.cycle} 步 · ${h.after.held ? "双侧接触" : h.after.support_contact ? "目标支撑" : "位置已更新"}${h.rejected_count ? " · 拦截 " + h.rejected_count + " 个候选" : ""}</span></button></li>`,
+              `<li class="event ${h.cycle === selectedCycle ? "active" : ""}"><button type="button" class="event-button" data-cycle="${h.cycle}" aria-pressed="${h.cycle === selectedCycle}" aria-label="View the ${h.cycle} step decision: ${escape(h.label)}"><span class="event-line"><span>${escape(h.label)}</span><small>${h.after.sim_seconds.toFixed(1)} s</small></span><span class="event-detail">Step ${h.cycle} Step · ${h.after.held ? "Bilateral contact" : h.after.support_contact ? "Target support" : "Position updated"}${h.rejected_count ? " · Intercept " + h.rejected_count + " candidate" : ""}</span></button></li>`,
           )
           .join("")
-      : '<li class="empty">暂无执行记录</li>';
+      : '<li class="empty">No execution record</li>';
     if (selectedCycle === null)
       $("#events").scrollTop = $("#events").scrollHeight;
   }
@@ -1169,13 +1169,13 @@ function renderState(s) {
   )
     ? "N/A"
     : Number($("#threshold").value).toFixed(2);
-  $("#threshold").title = ["omnijev", "omni_adaptive"].includes(s.provider) ? "候选 token 分数未经校准；默认不设置额外分数门槛" : "生成式接口不提供校准成功概率";
+  $("#threshold").title = ["omnijev", "omni_adaptive"].includes(s.provider) ? "Candidate token Scores are not calibrated; no additional score threshold is set by default" : "The generative interface does not provide calibrated success probabilities";
   renderProviderStatus();
   if (s.message && s.message !== renderState.lastMessage) {
     toast(s.message);
     renderState.lastMessage = s.message;
   }
-  $("#connection").textContent = "● 已连接";
+  $("#connection").textContent = "● Connected";
 }
 
 function configuredIntervention() {
@@ -1186,7 +1186,7 @@ function configuredIntervention() {
     input.value.trim() === "" ? NaN : Number(input.value),
   );
   if (!Number.isInteger(after_cycle) || after_cycle < 1 || after_cycle > 199)
-    throw new Error("外部评测扰动时刻必须为第 1–199 步后。");
+    throw new Error("External evaluation disturbance moment must be at the 1–199 After step.");
   if (
     delta_xy.some(
       (value) => !Number.isFinite(value) || Math.abs(value) > 0.06,
@@ -1194,7 +1194,7 @@ function configuredIntervention() {
     delta_xy.every((value) => value === 0)
   )
     throw new Error(
-      "外部评测扰动的 X / Y 位移必须在 ±0.06 米内，且不能同时为零。",
+      "External evaluation disturbance X / Y Displacement must be in ±0.06 meters, and they cannot both be zero.",
     );
   return { kind, after_cycle, delta_xy };
 }
@@ -1229,7 +1229,7 @@ async function reset(fromControl = false) {
     if ($("#observation-mode").value === "vision") {
       if ($("#control-mode").value !== "incremental")
         throw new Error(
-          "直接图像需要「逐步 XYZ」动作决策。请先切换动作决策方式。",
+          "Direct image input requires “Incremental XYZ”Action decision. Please first switch the action decision method.",
         );
       if (
         !["chat", "claude", "omnijev", "omni_direct", "omni_reasoning", "omni_adaptive"].includes(
@@ -1237,7 +1237,7 @@ async function reset(fromControl = false) {
         )
       )
         throw new Error(
-          "直接图像需要 OmniJev 本地策略或支持图像的 Chat / Claude 模型。",
+          "Direct image required OmniJev Local policy or support image Chat / Claude model.",
         );
     }
     const s = await api("/api/reset", setup());
@@ -1373,7 +1373,7 @@ $("#camera-mode").onchange = async () => {
   if (!(await reset())) {
     $("#camera-mode").value = cameraSelection(enabledCameras(state));
     $("#observation-mode").value = state.observation_mode || "privileged";
-  } else if (noCamera) toast("已关闭相机，模型使用仿真真值（非视觉输入）。");
+  } else if (noCamera) toast("Camera disabled, model uses simulated ground truth (non-visual input).");
 };
 $("#intervention-kind").onchange = updateControlAvailability;
 function drawer(open) {
@@ -1397,7 +1397,7 @@ async function showReplay(index) {
     " / " +
     String(state.frame_count).padStart(4, "0");
   $("#timeline-label").textContent = "RECORDED TRAJECTORY";
-  $("#status-text").textContent = "轨迹回放";
+  $("#status-text").textContent = "Trajectory replay";
   $("#success-stamp").classList.remove("visible");
   renderVision(state);
 }
@@ -1474,11 +1474,11 @@ function verificationLabel(saved, provider = $("#api-provider").value) {
     saved?.url &&
     saved?.model &&
     (!["jev", "claude"].includes(provider) || saved.key_configured);
-  if (!ready) return "未配置";
+  if (!ready) return "Not configured";
   const verification = saved.verification;
-  if (verification?.status === "passed") return "已验证";
-  if (verification?.status === "failed") return "验证失败";
-  return "已配置 · 未验证";
+  if (verification?.status === "passed") return "Verified";
+  if (verification?.status === "failed") return "Verification failed";
+  return "Configured · Not verified";
 }
 function renderProviderStatus() {
   if (!["chat", "claude", "jev", "local"].includes(state?.provider)) {
@@ -1486,10 +1486,10 @@ function renderProviderStatus() {
     return;
   }
   const prefix = {
-    chat: "兼容 API",
+    chat: "Compatible API",
     claude: "Claude API",
     jev: "TypeSafe API",
-    local: "结构化 API",
+    local: "Structured API",
   }[state.provider];
   const saved = state.profile_id
     ? profileValues.find((profile) => profile.id === state.profile_id)
@@ -1505,12 +1505,12 @@ function renderVerification() {
   const verification = saved.verification;
   if (profileEditor && !editingProfileId) {
     $("#connection-verification").dataset.status = "untested";
-    $("#verification-label").textContent = "新配置草稿 · 尚未保存或验证";
+    $("#verification-label").textContent = "New configuration draft · Not saved or verified";
     return;
   }
   if (connectionDraftChanged) {
     $("#connection-verification").dataset.status = "untested";
-    $("#verification-label").textContent = "草稿已修改 · 尚未保存或验证";
+    $("#verification-label").textContent = "Draft modified · Not saved or verified";
     return;
   }
   $("#connection-verification").dataset.status =
@@ -1529,19 +1529,19 @@ function fillConnection() {
   const saved = currentConnection();
   $("#profile-name").value = saved.name || "";
   $("#connection-title").textContent = editingProfileId
-    ? "编辑模型配置"
+    ? "Edit model configuration"
     : profileEditor
-      ? "新建模型配置"
-      : "模型连接";
+      ? "New model configuration"
+      : "Model connection";
   $("#connection-save").hidden = $("#connection-test").hidden = profileEditor;
   $("#connection-profile").textContent = editingProfileId
-    ? "更新模型配置"
+    ? "Update model configuration"
     : profileEditor
-      ? "保存模型配置"
-      : "另存为模型配置";
+      ? "Save model configuration"
+      : "Save model configuration";
   $("#profile-help").textContent = editingProfileId
-    ? "留空 Key 仅在接口地址保持相同时保留原密钥。更新配置不会自动开始实验。"
-    : "另存为具名配置时请重新填写 Key；不会复制默认连接的密钥。";
+    ? "Empty Key Keep original key when interface address remains unchanged. Updating configuration will not automatically start the experiment."
+    : "When saving as a named configuration, please fill in again Key; Cannot copy the default connection key.";
   $("#api-provider").disabled = !!editingProfileId;
   $("#api-url").value =
     provider === "chat"
@@ -1556,19 +1556,19 @@ function fillConnection() {
   $("#api-model").value = saved.model || "";
   $("#api-key").value = "";
   $("#api-key").placeholder = saved.key_configured
-    ? "留空保留已配置密钥"
+    ? "Empty, keep configured key"
     : "API Key";
-  $("#key-state").textContent = saved.key_configured ? "已配置" : "未配置";
+  $("#key-state").textContent = saved.key_configured ? "Configured" : "Not configured";
   $("#api-json").checked = saved.json_mode !== false;
   $("#json-mode-row").hidden = provider !== "chat";
   $("#api-official-preset").hidden = provider !== "chat";
   $("#typesafe-links").hidden = provider !== "jev";
   $("#provider-help").textContent = {
-    jev: "官方 Jev 当前采用邀请制：先申请访问，获批后创建 TypeSafe Key。地址已锁定；jev-latest 跟随官方更新，对比时可固定版本，如 jev-1.13.0。",
+    jev: "Official Jev Currently invitation-based: apply for access first, create after approval TypeSafe Key.Address locked; jev-latest Follow official updates; fix version when comparing, e.g. jev-1.13.0.",
     claude:
-      "Claude 原生 Messages API，使用 Anthropic Key。测试时会显示服务返回的模型名称。",
-    chat: "填写平台提供的 Base URL 和模型 ID。普通聊天兼容接口不能替代 Jev 专用决策接口。",
-    local: "填写完整的结构化决策接口地址；服务需要返回候选动作及其概率。",
+      "Claude Native Messages API, Use Anthropic Key.During testing, the model name returned by the service is displayed.",
+    chat: "Fill in the provided platform Base URL and model ID.A general chat-compatible interface cannot replace Jev Dedicated decision interface.",
+    local: "Fill in the complete structured decision interface address; the service needs to return candidate actions and their probabilities.",
   }[provider];
   $("#connection-result").textContent = "";
   renderVerification();
@@ -1582,7 +1582,7 @@ async function openConnection(profileId = null, asProfile = false) {
     const profile = profileId
       ? profileValues.find((item) => item.id === profileId)
       : null;
-    if (profileId && !profile) throw new Error("模型配置已失效，请重新选择。");
+    if (profileId && !profile) throw new Error("Model configuration is invalid, please reselect.");
     editingProfileId = profileId;
     profileEditor = asProfile || !!profileId;
     $("#api-provider").value =
@@ -1616,7 +1616,7 @@ $("#api-official-preset").onclick = () => {
   connectionDraftChanged = true;
   renderVerification();
   $("#connection-result").textContent =
-    "已填入官方示例，尚未调用。填写自己的 Key 后可测试；模型权限以账号为准。";
+    "Official example has been filled in, but not yet called. Fill in your own Key Can test afterwards; model permissions depend on the account.";
   $("#api-key").focus();
 };
 $("#connection-close").onclick = () => $("#connection-dialog").close();
@@ -1630,8 +1630,8 @@ async function saveConnection(testCall = false) {
   const provider = $("#api-provider").value;
   setConnectionBusy(true);
   $("#connection-result").textContent = testCall
-    ? "正在测试调用…"
-    : "正在保存…";
+    ? "Testing call..."
+    : "Saving...";
   try {
     const saved = await api("/api/connections", {
       provider,
@@ -1644,8 +1644,8 @@ async function saveConnection(testCall = false) {
     connectionValues = await api("/api/connections");
     connectionDraftChanged = false;
     $("#key-state").textContent = connectionValues[provider].key_configured
-      ? "已配置"
-      : "未配置";
+      ? "Configured"
+      : "Not configured";
     renderVerification();
     await refreshProviders();
     $("#provider").value = provider;
@@ -1654,8 +1654,8 @@ async function saveConnection(testCall = false) {
       const result = await api(`/api/connections/${provider}/test`, {});
       $("#connection-result").textContent =
         result.ok === false
-          ? `验证失败 · ${result.detail || "请检查接口配置"}`
-          : `调用通过 · ${result.model} · ${result.latency_ms} ms${result.detail ? ` · ${result.detail}` : ""}`;
+          ? `Verification failed · ${result.detail || "Please check the interface configuration"}`
+          : `Call successful · ${result.model} · ${result.latency_ms} ms${result.detail ? ` · ${result.detail}` : ""}`;
       connectionValues = await api("/api/connections");
       renderVerification();
       renderProviderStatus();
@@ -1690,13 +1690,13 @@ async function saveProfile() {
   if (connectionPending || !$("#connection-form").reportValidity()) return;
   const name = $("#profile-name").value.trim();
   if (!name) {
-    $("#connection-result").textContent = "请为模型配置起一个名字。";
+    $("#connection-result").textContent = "Please give the model configuration a name.";
     $("#profile-name").focus();
     return;
   }
   connectionPending = true;
   setConnectionBusy(true);
-  $("#connection-result").textContent = "正在保存模型配置…";
+  $("#connection-result").textContent = "Saving model configuration...";
   try {
     const saved = await api("/api/model-profiles", {
       ...(editingProfileId ? { id: editingProfileId } : {}),
@@ -1711,7 +1711,7 @@ async function saveProfile() {
     await refreshProviders();
     await extensionsView?.refresh();
     $("#connection-dialog").close();
-    toast(`${storageLabel(saved.storage)} · 未调用模型。`);
+    toast(`${storageLabel(saved.storage)} · Model not called.`);
   } catch (error) {
     $("#connection-result").textContent = error.message;
   } finally {
@@ -1744,7 +1744,7 @@ async function boot() {
           }
         }
       } catch (e) {
-        $("#connection").textContent = "连接已断开";
+        $("#connection").textContent = "Connection disconnected";
       }
       setTimeout(
         poll,
@@ -1759,12 +1759,12 @@ async function boot() {
     };
     poll();
   } catch (e) {
-    $("#loading").textContent = "场景加载失败";
+    $("#loading").textContent = "Scene loading failed";
     toast(e.message);
   }
 }
 boot();
 
-fetch("/api/omnijev/status").then(r=>r.json()).then(s=>{document.querySelector("#omni-health").textContent=s.ready?"模型在线":"模型未就绪 · 可用规则演示"}).catch(()=>{document.querySelector("#omni-health").textContent="连接失败"});
+fetch("/api/omnijev/status").then(r=>r.json()).then(s=>{document.querySelector("#omni-health").textContent=s.ready?"Model online":"Model not ready · Available rule demos"}).catch(()=>{document.querySelector("#omni-health").textContent="Connection failed"});
 
-function providerNote(p){return {baseline:"离线 · 确定性策略",omnijev:"本地 · 短标签 / 未校准分数",omni_direct:"本地 · 短答案 / 无候选分数",omni_reasoning:"本地 · 有限预算推理",omni_adaptive:"本地 · 实验性按需推理",jev:"远程 · TypeSafe API"}[p]||"已配置模型接口"}
+function providerNote(p){return {baseline:"Offline · Deterministic policy",omnijev:"Local · Short tag / Uncalibrated score",omni_direct:"Local · Short answer / No candidate scores",omni_reasoning:"Local · Budgeted reasoning",omni_adaptive:"Local · Experimental on-demand reasoning",jev:"Remote · TypeSafe API"}[p]||"Model interface configured"}

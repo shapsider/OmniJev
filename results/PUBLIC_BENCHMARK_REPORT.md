@@ -1,88 +1,88 @@
-# OmniJev 本机公开 Benchmark 评测
+# OmniJev Public Benchmark Evaluation
 
-完成四个固定先导子集：425 个问题、1,700 次正式请求。模型为本机 Nemotron 3 Nano Omni Q4_K_M，权重冻结。
-这些是局部先导实验，不是四个官方 benchmark 的全量成绩。主正确率允许从最终输出明确解析选项；严格格式通过情况单独报告，不从隐藏思考过程挑选答案。
-本轮研究判断与课题调整建议见 [评测结论](PUBLIC_EVALUATION_FINDINGS.md)。
+Completed four fixed pilot subsets: 425 questions, 1,700 formal requests. Model is local Nemotron 3 Nano Omni Q4_K_M, weights frozen.
+These are small-scale pilot experiments, not full results of the four official benchmarks. Main accuracy allows explicit option parsing from final output; strict format reported separately per case, not selected from hidden reasoning process.
+This round's research judgment and task adjustment suggestions see [Evaluation Conclusions](PUBLIC_EVALUATION_FINDINGS.md).
 
-## 正确率
+## Accuracy
 
-| 数据集 | 题数 | OmniJev | 普通短答案 | JSON | 原生推理 |
+| Dataset | Questions | OmniJev | Direct Short Answer | JSON | Native Reasoning |
 |---|---:|---:|---:|---:|---:|
 | MMStar | 300 | 66.67% | 66.67% | 65.33% | 72.33% |
 | MMBench DEV EN pilot | 60 | 90.00% | 90.00% | 90.00% | 90.00% |
 | MMAD DS-MVTec zero-shot pilot | 45 | 86.67% | 86.67% | 84.44% | 86.67% |
 | StreamingBench causal 8-frame pilot | 20 | 85.00% | 85.00% | 85.00% | 85.00% |
 
-## 响应耗时与 token
+## Response Time and Token
 
-| 数据集 | OmniJev P50/P95 秒 | 推理 P50/P95 秒 | OmniJev / 推理平均生成 tokens | 总 token 节省 |
+| Dataset | OmniJev P50/P95 Seconds | Inference P50/P95 Seconds | OmniJev / Inference Average Generated Tokens | Total Token Savings |
 |---|---:|---:|---:|---:|
 | MMStar | 1.166 / 1.515 | 15.899 / 120.990 | 3.0 / 2419.4 | 85.79% |
 | MMBench DEV EN pilot | 0.611 / 1.186 | 6.109 / 36.923 | 3.0 / 719.5 | 66.16% |
 | MMAD DS-MVTec zero-shot pilot | 0.659 / 1.088 | 5.745 / 47.057 | 3.0 / 914.3 | 71.80% |
 | StreamingBench causal 8-frame pilot | 2.979 / 3.583 | 20.192 / 124.272 | 3.0 / 2379.1 | 51.26% |
 
-## 准确率保持检验
+## Accuracy Maintenance Test
 
-差值定义为 OmniJev − 原生推理；负数表示 OmniJev 较低。非劣界限预设为最多下降 2 个百分点。答案一致率另外计算，不能代替对标准答案的正确率。
+Difference defined as OmniJev - Native Reasoning; negative numbers indicate OmniJev lower. Non-inferiority preset as at most 2 percentage point drop. Answer consistency rate separately calculated, cannot replace standard answer accuracy.
 
-| 数据集 | 差值百分点 | 保守 95% 区间 | 答案一致率 | 结论 |
+| Dataset | Difference Percentage Points | Conservative 95% Interval | Answer Consistency Rate | Conclusion |
 |---|---:|---:|---:|---|
-| MMStar | -5.67 | [-13.87, 2.69] | 75.00% | 未证实准确率非劣 |
-| MMBench DEV EN pilot | 0.00 | [-12.58, 12.58] | 93.33% | 未证实准确率非劣 |
-| MMAD DS-MVTec zero-shot pilot | 0.00 | [-19.01, 19.01] | 86.67% | 未证实准确率非劣 |
-| StreamingBench causal 8-frame pilot | 0.00 | [-27.87, 27.87] | 85.00% | 未证实准确率非劣 |
+| MMStar | -5.67 | [-13.87, 2.69] | 75.00% | Accuracy not confirmed non-inferior |
+| MMBench DEV EN pilot | 0.00 | [-12.58, 12.58] | 93.33% | Accuracy not confirmed non-inferior |
+| MMAD DS-MVTec zero-shot pilot | 0.00 | [-19.01, 19.01] | 86.67% | Accuracy not confirmed non-inferior |
+| StreamingBench causal 8-frame pilot | 0.00 | [-27.87, 27.87] | 85.00% | Accuracy not confirmed non-inferior |
 
-## 5 秒响应期限内的正确率
+## Accuracy within 5-second response deadline
 
-分母为全部请求；答错、无法明确解析、超时、或答对但超过 5 秒均不计成功。更完整的时间预算曲线见各数据集 deadline.png。
+The denominator is all requests; incorrect, unparseable, timed out, or correct but exceeding 5 seconds are not counted as successful. A more complete time budget curve can be seen in each dataset's deadline.png.
 
-| 数据集 | OmniJev | 普通短答案 | JSON | 原生推理 |
+| Dataset | OmniJev | Ordinary short answer | JSON | Native reasoning |
 |---|---:|---:|---:|---:|
 | MMStar | 66.67% | 66.67% | 65.33% | 9.00% |
 | MMBench DEV EN pilot | 90.00% | 90.00% | 90.00% | 36.67% |
 | MMAD DS-MVTec zero-shot pilot | 86.67% | 86.67% | 84.44% | 35.56% |
 | StreamingBench causal 8-frame pilot | 85.00% | 85.00% | 85.00% | 5.00% |
 
-## 普通短答案强基线
+## Ordinary short answer strong baseline
 
-| 数据集 | OmniJev / Direct P50 秒 | OmniJev / Direct 平均生成 tokens | 答案一致率 | 准确率差百分点 |
+| Dataset | OmniJev / Direct P50 seconds | OmniJev / Direct average generation tokens | Answer consistency rate | Accuracy difference percentage points |
 |---|---:|---:|---:|---:|
 | MMStar | 1.166 / 1.170 | 3.0 / 3.0 | 99.67% | 0.00 |
 | MMBench DEV EN pilot | 0.611 / 0.580 | 3.0 / 3.0 | 100.00% | 0.00 |
 | MMAD DS-MVTec zero-shot pilot | 0.659 / 0.587 | 3.0 / 3.0 | 100.00% | 0.00 |
 | StreamingBench causal 8-frame pilot | 2.979 / 2.986 | 3.0 / 3.0 | 100.00% | 0.00 |
 
-当前实现的短标签路径与普通短答案使用相同模型、提示词和生成预算，主要差异是是否返回 logprobs。相近的结果应归因于通用模型的短答案能力，不能解释为新模型范式的独立优势。
+The current short label path implementation uses the same model, prompt, and generation budget as ordinary short answers, with the main difference being whether logprobs are returned. Similar results should be attributed to the general model's short answer capability, not interpreted as independent advantages of a new model paradigm.
 
-## 严格格式不合规与截断
+## Strict format non-compliance and truncation
 
-格式不合规不一定意味着无法解析最终答案；主正确率采用前述语义答案口径。后两列统计推理组。
+Format non-compliance does not necessarily mean the final answer cannot be parsed; main accuracy uses the aforementioned semantic answer criteria. The last two columns are for reasoning groups.
 
-| 数据集 | OmniJev 格式不合规 | 普通短答案格式不合规 | JSON 格式不合规 | 推理格式不合规 | 输出截断 | 思考预算强制回答 |
+| Dataset | OmniJev format violations | Direct short-answer format violations | JSON format violations | Reasoning format violations | Output truncation | Forced answer at reasoning budget |
 |---|---:|---:|---:|---:|---:|---:|
 | MMStar | 1 | 1 | 0 | 4 | 1 | 43 |
 | MMBench DEV EN pilot | 0 | 0 | 0 | 0 | 0 | 0 |
 | MMAD DS-MVTec zero-shot pilot | 0 | 0 | 0 | 0 | 0 | 1 |
 | StreamingBench causal 8-frame pilot | 0 | 0 | 0 | 0 | 0 | 3 |
 
-## 解释边界
+## Explanation boundaries
 
-- 推理组使用 Bionic medium：请求总输出上限 20,480，但实测内部思考预算约 8,192 tokens，达到预算时可插入强制回答提示。这不是无限预算或完全复现 NVIDIA 官方 vLLM 服务的结果。
-- 使用服务自然缓存；首批请求可能复用技术校准缓存。数据准备与首段推理重叠，绝对延迟存在系统负载噪声。
-- 延迟从客户端编码输入到解析完整回答，不含模型加载和预先完成的视频下载、解码、抽帧。
-- 生成 token 包含思考 token；总 token 同时包含多模态输入。API 用量不等于 FLOPs、能耗或实际账单。
-- MMStar 为六类各 50 题；MMBench 只测一种选项顺序；MMAD 仅 DS-MVTec、零参考图；StreamingBench 只测资源受限的因果八帧子集。
-- 动态子集验证的是时间因果约束下的视觉问答，不是持续流式推理、真实操作任务成功率或原生音视频联合能力。
-- 小样本不能据“差异不显著”宣称等效；两种方法共同答错，也不构成准确性保证。
+- Reasoning groups use Bionic medium: total request output limit is 20,480, but actual measured internal reasoning budget is about 8,192 tokens; when the budget is reached, a forced answer prompt can be inserted. This is not infinite budget or fully reproducing NVIDIA's official vLLM service results.
+- Using service natural cache; first batch requests may reuse technology calibration cache. Data preparation and first segment of reasoning overlap, with absolute latency subject to system load noise.
+- Latency from client encoding input to parsing complete answer, excluding model loading and pre-completed video download, decoding, and frame extraction.
+- Generated tokens include reasoning tokens; total tokens simultaneously include multi-modal inputs. API usage does not equal FLOPs, energy consumption, or actual billing.
+- MMStar consists of 50 questions for each of six categories; MMBench tests only one option order; MMAD only uses DS-MVTec, zero-reference images; StreamingBench only tests resource-constrained causal eight-frame subsets.
+- Dynamic subset validation is visual question answering under temporal causal constraints, not continuous streaming reasoning, real-world task success rate, or native audio-video joint capability.
+- Small samples cannot claim equivalence based on 'no significant difference'; both methods answering incorrectly together does not constitute accuracy guarantee.
 
-## 可复现材料
+## Reproducible materials
 
-- [完整实验协议](../docs/PUBLIC_EVALUATION_PROTOCOL.md)
-- [环境记录](public-evaluation-environment.json)
-- 数据集目录包含 manifest.json、records.jsonl、summary.json、REPORT.md、模型配置、源码快照、输入哈希和图表。
+- [Complete experiment protocol](../docs/PUBLIC_EVALUATION_PROTOCOL.md)
+- [Environment record](public-evaluation-environment.json)
+- Dataset directory includes manifest.json, records.jsonl, summary.json, REPORT.md, model configuration, source code snapshot, input hash, and charts.
 
-- [mmstar-public 详细报告](mmstar-public/REPORT.md)
-- [mmbench-public 详细报告](mmbench-public/REPORT.md)
-- [mmad-public 详细报告](mmad-public/REPORT.md)
-- [streaming-public 详细报告](streaming-public/REPORT.md)
+- [mmstar-public detailed report](mmstar-public/REPORT.md)
+- [mmbench-public detailed report](mmbench-public/REPORT.md)
+- [mmad-public detailed report](mmad-public/REPORT.md)
+- [streaming-public detailed report](streaming-public/REPORT.md)

@@ -43,9 +43,9 @@ test("named API profiles save without calling models or storing keys in the brow
       modelRequests.push(request.url());
   });
   await page.locator("#ext-new-profile").click();
-  await expect(page.locator("#connection-title")).toHaveText("新建模型配置");
+  await expect(page.locator("#connection-title")).toHaveText("New model configuration");
   await expect(page.locator("#connection-save")).toBeHidden();
-  await page.locator("#profile-name").fill("测试平台 A · OpenAI 兼容");
+  await page.locator("#profile-name").fill("Test platform A · OpenAI Compatible");
   await page.locator("#api-url").fill("https://ui-profile.invalid/v1");
   await page.locator("#api-model").fill("profile-test-model");
   await page.locator("#api-key").fill(testKey);
@@ -53,11 +53,11 @@ test("named API profiles save without calling models or storing keys in the brow
   await page.locator("#connection-profile").click();
   await expect(page.locator("#connection-dialog")).toBeHidden();
   await expect(page.locator("#api-key")).toHaveValue("");
-  await expect(page.locator("#ext-profile-list")).toContainText("测试平台 A");
+  await expect(page.locator("#ext-profile-list")).toContainText("Test platform A");
   const profileResponse = await page.request.get("/api/model-profiles");
   const { profiles } = await profileResponse.json();
   const profile = profiles.find(
-    (value) => value.name === "测试平台 A · OpenAI 兼容",
+    (value) => value.name === "Test platform A · OpenAI Compatible",
   );
   expect(profile.key_configured).toBe(true);
   expect(profile).not.toHaveProperty("key");
@@ -73,9 +73,9 @@ test("named API profiles save without calling models or storing keys in the brow
   await page.reload();
   await expect(page.locator("#loading")).toHaveClass(/hidden/);
   await page.locator("#extensions-open").click();
-  await expect(page.locator("#ext-profile-list")).toContainText("测试平台 A");
+  await expect(page.locator("#ext-profile-list")).toContainText("Test platform A");
   await expect(page.locator("#ext-profile-storage")).toContainText(
-    "刷新页面不会丢失",
+    "refreshing page will not lose data",
   );
   expect((await (await page.request.get("/api/state")).json()).id).toBe(
     before.id,
@@ -87,11 +87,11 @@ test("named API profiles save without calling models or storing keys in the brow
     )
     .click();
   await expect(page.locator("#api-key")).toHaveValue("");
-  await expect(page.locator("#key-state")).toHaveText("已配置");
+  await expect(page.locator("#key-state")).toHaveText("Configured");
   await expect(page.locator("#connection-storage")).toContainText(
-    "刷新页面不会丢失",
+    "refreshing page will not lose data",
   );
-  await page.locator("#profile-name").fill("平台 A · 已命名");
+  await page.locator("#profile-name").fill("Platform A · Already named");
   await page.locator("#connection-profile").click();
   await expect(page.locator("#connection-dialog")).toBeHidden();
   await page
@@ -99,7 +99,7 @@ test("named API profiles save without calling models or storing keys in the brow
       `#ext-profile-list [data-profile="${profile.id}"][data-action="use"]`,
     )
     .click();
-  await expect(page.locator("#ext-message")).toContainText("尚未调用模型");
+  await expect(page.locator("#ext-message")).toContainText("model not called yet");
   await expect
     .poll(
       async () =>
@@ -108,7 +108,7 @@ test("named API profiles save without calling models or storing keys in the brow
     .toBe(profile.id);
   await page.locator("#workbench-view").click();
   await expect(page.locator("#provider")).toHaveValue(`profile:${profile.id}`);
-  await expect(page.locator("#provider-note")).toContainText("平台 A · 已命名");
+  await expect(page.locator("#provider-note")).toContainText("Platform A · Already named");
   await page.locator("#extensions-open").click();
   await page.locator("#ext-target").selectOption("comparison");
   await page
@@ -116,7 +116,7 @@ test("named API profiles save without calling models or storing keys in the brow
       `#ext-profile-list [data-profile="${profile.id}"][data-action="use"]`,
     )
     .click();
-  await expect(page.locator("#ext-message")).toContainText("尚未调用模型");
+  await expect(page.locator("#ext-message")).toContainText("model not called yet");
   await page.locator("#comparison-open").click();
   await expect(page.locator("#cmp-provider-0")).toHaveValue(
     `profile:${profile.id}`,
@@ -129,7 +129,7 @@ test("named API profiles save without calling models or storing keys in the brow
     .locator("#ext-user-context")
     .fill(JSON.stringify({ note: testKey }));
   await page.locator("#ext-save-preset").click();
-  await expect(page.locator("#ext-message")).toContainText(/API Key|密钥/);
+  await expect(page.locator("#ext-message")).toContainText(/API Key|Key/);
   expect(
     await page.evaluate(() =>
       JSON.stringify({
@@ -143,7 +143,7 @@ test("named API profiles save without calling models or storing keys in the brow
   );
   await page.locator("#ext-user-context").fill("{}");
   await page.locator("#ext-save-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("已保存到本浏览器");
+  await expect(page.locator("#ext-message")).toContainText("Saved in this browser");
   await page.locator("#ext-presets > summary").click();
   await page.screenshot({
     path: testInfo.outputPath("extensions-models-desktop.png"),
@@ -185,16 +185,16 @@ test("portable presets validate, round trip and change real geometry without inf
   await page.setViewportSize({ width: 1440, height: 1000 });
   await openExtensions(page);
   await page.locator("#ext-presets > summary").click();
-  await page.locator("#ext-preset-name").fill("侧向搬运实验");
+  await page.locator("#ext-preset-name").fill("Side transfer experiment");
   await page.locator("#ext-source-x").fill("0.42");
   await page.locator("#ext-source-y").fill("-0.18");
   await page.locator("#ext-target-x").fill("0.46");
   await page.locator("#ext-target-y").fill("0.20");
   await page
     .locator("#ext-user-context")
-    .fill('{"instruction":"优先避免障碍接触"}');
+    .fill('{"instruction":"Prioritize avoiding obstacle contact"}');
   await page.locator("#ext-save-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("已保存到本浏览器");
+  await expect(page.locator("#ext-message")).toContainText("Saved in this browser");
   const [download] = await Promise.all([
     page.waitForEvent("download"),
     page.locator("#ext-export-preset").click(),
@@ -209,15 +209,15 @@ test("portable presets validate, round trip and change real geometry without inf
     "user_context",
   ]);
   expect(exported.scene_config.source_xy).toEqual([0.42, -0.18]);
-  await page.locator("#ext-preset-name").fill("尚未保存的草稿");
+  await page.locator("#ext-preset-name").fill("Unsaved draft");
   await page.locator("#ext-import-file").setInputFiles({
     name: "preset.json",
     mimeType: "application/json",
     buffer: Buffer.from(JSON.stringify(exported)),
   });
-  await expect(page.locator("#ext-preset-name")).toHaveValue("侧向搬运实验");
+  await expect(page.locator("#ext-preset-name")).toHaveValue("Side transfer experiment");
   await page.locator("#ext-apply-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("预设已应用");
+  await expect(page.locator("#ext-message")).toContainText("Preset applied");
   const applied = await (await page.request.get("/api/state")).json();
   expect(applied.scene_config.source_xy).toEqual([0.42, -0.18]);
   expect(applied.frame.observation.object[0]).toBeCloseTo(0.42, 3);
@@ -235,10 +235,10 @@ test("portable presets validate, round trip and change real geometry without inf
   ).json();
   await page.locator("#ext-target").selectOption("comparison");
   await page.locator("#ext-apply-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("预设已应用");
+  await expect(page.locator("#ext-message")).toContainText("Preset applied");
   await page.locator("#comparison-open").click();
   await expect(page.locator("#cmp-task")).toHaveValue("transfer");
-  await expect(page.locator("#cmp-preset-label")).toContainText("侧向搬运实验");
+  await expect(page.locator("#cmp-preset-label")).toContainText("Side transfer experiment");
   expect((await (await page.request.get("/api/comparison")).json()).id).toBe(
     comparisonBefore.id,
   );
@@ -250,12 +250,12 @@ test("portable presets validate, round trip and change real geometry without inf
         ...exported,
         scene_config: { ...exported.scene_config, goal: "wrong" },
       },
-      "不支持的字段",
+      "unsupported field",
     ],
     [
       "secret.json",
       { ...exported, user_context: { api_key: "not-for-export" } },
-      "密钥字段",
+      "Key field",
     ],
   ]) {
     await page.locator("#ext-import-file").setInputFiles({
@@ -267,12 +267,12 @@ test("portable presets validate, round trip and change real geometry without inf
   }
   await page.locator("#ext-user-context").fill('{"amount":1e999}');
   await page.locator("#ext-save-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("非有限数值");
+  await expect(page.locator("#ext-message")).toContainText("non-finite value");
   await page
     .locator("#ext-user-context")
     .fill(JSON.stringify(exported.user_context));
   await page.locator("#ext-save-preset").click();
-  await expect(page.locator("#ext-message")).toContainText("已保存到本浏览器");
+  await expect(page.locator("#ext-message")).toContainText("Saved in this browser");
   await page.screenshot({
     path: testInfo.outputPath("extensions-preset-desktop.png"),
     fullPage: true,
@@ -315,10 +315,10 @@ test("input probe shows an actual isolated baseline choice without moving the ro
   expect(request.postDataJSON().provider).toBe("baseline");
   expect(request.postDataJSON().observation.tcp).toEqual([0.3, 0.1, 0.2]);
   await expect(page.locator("#ext-probe-summary")).toHaveText(
-    "选择 hold · 无模型调用",
+    "Select hold · No model call",
   );
   await expect(page.locator("#ext-message")).toContainText(
-    "固定选择第一个候选",
+    "always selects the first candidate",
   );
   const after = await (await page.request.get("/api/state")).json();
   expect(after.id).toBe(before.id);
@@ -385,7 +385,7 @@ for (const [moduleName, trigger, ready] of [
     await page.locator("#connection-close").click();
     await page.locator(trigger).click();
     await expect(page.locator(`#${moduleName}-view`)).toContainText(
-      "页面已更新或模块加载失败",
+      "Page updated or module load failed",
     );
     await page.unroute(matcher);
     await page.locator(`#${moduleName}-view .module-reload`).click();

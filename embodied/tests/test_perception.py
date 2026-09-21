@@ -124,7 +124,7 @@ def test_observation_has_visual_positions_no_truth_and_reuses_same_frame(visual)
 def test_missing_initial_target_fails_and_still_exports_camera(visual):
     _, observer, frame = visual
     frame["value"] = synthetic_frame(target_visible=False)
-    with pytest.raises(PerceptionUnavailable, match="未使用仿真真值"):
+    with pytest.raises(PerceptionUnavailable, match="without filling in simulation ground truth"):
         observer.observe()
     snapshot = observer.camera_snapshot()
     assert snapshot["metadata"]["status"] == "unavailable"
@@ -247,5 +247,5 @@ def test_renderer_close_happens_on_the_same_worker_thread(visual):
     observer.close()
     observer.close()
     assert closed == frame["calls"]
-    with pytest.raises(PerceptionUnavailable, match="关闭"):
+    with pytest.raises(PerceptionUnavailable, match="disabled"):
         observer.observe()

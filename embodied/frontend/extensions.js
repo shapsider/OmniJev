@@ -25,10 +25,10 @@ function finiteJSON(value) {
 }
 function validatedObject(value, label) {
   if (!value || typeof value !== "object" || Array.isArray(value))
-    throw new Error(`${label}必须是 JSON 对象。`);
-  if (!finiteJSON(value)) throw new Error(`${label}不能包含非有限数值。`);
+    throw new Error(`${label} Must be JSON Object.`);
+  if (!finiteJSON(value)) throw new Error(`${label} Cannot contain non-finite values.`);
   if (new TextEncoder().encode(JSON.stringify(value)).length > 8192)
-    throw new Error(`${label}不能超过 8 KB。`);
+    throw new Error(`${label} Cannot exceed 8 KB.`);
   return value;
 }
 function objectJSON(text, label) {
@@ -36,13 +36,13 @@ function objectJSON(text, label) {
   try {
     value = JSON.parse(text);
   } catch {
-    throw new Error(`${label}需要有效的 JSON。`);
+    throw new Error(`${label} Requires valid JSON.`);
   }
   return validatedObject(value, label);
 }
 function validatePreset(value) {
   if (!value || value.format !== "embodied-jev-preset-v1")
-    throw new Error("不是支持的 embodied-jev-preset-v1 预设。");
+    throw new Error("Not supported embodied-jev-preset-v1 Preset.");
   if (
     Object.keys(value).some(
       (key) =>
@@ -52,7 +52,7 @@ function validatePreset(value) {
     )
   )
     throw new Error(
-      "预设只能包含名称、任务、场景与额外要求，不能包含模型连接或密钥。",
+      "Preset can only include name, task, scene, and extra requirements; cannot include model connections or keys.",
     );
   if (
     typeof value.name !== "string" ||
@@ -60,9 +60,9 @@ function validatePreset(value) {
     value.name.length > 80 ||
     !TASKS.includes(value.task)
   )
-    throw new Error("请填写有效名称并选择基础任务模板。");
-  const scene = validatedObject(value.scene_config ?? {}, "场景配置"),
-    context = validatedObject(value.user_context ?? {}, "额外决策要求");
+    throw new Error("Please fill in valid name and select base task template.");
+  const scene = validatedObject(value.scene_config ?? {}, "Scene configuration"),
+    context = validatedObject(value.user_context ?? {}, "Extra decision requirements");
   if (
     Object.keys(scene).some(
       (key) =>
@@ -70,13 +70,13 @@ function validatePreset(value) {
     )
   )
     throw new Error(
-      "场景配置含不支持的字段；仅支持 name、source_xy、target_xy、barrier_height。",
+      "Scene configuration contains unsupported fields; only supports name, source_xy, target_xy, barrier_height.",
     );
   if (
     scene.name !== undefined &&
     (typeof scene.name !== "string" || scene.name.length > 80)
   )
-    throw new Error("场景名称必须是 80 字以内的文字。");
+    throw new Error("Scene name must be 80 Text within characters.");
   for (const key of ["source_xy", "target_xy"]) {
     const xy = scene[key];
     if (xy === undefined || (key === "source_xy" && xy === null)) continue;
@@ -90,7 +90,7 @@ function validatePreset(value) {
       xy[1] > 0.28
     )
       throw new Error(
-        "场景坐标需要为 [X, Y]：X 在 0.30–0.58，Y 在 -0.28–0.28 米之间。",
+        "Scene coordinates need to be [X, Y]: X in 0.30–0.58, Y in -0.28–0.28 meters.",
       );
   }
   if (
@@ -100,7 +100,7 @@ function validatePreset(value) {
       scene.barrier_height < 0.02 ||
       scene.barrier_height > 0.16)
   )
-    throw new Error("障碍高度仅适用于越障任务，范围为 0.02–0.16 米。");
+    throw new Error("Obstacle height only applies to transfer over barrier tasks, range is 0.02–0.16 meters.");
   const secret = (item) =>
     item &&
     typeof item === "object" &&
@@ -111,7 +111,7 @@ function validatePreset(value) {
         ) || secret(nested),
     );
   if (secret(scene) || secret(context))
-    throw new Error("预设检测到密钥字段；请通过模型连接管理凭据。");
+    throw new Error("Preset detected key field; manage credentials via model connection.");
   return {
     format: "embodied-jev-preset-v1",
     name: value.name.trim(),
@@ -146,14 +146,14 @@ export async function createExtensions(
   } catch {
     saved = [];
   }
-  container.innerHTML = `<div class="extension-heading"><div><p class="eyebrow">配置与实验工具</p><h1>扩展</h1><p>保存模型连接、复用场景预设，或单独测试一次决策。</p></div><label>应用目标<select id="ext-target"><option value="workbench">实验台</option><option value="comparison">模型对比</option></select></label></div>
-  <details class="extension-section" id="ext-models" open><summary>模型配置 <span>为不同平台和模型起名字</span></summary><div class="extension-body"><div class="extension-actions"><button class="secondary" id="ext-new-profile">新建模型配置</button></div><div id="ext-profile-list" class="extension-profile-list"></div><p class="extension-hint" id="ext-profile-storage"></p></div></details>
-  <details class="extension-section" id="ext-presets"><summary>任务与场景预设 <span>保存 / 导入 / 导出 JSON</span></summary><div class="extension-body"><div class="extension-grid"><label>已保存的预设<select id="ext-preset-select"><option value="">新预设</option></select></label><label>预设名称<input id="ext-preset-name" maxlength="80" value="我的搬运场景"></label><label>基础任务<select id="ext-task"><option value="transfer">搬运入盘</option><option value="stack">方块堆叠</option><option value="barrier">越障搬运</option></select></label><label>物体 X · m<input id="ext-source-x" type="number" min="0.30" max="0.58" step="any" placeholder="留空按种子生成"></label><label>物体 Y · m<input id="ext-source-y" type="number" min="-0.28" max="0.28" step="any" placeholder="留空按种子生成"></label><label>目标 X · m<input id="ext-target-x" type="number" min="0.30" max="0.58" step="any" value="0.43"></label><label>目标 Y · m<input id="ext-target-y" type="number" min="-0.28" max="0.28" step="any" value="0.18"></label><label>障碍高度 · m<input id="ext-barrier-height" type="number" min="0.02" max="0.16" step="any" value="0.11" disabled></label></div><label class="extension-json-label">额外决策要求 · user_context JSON<textarea id="ext-user-context" spellcheck="false" rows="5">{}</textarea></label><p class="extension-hint">JSON 中请勿填写 API Key、密码或私人凭据。额外要求独立追加，不会覆盖实测位置、接触或成功条件。规则基线不读取自然语言指令；全新任务语义与机器人类型需要通过代码扩展。场景是否可达、安全，以后端校验为准。</p><div class="extension-actions"><button class="primary" id="ext-apply-preset">应用预设</button><button class="secondary" id="ext-save-preset">保存到浏览器</button><button class="secondary" id="ext-import-preset">导入 JSON</button><button class="secondary" id="ext-export-preset">导出 JSON</button><input id="ext-import-file" type="file" accept="application/json,.json" hidden></div></div></details>
-  <details class="extension-section" id="ext-probe"><summary>输入测试 <span>只选择候选，不移动机器人</span></summary><div class="extension-body"><div class="extension-grid"><label>决策模型<select id="ext-probe-provider"></select></label><label>模型 ID · 可选覆盖<input id="ext-probe-model" placeholder="继承已有配置" disabled></label></div><label class="extension-json-label">观察数据 · JSON<textarea id="ext-probe-observation" rows="6" spellcheck="false">{"gripper":"open","object_reachable":true}</textarea></label><label class="extension-json-label">决策问题<textarea id="ext-probe-question" rows="3">Choose the next safe action using the supplied observation.</textarea></label><label class="extension-json-label">候选 · key → 描述 JSON<textarea id="ext-probe-options" rows="5" spellcheck="false">{"approach":"Move above the reachable object","hold":"Keep the current pose"}</textarea></label><div class="extension-actions"><button class="primary" id="ext-probe-run">测试一次决策</button></div><p class="extension-hint">此处是独立输入实验，不执行机械臂控制。规则基线固定选择第一个候选，用于检查输入流程，不验证语义。</p><div id="ext-probe-result" class="extension-probe-result" hidden><p id="ext-probe-summary"></p><details><summary>模型返回与实际输入</summary><pre id="ext-probe-json"></pre></details></div></div></details><p id="ext-message" class="extension-message" role="status"></p>`;
+  container.innerHTML = `<div class="extension-heading"><div><p class="eyebrow">Configuration and experiment tools</p><h1>Extensions</h1><p>Save model connections, reuse scene presets, or test decision individually.</p></div><label>Application target<select id="ext-target"><option value="workbench">Workbench</option><option value="comparison">Model comparison</option></select></label></div>
+  <details class="extension-section" id="ext-models" open><summary>Model configuration <span>Name different platforms and models</span></summary><div class="extension-body"><div class="extension-actions"><button class="secondary" id="ext-new-profile">New model configuration</button></div><div id="ext-profile-list" class="extension-profile-list"></div><p class="extension-hint" id="ext-profile-storage"></p></div></details>
+  <details class="extension-section" id="ext-presets"><summary>Task and scene presets <span>Save / Import / Export JSON</span></summary><div class="extension-body"><div class="extension-grid"><label>Saved presets<select id="ext-preset-select"><option value="">New preset</option></select></label><label>Preset name<input id="ext-preset-name" maxlength="80" value="My transfer scene"></label><label>Basic task<select id="ext-task"><option value="transfer">Transfer to tray</option><option value="stack">Block stacking</option><option value="barrier">Transfer over barrier</option></select></label><label>Object X · m<input id="ext-source-x" type="number" min="0.30" max="0.58" step="any" placeholder="Leave blank to generate by seed"></label><label>Object Y · m<input id="ext-source-y" type="number" min="-0.28" max="0.28" step="any" placeholder="Leave blank to generate by seed"></label><label>Target X · m<input id="ext-target-x" type="number" min="0.30" max="0.58" step="any" value="0.43"></label><label>Target Y · m<input id="ext-target-y" type="number" min="-0.28" max="0.28" step="any" value="0.18"></label><label>Obstacle height · m<input id="ext-barrier-height" type="number" min="0.02" max="0.16" step="any" value="0.11" disabled></label></div><label class="extension-json-label">Extra decision requirements · user_context JSON<textarea id="ext-user-context" spellcheck="false" rows="5">{}</textarea></label><p class="extension-hint">JSON Do not fill in here API Key, Password or private credentials. Additional requirements must be added independently and will not overwrite actual position, contact, or success conditions. Rule baseline does not read natural language instructions; new task semantics and robot type require code extension. Reachability and safety of the scene are subject to backend verification.</p><div class="extension-actions"><button class="primary" id="ext-apply-preset">Apply preset</button><button class="secondary" id="ext-save-preset">Save to browser</button><button class="secondary" id="ext-import-preset">Import JSON</button><button class="secondary" id="ext-export-preset">Export JSON</button><input id="ext-import-file" type="file" accept="application/json,.json" hidden></div></div></details>
+  <details class="extension-section" id="ext-probe"><summary>Input test <span>Select only candidates, do not move robot</span></summary><div class="extension-body"><div class="extension-grid"><label>Decision model<select id="ext-probe-provider"></select></label><label>Model ID · Optional override<input id="ext-probe-model" placeholder="Inherit existing configuration" disabled></label></div><label class="extension-json-label">Observation data · JSON<textarea id="ext-probe-observation" rows="6" spellcheck="false">{"gripper":"open","object_reachable":true}</textarea></label><label class="extension-json-label">Decision question<textarea id="ext-probe-question" rows="3">Choose the next safe action using the supplied observation.</textarea></label><label class="extension-json-label">Candidate · key → Description JSON<textarea id="ext-probe-options" rows="5" spellcheck="false">{"approach":"Move above the reachable object","hold":"Keep the current pose"}</textarea></label><div class="extension-actions"><button class="primary" id="ext-probe-run">Test a decision once</button></div><p class="extension-hint">This is an independent input experiment here, not executing robotic arm control. Rule baseline fixedly selects the first candidate for checking input flow, not validating semantics.</p><div id="ext-probe-result" class="extension-probe-result" hidden><p id="ext-probe-summary"></p><details><summary>Model return and actual input</summary><pre id="ext-probe-json"></pre></details></div></div></details><p id="ext-message" class="extension-message" role="status"></p>`;
 
   function showSaved() {
     $("#ext-preset-select").innerHTML =
-      '<option value="">新预设</option>' +
+      '<option value="">New preset</option>' +
       saved
         .map(
           (preset, index) =>
@@ -178,12 +178,12 @@ export async function createExtensions(
         ...container.querySelectorAll("#ext-presets input:not([type=file])"),
       ].every((input) => input.reportValidity())
     )
-      throw new Error("请检查场景参数范围。");
+      throw new Error("Please check the scene parameter range.");
     const x = $("#ext-source-x").value,
       y = $("#ext-source-y").value;
-    if (!!x !== !!y) throw new Error("物体 X 和 Y 需要一起填写，或同时留空。");
+    if (!!x !== !!y) throw new Error("Object X and Y Need to fill in together, or leave empty at the same time.");
     if (!$("#ext-target-x").value || !$("#ext-target-y").value)
-      throw new Error("请填写目标 X 和 Y。");
+      throw new Error("Please fill in the target X and Y.");
     const scene_config = {
       name: $("#ext-preset-name").value.trim(),
       source_xy: x ? [Number(x), Number(y)] : null,
@@ -199,7 +199,7 @@ export async function createExtensions(
       name: scene_config.name,
       task: $("#ext-task").value,
       scene_config,
-      user_context: objectJSON($("#ext-user-context").value, "额外决策要求"),
+      user_context: objectJSON($("#ext-user-context").value, "Extra decision requirements"),
     });
   }
   async function checkedPreset() {
@@ -208,7 +208,7 @@ export async function createExtensions(
   async function handle(action) {
     if (actionBusy) return;
     actionBusy = true;
-    $("#ext-message").textContent = "正在处理…";
+    $("#ext-message").textContent = "Processing...";
     try {
       await action();
     } catch (error) {
@@ -234,7 +234,7 @@ export async function createExtensions(
       localStorage.setItem(STORE, JSON.stringify(saved));
       showSaved();
       $("#ext-preset-select").value = saved.length - 1;
-      $("#ext-message").textContent = "已保存到本浏览器，未运行推理。";
+      $("#ext-message").textContent = "Saved in this browser; no inference has run.";
     });
   $("#ext-export-preset").onclick = () =>
     handle(async () =>
@@ -245,19 +245,19 @@ export async function createExtensions(
     handle(async () => {
       const file = $("#ext-import-file").files[0];
       if (!file) return;
-      if (file.size > 40000) throw new Error("预设文件过大。");
+      if (file.size > 40000) throw new Error("Preset file too large.");
       const preset = await api(
         "/api/presets/validate",
         validatePreset(JSON.parse(await file.text())),
       );
       setPreset(preset);
       $("#ext-import-file").value = "";
-      $("#ext-message").textContent = "已导入预设草稿；点击应用才会改变场景。";
+      $("#ext-message").textContent = "Imported preset draft loaded; click to apply to change scene.";
     });
   $("#ext-apply-preset").onclick = () =>
     handle(async () => {
       await applyPreset(await checkedPreset(), $("#ext-target").value);
-      $("#ext-message").textContent = "预设已应用，尚未运行推理。";
+      $("#ext-message").textContent = "Preset applied; no inference has run yet.";
     });
   $("#ext-new-profile").onclick = () => openConnection();
   $("#ext-profile-list").onclick = (event) =>
@@ -268,7 +268,7 @@ export async function createExtensions(
         await openConnection(button.dataset.profile);
       else {
         await applyModel(button.dataset.profile, $("#ext-target").value);
-        $("#ext-message").textContent = "已选择模型配置，尚未调用模型。";
+        $("#ext-message").textContent = "Model configuration selected, model not called yet.";
       }
     });
   $("#ext-probe-provider").onchange = () => {
@@ -287,13 +287,13 @@ export async function createExtensions(
       "#ext-probe textarea,#ext-probe input,#ext-probe select",
     ))
       input.disabled = true;
-    $("#ext-message").textContent = "正在测试一次决策，机器人不会移动…";
+    $("#ext-message").textContent = "Testing a decision, robot will not move...";
     try {
       const selected = selectionConfig(
         $("#ext-probe-provider").value,
         profiles,
       );
-      const options = objectJSON($("#ext-probe-options").value, "候选");
+      const options = objectJSON($("#ext-probe-options").value, "Candidate");
       if (
         Object.keys(options).length < 2 ||
         Object.keys(options).length > 12 ||
@@ -301,23 +301,23 @@ export async function createExtensions(
           (value) => typeof value !== "string" || !value.trim(),
         )
       )
-        throw new Error("请提供 2–12 个候选，每个描述必须是非空字符串。");
+        throw new Error("Please provide 2–12 candidates, each description must be a non-empty string.");
       const question = $("#ext-probe-question").value.trim();
-      if (!question) throw new Error("请填写决策问题。");
+      if (!question) throw new Error("Please fill in the decision question.");
       const model = $("#ext-probe-model").value.trim();
       const result = await api("/api/decision/probe", {
         ...selected,
         ...(model ? { model } : {}),
-        observation: objectJSON($("#ext-probe-observation").value, "观察数据"),
+        observation: objectJSON($("#ext-probe-observation").value, "Observation data"),
         question,
         options,
       });
       $("#ext-probe-result").hidden = false;
       $("#ext-probe-summary").textContent =
-        `选择 ${result.decision.choice} · ${result.decision.model_call ? `${Number(result.decision.latency_ms).toFixed(0)} ms` : "无模型调用"}`;
+        `Select ${result.decision.choice} · ${result.decision.model_call ? `${Number(result.decision.latency_ms).toFixed(0)} ms` : "No model call"}`;
       $("#ext-probe-json").textContent = JSON.stringify(result, null, 2);
       $("#ext-message").textContent =
-        result.message || "输入测试完成，机器人未执行动作。";
+        result.message || "Input test completed, robot did not execute action.";
     } catch (error) {
       $("#ext-message").textContent = error.message;
     } finally {
@@ -343,12 +343,12 @@ export async function createExtensions(
       profiles
         .map(
           (profile) =>
-            `<article><div><strong>${escape(profile.name)}</strong><p>${escape(profile.provider)} · ${escape(profile.model)} · ${profile.key_configured ? "密钥已配置" : "未配置密钥"}</p><p>${escape(storageLabel(profile.storage || storage))}</p></div><div><button class="text-button" data-profile="${escape(profile.id)}" data-action="use">使用</button><button class="text-button" data-profile="${escape(profile.id)}" data-action="edit">编辑</button></div></article>`,
+            `<article><div><strong>${escape(profile.name)}</strong><p>${escape(profile.provider)} · ${escape(profile.model)} · ${profile.key_configured ? "Key configured" : "Key not configured"}</p><p>${escape(storageLabel(profile.storage || storage))}</p></div><div><button class="text-button" data-profile="${escape(profile.id)}" data-action="use">Use</button><button class="text-button" data-profile="${escape(profile.id)}" data-action="edit">Edit</button></div></article>`,
         )
         .join("") ||
-      '<p class="extension-hint">尚无具名模型配置，可先使用内置规则基线。</p>';
+      '<p class="extension-hint">No named model configuration yet, can use built-in rule baseline first.</p>';
     $("#ext-profile-storage").textContent =
-      `${storageDescription(storage)} 密钥不会写入浏览器预设或实验导出。`;
+      `${storageDescription(storage)} Key will not be written to browser preset or experiment export.`;
     $("#ext-probe-provider").innerHTML = selectionOptions(
       config,
       profiles,

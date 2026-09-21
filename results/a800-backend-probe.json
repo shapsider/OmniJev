@@ -1,0 +1,91 @@
+{
+  "model": "omnijev-nemotron",
+  "base_url": "http://127.0.0.1:1234",
+  "checks": [
+    {
+      "check": "sdk_letter",
+      "passed": true,
+      "result": {
+        "request_id": null,
+        "status": "decided",
+        "reason": "model_choice",
+        "action": "red",
+        "selected": "red",
+        "scores": null,
+        "score_status": "answer_not_at_first_position",
+        "calibrated": false,
+        "margin": null,
+        "candidate_mass": null,
+        "elapsed_ms": 5152.759205549955,
+        "model": "omnijev-nemotron",
+        "mode": "letter",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 336,
+          "total_tokens": 339,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "raw_text": "A"
+      }
+    },
+    {
+      "check": "sdk_json",
+      "passed": true,
+      "result": {
+        "request_id": null,
+        "status": "decided",
+        "reason": "model_choice",
+        "action": "red",
+        "selected": "red",
+        "scores": null,
+        "score_status": "not_requested",
+        "calibrated": false,
+        "margin": null,
+        "candidate_mass": null,
+        "elapsed_ms": 372.54535034298897,
+        "model": "omnijev-nemotron",
+        "mode": "json",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 343,
+          "total_tokens": 354,
+          "prompt_tokens_details": {
+            "cached_tokens": 34
+          }
+        },
+        "raw_text": "{\n  \"choice\": \"A\"\n}"
+      }
+    },
+    {
+      "check": "http_image",
+      "passed": true,
+      "result": {
+        "request_id": null,
+        "status": "decided",
+        "reason": "model_choice",
+        "action": "red",
+        "selected": "red",
+        "scores": null,
+        "score_status": "answer_not_at_first_position",
+        "calibrated": false,
+        "margin": null,
+        "candidate_mass": null,
+        "elapsed_ms": 316.63964316248894,
+        "model": "omnijev-nemotron",
+        "mode": "letter",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 336,
+          "total_tokens": 339,
+          "prompt_tokens_details": {
+            "cached_tokens": 34
+          }
+        },
+        "raw_text": "A"
+      }
+    }
+  ],
+  "note": "Small connectivity and output-contract checks, not an accuracy benchmark."
+}

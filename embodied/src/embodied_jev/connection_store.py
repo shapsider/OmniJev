@@ -23,7 +23,7 @@ _AUTO = object()
 
 def memory_storage(message=None):
     return {"persistent": False, "mode": "memory_only", "message": message or
-            "仅保留在当前服务内存；刷新页面不会丢失，服务重启后需重新配置。"}
+            "Only retain in current service memory; refreshing page will not lose data, service restart requires reconfiguration."}
 
 
 def default_config_dir(platform=None, environ=None, home=None):
@@ -63,17 +63,17 @@ class SystemConnectionStore:
             self.backend = _system_backend() if backend is _AUTO else backend
             if self.backend is None:
                 raise RuntimeError("No credential backend")
-            self._status = self._persistent_status("配置将保存在本机系统钥匙串与应用配置目录，服务重启后可恢复。")
+            self._status = self._persistent_status("Configuration will be saved in local system keychain and application configuration directory, service restart can recover.")
         except Exception:
             self._status = self._unavailable()
 
     @staticmethod
-    def _persistent_status(message="配置已安全保存到本机；Key 位于系统钥匙串，服务重启后可恢复。"):
+    def _persistent_status(message="Configuration has been safely saved locally; Key Located in system keychain, service restart can recover."):
         return {"persistent": True, "mode": "system_keyring", "message": message}
 
     @staticmethod
     def _unavailable():
-        return memory_storage("系统钥匙串不可用或访问被拒绝；本次配置仅保留内存，重启后本次修改不会恢复，未写入明文 Key。")
+        return memory_storage("System keychain unavailable or access denied; this configuration is retained only in memory, restart will not recover this modification, not written to plaintext Key.")
 
     def status(self):
         with self.lock:
@@ -168,7 +168,7 @@ class SystemConnectionStore:
                     if failed:
                         self._status = self._unavailable()
             except Exception:
-                self._status = memory_storage("本机配置文件无效或无法读取；已使用内存模式，不会读取其中的钥匙串引用或覆盖该文件。")
+                self._status = memory_storage("Local configuration file invalid or unreadable; memory mode used, will not read keychain references in it or overwrite the file.")
                 self.loaded = False
                 return {**result, "storage": self.status()}
             return {**result, "storage": self.status()}
@@ -234,7 +234,7 @@ class SystemConnectionStore:
                         try:
                             self.backend.delete_password(SERVICE, previous["secret_ref"])
                         except Exception:
-                            self._status = self._persistent_status("当前配置已安全保存；旧系统凭证未能清理，不影响当前配置。")
+                            self._status = self._persistent_status("Current configuration safely saved; old system credentials not cleared, does not affect current configuration.")
             except Exception:
                 if new_reference is not None and not committed:
                     try:

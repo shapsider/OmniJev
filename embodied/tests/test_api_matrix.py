@@ -107,8 +107,8 @@ def test_provider_contract_verifies_only_after_explicit_test(monkeypatch, provid
 
 @pytest.mark.parametrize("provider", PROVIDERS)
 @pytest.mark.parametrize("failure,expected", [
-    (401, "认证失败"), (403, "访问被拒绝"), (404, "未找到接口或模型"),
-    (429, "请求受限"), (503, "服务暂时不可用"), ("timeout", "超时"), ("network", "无法连接"),
+    (401, "Authentication failed"), (403, "Access denied"), (404, "Interface or model not found"),
+    (429, "Request limited"), (503, "Service temporarily unavailable"), ("timeout", "timeout"), ("network", "Unable to connect"),
 ])
 def test_provider_failure_matrix_is_actionable_and_redacted(monkeypatch, provider, failure, expected):
     def post(url, **kwargs):
@@ -150,7 +150,7 @@ def test_provider_malformed_response_never_passes_verification(monkeypatch, prov
         client.post("/api/connections", json=_payload(provider))
         response = client.post(f"/api/connections/{provider}/test")
         assert response.status_code == 502
-        assert "响应格式" in response.json()["detail"]
+        assert "Response format" in response.json()["detail"]
         connections = client.get("/api/connections")
         assert connections.json()[provider]["verification"]["status"] == "failed"
         for text in (response.text, connections.text):

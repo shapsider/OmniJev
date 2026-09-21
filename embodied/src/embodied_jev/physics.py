@@ -16,9 +16,9 @@ DOWN = np.diag([1., -1., -1.])
 DT = 0.002
 TRAVEL_Z = 0.22
 TASKS = {
-    "transfer": {"name": "搬运入盘", "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。", "target_z": 0.026},
-    "stack": {"name": "方块堆叠", "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。", "target_z": 0.060},
-    "barrier": {"name": "越障搬运", "goal": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。", "target_z": 0.026},
+    "transfer": {"name": "Transfer to tray", "goal": "Place the red block into the blue tray, release the gripper and lift away.", "target_z": 0.026},
+    "stack": {"name": "Block stacking", "goal": "Stack the red block on the blue block, release the gripper and lift away.", "target_z": 0.060},
+    "barrier": {"name": "Transfer over barrier", "goal": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.", "target_z": 0.026},
 }
 
 
@@ -132,7 +132,7 @@ class RobotWorld:
         # Endpoint checks reject obviously infeasible presets. They do not certify
         # a whole path: candidate rollouts and live contact checks still run.
         if self.unsafe_contacts:
-            raise ValueError("自定义场景初始状态存在机械臂与台面或障碍接触")
+            raise ValueError("Custom scene initial state includes robotic arm contacting table or obstacle")
         cube = self.cube
         targets = [cube + [0, 0, .14], cube + [0, 0, .001],
                    np.r_[cube[:2], TRAVEL_Z], np.r_[self.target[:2], TRAVEL_Z],
@@ -140,12 +140,12 @@ class RobotWorld:
         for target in targets:
             q, error = self.solve_ik(target)
             if error > .004:
-                raise ValueError("自定义场景关键位姿不可达，请将源方块或目标移近工作区中心")
+                raise ValueError("Custom scene key pose unreachable, please move source block or target closer to work area center")
             shadow = self.clone()
             shadow.data.qpos[self.arm_q] = q
             mujoco.mj_forward(shadow.model, shadow.data)
             if shadow.contacts()[2]:
-                raise ValueError("自定义场景关键位姿与台面或障碍相交，请调整坐标或障碍高度")
+                raise ValueError("Custom scene key poses intersect with the tabletop or obstacles; adjust coordinates or obstacle height")
 
     @property
     def position(self):
@@ -235,7 +235,7 @@ class RobotWorld:
         """
         delta = np.asarray(delta_xy, dtype=float)
         if delta.shape != (2,) or not np.isfinite(delta).all() or np.any(np.abs(delta) > .06):
-            raise ValueError("扰动位移必须是两个不超过 0.06 米的有限数字")
+            raise ValueError("Perturbation displacement must contain two finite numbers, each no greater than 0.06 meters")
         if kind == "target_shift":
             config = dict(self.scene_config, target_xy=(self.target[:2] + delta).tolist())
             validate_scene_config(self.task, config)
@@ -246,7 +246,7 @@ class RobotWorld:
             after = self.target.copy()
         elif kind == "object_shift":
             if self.contacts()[0]:
-                raise ValueError("物体已有夹爪接触，不能施加位置扰动；请提前扰动时刻")
+                raise ValueError("The object is already in contact with the gripper and cannot be displaced; schedule the perturbation earlier")
             before = self.cube
             point = before[:2] + delta
             config = dict(self.scene_config, source_xy=point.tolist(), target_xy=self.target[:2].tolist())

@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "completed_episodes": 1,
+  "expected_episodes": 1,
+  "protocol": {
+    "providers": [
+      "omnijev"
+    ],
+    "tasks": [
+      "transfer"
+    ],
+    "seeds": [
+      0
+    ],
+    "observation": "vision",
+    "control": "incremental",
+    "max_cycles": 10,
+    "timeout": 600,
+    "reasoning_tokens": 4096,
+    "intervention": null,
+    "model": "omnijev-nemotron",
+    "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+    "threshold": 0,
+    "shuffle_candidates": true,
+    "project_revision": "89a5cdad155963d7004e2b184145112d4d3ca42e",
+    "python_version": "3.12.1",
+    "platform": "Linux-5.4.250-2-velinux1u1-amd64-x86_64-with-glibc2.35",
+    "adapter_sha256": "0df7054315db3591a96ffb6187486e5482d2fcb78af1056cfd9998ebd4f04344",
+    "timing": "session wall time; includes policy, previews and physics; no model loading; natural backend cache"
+  },
+  "methods": {
+    "omnijev": {
+      "n": 1,
+      "successes": 0,
+      "wall_seconds_mean": 18.29,
+      "model_calls": 10,
+      "request_latency_ms_p50": 1506.229292601347,
+      "request_latency_ms_p95": 2387.152954377232,
+      "input_tokens_known": 34342,
+      "output_tokens_known": 30,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {
+        "exhausted": 1
+      }
+    }
+  },
+  "note": "Fixed simulation pilot experiment; skill mode includes program trajectory, not end-to-end visual control. Failures retained; tokens For known usage, usage_incomplete_episodes Mark usage as incomplete round. Round duration includes physical execution and model wait, excluding process startup and initial scene setup."
+}

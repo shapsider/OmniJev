@@ -17,3 +17,8 @@ embodied/playwright-report/
 embodied/test-results/
 embodied/playwright-results/
 MUJOCO_LOG.TXT
+
+.cache/
+
+models/
+*.gguf

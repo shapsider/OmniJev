@@ -225,7 +225,7 @@ def test_minicpm_uses_fixed_weights_and_exposes_serialization_note(monkeypatch):
         payload = {"mode": "parallel", "lanes": [{"provider": "minicpm"}, {"provider": "baseline"}]}
         response = client.post("/api/comparison", json=payload)
         assert response.status_code == 200
-        assert any("MiniCPM" in note and "串行" in note for note in response.json()["notes"])
+        assert any("MiniCPM" in note and "serial" in note for note in response.json()["notes"])
         invalid = {**payload, "expected_comparison_id": response.json()["id"],
                    "lanes": [{"provider": "minicpm", "model": "different-weight"}, {"provider": "baseline"}]}
         assert client.post("/api/comparison", json=invalid).status_code == 422
@@ -264,7 +264,7 @@ def test_rebuild_cancels_delayed_old_outputs_and_bounds_retired_workers(monkeypa
         try:
             assert entered.wait(5)
             response = pool.submit(client.post, "/api/comparison", json={**payload, "expected_comparison_id": old_id}).result(timeout=2)
-            assert response.status_code == 409 and "等待上一轮请求" in response.json()["detail"]
+            assert response.status_code == 409 and "waiting for previous request" in response.json()["detail"]
             assert previous.status == "stopped" and app.state.comparison is previous
             assert previous.lanes[1]["session"].worker is None
         finally:

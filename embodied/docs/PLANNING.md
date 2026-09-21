@@ -1,59 +1,59 @@
-# 让模型一步一步控制机械臂
+# Let the model control the robotic arm step by step
 
-想观察模型怎样规划，选择 **逐步 XYZ · 闭环规划**。模型每次决定一个短动作，机械臂执行后再给它新的观察。你可以看到它怎样靠近物体、调整位置，或在失去抓取后重新尝试。
+Want to observe how the model plans, choose **Incremental XYZ · Closed-loop planning**. Model decides one short action at a time, robotic arm executes, then provides new observation. You can see how it approaches object, adjusts position, or reattempts after losing grasp.
 
-[先看真实演示](DEMOS.md) · [已有实验结果](PLANNING_RESULTS.md)
+[Watch real demo](DEMOS.md) · [Existing experiment results](PLANNING_RESULTS.md)
 
-## 在界面里跑起来
+## Run it in the interface
 
-1. 保存并测试一个支持图像的 OpenAI 兼容或 Claude 原生连接。
-2. 选择“搬运入盘”，把“动作决策方式”设为“逐步 XYZ · 闭环规划”。
-3. 把“观测来源”设为“直接图像 · 多模态模型”，启用双相机，或只启用其中一种。
-4. 在“执行设置”中给足动作预算，例如 80 步。普通演示保持“不施加扰动”。
-5. 点击“运行实验”，或用“单步”一次执行一个动作。右侧会显示模型的动作意图、视觉依据和选中的位移。
-6. 完成后导出实验 JSON；“视觉”页的“下载观测帧”可以另存原始 PNG 和图像清单。
+1. Save and test an image-capable OpenAI-compatible or native Claude connection.
+2. Select "Transfer to tray", set "Action decision method" to "Incremental XYZ · Closed-loop planning".
+3. Set "Observation source" to "Direct image · Multimodal model", enable dual camera, or enable only one.
+4. Set a sufficient action budget in “Execution settings”, such as 80 steps. Keep “No perturbation applied” for a standard demonstration.
+5. Click "Run experiment", or use "Single step" to execute one action at a time. Right side shows model's action intent, visual basis, and selected displacement.
+6. After completion, export experiment JSON; "Visual" page's "Download observation frames" can save original PNG and image list separately.
 
-直接图像模式不告诉模型方块和目标的坐标。它得到的是所选相机的 RGB、相机标定，以及末端位置、夹爪和接触反馈。视觉判断是否正确，要结合实际动作和下一帧看，不能只看模型写出的说明。
+Direct image mode does not tell model coordinates of block and target. It receives selected camera's RGB, camera calibration, end position, gripper, and contact feedback. Visual judgment of correctness must combine actual action and next frame; cannot rely solely on model's written description.
 
-## 托盘为什么会自己移动？
+## Why does the tray move by itself?
 
-这是可选的**扰动测试**，默认关闭。在“执行设置 → 外部评测扰动”中选择“移动目标”，设定第几步后移动，以及 X/Y 位移。
+This is optional **disturbance test**, default off. In "Execution settings → External evaluation disturbance", select "Move target", set step number after which to move, and X/Y displacement.
 
-首页第二段演示使用“第 20 步后、X +0.06 m、Y 0”。测试程序会移动托盘的底面和围边，模型之后从新画面中判断目标位置。它没有收到目标的新坐标，也没有收到“向 X 方向移动”的提示。
+The second demo on the homepage uses “after step 20, X +0.06 m, Y 0”. The test program moves the tray floor and walls, and the model then determines the target position from new images. It receives neither the new target coordinates nor a prompt to move in the X direction.
 
-托盘移动是测试程序做的，不是机械臂动作。那一局另外出现了双指接触丢失；这不是预先安排的失抓，模型在反馈变化后重新抓取。两件事发生在同一回合，所以不能把额外步数完全归因于其中一种变化。
+Tray movement is performed by test program, not robotic arm action. In that round, bilateral contact loss occurred separately; this was not pre-arranged loss of grasp, model re-grasps after feedback change. Both events happened in same round, so cannot fully attribute extra steps to one change.
 
-不想测试扰动时，选择“不施加扰动”再重置。设置在新实验中生效。也可以测试“移动方块”，但方块正被夹爪接触时不会强行移走它。
+To avoid testing disturbance, select "No disturbance applied" then reset. Settings apply in new experiment. Can also test "Move block", but block will not be forcibly moved while being grasped by gripper.
 
-## 模型能选择哪些动作？
+## Which actions can the model choose?
 
-所有任务共用 21 个选项：
+All tasks share 21 options:
 
-| 操作 | 可选幅度 |
+| Action | Selectable range |
 | --- | --- |
-| 沿世界坐标 X、Y、Z 正负方向移动 | 每次 40、10 或 2 mm |
-| 操作夹爪 | 张开、闭合 |
-| 暂时不移动 | 保持当前位置 |
+| Move along world coordinates X, Y, Z positive or negative directions | 40, 10, or 2 mm per step |
+| Operate gripper | Open, close |
+| Do not move temporarily | Keep current position |
 
-模型决定选哪个。程序负责逆运动学和关节控制，并检查选中动作是否可执行。被拒绝的动作及原因会进入下一轮反馈，程序不会悄悄换一个动作。
+The model decides which action to take. The program handles inverse kinematics and joint control, and checks whether the selected action is executable. Rejected actions and reasons enter the next feedback round; the program does not silently switch to another action.
 
-“预设技能选择”是另一种控制方式：程序根据物体位置生成抓取、搬运等技能目标，再让模型选择。首页的两段视频使用逐步 XYZ；早期八动作实验使用预设技能，两类结果分开记录。
+"Preset skill selection" is another control method: the program generates grasp, transfer, and other skill targets based on object position, then lets the model choose. The first two videos on the homepage use incremental XYZ; early eight-action experiments use preset skills, and results are recorded separately.
 
-## 不用图像也能规划吗？
+## Can planning be done without images?
 
-可以。控制方式与观察来源是两个独立设置：
+Yes. Control methods and observation sources are two independent settings:
 
-| 观察来源 | 模型实际收到什么 |
+| Observation source | What the model actually receives |
 | --- | --- |
-| 仿真真值 | 仿真器给出的物体、目标坐标和机器人状态 |
-| RGB-D 视觉 | 本地检测器从图像和深度中估计的坐标，以及机器人状态 |
-| 直接图像 | 已启用相机的 RGB 原图、标定和机器人自身状态 |
+| Simulated ground truth | Objects, target coordinates, and robot state provided by the simulator |
+| RGB-D vision | Coordinates estimated by the local detector from images and depth, plus robot state |
+| Direct image | Raw RGB image from enabled camera, calibration, and robot self-state |
 
-无相机时使用仿真状态。仿真状态模式也允许打开相机供人查看，但这些预览图不会发给模型。相机配置详见[视觉说明](VISION.md)。当前 Jev、结构化决策服务和 MiniCPM 适配器可处理状态输入，直接图像仅支持 Chat / Claude 路线。
+When no camera is present, simulated state is used. Simulated state mode also allows opening the camera for viewing, but preview images are not sent to the model. Camera configuration see [Vision Guide](VISION.md). Current Jev, structured decision service, and MiniCPM adapters handle state input; direct image only supports Chat / Claude routes.
 
-## 用命令行复现实验
+## Reproduce experiments via command line
 
-下面的脚本使用界面保存的连接，运行一回合，最多 80 次模型调用。会产生真实 API 费用，输出目录必须是新的。
+The script below uses the connection saved in the interface to run one round, at most 80 model calls. Real API costs will be incurred, and the output directory must be new.
 
 ```bash
 python scripts/planning_trial.py --saved-connection --cameras both \
@@ -65,12 +65,12 @@ python scripts/planning_trial.py --saved-connection --cameras both \
   --output runs/vision-target-shift
 ```
 
-输出包括设置与源文件哈希、实验 JSON、相机 ZIP。超时和失败照常保存，不自动重试，也不切换成规则策略。
+Output includes setting and source file hashes, experiment JSON, and camera ZIP. Timeouts and failures are saved as usual, without automatic retry or switching to rule-based strategy.
 
-`--cameras` 可选 `external`、`wrist`、`both`、`none`；使用 `none` 时加 `--observation privileged`。另一个批量入口 `embodied-jev benchmark` 使用环境变量连接，详见[技术说明](TECHNICAL_GUIDE.md#models)。
+`--cameras` optional `external`, `wrist`, `both`, `none`; when using `none`, add `--observation privileged`. Another batch entry `embodied-jev benchmark` uses environment variables to connect; see [Technical Guide](TECHNICAL_GUIDE.md#models).
 
-## 怎样判断模型确实会调整？
+## How to verify that the model truly adjusts?
 
-把当前图像、模型选中的动作、实际位移和下一帧连起来看。比如目标移动后是否改向、失去接触后是否重新抓取、动作被拒后是否换了有效方案。对照实验还要保持任务、种子、预算和输入一致，并保存全部失败。
+Connect the current image, selected action, actual displacement, and next frame. For example, check whether direction changes after target movement, whether re-grasping occurs after losing contact, or whether a valid solution is chosen after an action is rejected. When comparing experiments, keep task, seed, budget, and input consistent, and save all failures.
 
-目前的证据来自少量固定场景。更多物体、相机组合和未知布局还需测试；本项目没有把这些演示当作通用机器人规划的证明。
+Current evidence comes from a small number of fixed scenarios. More objects, camera combinations, and unknown layouts still need testing; this project does not treat these demonstrations as proof of general robot planning.

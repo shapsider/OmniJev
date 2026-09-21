@@ -56,7 +56,7 @@ def summarize(out, protocol, rows, expected):
             'failures':dict(collections.Counter(r['status'] for r in rs if not r['success']))}
     write(out/'summary.json', {'status':'complete' if len(rows)==expected else 'partial',
         'completed_episodes':len(rows),'expected_episodes':expected,'protocol':protocol,'methods':methods,
-        'note':'固定仿真先导实验；技能模式含程序轨迹，非端到端视觉控制。失败保留；tokens 为已知用量，usage_incomplete_episodes 标记用量不完整回合。回合耗时包含物理执行与模型等待，不含进程启动和初始建场。'})
+        'note':'Fixed simulation pilot experiment; skill mode includes program trajectory, not end-to-end visual control. Failures retained; tokens For known usage, usage_incomplete_episodes Mark usage as incomplete round. Round duration includes physical execution and model wait, excluding process startup and initial scene setup.'})
 
 
 def partial_usage(path):

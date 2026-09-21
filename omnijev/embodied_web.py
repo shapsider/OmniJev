@@ -19,7 +19,7 @@ def install_routes(app):
             with urllib.request.urlopen(cfg['url'].replace('/chat/completions', '/models'), timeout=3) as f:
                 names = [x['id'] for x in json.load(f).get('data', [])]
             return {'ready':cfg['model'] in names,'model':cfg['model'],'models':names,
-                    'note':'模型被服务列出；不是推理成功保证。'}
+                    'note':'The model is listed by the service; this does not guarantee successful inference.'}
         except Exception as exc:return {'ready':False,'model':cfg['model'],'error':type(exc).__name__}
 
     @app.get('/benchmarks')

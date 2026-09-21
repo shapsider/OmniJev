@@ -11,7 +11,7 @@ from embodied_jev.policies import DecisionPolicy
 from embodied_jev.server import create_app
 
 
-def profile_payload(provider="chat", name="测试平台", **overrides):
+def profile_payload(provider="chat", name="Test platform", **overrides):
     urls = {"jev": "https://api.typesafe.ai/v1/systemone", "claude": "https://api.anthropic.com/v1",
             "chat": "https://platform-a.invalid/v1", "local": "http://127.0.0.1:9001/decide"}
     return {"name": name, "provider": provider, "url": urls[provider], "model": "profile-model",
@@ -20,7 +20,7 @@ def profile_payload(provider="chat", name="测试平台", **overrides):
 
 def probe_payload(provider="baseline", **overrides):
     return {"provider": provider, "observation": {"relative_geometry": {"distance_m": .2}, "gripper": "open"},
-            "question": "根据输入选择候选。", "options": {"move": "向目标移动", "hold": "保持不动"}, **overrides}
+            "question": "Select candidate based on input.", "options": {"move": "Move toward target", "hold": "Remain stationary"}, **overrides}
 
 
 def provider_response(url, payload, choice="hold"):
@@ -40,14 +40,14 @@ def test_profiles_are_memory_only_redacted_and_saved_without_calls(monkeypatch):
     with TestClient(app) as client:
         assert client.get("/api/model-profiles").json()["profiles"] == []
         first = client.post("/api/model-profiles", json=profile_payload()).json()
-        second = client.post("/api/model-profiles", json=profile_payload(name="第二平台", url="https://platform-b.invalid/v1", api_key="second-private-key")).json()
+        second = client.post("/api/model-profiles", json=profile_payload(name="Second platform", url="https://platform-b.invalid/v1", api_key="second-private-key")).json()
         assert first["id"] != second["id"] and first["url"].endswith("/chat/completions")
         assert first["key_configured"] and second["key_configured"]
         assert app.state.connections == {}
         response = client.get("/api/model-profiles")
         assert len(response.json()["profiles"]) == 2
         assert "profile-private-key" not in response.text and "second-private-key" not in response.text
-        updated = client.post("/api/model-profiles", json=profile_payload(id=first["id"], api_key="", name="改名")).json()
+        updated = client.post("/api/model-profiles", json=profile_payload(id=first["id"], api_key="", name="Rename")).json()
         assert updated["key_configured"] and app.state.model_profiles[first["id"]]["key"] == "profile-private-key"
         changed = client.post("/api/model-profiles", json=profile_payload(id=first["id"], url="https://other.invalid/v1", api_key="")).json()
         assert changed["id"] == first["id"] and not changed["key_configured"]
@@ -96,7 +96,7 @@ def test_comparison_snapshots_independent_platform_keys_and_profile_ids(monkeypa
     app = create_app()
     with TestClient(app) as client:
         first = client.post("/api/model-profiles", json=profile_payload()).json()
-        second = client.post("/api/model-profiles", json=profile_payload(name="第二平台", url="https://platform-b.invalid/v1", api_key="second-private-key")).json()
+        second = client.post("/api/model-profiles", json=profile_payload(name="Second platform", url="https://platform-b.invalid/v1", api_key="second-private-key")).json()
         created = client.post("/api/comparison", json={"lanes": [
             {"provider": "chat", "profile_id": first["id"]},
             {"provider": "chat", "profile_id": second["id"], "model": "second-model"}],
@@ -126,7 +126,7 @@ def test_baseline_probe_is_explicitly_fixed_and_never_moves_robot(monkeypatch):
         assert result.status_code == 200
         assert result.json()["decision"]["choice"] == "move"
         assert not result.json()["decision"]["model_call"] and result.json()["decision_input"] is None
-        assert "固定选择第一个" in result.json()["message"]
+        assert "always selects the first" in result.json()["message"]
         assert app.state.session is session and session.cycles == 0 and (session.world.data.qpos == before).all()
 
 
@@ -207,8 +207,8 @@ def test_probe_rejects_invalid_input_before_external_calls(monkeypatch, change):
 
 
 def test_scene_and_user_context_are_shared_without_overriding_physics():
-    scene = {"name": "自定义入盘", "source_xy": [.44, -.18], "target_xy": [.44, .18]}
-    context = {"tcp": [99, 99, 99], "held": True, "goal": "补充说明"}
+    scene = {"name": "Custom transfer to tray", "source_xy": [.44, -.18], "target_xy": [.44, .18]}
+    context = {"tcp": [99, 99, 99], "held": True, "goal": "Additional notes"}
     with TestClient(create_app()) as client:
         response = client.post("/api/reset", json={"scene_config": scene, "user_context": context})
         assert response.status_code == 200
@@ -238,8 +238,8 @@ def test_json_size_finite_values_and_scene_fields_are_validated(path, payload):
 
 def test_portable_preset_validation_returns_only_normalized_data():
     with TestClient(create_app()) as client:
-        payload = {"format": "embodied-jev-preset-v1", "name": "测试预设", "task": "transfer",
-                   "scene_config": {"name": "新场景"}, "user_context": {"material": "plastic"}}
+        payload = {"format": "embodied-jev-preset-v1", "name": "Test preset", "task": "transfer",
+                   "scene_config": {"name": "New scene"}, "user_context": {"material": "plastic"}}
         response = client.post("/api/presets/validate", json=payload)
         assert response.status_code == 200 and response.json()["scene_config"]["target_xy"] == [.43, .18]
         assert client.post("/api/presets/validate", json={**payload, "api_key": "not-an-executable-config"}).status_code == 422
@@ -274,7 +274,7 @@ def test_probe_redacts_another_profile_secret_even_after_it_changes(monkeypatch)
     monkeypatch.setattr(DecisionPolicy, "_post", staticmethod(post))
     with TestClient(create_app()) as client, ThreadPoolExecutor(max_workers=1) as pool:
         first = client.post("/api/model-profiles", json=profile_payload()).json()
-        second = client.post("/api/model-profiles", json=profile_payload(name="其他平台", api_key="second-private-key")).json()
+        second = client.post("/api/model-profiles", json=profile_payload(name="Other platforms", api_key="second-private-key")).json()
         pending = pool.submit(client.post, "/api/decision/probe", json=probe_payload("chat", profile_id=first["id"]))
         try:
             assert entered.wait(5)
@@ -284,7 +284,7 @@ def test_probe_redacts_another_profile_secret_even_after_it_changes(monkeypatch)
         response = pending.result(timeout=5)
         assert response.status_code == 200
         assert not any(key in response.text for key in ("profile-private-key", "second-private-key", "changed-second-key"))
-        assert "[已隐藏]" in response.text
+        assert "[Hidden]" in response.text
 
 
 def test_comparison_export_redacts_secrets_from_profiles_outside_its_lanes():

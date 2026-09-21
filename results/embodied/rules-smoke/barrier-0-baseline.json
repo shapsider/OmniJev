@@ -7,7 +7,7 @@
   "provider": "baseline",
   "profile_id": null,
   "scene_config": {
-    "name": "越障搬运",
+    "name": "Transfer over barrier",
     "source_xy": null,
     "target_xy": [
       0.43,
@@ -35,7 +35,7 @@
     {
       "cycle": 1,
       "phase": "approach",
-      "label": "移至物体上方",
+      "label": "Move above object",
       "intent": {
         "choice": "approach",
         "probabilities": {},
@@ -56,7 +56,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "移至物体上方",
+        "label": "Move above object",
         "phase": "approach",
         "target": [
           0.43685,
@@ -84,12 +84,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -131,12 +131,12 @@
         "sim_seconds": 0.0
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -180,7 +180,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移至物体上方",
+          "label": "Move above object",
           "phase": "approach",
           "target": [
             0.43685,
@@ -209,7 +209,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "approach",
           "target": [
             0.43685,
@@ -238,7 +238,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "approach",
           "target": [
             0.37997,
@@ -275,7 +275,7 @@
     {
       "cycle": 2,
       "phase": "descend",
-      "label": "下降对准",
+      "label": "Lower to align",
       "intent": {
         "choice": "descend",
         "probabilities": {},
@@ -296,7 +296,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "下降对准",
+        "label": "Lower to align",
         "phase": "descend",
         "target": [
           0.43685,
@@ -324,12 +324,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -371,12 +371,12 @@
         "sim_seconds": 0.8
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -420,7 +420,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "下降对准",
+          "label": "Lower to align",
           "phase": "descend",
           "target": [
             0.43685,
@@ -449,7 +449,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "descend",
           "target": [
             0.43685,
@@ -478,7 +478,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "descend",
           "target": [
             0.43626,
@@ -515,7 +515,7 @@
     {
       "cycle": 3,
       "phase": "grasp",
-      "label": "闭合夹爪",
+      "label": "Close the gripper",
       "intent": {
         "choice": "grasp",
         "probabilities": {},
@@ -536,7 +536,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "闭合夹爪",
+        "label": "Close the gripper",
         "phase": "grasp",
         "target": [
           0.43695,
@@ -564,12 +564,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -611,12 +611,12 @@
         "sim_seconds": 1.6
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -663,7 +663,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "闭合夹爪",
+          "label": "Close the gripper",
           "phase": "grasp",
           "target": [
             0.43695,
@@ -692,7 +692,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "grasp",
           "target": [
             0.43695,
@@ -729,7 +729,7 @@
     {
       "cycle": 4,
       "phase": "lift",
-      "label": "抬升物体",
+      "label": "Lift object",
       "intent": {
         "choice": "lift",
         "probabilities": {},
@@ -750,7 +750,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "抬升物体",
+        "label": "Lift object",
         "phase": "lift",
         "target": [
           0.4369,
@@ -778,12 +778,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -828,12 +828,12 @@
         "sim_seconds": 2.25
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -880,7 +880,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "抬升物体",
+          "label": "Lift object",
           "phase": "lift",
           "target": [
             0.4369,
@@ -909,7 +909,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lift",
           "target": [
             0.4369,
@@ -938,7 +938,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lift",
           "target": [
             0.4369,
@@ -975,7 +975,7 @@
     {
       "cycle": 5,
       "phase": "carry",
-      "label": "移向目标",
+      "label": "Move toward target",
       "intent": {
         "choice": "carry",
         "probabilities": {},
@@ -996,7 +996,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "移向目标",
+        "label": "Move toward target",
         "phase": "carry",
         "target": [
           0.42908999999999997,
@@ -1024,12 +1024,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1074,12 +1074,12 @@
         "sim_seconds": 3.35
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1126,7 +1126,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移向目标",
+          "label": "Move toward target",
           "phase": "carry",
           "target": [
             0.42908999999999997,
@@ -1155,7 +1155,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "carry",
           "target": [
             0.42908999999999997,
@@ -1184,7 +1184,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "carry",
           "target": [
             0.43688,
@@ -1221,7 +1221,7 @@
     {
       "cycle": 6,
       "phase": "lower",
-      "label": "降低放置",
+      "label": "Lower to place",
       "intent": {
         "choice": "lower",
         "probabilities": {},
@@ -1242,7 +1242,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "降低放置",
+        "label": "Lower to place",
         "phase": "lower",
         "target": [
           0.42652,
@@ -1270,12 +1270,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1320,12 +1320,12 @@
         "sim_seconds": 4.95
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1372,7 +1372,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "降低放置",
+          "label": "Lower to place",
           "phase": "lower",
           "target": [
             0.42652,
@@ -1401,7 +1401,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lower",
           "target": [
             0.42652,
@@ -1430,7 +1430,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lower",
           "target": [
             0.42911,
@@ -1467,7 +1467,7 @@
     {
       "cycle": 7,
       "phase": "release",
-      "label": "松开夹爪",
+      "label": "Release the gripper",
       "intent": {
         "choice": "release",
         "probabilities": {},
@@ -1488,7 +1488,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "松开夹爪",
+        "label": "Release the gripper",
         "phase": "release",
         "target": [
           0.42648,
@@ -1516,12 +1516,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1566,12 +1566,12 @@
         "sim_seconds": 6.15
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1615,7 +1615,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "松开夹爪",
+          "label": "Release the gripper",
           "phase": "release",
           "target": [
             0.42648,
@@ -1644,7 +1644,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "release",
           "target": [
             0.42648,
@@ -1681,7 +1681,7 @@
     {
       "cycle": 8,
       "phase": "withdraw",
-      "label": "向上撤离",
+      "label": "Withdraw upward",
       "intent": {
         "choice": "withdraw",
         "probabilities": {},
@@ -1702,7 +1702,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "向上撤离",
+        "label": "Withdraw upward",
         "phase": "withdraw",
         "target": [
           0.42648,
@@ -1730,12 +1730,12 @@
         }
       },
       "before": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1777,12 +1777,12 @@
         "sim_seconds": 6.95
       },
       "after": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1826,7 +1826,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "向上撤离",
+          "label": "Withdraw upward",
           "phase": "withdraw",
           "target": [
             0.42648,
@@ -1855,7 +1855,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "withdraw",
           "target": [
             0.42648,
@@ -1884,7 +1884,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "withdraw",
           "target": [
             0.42648,
@@ -1941,12 +1941,12 @@
         -2.1417896827049977e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2016,12 +2016,12 @@
         -2.141737194021659e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2091,12 +2091,12 @@
         -2.141713815479556e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2166,12 +2166,12 @@
         -2.1417050756075994e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2241,12 +2241,12 @@
         -2.1417013514398756e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2316,12 +2316,12 @@
         -2.141699917032287e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2391,12 +2391,12 @@
         -2.141699407933454e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2466,12 +2466,12 @@
         -2.1416992337034156e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2541,12 +2541,12 @@
         -2.1416992118302578e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2616,12 +2616,12 @@
         -2.1416992028224584e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2691,12 +2691,12 @@
         -2.1416992084799956e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2766,12 +2766,12 @@
         -2.141699183426118e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2841,12 +2841,12 @@
         -2.141699158025724e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2916,12 +2916,12 @@
         -2.141699163165356e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2991,12 +2991,12 @@
         -2.1416991315934987e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3066,12 +3066,12 @@
         -2.1416991131193558e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3141,12 +3141,12 @@
         -2.1416990978987008e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3216,12 +3216,12 @@
         -2.141699054148667e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3291,12 +3291,12 @@
         -2.1416990436424032e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3366,12 +3366,12 @@
         -2.14169906916667e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3441,12 +3441,12 @@
         -2.1416990471194964e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3516,12 +3516,12 @@
         -2.141699053715893e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3591,12 +3591,12 @@
         -2.1416990291365935e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3666,12 +3666,12 @@
         -2.141699020319882e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3741,12 +3741,12 @@
         -2.1416990119290465e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3816,12 +3816,12 @@
         -2.1416990052733283e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3891,12 +3891,12 @@
         -2.1416990162591882e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3966,12 +3966,12 @@
         -2.141699007084727e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4041,12 +4041,12 @@
         -2.1416989980393867e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4116,12 +4116,12 @@
         -2.1416989647665615e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4191,12 +4191,12 @@
         -2.1416989497528686e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4266,12 +4266,12 @@
         -2.141698930585256e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4341,12 +4341,12 @@
         -2.141698910070962e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4416,12 +4416,12 @@
         -2.141698843452398e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4491,12 +4491,12 @@
         -2.1416988148706387e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4566,12 +4566,12 @@
         -2.1416987986488127e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4641,12 +4641,12 @@
         -2.1416987939896731e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4716,12 +4716,12 @@
         -2.141698779411044e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4791,12 +4791,12 @@
         -2.141698811653796e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4866,12 +4866,12 @@
         -2.1416988443991637e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4941,12 +4941,12 @@
         -2.1416988525313588e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5016,12 +5016,12 @@
         -2.1416988477440567e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5091,12 +5091,12 @@
         -2.1416988746716363e-10
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5166,12 +5166,12 @@
         2.9537593280088816e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5244,12 +5244,12 @@
         3.282161978538326e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5322,12 +5322,12 @@
         3.6167963142257546e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5400,12 +5400,12 @@
         4.3080593806061655e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5478,12 +5478,12 @@
         5.425940749443922e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5556,12 +5556,12 @@
         6.9924754521548e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5634,12 +5634,12 @@
         8.53898776608764e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5712,12 +5712,12 @@
         9.908595568953789e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5790,12 +5790,12 @@
         0.00011002436644369395
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5868,12 +5868,12 @@
         0.00011792052478951581
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5946,12 +5946,12 @@
         0.00012341796353800656
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6024,12 +6024,12 @@
         0.00012735209461355506
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6102,12 +6102,12 @@
         0.00013019416605555056
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6180,12 +6180,12 @@
         0.00013226537380199504
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6258,12 +6258,12 @@
         0.0001326905161216226
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6336,12 +6336,12 @@
         0.0001405429217321496
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6414,12 +6414,12 @@
         0.00020541663589707289
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6492,12 +6492,12 @@
         0.00041039044834371
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6570,12 +6570,12 @@
         0.000834496037493074
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6648,12 +6648,12 @@
         0.0015290029091866667
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6726,12 +6726,12 @@
         0.002500505268290616
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6804,12 +6804,12 @@
         0.0036917106135338114
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6882,12 +6882,12 @@
         0.005006272519065759
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6960,12 +6960,12 @@
         0.006306214299135737
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7038,12 +7038,12 @@
         0.0074381536151681355
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7116,12 +7116,12 @@
         0.00826069123967114
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7194,12 +7194,12 @@
         0.008671469599112885
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7272,12 +7272,12 @@
         0.008622061572795724
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7350,12 +7350,12 @@
         0.008136246303488298
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7428,12 +7428,12 @@
         0.007283349582939853
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7506,12 +7506,12 @@
         0.006185583558969792
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7584,12 +7584,12 @@
         0.0049839282423768715
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7662,12 +7662,12 @@
         0.0038161994924495097
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7740,12 +7740,12 @@
         0.002794202661196273
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7818,12 +7818,12 @@
         0.0019852059761628622
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7896,12 +7896,12 @@
         0.0013994022391241709
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7974,12 +7974,12 @@
         0.000993800382047194
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8052,12 +8052,12 @@
         0.0007146230123229588
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8130,12 +8130,12 @@
         0.0005216424234624111
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8208,12 +8208,12 @@
         0.0003870142082079844
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8286,12 +8286,12 @@
         0.0002919008220516635
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8364,12 +8364,12 @@
         0.00022369824348834126
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8442,12 +8442,12 @@
         0.000196941058992367
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8520,12 +8520,12 @@
         0.00013074870367207355
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8598,12 +8598,12 @@
         -5.5865817323772845e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8676,12 +8676,12 @@
         -0.00041775615134961993
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8754,12 +8754,12 @@
         -0.0009422023992830443
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8832,12 +8832,12 @@
         -0.001546299367048509
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8910,12 +8910,12 @@
         -0.00205431639358418
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8988,12 +8988,12 @@
         -0.0025813997253319
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9066,12 +9066,12 @@
         -0.0030049700398281803
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9144,12 +9144,12 @@
         -0.0033591193286209298
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9222,12 +9222,12 @@
         -0.0036048617878629
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9300,12 +9300,12 @@
         -0.00376550446177346
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9378,12 +9378,12 @@
         -0.00380571570595966
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9456,12 +9456,12 @@
         -0.0037705219457381135
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9534,12 +9534,12 @@
         -0.0036033395993117973
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9612,12 +9612,12 @@
         -0.0033104661119512735
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9690,12 +9690,12 @@
         -0.002889773748608865
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9768,12 +9768,12 @@
         -0.0024353809677697532
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9846,12 +9846,12 @@
         -0.0018856786950085594
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9924,12 +9924,12 @@
         -0.0012147462343751593
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10002,12 +10002,12 @@
         -0.0004533956672927033
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10080,12 +10080,12 @@
         0.0003657493395243927
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10158,12 +10158,12 @@
         0.0012090637373014929
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10236,12 +10236,12 @@
         0.001990178813029243
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10314,12 +10314,12 @@
         0.002602215613960791
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10392,12 +10392,12 @@
         0.003184976739575905
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10470,12 +10470,12 @@
         0.003604132140219709
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10548,12 +10548,12 @@
         0.0038944807296405954
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10626,12 +10626,12 @@
         0.00404598468709546
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10704,12 +10704,12 @@
         0.004052351119684343
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10782,12 +10782,12 @@
         0.003922493253386124
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10860,12 +10860,12 @@
         0.0036018191179193228
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10938,12 +10938,12 @@
         0.003146468359238761
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11016,12 +11016,12 @@
         0.0027654757103955925
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11094,12 +11094,12 @@
         0.002406880335008007
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11172,12 +11172,12 @@
         0.00206242204725106
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11250,12 +11250,12 @@
         0.001746215572433594
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11328,12 +11328,12 @@
         0.0014652857659684516
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11406,12 +11406,12 @@
         0.001221381308409548
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11484,12 +11484,12 @@
         0.0010134059668836
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11562,12 +11562,12 @@
         0.0008379780280754006
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11640,12 +11640,12 @@
         0.000692222155010913
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11718,12 +11718,12 @@
         0.0005841141061515518
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11796,12 +11796,12 @@
         0.0005381014317233425
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11874,12 +11874,12 @@
         0.0004083271122650467
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11952,12 +11952,12 @@
         0.00042532690960204474
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12030,12 +12030,12 @@
         0.000599429343413044
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12108,12 +12108,12 @@
         0.00096124071849026
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12186,12 +12186,12 @@
         0.0013405305552101864
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12264,12 +12264,12 @@
         0.0017305683609809448
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12342,12 +12342,12 @@
         0.0020644376827189757
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12420,12 +12420,12 @@
         0.0023152019358256564
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12498,12 +12498,12 @@
         0.002517421625456723
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12576,12 +12576,12 @@
         0.002528022135334731
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12654,12 +12654,12 @@
         0.002444633488628991
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12732,12 +12732,12 @@
         0.002252248888656873
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12810,12 +12810,12 @@
         0.0019806139800478476
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12888,12 +12888,12 @@
         0.001668122432089431
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12966,12 +12966,12 @@
         0.0013485707066456768
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13044,12 +13044,12 @@
         0.0010443524296509306
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13122,12 +13122,12 @@
         0.0008011634415522452
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13200,12 +13200,12 @@
         0.0006302707506974626
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13278,12 +13278,12 @@
         0.00046679336885395293
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13356,12 +13356,12 @@
         0.000335912024933381
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13434,12 +13434,12 @@
         0.0002586176074606166
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13512,12 +13512,12 @@
         0.00020104501981705106
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13590,12 +13590,12 @@
         0.00015570255303222656
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13668,12 +13668,12 @@
         0.00012381365304088042
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13746,12 +13746,12 @@
         9.919659179509706e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13824,12 +13824,12 @@
         9.121038770817191e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13902,12 +13902,12 @@
         8.760389740629947e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13980,12 +13980,12 @@
         7.586283465046849e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14055,12 +14055,12 @@
         7.558640798634464e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14130,12 +14130,12 @@
         7.55859303779862e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14205,12 +14205,12 @@
         7.558593009921767e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14280,12 +14280,12 @@
         7.55859301017907e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14355,12 +14355,12 @@
         7.558593010182454e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14430,12 +14430,12 @@
         7.558593010182473e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14505,12 +14505,12 @@
         7.558593010182489e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14580,12 +14580,12 @@
         7.558593010182462e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14655,12 +14655,12 @@
         7.55859301018221e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14730,12 +14730,12 @@
         7.55859301018154e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14805,12 +14805,12 @@
         7.558593010181161e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14880,12 +14880,12 @@
         7.558593010181339e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14955,12 +14955,12 @@
         7.558593010181531e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15030,12 +15030,12 @@
         7.558593010181467e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15105,12 +15105,12 @@
         7.558593010181305e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15180,12 +15180,12 @@
         7.558593010181087e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15255,12 +15255,12 @@
         7.558593010180872e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15330,12 +15330,12 @@
         7.558593010180588e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15405,12 +15405,12 @@
         7.558593010180714e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15480,12 +15480,12 @@
         7.558593010181106e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15555,12 +15555,12 @@
         7.558593010181309e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15630,12 +15630,12 @@
         7.55859301018154e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15705,12 +15705,12 @@
         7.558593010181432e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15780,12 +15780,12 @@
         7.558593010181022e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15855,12 +15855,12 @@
         7.558593010180753e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15930,12 +15930,12 @@
         7.558593010180424e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16005,12 +16005,12 @@
         7.558593010180179e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16080,12 +16080,12 @@
         7.55859301018017e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16155,12 +16155,12 @@
         7.558593010180362e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16230,12 +16230,12 @@
         7.55859301018032e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16305,12 +16305,12 @@
         7.558593010180576e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16380,12 +16380,12 @@
         7.558593010180624e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16455,12 +16455,12 @@
         7.558593010180345e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16530,12 +16530,12 @@
         7.558593010180408e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16605,12 +16605,12 @@
         7.558593010180452e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16680,12 +16680,12 @@
         7.558593010181011e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16755,12 +16755,12 @@
         7.558593010181406e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16830,12 +16830,12 @@
         7.558593010181352e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16905,12 +16905,12 @@
         7.558593010181568e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16980,12 +16980,12 @@
         7.558593010181577e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17055,12 +17055,12 @@
         7.558593010181917e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17130,12 +17130,12 @@
         7.558593010182592e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17205,12 +17205,12 @@
         7.558593010183003e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17280,12 +17280,12 @@
         7.558593010183678e-05
       ],
       "observation": {
-        "task": "越过中间的障碍，把红色方块放进蓝色托盘，松开夹爪并撤离。",
+        "task": "Cross the middle barrier, place the red block into the blue tray, release the gripper and withdraw.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "越障搬运",
+        "scene_name": "Transfer over barrier",
         "scene_config": {
-          "name": "越障搬运",
+          "name": "Transfer over barrier",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17340,7 +17340,7 @@
       "time": "2026-09-21T02:49:07.703551+00:00",
       "event": "created",
       "level": "info",
-      "message": "实验已就绪",
+      "message": "Experiment ready",
       "cycle": 0,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17348,7 +17348,7 @@
       "time": "2026-09-21T02:49:07.703866+00:00",
       "event": "started",
       "level": "info",
-      "message": "开始运行",
+      "message": "Start running",
       "cycle": 0,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17356,7 +17356,7 @@
       "time": "2026-09-21T02:49:07.704111+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 0,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17364,7 +17364,7 @@
       "time": "2026-09-21T02:49:07.754493+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：移至物体上方",
+      "message": "Complete action: move to above object",
       "cycle": 1,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17372,7 +17372,7 @@
       "time": "2026-09-21T02:49:07.754570+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 1,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17380,7 +17380,7 @@
       "time": "2026-09-21T02:49:07.804243+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：下降对准",
+      "message": "Complete action: lower to align",
       "cycle": 2,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17388,7 +17388,7 @@
       "time": "2026-09-21T02:49:07.804311+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 2,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17396,7 +17396,7 @@
       "time": "2026-09-21T02:49:07.883279+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：闭合夹爪",
+      "message": "Complete action: close gripper",
       "cycle": 3,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17404,7 +17404,7 @@
       "time": "2026-09-21T02:49:07.883408+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 3,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17412,7 +17412,7 @@
       "time": "2026-09-21T02:49:08.125594+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：抬升物体",
+      "message": "Complete action: lift object",
       "cycle": 4,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17420,7 +17420,7 @@
       "time": "2026-09-21T02:49:08.125726+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 4,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17428,7 +17428,7 @@
       "time": "2026-09-21T02:49:08.450733+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：移向目标",
+      "message": "Complete action: move to target",
       "cycle": 5,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17436,7 +17436,7 @@
       "time": "2026-09-21T02:49:08.450866+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 5,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17444,7 +17444,7 @@
       "time": "2026-09-21T02:49:08.700462+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：降低放置",
+      "message": "Complete action: lower to place",
       "cycle": 6,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17452,7 +17452,7 @@
       "time": "2026-09-21T02:49:08.700592+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 6,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17460,7 +17460,7 @@
       "time": "2026-09-21T02:49:08.746936+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：松开夹爪",
+      "message": "Complete action: release gripper",
       "cycle": 7,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17468,7 +17468,7 @@
       "time": "2026-09-21T02:49:08.747007+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 7,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17476,7 +17476,7 @@
       "time": "2026-09-21T02:49:08.808397+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：向上撤离",
+      "message": "Complete action: withdraw upward",
       "cycle": 8,
       "episode_id": "68cd5d7a1d0d"
     },
@@ -17484,7 +17484,7 @@
       "time": "2026-09-21T02:49:08.808423+00:00",
       "event": "completed",
       "level": "info",
-      "message": "物理成功条件验证通过",
+      "message": "Physical success condition verification passed",
       "cycle": 8,
       "episode_id": "68cd5d7a1d0d"
     }

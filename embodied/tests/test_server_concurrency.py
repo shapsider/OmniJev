@@ -34,7 +34,7 @@ def test_stale_control_cannot_change_replacement_episode(action):
         new = client.post("/api/reset", json={"seed": 1, "expected_episode_id": old_id}).json()
         assert new["id"] != old_id
         response = client.post(f"/api/control/{action}", json={"episode_id": old_id})
-        assert response.status_code == 409 and "刷新" in response.json()["detail"]
+        assert response.status_code == 409 and "refresh" in response.json()["detail"]
         state = client.get("/api/state").json()
         assert state["id"] == new["id"] and state["status"] == "idle" and state["cycles"] == 0
         assert client.post("/api/control/stop", json={"episode_id": new["id"]}).json()["status"] == "stopped"
@@ -190,7 +190,7 @@ def test_connection_tests_have_bounded_nonblocking_concurrency(monkeypatch):
             ids_before = dict(app.state.connection_test_ids)
             excess = pool.submit(client.post, "/api/connections/chat/test").result(timeout=2)
             assert excess.status_code == 429 and excess.headers["Retry-After"] == "1"
-            assert "两个连接测试" in excess.json()["detail"]
+            assert "Two connection tests" in excess.json()["detail"]
             assert app.state.connection_test_ids == ids_before
             assert count == 2
             assert client.get("/api/state").status_code == 200

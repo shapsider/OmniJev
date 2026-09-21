@@ -1,0 +1,54 @@
+{
+  "models": [
+    {
+      "name": "omnijev-nemotron",
+      "model": "omnijev-nemotron",
+      "modified_at": "",
+      "size": "",
+      "digest": "",
+      "type": "model",
+      "description": "",
+      "tags": [
+        ""
+      ],
+      "capabilities": [
+        "completion",
+        "multimodal"
+      ],
+      "parameters": "",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "",
+        "families": [
+          ""
+        ],
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    }
+  ],
+  "object": "list",
+  "data": [
+    {
+      "id": "omnijev-nemotron",
+      "aliases": [
+        "omnijev-nemotron"
+      ],
+      "tags": [],
+      "object": "model",
+      "created": 1789981006,
+      "owned_by": "llamacpp",
+      "meta": {
+        "vocab_type": true,
+        "n_vocab": 131072,
+        "n_ctx": 8192,
+        "n_ctx_train": 262144,
+        "n_embd": 2688,
+        "n_params": 31577940288,
+        "size": 24507234048,
+        "ftype": "Q4_K - Medium"
+      }
+    }
+  ]
+}

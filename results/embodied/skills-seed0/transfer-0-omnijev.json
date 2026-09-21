@@ -7,7 +7,7 @@
   "provider": "omnijev",
   "profile_id": null,
   "scene_config": {
-    "name": "搬运入盘",
+    "name": "Transfer to tray",
     "source_xy": null,
     "target_xy": [
       0.43,
@@ -35,7 +35,7 @@
     {
       "cycle": 1,
       "phase": "approach",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "approach",
         "probabilities": {},
@@ -74,7 +74,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "approach",
         "target": [
           0.43685,
@@ -102,12 +102,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -149,12 +149,12 @@
         "sim_seconds": 0.0
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -198,7 +198,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移至物体上方",
+          "label": "Move above object",
           "phase": "approach",
           "target": [
             0.43685,
@@ -227,7 +227,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "approach",
           "target": [
             0.43685,
@@ -256,7 +256,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "approach",
           "target": [
             0.37997,
@@ -289,7 +289,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.37997,
@@ -344,7 +344,7 @@
     {
       "cycle": 2,
       "phase": "descend",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "descend",
         "probabilities": {
@@ -400,7 +400,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "descend",
         "target": [
           0.43685,
@@ -428,12 +428,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -475,12 +475,12 @@
         "sim_seconds": 1.2
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -524,7 +524,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "下降对准",
+          "label": "Lower to align",
           "phase": "descend",
           "target": [
             0.43685,
@@ -553,7 +553,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "descend",
           "target": [
             0.43685,
@@ -582,7 +582,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "descend",
           "target": [
             0.4367,
@@ -614,7 +614,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4367,
@@ -674,7 +674,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4367,
@@ -738,7 +738,7 @@
     {
       "cycle": 3,
       "phase": "grasp",
-      "label": "闭合夹爪",
+      "label": "Close the gripper",
       "intent": {
         "choice": "grasp",
         "probabilities": {
@@ -793,7 +793,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "闭合夹爪",
+        "label": "Close the gripper",
         "phase": "grasp",
         "target": [
           0.43681,
@@ -821,12 +821,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -868,12 +868,12 @@
         "sim_seconds": 2.4
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -920,7 +920,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "闭合夹爪",
+          "label": "Close the gripper",
           "phase": "grasp",
           "target": [
             0.43681,
@@ -949,7 +949,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "grasp",
           "target": [
             0.43681,
@@ -981,7 +981,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43681,
@@ -1049,7 +1049,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43681,
@@ -1120,7 +1120,7 @@
     {
       "cycle": 4,
       "phase": "lift",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "lift",
         "probabilities": {},
@@ -1159,7 +1159,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "lift",
         "target": [
           0.4368,
@@ -1187,12 +1187,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1237,12 +1237,12 @@
         "sim_seconds": 3.05
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1289,7 +1289,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "抬升物体",
+          "label": "Lift object",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1318,7 +1318,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1347,7 +1347,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1380,7 +1380,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4368,
@@ -1455,7 +1455,7 @@
     {
       "cycle": 5,
       "phase": "carry",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "carry",
         "probabilities": {
@@ -1511,7 +1511,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "carry",
         "target": [
           0.42926,
@@ -1539,12 +1539,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1589,12 +1589,12 @@
         "sim_seconds": 4.7
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1641,7 +1641,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移向目标",
+          "label": "Move toward target",
           "phase": "carry",
           "target": [
             0.42926,
@@ -1670,7 +1670,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "carry",
           "target": [
             0.42926,
@@ -1699,7 +1699,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "carry",
           "target": [
             0.43656,
@@ -1731,7 +1731,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43656,
@@ -1802,7 +1802,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43656,
@@ -1877,7 +1877,7 @@
     {
       "cycle": 6,
       "phase": "lower",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "lower",
         "probabilities": {
@@ -1933,7 +1933,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "lower",
         "target": [
           0.42763,
@@ -1961,12 +1961,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2011,12 +2011,12 @@
         "sim_seconds": 7.1
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2063,7 +2063,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "降低放置",
+          "label": "Lower to place",
           "phase": "lower",
           "target": [
             0.42763,
@@ -2092,7 +2092,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lower",
           "target": [
             0.42763,
@@ -2121,7 +2121,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lower",
           "target": [
             0.42924,
@@ -2153,7 +2153,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42924,
@@ -2224,7 +2224,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42924,
@@ -2299,7 +2299,7 @@
     {
       "cycle": 7,
       "phase": "release",
-      "label": "松开夹爪",
+      "label": "Release the gripper",
       "intent": {
         "choice": "release",
         "probabilities": {
@@ -2354,7 +2354,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "松开夹爪",
+        "label": "Release the gripper",
         "phase": "release",
         "target": [
           0.4276,
@@ -2382,12 +2382,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2432,12 +2432,12 @@
         "sim_seconds": 8.898
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2481,7 +2481,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "松开夹爪",
+          "label": "Release the gripper",
           "phase": "release",
           "target": [
             0.4276,
@@ -2510,7 +2510,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "release",
           "target": [
             0.4276,
@@ -2542,7 +2542,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4276,
@@ -2613,7 +2613,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4276,
@@ -2687,7 +2687,7 @@
     {
       "cycle": 8,
       "phase": "withdraw",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "withdraw",
         "probabilities": {},
@@ -2726,7 +2726,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "withdraw",
         "target": [
           0.4276,
@@ -2754,12 +2754,12 @@
         }
       },
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2801,12 +2801,12 @@
         "sim_seconds": 9.698
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2850,7 +2850,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "向上撤离",
+          "label": "Withdraw upward",
           "phase": "withdraw",
           "target": [
             0.4276,
@@ -2879,7 +2879,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "withdraw",
           "target": [
             0.4276,
@@ -2908,7 +2908,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "withdraw",
           "target": [
             0.4276,
@@ -2941,7 +2941,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4276,
@@ -3033,12 +3033,12 @@
         -2.1417896827049977e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3108,12 +3108,12 @@
         -2.141737194021659e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3183,12 +3183,12 @@
         -2.141713815479556e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3258,12 +3258,12 @@
         -2.1417050756075994e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3333,12 +3333,12 @@
         -2.1417013514398756e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3408,12 +3408,12 @@
         -2.141699917032287e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3483,12 +3483,12 @@
         -2.141699407933454e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3558,12 +3558,12 @@
         -2.1416992337034156e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3633,12 +3633,12 @@
         -2.1416992118302578e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3708,12 +3708,12 @@
         -2.1416992028224584e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3783,12 +3783,12 @@
         -2.1416992084799956e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3858,12 +3858,12 @@
         -2.141699183426118e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3933,12 +3933,12 @@
         -2.141699158025724e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4008,12 +4008,12 @@
         -2.141699163165356e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4083,12 +4083,12 @@
         -2.1416991315934987e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4158,12 +4158,12 @@
         -2.1416991131193558e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4233,12 +4233,12 @@
         -2.1416990978987008e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4308,12 +4308,12 @@
         -2.141699054148667e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4383,12 +4383,12 @@
         -2.1416990436424032e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4458,12 +4458,12 @@
         -2.14169906916667e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4533,12 +4533,12 @@
         -2.1416990471194964e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4608,12 +4608,12 @@
         -2.141699053715893e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4683,12 +4683,12 @@
         -2.1416990291365935e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4758,12 +4758,12 @@
         -2.141699020319882e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4833,12 +4833,12 @@
         -2.1416990119290465e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4908,12 +4908,12 @@
         -2.1416990052733283e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4983,12 +4983,12 @@
         -2.1416990162591882e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5058,12 +5058,12 @@
         -2.141699007084727e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5133,12 +5133,12 @@
         -2.1416989980393867e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5208,12 +5208,12 @@
         -2.1416989647665615e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5283,12 +5283,12 @@
         -2.1416989497528686e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5358,12 +5358,12 @@
         -2.141698930585256e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5433,12 +5433,12 @@
         -2.141698910070962e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5508,12 +5508,12 @@
         -2.141698843452398e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5583,12 +5583,12 @@
         -2.1416988148706387e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5658,12 +5658,12 @@
         -2.1416987986488127e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5733,12 +5733,12 @@
         -2.1416987939896731e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5808,12 +5808,12 @@
         -2.141698779411044e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5883,12 +5883,12 @@
         -2.141698811653796e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5958,12 +5958,12 @@
         -2.1416988443991637e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6033,12 +6033,12 @@
         -2.1416988525313588e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6108,12 +6108,12 @@
         -2.1416988477440567e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6183,12 +6183,12 @@
         -2.1416988746716363e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6258,12 +6258,12 @@
         -2.141698896023294e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6333,12 +6333,12 @@
         -2.141698869517053e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6408,12 +6408,12 @@
         -2.1416988440825213e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6483,12 +6483,12 @@
         -2.1416988549061473e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6558,12 +6558,12 @@
         -2.1416988764436079e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6633,12 +6633,12 @@
         -2.1416988891773743e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6708,12 +6708,12 @@
         -2.1416989230593118e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6783,12 +6783,12 @@
         -2.1416989515126026e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6858,12 +6858,12 @@
         -2.1416989441388837e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6933,12 +6933,12 @@
         -2.1416989595814984e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7008,12 +7008,12 @@
         -2.1416989685465773e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7083,12 +7083,12 @@
         -2.1416989809380396e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7158,12 +7158,12 @@
         -2.1416989568330053e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7233,12 +7233,12 @@
         -2.1416989244346358e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7308,12 +7308,12 @@
         -2.1416989220035804e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7383,12 +7383,12 @@
         -2.1416989257752785e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7458,12 +7458,12 @@
         -2.1416989000525205e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7533,12 +7533,12 @@
         -2.1416988765274522e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7608,12 +7608,12 @@
         -2.141698824643671e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7683,12 +7683,12 @@
         -2.141698812572871e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7758,12 +7758,12 @@
         4.207374031314862e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7836,12 +7836,12 @@
         4.004687814434407e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7914,12 +7914,12 @@
         3.576835599532369e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7992,12 +7992,12 @@
         3.2548644779389786e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8070,12 +8070,12 @@
         3.0485841701745263e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8148,12 +8148,12 @@
         2.931224772082078e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8226,12 +8226,12 @@
         2.8716545894168333e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8304,12 +8304,12 @@
         2.8413108213175444e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8382,12 +8382,12 @@
         2.8178951666947903e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8460,12 +8460,12 @@
         2.789011779247728e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8538,12 +8538,12 @@
         2.7551512031743303e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8616,12 +8616,12 @@
         2.7207286537108757e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8694,12 +8694,12 @@
         2.687138141142888e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8772,12 +8772,12 @@
         2.655194523789529e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8850,12 +8850,12 @@
         2.6475328570702838e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8928,12 +8928,12 @@
         2.7850134283091936e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9006,12 +9006,12 @@
         4.591190812487231e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9084,12 +9084,12 @@
         0.00011377073122322648
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9162,12 +9162,12 @@
         0.0002600340696182067
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9240,12 +9240,12 @@
         0.0005133258705775238
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9318,12 +9318,12 @@
         0.0008950082851358184
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9396,12 +9396,12 @@
         0.0014158042080188063
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9474,12 +9474,12 @@
         0.0020737258712773855
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9552,12 +9552,12 @@
         0.00285327757152905
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9630,12 +9630,12 @@
         0.0037259719371088265
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9708,12 +9708,12 @@
         0.004652131232797053
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9786,12 +9786,12 @@
         0.0055838753831126695
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9864,12 +9864,12 @@
         0.006468536216699005
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9942,12 +9942,12 @@
         0.00725372568303538
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10020,12 +10020,12 @@
         0.00789122917090254
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10098,12 +10098,12 @@
         0.0083415404546296
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10176,12 +10176,12 @@
         0.008577103639858776
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10254,12 +10254,12 @@
         0.00858466274884578
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10332,12 +10332,12 @@
         0.008366207960971494
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10410,12 +10410,12 @@
         0.007938512822062331
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10488,12 +10488,12 @@
         0.007331374040687475
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10566,12 +10566,12 @@
         0.006584803710637133
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10644,12 +10644,12 @@
         0.0057455091180775774
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10722,12 +10722,12 @@
         0.004863022758960612
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10800,12 +10800,12 @@
         0.003985823621087292
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10878,12 +10878,12 @@
         0.003157735476359126
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10956,12 +10956,12 @@
         0.002414814514515711
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11034,12 +11034,12 @@
         0.001782860728087097
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11112,12 +11112,12 @@
         0.0012756159366542209
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11190,12 +11190,12 @@
         0.0008936520406553452
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11268,12 +11268,12 @@
         0.0006239022150863477
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11346,12 +11346,12 @@
         0.00044079752539430997
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11424,12 +11424,12 @@
         0.00031672090485383855
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11502,12 +11502,12 @@
         0.00023183607713956087
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11580,12 +11580,12 @@
         0.00017302095517587356
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11658,12 +11658,12 @@
         0.00013165334902159688
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11736,12 +11736,12 @@
         0.00010207378863431087
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11814,12 +11814,12 @@
         8.05574726238612e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11892,12 +11892,12 @@
         6.463827946637268e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11970,12 +11970,12 @@
         5.266881341516211e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12048,12 +12048,12 @@
         4.353570903475045e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12126,12 +12126,12 @@
         4.160043871182343e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12204,12 +12204,12 @@
         2.7894133335965066e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12282,12 +12282,12 @@
         -2.4887945870753033e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12360,12 +12360,12 @@
         -0.0001359458316189118
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12438,12 +12438,12 @@
         -0.00030495819943499855
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12516,12 +12516,12 @@
         -0.0005217343526562179
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12594,12 +12594,12 @@
         -0.0007721429456282608
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12672,12 +12672,12 @@
         -0.0010415274464499814
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12750,12 +12750,12 @@
         -0.0013160439109936909
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12828,12 +12828,12 @@
         -0.001583730344091153
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12906,12 +12906,12 @@
         -0.0018341201195482527
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12984,12 +12984,12 @@
         -0.002034117010471305
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13062,12 +13062,12 @@
         -0.0021636796297785066
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13140,12 +13140,12 @@
         -0.0022519339390043914
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13218,12 +13218,12 @@
         -0.0023086499073840423
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13296,12 +13296,12 @@
         -0.0023402906132294217
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13374,12 +13374,12 @@
         -0.0023562949205070153
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13452,12 +13452,12 @@
         -0.0023563810133654995
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13530,12 +13530,12 @@
         -0.0023405534273606625
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13608,12 +13608,12 @@
         -0.002279214332486495
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13686,12 +13686,12 @@
         -0.002173148849060941
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13764,12 +13764,12 @@
         -0.0020261853690087886
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13842,12 +13842,12 @@
         -0.0018423392537290993
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13920,12 +13920,12 @@
         -0.001625777627833103
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13998,12 +13998,12 @@
         -0.0013808644074914753
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14076,12 +14076,12 @@
         -0.001111953611731487
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14154,12 +14154,12 @@
         -0.0008235429237702299
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14232,12 +14232,12 @@
         -0.0005204362497324261
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14310,12 +14310,12 @@
         -0.0002077254766465812
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14388,12 +14388,12 @@
         0.00010945808071481776
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14466,12 +14466,12 @@
         0.00042676668293167445
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14544,12 +14544,12 @@
         0.0007400920703512329
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14622,12 +14622,12 @@
         0.0010459654094377392
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14700,12 +14700,12 @@
         0.0013406264668935674
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14778,12 +14778,12 @@
         0.0016199845291535837
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14856,12 +14856,12 @@
         0.0018796074960025805
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14934,12 +14934,12 @@
         0.002115783429275055
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15012,12 +15012,12 @@
         0.002315749311301269
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15090,12 +15090,12 @@
         0.002432325741657466
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15168,12 +15168,12 @@
         0.0024996211570453494
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15246,12 +15246,12 @@
         0.002529370099365359
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15324,12 +15324,12 @@
         0.002534728280894
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15402,12 +15402,12 @@
         0.002522687446870784
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15480,12 +15480,12 @@
         0.002490367195053108
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15558,12 +15558,12 @@
         0.0024146400276143583
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15636,12 +15636,12 @@
         0.0022665314189674384
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15714,12 +15714,12 @@
         0.00204995901293148
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15792,12 +15792,12 @@
         0.001801368393291704
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15870,12 +15870,12 @@
         0.0015521495258554137
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15948,12 +15948,12 @@
         0.0013189257353547422
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16026,12 +16026,12 @@
         0.0011093649896275015
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16104,12 +16104,12 @@
         0.0009262704463377005
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16182,12 +16182,12 @@
         0.0007692461461071144
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16260,12 +16260,12 @@
         0.0006362235897461276
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16338,12 +16338,12 @@
         0.0005245271863558921
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16416,12 +16416,12 @@
         0.0004313737875652275
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16494,12 +16494,12 @@
         0.0003542546455610024
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16572,12 +16572,12 @@
         0.0002907385887148261
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16650,12 +16650,12 @@
         0.0002385696545771046
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16728,12 +16728,12 @@
         0.00019580864041414208
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16806,12 +16806,12 @@
         0.00016081373667090396
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16884,12 +16884,12 @@
         0.00013261449931853644
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16962,12 +16962,12 @@
         0.00011415933648580434
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17040,12 +17040,12 @@
         0.00011278963273809957
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17118,12 +17118,12 @@
         0.0001375365723474093
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17196,12 +17196,12 @@
         0.00019708025052249864
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17274,12 +17274,12 @@
         0.0002980861143891403
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17352,12 +17352,12 @@
         0.00042283214960460046
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17430,12 +17430,12 @@
         0.0005684416675515647
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17508,12 +17508,12 @@
         0.0007991633119717271
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17586,12 +17586,12 @@
         0.0010489116264788617
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17664,12 +17664,12 @@
         0.0013182123812383569
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17742,12 +17742,12 @@
         0.0016043881128158116
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17820,12 +17820,12 @@
         0.0019041875573855681
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17898,12 +17898,12 @@
         0.002168371652904749
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17976,12 +17976,12 @@
         0.002381285713727649
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18054,12 +18054,12 @@
         0.0025395295009200246
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18132,12 +18132,12 @@
         0.0026376104783831155
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18210,12 +18210,12 @@
         0.002669234499750741
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18288,12 +18288,12 @@
         0.002634555013918213
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18366,12 +18366,12 @@
         0.0025367567297090096
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18444,12 +18444,12 @@
         0.002385864095415168
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18522,12 +18522,12 @@
         0.0021925049052831614
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18600,12 +18600,12 @@
         0.001969132853691243
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18678,12 +18678,12 @@
         0.0017288209378666542
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18756,12 +18756,12 @@
         0.001484249072697007
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18834,12 +18834,12 @@
         0.0012453485912883669
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18912,12 +18912,12 @@
         0.0010205751640926138
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18990,12 +18990,12 @@
         0.0008168364982555058
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19068,12 +19068,12 @@
         0.0006387763027521681
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19146,12 +19146,12 @@
         0.000489011208118278
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19224,12 +19224,12 @@
         0.0003683955806140346
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19302,12 +19302,12 @@
         0.00027473813044467477
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19380,12 +19380,12 @@
         0.00020530467680264467
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19458,12 +19458,12 @@
         0.00015310600696039607
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19536,12 +19536,12 @@
         0.00011760180027109374
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19614,12 +19614,12 @@
         9.1417844442373e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19692,12 +19692,12 @@
         7.42261232199532e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19770,12 +19770,12 @@
         8.61352646328923e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19848,12 +19848,12 @@
         8.70306225218232e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19926,12 +19926,12 @@
         8.194067952542876e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20004,12 +20004,12 @@
         7.473471359132734e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20082,12 +20082,12 @@
         6.71821354257368e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20160,12 +20160,12 @@
         5.998501659129566e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20238,12 +20238,12 @@
         5.337262105118458e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20316,12 +20316,12 @@
         4.76694467387711e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20394,12 +20394,12 @@
         4.558197814940541e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20469,12 +20469,12 @@
         4.556928346542834e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20544,12 +20544,12 @@
         4.556927065215019e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20619,12 +20619,12 @@
         4.556927068561204e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20694,12 +20694,12 @@
         4.55692706861656e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20769,12 +20769,12 @@
         4.556927068617186e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20844,12 +20844,12 @@
         4.556927068617213e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20919,12 +20919,12 @@
         4.556927068617209e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20994,12 +20994,12 @@
         4.556927068617207e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21069,12 +21069,12 @@
         4.556927068616571e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21144,12 +21144,12 @@
         4.5569270686161294e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21219,12 +21219,12 @@
         4.5569270686155704e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21294,12 +21294,12 @@
         4.5569270686153915e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21369,12 +21369,12 @@
         4.556927068615626e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21444,12 +21444,12 @@
         4.5569270686157886e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21519,12 +21519,12 @@
         4.5569270686153956e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21594,12 +21594,12 @@
         4.5569270686152526e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21669,12 +21669,12 @@
         4.55692706861546e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21744,12 +21744,12 @@
         4.556927068615809e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21819,12 +21819,12 @@
         4.556927068616154e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21894,12 +21894,12 @@
         4.556927068616399e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21969,12 +21969,12 @@
         4.556927068616688e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22044,12 +22044,12 @@
         4.5569270686167434e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22119,12 +22119,12 @@
         4.556927068616836e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22194,12 +22194,12 @@
         4.5569270686169006e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22269,12 +22269,12 @@
         4.556927068616997e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22344,12 +22344,12 @@
         4.556927068617298e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22419,12 +22419,12 @@
         4.5569270686173925e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22494,12 +22494,12 @@
         4.556927068617379e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22569,12 +22569,12 @@
         4.556927068617579e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22644,12 +22644,12 @@
         4.556927068618106e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22719,12 +22719,12 @@
         4.5569270686185066e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22794,12 +22794,12 @@
         4.556927068618864e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22869,12 +22869,12 @@
         4.556927068618732e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22944,12 +22944,12 @@
         4.556927068618187e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23019,12 +23019,12 @@
         4.556927068617621e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23094,12 +23094,12 @@
         4.5569270686176236e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23169,12 +23169,12 @@
         4.556927068618295e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23244,12 +23244,12 @@
         4.5569270686186834e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23319,12 +23319,12 @@
         4.5569270686188e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23394,12 +23394,12 @@
         4.556927068618925e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23469,12 +23469,12 @@
         4.556927068618868e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23544,12 +23544,12 @@
         4.5569270686190866e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23619,12 +23619,12 @@
         4.55692706861925e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23694,12 +23694,12 @@
         4.556927068619398e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23769,12 +23769,12 @@
         4.556927068619147e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23844,12 +23844,12 @@
         4.55692706861912e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23919,12 +23919,12 @@
         4.556927068619203e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23994,12 +23994,12 @@
         4.55692706861931e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24069,12 +24069,12 @@
         4.5569270686196626e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24144,12 +24144,12 @@
         4.5569270686198354e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24219,12 +24219,12 @@
         4.5569270686202596e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24294,12 +24294,12 @@
         4.55692706862046e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24369,12 +24369,12 @@
         4.556927068620482e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24444,12 +24444,12 @@
         4.5569270686206634e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24519,12 +24519,12 @@
         4.556927068620726e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24594,12 +24594,12 @@
         4.556927068620282e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24669,12 +24669,12 @@
         4.5569270686201064e-05
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "搬运入盘",
+        "scene_name": "Transfer to tray",
         "scene_config": {
-          "name": "搬运入盘",
+          "name": "Transfer to tray",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24729,7 +24729,7 @@
       "time": "2026-09-21T03:01:41.652944+00:00",
       "event": "created",
       "level": "info",
-      "message": "实验已就绪",
+      "message": "Experiment ready",
       "cycle": 0,
       "episode_id": "6f93233f28fc"
     },
@@ -24737,7 +24737,7 @@
       "time": "2026-09-21T03:01:41.653817+00:00",
       "event": "started",
       "level": "info",
-      "message": "开始运行",
+      "message": "Start running",
       "cycle": 0,
       "episode_id": "6f93233f28fc"
     },
@@ -24745,7 +24745,7 @@
       "time": "2026-09-21T03:01:41.654040+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 0,
       "episode_id": "6f93233f28fc"
     },
@@ -24753,7 +24753,7 @@
       "time": "2026-09-21T03:01:41.907480+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 1,
       "episode_id": "6f93233f28fc"
     },
@@ -24761,7 +24761,7 @@
       "time": "2026-09-21T03:01:41.907613+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 1,
       "episode_id": "6f93233f28fc"
     },
@@ -24769,7 +24769,7 @@
       "time": "2026-09-21T03:01:42.904662+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 2,
       "episode_id": "6f93233f28fc"
     },
@@ -24777,7 +24777,7 @@
       "time": "2026-09-21T03:01:42.904774+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 2,
       "episode_id": "6f93233f28fc"
     },
@@ -24785,7 +24785,7 @@
       "time": "2026-09-21T03:01:43.944069+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：闭合夹爪",
+      "message": "Complete action: close gripper",
       "cycle": 3,
       "episode_id": "6f93233f28fc"
     },
@@ -24793,7 +24793,7 @@
       "time": "2026-09-21T03:01:43.944228+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 3,
       "episode_id": "6f93233f28fc"
     },
@@ -24801,7 +24801,7 @@
       "time": "2026-09-21T03:01:44.392899+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 4,
       "episode_id": "6f93233f28fc"
     },
@@ -24809,7 +24809,7 @@
       "time": "2026-09-21T03:01:44.393036+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 4,
       "episode_id": "6f93233f28fc"
     },
@@ -24817,7 +24817,7 @@
       "time": "2026-09-21T03:01:45.716401+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 5,
       "episode_id": "6f93233f28fc"
     },
@@ -24825,7 +24825,7 @@
       "time": "2026-09-21T03:01:45.716536+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 5,
       "episode_id": "6f93233f28fc"
     },
@@ -24833,7 +24833,7 @@
       "time": "2026-09-21T03:01:46.878063+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 6,
       "episode_id": "6f93233f28fc"
     },
@@ -24841,7 +24841,7 @@
       "time": "2026-09-21T03:01:46.878233+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 6,
       "episode_id": "6f93233f28fc"
     },
@@ -24849,7 +24849,7 @@
       "time": "2026-09-21T03:01:47.879830+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：松开夹爪",
+      "message": "Complete action: release gripper",
       "cycle": 7,
       "episode_id": "6f93233f28fc"
     },
@@ -24857,7 +24857,7 @@
       "time": "2026-09-21T03:01:47.879937+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 7,
       "episode_id": "6f93233f28fc"
     },
@@ -24865,7 +24865,7 @@
       "time": "2026-09-21T03:01:48.097237+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 8,
       "episode_id": "6f93233f28fc"
     },
@@ -24873,7 +24873,7 @@
       "time": "2026-09-21T03:01:48.097265+00:00",
       "event": "completed",
       "level": "info",
-      "message": "物理成功条件验证通过",
+      "message": "Physical success condition verification passed",
       "cycle": 8,
       "episode_id": "6f93233f28fc"
     }
@@ -25537,7 +25537,7 @@
     "action": {
       "state": {
         "observation": {
-          "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+          "goal": "Place the red block into the blue tray, release the gripper and lift away.",
           "units": "metres",
           "tcp": [
             0.4276,

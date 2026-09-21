@@ -13,7 +13,7 @@ def reject_credential_fields(value):
         for key, child in value.items():
             if isinstance(key, str) and re.fullmatch(
                     r"api[_-]?key|authorization|password|secret|access[_-]?token|refresh[_-]?token", key, re.I):
-                raise ValueError("输入或预设不能包含密钥字段，请在模型配置的密码栏填写 Key")
+                raise ValueError("Input or preset cannot contain the key field, please fill in the password field in the model configuration Key")
             reject_credential_fields(child)
     elif isinstance(value, (list, tuple)):
         for child in value:
@@ -24,17 +24,17 @@ def validate_user_context(value):
     if value is None:
         return {}
     if not isinstance(value, dict):
-        raise ValueError("补充输入必须是 JSON 对象")
+        raise ValueError("Additional input must be JSON object")
     try:
         reject_credential_fields(value)
     except RecursionError:
-        raise ValueError("补充输入的 JSON 嵌套过深") from None
+        raise ValueError("Additional input JSON Too deep nesting") from None
     try:
         encoded = json.dumps(value, ensure_ascii=False, allow_nan=False)
     except (TypeError, ValueError, RecursionError):
-        raise ValueError("补充输入必须是有限、有效的 JSON") from None
+        raise ValueError("Supplementary input must be finite, valid JSON") from None
     if len(encoded.encode("utf-8")) > 8192:
-        raise ValueError("补充输入不能超过 8 KB")
+        raise ValueError("Additional input cannot exceed 8 KB")
     return json.loads(encoded)
 
 

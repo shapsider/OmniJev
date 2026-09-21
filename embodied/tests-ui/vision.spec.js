@@ -23,8 +23,8 @@ async function visionFixture(page) {
     sim_time: 0.12,
     latency_ms: 18.4,
     objects: [
-      { id: "object", label: "方块", visible: true },
-      { id: "destination", label: "目标", visible: true },
+      { id: "object", label: "Block", visible: true },
+      { id: "destination", label: "Target", visible: true },
     ],
   };
   await page.route("**/api/state", (route) =>
@@ -67,7 +67,7 @@ test("mocked camera contract: capture caching, channel switching and responsive 
   await expect(page.locator("#loading")).toHaveClass(/hidden/);
   await page.locator('[data-tab="vision"]').click();
   await expect(page.locator("#vision-empty")).toContainText(
-    "选择「RGB-D 视觉」",
+    "Select “ RGB-D Visual",
   );
   await expect(page.locator('[data-vision-channel="depth"]')).toBeDisabled();
   expect(requests.metadata).toHaveLength(0);
@@ -81,7 +81,7 @@ test("mocked camera contract: capture caching, channel switching and responsive 
   await expect(page.locator("#vision-visibility")).toHaveText("2 / 2");
   await expect(page.locator("#input-context")).toContainText("RGB-D");
   await expect(page.locator("#vision-note")).toContainText(
-    "尚不具备通用视觉识别能力",
+    "Not yet equipped with general visual recognition capability",
   );
   expect(requests.metadata).toHaveLength(1);
   expect(requests.images).toHaveLength(1);
@@ -94,7 +94,7 @@ test("mocked camera contract: capture caching, channel switching and responsive 
   expect(requests.images).toHaveLength(1);
   await page.locator('[data-vision-channel="depth"]').click();
   await expect(page.locator("#vision-image-label")).toHaveText(
-    "深度 · 最近感知帧",
+    "Depth · Recent perception frame",
   );
   expect(requests.images.at(-1).pathname).toBe("/api/perception/depth.png");
   expect(requests.metadata).toHaveLength(1);
@@ -105,7 +105,7 @@ test("mocked camera contract: capture caching, channel switching and responsive 
   snapshot.perception = { ...metadata };
   await expect(page.locator("#vision-visibility")).toHaveText("1 / 2");
   await expect(page.locator("#vision-status")).toContainText(
-    "遮挡或未检测到：方块",
+    "Occluded or not detected: block",
   );
   await expect(page.locator("#vision-status")).toHaveClass(/has-alert/);
   expect(requests.metadata).toHaveLength(2);
@@ -196,13 +196,13 @@ test("mocked camera contract: failed reads stay explicit and retry only on reque
   await page.route("**/api/perception?*", (route) => {
     attempts++;
     return attempts === 1
-      ? route.fulfill({ status: 409, json: { detail: "感知帧已更新" } })
+      ? route.fulfill({ status: 409, json: { detail: "Perception frame updated" } })
       : route.fulfill({ json: metadata });
   });
   await page.goto("/");
   await expect(page.locator("#loading")).toHaveClass(/hidden/);
   await page.locator('[data-tab="vision"]').click();
-  await expect(page.locator("#vision-status")).toHaveText("感知帧已更新");
+  await expect(page.locator("#vision-status")).toHaveText("Perception frame updated");
   await expect(page.locator("#vision-image")).toHaveCount(0);
   await nextPoll(page);
   expect(attempts).toBe(1);

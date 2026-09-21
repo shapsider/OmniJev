@@ -1,56 +1,56 @@
-# 相机怎样工作？
+# How do the cameras work?
 
-工作台有一台观察桌面的外部相机，也有一台装在手部、随机械臂移动的腕部相机。两台都来自 MuJoCo 仿真，每台输出 640 × 480 图像。
+The workstation has an external camera observing the desktop, and a wrist camera mounted on the hand, moving with the robotic arm. Both cameras come from MuJoCo simulation, each outputting 640 × 480 images.
 
-相机在动作前后采集新画面。机械臂和物体动了，下一帧就会变化；等待模型回复时，仿真停在当前状态，画面也保持不变。这是**按步骤拍照**，当前没有连续视频输入。
+Cameras capture new frames before and after actions. When the robotic arm or object moves, the next frame will change; while waiting for the model's response, the simulation stays at the current state, and the frame remains unchanged. This is **step-by-step photography**, and there is currently no continuous video input.
 
-[看双相机演示](DEMOS.md) · [开启逐步视觉规划](PLANNING.md)
+[Watch dual-camera demo](DEMOS.md) · [Enable incremental visual planning](PLANNING.md)
 
-## 选择哪些相机？
+## Which cameras to choose?
 
-| 配置 | 能看到什么 |
+| Configuration | What can be seen |
 | --- | --- |
-| 仅外部相机 | 桌面、方块、托盘和机械臂的整体位置 |
-| 仅腕部相机 | 夹爪附近的细节；视野会随手移动，也可能被手指遮挡 |
-| 双相机 | 同时保留整体和近处视角，两幅图来自同一仿真时刻 |
-| 无相机 | 不采集图像，使用结构化仿真状态 |
+| Only external camera | Desktop, blocks, tray, and overall position of the robotic arm |
+| Only wrist camera | Details near the gripper; field of view moves with the hand and may be partially blocked by fingers |
+| Dual cameras | Simultaneously retains overall and close-up views; both images come from the same simulation moment |
+| No camera | No images are collected; structured simulation state is used |
 
-只启用一种时，另一种不会渲染或发送。直接图像和 RGB-D 观察至少需要一种相机；选择无相机会切换到非视觉状态输入。仿真状态模式下也能启用相机预览，此时图像仅供查看，不进入模型。
+When only one camera is enabled, the other is neither rendered nor sent. Direct image and RGB-D observations require at least one camera; selecting no camera switches to non-visual state input. Camera previews can also be enabled in simulation-state mode, where images are for viewing only and are not sent to the model.
 
-| 外部相机 | 腕部相机 |
+| External camera | Wrist camera |
 | --- | --- |
-| ![外部相机原始图像](planning-initial-external.png) | ![腕部相机原始图像](planning-initial-wrist.png) |
+| ![External camera original image](planning-initial-external.png) | ![Wrist camera original image](planning-initial-wrist.png) |
 
-## “直接图像”和“RGB-D 视觉”有什么区别？
+## What is the difference between "direct image" and "RGB-D vision"?
 
-**直接图像**把原始 RGB 交给支持图像的模型，让模型自己判断方块、托盘和夹爪的关系。输入中没有物体或目标坐标，也不运行本地颜色检测器。模型仍知道末端位置、夹爪状态和接触反馈。首页的两段演示用的是这一条路线。
+**Direct image** passes the original RGB to models that support images, letting the model itself judge the relationship between blocks, trays, and grippers. No object or target coordinates are in the input, and no local color detector runs. The model still knows end-effector position, gripper state, and contact feedback. The two demo segments on the homepage use this route.
 
-**RGB-D 视觉**先在本地寻找红色方块、蓝色目标和黄色障碍，再结合深度和相机标定估计坐标。模型收到的是检测结果，不是原始图片。检测器知道现有物体的颜色，以及方块边长为 4 cm；换了颜色或形状，需要调整检测器。
+**RGB-D vision** first locally searches for red blocks, blue targets, and yellow obstacles, then combines depth and camera calibration to estimate coordinates. The model receives detection results, not the original image. The detector knows the colors of existing objects and that blocks are 4 cm in side length; if colors or shapes change, the detector needs adjustment.
 
-| 输入方式 | 本地颜色检测 | 原图发送给模型 | 模型获得物体坐标 |
+| Input method | Local color detection | Original image sent to model | Model receives object coordinates |
 | --- | --- | --- | --- |
-| 仿真真值 | 否 | 否 | 仿真器直接提供 |
-| RGB-D 视觉 | 是 | 否 | 检测器估计 |
-| 直接图像 | 否 | 是 | 不提供 |
+| Simulation ground truth | No | No | Directly provided by simulator |
+| RGB-D vision | Yes | No | Estimated by detector |
+| Direct image | No | Yes | Not provided |
 
-两条视觉路线的相机均来自仿真。接触反馈、安全检查和最终成功判断也由仿真器提供，当前还不是实物相机或真机控制。
+Both visual routes use simulated cameras. Contact feedback, safety checks, and final success judgment are also provided by the simulator, and there is currently no real camera or physical machine control.
 
-## 被挡住时怎么办？
+## What to do when blocked?
 
-直接图像模式保留实际遮挡，由模型结合可见画面和近期动作决定下一步。页面上写出的“视觉依据”是模型的简短解释，仍需对照画面判断是否可信。
+In direct image mode, actual occlusion is preserved, and the model combines the visible scene with recent actions to decide the next step. The "visual basis" written on the page is the model's brief explanation, which still needs to be cross-checked with the scene to assess credibility.
 
-RGB-D 模式会在有限时间内保留最近定位；抓住方块后，还会结合末端位移和双指接触估计它的位置。双相机时优先采用外部检测，腕部补充缺失物体。必须的物体长期不可见、跟踪过期后会停止，不用仿真真值偷偷补齐。
+RGB-D mode retains the latest pose for a limited time; after grasping a block, it also combines end-effector displacement and dual-finger contact to estimate its position. When using a dual-camera setup, external detection is prioritized, with wrist supplementation for missing objects. Required objects that remain invisible for a long time and have expired tracking will stop; no simulation ground truth is secretly filled in.
 
-## 怎样确认模型收到的是这张图？
+## How to confirm the model received this image?
 
-实验 JSON 保存每张输入图的视角、采集编号、字节数和 SHA-256。视觉页的“下载观测帧”另存带 PNG 和清单的 ZIP，可以逐项核对。直接图像通过 Chat 的原生 `image_url` 或 Claude 的原生 `image` 块发送。
+Experiment JSON saves the viewpoint, acquisition number, byte count, and SHA-256 for each input image. The visual page's "Download observation frame" saves a PNG and a checklist ZIP, which can be verified item by item. Direct images are sent via Chat's native `image_url` or Claude's native `image` block.
 
-轨迹回放与相机输入要区分：网页时间轴重放保存的姿态，视觉页显示最近一次采样。首页视频则另外读取每步归档图，和记录的动作一起排版，详见[视频导出说明](DEMOS.md)。
+Trajectory replay and camera input are distinct: the web timeline replays saved poses, while the vision page shows the latest sample. Homepage videos separately read the archived images from each step and arrange them alongside recorded actions; see [Video Export Instructions](DEMOS.md).
 
-## 本次验证
+## Validation in this release
 
-双相机原始图像的两个完成回合分别为 32 步和 43 步，另保留一次撤离不足和两次 API 超时，见[视觉规划结果](PLANNING_RESULTS.md)。
+The two completed rounds of raw dual-camera images were 32 steps and 43 steps respectively, with one insufficient withdrawal and two API timeouts, see [Visual Planning Results](PLANNING_RESULTS.md).
 
-RGB-D＋规则基线在双相机下重跑三个任务，各 seed 0，均以 8 动作完成，模型调用为 0。早期单外部 RGB-D 版本也保存了一局 GPT 搬运成功记录，8 动作、13 次调用。这些成绩分开保存在[结果总览](VALIDATION.md)中，不能混成视觉规划成功率。
+RGB-D + Rule baseline reran three tasks under dual cameras, each with seed 0, all completed in 8 actions, with 0 model calls. The early single external RGB-D version also saved a successful GPT transfer record, 8 actions, 13 calls. These results are saved separately in [Result Overview](VALIDATION.md) and cannot be mixed with visual planning success rate.
 
-想替换检测器或连接真实相机，可从 `perception.py` 开始，补上标定、深度误差和遮挡处理。扩展入口见[开发指南](EXTENDING.md)。
+To replace the detector or connect a real camera, start from `perception.py` and add calibration, depth error, and occlusion handling. The extension entry point is [Development Guide](EXTENDING.md).

@@ -68,9 +68,9 @@ def incremental_candidates(observation):
                     f"{name.upper()} {sign * step:+.3f} m", "incremental",
                     target.tolist(), None, .45))
     result.extend([
-        Candidate("open", "张开夹爪", "incremental", point.tolist(), "open", .65),
-        Candidate("close", "闭合夹爪", "incremental", point.tolist(), "close", .65),
-        Candidate("hold", "保持当前位姿", "incremental", point.tolist(), None, .3),
+        Candidate("open", "Open the gripper", "incremental", point.tolist(), "open", .65),
+        Candidate("close", "Close the gripper", "incremental", point.tolist(), "close", .65),
+        Candidate("hold", "Maintain current pose", "incremental", point.tolist(), None, .3),
     ])
     for option in result:
         target = np.asarray(option.target)

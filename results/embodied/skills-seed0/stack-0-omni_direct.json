@@ -7,7 +7,7 @@
   "provider": "omni_direct",
   "profile_id": null,
   "scene_config": {
-    "name": "方块堆叠",
+    "name": "Block stacking",
     "source_xy": null,
     "target_xy": [
       0.43,
@@ -35,7 +35,7 @@
     {
       "cycle": 1,
       "phase": "approach",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "approach",
         "probabilities": {},
@@ -70,7 +70,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "approach",
         "target": [
           0.43685,
@@ -98,12 +98,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -145,12 +145,12 @@
         "sim_seconds": 0.0
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -194,7 +194,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移至物体上方",
+          "label": "Move above object",
           "phase": "approach",
           "target": [
             0.43685,
@@ -223,7 +223,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "approach",
           "target": [
             0.43685,
@@ -252,7 +252,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "approach",
           "target": [
             0.37997,
@@ -285,7 +285,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.37997,
@@ -340,7 +340,7 @@
     {
       "cycle": 2,
       "phase": "descend",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "descend",
         "probabilities": {},
@@ -389,7 +389,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "descend",
         "target": [
           0.43685,
@@ -417,12 +417,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -464,12 +464,12 @@
         "sim_seconds": 1.2
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -513,7 +513,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "下降对准",
+          "label": "Lower to align",
           "phase": "descend",
           "target": [
             0.43685,
@@ -542,7 +542,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "descend",
           "target": [
             0.43685,
@@ -571,7 +571,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "descend",
           "target": [
             0.4367,
@@ -603,7 +603,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4367,
@@ -663,7 +663,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4367,
@@ -727,7 +727,7 @@
     {
       "cycle": 3,
       "phase": "grasp",
-      "label": "闭合夹爪",
+      "label": "Close the gripper",
       "intent": {
         "choice": "grasp",
         "probabilities": {},
@@ -776,7 +776,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "闭合夹爪",
+        "label": "Close the gripper",
         "phase": "grasp",
         "target": [
           0.43681,
@@ -804,12 +804,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -851,12 +851,12 @@
         "sim_seconds": 2.4
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -903,7 +903,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "闭合夹爪",
+          "label": "Close the gripper",
           "phase": "grasp",
           "target": [
             0.43681,
@@ -932,7 +932,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "grasp",
           "target": [
             0.43681,
@@ -964,7 +964,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43681,
@@ -1032,7 +1032,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43681,
@@ -1103,7 +1103,7 @@
     {
       "cycle": 4,
       "phase": "lift",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "lift",
         "probabilities": {},
@@ -1138,7 +1138,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "lift",
         "target": [
           0.4368,
@@ -1166,12 +1166,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1216,12 +1216,12 @@
         "sim_seconds": 3.05
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1268,7 +1268,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "抬升物体",
+          "label": "Lift object",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1297,7 +1297,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1326,7 +1326,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lift",
           "target": [
             0.4368,
@@ -1359,7 +1359,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.4368,
@@ -1434,7 +1434,7 @@
     {
       "cycle": 5,
       "phase": "carry",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "carry",
         "probabilities": {},
@@ -1483,7 +1483,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "carry",
         "target": [
           0.42926,
@@ -1511,12 +1511,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1561,12 +1561,12 @@
         "sim_seconds": 4.7
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1613,7 +1613,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "移向目标",
+          "label": "Move toward target",
           "phase": "carry",
           "target": [
             0.42926,
@@ -1642,7 +1642,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "carry",
           "target": [
             0.42926,
@@ -1671,7 +1671,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "carry",
           "target": [
             0.43656,
@@ -1703,7 +1703,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43656,
@@ -1774,7 +1774,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.43656,
@@ -1849,7 +1849,7 @@
     {
       "cycle": 6,
       "phase": "lower",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "lower",
         "probabilities": {},
@@ -1898,7 +1898,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "lower",
         "target": [
           0.42763,
@@ -1926,12 +1926,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -1976,12 +1976,12 @@
         "sim_seconds": 7.1
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2028,7 +2028,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "降低放置",
+          "label": "Lower to place",
           "phase": "lower",
           "target": [
             0.42763,
@@ -2057,7 +2057,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "lower",
           "target": [
             0.42763,
@@ -2086,7 +2086,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "lower",
           "target": [
             0.42924,
@@ -2118,7 +2118,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42924,
@@ -2189,7 +2189,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42924,
@@ -2264,7 +2264,7 @@
     {
       "cycle": 7,
       "phase": "release",
-      "label": "松开夹爪",
+      "label": "Release the gripper",
       "intent": {
         "choice": "release",
         "probabilities": {},
@@ -2313,7 +2313,7 @@
       },
       "action": {
         "id": "direct",
-        "label": "松开夹爪",
+        "label": "Release the gripper",
         "phase": "release",
         "target": [
           0.42756,
@@ -2341,12 +2341,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2391,12 +2391,12 @@
         "sim_seconds": 8.898
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2440,7 +2440,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "松开夹爪",
+          "label": "Release the gripper",
           "phase": "release",
           "target": [
             0.42756,
@@ -2469,7 +2469,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "release",
           "target": [
             0.42756,
@@ -2501,7 +2501,7 @@
         "phase": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42756,
@@ -2572,7 +2572,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42756,
@@ -2646,7 +2646,7 @@
     {
       "cycle": 8,
       "phase": "withdraw",
-      "label": "减速执行",
+      "label": "Decelerated execution",
       "intent": {
         "choice": "withdraw",
         "probabilities": {},
@@ -2681,7 +2681,7 @@
       },
       "action": {
         "id": "gentle",
-        "label": "减速执行",
+        "label": "Decelerated execution",
         "phase": "withdraw",
         "target": [
           0.42756,
@@ -2709,12 +2709,12 @@
         }
       },
       "before": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2756,12 +2756,12 @@
         "sim_seconds": 9.698
       },
       "after": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -2805,7 +2805,7 @@
       "candidates": [
         {
           "id": "direct",
-          "label": "向上撤离",
+          "label": "Withdraw upward",
           "phase": "withdraw",
           "target": [
             0.42756,
@@ -2834,7 +2834,7 @@
         },
         {
           "id": "gentle",
-          "label": "减速执行",
+          "label": "Decelerated execution",
           "phase": "withdraw",
           "target": [
             0.42756,
@@ -2863,7 +2863,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "withdraw",
           "target": [
             0.42756,
@@ -2896,7 +2896,7 @@
         "action": {
           "state": {
             "observation": {
-              "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+              "goal": "Stack the red block on the blue block, release the gripper and lift away.",
               "units": "metres",
               "tcp": [
                 0.42756,
@@ -2988,12 +2988,12 @@
         -2.1417896827049977e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3063,12 +3063,12 @@
         -2.141737194021659e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3138,12 +3138,12 @@
         -2.141713815479556e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3213,12 +3213,12 @@
         -2.1417050756075994e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3288,12 +3288,12 @@
         -2.1417013514398756e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3363,12 +3363,12 @@
         -2.141699917032287e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3438,12 +3438,12 @@
         -2.141699407933454e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3513,12 +3513,12 @@
         -2.1416992337034156e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3588,12 +3588,12 @@
         -2.1416992118302578e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3663,12 +3663,12 @@
         -2.1416992028224584e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3738,12 +3738,12 @@
         -2.1416992084799956e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3813,12 +3813,12 @@
         -2.141699183426118e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3888,12 +3888,12 @@
         -2.141699158025724e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -3963,12 +3963,12 @@
         -2.141699163165356e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4038,12 +4038,12 @@
         -2.1416991315934987e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4113,12 +4113,12 @@
         -2.1416991131193558e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4188,12 +4188,12 @@
         -2.1416990978987008e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4263,12 +4263,12 @@
         -2.141699054148667e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4338,12 +4338,12 @@
         -2.1416990436424032e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4413,12 +4413,12 @@
         -2.14169906916667e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4488,12 +4488,12 @@
         -2.1416990471194964e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4563,12 +4563,12 @@
         -2.141699053715893e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4638,12 +4638,12 @@
         -2.1416990291365935e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4713,12 +4713,12 @@
         -2.141699020319882e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4788,12 +4788,12 @@
         -2.1416990119290465e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4863,12 +4863,12 @@
         -2.1416990052733283e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -4938,12 +4938,12 @@
         -2.1416990162591882e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5013,12 +5013,12 @@
         -2.141699007084727e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5088,12 +5088,12 @@
         -2.1416989980393867e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5163,12 +5163,12 @@
         -2.1416989647665615e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5238,12 +5238,12 @@
         -2.1416989497528686e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5313,12 +5313,12 @@
         -2.141698930585256e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5388,12 +5388,12 @@
         -2.141698910070962e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5463,12 +5463,12 @@
         -2.141698843452398e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5538,12 +5538,12 @@
         -2.1416988148706387e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5613,12 +5613,12 @@
         -2.1416987986488127e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5688,12 +5688,12 @@
         -2.1416987939896731e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5763,12 +5763,12 @@
         -2.141698779411044e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5838,12 +5838,12 @@
         -2.141698811653796e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5913,12 +5913,12 @@
         -2.1416988443991637e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -5988,12 +5988,12 @@
         -2.1416988525313588e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6063,12 +6063,12 @@
         -2.1416988477440567e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6138,12 +6138,12 @@
         -2.1416988746716363e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6213,12 +6213,12 @@
         -2.141698896023294e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6288,12 +6288,12 @@
         -2.141698869517053e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6363,12 +6363,12 @@
         -2.1416988440825213e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6438,12 +6438,12 @@
         -2.1416988549061473e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6513,12 +6513,12 @@
         -2.1416988764436079e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6588,12 +6588,12 @@
         -2.1416988891773743e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6663,12 +6663,12 @@
         -2.1416989230593118e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6738,12 +6738,12 @@
         -2.1416989515126026e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6813,12 +6813,12 @@
         -2.1416989441388837e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6888,12 +6888,12 @@
         -2.1416989595814984e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -6963,12 +6963,12 @@
         -2.1416989685465773e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7038,12 +7038,12 @@
         -2.1416989809380396e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7113,12 +7113,12 @@
         -2.1416989568330053e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7188,12 +7188,12 @@
         -2.1416989244346358e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7263,12 +7263,12 @@
         -2.1416989220035804e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7338,12 +7338,12 @@
         -2.1416989257752785e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7413,12 +7413,12 @@
         -2.1416989000525205e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7488,12 +7488,12 @@
         -2.1416988765274522e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7563,12 +7563,12 @@
         -2.141698824643671e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7638,12 +7638,12 @@
         -2.141698812572871e-10
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7713,12 +7713,12 @@
         4.207374031314862e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7791,12 +7791,12 @@
         4.004687814434407e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7869,12 +7869,12 @@
         3.576835599532369e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -7947,12 +7947,12 @@
         3.2548644779389786e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8025,12 +8025,12 @@
         3.0485841701745263e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8103,12 +8103,12 @@
         2.931224772082078e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8181,12 +8181,12 @@
         2.8716545894168333e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8259,12 +8259,12 @@
         2.8413108213175444e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8337,12 +8337,12 @@
         2.8178951666947903e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8415,12 +8415,12 @@
         2.789011779247728e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8493,12 +8493,12 @@
         2.7551512031743303e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8571,12 +8571,12 @@
         2.7207286537108757e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8649,12 +8649,12 @@
         2.687138141142888e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8727,12 +8727,12 @@
         2.655194523789529e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8805,12 +8805,12 @@
         2.6475328570702838e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8883,12 +8883,12 @@
         2.7850134283091936e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -8961,12 +8961,12 @@
         4.591190812487231e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9039,12 +9039,12 @@
         0.00011377073122322648
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9117,12 +9117,12 @@
         0.0002600340696182067
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9195,12 +9195,12 @@
         0.0005133258705775238
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9273,12 +9273,12 @@
         0.0008950082851358184
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9351,12 +9351,12 @@
         0.0014158042080188063
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9429,12 +9429,12 @@
         0.0020737258712773855
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9507,12 +9507,12 @@
         0.00285327757152905
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9585,12 +9585,12 @@
         0.0037259719371088265
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9663,12 +9663,12 @@
         0.004652131232797053
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9741,12 +9741,12 @@
         0.0055838753831126695
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9819,12 +9819,12 @@
         0.006468536216699005
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9897,12 +9897,12 @@
         0.00725372568303538
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -9975,12 +9975,12 @@
         0.00789122917090254
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10053,12 +10053,12 @@
         0.0083415404546296
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10131,12 +10131,12 @@
         0.008577103639858776
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10209,12 +10209,12 @@
         0.00858466274884578
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10287,12 +10287,12 @@
         0.008366207960971494
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10365,12 +10365,12 @@
         0.007938512822062331
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10443,12 +10443,12 @@
         0.007331374040687475
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10521,12 +10521,12 @@
         0.006584803710637133
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10599,12 +10599,12 @@
         0.0057455091180775774
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10677,12 +10677,12 @@
         0.004863022758960612
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10755,12 +10755,12 @@
         0.003985823621087292
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10833,12 +10833,12 @@
         0.003157735476359126
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10911,12 +10911,12 @@
         0.002414814514515711
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -10989,12 +10989,12 @@
         0.001782860728087097
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11067,12 +11067,12 @@
         0.0012756159366542209
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11145,12 +11145,12 @@
         0.0008936520406553452
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11223,12 +11223,12 @@
         0.0006239022150863477
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11301,12 +11301,12 @@
         0.00044079752539430997
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11379,12 +11379,12 @@
         0.00031672090485383855
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11457,12 +11457,12 @@
         0.00023183607713956087
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11535,12 +11535,12 @@
         0.00017302095517587356
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11613,12 +11613,12 @@
         0.00013165334902159688
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11691,12 +11691,12 @@
         0.00010207378863431087
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11769,12 +11769,12 @@
         8.05574726238612e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11847,12 +11847,12 @@
         6.463827946637268e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -11925,12 +11925,12 @@
         5.266881341516211e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12003,12 +12003,12 @@
         4.353570903475045e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12081,12 +12081,12 @@
         4.160043871182343e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12159,12 +12159,12 @@
         2.7894133335965066e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12237,12 +12237,12 @@
         -2.4887945870753033e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12315,12 +12315,12 @@
         -0.0001359458316189118
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12393,12 +12393,12 @@
         -0.00030495819943499855
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12471,12 +12471,12 @@
         -0.0005217343526562179
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12549,12 +12549,12 @@
         -0.0007721429456282608
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12627,12 +12627,12 @@
         -0.0010415274464499814
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12705,12 +12705,12 @@
         -0.0013160439109936909
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12783,12 +12783,12 @@
         -0.001583730344091153
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12861,12 +12861,12 @@
         -0.0018341201195482527
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -12939,12 +12939,12 @@
         -0.002034117010471305
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13017,12 +13017,12 @@
         -0.0021636796297785066
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13095,12 +13095,12 @@
         -0.0022519339390043914
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13173,12 +13173,12 @@
         -0.0023086499073840423
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13251,12 +13251,12 @@
         -0.0023402906132294217
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13329,12 +13329,12 @@
         -0.0023562949205070153
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13407,12 +13407,12 @@
         -0.0023563810133654995
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13485,12 +13485,12 @@
         -0.0023405534273606625
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13563,12 +13563,12 @@
         -0.002279214332486495
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13641,12 +13641,12 @@
         -0.002173148849060941
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13719,12 +13719,12 @@
         -0.0020261853690087886
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13797,12 +13797,12 @@
         -0.0018423392537290993
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13875,12 +13875,12 @@
         -0.001625777627833103
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -13953,12 +13953,12 @@
         -0.0013808644074914753
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14031,12 +14031,12 @@
         -0.001111953611731487
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14109,12 +14109,12 @@
         -0.0008235429237702299
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14187,12 +14187,12 @@
         -0.0005204362497324261
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14265,12 +14265,12 @@
         -0.0002077254766465812
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14343,12 +14343,12 @@
         0.00010945808071481776
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14421,12 +14421,12 @@
         0.00042676668293167445
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14499,12 +14499,12 @@
         0.0007400920703512329
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14577,12 +14577,12 @@
         0.0010459654094377392
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14655,12 +14655,12 @@
         0.0013406264668935674
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14733,12 +14733,12 @@
         0.0016199845291535837
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14811,12 +14811,12 @@
         0.0018796074960025805
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14889,12 +14889,12 @@
         0.002115783429275055
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -14967,12 +14967,12 @@
         0.002315749311301269
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15045,12 +15045,12 @@
         0.002432325741657466
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15123,12 +15123,12 @@
         0.0024996211570453494
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15201,12 +15201,12 @@
         0.002529370099365359
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15279,12 +15279,12 @@
         0.002534728280894
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15357,12 +15357,12 @@
         0.002522687446870784
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15435,12 +15435,12 @@
         0.002490367195053108
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15513,12 +15513,12 @@
         0.0024146400276143583
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15591,12 +15591,12 @@
         0.0022665314189674384
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15669,12 +15669,12 @@
         0.00204995901293148
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15747,12 +15747,12 @@
         0.001801368393291704
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15825,12 +15825,12 @@
         0.0015521495258554137
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15903,12 +15903,12 @@
         0.0013189257353547422
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -15981,12 +15981,12 @@
         0.0011093649896275015
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16059,12 +16059,12 @@
         0.0009262704463377005
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16137,12 +16137,12 @@
         0.0007692461461071144
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16215,12 +16215,12 @@
         0.0006362235897461276
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16293,12 +16293,12 @@
         0.0005245271863558921
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16371,12 +16371,12 @@
         0.0004313737875652275
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16449,12 +16449,12 @@
         0.0003542546455610024
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16527,12 +16527,12 @@
         0.0002907385887148261
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16605,12 +16605,12 @@
         0.0002385696545771046
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16683,12 +16683,12 @@
         0.00019580864041414208
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16761,12 +16761,12 @@
         0.00016081373667090396
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16839,12 +16839,12 @@
         0.00013238712472715458
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16917,12 +16917,12 @@
         0.00011156402009353459
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -16995,12 +16995,12 @@
         0.0001022624768065263
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17073,12 +17073,12 @@
         0.00010966940084648964
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17151,12 +17151,12 @@
         0.0001389156550997231
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17229,12 +17229,12 @@
         0.00019405294463399375
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17307,12 +17307,12 @@
         0.0002772624525737055
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17385,12 +17385,12 @@
         0.0003884249439337388
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17463,12 +17463,12 @@
         0.0005180443643729847
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17541,12 +17541,12 @@
         0.0006516386807983164
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17619,12 +17619,12 @@
         0.0008259635449561638
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17697,12 +17697,12 @@
         0.0010046803029751521
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17775,12 +17775,12 @@
         0.001179456312520706
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17853,12 +17853,12 @@
         0.0013380351409751792
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -17931,12 +17931,12 @@
         0.0014724280778690695
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18009,12 +18009,12 @@
         0.0015753703061627104
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18087,12 +18087,12 @@
         0.001641638678692192
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18165,12 +18165,12 @@
         0.0016684157549617454
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18243,12 +18243,12 @@
         0.0016556756417351636
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18321,12 +18321,12 @@
         0.0016056322474442045
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18399,12 +18399,12 @@
         0.0015220330050116123
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18477,12 +18477,12 @@
         0.0014104713494327613
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18555,12 +18555,12 @@
         0.0012773310806015994
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18633,12 +18633,12 @@
         0.0011310830093742088
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18711,12 +18711,12 @@
         0.0009798627291898194
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18789,12 +18789,12 @@
         0.0008297646005247971
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18867,12 +18867,12 @@
         0.0006859874874809561
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -18945,12 +18945,12 @@
         0.0005545536539239132
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19023,12 +19023,12 @@
         0.0004386278610430235
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19101,12 +19101,12 @@
         0.00034032853768758097
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19179,12 +19179,12 @@
         0.0002603233092146464
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19257,12 +19257,12 @@
         0.00019793758023223598
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19335,12 +19335,12 @@
         0.00015117505184905847
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19413,12 +19413,12 @@
         0.00011674601727901402
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19491,12 +19491,12 @@
         9.094367649177591e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19569,12 +19569,12 @@
         7.139737229132268e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19647,12 +19647,12 @@
         5.6977315155562095e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19725,12 +19725,12 @@
         5.6950800619542785e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19803,12 +19803,12 @@
         5.158779218120927e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19881,12 +19881,12 @@
         4.441732361664388e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -19959,12 +19959,12 @@
         3.759073518667774e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20037,12 +20037,12 @@
         3.179418833988334e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20115,12 +20115,12 @@
         2.706863038060054e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20193,12 +20193,12 @@
         2.323920226268004e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20271,12 +20271,12 @@
         2.024238085749848e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20349,12 +20349,12 @@
         1.819467507032772e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20424,12 +20424,12 @@
         1.8171034836750522e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20499,12 +20499,12 @@
         1.8171004193940957e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20574,12 +20574,12 @@
         1.817100417771284e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20649,12 +20649,12 @@
         1.817100417789906e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20724,12 +20724,12 @@
         1.817100417790148e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20799,12 +20799,12 @@
         1.817100417790118e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20874,12 +20874,12 @@
         1.8171004177901026e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -20949,12 +20949,12 @@
         1.8171004177901066e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21024,12 +21024,12 @@
         1.8171004177902947e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21099,12 +21099,12 @@
         1.8171004177907057e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21174,12 +21174,12 @@
         1.8171004177910238e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21249,12 +21249,12 @@
         1.8171004177906887e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21324,12 +21324,12 @@
         1.8171004177907924e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21399,12 +21399,12 @@
         1.817100417790906e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21474,12 +21474,12 @@
         1.81710041779101e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21549,12 +21549,12 @@
         1.8171004177909577e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21624,12 +21624,12 @@
         1.8171004177910435e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21699,12 +21699,12 @@
         1.8171004177908957e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21774,12 +21774,12 @@
         1.8171004177908575e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21849,12 +21849,12 @@
         1.8171004177907595e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21924,12 +21924,12 @@
         1.8171004177908056e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -21999,12 +21999,12 @@
         1.81710041779142e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22074,12 +22074,12 @@
         1.8171004177913453e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22149,12 +22149,12 @@
         1.817100417791335e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22224,12 +22224,12 @@
         1.8171004177913745e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22299,12 +22299,12 @@
         1.817100417791219e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22374,12 +22374,12 @@
         1.817100417790787e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22449,12 +22449,12 @@
         1.8171004177899504e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22524,12 +22524,12 @@
         1.817100417789745e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22599,12 +22599,12 @@
         1.8171004177895012e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22674,12 +22674,12 @@
         1.8171004177890855e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22749,12 +22749,12 @@
         1.8171004177887616e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22824,12 +22824,12 @@
         1.817100417788962e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22899,12 +22899,12 @@
         1.8171004177888388e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -22974,12 +22974,12 @@
         1.8171004177887416e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23049,12 +23049,12 @@
         1.8171004177883533e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23124,12 +23124,12 @@
         1.8171004177881486e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23199,12 +23199,12 @@
         1.8171004177883618e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23274,12 +23274,12 @@
         1.8171004177885708e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23349,12 +23349,12 @@
         1.8171004177886345e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23424,12 +23424,12 @@
         1.8171004177888313e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23499,12 +23499,12 @@
         1.8171004177887948e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23574,12 +23574,12 @@
         1.8171004177884315e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23649,12 +23649,12 @@
         1.8171004177880968e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23724,12 +23724,12 @@
         1.8171004177877004e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23799,12 +23799,12 @@
         1.8171004177875893e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23874,12 +23874,12 @@
         1.817100417787473e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -23949,12 +23949,12 @@
         1.8171004177872725e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24024,12 +24024,12 @@
         1.817100417787497e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24099,12 +24099,12 @@
         1.81710041778763e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24174,12 +24174,12 @@
         1.817100417787725e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24249,12 +24249,12 @@
         1.8171004177877383e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24324,12 +24324,12 @@
         1.8171004177881063e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24399,12 +24399,12 @@
         1.817100417788549e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24474,12 +24474,12 @@
         1.8171004177890512e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24549,12 +24549,12 @@
         1.817100417789482e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24624,12 +24624,12 @@
         1.817100417789776e-05
       ],
       "observation": {
-        "task": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+        "task": "Stack the red block on the blue block, release the gripper and lift away.",
         "source": "MuJoCo geometry and contacts",
         "units": "metres",
-        "scene_name": "方块堆叠",
+        "scene_name": "Block stacking",
         "scene_config": {
-          "name": "方块堆叠",
+          "name": "Block stacking",
           "source_xy": null,
           "target_xy": [
             0.43,
@@ -24684,7 +24684,7 @@
       "time": "2026-09-21T03:01:28.086217+00:00",
       "event": "created",
       "level": "info",
-      "message": "实验已就绪",
+      "message": "Experiment ready",
       "cycle": 0,
       "episode_id": "fd39db761fbd"
     },
@@ -24692,7 +24692,7 @@
       "time": "2026-09-21T03:01:28.086564+00:00",
       "event": "started",
       "level": "info",
-      "message": "开始运行",
+      "message": "Start running",
       "cycle": 0,
       "episode_id": "fd39db761fbd"
     },
@@ -24700,7 +24700,7 @@
       "time": "2026-09-21T03:01:28.086767+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 0,
       "episode_id": "fd39db761fbd"
     },
@@ -24708,7 +24708,7 @@
       "time": "2026-09-21T03:01:28.326580+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 1,
       "episode_id": "fd39db761fbd"
     },
@@ -24716,7 +24716,7 @@
       "time": "2026-09-21T03:01:28.326670+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 1,
       "episode_id": "fd39db761fbd"
     },
@@ -24724,7 +24724,7 @@
       "time": "2026-09-21T03:01:29.262837+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 2,
       "episode_id": "fd39db761fbd"
     },
@@ -24732,7 +24732,7 @@
       "time": "2026-09-21T03:01:29.262913+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 2,
       "episode_id": "fd39db761fbd"
     },
@@ -24740,7 +24740,7 @@
       "time": "2026-09-21T03:01:30.303180+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：闭合夹爪",
+      "message": "Complete action: close gripper",
       "cycle": 3,
       "episode_id": "fd39db761fbd"
     },
@@ -24748,7 +24748,7 @@
       "time": "2026-09-21T03:01:30.303347+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 3,
       "episode_id": "fd39db761fbd"
     },
@@ -24756,7 +24756,7 @@
       "time": "2026-09-21T03:01:30.688038+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 4,
       "episode_id": "fd39db761fbd"
     },
@@ -24764,7 +24764,7 @@
       "time": "2026-09-21T03:01:30.688172+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 4,
       "episode_id": "fd39db761fbd"
     },
@@ -24772,7 +24772,7 @@
       "time": "2026-09-21T03:01:31.971848+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 5,
       "episode_id": "fd39db761fbd"
     },
@@ -24780,7 +24780,7 @@
       "time": "2026-09-21T03:01:31.971985+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 5,
       "episode_id": "fd39db761fbd"
     },
@@ -24788,7 +24788,7 @@
       "time": "2026-09-21T03:01:33.157637+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 6,
       "episode_id": "fd39db761fbd"
     },
@@ -24796,7 +24796,7 @@
       "time": "2026-09-21T03:01:33.157770+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 6,
       "episode_id": "fd39db761fbd"
     },
@@ -24804,7 +24804,7 @@
       "time": "2026-09-21T03:01:34.122597+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：松开夹爪",
+      "message": "Complete action: release gripper",
       "cycle": 7,
       "episode_id": "fd39db761fbd"
     },
@@ -24812,7 +24812,7 @@
       "time": "2026-09-21T03:01:34.122665+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在选择操作阶段",
+      "message": "Selecting operation phase",
       "cycle": 7,
       "episode_id": "fd39db761fbd"
     },
@@ -24820,7 +24820,7 @@
       "time": "2026-09-21T03:01:34.301411+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成动作：减速执行",
+      "message": "Complete action: decelerate execution",
       "cycle": 8,
       "episode_id": "fd39db761fbd"
     },
@@ -24828,7 +24828,7 @@
       "time": "2026-09-21T03:01:34.301441+00:00",
       "event": "completed",
       "level": "info",
-      "message": "物理成功条件验证通过",
+      "message": "Physical success condition verification passed",
       "cycle": 8,
       "episode_id": "fd39db761fbd"
     }
@@ -25378,7 +25378,7 @@
     "action": {
       "state": {
         "observation": {
-          "goal": "把红色方块叠在蓝色方块上，松开夹爪并向上撤离。",
+          "goal": "Stack the red block on the blue block, release the gripper and lift away.",
           "units": "metres",
           "tcp": [
             0.42756,

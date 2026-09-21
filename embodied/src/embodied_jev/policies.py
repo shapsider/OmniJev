@@ -74,12 +74,12 @@ def environment_connection(provider):
 
 def configurations(connections=None):
     result = [
-        {"id": "baseline", "name": "规则基线", "ready": True, "kind": "deterministic"},
+        {"id": "baseline", "name": "Rule baseline", "ready": True, "kind": "deterministic"},
         {"id": "jev", "name": "TypeSafe Jev", "ready": bool(os.getenv("TYPESAFE_API_KEY")), "kind": "remote"},
         {"id": "minicpm", "name": "MiniCPM5-2B", "ready": os.getenv("EMBODIED_MINICPM") == "1", "kind": "local"},
-        {"id": "local", "name": "结构化决策 API", "ready": bool(os.getenv("EMBODIED_LOCAL_URL")), "kind": "typed_http"},
-        {"id": "chat", "name": "OpenAI 兼容 API", "ready": bool(os.getenv("EMBODIED_API_BASE") and os.getenv("EMBODIED_API_MODEL")), "kind": "chat_json"},
-        {"id": "claude", "name": "Claude 原生 API", "ready": bool(os.getenv("ANTHROPIC_API_KEY")), "kind": "anthropic_messages"},
+        {"id": "local", "name": "Structured decision API", "ready": bool(os.getenv("EMBODIED_LOCAL_URL")), "kind": "typed_http"},
+        {"id": "chat", "name": "OpenAI Compatible API", "ready": bool(os.getenv("EMBODIED_API_BASE") and os.getenv("EMBODIED_API_MODEL")), "kind": "chat_json"},
+        {"id": "claude", "name": "Claude Native API", "ready": bool(os.getenv("ANTHROPIC_API_KEY")), "kind": "anthropic_messages"},
     ]
     result[1:1] = [{"id": key, "name": name, "ready": True, "kind": "local_omnijev"} for key, name in zip(OMNI_PROVIDERS, OMNI_NAMES)]
     for item in result:
@@ -146,7 +146,7 @@ class DecisionPolicy:
         if any(type(count) is not int or count < 0 for count in counts):
             raise ValueError("Invalid token counts")
         key = self.connection.get("key", "")
-        self.model = model.replace(key, "[已隐藏]") if key else model
+        self.model = model.replace(key, "[Hidden]") if key else model
         self.tokens += counts[0]
         self.output_tokens += counts[1]
 
@@ -177,7 +177,7 @@ class DecisionPolicy:
         if isinstance(value, str):
             if "data:image/" in value.lower():
                 raise ValueError("Planning text must not contain embedded image data")
-            return value.replace(key, "[已隐藏]") if key else value
+            return value.replace(key, "[Hidden]") if key else value
         if isinstance(value, dict):
             return {self._public_plan_value(k): self._public_plan_value(v) for k, v in value.items()}
         if isinstance(value, list):

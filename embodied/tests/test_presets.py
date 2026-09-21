@@ -20,7 +20,7 @@ def test_example_preset_roundtrips_and_does_not_load_code():
         validate_preset({**preset, "task": "invented-task"})
 
 
-@pytest.mark.parametrize("value", [[], {"x": float("nan")}, {"large": "中" * 3000},
+@pytest.mark.parametrize("value", [[], {"x": float("nan")}, {"large": "In progress" * 3000},
                                   {"nested": [{"api_key": "do-not-store"}]}, {"Authorization": "Bearer private"}])
 def test_context_rejects_invalid_or_oversized_json(value):
     with pytest.raises(ValueError):

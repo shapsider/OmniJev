@@ -1,9 +1,9 @@
 {
   "format": "embodied-jev-preset-v1",
-  "name": "搬运练习 · 固定起点",
+  "name": "Transfer practice · Fixed start point",
   "task": "transfer",
   "scene_config": {
-    "name": "搬运练习 · 固定起点",
+    "name": "Transfer practice · Fixed start point",
     "source_xy": [0.42, -0.17],
     "target_xy": [0.44, 0.18]
   },

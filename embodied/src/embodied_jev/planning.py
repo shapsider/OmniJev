@@ -7,9 +7,9 @@ import numpy as np
 from .physics import TRAVEL_Z, RobotWorld
 
 PHASES = {
-    "approach": "移至物体上方", "descend": "下降对准", "grasp": "闭合夹爪",
-    "lift": "抬升物体", "carry": "移向目标", "lower": "降低放置",
-    "release": "松开夹爪", "withdraw": "向上撤离", "recover": "张开重试", "finish": "完成",
+    "approach": "Move above object", "descend": "Lower to align", "grasp": "Close the gripper",
+    "lift": "Lift object", "carry": "Move toward target", "lower": "Lower to place",
+    "release": "Release the gripper", "withdraw": "Withdraw upward", "recover": "Open and retry", "finish": "Complete",
 }
 
 PHASE_GUIDANCE = {
@@ -97,7 +97,7 @@ def candidates(world, phase, preview=True, observation=None):
     p, cube, dest = (np.asarray(state[key], dtype=float) for key in ("tcp", "object", "destination"))
     travel_z = float(state.get("relative_geometry", {}).get("travel_tcp_height_m", TRAVEL_Z))
     if not np.isfinite(travel_z) or not .02 <= travel_z <= .42:
-        raise ValueError("观测中的安全搬运高度超出工作区")
+        raise ValueError("Safety transfer height in observation exceeds workspace")
     target, grip, duration = p.copy(), None, .8
     if phase == "approach":
         target = cube + [0, 0, .14]
@@ -124,8 +124,8 @@ def candidates(world, phase, preview=True, observation=None):
         raise ValueError("Unknown phase")
     result = [Candidate("direct", PHASES[phase], phase, target.tolist(), grip, duration)]
     if np.linalg.norm(target - p) > .03:
-        result.append(Candidate("gentle", "减速执行", phase, target.tolist(), grip, duration * 1.5))
-    result.append(Candidate("hold", "保持当前位姿", phase, p.tolist(), None, .3))
+        result.append(Candidate("gentle", "Decelerated execution", phase, target.tolist(), grip, duration * 1.5))
+    result.append(Candidate("hold", "Maintain current pose", phase, p.tolist(), None, .3))
     if preview:
         for option in result:
             shadow = world.clone()
@@ -139,11 +139,11 @@ def candidates(world, phase, preview=True, observation=None):
                                   "support_contact": state["support_contact"],
                                   "target_error_m": round(float(np.linalg.norm(shadow.cube - shadow.target)), 4)}
                 if shadow.unsafe_contacts > before_bad:
-                    option.admitted, option.rejection = False, "预演发生机械臂与台面或障碍接触"
+                    option.admitted, option.rejection = False, "Preview detected contact between the robotic arm and the tabletop or obstacle"
                 elif phase in {"lift", "carry"} and (observation or world.observe())["held"] and not state["held"]:
-                    option.admitted, option.rejection = False, "预演丢失双侧抓取接触"
+                    option.admitted, option.rejection = False, "Preview lost bilateral grasp contact"
                 elif phase == "carry" and shadow.cube[2] < initial_z - .045:
-                    option.admitted, option.rejection = False, "预演物体下落"
+                    option.admitted, option.rejection = False, "Preview object falling"
             except (ValueError, RuntimeError) as exc:
                 option.admitted, option.rejection = False, str(exc)
             if observation is not None and observation.get("perception"):

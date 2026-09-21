@@ -7,7 +7,7 @@
   "provider": "omnijev",
   "profile_id": null,
   "scene_config": {
-    "name": "搬运入盘",
+    "name": "Transfer to tray",
     "source_xy": null,
     "target_xy": [
       0.43,
@@ -79,7 +79,7 @@
         "destination": 12.0
       },
       "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-      "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+      "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
       "views": {
         "external": {
           "calibration": {
@@ -189,7 +189,7 @@
         "destination": 12.0
       },
       "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-      "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+      "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
       "views": {
         "external": {
           "calibration": {
@@ -345,7 +345,7 @@
       "executed": true,
       "rejection": null,
       "before": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -414,7 +414,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -472,7 +472,7 @@
         }
       },
       "after": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -541,7 +541,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -961,7 +961,7 @@
         },
         {
           "id": "open",
-          "label": "张开夹爪",
+          "label": "Open the gripper",
           "phase": "incremental",
           "target": [
             0.37997,
@@ -981,7 +981,7 @@
         },
         {
           "id": "close",
-          "label": "闭合夹爪",
+          "label": "Close the gripper",
           "phase": "incremental",
           "target": [
             0.37997,
@@ -1001,7 +1001,7 @@
         },
         {
           "id": "hold",
-          "label": "保持当前位姿",
+          "label": "Maintain current pose",
           "phase": "incremental",
           "target": [
             0.37997,
@@ -1038,7 +1038,7 @@
               "support_contact": false,
               "forbidden_contact": false,
               "sim_seconds": 0.0,
-              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "goal": "Place the red block into the blue tray, release the gripper and lift away.",
               "units": "metres",
               "perception": {
                 "source": "vision",
@@ -1049,7 +1049,7 @@
                 "height": 480,
                 "camera_view": "external + wrist",
                 "depth_units": "millimetres",
-                "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+                "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
                 "calibration": {
                   "position": [
                     0.8526182770729065,
@@ -1204,7 +1204,7 @@
         -2.1417896827049977e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -1273,7 +1273,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -1360,7 +1360,7 @@
         -2.1417896827049977e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -1429,7 +1429,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -1516,7 +1516,7 @@
         -2.141737194021659e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -1585,7 +1585,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -1672,7 +1672,7 @@
         -2.141713815479556e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -1741,7 +1741,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -1828,7 +1828,7 @@
         -2.1417050756075994e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -1897,7 +1897,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -1984,7 +1984,7 @@
         -2.1417013514398756e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2053,7 +2053,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2140,7 +2140,7 @@
         -2.141699917032287e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2209,7 +2209,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2296,7 +2296,7 @@
         -2.141699407933454e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2365,7 +2365,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2452,7 +2452,7 @@
         -2.1416992337034156e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2521,7 +2521,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2608,7 +2608,7 @@
         -2.1416992118302578e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2677,7 +2677,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2764,7 +2764,7 @@
         -2.1416992028224584e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2833,7 +2833,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -2920,7 +2920,7 @@
         -2.1416992084799956e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -2989,7 +2989,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -3076,7 +3076,7 @@
         -2.141699183426118e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -3145,7 +3145,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -3232,7 +3232,7 @@
         -2.1416991815776225e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -3301,7 +3301,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -3388,7 +3388,7 @@
         -2.1416991815776225e-10
       ],
       "observation": {
-        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "task": "Place the red block into the blue tray, release the gripper and lift away.",
         "source": "external + wrist RGB pixels + simulated proprioception",
         "units": "metres",
         "tcp": [
@@ -3457,7 +3457,7 @@
             "destination": 12.0
           },
           "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
-          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
           "views": {
             "external": {
               "calibration": {
@@ -3529,7 +3529,7 @@
       "time": "2026-09-21T02:57:16.386901+00:00",
       "event": "created",
       "level": "info",
-      "message": "实验已就绪",
+      "message": "Experiment ready",
       "cycle": 0,
       "episode_id": "130e0474cfcd"
     },
@@ -3537,7 +3537,7 @@
       "time": "2026-09-21T02:57:17.708532+00:00",
       "event": "step",
       "level": "info",
-      "message": "单步执行",
+      "message": "Step execution",
       "cycle": 0,
       "episode_id": "130e0474cfcd"
     },
@@ -3545,7 +3545,7 @@
       "time": "2026-09-21T02:57:17.709376+00:00",
       "event": "deciding",
       "level": "info",
-      "message": "正在根据当前观测规划一个短步动作",
+      "message": "Planning a short step action based on current observations",
       "cycle": 0,
       "episode_id": "130e0474cfcd"
     },
@@ -3553,7 +3553,7 @@
       "time": "2026-09-21T02:57:24.225770+00:00",
       "event": "action_completed",
       "level": "info",
-      "message": "完成短步：X -0.040 m",
+      "message": "Complete short steps: X -0.040 m",
       "cycle": 1,
       "episode_id": "130e0474cfcd"
     },
@@ -3561,7 +3561,7 @@
       "time": "2026-09-21T02:57:24.226288+00:00",
       "event": "paused",
       "level": "info",
-      "message": "已暂停",
+      "message": "Paused",
       "cycle": 1,
       "episode_id": "130e0474cfcd"
     },
@@ -3569,7 +3569,7 @@
       "time": "2026-09-21T02:57:49.689017+00:00",
       "event": "stopped",
       "level": "info",
-      "message": "实验已停止",
+      "message": "Experiment stopped",
       "cycle": 1,
       "episode_id": "130e0474cfcd"
     }
@@ -3702,7 +3702,7 @@
           "support_contact": false,
           "forbidden_contact": false,
           "sim_seconds": 0.0,
-          "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+          "goal": "Place the red block into the blue tray, release the gripper and lift away.",
           "units": "metres",
           "perception": {
             "source": "vision",
@@ -3713,7 +3713,7 @@
             "height": 480,
             "camera_view": "external + wrist",
             "depth_units": "millimetres",
-            "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+            "message": "Enabled view RGB Images can be used as model input; without object or target coordinates.",
             "calibration": {
               "position": [
                 0.8526182770729065,

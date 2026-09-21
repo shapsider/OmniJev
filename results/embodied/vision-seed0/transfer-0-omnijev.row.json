@@ -13,7 +13,7 @@
   "forbidden_contact_steps": 0,
   "model": "omnijev-nemotron",
   "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
-  "message": "已达到动作预算",
+  "message": "Action budget reached",
   "model_latency_ms": [
     4100.171042024158,
     3655.588458990678,

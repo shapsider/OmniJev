@@ -154,7 +154,7 @@ class VisualObserver:
         self.geometry = geometry
         self.camera_views = (["external", "wrist"] if getattr(world.model, "ncam", 0) else ["external"]) if camera_views is None else list(camera_views)
         if not self.camera_views or any(view not in {"external", "wrist"} for view in self.camera_views):
-            raise ValueError("相机观测需要至少一种有效视角")
+            raise ValueError("Camera observation requires at least one valid viewpoint")
         self.width, self.height = width, height
         self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="jev-rgbd")
         self._renderer = None
@@ -219,7 +219,7 @@ class VisualObserver:
 
     def _tracked_objects(self, detections, tcp, held, sim_time):
         rows, estimates = [], {}
-        labels = {"object": "红色方块", "destination": "蓝色目标", "barrier": "黄色障碍"}
+        labels = {"object": "Red block", "destination": "Blue target", "barrier": "Yellow barrier"}
         names = ("object", "destination", "barrier") if self.world.task == "barrier" else ("object", "destination")
         for name in names:
             detected = detections.get(name)
@@ -262,7 +262,7 @@ class VisualObserver:
     def observe(self):
         with self._observe_lock:
             if self._closed:
-                raise PerceptionUnavailable("视觉相机已经关闭，请重置实验")
+                raise PerceptionUnavailable("The visual camera is disabled; reset the experiment")
             sim_time = float(self.world.data.time) - getattr(self.world, "start_time", 0)
             if self._last_time == sim_time and self._last_observation is not None:
                 return copy.deepcopy(self._last_observation)
@@ -277,7 +277,7 @@ class VisualObserver:
             except Exception as exc:
                 # Backend exceptions may contain local graphics-driver details;
                 # the UI gets a useful, fixed message without leaking them.
-                raise PerceptionUnavailable("RGB-D 相机无法渲染；请检查本地 OpenGL 或无界面渲染环境") from exc
+                raise PerceptionUnavailable("RGB-D Camera cannot render; please check local OpenGL or headless rendering environment") from exc
             detections = {}
             if self.geometry:
                 # External detections take precedence; another enabled view may
@@ -314,14 +314,14 @@ class VisualObserver:
             if self.geometry:
                 metadata["cube_size_prior_m"] = CUBE_SIZE_M
             else:
-                metadata["message"] = "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。"
+                metadata["message"] = "Enabled view RGB Images can be used as model input; without object or target coordinates."
             metadata["views"] = {view: {"calibration": view_frame.calibration.serialise(),
                                        "mount": "fixed" if view == "external" else "robot hand"}
                                  for view, view_frame in frames.items()}
             if missing:
-                metadata["message"] = "看不到必需的方块、目标或障碍，且没有有效视觉定位；已停止，未使用仿真真值补齐。"
+                metadata["message"] = "Required blocks, targets, or obstacles are not visible and no valid visual localization is available; stopped without filling in simulation ground truth."
             elif any(row["tracked"] for row in rows):
-                metadata["message"] = "部分物体被遮挡，正在限时使用上次视觉定位与夹爪反馈。"
+                metadata["message"] = "Some objects are partially occluded, using last visual pose and gripper feedback within time limit."
             encoded = {view: self._encoded_frame(view_frame) for view, view_frame in frames.items()}
             snapshot = {**encoded[self.camera_views[0]], "metadata": metadata, "views": encoded}
             metadata["latency_ms"] = round((time.perf_counter() - started) * 1000, 2)
@@ -343,7 +343,7 @@ class VisualObserver:
             cube, target = estimates["object"], estimates["destination"]
             travel_height = max(TRAVEL_Z, float(estimates["barrier"][2]) + .06) if "barrier" in estimates else TRAVEL_Z
             if travel_height > .42:
-                raise PerceptionUnavailable("视觉估计的障碍高度超出可用工作区，请调整场景")
+                raise PerceptionUnavailable("The estimated obstacle height exceeds the available workspace; please adjust the scene")
             elapsed = max(0., sim_time - self._last_time) if self._last_time is not None else 0.
             old_cube = np.asarray(self._last_observation["object"]) if self._last_observation else cube
             speed = float(np.linalg.norm(cube - old_cube)) / elapsed if elapsed else float("inf")

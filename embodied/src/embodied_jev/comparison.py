@@ -23,27 +23,27 @@ def resolve_model(provider, connections, *, model=None, profile_id=None, profile
     if profile_id is not None:
         profile = (profiles or {}).get(profile_id)
         if profile is None:
-            raise ValueError("未找到该模型配置，请刷新配置列表。")
+            raise ValueError("Model configuration not found, please refresh the configuration list.")
         if profile["provider"] != provider or provider not in API_PROVIDERS:
-            raise ValueError("模型配置与所选接口类型不一致。")
+            raise ValueError("Model configuration inconsistent with selected interface type.")
         connection = {key: profile[key] for key in ("url", "model", "key", "json_mode")}
         connection["profile_id"] = profile_id
     else:
         if not ready.get(provider):
-            raise ValueError(f"{provider} 尚未配置，请先在模型连接中完成配置。")
+            raise ValueError(f"{provider} Not yet configured, please complete configuration in model connection first.")
         connection = dict(connections.get(provider, environment_connection(provider)))
     if provider not in API_PROVIDERS:
         if model is not None:
-            raise ValueError("规则基线和本地 MiniCPM 使用固定模型，不支持模型名覆盖。")
+            raise ValueError("Rule baseline and local MiniCPM Using fixed model, model name override not supported.")
         return {"provider": provider, "model": MODEL if provider == "minicpm" else "baseline", "connection": None, "profile_id": None}
     selected_model = model if model is not None else connection.get("model", "")
     parsed = urlsplit(connection.get("url", ""))
     if not isinstance(selected_model, str) or not selected_model.strip() or len(selected_model) > 256:
-        raise ValueError(f"{provider} 需要有效的模型名称。")
+        raise ValueError(f"{provider} Valid model name required.")
     if parsed.scheme not in {"http", "https"} or not parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment:
-        raise ValueError(f"{provider} 需要有效的 API 地址。")
+        raise ValueError(f"{provider} Requires valid API Address.")
     if provider in {"jev", "claude"} and not connection.get("key"):
-        raise ValueError(f"{provider} 尚未配置 API Key。")
+        raise ValueError(f"{provider} Not yet configured API Key.")
     connection["model"] = selected_model.strip()
     return {"provider": provider, "model": connection["model"], "connection": connection, "profile_id": profile_id}
 
@@ -51,7 +51,7 @@ def resolve_model(provider, connections, *, model=None, profile_id=None, profile
 def resolve_lanes(lanes, connections, profiles=None):
     """Validate every lane before constructing a world or stopping an old run."""
     if not 2 <= len(lanes) <= 3:
-        raise ValueError("请选择 2–3 路模型进行比较。")
+        raise ValueError("Please select 2–3 Compare routes models.")
     return [resolve_model(item["provider"], connections, model=item.get("model"),
                           profile_id=item.get("profile_id"), profiles=profiles) for item in lanes]
 
@@ -64,7 +64,7 @@ class Comparison:
                  observation_mode="privileged", control_mode="skills", intervention=None, shuffle_candidates=False,
                  camera_views=None):
         if mode not in {"sequential", "parallel"} or not 2 <= len(lanes) <= 3:
-            raise ValueError("比较模式或模型数量无效。")
+            raise ValueError("Comparison mode or model count invalid.")
         self.id = uuid.uuid4().hex[:12]
         self.mode = mode
         self.max_parallel = 1 if mode == "sequential" else 2
@@ -104,7 +104,7 @@ class Comparison:
     def _public(self, value):
         if isinstance(value, str):
             for secret in self._secrets:
-                value = value.replace(secret, "[已隐藏]")
+                value = value.replace(secret, "[Hidden]")
             return value
         if isinstance(value, dict):
             return {self._public(key): self._public(item) for key, item in value.items()}
@@ -138,7 +138,7 @@ class Comparison:
             if self.status == "running":
                 return
             if self.status in {"done", "stopped"}:
-                raise ValueError("此比较已结束，请创建新的比较。")
+                raise ValueError("This comparison has ended, please create a new comparison.")
             self.status = "running"
             self._refresh_locked()
             for lane in self.lanes:
@@ -216,16 +216,16 @@ class Comparison:
                       "model": lane["session"].policy.model, "status": lane["status"], "session": lane["session"].snapshot()}
                      for lane in self.lanes]
             ends = [self._bounds(lane["session"])[1] for lane in self.lanes]
-            notes = ["各路使用独立仿真；逐步规划每轮选择一个短步并重新观测。" if self.config["control_mode"] == "incremental"
-                     else "各路使用独立仿真；阶段选择完成后才进行动作选择。"]
+            notes = ["Each route uses independent simulation; incremental planning selects a short step per round and reobserves." if self.config["control_mode"] == "incremental"
+                     else "Each route uses independent simulation; action selection only after stage selection is completed."]
             if self.config["observation_mode"] == "rgbd":
-                notes.append("RGB-D 估计位置用于决策输入；接触反馈、预演安全过滤和最终评分仍来自仿真。")
+                notes.append("RGB-D Estimated position used for decision input; contact feedback, preview safety filtering, and final scoring still come from simulation.")
             elif self.config["observation_mode"] == "vision":
-                notes.append("已启用相机的原始 RGB 直接进入模型；不提供物体或目标坐标。")
+                notes.append("Camera enabled raw RGB Directly enter model; no object or target coordinates provided.")
             if any(lane["provider"] == "minicpm" for lane in self.lanes):
-                notes.append("本地 MiniCPM 共享权重与推理锁；并行模式下 MiniCPM 推理仍串行执行。")
+                notes.append("Local MiniCPM Shared weights and inference lock; in parallel mode MiniCPM Inference still executed serially.")
             if self.mode == "parallel":
-                notes.append("并行最多运行两路；共享硬件与网络，耗时不能视为隔离环境性能基准。")
+                notes.append("Parallel execution limited to two routes; shared hardware and network, latency cannot be considered as isolated environment performance benchmark.")
             return self._public({"id": self.id, "status": self.status, "mode": self.mode, "max_parallel": self.max_parallel,
                                  "config": self.config, "lanes": lanes, "notes": notes,
                                  "stopping": self.status == "stopped" and self.has_live_workers(),
@@ -235,7 +235,7 @@ class Comparison:
         with self.lock:
             lane = next((item for item in self.lanes if item["id"] == lane_id), None)
             if lane is None:
-                raise ValueError("未找到该比较通道。")
+                raise ValueError("Comparison channel not found.")
             session = lane["session"]
         with session.lock:
             return {**session.world.scene(), "comparison_id": self.id, "lane_id": lane_id}
@@ -260,7 +260,7 @@ class Comparison:
 
     def replay(self, requested_time):
         if not math.isfinite(requested_time) or requested_time < 0:
-            raise ValueError("回放时间必须是非负有限秒数。")
+            raise ValueError("Replay time must be a non-negative finite number of seconds.")
         with self.lock:
             lanes = list(self.lanes)
         result = []

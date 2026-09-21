@@ -15,31 +15,31 @@ const escape = (value) =>
       ],
   );
 const phases = {
-  approach: "移至物体上方",
-  descend: "下降对准",
-  grasp: "闭合夹爪",
-  lift: "抬升物体",
-  carry: "移向目标",
-  lower: "降低放置",
-  release: "松开夹爪",
-  withdraw: "向上撤离",
-  recover: "张开重试",
-  finish: "完成",
-  incremental: "逐步 XYZ 决策",
+  approach: "Move above object",
+  descend: "Lower to align",
+  grasp: "Close the gripper",
+  lift: "Lift object",
+  carry: "Move toward target",
+  lower: "Lower to place",
+  release: "Release the gripper",
+  withdraw: "Withdraw upward",
+  recover: "Open and retry",
+  finish: "Complete",
+  incremental: "Incremental XYZ Decision",
 };
 const statuses = {
-  empty: "尚未开始",
-  idle: "已就绪",
-  queued: "等待运行",
-  running: "运行中",
-  paused: "已暂停",
-  done: "全部结束",
-  stopped: "已停止",
-  completed: "任务成功",
-  uncertain: "低于决策门槛",
-  exhausted: "预算耗尽",
-  error: "执行异常",
-  stalled: "决策停滞",
+  empty: "Not started yet",
+  idle: "Ready",
+  queued: "Waiting to run",
+  running: "Running",
+  paused: "Paused",
+  done: "All finished",
+  stopped: "Stopped",
+  completed: "Task successful",
+  uncertain: "Below decision threshold",
+  exhausted: "Budget exhausted",
+  error: "Execution error",
+  stalled: "Decision stalled",
 };
 const numeric = (value, digits = 1) =>
   Number.isFinite(value) ? value.toFixed(digits) : "—";
@@ -59,7 +59,7 @@ function cameraSelection(views) {
   return views.length === 2 ? "both" : views[0] || "none";
 }
 function cameraNames(views) {
-  return views.map((view) => (view === "wrist" ? "腕部" : "外部")).join("与");
+  return views.map((view) => (view === "wrist" ? "Wrist" : "External")).join("With");
 }
 
 export async function createComparison(container, { api, toast }) {
@@ -90,27 +90,27 @@ export async function createComparison(container, { api, toast }) {
   const scenes = new Map(),
     completed = new Map();
   container.innerHTML = `
-    <div class="comparison-heading"><div><p class="eyebrow">同一任务 · 独立决策</p><h1>模型对比</h1><p>相同起点，观察不同模型如何选择和执行。实时画面各自推进，回放按仿真时间对齐。</p></div><span class="comparison-status" id="cmp-status">尚未开始</span></div>
-    <details class="comparison-setup" id="cmp-setup" open><summary>对比设置 <span id="cmp-setup-summary">选择 2–3 个模型</span></summary><div class="comparison-settings">
-      <label>共同任务<select id="cmp-task"><option value="transfer">搬运入盘</option><option value="stack">方块堆叠</option><option value="barrier">越障搬运</option></select></label>
-      <label>运行方式<select id="cmp-mode"><option value="sequential">依次运行 · 更省资源</option><option value="parallel">并行运行 · 最多 2 路</option></select></label>
-      <label>比较数量<select id="cmp-count"><option value="2">2 个模型</option><option value="3">3 个模型</option></select></label>
+    <div class="comparison-heading"><div><p class="eyebrow">Same task · Independent decision</p><h1>Model comparison</h1><p>Same start point, observe how different models choose and execute. Real-time views advance separately, replay aligns with simulation time.</p></div><span class="comparison-status" id="cmp-status">Not started yet</span></div>
+    <details class="comparison-setup" id="cmp-setup" open><summary>Compare settings <span id="cmp-setup-summary">Select 2–3 model</span></summary><div class="comparison-settings">
+      <label>Common task<select id="cmp-task"><option value="transfer">Transfer to tray</option><option value="stack">Block stacking</option><option value="barrier">Transfer over barrier</option></select></label>
+      <label>Run mode<select id="cmp-mode"><option value="sequential">Run sequentially · More resource-efficient</option><option value="parallel">Run in parallel · At most 2 path</option></select></label>
+      <label>Compare quantity<select id="cmp-count"><option value="2">2 model</option><option value="3">3 model</option></select></label>
     </div><div class="comparison-lane-setup" id="cmp-lane-setup"></div>
-    <details class="comparison-advanced"><summary>共同执行参数</summary><div class="comparison-settings">
-      <label>随机种子<input id="cmp-seed" type="number" min="0" max="99999" value="0"></label>
-      <label>动作预算<input id="cmp-budget" type="number" min="1" max="200" value="30"></label>
-      <label>概率门槛<input id="cmp-threshold" type="number" min="0" max="1" step="0.05" value="0"></label>
-      <label>执行速度<input id="cmp-speed" type="number" min="0.5" max="4" step="0.5" value="1.5"></label>
-      <label>共同动作决策<select id="cmp-control-mode"><option value="skills">预设技能选择</option><option value="incremental">逐步 XYZ · 闭环规划</option></select></label>
-      <label>共同观测来源<select id="cmp-observation-mode"><option value="privileged">仿真真值 · 默认</option><option value="rgbd">RGB-D 视觉 · 实验</option><option value="vision">直接图像 · 多模态模型</option></select></label>
-      <label>共同启用相机<select id="cmp-camera-mode"><option value="none">无相机</option><option value="external">仅外部相机</option><option value="wrist">仅腕部相机</option><option value="both">双相机</option></select></label>
-      <label class="comparison-checkbox"><input id="cmp-preview" type="checkbox" checked> 动作预演</label>
-    </div><p id="cmp-observation-help">门槛仅用于原生候选概率。RGB-D 模式发送检测坐标；直接图像模式发送所选相机的 RGB 及机器人自身状态，不提供物体/目标坐标，需要逐步 XYZ 和支持图像的 Chat / Claude 模型。各路独立采集观测。</p><p id="cmp-camera-help">无相机 · 模型使用仿真真值，非视觉输入。</p></details>
-    <p id="cmp-preset-label" class="comparison-hint" hidden></p><p class="comparison-hint">API 地址和 Key 继承默认连接或「扩展 → 模型配置」。这里可覆盖模型 ID；填写名称不代表账号已获使用权限。未配置 API 时可先用两个规则基线体验。</p></details>
-    <div class="comparison-toolbar"><button class="primary" id="cmp-start" disabled>开始对比</button><button class="secondary" id="cmp-pause" disabled>暂停</button><button class="secondary" id="cmp-stop" disabled>停止</button><button class="secondary" id="cmp-export" disabled>导出记录</button></div>
+    <details class="comparison-advanced"><summary>Jointly execute parameters</summary><div class="comparison-settings">
+      <label>Random seed<input id="cmp-seed" type="number" min="0" max="99999" value="0"></label>
+      <label>Action budget<input id="cmp-budget" type="number" min="1" max="200" value="30"></label>
+      <label>Probability threshold<input id="cmp-threshold" type="number" min="0" max="1" step="0.05" value="0"></label>
+      <label>Execution speed<input id="cmp-speed" type="number" min="0.5" max="4" step="0.5" value="1.5"></label>
+      <label>Joint action decision<select id="cmp-control-mode"><option value="skills">Preset skill selection</option><option value="incremental">Incremental XYZ · Closed-loop planning</option></select></label>
+      <label>Shared observation source<select id="cmp-observation-mode"><option value="privileged">Simulation ground truth · Default</option><option value="rgbd">RGB-D Visual · Experiment</option><option value="vision">Direct image · Multimodal model</option></select></label>
+      <label>Enable camera jointly<select id="cmp-camera-mode"><option value="none">No camera</option><option value="external">Only external camera</option><option value="wrist">Only wrist camera</option><option value="both">Dual camera</option></select></label>
+      <label class="comparison-checkbox"><input id="cmp-preview" type="checkbox" checked> Action preview</label>
+    </div><p id="cmp-observation-help">Threshold is used only for native candidate probability. RGB-D mode sends detected coordinates; direct image mode sends the selected camera RGB and robot proprioceptive state, without object/Target coordinates, need incremental XYZ and support image Chat / Claude Model. Independent observations from all channels.</p><p id="cmp-camera-help">No camera · The model uses simulated ground truth, Non-visual input.</p></details>
+    <p id="cmp-preset-label" class="comparison-hint" hidden></p><p class="comparison-hint">API Address and Key Inherit the default connection or “Extensions → Model configuration”. Override the model here ID; Filling in the name does not represent that the account has been granted usage permissions. Not configured API You can first use two rule baselines to experience.</p></details>
+    <div class="comparison-toolbar"><button class="primary" id="cmp-start" disabled>Start comparison</button><button class="secondary" id="cmp-pause" disabled>Pause</button><button class="secondary" id="cmp-stop" disabled>Stop</button><button class="secondary" id="cmp-export" disabled>Export records</button></div>
     <p id="cmp-message" class="comparison-message" role="status"></p>
-    <div class="comparison-replay" id="cmp-replay" hidden><div><strong id="cmp-time-mode">实时 · 各路独立推进</strong><span id="cmp-time-range"></span></div><div class="comparison-replay-controls"><button class="secondary" id="cmp-replay-play">播放回放</button><input id="cmp-timeline" type="range" min="0" max="0" step="any" value="0" aria-label="对比统一仿真时间轴"><output id="cmp-time">0.00 s</output><button class="text-button" id="cmp-live">返回实时</button></div></div>
-    <div class="comparison-cards" id="cmp-cards"><div class="comparison-empty">选择模型后开始对比，真实场景和决策会显示在这里。</div></div>
+    <div class="comparison-replay" id="cmp-replay" hidden><div><strong id="cmp-time-mode">Real-time · Independent advancement of each route</strong><span id="cmp-time-range"></span></div><div class="comparison-replay-controls"><button class="secondary" id="cmp-replay-play">Play back</button><input id="cmp-timeline" type="range" min="0" max="0" step="any" value="0" aria-label="Compare unified simulation time axis"><output id="cmp-time">0.00 s</output><button class="text-button" id="cmp-live">Return to real-time</button></div></div>
+    <div class="comparison-cards" id="cmp-cards"><div class="comparison-empty">After selecting a model, start comparison; real scenes and decisions will be displayed here.</div></div>
     <p class="comparison-notes" id="cmp-notes"></p>`;
 
   function setupRows() {
@@ -123,7 +123,7 @@ export async function createComparison(container, { api, toast }) {
     $("#cmp-lane-setup").innerHTML = Array.from(
       { length: Number($("#cmp-count").value) },
       (_, index) =>
-        `<fieldset><legend>模型 ${index + 1}</legend><label>决策接口<select class="lane-provider" id="cmp-provider-${index}" aria-label="模型 ${index + 1} 决策接口">${selectionOptions(config, profiles, escape)}</select></label><label>模型 ID <span>可选覆盖</span><input id="cmp-model-${index}" class="lane-model" aria-label="模型 ${index + 1} 模型 ID" placeholder="继承已有配置" autocomplete="off"></label></fieldset>`,
+        `<fieldset><legend>Model ${index + 1}</legend><label>Decision interface<select class="lane-provider" id="cmp-provider-${index}" aria-label="Model ${index + 1} Decision interface">${selectionOptions(config, profiles, escape)}</select></label><label>Model ID <span>Optional override</span><input id="cmp-model-${index}" class="lane-model" aria-label="Model ${index + 1} Model ID" placeholder="Inherit existing configuration" autocomplete="off"></label></fieldset>`,
     ).join("");
     container.querySelectorAll(".lane-provider").forEach((select, index) => {
       const previousValue = previous[index]?.provider;
@@ -156,16 +156,16 @@ export async function createComparison(container, { api, toast }) {
   function cameraHelp() {
     const views = cameraSelections[$("#cmp-camera-mode").value];
     $("#cmp-camera-help").textContent = !views.length
-      ? "无相机 · 模型使用仿真真值，非视觉输入。"
+      ? "No camera · The model uses simulated ground truth, Non-visual input."
       : $("#cmp-observation-mode").value === "privileged"
-        ? `${cameraNames(views)}相机仅供查看；模型使用仿真真值，非视觉输入。`
-        : `每路独立采集${cameraNames(views)}相机观测。`;
+        ? `${cameraNames(views)} Camera for viewing only; model uses simulated ground truth, Non-visual input.`
+        : `Each route independently collects ${cameraNames(views)} Camera observation.`;
   }
   $("#cmp-camera-mode").onchange = () => {
     if ($("#cmp-camera-mode").value === "none") {
       $("#cmp-observation-mode").value = "privileged";
       $("#cmp-message").textContent =
-        "已关闭相机，模型使用仿真真值（非视觉输入）。";
+        "Camera disabled, model uses simulated ground truth (non-visual input).";
     }
     cameraHelp();
   };
@@ -186,7 +186,7 @@ export async function createComparison(container, { api, toast }) {
     $("#cmp-preset-label").hidden =
       !Object.keys(sceneConfig).length && !Object.keys(userContext).length;
     $("#cmp-preset-label").textContent =
-      `共同场景：${sceneConfig.name || "自定义预设"} · 待开始时应用于所有模型。`;
+      `Common scene: ${sceneConfig.name || "Custom preset"} · Apply when ready to all models.`;
   }
   async function refreshModels() {
     [config, { profiles }] = await Promise.all([
@@ -203,9 +203,9 @@ export async function createComparison(container, { api, toast }) {
       paused = snapshot.status === "paused",
       locked = busy || scenePending();
     $("#cmp-start").disabled = locked || running || paused;
-    $("#cmp-start").textContent = snapshot.id ? "重新运行" : "开始对比";
+    $("#cmp-start").textContent = snapshot.id ? "Re-run" : "Start comparison";
     $("#cmp-pause").disabled = locked || !(running || paused);
-    $("#cmp-pause").textContent = paused ? "继续" : "暂停";
+    $("#cmp-pause").textContent = paused ? "Continue" : "Pause";
     $("#cmp-stop").disabled = locked || !(running || paused);
     $("#cmp-export").disabled = !snapshot.id || locked;
     $("#cmp-replay-play").disabled = !snapshot.replay?.max_time || locked;
@@ -229,25 +229,25 @@ export async function createComparison(container, { api, toast }) {
   function stopReplay() {
     replayPlaying = false;
     clearTimeout(replayTimer);
-    $("#cmp-replay-play").textContent = "播放回放";
+    $("#cmp-replay-play").textContent = "Play back";
   }
   function source(provider) {
     return (
       {
-        baseline: "规则选择 · 无模型概率",
-        minicpm: "候选 token 分数归一化",
-        jev: "官方 API 返回候选概率",
-        local: "结构化 API 返回候选概率",
-        chat: "结构化选择 · 不提供候选概率",
-        claude: "工具选择 · 不提供候选概率",
+        baseline: "Rule selection · No model probability",
+        minicpm: "Candidate token Score normalization",
+        jev: "Official API Return candidate probability",
+        local: "Structured API Return candidate probability",
+        chat: "Structured selection · Candidate probability not provided",
+        claude: "Tool selection · Candidate probability not provided",
       }[provider] || provider
     );
   }
   function options(decision, labels) {
-    if (!decision) return '<span class="comparison-muted">等待决策</span>';
+    if (!decision) return '<span class="comparison-muted">Waiting for decision</span>';
     const entries = Object.entries(decision.probabilities || {});
     if (!entries.length)
-      return `<span class="comparison-choice">${escape(labels[decision.choice] || decision.choice)} · 已选择</span>`;
+      return `<span class="comparison-choice">${escape(labels[decision.choice] || decision.choice)} · Selected</span>`;
     return entries
       .map(
         ([choice, probability]) =>
@@ -290,7 +290,7 @@ export async function createComparison(container, { api, toast }) {
     if (choice?.action) labels[choice.action.id] = choice.action.label;
     const status = lane.status === "queued" ? "queued" : session.status;
     card.querySelector(".lane-status").textContent = replayMode
-      ? `回放 ${numeric(recorded?.frame_time, 2)} s${recorded?.clamped ? " · 末帧" : ""}`
+      ? `Replay ${numeric(recorded?.frame_time, 2)} s${recorded?.clamped ? " · Last frame" : ""}`
       : statuses[status] || status;
     card
       .querySelector(".lane-status")
@@ -309,25 +309,25 @@ export async function createComparison(container, { api, toast }) {
     const direct = session.observation_mode === "vision";
     card.querySelector(".lane-source").textContent = source(lane.provider);
     card.querySelector(".lane-input-source").textContent = direct
-      ? `模型输入 · ${cameraNames(enabledCameras(session))} RGB + 自身状态；物体/目标由图像判断`
+      ? `Model input · ${cameraNames(enabledCameras(session))} RGB + Own state; object/Target judged by image`
       : session.observation_mode === "rgbd"
-        ? "模型输入 · RGB-D 检测坐标 + 接触传感器"
-        : `非视觉输入 · 仿真真值${enabledCameras(session).length ? "；相机仅供查看" : "；无相机"}`;
+        ? "Model input · RGB-D Detection coordinates + Contact sensor"
+        : `Non-visual input · Simulation ground truth ${enabledCameras(session).length ? "; Camera for viewing only" : "; No camera"}`;
     card.querySelector(".lane-decision-mode").textContent = replayMode
-      ? "该仿真时刻的决策"
+      ? "Decision at the simulated moment"
       : previous
-        ? "上一条选择 · 新决策计算中"
-        : "当前决策";
+        ? "Previous selection · New decision calculation"
+        : "Current decision";
     card.querySelector(".lane-phase-heading").textContent = incremental
-      ? "行动意图"
-      : "阶段选择";
+      ? "Action intention"
+      : "Stage selection";
     card.querySelector(".lane-phase").innerHTML = incremental
-      ? `<span class="comparison-choice">${escape(choice?.decision?.intent || (choice?.decision ? "未提供行动意图" : "等待决策"))}</span>`
+      ? `<span class="comparison-choice">${escape(choice?.decision?.intent || (choice?.decision ? "No action intent provided" : "Waiting for decision"))}</span>`
       : options(choice?.intent, phases);
     card.querySelector(".lane-action").innerHTML = options(choice?.decision, {
-      direct: "正常执行",
-      gentle: "减速执行",
-      hold: "保持不动",
+      direct: "Normal execution",
+      gentle: "Decelerated execution",
+      hold: "Remain stationary",
       ...labels,
     });
     card.querySelector(".lane-planning").hidden = !incremental;
@@ -345,17 +345,17 @@ export async function createComparison(container, { api, toast }) {
         ? action.target.map((value, index) => value - before.tcp[index])
         : null);
     card.querySelector(".lane-action-detail").textContent = !action
-      ? "等待选择"
-      : `${delta?.every(Number.isFinite) ? `ΔXYZ (${delta.map((value) => `${value >= 0 ? "+" : ""}${value.toFixed(3)}`).join(", ")}) m` : "ΔXYZ 未记录"} · 夹爪${{ open: "张开", close: "闭合", closed: "闭合" }[action.gripper] || "保持"}`;
+      ? "Waiting for selection"
+      : `${delta?.every(Number.isFinite) ? `ΔXYZ (${delta.map((value) => `${value >= 0 ? "+" : ""}${value.toFixed(3)}`).join(", ")}) m` : "ΔXYZ Not recorded"} · Gripper ${{ open: "Open", close: "Close", closed: "Close" }[action.gripper] || "Keep"}`;
     card.querySelector(".lane-evidence").textContent =
       choice?.decision?.visual_evidence ||
-      (direct ? "模型尚未提供视觉依据" : "本步输入为结构化观测");
+      (direct ? "Model did not provide visual basis" : "Current input is structured observation");
     card.querySelector(".lane-pose").textContent =
       (observation.tcp || [])
         .map((position) => numeric(position, 3))
         .join(" / ") || "—";
     card.querySelector(".lane-fingers").textContent =
-      `${observation.gripper === "closed" ? "闭合" : "张开"} · ${observation.held ? "双侧抓持" : observation.finger_contacts?.length ? "单侧接触" : "无物体接触"}`;
+      `${observation.gripper === "closed" ? "Close" : "Open"} · ${observation.held ? "Two-sided grip" : observation.finger_contacts?.length ? "Single-sided contact" : "No object contact"}`;
     card.querySelector(".lane-sim").textContent =
       `${numeric(observation.sim_seconds, 2)} s`;
     const latency =
@@ -363,15 +363,15 @@ export async function createComparison(container, { api, toast }) {
       (choice?.decision?.model_call ? choice.decision.latency_ms : 0);
     card.querySelector(".lane-latency").textContent = latency
       ? `${numeric(latency, 0)} ms`
-      : "无模型调用";
+      : "No model call";
     card.querySelector(".lane-stat-title").textContent = replayMode
-      ? "整轮累计统计（非该帧）"
-      : "本路累计统计";
+      ? "Cumulative statistics for the entire round (not this frame)"
+      : "Cumulative statistics for this route";
     card.querySelector(".lane-statistics").textContent =
-      `调用 ${session.model_calls} 次 · 输入 ${session.input_tokens} / 输出 ${session.output_tokens || 0} tokens · 时长 ${numeric(session.wall_seconds, 2)} s`;
+      `Call ${session.model_calls} Times · Input ${session.input_tokens} / Output ${session.output_tokens || 0} tokens · Duration ${numeric(session.wall_seconds, 2)} s`;
     card.querySelector(".lane-message").textContent = replayMode
       ? recorded?.clamped
-        ? "本路已到达当前录制末帧。"
+        ? "This run has reached the last frame currently recorded."
         : ""
       : session.message || "";
   }
@@ -381,7 +381,7 @@ export async function createComparison(container, { api, toast }) {
     snapshot = next;
     if (changed) {
       sceneLoading = true;
-      $("#cmp-status").textContent = "加载场景…";
+      $("#cmp-status").textContent = "Loading scene...";
       updateControls();
       stopReplay();
       replayMode = false;
@@ -430,10 +430,10 @@ export async function createComparison(container, { api, toast }) {
         next.lanes
           .map(
             (lane, index) =>
-              `<article class="comparison-card" data-lane="${escape(lane.id)}"><header><div><span class="comparison-lane-label">模型 ${index + 1} · ${escape(config.providers.find((provider) => provider.id === lane.provider)?.name || lane.provider)}</span><h2 class="lane-model-name"></h2></div><span class="lane-status"></span></header><div class="comparison-scene"><div class="comparison-camera"><button type="button" data-camera="home">复位视角</button><button type="button" data-camera="top">俯视</button></div></div><div class="comparison-card-body"><p class="lane-source"></p><p class="lane-input-source"></p><p class="lane-decision-mode"></p><div class="comparison-decision-grid"><section><h3 class="lane-phase-heading">阶段选择</h3><div class="lane-phase"></div></section><section><h3>动作输出</h3><div class="lane-action"></div></section></div><div class="lane-planning" hidden><p><span>本步动作</span><strong class="lane-action-detail"></strong></p><p><span>视觉依据</span><strong class="lane-evidence"></strong></p><p class="lane-planning-note">物理成功与规划能力需分别检验。</p></div><dl><dt>末端 X / Y / Z · m</dt><dd class="lane-pose"></dd><dt>夹爪 / 接触</dt><dd class="lane-fingers"></dd><dt>仿真时间</dt><dd class="lane-sim"></dd><dt>本次推理耗时</dt><dd class="lane-latency"></dd></dl><p class="lane-message"></p><details><summary class="lane-stat-title">本路累计统计</summary><p class="lane-statistics"></p></details></div></article>`,
+              `<article class="comparison-card" data-lane="${escape(lane.id)}"><header><div><span class="comparison-lane-label">Model ${index + 1} · ${escape(config.providers.find((provider) => provider.id === lane.provider)?.name || lane.provider)}</span><h2 class="lane-model-name"></h2></div><span class="lane-status"></span></header><div class="comparison-scene"><div class="comparison-camera"><button type="button" data-camera="home">Reset view</button><button type="button" data-camera="top">Top-down view</button></div></div><div class="comparison-card-body"><p class="lane-source"></p><p class="lane-input-source"></p><p class="lane-decision-mode"></p><div class="comparison-decision-grid"><section><h3 class="lane-phase-heading">Stage selection</h3><div class="lane-phase"></div></section><section><h3>Action output</h3><div class="lane-action"></div></section></div><div class="lane-planning" hidden><p><span>Action in this step</span><strong class="lane-action-detail"></strong></p><p><span>Visual basis</span><strong class="lane-evidence"></strong></p><p class="lane-planning-note">Physical success and planning capability need to be verified separately.</p></div><dl><dt>End effector X / Y / Z · m</dt><dd class="lane-pose"></dd><dt>Gripper / Contact</dt><dd class="lane-fingers"></dd><dt>Simulation time</dt><dd class="lane-sim"></dd><dt>Inference time for this request</dt><dd class="lane-latency"></dd></dl><p class="lane-message"></p><details><summary class="lane-stat-title">Cumulative statistics for this route</summary><p class="lane-statistics"></p></details></div></article>`,
           )
           .join("") ||
-        '<div class="comparison-empty">选择模型后开始对比，真实场景和决策会显示在这里。</div>';
+        '<div class="comparison-empty">After selecting a model, start comparison; real scenes and decisions will be displayed here.</div>';
       $("#cmp-cards").style.setProperty("--lane-count", next.lanes.length || 2);
       try {
         if (next.id)
@@ -443,7 +443,7 @@ export async function createComparison(container, { api, toast }) {
                 `[data-lane="${lane.id}"] .comparison-scene`,
               );
               const scene = new RobotScene(element, {
-                label: `${lane.id} 机械臂三维场景`,
+                label: `${lane.id} Robotic arm 3D scene`,
                 pixelRatio: 1.25,
                 onError: toast,
               });
@@ -468,7 +468,7 @@ export async function createComparison(container, { api, toast }) {
     $("#cmp-status").textContent = statuses[next.status] || next.status;
     $("#cmp-replay").hidden = !next.id;
     $("#cmp-time-range").textContent =
-      `共同录制 ${numeric(next.replay?.common_time, 2)} s · 最长 ${numeric(next.replay?.max_time, 2)} s`;
+      `Joint recording ${numeric(next.replay?.common_time, 2)} s · Longest ${numeric(next.replay?.max_time, 2)} s`;
     $("#cmp-timeline").max = next.replay?.max_time || 0;
     $("#cmp-notes").textContent = (next.notes || []).join(" ");
     if (!replayMode) {
@@ -480,7 +480,7 @@ export async function createComparison(container, { api, toast }) {
 
   function syncLiveTime() {
     const time = snapshot.replay?.max_time || 0;
-    $("#cmp-time-mode").textContent = "实时 · 各路独立推进";
+    $("#cmp-time-mode").textContent = "Real-time · Independent advancement of each route";
     $("#cmp-time").textContent = `${numeric(time, 2)} s`;
     $("#cmp-timeline").value = time;
   }
@@ -522,7 +522,7 @@ export async function createComparison(container, { api, toast }) {
     try {
       await pendingRefresh;
       if (snapshot.id !== comparisonId)
-        throw new Error("比较已更新，请检查当前状态后再操作。");
+        throw new Error("Comparison updated, please check current state before operating.");
       await render(
         await api(`/api/comparison/control/${action}`, {
           comparison_id: comparisonId,
@@ -551,7 +551,7 @@ export async function createComparison(container, { api, toast }) {
       if ($("#cmp-observation-mode").value === "vision") {
         if ($("#cmp-control-mode").value !== "incremental")
           throw new Error(
-            "直接图像需要「逐步 XYZ」动作决策。请修改共同执行参数。",
+            "Direct image input requires “Incremental XYZ”Action decision. Please modify joint execution parameters.",
           );
         if (
           ![...container.querySelectorAll(".lane-provider")].every((select) =>
@@ -561,12 +561,12 @@ export async function createComparison(container, { api, toast }) {
           )
         )
           throw new Error(
-            "直接图像要求每一路使用支持图像的 Chat 或 Claude 模型，请修改模型接口。",
+            "Direct image requirement: each route must use image support. Chat or Claude model, please modify model interface.",
           );
       }
       await pendingRefresh;
       if (snapshot.id !== expectedId)
-        throw new Error("比较已更新，请检查当前状态后再创建。");
+        throw new Error("Comparison updated, please check current state before creating.");
       await refreshModels();
       const lanes = [...container.querySelectorAll(".lane-provider")].map(
         (select, index) => {
@@ -579,7 +579,7 @@ export async function createComparison(container, { api, toast }) {
                 (provider) => provider.id === selected.provider,
               )?.ready;
           if (!ready)
-            throw new Error("请先在实验台配置该模型连接，再开始对比。");
+            throw new Error("First configure the model connection on the workbench, then start the comparison.");
           const model = $(`#cmp-model-${index}`).value.trim();
           return { ...selected, ...(model ? { model } : {}) };
         },
@@ -603,7 +603,7 @@ export async function createComparison(container, { api, toast }) {
       await render(next);
       $("#cmp-setup").open = false;
       $("#cmp-setup-summary").textContent =
-        `${lanes.length} 路 · ${$("#cmp-task").selectedOptions[0].textContent} · ${$("#cmp-mode").value === "parallel" ? "最多两路并行" : "依次运行"}`;
+        `${lanes.length} path · ${$("#cmp-task").selectedOptions[0].textContent} · ${$("#cmp-mode").value === "parallel" ? "At most two parallel paths" : "Run sequentially"}`;
       await render(
         await api("/api/comparison/control/start", {
           comparison_id: snapshot.id,
@@ -638,14 +638,14 @@ export async function createComparison(container, { api, toast }) {
     if (request !== replayRequest || busy || snapshot.id !== comparisonId)
       return;
     if (snapshot.status === "running")
-      throw new Error("暂停未完成，请稍后再回放。");
+      throw new Error("Pause incomplete, please replay later.");
     replayMode = true;
     const result = await api(
       `/api/comparison/replay?time=${time}&comparison_id=${encodeURIComponent(comparisonId)}`,
     );
     if (request !== replayRequest || result.id !== snapshot.id) return;
     replayTime = result.time;
-    $("#cmp-time-mode").textContent = "录制回放 · 按统一仿真时间对齐";
+    $("#cmp-time-mode").textContent = "Record playback · Align by uniform simulation time";
     $("#cmp-time").textContent = `${numeric(result.time, 2)} s`;
     $("#cmp-timeline").value = result.time;
     snapshot.lanes.forEach((lane) =>
@@ -690,7 +690,7 @@ export async function createComparison(container, { api, toast }) {
       return;
     }
     replayPlaying = true;
-    $("#cmp-replay-play").textContent = "暂停回放";
+    $("#cmp-replay-play").textContent = "Pause playback";
     if (!replayMode || replayTime >= snapshot.replay.max_time) replayTime = 0;
     const tick = async () => {
       if (!replayPlaying || !active) return;
@@ -713,7 +713,7 @@ export async function createComparison(container, { api, toast }) {
   async function editableDraft() {
     await pendingRefresh;
     if (busy || ["running", "paused"].includes(snapshot.status))
-      throw new Error("请先停止模型对比，再修改预设或模型。");
+      throw new Error("Please stop model comparison first, then modify preset or model.");
   }
   return {
     async applyPreset(preset) {
@@ -724,19 +724,19 @@ export async function createComparison(container, { api, toast }) {
       renderPresetLabel();
       $("#cmp-setup").open = true;
       $("#cmp-message").textContent =
-        "预设已填入共同设置，点击开始后才会创建场景和调用模型。";
+        "The preset has been loaded into the shared settings. Scenes are created and models are called only after Start is clicked.";
     },
     async applyModel(profileId) {
       await editableDraft();
       await refreshModels();
       setupRows();
       if (!profiles.some((profile) => profile.id === profileId))
-        throw new Error("模型配置已失效，请重新选择。");
+        throw new Error("Model configuration is invalid, please reselect.");
       $("#cmp-provider-0").value = "profile:" + profileId;
       $("#cmp-provider-0").onchange();
       $("#cmp-setup").open = true;
       $("#cmp-message").textContent =
-        "已填入模型 1；其余模型可在对比设置中选择。尚未调用模型。";
+        "Model filled in 1; Other models can be selected in comparison settings. model not called yet.";
     },
     async setActive(value) {
       active = value;

@@ -153,7 +153,7 @@ def test_missing_perception_stops_without_model_call_or_truth_fallback(fake_came
 
     def missing():
         session.observer.snapshot["metadata"].update(capture_id="missing", status="unavailable")
-        raise PerceptionUnavailable("目标被遮挡且已超时")
+        raise PerceptionUnavailable("Target obscured and timed out")
 
     session.observer.observe = missing
     session.start()

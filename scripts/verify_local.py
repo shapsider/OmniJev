@@ -19,10 +19,10 @@ def main():
     for name in ['fixture','stress']:
         cases.extend(c for c in json.loads(Path(f'data/{name}.json').read_text()) if not c.get('audio'))
     route=json.loads(Path('examples/request.json').read_text())
-    extra=[('退款申请：收到的杯子破损了，希望退货退款。','refund'),
-           ('包裹显示已发货，但我不知道预计什么时候送达。','delivery'),
-           ('软件启动时出现错误代码，无法进入主界面。','technical'),
-           ('你好，祝你周末愉快。','unknown')]
+    extra=[('Refund request: The received cup was damaged, hoping to return and refund.','refund'),
+           ('The package is marked as shipped, but I do not know when it is expected to arrive.','delivery'),
+           ('An error code appears when the software starts, preventing access to the main interface.','technical'),
+           ('Hello, wish you a pleasant weekend.','unknown')]
     jobs=[]
     for c in cases:
         opts=[dict(id=f'option_{i}',description=d,abstain=d=='insufficient evidence') for i,d in enumerate(c['options'])]

@@ -25,11 +25,11 @@ def validate_camera_views(value, observation_mode):
     if value is None:
         return ["external", "wrist"] if observation_mode in {"rgbd", "vision"} else []
     if not isinstance(value, (list, tuple)) or any(not isinstance(view, str) or view not in {"external", "wrist"} for view in value):
-        raise ValueError("相机只能选择 external 或 wrist")
+        raise ValueError("Camera can only select external or wrist")
     if len(set(value)) != len(value):
-        raise ValueError("相机视角不能重复")
+        raise ValueError("Camera view cannot repeat")
     if not value and observation_mode in {"rgbd", "vision"}:
-        raise ValueError("视觉观测至少需要一种相机；无相机请使用 privileged 结构化状态模式")
+        raise ValueError("At least one camera required for visual observations; no camera, use privileged Structured state mode")
     return [view for view in ("external", "wrist") if view in value]
 
 
@@ -37,17 +37,17 @@ def validate_intervention(value):
     if value is None:
         return None
     if not isinstance(value, dict) or set(value) != {"kind", "after_cycle", "delta_xy"}:
-        raise ValueError("扰动需要 kind、after_cycle 和 delta_xy")
+        raise ValueError("Disturbance requires kind, after_cycle and delta_xy")
     if value["kind"] not in {"object_shift", "target_shift"}:
-        raise ValueError("未知扰动类型")
+        raise ValueError("Unknown disturbance type")
     if type(value["after_cycle"]) is not int or not 1 <= value["after_cycle"] <= 199:
-        raise ValueError("扰动时刻必须为 1–199 步")
+        raise ValueError("Disturbance moment must be 1–199 Step")
     delta = value["delta_xy"]
     if not isinstance(delta, (list, tuple)) or len(delta) != 2 or any(
             type(x) not in (int, float) or not math.isfinite(x) or abs(x) > .06 for x in delta):
-        raise ValueError("扰动 XY 位移必须在 ±0.06 米内")
+        raise ValueError("Disturbance XY Displacement must be in ±0.06 meters")
     if not any(delta):
-        raise ValueError("扰动位移不能全为零")
+        raise ValueError("Perturbation displacement cannot be all zero")
     return {"kind": value["kind"], "after_cycle": value["after_cycle"], "delta_xy": list(delta)}
 
 
@@ -61,7 +61,7 @@ class Session:
         if control_mode not in {"skills", "incremental"}:
             raise ValueError("Unknown control mode")
         if observation_mode == "vision" and (control_mode != "incremental" or provider not in {"chat", "claude", *OMNI_PROVIDERS}):
-            raise ValueError("直接图像模式需要逐步 XYZ 控制和支持图像的 OpenAI 兼容或 Claude 接口")
+            raise ValueError("Direct image mode requires incremental XYZ Control and support images OpenAI Compatible or Claude Interface")
         self.id = uuid.uuid4().hex[:12]
         self.observation_mode = observation_mode
         self.control_mode = control_mode
@@ -110,7 +110,7 @@ class Session:
         self.started = None
         self.finished = None
         self._record(self.last_frame)
-        self._event("created", "实验已就绪")
+        self._event("created", "Experiment ready")
 
     def _observe(self):
         try:
@@ -202,7 +202,7 @@ class Session:
             self.message = None
             if self.started is None:
                 self.started = time.perf_counter()
-            self._event("step" if single_step else "started", "单步执行" if single_step else "开始运行")
+            self._event("step" if single_step else "started", "Step execution" if single_step else "Start running")
             self.wake.set()
             if self.worker is None or not self.worker.is_alive():
                 self.worker = threading.Thread(target=self._run, daemon=True)
@@ -213,7 +213,7 @@ class Session:
             if self.status == "running":
                 self.status = "paused"
                 self.wake.clear()
-                self._event("paused", "已暂停")
+                self._event("paused", "Paused")
 
     def stop(self):
         with self.lock:
@@ -224,7 +224,7 @@ class Session:
                 self.status = "stopped"
             self.finished = time.perf_counter()
             if was_active:
-                self._event("stopped", "实验已停止")
+                self._event("stopped", "Experiment stopped")
         if self.worker is None or not self.worker.is_alive():
             self._close_resources()
 
@@ -246,7 +246,7 @@ class Session:
                     with self.lock:
                         if self.cancel.is_set():
                             return
-                        self.status, self.message = "exhausted", "已达到动作预算"
+                        self.status, self.message = "exhausted", "Action budget reached"
                         self.finished = time.perf_counter()
                         self._event("budget_exhausted", self.message, "warning")
                     return
@@ -264,7 +264,7 @@ class Session:
                     self.last_intent = None
                     self.last_decision_inputs = {"phase": None, "action": None}
                     self.current_candidates = []
-                self._event("deciding", "正在选择操作阶段")
+                self._event("deciding", "Selecting operation phase")
                 intent = self._choose("phase", model_observation,
                     "Choose the next phase that makes progress toward the goal, given the measured geometry and contacts. "
                     "Avoid repeating a motion that has already reached its target.",
@@ -296,7 +296,7 @@ class Session:
                 legal = [c for c in options if c.admitted]
                 progress = [c for c in legal if c.id != "hold"]
                 if not progress:
-                    raise ValueError("动作预演未找到可执行的前进动作")
+                    raise ValueError("No executable forward action found for action preview")
                 menu = {c.id: json.dumps({"motion": c.id, "phase": phase,
                     "target_tcp": [round(v, 4) for v in c.target] if c.target else None,
                     "gripper_command": c.gripper or "unchanged", "duration_seconds": c.seconds,
@@ -335,7 +335,7 @@ class Session:
                             break
                         self._record(frame)
                         if self.world.unsafe_contacts > bad_contacts:
-                            raise ValueError("执行层检测到台面或障碍接触，已停止")
+                            raise ValueError("Execution layer detected tabletop or obstacle contact, stopped")
                     if self.speed > 0 and self.cancel.wait(.04 / self.speed):
                         return
                 with self.lock:
@@ -350,7 +350,7 @@ class Session:
                 with self.lock:
                     self.history.append(record)
                     self.stage = "observing"
-                    self._event("action_completed", f"完成动作：{selected.label}")
+                    self._event("action_completed", f"Complete action: {selected.label}")
                 if self.world.success():
                     self._finish()
                     return
@@ -359,7 +359,7 @@ class Session:
                         if self.cancel.is_set():
                             return
                         self.status, self.stage = "stalled", "observing"
-                        self.message = "连续三次重复选择未带来位姿或接触变化，已停止推理；请查看历史决策后重置。"
+                        self.message = "Continuously repeating selection without pose or contact change for three times, reasoning stopped; please check history decisions and reset."
                         self.finished = time.perf_counter()
                         self._event("stalled", self.message, "warning")
                     return
@@ -370,9 +370,9 @@ class Session:
                 if not self.cancel.is_set():
                     import httpx
                     if isinstance(exc, httpx.HTTPStatusError):
-                        message = f"模型接口请求失败：HTTP {exc.response.status_code}；请在模型连接中测试配置。"
+                        message = f"Model interface request failed: HTTP {exc.response.status_code}; Test configuration in the model connection."
                     elif isinstance(exc, httpx.HTTPError):
-                        message = f"模型接口请求失败：{type(exc).__name__}；请检查连接。"
+                        message = f"Model interface request failed: {type(exc).__name__}; Check connection."
                     else:
                         message = str(exc)
                     self.status, self.message = "error", message
@@ -389,7 +389,7 @@ class Session:
         self.interventions.append(event)
         if self.observer:
             self.observer.invalidate()
-        self._event("external_intervention", f"外部评测扰动：{event['kind']}，发生于动作 {self.cycles} 后", "warning")
+        self._event("external_intervention", f"External evaluation disturbance: {event['kind']}, Occurs during action {self.cycles} after", "warning")
 
     def _run_incremental(self):
         from .incremental import incremental_candidates, planning_state, baseline_choice, PLANNING_INSTRUCTIONS
@@ -402,7 +402,7 @@ class Session:
                 if self.cancel.is_set():
                     return
                 if self.cycles >= self.max_cycles:
-                    self.status, self.message = "exhausted", "已达到动作预算"
+                    self.status, self.message = "exhausted", "Action budget reached"
                     self.finished = time.perf_counter()
                     self._event("budget_exhausted", self.message, "warning")
                     return
@@ -416,7 +416,7 @@ class Session:
                     random.Random(self.world.seed * 1009 + self.cycles).shuffle(options)
                 legal = [option for option in options if option.admitted]
                 if not legal:
-                    raise ValueError("没有工作区内的短步动作")
+                    raise ValueError("No short actions within the workspace")
                 serialised = []
                 for option in options:
                     item = option.serialise()
@@ -436,7 +436,7 @@ class Session:
                 self.current_candidates = serialised
                 self.last_decision, self.last_intent = None, None
                 self.last_decision_inputs = {"phase": None, "action": None}
-            self._event("deciding", "正在根据当前观测规划一个短步动作")
+            self._event("deciding", "Planning a short step action based on current observations")
             decision = self._choose("action", state, PLANNING_INSTRUCTIONS, menu,
                                     baseline_choice=default, image=images, plan=True)
             if decision is None or not self._wait():
@@ -459,13 +459,13 @@ class Session:
                     for _ in shadow.motion(selected.target, selected.gripper, selected.seconds, emit=False):
                         pass
                     if shadow.unsafe_contacts > bad:
-                        rejection = "所选动作的仿真预演发生机械臂与台面或障碍接触"
+                        rejection = "Simulation preview of the selected action detected contact between the robotic arm and the tabletop or obstacle"
                 else:
                     _, error = shadow.solve_ik(selected.target)
                     if error > .004:
-                        rejection = "所选短步目标不可达"
+                        rejection = "The selected short-step target is unreachable"
             except (ValueError, RuntimeError):
-                rejection = "所选短步未通过可执行性检查"
+                rejection = "Selected short step failed executability check"
             if not self._wait():
                 return
             with self.lock:
@@ -492,7 +492,7 @@ class Session:
                             break
                         self._record(frame)
                         if self.world.unsafe_contacts > bad:
-                            raise ValueError("执行层检测到台面或障碍接触，已停止")
+                            raise ValueError("Execution layer detected tabletop or obstacle contact, stopped")
                     if self.speed > 0 and self.cancel.wait(.04 / self.speed):
                         return
             with self.lock:
@@ -509,7 +509,7 @@ class Session:
                     "rejected_count": sum(not option.admitted for option in options) + int(rejection is not None)})
                 self.stage = "observing"
                 self._event("action_rejected" if rejection else "action_completed",
-                            rejection or f"完成短步：{selected.label}", "warning" if rejection else "info")
+                            rejection or f"Complete short steps: {selected.label}", "warning" if rejection else "info")
             if self.world.success():
                 self._finish()
                 return
@@ -518,7 +518,7 @@ class Session:
                     if self.cancel.is_set():
                         return
                     self.status, self.stage = "stalled", "observing"
-                    self.message = "连续三次相同短步未产生位姿或接触变化，已停止；没有切换规则策略。"
+                    self.message = "Continuous three identical short steps without pose or contact change, stopped; no rule strategy switch."
                     self.finished = time.perf_counter()
                     self._event("stalled", self.message, "warning")
                 return
@@ -545,7 +545,7 @@ class Session:
             # Even a gateway exception can contain a secret. Retain only safe diagnostics.
             import httpx
             reason = f"HTTP {exc.response.status_code}" if isinstance(exc, httpx.HTTPStatusError) else type(exc).__name__
-            raise RuntimeError(f"模型决策失败（{reason}），请查看模型连接测试结果。") from None
+            raise RuntimeError(f"Model decision failed ( {reason}), Please view the model connection test results.") from None
         finally:
             with self.lock:
                 # Keep inspectable input even when the answer is uncertain,
@@ -578,7 +578,7 @@ class Session:
                 return
             self.status, self.stage = "uncertain", "deciding"
             self.last_decision = decision
-            self.message = "候选动作概率低于设定门槛，等待人工处理"
+            self.message = "Candidate action probability is below the set threshold, waiting for manual processing"
             self.wake.clear()
             self._event("uncertain", self.message, "warning")
 
@@ -587,10 +587,10 @@ class Session:
             if self.cancel.is_set():
                 return
             if not self.world.success():
-                raise ValueError("物理成功条件尚未满足")
+                raise ValueError("Physical success conditions not yet met")
             self.status, self.stage = "completed", "verified"
             self.finished = time.perf_counter()
-            self._event("completed", "物理成功条件验证通过")
+            self._event("completed", "Physical success condition verification passed")
 
     def snapshot(self):
         with self.lock:

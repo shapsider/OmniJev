@@ -1,9 +1,9 @@
 # OmniJev Embodied Lab
 
-这是 OmniJev Vision Preview 的具身工作台。它提供本地 MuJoCo Panda 仿真、相机观测、有限候选动作、扰动、回放、模型对比和可复现 benchmark。源代码、资产许可和依赖说明保留于此目录。
+This is the OmniJev Vision Preview Embodied Workbench. It provides local MuJoCo Panda simulation, camera observation, limited candidate actions, perturbations, replay, model comparison, and reproducible benchmark. Source code, asset licensing, and dependency descriptions are retained in this directory.
 
-在父目录运行 `./setup_embodied.sh`，然后 `./run_embodied.sh`。模型权重需要用户自行下载并由本地兼容后端加载；工作台只访问该后端的 HTTP API。浏览器访问 `http://127.0.0.1:8766`。
+Run `./setup_embodied.sh` in the parent directory, then `./run_embodied.sh`. Model weights must be downloaded by the user and loaded via a locally compatible backend; the workbench only accesses the backend's HTTP API. Access the browser at `http://127.0.0.1:8766`.
 
-前端源码位于 `frontend/`，已构建资源位于 `src/embodied_jev/web/`。修改前端后可用 Node 22.12+ 执行 `npm ci && npm run build`，或使用本项目的 `pnpm-lock.yaml` 执行 `pnpm install --frozen-lockfile && pnpm run build`。
+Frontend source code is located in `frontend/`, and built resources are in `src/embodied_jev/web/`. After modifying the frontend, you can run `npm ci && npm run build` with Node 22.12+ or use this project's `pnpm-lock.yaml` to execute `pnpm install --frozen-lockfile && pnpm run build`.
 
-完整说明见 [集成架构与复现协议](../docs/EMBODIED_INTEGRATION.md)。
+Full documentation available at [Integration Architecture and Reproduction Protocol](../docs/EMBODIED_INTEGRATION.md).

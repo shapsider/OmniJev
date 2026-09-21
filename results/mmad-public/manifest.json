@@ -13,7 +13,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/5ac2640fe0a8533d.png"
+        "results/mmad-public/images/5ac2640fe0a8533d.png"
       ],
       "category": "Anomaly Detection",
       "image_sha256": "1c32266ed0d753fa94665fe474e618f68b01bb334f087eb045f9f3d9f3a56e99",
@@ -28,7 +28,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4f26d140e545b3fc.png"
+        "results/mmad-public/images/4f26d140e545b3fc.png"
       ],
       "category": "Anomaly Detection",
       "image_sha256": "ab390cac11b23426e3e4c9f7b409985fa92937d77f496890f6d107f841536a0a",
@@ -43,7 +43,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4654fc2eafee5eb7.png"
+        "results/mmad-public/images/4654fc2eafee5eb7.png"
       ],
       "category": "Anomaly Detection",
       "image_sha256": "d1c23238d45ad30e0f3b8cffee6411a83459eb2c0bf36f2c921fd5106a18ca93",
@@ -58,7 +58,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/e826d94527ce1515.png"
+        "results/mmad-public/images/e826d94527ce1515.png"
       ],
       "category": "Anomaly Detection",
       "image_sha256": "96b6699515a91d9a05e6e23a63a1283a32f27ed48585263ed70fa07d0a9bed6f",
@@ -73,7 +73,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/33ff04959ef1ec02.png"
+        "results/mmad-public/images/33ff04959ef1ec02.png"
       ],
       "category": "Anomaly Detection",
       "image_sha256": "36b7bcab8290fc43a36e2cf535544f5b0a4054d8e7943ebaec226aead2c042d1",
@@ -90,7 +90,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/67d6a3489addd6bc.png"
+        "results/mmad-public/images/67d6a3489addd6bc.png"
       ],
       "category": "Defect Analysis",
       "image_sha256": "d41a88f0d32951f29fca7823386b978078d2bb99bb59859d816e400a40cce233",
@@ -107,7 +107,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/840675eefe762eac.png"
+        "results/mmad-public/images/840675eefe762eac.png"
       ],
       "category": "Defect Analysis",
       "image_sha256": "a1dd88767f9497abbd55b53e8d14d01b64eddad383b055a0189d66e1e10183a1",
@@ -124,7 +124,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/3331f7ca1177f7fa.png"
+        "results/mmad-public/images/3331f7ca1177f7fa.png"
       ],
       "category": "Defect Analysis",
       "image_sha256": "76cd81212dd127d2d41cc6149d90bc423e9a34eea7cb8f1301261bb929353e40",
@@ -141,7 +141,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/9b54c3d16949b047.png"
+        "results/mmad-public/images/9b54c3d16949b047.png"
       ],
       "category": "Defect Analysis",
       "image_sha256": "daf6bae8d0d1c2fd8910ad72e20641047bb684a806e2edb85171b6504c6fb8a6",
@@ -158,7 +158,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/79cc35f7533e0a32.png"
+        "results/mmad-public/images/79cc35f7533e0a32.png"
       ],
       "category": "Defect Analysis",
       "image_sha256": "1a53ca4222481e4fc54c3a3824384c13ff65ca88fb8fa183efde654634749dda",
@@ -175,7 +175,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/bc7b099f80634d8b.png"
+        "results/mmad-public/images/bc7b099f80634d8b.png"
       ],
       "category": "Defect Classification",
       "image_sha256": "bc60260af053f2f84f71550dda6f2d88c9c8e427109a56249f0dc60e30bc9759",
@@ -192,7 +192,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/271f7c021ef3991c.png"
+        "results/mmad-public/images/271f7c021ef3991c.png"
       ],
       "category": "Defect Classification",
       "image_sha256": "ad7738aa343db9d0f4aa73d6dd26634ce6d836c97026532c89d65a3b58d79b93",
@@ -209,7 +209,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/cc77fdcc8d2cf7cd.png"
+        "results/mmad-public/images/cc77fdcc8d2cf7cd.png"
       ],
       "category": "Defect Classification",
       "image_sha256": "07685635e898f3ed4e7ffc8c67cac6f683e43c9988af19b14e4da4ae3c36fd55",
@@ -226,7 +226,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/dcd05e1d56c8c653.png"
+        "results/mmad-public/images/dcd05e1d56c8c653.png"
       ],
       "category": "Defect Classification",
       "image_sha256": "685fbfceed87515909665a0f07c94e8920decc1a10c93b9116e1a0862b0d7b20",
@@ -243,7 +243,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/079f148e0a27a7cc.png"
+        "results/mmad-public/images/079f148e0a27a7cc.png"
       ],
       "category": "Defect Classification",
       "image_sha256": "8ccae1361689344593df81312737e5e6dc6ed0ee97a8dcf6e01e87f6158b4fc2",
@@ -260,7 +260,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/ec1b83b0ab121cdf.png"
+        "results/mmad-public/images/ec1b83b0ab121cdf.png"
       ],
       "category": "Defect Description",
       "image_sha256": "d7584e27a71381ee37e7fb96fed1f0765f5f8eff2264830e4c0d0502b2e8d9b4",
@@ -277,7 +277,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4f585b0c3fde5cee.png"
+        "results/mmad-public/images/4f585b0c3fde5cee.png"
       ],
       "category": "Defect Description",
       "image_sha256": "8536c9965523e511bde7cfdd48d78208453fddb7a0830770501223908005db90",
@@ -294,7 +294,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/27c5ceb8e2a04f48.png"
+        "results/mmad-public/images/27c5ceb8e2a04f48.png"
       ],
       "category": "Defect Description",
       "image_sha256": "68d0912ff916a82a0e243e595dc07b69d215c8ed6085826b9a7f13b1c7fa2957",
@@ -311,7 +311,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/fb9a692c96280ae4.png"
+        "results/mmad-public/images/fb9a692c96280ae4.png"
       ],
       "category": "Defect Description",
       "image_sha256": "1e5637c3409d05709eae62c7254f38900afa296902b1626e5902a5a2a4095f3d",
@@ -328,7 +328,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f0968eba04e0ae2c.png"
+        "results/mmad-public/images/f0968eba04e0ae2c.png"
       ],
       "category": "Defect Description",
       "image_sha256": "af4711cdd10c0164949362d4133654eec065a2ba8c34c671209f4c633b38b653",
@@ -345,7 +345,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/af696658e7a2353c.png"
+        "results/mmad-public/images/af696658e7a2353c.png"
       ],
       "category": "Defect Localization",
       "image_sha256": "5508d71470f59e96183a8035fb90d63f050f3324e4884ef03f856528a4107d13",
@@ -362,7 +362,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/403b6097e150e8ba.png"
+        "results/mmad-public/images/403b6097e150e8ba.png"
       ],
       "category": "Defect Localization",
       "image_sha256": "8bb12074385c862e2b68472a27f582a0911fa5af2f47d47d8020ec567d24643e",
@@ -379,7 +379,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f7abecdfea4c3995.png"
+        "results/mmad-public/images/f7abecdfea4c3995.png"
       ],
       "category": "Defect Localization",
       "image_sha256": "59dc8ce1dc39774120b61e3e1d670d4b198a16c3dfdca58b13f2d9a9b2ceb4b2",
@@ -396,7 +396,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/eb235ffb2b7ab5b0.png"
+        "results/mmad-public/images/eb235ffb2b7ab5b0.png"
       ],
       "category": "Defect Localization",
       "image_sha256": "bc246386b18cb2534a880e3d4d240405e146a312fd8133e9d408b5426a215f33",
@@ -413,7 +413,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/14169f73b481981d.png"
+        "results/mmad-public/images/14169f73b481981d.png"
       ],
       "category": "Defect Localization",
       "image_sha256": "677df4df71517a80c0b941f4f001beb4f557e1272666eaea39146405da9041a3",
@@ -430,7 +430,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/783b7e48c44684cf.png"
+        "results/mmad-public/images/783b7e48c44684cf.png"
       ],
       "category": "Object Analysis",
       "image_sha256": "b654b948eecb58a26adc7b401382819a984019c14036f438c3be92c7108d45b3",
@@ -447,7 +447,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/05277ba20e172261.png"
+        "results/mmad-public/images/05277ba20e172261.png"
       ],
       "category": "Object Analysis",
       "image_sha256": "711ff7c5b73b33ae81398fa687290e6e28141aacdcfcdc8b4675d8088609590d",
@@ -464,7 +464,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/bc6fc9b89a3320ff.png"
+        "results/mmad-public/images/bc6fc9b89a3320ff.png"
       ],
       "category": "Object Analysis",
       "image_sha256": "4f0f1a2180cea8d3c1d77a6c27535553c2d6b9d069bf5904205f2990050665cc",
@@ -481,7 +481,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f1106d6ab0647b4d.png"
+        "results/mmad-public/images/f1106d6ab0647b4d.png"
       ],
       "category": "Object Analysis",
       "image_sha256": "6eb737822555857cf4196f1b14164baf194b8c07fcc75170d7ca85ce9ec9f781",
@@ -498,7 +498,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/7e309ea23f6a2ed2.png"
+        "results/mmad-public/images/7e309ea23f6a2ed2.png"
       ],
       "category": "Object Analysis",
       "image_sha256": "c16c2b4f4a4920276fb80a7b2c87f7197f02a3e68f05ace1647f0e1b9ba8b53e",
@@ -515,7 +515,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/c685c57e31e2a75d.png"
+        "results/mmad-public/images/c685c57e31e2a75d.png"
       ],
       "category": "Object Classification",
       "image_sha256": "f77e35d23046cdcd10d647d4eeeff54be41faa94371e07f526d169ccf234bcb3",
@@ -532,7 +532,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/9b59101dbb269168.png"
+        "results/mmad-public/images/9b59101dbb269168.png"
       ],
       "category": "Object Classification",
       "image_sha256": "2c8c4fce80a3d354c5baeba8db235b2e8dfbee1603c4a587c64f8e56df1f6597",
@@ -549,7 +549,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/711884861bc6b09d.png"
+        "results/mmad-public/images/711884861bc6b09d.png"
       ],
       "category": "Object Classification",
       "image_sha256": "866cc605aec6bf222907e9ae6dc0d05a69d7bea51ed76d5bd729bce6dba8edf6",
@@ -566,7 +566,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/81b52a77d8e35d5a.png"
+        "results/mmad-public/images/81b52a77d8e35d5a.png"
       ],
       "category": "Object Classification",
       "image_sha256": "45cf969cea93fc721fb409709608dc66c469aaf72d9ee83fd79eb22aa4a3d1df",
@@ -583,7 +583,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/8596deea87b051da.png"
+        "results/mmad-public/images/8596deea87b051da.png"
       ],
       "category": "Object Classification",
       "image_sha256": "aff5a0bcb366d6a9287b4f5bcbc6aaca455134e61d6ea354425a3d2d363fc3ed",
@@ -600,7 +600,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/843a85271c83074a.png"
+        "results/mmad-public/images/843a85271c83074a.png"
       ],
       "category": "Object Details",
       "image_sha256": "619f982b985494418ede863e2406c1d138ba2a3d63796adfbcb0c45bc4707899",
@@ -617,7 +617,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/92c87830810bb4e5.png"
+        "results/mmad-public/images/92c87830810bb4e5.png"
       ],
       "category": "Object Details",
       "image_sha256": "640adebb51e2d88cf5b5b3556b3303af0472b2429eb91b91a8c8c3e84ce8da58",
@@ -634,7 +634,7 @@
       ],
       "gold": "A",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/798d537e14c3fb12.png"
+        "results/mmad-public/images/798d537e14c3fb12.png"
       ],
       "category": "Object Details",
       "image_sha256": "9308c98dc2b02a4ef41facc17f016b7a2badddf085945cee047bc724db1b7cee",
@@ -651,7 +651,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/3ed206a34cab52be.png"
+        "results/mmad-public/images/3ed206a34cab52be.png"
       ],
       "category": "Object Details",
       "image_sha256": "e7ca60e9e6b112b0f0f0cbde3dbd1af3d6336ec068b3afc5f141090608ade1f2",
@@ -668,7 +668,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/6fd1a9069c26b6c2.png"
+        "results/mmad-public/images/6fd1a9069c26b6c2.png"
       ],
       "category": "Object Details",
       "image_sha256": "7c91d10c02199683a7e3b46d88188a8d200c6b065f1af738966fc8892b6242e1",
@@ -685,7 +685,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4c75e6b9d96edc1a.png"
+        "results/mmad-public/images/4c75e6b9d96edc1a.png"
       ],
       "category": "Object Structure",
       "image_sha256": "5bc08bcc32c14929468d08af67b2db894600c2dd76df97a2bf81cdc92e1bf73b",
@@ -702,7 +702,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/ddd0b7ab2f7a6f8f.png"
+        "results/mmad-public/images/ddd0b7ab2f7a6f8f.png"
       ],
       "category": "Object Structure",
       "image_sha256": "9d3a5c5e481a46db4aa7e8251270dbf25a5d54e0bac8f2eed6fb4d35209718fa",
@@ -719,7 +719,7 @@
       ],
       "gold": "C",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/03aef6e398ef3771.png"
+        "results/mmad-public/images/03aef6e398ef3771.png"
       ],
       "category": "Object Structure",
       "image_sha256": "cb8b1201fa027fada3209cde87514b778231e5d0923c5517d40e78b2e0423e35",
@@ -736,7 +736,7 @@
       ],
       "gold": "D",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/b22a2bc401517231.png"
+        "results/mmad-public/images/b22a2bc401517231.png"
       ],
       "category": "Object Structure",
       "image_sha256": "bbb766e20f3660502dfd73cb31348b7bb0a87eeebd1bd2961c1dc7a8b6692c5e",
@@ -753,7 +753,7 @@
       ],
       "gold": "B",
       "images": [
-        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/07d5607d248d8bdc.png"
+        "results/mmad-public/images/07d5607d248d8bdc.png"
       ],
       "category": "Object Structure",
       "image_sha256": "c925291385ea6400a6c13adf3cfd83aa607c9a7fb96c0eb7a48d3d1cf84a1280",

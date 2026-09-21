@@ -1,0 +1,12 @@
+{
+  "llama_cpp_source_commit": "1aa2954bde90b1cb4d2dca96f90b07d7b155124b",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "driver": "535.129.03",
+  "cuda_toolkit": "12.8",
+  "cuda_compat": "/usr/local/cuda-12.8/compat",
+  "context": 8192,
+  "parallel": 1,
+  "fit": "off",
+  "model_directory": "models/Nemotron-Omni-GGUF",
+  "notes": "Cold model read was slow on network storage. CUDA compatibility library resolved device kernel image is invalid during warmup."
+}

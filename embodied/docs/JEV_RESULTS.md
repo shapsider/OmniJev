@@ -1,32 +1,32 @@
-# Jev 分层 XYZ 实验结果
+# Jev hierarchical XYZ experiment results
 
-Jev 这次能够抓起方块、搬到托盘并完成撤离。两局都满足现有仿真成功条件，但下放时都失去了抓持，方块落入托盘后才张爪，仍需改进精确放置。
+In these experiments, Jev grasped the block, transferred it to the tray, and withdrew. Both episodes met the existing simulation success criteria, but both lost their grasp during lowering and opened the gripper only after the block had fallen into the tray. Precise placement still needs improvement.
 
-## 设置与结果
+## Settings and results
 
-两局使用 `jev-1.13.0`，搬运任务 seed 7，仿真坐标和接触反馈，无图像输入。动作预算为 160 步、概率门槛为 0、安全预演开启，无规则代选。
+Both runs use `jev-1.13.0`, transport task seed 7, simulation coordinates and contact feedback, no image input. Action budget 160 steps, probability threshold 0, safety preview enabled, no rule-based selection.
 
-| 回合 | 动作 / API 请求 | 实际用时 | 请求中位延迟 | 最大抬升 |
+| Round | Action / API request | Actual time | Request median delay | Max lift |
 | --- | --- | --- | --- | --- |
-| 第一局验证 | 89 / 178 | 72.43 秒 | 361 ms | 189.7 mm |
-| 第二局页面演示 | 88 / 176 | 79.71 秒 | 326 ms | 189.6 mm |
+| First round verification | 89 / 178 | 72.43 seconds | 361 ms | 189.7 mm |
+| Second round page demonstration | 88 / 176 | 79.71 seconds | 326 ms | 189.6 mm |
 
-第一局是 headless 执行，第二局保留 4× 执行动画，因此整局耗时不能只用模型延迟解释。两局结束时方块都有目标支撑并保持稳定，夹爪张开，末端撤离到约 175 mm。[结果摘要](results/jev-hierarchical-summary-2026-09-20.json)
+First round is headless execution, second round retains 4× execution animation, so total round duration cannot be explained solely by model latency. At the end of both rounds, blocks have target support and remain stable, gripper is open, end effector withdraws to approximately 175 mm. [Result summary](results/jev-hierarchical-summary-2026-09-20.json)
 
-## 模型决定了什么
+## What the model decides
 
-每步先由模型在接近、抓取、抬升、搬运、下放、松爪、撤离和完成八个子目标中选择，再用一次请求同时决定 X/Y/Z 的正向、保持或负向，以及夹爪的张开、保持或闭合。
+Each step first has the model select from eight sub-goals: approach, grasp, lift, transfer, place, release, withdraw, and complete, then use a single request to simultaneously decide the positive, maintain, or negative direction for X/Y/Z, and the open, maintain, or close state of the gripper.
 
-程序提供任务说明、测量误差与参考点，确定每轴 2–12 mm 的步幅，并做 IK、安全检查和物理结果判定。模型的错误方向不会被程序改成正确方向。这是有任务知识指导的决策实验，不是模型从零学会机器人控制。
+The program provides task description, measurement error and reference points, determines 2–12 mm steps per axis, and performs IK, safety checks, and physical result judgment. Model error direction will not be corrected by the program to the correct direction. This is a decision experiment guided by task knowledge, not a model learning robot control from scratch.
 
-## 动图显示什么
+## What the animation shows
 
-[8 倍速 GIF](media/jev-hierarchical.gif)与[MP4](https://github.com/FBddcz/embodied-jev/raw/refs/heads/main/docs/media/jev-hierarchical.mp4)来自第二局保存的 88 步记录。左侧按记录姿态重绘，右侧显示实际子目标及四通道概率，绿色表示选中。各组概率单独显示，不合成任务成功率。
+[8× speed GIF](media/jev-hierarchical.gif) and [MP4](https://github.com/FBddcz/embodied-jev/raw/refs/heads/main/docs/media/jev-hierarchical.mp4) from the second round's 88-step recording. Left side redraws poses according to recorded posture, right side shows actual sub-goals and four-channel probabilities, green indicates selected. Probabilities for each group are shown separately, not synthesized for task success rate.
 
-MP4 为 110.6 秒，每步展示 1.2 秒；GIF 约 13.8 秒。它们省略 API 等待，制作时没有重新运行模型或物理实验。原始模型输入是坐标和接触状态，画面不是发送给 Jev 的相机图像。[媒体哈希与来源](media/jev-hierarchical.json)
+The MP4 is 110.6 seconds long and shows each step for 1.2 seconds; the GIF is approximately 13.8 seconds long. They omit API waiting time. Neither the model nor the physics experiment was rerun to produce them. The original model inputs were coordinates and contact states; the displayed scenes are not camera images sent to Jev. [Media hashes and provenance](media/jev-hierarchical.json)
 
-## 仍然存在的问题
+## Remaining issues
 
-第一局第 81 步、第二局第 80 步下放时，双侧接触丢失，方块落到托盘上。模型随后选择接近并张爪，再选择撤离；两局都没有选择 `release` 子目标。视频保留并标出了失抓，不能把终态通过写成稳定精确放置。
+In round one step 81 and round two step 80, during placement, bilateral contact is lost, block falls onto tray. Model then selects approach and opens gripper, then selects withdraw; neither round selects `release` sub-goal. Video retains and marks loss of grasp, cannot represent final state as stably and precisely placed via written description.
 
-两个同 seed 的开发回合不能代表通用成功率，也不能与图像输入的 GPT 演示直接排名。实验使用本地开发中的分层控制，当前公开工作台版本尚未包含该模式；本次发布结果摘要与演示媒体，不包含完整原始轨迹或控制器代码。
+Two development rounds with same seed cannot represent general success rate, nor can they be directly ranked against image-input GPT demonstrations. Experiment uses hierarchical control from local development; current public workbench version does not include this mode; this release's result summary and demo media do not include full original trajectory or controller code.

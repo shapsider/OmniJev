@@ -1,28 +1,28 @@
-# OmniJev v0.2 验收记录
+# OmniJev v0.2 Acceptance Record
 
-日期：2026-09-20。Apple M5 Pro / 48 GB，使用本机已有 Nemotron Omni Q4_K_M。未训练，未下载新权重。
+Date: 2026-09-20. Apple M5 Pro / 48 GB, using the existing local Nemotron Omni Q4_K_M. No training and no new downloads.
 
-## 自动验证
+## Automated validation
 
-- 16 个单元/HTTP 契约测试通过，包括缺失候选概率、稳定动作 ID、拒答、过期结果、忙时 429、非法 HTTP 输入。
-- 真实模型 SDK 验收：30/30 通过。
-- SDK 耗时中位数：585.5 ms。包括 SDK 内媒体读取、编码与 API 请求；不含模型加载。
-- 原始记录：acceptance-v02.jsonl。样本为既有 26 个合成/手写条件与 4 个新增中文路由消息，并非 30 个独立自然场景。
+- 16 unit/HTTP contract tests passed, covering missing candidate probabilities, stable action IDs, abstention, stale results, busy 429 responses, and invalid HTTP input.
+- Real-model SDK acceptance: 30/30 passed.
+- SDK median latency: 585.5 ms. Includes media reading, encoding, and API requests inside the SDK; excludes model loading.
+- Raw record: acceptance-v02.jsonl. The sample consists of 26 existing synthetic/hand-written conditions and 4 newly added Chinese routing messages; these are not 30 independent natural scenes.
 
-## 浏览器验收
+## Browser acceptance
 
-- 本地交互台连接真实模型。
-- 红色样例返回 red_bin；切换蓝色样例返回 blue_bin。
-- 640×480 内置图片：首个观察请求约 4318 ms，后续不同图片约 2108 ms。不是统计基准。
-- 切换文本路由模板后，连续请求返回 delivery；点击停止后停止新请求。
-- 连续重复相同文本时观察到约 80–100 ms 的热缓存返回，不能推广到新图片或新请求。
-- 无业务信息的问候语返回 abstained / unknown，不产生可执行 action。
-- 摄像头接入已实现，但没有申请访问用户摄像头；尚未完成实机相机画面验收。
+- The local workbench connected to the real model.
+- The red sample returned `red_bin`; switching to the blue sample returned `blue_bin`.
+- Built-in 640×480 image: the first observation request took about 4318 ms, and a later request for a different image took about 2108 ms. This is not a statistical benchmark.
+- After switching the text-routing template, consecutive requests returned `delivery`; clicking Stop prevented new requests.
+- Repeated identical text requests showed roughly 80–100 ms warm-cache responses; this cannot be generalized to new images or requests.
+- Greetings without task information returned `abstained` / `unknown` and produced no executable action.
+- Camera input is implemented, but the user camera was not requested; physical camera-frame acceptance remains incomplete.
 
-## 能力边界
+## Capability boundaries
 
-这是冻结模型的动态决策服务，不是新训练模型。低延迟随图片尺寸、缓存、上下文和硬件变化。自然场景质检、复杂界面、细粒度识别尚无充分效果证据。原生音频仍不可用；多图与相机采样不等于原生视频时序理解。
+This is a dynamic decision service around a frozen model, not a newly trained model. Low latency varies with image size, cache, context, and hardware. There is not yet sufficient evidence for natural-scene quality checks, complex interfaces, or fine-grained recognition. Native audio remains unavailable; multiple images and camera sampling are not native video temporal understanding.
 
-## 启动与状态
+## Startup and status
 
-运行 sh run_local.sh，打开 http://127.0.0.1:8765。当前源码已初始化为本地 Git 仓库，没有上传或发布远程仓库。模型服务和交互台只绑定本机地址。
+Run `sh run_local.sh` and open http://127.0.0.1:8765. The current source has been initialized as a local Git repository; it has not been uploaded or published to a remote repository. The model service and workbench bind only to local addresses.

@@ -1,47 +1,47 @@
-# 具身实验复现协议
+# Embodied experiment replication protocol
 
-本文档定义 OmniJev Vision Preview 的具身实验输出格式和复现边界。
+This document defines OmniJev Vision Preview embodied experiment output format and replication boundaries.
 
-## 环境
+## Environment
 
-实验需要 Python 3.12+、MuJoCo 3.13.0 和 `embodied/requirements.lock` 中的依赖。先执行：
+Experiments require Python 3.12+, MuJoCo 3.13.0, and dependencies in `embodied/requirements.lock`. First execute:
 
 ```bash
 ./setup_embodied.sh
 ```
 
-模型权重不随仓库分发。请从所用本地推理后端的官方模型页面下载 Nemotron 3 Nano Omni Q4_K_M GGUF 及配套投影文件，放入后端模型目录，由后端加载后再设置：
+Model weights are not distributed with the repository. Download Nemotron 3 Nano Omni Q4_K_M GGUF and its matching projection file from the official model page of the selected local inference backend, place them in the backend model directory, and load them before setting:
 
 ```bash
 export OMNIJEV_MODEL=omnijev-nemotron
 export OMNIJEV_BASE_URL=http://127.0.0.1:1234
 ```
 
-规则基线不需要权重，可以先用它验证仿真安装。
+The rule baseline requires no model weights and can be used to verify the simulation installation first.
 
-## 协议
+## Protocol
 
-每个实验固定任务、seed、provider、观测模式、控制模式、最大循环数、超时、扰动、候选打乱方式和推理 token 预算。每一个回合在独立进程中执行，模型错误、超时和缺失结果都会保留在分母中。
+Each experiment fixes the task, seed, provider, observation mode, control mode, maximum cycles, timeout, perturbation, candidate shuffling method, and reasoning token budget. Each episode runs in a separate process; model errors, timeouts, and missing results remain in the denominator.
 
-`manifest.json` 记录：
+`manifest.json` records:
 
-- 项目 git revision、Python 版本和平台。
-- 模型 ID、API endpoint、策略适配器 SHA-256。
-- provider、任务、seed、观测/控制模式、扰动和预算。
-- 计时范围、排序 seed 和候选打乱规则。
+- Project git revision, Python version, and platform.
+- Model ID, API endpoint, and strategy adapter SHA-256.
+- provider, task, seed, observation/control mode, disturbance, and budget.
+- Timing scope, ordering seed, and candidate shuffling rules.
 
-## 输出文件
+## Output files
 
-- `episodes.jsonl`：每回合一行摘要，包含状态、成功标志、循环数、物理接触、延迟和 token。
-- `*.config.json`：该回合完整配置。
-- `*.json`：完整动作、观测、物理轨迹、事件、终态和模型请求记录。
-- `*.requests.jsonl`：请求 payload 配置、输入哈希、响应元数据、延迟和错误。
-- `*.cameras.zip`：视觉回合的 PNG 帧、时间戳和帧 SHA-256。
-- `summary.json`：按 provider 分组的汇总。
+- `episodes.jsonl`: one-line summary per turn, including state, success flag, cycle count, physical contact, latency, and token count.
+- `*.config.json`: full configuration for the turn.
+- `*.json`: complete action, observation, physical trajectory, events, final state, and model request records.
+- `*.requests.jsonl`: request payload configuration, input hash, response metadata, latency, and errors.
+- `*.cameras.zip`: PNG frames, timestamps, and frame SHA-256 for visual turns.
+- `summary.json`: summary grouped by provider.
 
-## 如何重跑
+## How to rerun
 
-使用新的输出目录运行同一协议：
+Run the same protocol in a new output directory:
 
 ```bash
 .venv-embodied/bin/python scripts/benchmark_embodied.py \
@@ -50,10 +50,10 @@ export OMNIJEV_BASE_URL=http://127.0.0.1:1234
   --max-cycles 20 --output results/embodied/reproduction-run
 ```
 
-若输出目录已有 `manifest.json`，脚本只接受完全相同的协议。中断后可继续运行；失败记录不会被删除或伪装成成功。
+If the output directory already contains `manifest.json`, the script only accepts a protocol exactly identical to the original. It can be resumed after interruption; failure records are not deleted or disguised as successful.
 
-## 结果解释
+## Result interpretation
 
-技能模式里的动作由预设技能执行，适合比较有限候选决策。直接视觉模式才使用 RGB 观测做增量控制。两种模式必须分别报告。成功率、模型调用成功率、物理接触和 token 用量也必须分开报告。
+Skill mode executes preset skills and is suitable for comparing finite-choice decisions. Direct vision mode uses RGB observations for incremental control. Report the two modes separately. Task success, model call success, physical contact, and token usage must also be reported separately.
 
-仿真在模型等待期间暂停，因而结果不能外推为真实机器人在网络延迟或推理等待期间的控制安全性。单个 seed 或小样本结果只能作为演示或先导实验，不能作为泛化成功率。
+Simulation pauses while the model waits, so results cannot be extrapolated to control safety on real robots under network latency or reasoning wait times. Single-seed or small-sample results can only serve as demos or pilot experiments, not as generalization success rates.

@@ -27,7 +27,7 @@ async function openScene(page) {
   await expect(page.locator("#loading")).toHaveClass(/hidden/, {
     timeout: 30000,
   });
-  await expect(page.locator("#connection")).toContainText("已连接");
+  await expect(page.locator("#connection")).toContainText("Connected");
   await expect
     .poll(async () => (await canvasStats(page)).dark, { timeout: 15000 })
     .toBeGreaterThan(20);
@@ -66,18 +66,18 @@ test("desktop physical run, controls, replay and export", async ({
     .not.toBe(initial.checksum);
   await page.locator("#camera-home").click();
   await page.locator("#step").click();
-  await expect(page.locator("#status-text")).toHaveText("已暂停", {
+  await expect(page.locator("#status-text")).toHaveText("Paused", {
     timeout: 30000,
   });
   await expect(page.locator("#run-budget")).toContainText("01 /");
   await page.locator("#history-list > summary").click();
   await page.locator('#events [data-cycle="1"]').click();
   await expect(page.locator("#decision-heading")).toHaveText(
-    "历史输出 · 第 1 步",
+    "History output · Step 1 Step",
   );
-  await expect(page.locator("#stage")).toHaveText("历史");
+  await expect(page.locator("#stage")).toHaveText("History");
   await expect(page.locator("#decision-note")).toContainText(
-    "三维场景保持实时显示",
+    "3D scene remains real-time display",
   );
   await page.screenshot({ path: testInfo.outputPath("history-decision.png") });
   await page.locator("#history-observations summary").first().click();
@@ -89,29 +89,29 @@ test("desktop physical run, controls, replay and export", async ({
   await page.locator("#history-observations summary").nth(2).click();
   await expect(page.locator("#history-payload")).toContainText('"candidates"');
   await page.locator("#decision-live").click();
-  await expect(page.locator("#decision-heading")).toHaveText("动作输出");
+  await expect(page.locator("#decision-heading")).toHaveText("Action output");
   await expect(page.locator("#history-observations")).toBeHidden();
   const stepped = await canvasStats(page);
   expect(stepped.checksum).not.toBe(initial.checksum);
   await page.locator("#run").click();
-  await expect(page.locator("#status-text")).toHaveText("运行中");
+  await expect(page.locator("#status-text")).toHaveText("Running");
   await page.locator("#run").click();
-  await expect(page.locator("#status-text")).toHaveText("已暂停");
+  await expect(page.locator("#status-text")).toHaveText("Paused");
   await page.locator("#run").click();
-  await expect(page.locator("#status-text")).toHaveText("验证通过", {
+  await expect(page.locator("#status-text")).toHaveText("Verification passed", {
     timeout: 60000,
   });
   await expect(page.locator("#support")).toHaveText("YES");
-  await expect(page.locator("#model-calls")).toHaveText("调用 0 次");
+  await expect(page.locator("#model-calls")).toHaveText("Call 0 Times");
   await page.screenshot({ path: testInfo.outputPath("completed.png") });
   await page.locator("#replay-play").click();
-  await expect(page.locator("#status-text")).toHaveText("轨迹回放");
+  await expect(page.locator("#status-text")).toHaveText("Trajectory replay");
   const first = await page.locator("#timeline").inputValue();
   await expect
     .poll(() => page.locator("#timeline").inputValue())
     .not.toBe(first);
   await page.locator("#live").click();
-  await expect(page.locator("#status-text")).toHaveText("验证通过");
+  await expect(page.locator("#status-text")).toHaveText("Verification passed");
   const [download] = await Promise.all([
     page.waitForEvent("download"),
     page.locator("#export").click(),
@@ -119,11 +119,11 @@ test("desktop physical run, controls, replay and export", async ({
   expect(download.suggestedFilename()).toContain(".json");
   await page.locator('[data-task="barrier"]').click();
   await expect(page.locator("#scene-task")).toHaveText("BARRIER");
-  await expect(page.locator("#status-text")).toHaveText("待命");
+  await expect(page.locator("#status-text")).toHaveText("Standby");
   await page.locator("#run").click();
-  await expect(page.locator("#status-text")).toHaveText("运行中");
+  await expect(page.locator("#status-text")).toHaveText("Running");
   await page.locator("#stop").click();
-  await expect(page.locator("#status-text")).toHaveText("已停止");
+  await expect(page.locator("#status-text")).toHaveText("Stopped");
   expect(errors).toEqual([]);
 });
 
@@ -172,7 +172,7 @@ test("model connection form works on desktop and mobile without exposing keys", 
   await expect(page.locator("#provider")).toHaveValue("chat");
   await expect(page.locator("#threshold")).toBeDisabled();
   await expect(page.locator("#api-key")).toHaveValue("");
-  await expect(page.locator("#provider-note")).toContainText("已配置 · 未验证");
+  await expect(page.locator("#provider-note")).toContainText("Configured · Not verified");
   const configured = await (await page.request.get("/api/state")).json();
   let inferenceRequests = 0;
   page.on("request", (request) => {
@@ -195,16 +195,16 @@ test("model connection form works on desktop and mobile without exposing keys", 
   await page.locator("#settings-open").click();
   await page.locator("#model-connect").click();
   await expect(page.locator("#connection-dialog")).toBeVisible();
-  await expect(page.locator("#key-state")).toHaveText("已配置");
+  await expect(page.locator("#key-state")).toHaveText("Configured");
   await expect(page.locator("#api-key")).toHaveValue("");
   await expect(page.locator("#connection-storage")).toContainText(
-    "刷新页面不会丢失",
+    "refreshing page will not lose data",
   );
   const box = await page.locator("#connection-dialog").boundingBox();
   expect(box.x).toBeGreaterThanOrEqual(0);
   expect(box.x + box.width).toBeLessThanOrEqual(390);
   await expect(page.locator("#verification-label")).toContainText(
-    "已配置 · 未验证",
+    "Configured · Not verified",
   );
   await page.screenshot({
     path: testInfo.outputPath("model-connection-mobile.png"),
@@ -267,7 +267,7 @@ test("Claude native configuration is separate and does not expose credentials", 
   await page.locator("#model-connect").click();
   await expect(page.locator("#api-provider")).toHaveValue("claude");
   await expect(page.locator("#api-key")).toHaveValue("");
-  await expect(page.locator("#key-state")).toHaveText("已配置");
+  await expect(page.locator("#key-state")).toHaveText("Configured");
   await page.locator("#connection-close").click();
 });
 
@@ -291,13 +291,13 @@ test("pending inference retains the previous result and history stays separate f
     latency_ms: 310,
   };
   const candidates = [
-    { id: "direct", label: "正常执行", admitted: true },
-    { id: "hold", label: "保持不动", admitted: true },
+    { id: "direct", label: "Normal execution", admitted: true },
+    { id: "hold", label: "Remain stationary", admitted: true },
   ];
   const first = {
     cycle: 1,
     phase: "approach",
-    label: "正常执行",
+    label: "Normal execution",
     intent,
     decision,
     candidates,
@@ -340,7 +340,7 @@ test("pending inference retains the previous result and history stays separate f
     candidates: [],
   };
   await expect(page.locator("#decision-context")).toHaveText(
-    "上一条决策 · 正在计算新决策",
+    "Previous decision · Computing new decision",
   );
   await expect(page.locator("#probabilities")).toContainText("73.0%");
   await expect(page.locator("#intent-probabilities")).toContainText("82.0%");
@@ -361,10 +361,10 @@ test("pending inference retains the previous result and history stays separate f
   await page.locator("#history-list > summary").click();
   await page.locator('#events [data-cycle="1"]').click();
   await expect(page.locator("#decision-heading")).toHaveText(
-    "历史输出 · 第 1 步",
+    "History output · Step 1 Step",
   );
   await expect(page.locator("#intent-probabilities .selected")).toContainText(
-    "移至物体上方",
+    "Move above object",
   );
   await expect(page.locator("#probabilities")).toContainText("73.0%");
   await expect(page.locator("#intent-latency")).toHaveText("420 ms");
@@ -378,19 +378,19 @@ test("pending inference retains the previous result and history stays separate f
     stage: "observing",
     history: [first, { ...first, cycle: 2, phase: "descend" }],
   };
-  await expect(page.locator("#event-count")).toHaveText("2 步");
+  await expect(page.locator("#event-count")).toHaveText("2 Step");
   await expect(page.locator("#intent-probabilities .selected")).toContainText(
-    "移至物体上方",
+    "Move above object",
   );
   await page.locator("#decision-live").click();
   await expect(page.locator("#intent-probabilities .selected")).toContainText(
-    "下降对准",
+    "Lower to align",
   );
   await expect(page.locator("#probabilities")).toContainText("91.0%");
   snapshot = {
     ...snapshot,
     status: "stalled",
-    message: "连续动作没有产生有效变化，请查看记录后重置。",
+    message: "Continuous actions have no valid changes; please check records and reset.",
     last_decision_inputs: {
       phase: {
         state: { fixture: "actual-failed-step-input" },
@@ -406,14 +406,14 @@ test("pending inference retains the previous result and history stays separate f
         time: 12.3,
         event: "stalled",
         level: "warning",
-        message: "连续动作没有有效变化",
+        message: "Continuous actions have no valid changes",
         cycle: 2,
       },
     ],
   };
-  await expect(page.locator("#status-text")).toHaveText("决策停滞");
+  await expect(page.locator("#status-text")).toHaveText("Decision stalled");
   await expect(page.locator("#decision-note")).toContainText(
-    "请查看记录后重置",
+    "Please check records and reset",
   );
   await expect(page.locator("#run")).toBeDisabled();
   await expect(page.locator("#step")).toBeDisabled();
@@ -424,7 +424,7 @@ test("pending inference retains the previous result and history stays separate f
   );
   await page.locator("#runtime-log > summary").click();
   await expect(page.locator("#log-entries .warning")).toContainText(
-    "连续动作没有有效变化",
+    "Continuous actions have no valid changes",
   );
 });
 
@@ -450,7 +450,7 @@ test("connection verification distinguishes saved, passed and failed calls", asy
       status: shouldPass ? "passed" : "failed",
       model: "test-resolved-model",
       latency_ms: 89,
-      message: shouldPass ? "测试通过" : "服务认证失败，请检查 API Key",
+      message: shouldPass ? "Test passed" : "Service authentication failed, please check API Key",
     };
     return route.fulfill({
       json: {
@@ -479,28 +479,28 @@ test("connection verification distinguishes saved, passed and failed calls", asy
   await expect(page.locator("#api-model")).toHaveValue("gpt-6-astra");
   await expect(page.locator("#api-key")).toHaveValue("");
   await expect(page.locator("#verification-label")).toHaveText(
-    "草稿已修改 · 尚未保存或验证",
+    "Draft modified · Not saved or verified",
   );
   expect(outboundCalls).toBe(0);
   await page.locator("#api-url").fill("https://example.invalid/v1");
   await page.locator("#api-model").fill("test-ui-model");
   await page.locator("#api-key").fill("test-ui-verification-secret");
   await page.locator("#connection-save").click();
-  await expect(page.locator("#provider-note")).toContainText("已配置 · 未验证");
+  await expect(page.locator("#provider-note")).toContainText("Configured · Not verified");
   await page.locator("#model-connect").click();
   await page.locator("#connection-test").click();
   await expect(page.locator("#verification-label")).toContainText(
-    "已验证 · test-resolved-model · 89 ms",
+    "Verified · test-resolved-model · 89 ms",
   );
-  await expect(page.locator("#provider-note")).toContainText("已验证");
+  await expect(page.locator("#provider-note")).toContainText("Verified");
   await expect(page.locator("#api-key")).toHaveValue("");
   shouldPass = false;
   await page.locator("#connection-test").click();
-  await expect(page.locator("#verification-label")).toContainText("验证失败");
+  await expect(page.locator("#verification-label")).toContainText("Verification failed");
   await expect(page.locator("#connection-result")).toContainText(
-    "服务认证失败",
+    "Service authentication failed",
   );
-  await expect(page.locator("#provider-note")).toContainText("验证失败");
+  await expect(page.locator("#provider-note")).toContainText("Verification failed");
 });
 
 test("control buttons send only one command while a request is pending", async ({
@@ -557,7 +557,7 @@ test("real decision layout adapts continuously from desktop to narrow phones", a
   );
   await expect(page.locator("#history-list")).not.toHaveAttribute("open", "");
   await page.locator("#step").click();
-  await expect(page.locator("#status-text")).toHaveText("已暂停");
+  await expect(page.locator("#status-text")).toHaveText("Paused");
   await expect(page.locator("#probabilities .selected")).toHaveCount(1);
   for (const [width, height] of [
     [1440, 960],
@@ -607,7 +607,7 @@ test("real decision layout adapts continuously from desktop to narrow phones", a
   }
   await page.setViewportSize({ width: 330, height: 812 });
   await page.locator("#reset").click();
-  await expect(page.locator("#status-text")).toHaveText("待命");
+  await expect(page.locator("#status-text")).toHaveText("Standby");
   await page.locator("#settings-open").click();
   await page.locator("#model-connect").click();
   await expect(page.locator("#connection-dialog")).toBeVisible();

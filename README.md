@@ -1,4 +1,4 @@
-# OmniJev Vision Preview
+# OmniJev Preview
 
 OmniJev is a multimodal research project for robot decision-making, providing a finite-choice decision SDK, an HTTP service, and a MuJoCo robotic arm workbench.
 
@@ -12,6 +12,8 @@ The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation
 - Embodied workbench: Python 3.12+; frontend build artifacts are included, no Node.js required for execution.
 - Linux GPU inference: CMake 3.24+, a C++ compiler, and a CUDA Toolkit compatible with the driver. The validated configuration uses an NVIDIA A800 80GB with approximately 25GB of GPU memory for the model service; requirements on other hardware depend on context length and offloading configuration.
 - Model files are approximately 26.1GB, and additional space is needed during installation for dependencies, compiled artifacts, and download cache.
+
+
 
 ## Quick Start
 

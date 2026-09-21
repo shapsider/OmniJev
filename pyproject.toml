@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omnijev"
+version = "0.3.0"
+description = "Local frozen-model decisions for dynamic visual and text scenarios"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["omnijev*"]
+
+[tool.setuptools.package-data]
+omnijev = ["web/*.html"]

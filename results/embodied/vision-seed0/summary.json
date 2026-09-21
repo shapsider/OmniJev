@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "completed_episodes": 2,
+  "expected_episodes": 2,
+  "protocol": {
+    "providers": [
+      "omnijev",
+      "omni_direct"
+    ],
+    "tasks": [
+      "transfer"
+    ],
+    "seeds": [
+      0
+    ],
+    "observation": "vision",
+    "control": "incremental",
+    "max_cycles": 60,
+    "timeout": 600,
+    "reasoning_tokens": 4096,
+    "intervention": null,
+    "model": "omnijev-nemotron",
+    "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+    "threshold": 0,
+    "shuffle_candidates": true,
+    "upstream_commit": "59a00c60e0f80fa32d14df1a365166267505980c",
+    "adapter_sha256": "0df7054315db3591a96ffb6187486e5482d2fcb78af1056cfd9998ebd4f04344",
+    "timing": "session wall time; includes policy, previews and physics; no model loading; natural backend cache"
+  },
+  "methods": {
+    "omnijev": {
+      "n": 1,
+      "successes": 0,
+      "wall_seconds_mean": 286.0,
+      "model_calls": 60,
+      "request_latency_ms_p50": 4765.091958019184,
+      "request_latency_ms_p95": 4960.180106599,
+      "input_tokens_known": 228408,
+      "output_tokens_known": 180,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {
+        "exhausted": 1
+      }
+    },
+    "omni_direct": {
+      "n": 1,
+      "successes": 0,
+      "wall_seconds_mean": 285.55,
+      "model_calls": 60,
+      "request_latency_ms_p50": 4622.179624508135,
+      "request_latency_ms_p95": 4866.413130654837,
+      "input_tokens_known": 228408,
+      "output_tokens_known": 180,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {
+        "exhausted": 1
+      }
+    }
+  },
+  "note": "固定仿真先导实验；技能模式含程序轨迹，非端到端视觉控制。失败保留；tokens 为已知用量，usage_incomplete_episodes 标记用量不完整回合。回合耗时包含物理执行与模型等待，不含进程启动和初始建场。"
+}

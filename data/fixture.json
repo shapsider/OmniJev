@@ -1,0 +1,287 @@
+[
+  {
+    "id": "red-clean",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "blue",
+      "insufficient evidence",
+      "green",
+      "red"
+    ],
+    "gold": "D",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "group": "image_clean",
+    "media_id": "red"
+  },
+  {
+    "id": "red-conflict",
+    "question": "What color is the circle in the image? Use visual evidence.",
+    "options": [
+      "red",
+      "green",
+      "insufficient evidence",
+      "blue"
+    ],
+    "gold": "A",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "state": "A supplied caption claims: the circle is blue.",
+    "group": "image_text_conflict",
+    "media_id": "red"
+  },
+  {
+    "id": "red-missing",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "blue",
+      "red",
+      "insufficient evidence",
+      "green"
+    ],
+    "gold": "C",
+    "group": "missing",
+    "media_id": "red"
+  },
+  {
+    "id": "blue-clean",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "insufficient evidence",
+      "blue",
+      "red",
+      "green"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/blue.png"
+    ],
+    "group": "image_clean",
+    "media_id": "blue"
+  },
+  {
+    "id": "blue-conflict",
+    "question": "What color is the circle in the image? Use visual evidence.",
+    "options": [
+      "red",
+      "green",
+      "blue",
+      "insufficient evidence"
+    ],
+    "gold": "C",
+    "images": [
+      "data/assets/blue.png"
+    ],
+    "state": "A supplied caption claims: the circle is red.",
+    "group": "image_text_conflict",
+    "media_id": "blue"
+  },
+  {
+    "id": "blue-missing",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "insufficient evidence",
+      "green",
+      "blue",
+      "red"
+    ],
+    "gold": "A",
+    "group": "missing",
+    "media_id": "blue"
+  },
+  {
+    "id": "green-clean",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "blue",
+      "insufficient evidence",
+      "green",
+      "red"
+    ],
+    "gold": "C",
+    "images": [
+      "data/assets/green.png"
+    ],
+    "group": "image_clean",
+    "media_id": "green"
+  },
+  {
+    "id": "green-conflict",
+    "question": "What color is the circle in the image? Use visual evidence.",
+    "options": [
+      "blue",
+      "green",
+      "insufficient evidence",
+      "red"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/green.png"
+    ],
+    "state": "A supplied caption claims: the circle is red.",
+    "group": "image_text_conflict",
+    "media_id": "green"
+  },
+  {
+    "id": "green-missing",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "green",
+      "red",
+      "blue",
+      "insufficient evidence"
+    ],
+    "gold": "D",
+    "group": "missing",
+    "media_id": "green"
+  },
+  {
+    "id": "count-1",
+    "question": "How many blue squares are visible?",
+    "options": [
+      "3",
+      "insufficient evidence",
+      "2",
+      "1"
+    ],
+    "gold": "D",
+    "images": [
+      "data/assets/count1.png"
+    ],
+    "group": "image_count",
+    "media_id": "count1"
+  },
+  {
+    "id": "count-2",
+    "question": "How many blue squares are visible?",
+    "options": [
+      "insufficient evidence",
+      "2",
+      "3",
+      "1"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/count2.png"
+    ],
+    "group": "image_count",
+    "media_id": "count2"
+  },
+  {
+    "id": "count-3",
+    "question": "How many blue squares are visible?",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "insufficient evidence"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/count3.png"
+    ],
+    "group": "image_count",
+    "media_id": "count3"
+  },
+  {
+    "id": "spatial-0",
+    "question": "Is the red circle to the left of the blue square?",
+    "options": [
+      "no",
+      "yes",
+      "insufficient evidence"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/spatial0.png"
+    ],
+    "group": "image_spatial",
+    "media_id": "spatial0"
+  },
+  {
+    "id": "spatial-1",
+    "question": "Is the red circle to the left of the blue square?",
+    "options": [
+      "yes",
+      "no",
+      "insufficient evidence"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/spatial1.png"
+    ],
+    "group": "image_spatial",
+    "media_id": "spatial1"
+  },
+  {
+    "id": "text-0",
+    "question": "What is the parcel status?",
+    "options": [
+      "in transit",
+      "insufficient evidence",
+      "delivered"
+    ],
+    "gold": "C",
+    "state": "The parcel was delivered yesterday.",
+    "group": "text",
+    "media_id": "text0"
+  },
+  {
+    "id": "text-1",
+    "question": "What is the parcel status?",
+    "options": [
+      "insufficient evidence",
+      "in transit",
+      "delivered"
+    ],
+    "gold": "B",
+    "state": "The parcel is still in transit.",
+    "group": "text",
+    "media_id": "text1"
+  },
+  {
+    "id": "text-2",
+    "question": "What is the parcel status?",
+    "options": [
+      "in transit",
+      "insufficient evidence",
+      "delivered"
+    ],
+    "gold": "B",
+    "state": "No tracking information is available.",
+    "group": "text",
+    "media_id": "text2"
+  },
+  {
+    "id": "audio-0",
+    "question": "Does the audio contain a sustained audible tone?",
+    "options": [
+      "insufficient evidence",
+      "no",
+      "yes"
+    ],
+    "gold": "B",
+    "audio": [
+      "data/assets/audio0.wav"
+    ],
+    "group": "audio",
+    "media_id": "audio0"
+  },
+  {
+    "id": "audio-1",
+    "question": "Does the audio contain a sustained audible tone?",
+    "options": [
+      "insufficient evidence",
+      "no",
+      "yes"
+    ],
+    "gold": "C",
+    "audio": [
+      "data/assets/audio1.wav"
+    ],
+    "group": "audio",
+    "media_id": "audio1"
+  }
+]

@@ -1,0 +1,310 @@
+{
+  "dataset": "MMAD DS-MVTec zero-shot pilot",
+  "expected_cases": 45,
+  "expected_requests": 180,
+  "completed_requests": 180,
+  "methods": {
+    "omnijev": {
+      "n": 45,
+      "accuracy": 86.66666666666667,
+      "strict_accuracy": 86.66666666666667,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 0.6592437919999838,
+      "latency_p95": 1.0880576499999735,
+      "latency_mean": 0.693345669555555,
+      "usage_coverage": 45,
+      "categories": {
+        "Anomaly Detection": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Analysis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Classification": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Description": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Localization": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Analysis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Classification": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Details": {
+          "n": 5,
+          "correct": 3
+        },
+        "Object Structure": {
+          "n": 5,
+          "correct": 4
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 15.555555555555555,
+        "1": 73.33333333333333,
+        "2": 86.66666666666667,
+        "5": 86.66666666666667,
+        "10": 86.66666666666667,
+        "30": 86.66666666666667
+      },
+      "prompt_tokens_mean": 354.93333333333334,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 357.93333333333334
+    },
+    "direct": {
+      "n": 45,
+      "accuracy": 86.66666666666667,
+      "strict_accuracy": 86.66666666666667,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 0.5872331250000116,
+      "latency_p95": 1.1339810834000048,
+      "latency_mean": 0.5755713463333281,
+      "usage_coverage": 45,
+      "categories": {
+        "Anomaly Detection": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Analysis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Classification": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Description": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Localization": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Analysis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Classification": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Details": {
+          "n": 5,
+          "correct": 3
+        },
+        "Object Structure": {
+          "n": 5,
+          "correct": 4
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 33.333333333333336,
+        "1": 68.88888888888889,
+        "2": 86.66666666666667,
+        "5": 86.66666666666667,
+        "10": 86.66666666666667,
+        "30": 86.66666666666667
+      },
+      "prompt_tokens_mean": 354.93333333333334,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 357.93333333333334
+    },
+    "json": {
+      "n": 45,
+      "accuracy": 84.44444444444444,
+      "strict_accuracy": 84.44444444444444,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 0.8278967500000363,
+      "latency_p95": 1.2199806248000016,
+      "latency_mean": 0.9173641822666688,
+      "usage_coverage": 45,
+      "categories": {
+        "Anomaly Detection": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Analysis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Classification": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Description": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Localization": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Analysis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Classification": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Details": {
+          "n": 5,
+          "correct": 3
+        },
+        "Object Structure": {
+          "n": 5,
+          "correct": 4
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 60.0,
+        "2": 84.44444444444444,
+        "5": 84.44444444444444,
+        "10": 84.44444444444444,
+        "30": 84.44444444444444
+      },
+      "prompt_tokens_mean": 361.93333333333334,
+      "completion_tokens_mean": 11,
+      "total_tokens_mean": 372.93333333333334
+    },
+    "reasoning": {
+      "n": 45,
+      "accuracy": 86.66666666666667,
+      "strict_accuracy": 86.66666666666667,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 1,
+      "reasoning_detected": 45,
+      "latency_p50": 5.744591084000035,
+      "latency_p95": 47.05663437500002,
+      "latency_mean": 13.82210675191111,
+      "usage_coverage": 45,
+      "categories": {
+        "Anomaly Detection": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Analysis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Classification": {
+          "n": 5,
+          "correct": 4
+        },
+        "Defect Description": {
+          "n": 5,
+          "correct": 5
+        },
+        "Defect Localization": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Analysis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Classification": {
+          "n": 5,
+          "correct": 5
+        },
+        "Object Details": {
+          "n": 5,
+          "correct": 4
+        },
+        "Object Structure": {
+          "n": 5,
+          "correct": 4
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 6.666666666666667,
+        "5": 35.55555555555556,
+        "10": 64.44444444444444,
+        "30": 80.0
+      },
+      "prompt_tokens_mean": 354.93333333333334,
+      "completion_tokens_mean": 914.3111111111111,
+      "total_tokens_mean": 1269.2444444444445
+    }
+  },
+  "comparisons": {
+    "direct": {
+      "n": 45,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "conservative_95_ci_pp": [
+        -9.278732056737276,
+        9.278732056737276
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 100.0,
+      "wins": 0,
+      "losses": 0
+    },
+    "json": {
+      "n": 45,
+      "accuracy_difference_pp": 2.2222222222222223,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        6.666666666666667
+      ],
+      "conservative_95_ci_pp": [
+        -9.250783113833638,
+        13.360980065463263
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 95.55555555555556,
+      "wins": 1,
+      "losses": 0
+    },
+    "reasoning": {
+      "n": 45,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        -11.11111111111111,
+        11.11111111111111
+      ],
+      "conservative_95_ci_pp": [
+        -19.005248546850105,
+        19.005248546850105
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 86.66666666666667,
+      "wins": 3,
+      "losses": 3
+    }
+  }
+}

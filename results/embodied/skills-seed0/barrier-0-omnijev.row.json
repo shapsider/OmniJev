@@ -1,0 +1,33 @@
+{
+  "task": "barrier",
+  "seed": 0,
+  "provider": "omnijev",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 14.39,
+  "model_calls": 13,
+  "input_tokens": 8873,
+  "output_tokens": 39,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "5efd2c2ba7653f509cc148132a8c8b98e9fedc5e720adf4eb86237d9b696a980",
+  "message": null,
+  "model_latency_ms": [
+    1922.1053330111317,
+    1060.0470410427079,
+    759.2302500270307,
+    971.7330419807695,
+    708.4134590113536,
+    1348.8592079957016,
+    896.1922909948044,
+    795.1992090092972,
+    670.4750409699045,
+    795.1457499875687,
+    849.9714999925345,
+    698.7835409818217,
+    1382.5505420099944
+  ],
+  "episode_file": "barrier-0-omnijev.json"
+}

@@ -1,0 +1,33 @@
+{
+  "task": "transfer",
+  "seed": 0,
+  "provider": "omni_direct",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 7.87,
+  "model_calls": 13,
+  "input_tokens": 8769,
+  "output_tokens": 39,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
+  "message": null,
+  "model_latency_ms": [
+    1186.9428750360385,
+    883.8924579904415,
+    492.56975000025705,
+    435.89125003200024,
+    483.61100000329316,
+    142.07362500019372,
+    377.3033749894239,
+    493.0284589645453,
+    364.5869580213912,
+    495.4002919839695,
+    441.88612495781854,
+    480.1118330215104,
+    133.28887504758313
+  ],
+  "episode_file": "transfer-0-omni_direct.json"
+}

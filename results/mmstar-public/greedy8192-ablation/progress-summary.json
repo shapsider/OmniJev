@@ -1,0 +1,214 @@
+{
+  "dataset": "MMStar",
+  "expected_cases": 300,
+  "expected_requests": 1200,
+  "completed_requests": 74,
+  "methods": {
+    "omnijev": {
+      "n": 16,
+      "accuracy": 75.0,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 0.8660547084999735,
+      "latency_p95": 1.5306453230000159,
+      "latency_mean": 0.7733547290624996,
+      "usage_coverage": 16,
+      "categories": {
+        "fine-grained perception": {
+          "n": 3,
+          "correct": 3
+        },
+        "instance reasoning": {
+          "n": 2,
+          "correct": 2
+        },
+        "logical reasoning": {
+          "n": 1,
+          "correct": 0
+        },
+        "math": {
+          "n": 6,
+          "correct": 5
+        },
+        "science & technology": {
+          "n": 4,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 37.5,
+        "1": 37.5,
+        "2": 75.0,
+        "5": 75.0,
+        "10": 75.0,
+        "30": 75.0
+      },
+      "prompt_tokens_mean": 397.625,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 400.625
+    },
+    "direct": {
+      "n": 16,
+      "accuracy": 87.5,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 0.8417028329999994,
+      "latency_p95": 1.4600052294999557,
+      "latency_mean": 0.7834582057500064,
+      "usage_coverage": 16,
+      "categories": {
+        "fine-grained perception": {
+          "n": 3,
+          "correct": 3
+        },
+        "instance reasoning": {
+          "n": 4,
+          "correct": 3
+        },
+        "logical reasoning": {
+          "n": 3,
+          "correct": 3
+        },
+        "math": {
+          "n": 2,
+          "correct": 2
+        },
+        "science & technology": {
+          "n": 4,
+          "correct": 3
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 25.0,
+        "1": 68.75,
+        "2": 87.5,
+        "5": 87.5,
+        "10": 87.5,
+        "30": 87.5
+      },
+      "prompt_tokens_mean": 390.9375,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 393.9375
+    },
+    "json": {
+      "n": 14,
+      "accuracy": 57.142857142857146,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 1.3732990830000062,
+      "latency_p95": 1.9728339504499728,
+      "latency_mean": 1.133081047571427,
+      "usage_coverage": 14,
+      "categories": {
+        "coarse perception": {
+          "n": 3,
+          "correct": 1
+        },
+        "fine-grained perception": {
+          "n": 3,
+          "correct": 1
+        },
+        "instance reasoning": {
+          "n": 2,
+          "correct": 1
+        },
+        "logical reasoning": {
+          "n": 1,
+          "correct": 1
+        },
+        "math": {
+          "n": 3,
+          "correct": 2
+        },
+        "science & technology": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 7.142857142857143,
+        "1": 7.142857142857143,
+        "2": 50.0,
+        "5": 57.142857142857146,
+        "10": 57.142857142857146,
+        "30": 57.142857142857146
+      },
+      "prompt_tokens_mean": 408.2142857142857,
+      "completion_tokens_mean": 10.357142857142858,
+      "total_tokens_mean": 418.57142857142856
+    },
+    "reasoning": {
+      "n": 28,
+      "accuracy": 78.57142857142857,
+      "invalid": 2,
+      "errors": 0,
+      "truncated": 2,
+      "reasoning_detected": 28,
+      "latency_p50": 12.89488708350004,
+      "latency_p95": 133.4783856606499,
+      "latency_mean": 26.30905932742857,
+      "usage_coverage": 28,
+      "categories": {
+        "coarse perception": {
+          "n": 4,
+          "correct": 4
+        },
+        "fine-grained perception": {
+          "n": 5,
+          "correct": 4
+        },
+        "instance reasoning": {
+          "n": 6,
+          "correct": 5
+        },
+        "logical reasoning": {
+          "n": 5,
+          "correct": 4
+        },
+        "math": {
+          "n": 4,
+          "correct": 3
+        },
+        "science & technology": {
+          "n": 4,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 10.714285714285714,
+        "10": 35.714285714285715,
+        "30": 75.0
+      },
+      "prompt_tokens_mean": 394.67857142857144,
+      "completion_tokens_mean": 1339.3214285714287,
+      "total_tokens_mean": 1734
+    }
+  },
+  "comparisons": {
+    "reasoning": {
+      "n": 1,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "conservative_95_ci_pp": [
+        -98.75,
+        98.75
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 100.0,
+      "wins": 0,
+      "losses": 0
+    }
+  }
+}

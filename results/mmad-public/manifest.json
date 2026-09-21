@@ -1,0 +1,785 @@
+{
+  "dataset": "MMAD DS-MVTec zero-shot pilot",
+  "source": "https://huggingface.co/datasets/jiang-cc/MMAD",
+  "source_sha256": "639343b491bc67b2abb3c5d719f221ce27f83b2ed97948f4e88055aaa31f1c1e",
+  "seed": 20260920,
+  "cases": [
+    {
+      "id": "mmad-048f0ea8aab8b3d2",
+      "question": "Is there any defect in the object?",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/5ac2640fe0a8533d.png"
+      ],
+      "category": "Anomaly Detection",
+      "image_sha256": "1c32266ed0d753fa94665fe474e618f68b01bb334f087eb045f9f3d9f3a56e99",
+      "original_path": "DS-MVTec/toothbrush/image/defective/007.png"
+    },
+    {
+      "id": "mmad-c1195477aa080bd3",
+      "question": "Is there any defect in the object?",
+      "options": [
+        "No.",
+        "Yes."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4f26d140e545b3fc.png"
+      ],
+      "category": "Anomaly Detection",
+      "image_sha256": "ab390cac11b23426e3e4c9f7b409985fa92937d77f496890f6d107f841536a0a",
+      "original_path": "DS-MVTec/transistor/image/good/025.png"
+    },
+    {
+      "id": "mmad-4b463b94637db6f5",
+      "question": "Is there any defect in the object?",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4654fc2eafee5eb7.png"
+      ],
+      "category": "Anomaly Detection",
+      "image_sha256": "d1c23238d45ad30e0f3b8cffee6411a83459eb2c0bf36f2c921fd5106a18ca93",
+      "original_path": "DS-MVTec/toothbrush/image/defective/015.png"
+    },
+    {
+      "id": "mmad-ea1160485ac5ab2c",
+      "question": "Is there any defect in the object?",
+      "options": [
+        "No.",
+        "Yes."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/e826d94527ce1515.png"
+      ],
+      "category": "Anomaly Detection",
+      "image_sha256": "96b6699515a91d9a05e6e23a63a1283a32f27ed48585263ed70fa07d0a9bed6f",
+      "original_path": "DS-MVTec/cable/image/missing_cable/005.png"
+    },
+    {
+      "id": "mmad-1ca29a08dc6da034",
+      "question": "Is there any defect in the object?",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/33ff04959ef1ec02.png"
+      ],
+      "category": "Anomaly Detection",
+      "image_sha256": "36b7bcab8290fc43a36e2cf535544f5b0a4054d8e7943ebaec226aead2c042d1",
+      "original_path": "DS-MVTec/transistor/image/good/021.png"
+    },
+    {
+      "id": "mmad-2e4698e2804704c4",
+      "question": "There is a defect in the object. What additional detail is present about the defect?",
+      "options": [
+        "There is a smaller scratch or chip near the bottom right part.",
+        "It extends the shelf life of the pill.",
+        "It enhances the pill's appearance.",
+        "It changes the color of the entire pill."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/67d6a3489addd6bc.png"
+      ],
+      "category": "Defect Analysis",
+      "image_sha256": "d41a88f0d32951f29fca7823386b978078d2bb99bb59859d816e400a40cce233",
+      "original_path": "DS-MVTec/pill/image/scratch/005.png"
+    },
+    {
+      "id": "mmad-fec3283202b0e84b",
+      "question": "There is a defect in the object. What is the effect of the defect?",
+      "options": [
+        "It changes the color of the screw.",
+        "It makes the screw magnetic.",
+        "It may affect the structural integrity.",
+        "It has no effect."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/840675eefe762eac.png"
+      ],
+      "category": "Defect Analysis",
+      "image_sha256": "a1dd88767f9497abbd55b53e8d14d01b64eddad383b055a0189d66e1e10183a1",
+      "original_path": "DS-MVTec/screw/image/scratch_neck/007.png"
+    },
+    {
+      "id": "mmad-6733a8a34c7f5386",
+      "question": "There are some defects in the object. What could be the potential effect of these defects?",
+      "options": [
+        "They could improve the durability of the wood.",
+        "They could enhance the aesthetic appeal of the wood.",
+        "They could make the wood more resistant to water damage.",
+        "They could compromise the structural integrity or be considered aesthetically undesirable."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/3331f7ca1177f7fa.png"
+      ],
+      "category": "Defect Analysis",
+      "image_sha256": "76cd81212dd127d2d41cc6149d90bc423e9a34eea7cb8f1301261bb929353e40",
+      "original_path": "DS-MVTec/wood/image/combined/010.png"
+    },
+    {
+      "id": "mmad-9f0d7f5295823cad",
+      "question": "There is a defect in the object. Does the defect affect the uniformity of the component's structure?",
+      "options": [
+        "It has no effect on the component's structure.",
+        "It disrupts the uniformity of the component's structure.",
+        "It increases structural uniformity.",
+        "It makes the component more compact."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/9b54c3d16949b047.png"
+      ],
+      "category": "Defect Analysis",
+      "image_sha256": "daf6bae8d0d1c2fd8910ad72e20641047bb684a806e2edb85171b6504c6fb8a6",
+      "original_path": "DS-MVTec/transistor/image/bent_lead/004.png"
+    },
+    {
+      "id": "mmad-b4207c8cfc4f6158",
+      "question": "There is a defect in the object. What is the effect of the defect on the fabric?",
+      "options": [
+        "It enhances the fabric's appearance.",
+        "It disrupts the uniformity of the carpet's texture.",
+        "It has no visible effect on the fabric.",
+        "It changes the fabric texture."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/79cc35f7533e0a32.png"
+      ],
+      "category": "Defect Analysis",
+      "image_sha256": "1a53ca4222481e4fc54c3a3824384c13ff65ca88fb8fa183efde654634749dda",
+      "original_path": "DS-MVTec/carpet/image/color/008.png"
+    },
+    {
+      "id": "mmad-505a06c3e2538f1a",
+      "question": "There is a defect in the object. What is the type of the defect?",
+      "options": [
+        "Stain.",
+        "Breakage.",
+        "Discoloration.",
+        "Deformation."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/bc7b099f80634d8b.png"
+      ],
+      "category": "Defect Classification",
+      "image_sha256": "bc60260af053f2f84f71550dda6f2d88c9c8e427109a56249f0dc60e30bc9759",
+      "original_path": "DS-MVTec/bottle/image/broken_small/001.png"
+    },
+    {
+      "id": "mmad-7d059d5f98ff85cf",
+      "question": "There is a defect in the object. What is the type of the defect?",
+      "options": [
+        "Color mismatch.",
+        "Corrosion.",
+        "Scratch.",
+        "Deformation."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/271f7c021ef3991c.png"
+      ],
+      "category": "Defect Classification",
+      "image_sha256": "ad7738aa343db9d0f4aa73d6dd26634ce6d836c97026532c89d65a3b58d79b93",
+      "original_path": "DS-MVTec/screw/image/thread_side/011.png"
+    },
+    {
+      "id": "mmad-67860e0c8ac01eba",
+      "question": "There is a defect in the object. What is the type of the defect?",
+      "options": [
+        "Shape deformation.",
+        "Size discrepancy.",
+        "Color variation.",
+        "Imprint anomaly."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/cc77fdcc8d2cf7cd.png"
+      ],
+      "category": "Defect Classification",
+      "image_sha256": "07685635e898f3ed4e7ffc8c67cac6f683e43c9988af19b14e4da4ae3c36fd55",
+      "original_path": "DS-MVTec/capsule/image/faulty_imprint/003.png"
+    },
+    {
+      "id": "mmad-6852a5a3e2f4165a",
+      "question": "There is a defect in the object. What is the type of the defect?",
+      "options": [
+        "Torn edge.",
+        "Color inconsistency.",
+        "Stain on the fabric.",
+        "Disruption in weave pattern."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/dcd05e1d56c8c653.png"
+      ],
+      "category": "Defect Classification",
+      "image_sha256": "685fbfceed87515909665a0f07c94e8920decc1a10c93b9116e1a0862b0d7b20",
+      "original_path": "DS-MVTec/carpet/image/hole/009.png"
+    },
+    {
+      "id": "mmad-b43f9542a70399e4",
+      "question": "There is a defect in the object. What is the type of the defect?",
+      "options": [
+        "A missing tooth on the zipper.",
+        "A tear in the fabric.",
+        "A color mismatch in the fabric.",
+        "An irregularity in the fabric's texture."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/079f148e0a27a7cc.png"
+      ],
+      "category": "Defect Classification",
+      "image_sha256": "8ccae1361689344593df81312737e5e6dc6ed0ee97a8dcf6e01e87f6158b4fc2",
+      "original_path": "DS-MVTec/zipper/image/fabric_interior/011.png"
+    },
+    {
+      "id": "mmad-4685add9a1ef4c24",
+      "question": "There is a defect in the object. What is the appearance of the defect?",
+      "options": [
+        "A missing tooth.",
+        "Faded color on the zipper.",
+        "A scratch on the fabric.",
+        "Distorted shape of teeth."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/ec1b83b0ab121cdf.png"
+      ],
+      "category": "Defect Description",
+      "image_sha256": "d7584e27a71381ee37e7fb96fed1f0765f5f8eff2264830e4c0d0502b2e8d9b4",
+      "original_path": "DS-MVTec/zipper/image/rough/011.png"
+    },
+    {
+      "id": "mmad-0acbf6a0633e2fc1",
+      "question": "There is a defect in the object. What is the appearance of the defect?",
+      "options": [
+        "Discoloration.",
+        "Burn mark.",
+        "Printed label.",
+        "Frayed and unraveled threads."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4f585b0c3fde5cee.png"
+      ],
+      "category": "Defect Description",
+      "image_sha256": "8536c9965523e511bde7cfdd48d78208453fddb7a0830770501223908005db90",
+      "original_path": "DS-MVTec/carpet/image/hole/016.png"
+    },
+    {
+      "id": "mmad-1005fda7b18e6fb0",
+      "question": "There is a defect in the object. What is the appearance of the defect?",
+      "options": [
+        "A hole in the fabric.",
+        "Material appears to be unraveled.",
+        "A stain on the fabric.",
+        "A burn mark on the fabric."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/27c5ceb8e2a04f48.png"
+      ],
+      "category": "Defect Description",
+      "image_sha256": "68d0912ff916a82a0e243e595dc07b69d215c8ed6085826b9a7f13b1c7fa2957",
+      "original_path": "DS-MVTec/zipper/image/fabric_border/009.png"
+    },
+    {
+      "id": "mmad-41e67ad845516c42",
+      "question": "There is a defect in the object. What is the appearance of the defect?",
+      "options": [
+        "A puncture.",
+        "A crack.",
+        "An elongated scratch.",
+        "A dotted pattern."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/fb9a692c96280ae4.png"
+      ],
+      "category": "Defect Description",
+      "image_sha256": "1e5637c3409d05709eae62c7254f38900afa296902b1626e5902a5a2a4095f3d",
+      "original_path": "DS-MVTec/metal_nut/image/scratch/000.png"
+    },
+    {
+      "id": "mmad-d194f407d8fc7644",
+      "question": "There is a defect in the object. What is the appearance of the defect?",
+      "options": [
+        "It is a sharp, angular break.",
+        "It is irregular and somewhat round with yellowish-brown tones.",
+        "It is a clear, linear mark.",
+        "It has a circular pattern."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f0968eba04e0ae2c.png"
+      ],
+      "category": "Defect Description",
+      "image_sha256": "af4711cdd10c0164949362d4133654eec065a2ba8c34c671209f4c633b38b653",
+      "original_path": "DS-MVTec/tile/image/oil/002.png"
+    },
+    {
+      "id": "mmad-977c6999d30b6659",
+      "question": "There is a defect in the object. Where is the defect?",
+      "options": [
+        "On the corner of the tile.",
+        "On the back of the tile.",
+        "At the center of the tile.",
+        "At the edge of the tile."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/af696658e7a2353c.png"
+      ],
+      "category": "Defect Localization",
+      "image_sha256": "5508d71470f59e96183a8035fb90d63f050f3324e4884ef03f856528a4107d13",
+      "original_path": "DS-MVTec/tile/image/rough/001.png"
+    },
+    {
+      "id": "mmad-16a0b81d5cf4c982",
+      "question": "There is a defect in the object. Where is the defect?",
+      "options": [
+        "Near the head of the screw.",
+        "On the tip of the screw.",
+        "At the base of the screw.",
+        "In the center-right area of the screw's length."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/403b6097e150e8ba.png"
+      ],
+      "category": "Defect Localization",
+      "image_sha256": "8bb12074385c862e2b68472a27f582a0911fa5af2f47d47d8020ec567d24643e",
+      "original_path": "DS-MVTec/screw/image/thread_side/009.png"
+    },
+    {
+      "id": "mmad-b5a0d599afa97729",
+      "question": "There is a defect in the object. Where is the defect?",
+      "options": [
+        "Along the side of the tile.",
+        "Near the center of the tile.",
+        "On the bottom edge of the tile.",
+        "In one of the corners of the tile."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f7abecdfea4c3995.png"
+      ],
+      "category": "Defect Localization",
+      "image_sha256": "59dc8ce1dc39774120b61e3e1d670d4b198a16c3dfdca58b13f2d9a9b2ceb4b2",
+      "original_path": "DS-MVTec/tile/image/crack/003.png"
+    },
+    {
+      "id": "mmad-147154210cf323a6",
+      "question": "There is a defect in the object. Where is the defect?",
+      "options": [
+        "Along the edges of the wood.",
+        "On the backside of the wood.",
+        "In the center and center-left of the wood.",
+        "At the corners of the wood."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/eb235ffb2b7ab5b0.png"
+      ],
+      "category": "Defect Localization",
+      "image_sha256": "bc246386b18cb2534a880e3d4d240405e146a312fd8133e9d408b5426a215f33",
+      "original_path": "DS-MVTec/wood/image/hole/004.png"
+    },
+    {
+      "id": "mmad-b1d500bf6fa24c12",
+      "question": "There is a defect in the object. Where is the defect?",
+      "options": [
+        "Middle.",
+        "Bottom left section.",
+        "Top right section.",
+        "Bottom right section."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/14169f73b481981d.png"
+      ],
+      "category": "Defect Localization",
+      "image_sha256": "677df4df71517a80c0b941f4f001beb4f557e1272666eaea39146405da9041a3",
+      "original_path": "DS-MVTec/tile/image/rough/007.png"
+    },
+    {
+      "id": "mmad-c3c0ecb6d1dad9a3",
+      "question": "How does the fabric tape of the zipper appear?",
+      "options": [
+        "With a consistent texture.",
+        "With tears.",
+        "With disruptions in the pattern.",
+        "Miswoven."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/783b7e48c44684cf.png"
+      ],
+      "category": "Object Analysis",
+      "image_sha256": "b654b948eecb58a26adc7b401382819a984019c14036f438c3be92c7108d45b3",
+      "original_path": "DS-MVTec/zipper/image/good/016.png"
+    },
+    {
+      "id": "mmad-69518ae289bcbfad",
+      "question": "What shape is the toothbrush head?",
+      "options": [
+        "Round with a protruding end.",
+        "Oval with a narrower end.",
+        "Square with a flat end.",
+        "Triangular with a pointed end."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/05277ba20e172261.png"
+      ],
+      "category": "Object Analysis",
+      "image_sha256": "711ff7c5b73b33ae81398fa687290e6e28141aacdcfcdc8b4675d8088609590d",
+      "original_path": "DS-MVTec/toothbrush/image/good/002.png"
+    },
+    {
+      "id": "mmad-bd490f39fe9fbd7b",
+      "question": "How does the capsule's outer surface appear?",
+      "options": [
+        "It is smooth and intact.",
+        "It is wrinkled and misshapen.",
+        "It has blemishes and inconsistencies.",
+        "It is cracked and deformed."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/bc6fc9b89a3320ff.png"
+      ],
+      "category": "Object Analysis",
+      "image_sha256": "4f0f1a2180cea8d3c1d77a6c27535553c2d6b9d069bf5904205f2990050665cc",
+      "original_path": "DS-MVTec/capsule/image/good/014.png"
+    },
+    {
+      "id": "mmad-4042a8e3fa0937b3",
+      "question": "What is the effect of the lighting on the object?",
+      "options": [
+        "It highlights the texture's natural play with light.",
+        "It creates deep shadows that disrupt the pattern.",
+        "It makes the object appear multicolored.",
+        "It flattens the texture, making it look two-dimensional."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/f1106d6ab0647b4d.png"
+      ],
+      "category": "Object Analysis",
+      "image_sha256": "6eb737822555857cf4196f1b14164baf194b8c07fcc75170d7ca85ce9ec9f781",
+      "original_path": "DS-MVTec/grid/image/good/012.png"
+    },
+    {
+      "id": "mmad-7969e02cda64f7cd",
+      "question": "What additional information is provided about the metal nut?",
+      "options": [
+        "It has visible scratches and material inconsistencies.",
+        "It shows signs of cross-threading.",
+        "It is painted with multiple colors.",
+        "It conforms to the expected pattern without defects."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/7e309ea23f6a2ed2.png"
+      ],
+      "category": "Object Analysis",
+      "image_sha256": "c16c2b4f4a4920276fb80a7b2c87f7197f02a3e68f05ace1647f0e1b9ba8b53e",
+      "original_path": "DS-MVTec/metal_nut/image/good/013.png"
+    },
+    {
+      "id": "mmad-43a600783fd0f237",
+      "question": "What kind of product is in the image?",
+      "options": [
+        "A rubber wheel.",
+        "A plastic button.",
+        "A metal nut.",
+        "A ceramic tile."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/c685c57e31e2a75d.png"
+      ],
+      "category": "Object Classification",
+      "image_sha256": "f77e35d23046cdcd10d647d4eeeff54be41faa94371e07f526d169ccf234bcb3",
+      "original_path": "DS-MVTec/metal_nut/image/good/010.png"
+    },
+    {
+      "id": "mmad-1a84a98e5d5a32d1",
+      "question": "What kind of product is in the image?",
+      "options": [
+        "A transistor.",
+        "A capacitor.",
+        "A diode.",
+        "A resistor."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/9b59101dbb269168.png"
+      ],
+      "category": "Object Classification",
+      "image_sha256": "2c8c4fce80a3d354c5baeba8db235b2e8dfbee1603c4a587c64f8e56df1f6597",
+      "original_path": "DS-MVTec/transistor/image/good/022.png"
+    },
+    {
+      "id": "mmad-a542496a8d79cad7",
+      "question": "What kind of product is in the image?",
+      "options": [
+        "Woven fabric.",
+        "Plastic sheeting.",
+        "Ceramic tile.",
+        "Wooden plank."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/711884861bc6b09d.png"
+      ],
+      "category": "Object Classification",
+      "image_sha256": "866cc605aec6bf222907e9ae6dc0d05a69d7bea51ed76d5bd729bce6dba8edf6",
+      "original_path": "DS-MVTec/carpet/image/good/013.png"
+    },
+    {
+      "id": "mmad-6bb2550485d76958",
+      "question": "What kind of product is in the image?",
+      "options": [
+        "Leather surface.",
+        "Wooden surface.",
+        "Fabric material.",
+        "Plastic surface."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/81b52a77d8e35d5a.png"
+      ],
+      "category": "Object Classification",
+      "image_sha256": "45cf969cea93fc721fb409709608dc66c469aaf72d9ee83fd79eb22aa4a3d1df",
+      "original_path": "DS-MVTec/leather/image/good/002.png"
+    },
+    {
+      "id": "mmad-f0819ec566ba07b3",
+      "question": "What kind of product is in the image?",
+      "options": [
+        "Ceramic tile.",
+        "Leather material.",
+        "Canvas fabric.",
+        "Wooden plank."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/8596deea87b051da.png"
+      ],
+      "category": "Object Classification",
+      "image_sha256": "aff5a0bcb366d6a9287b4f5bcbc6aaca455134e61d6ea354425a3d2d363fc3ed",
+      "original_path": "DS-MVTec/leather/image/good/004.png"
+    },
+    {
+      "id": "mmad-283a3a2014b13bd1",
+      "question": "How many legs does the transistor in the image have?",
+      "options": [
+        "Two.",
+        "Four.",
+        "Three.",
+        "Five."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/843a85271c83074a.png"
+      ],
+      "category": "Object Details",
+      "image_sha256": "619f982b985494418ede863e2406c1d138ba2a3d63796adfbcb0c45bc4707899",
+      "original_path": "DS-MVTec/transistor/image/good/033.png"
+    },
+    {
+      "id": "mmad-293019d2fb41c780",
+      "question": "What is the appearance of the object's legs?",
+      "options": [
+        "They are bent at irregular angles.",
+        "They are well-formed and consistently spaced.",
+        "They are missing.",
+        "They are intertwined."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/92c87830810bb4e5.png"
+      ],
+      "category": "Object Details",
+      "image_sha256": "640adebb51e2d88cf5b5b3556b3303af0472b2429eb91b91a8c8c3e84ce8da58",
+      "original_path": "DS-MVTec/transistor/image/good/039.png"
+    },
+    {
+      "id": "mmad-494e563428751976",
+      "question": "What is printed on the capsule?",
+      "options": [
+        "\"500\".",
+        "There is no printing.",
+        "A brand logo.",
+        "\"250\"."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/798d537e14c3fb12.png"
+      ],
+      "category": "Object Details",
+      "image_sha256": "9308c98dc2b02a4ef41facc17f016b7a2badddf085945cee047bc724db1b7cee",
+      "original_path": "DS-MVTec/capsule/image/good/016.png"
+    },
+    {
+      "id": "mmad-d5643722706b8e29",
+      "question": "What is the appearance of the wood surface?",
+      "options": [
+        "Covered in carved designs.",
+        "Polished with a high gloss finish.",
+        "Textured with a distinctive grain pattern.",
+        "Painted with various colors."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/3ed206a34cab52be.png"
+      ],
+      "category": "Object Details",
+      "image_sha256": "e7ca60e9e6b112b0f0f0cbde3dbd1af3d6336ec068b3afc5f141090608ade1f2",
+      "original_path": "DS-MVTec/wood/image/good/015.png"
+    },
+    {
+      "id": "mmad-3500cda91473abaf",
+      "question": "What is the appearance of the transistor's leads?",
+      "options": [
+        "Bent and tarnished.",
+        "Melted.",
+        "Straight and untarnished.",
+        "Missing one lead."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/6fd1a9069c26b6c2.png"
+      ],
+      "category": "Object Details",
+      "image_sha256": "7c91d10c02199683a7e3b46d88188a8d200c6b065f1af738966fc8892b6242e1",
+      "original_path": "DS-MVTec/transistor/image/good/004.png"
+    },
+    {
+      "id": "mmad-22150b9077bc79fb",
+      "question": "What is the pattern of the bristle arrangement?",
+      "options": [
+        "Rectangular.",
+        "Random.",
+        "Circular.",
+        "Elliptical."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/4c75e6b9d96edc1a.png"
+      ],
+      "category": "Object Structure",
+      "image_sha256": "5bc08bcc32c14929468d08af67b2db894600c2dd76df97a2bf81cdc92e1bf73b",
+      "original_path": "DS-MVTec/toothbrush/image/good/000.png"
+    },
+    {
+      "id": "mmad-1d250275feab0404",
+      "question": "Where is the object located?",
+      "options": [
+        "In a warehouse.",
+        "In a residential setting.",
+        "In an outdoor setting.",
+        "The location is not specified."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/ddd0b7ab2f7a6f8f.png"
+      ],
+      "category": "Object Structure",
+      "image_sha256": "9d3a5c5e481a46db4aa7e8251270dbf25a5d54e0bac8f2eed6fb4d35209718fa",
+      "original_path": "DS-MVTec/carpet/image/good/023.png"
+    },
+    {
+      "id": "mmad-223153c392982ee0",
+      "question": "Where is the focus in the image?",
+      "options": [
+        "On the bottom of the bottle.",
+        "On the label of the bottle.",
+        "On the bottle's opening.",
+        "On the side of the bottle."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/03aef6e398ef3771.png"
+      ],
+      "category": "Object Structure",
+      "image_sha256": "cb8b1201fa027fada3209cde87514b778231e5d0923c5517d40e78b2e0423e35",
+      "original_path": "DS-MVTec/bottle/image/good/006.png"
+    },
+    {
+      "id": "mmad-d21bfcce38d8b696",
+      "question": "What is the location of the product?",
+      "options": [
+        "Hanging on a wall.",
+        "On a wood surface.",
+        "In a toolbox.",
+        "On a white background."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/b22a2bc401517231.png"
+      ],
+      "category": "Object Structure",
+      "image_sha256": "bbb766e20f3660502dfd73cb31348b7bb0a87eeebd1bd2961c1dc7a8b6692c5e",
+      "original_path": "DS-MVTec/screw/image/good/031.png"
+    },
+    {
+      "id": "mmad-67e5f2048541e2ed",
+      "question": "Where is the location of the textured surface?",
+      "options": [
+        "At the bottom of the nut.",
+        "On the top of the nut.",
+        "On the side of the nut.",
+        "Inside the nut."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmad-public/images/07d5607d248d8bdc.png"
+      ],
+      "category": "Object Structure",
+      "image_sha256": "c925291385ea6400a6c13adf3cfd83aa607c9a7fb96c0eb7a48d3d1cf84a1280",
+      "original_path": "DS-MVTec/hazelnut/image/good/006.png"
+    }
+  ],
+  "protocol": {
+    "methods": [
+      "omnijev",
+      "direct",
+      "json",
+      "reasoning"
+    ],
+    "temperature": 0,
+    "thinking_max_tokens": 20480,
+    "direct_max_tokens": 4,
+    "json_max_tokens": 32,
+    "sampling": "5 questions per annotation type, distinct images, DS-MVTec partition only; no reference images or domain knowledge; no previous QA answers.",
+    "cache": "natural cache; globally shuffled sequential requests",
+    "timing": "client encoding + HTTP + answer parsing; excludes offline media preparation and model loading",
+    "generation_seed": 20260919,
+    "thinking_temperature": 0.6,
+    "thinking_top_p": 0.95,
+    "thinking_timeout_seconds": 900,
+    "reasoning_note": "Recommended sampling and output cap from NVIDIA model card; Bionic does not expose verified vLLM reasoning_budget/grace_period control. Greedy 8192 pilot retained separately; unchanged short-answer records reused. This is protocol development, not a preregistered confirmatory test.",
+    "reasoning_effort": "medium",
+    "observed_reasoning_budget": "approximately 8192 thinking tokens; backend inserts I have to answer now.; distinct from total max_tokens=20480"
+  }
+}

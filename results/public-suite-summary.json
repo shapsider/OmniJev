@@ -1,0 +1,1386 @@
+{
+  "mmstar-public": {
+    "dataset": "MMStar",
+    "expected_cases": 300,
+    "expected_requests": 1200,
+    "completed_requests": 1200,
+    "methods": {
+      "omnijev": {
+        "n": 300,
+        "accuracy": 66.66666666666667,
+        "strict_accuracy": 66.66666666666667,
+        "invalid": 1,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 1.166053916999772,
+        "latency_p95": 1.515384075650394,
+        "latency_mean": 1.0729871505633508,
+        "usage_coverage": 300,
+        "categories": {
+          "coarse perception": {
+            "n": 50,
+            "correct": 34
+          },
+          "fine-grained perception": {
+            "n": 50,
+            "correct": 28
+          },
+          "instance reasoning": {
+            "n": 50,
+            "correct": 42
+          },
+          "logical reasoning": {
+            "n": 50,
+            "correct": 37
+          },
+          "math": {
+            "n": 50,
+            "correct": 27
+          },
+          "science & technology": {
+            "n": 50,
+            "correct": 32
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 7.666666666666667,
+          "1": 14.333333333333334,
+          "2": 66.66666666666667,
+          "5": 66.66666666666667,
+          "10": 66.66666666666667,
+          "30": 66.66666666666667
+        },
+        "prompt_tokens_mean": 397.3833333333333,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 400.3833333333333
+      },
+      "direct": {
+        "n": 300,
+        "accuracy": 66.66666666666667,
+        "strict_accuracy": 66.66666666666667,
+        "invalid": 1,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 1.1699257289999423,
+        "latency_p95": 1.5533067951999557,
+        "latency_mean": 1.11002973651334,
+        "usage_coverage": 300,
+        "categories": {
+          "coarse perception": {
+            "n": 50,
+            "correct": 34
+          },
+          "fine-grained perception": {
+            "n": 50,
+            "correct": 28
+          },
+          "instance reasoning": {
+            "n": 50,
+            "correct": 42
+          },
+          "logical reasoning": {
+            "n": 50,
+            "correct": 37
+          },
+          "math": {
+            "n": 50,
+            "correct": 27
+          },
+          "science & technology": {
+            "n": 50,
+            "correct": 32
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 5.666666666666667,
+          "1": 15.333333333333334,
+          "2": 66.66666666666667,
+          "5": 66.66666666666667,
+          "10": 66.66666666666667,
+          "30": 66.66666666666667
+        },
+        "prompt_tokens_mean": 397.3833333333333,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 400.3833333333333
+      },
+      "json": {
+        "n": 300,
+        "accuracy": 65.33333333333333,
+        "strict_accuracy": 65.33333333333333,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 1.2860581879995152,
+        "latency_p95": 1.7596589187500513,
+        "latency_mean": 1.2949945740533002,
+        "usage_coverage": 300,
+        "categories": {
+          "coarse perception": {
+            "n": 50,
+            "correct": 34
+          },
+          "fine-grained perception": {
+            "n": 50,
+            "correct": 27
+          },
+          "instance reasoning": {
+            "n": 50,
+            "correct": 42
+          },
+          "logical reasoning": {
+            "n": 50,
+            "correct": 34
+          },
+          "math": {
+            "n": 50,
+            "correct": 25
+          },
+          "science & technology": {
+            "n": 50,
+            "correct": 34
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.3333333333333333,
+          "1": 7.666666666666667,
+          "2": 65.0,
+          "5": 65.33333333333333,
+          "10": 65.33333333333333,
+          "30": 65.33333333333333
+        },
+        "prompt_tokens_mean": 404.3833333333333,
+        "completion_tokens_mean": 10.65,
+        "total_tokens_mean": 415.03333333333336
+      },
+      "reasoning": {
+        "n": 300,
+        "accuracy": 72.33333333333333,
+        "strict_accuracy": 71.66666666666667,
+        "invalid": 4,
+        "errors": 0,
+        "truncated": 1,
+        "reasoning_budget_forced": 43,
+        "reasoning_detected": 300,
+        "latency_p50": 15.899094729000069,
+        "latency_p95": 120.99009578124996,
+        "latency_mean": 38.30326988069333,
+        "usage_coverage": 300,
+        "categories": {
+          "coarse perception": {
+            "n": 50,
+            "correct": 31
+          },
+          "fine-grained perception": {
+            "n": 50,
+            "correct": 30
+          },
+          "instance reasoning": {
+            "n": 50,
+            "correct": 39
+          },
+          "logical reasoning": {
+            "n": 50,
+            "correct": 35
+          },
+          "math": {
+            "n": 50,
+            "correct": 45
+          },
+          "science & technology": {
+            "n": 50,
+            "correct": 37
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 0.0,
+          "2": 0.6666666666666666,
+          "5": 9.0,
+          "10": 29.0,
+          "30": 55.333333333333336
+        },
+        "prompt_tokens_mean": 397.3833333333333,
+        "completion_tokens_mean": 2419.4166666666665,
+        "total_tokens_mean": 2816.8
+      }
+    },
+    "comparisons": {
+      "direct": {
+        "n": 300,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -1.4500594315008108,
+          1.4500594315008108
+        ],
+        "noninferior_at_2pp": true,
+        "agreement": 99.66666666666667,
+        "wins": 0,
+        "losses": 0
+      },
+      "json": {
+        "n": 300,
+        "accuracy_difference_pp": 1.3333333333333335,
+        "cluster_bootstrap_95_ci_pp": [
+          -1.0,
+          3.6666666666666665
+        ],
+        "conservative_95_ci_pp": [
+          -2.977254574176613,
+          5.578087486026339
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 94.0,
+        "wins": 9,
+        "losses": 5
+      },
+      "reasoning": {
+        "n": 300,
+        "accuracy_difference_pp": -5.666666666666666,
+        "cluster_bootstrap_95_ci_pp": [
+          -11.0,
+          -0.3333333333333333
+        ],
+        "conservative_95_ci_pp": [
+          -13.867645076175371,
+          2.691937173108294
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 75.0,
+        "wins": 24,
+        "losses": 41
+      }
+    }
+  },
+  "mmbench-public": {
+    "dataset": "MMBench DEV EN pilot",
+    "expected_cases": 60,
+    "expected_requests": 240,
+    "completed_requests": 240,
+    "methods": {
+      "omnijev": {
+        "n": 60,
+        "accuracy": 90.0,
+        "strict_accuracy": 90.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.6107409790000133,
+        "latency_p95": 1.186163735400002,
+        "latency_mean": 0.6488647290833278,
+        "usage_coverage": 60,
+        "categories": {
+          "action_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_comparison": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_recognition": {
+            "n": 3,
+            "correct": 2
+          },
+          "celebrity_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "function_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "future_prediction": {
+            "n": 3,
+            "correct": 2
+          },
+          "identity_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_emotion": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_quality": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_scene": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_style": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_topic": {
+            "n": 3,
+            "correct": 2
+          },
+          "nature_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "object_localization": {
+            "n": 3,
+            "correct": 3
+          },
+          "ocr": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_property_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "social_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "spatial_relationship": {
+            "n": 3,
+            "correct": 2
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 3,
+            "correct": 3
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 26.666666666666668,
+          "1": 65.0,
+          "2": 90.0,
+          "5": 90.0,
+          "10": 90.0,
+          "30": 90.0
+        },
+        "prompt_tokens_mean": 363.55,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 366.55
+      },
+      "direct": {
+        "n": 60,
+        "accuracy": 90.0,
+        "strict_accuracy": 90.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.5800380204999556,
+        "latency_p95": 1.2294990151999963,
+        "latency_mean": 0.6671199652333325,
+        "usage_coverage": 60,
+        "categories": {
+          "action_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_comparison": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_recognition": {
+            "n": 3,
+            "correct": 2
+          },
+          "celebrity_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "function_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "future_prediction": {
+            "n": 3,
+            "correct": 2
+          },
+          "identity_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_emotion": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_quality": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_scene": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_style": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_topic": {
+            "n": 3,
+            "correct": 2
+          },
+          "nature_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "object_localization": {
+            "n": 3,
+            "correct": 3
+          },
+          "ocr": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_property_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "social_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "spatial_relationship": {
+            "n": 3,
+            "correct": 2
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 3,
+            "correct": 3
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 28.333333333333332,
+          "1": 66.66666666666667,
+          "2": 90.0,
+          "5": 90.0,
+          "10": 90.0,
+          "30": 90.0
+        },
+        "prompt_tokens_mean": 363.55,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 366.55
+      },
+      "json": {
+        "n": 60,
+        "accuracy": 90.0,
+        "strict_accuracy": 90.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.8598938124999993,
+        "latency_p95": 1.3440954975999901,
+        "latency_mean": 0.9265097625333333,
+        "usage_coverage": 60,
+        "categories": {
+          "action_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_comparison": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_recognition": {
+            "n": 3,
+            "correct": 2
+          },
+          "celebrity_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "function_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "future_prediction": {
+            "n": 3,
+            "correct": 2
+          },
+          "identity_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_emotion": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_quality": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_scene": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_style": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_topic": {
+            "n": 3,
+            "correct": 2
+          },
+          "nature_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "object_localization": {
+            "n": 3,
+            "correct": 3
+          },
+          "ocr": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_property_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "social_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "spatial_relationship": {
+            "n": 3,
+            "correct": 2
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 3,
+            "correct": 3
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 53.333333333333336,
+          "2": 90.0,
+          "5": 90.0,
+          "10": 90.0,
+          "30": 90.0
+        },
+        "prompt_tokens_mean": 370.55,
+        "completion_tokens_mean": 11,
+        "total_tokens_mean": 381.55
+      },
+      "reasoning": {
+        "n": 60,
+        "accuracy": 90.0,
+        "strict_accuracy": 90.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 60,
+        "latency_p50": 6.109124666499991,
+        "latency_p95": 36.92334421454999,
+        "latency_mean": 10.878964836783334,
+        "usage_coverage": 60,
+        "categories": {
+          "action_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "attribute_comparison": {
+            "n": 3,
+            "correct": 2
+          },
+          "attribute_recognition": {
+            "n": 3,
+            "correct": 2
+          },
+          "celebrity_recognition": {
+            "n": 3,
+            "correct": 3
+          },
+          "function_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "future_prediction": {
+            "n": 3,
+            "correct": 2
+          },
+          "identity_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_emotion": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_quality": {
+            "n": 3,
+            "correct": 2
+          },
+          "image_scene": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_style": {
+            "n": 3,
+            "correct": 3
+          },
+          "image_topic": {
+            "n": 3,
+            "correct": 3
+          },
+          "nature_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "object_localization": {
+            "n": 3,
+            "correct": 3
+          },
+          "ocr": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_property_reasoning": {
+            "n": 3,
+            "correct": 3
+          },
+          "physical_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "social_relation": {
+            "n": 3,
+            "correct": 3
+          },
+          "spatial_relationship": {
+            "n": 3,
+            "correct": 2
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 3,
+            "correct": 3
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 0.0,
+          "2": 1.6666666666666667,
+          "5": 36.666666666666664,
+          "10": 73.33333333333333,
+          "30": 83.33333333333333
+        },
+        "prompt_tokens_mean": 363.55,
+        "completion_tokens_mean": 719.4833333333333,
+        "total_tokens_mean": 1083.0333333333333
+      }
+    },
+    "comparisons": {
+      "direct": {
+        "n": 60,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -7.043056879850479,
+          7.043056879850479
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 100.0,
+        "wins": 0,
+        "losses": 0
+      },
+      "json": {
+        "n": 60,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -7.043056879850479,
+          7.043056879850479
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 100.0,
+        "wins": 0,
+        "losses": 0
+      },
+      "reasoning": {
+        "n": 60,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          -6.666666666666667,
+          6.666666666666667
+        ],
+        "conservative_95_ci_pp": [
+          -12.583996911304107,
+          12.583996911304107
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 93.33333333333333,
+        "wins": 2,
+        "losses": 2
+      }
+    }
+  },
+  "mmad-public": {
+    "dataset": "MMAD DS-MVTec zero-shot pilot",
+    "expected_cases": 45,
+    "expected_requests": 180,
+    "completed_requests": 180,
+    "methods": {
+      "omnijev": {
+        "n": 45,
+        "accuracy": 86.66666666666667,
+        "strict_accuracy": 86.66666666666667,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.6592437919999838,
+        "latency_p95": 1.0880576499999735,
+        "latency_mean": 0.693345669555555,
+        "usage_coverage": 45,
+        "categories": {
+          "Anomaly Detection": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Analysis": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Classification": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Description": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Localization": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Analysis": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Classification": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Details": {
+            "n": 5,
+            "correct": 3
+          },
+          "Object Structure": {
+            "n": 5,
+            "correct": 4
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 15.555555555555555,
+          "1": 73.33333333333333,
+          "2": 86.66666666666667,
+          "5": 86.66666666666667,
+          "10": 86.66666666666667,
+          "30": 86.66666666666667
+        },
+        "prompt_tokens_mean": 354.93333333333334,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 357.93333333333334
+      },
+      "direct": {
+        "n": 45,
+        "accuracy": 86.66666666666667,
+        "strict_accuracy": 86.66666666666667,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.5872331250000116,
+        "latency_p95": 1.1339810834000048,
+        "latency_mean": 0.5755713463333281,
+        "usage_coverage": 45,
+        "categories": {
+          "Anomaly Detection": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Analysis": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Classification": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Description": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Localization": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Analysis": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Classification": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Details": {
+            "n": 5,
+            "correct": 3
+          },
+          "Object Structure": {
+            "n": 5,
+            "correct": 4
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 33.333333333333336,
+          "1": 68.88888888888889,
+          "2": 86.66666666666667,
+          "5": 86.66666666666667,
+          "10": 86.66666666666667,
+          "30": 86.66666666666667
+        },
+        "prompt_tokens_mean": 354.93333333333334,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 357.93333333333334
+      },
+      "json": {
+        "n": 45,
+        "accuracy": 84.44444444444444,
+        "strict_accuracy": 84.44444444444444,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 0.8278967500000363,
+        "latency_p95": 1.2199806248000016,
+        "latency_mean": 0.9173641822666688,
+        "usage_coverage": 45,
+        "categories": {
+          "Anomaly Detection": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Analysis": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Classification": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Description": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Localization": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Analysis": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Classification": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Details": {
+            "n": 5,
+            "correct": 3
+          },
+          "Object Structure": {
+            "n": 5,
+            "correct": 4
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 60.0,
+          "2": 84.44444444444444,
+          "5": 84.44444444444444,
+          "10": 84.44444444444444,
+          "30": 84.44444444444444
+        },
+        "prompt_tokens_mean": 361.93333333333334,
+        "completion_tokens_mean": 11,
+        "total_tokens_mean": 372.93333333333334
+      },
+      "reasoning": {
+        "n": 45,
+        "accuracy": 86.66666666666667,
+        "strict_accuracy": 86.66666666666667,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 1,
+        "reasoning_detected": 45,
+        "latency_p50": 5.744591084000035,
+        "latency_p95": 47.05663437500002,
+        "latency_mean": 13.82210675191111,
+        "usage_coverage": 45,
+        "categories": {
+          "Anomaly Detection": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Analysis": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Classification": {
+            "n": 5,
+            "correct": 4
+          },
+          "Defect Description": {
+            "n": 5,
+            "correct": 5
+          },
+          "Defect Localization": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Analysis": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Classification": {
+            "n": 5,
+            "correct": 5
+          },
+          "Object Details": {
+            "n": 5,
+            "correct": 4
+          },
+          "Object Structure": {
+            "n": 5,
+            "correct": 4
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 0.0,
+          "2": 6.666666666666667,
+          "5": 35.55555555555556,
+          "10": 64.44444444444444,
+          "30": 80.0
+        },
+        "prompt_tokens_mean": 354.93333333333334,
+        "completion_tokens_mean": 914.3111111111111,
+        "total_tokens_mean": 1269.2444444444445
+      }
+    },
+    "comparisons": {
+      "direct": {
+        "n": 45,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -9.278732056737276,
+          9.278732056737276
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 100.0,
+        "wins": 0,
+        "losses": 0
+      },
+      "json": {
+        "n": 45,
+        "accuracy_difference_pp": 2.2222222222222223,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          6.666666666666667
+        ],
+        "conservative_95_ci_pp": [
+          -9.250783113833638,
+          13.360980065463263
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 95.55555555555556,
+        "wins": 1,
+        "losses": 0
+      },
+      "reasoning": {
+        "n": 45,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          -11.11111111111111,
+          11.11111111111111
+        ],
+        "conservative_95_ci_pp": [
+          -19.005248546850105,
+          19.005248546850105
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 86.66666666666667,
+        "wins": 3,
+        "losses": 3
+      }
+    }
+  },
+  "streaming-public": {
+    "dataset": "StreamingBench causal 8-frame pilot",
+    "expected_cases": 20,
+    "expected_requests": 80,
+    "completed_requests": 80,
+    "methods": {
+      "omnijev": {
+        "n": 20,
+        "accuracy": 85.0,
+        "strict_accuracy": 85.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 2.9786384170000133,
+        "latency_p95": 3.583242022950005,
+        "latency_mean": 1.9856485604999956,
+        "usage_coverage": 20,
+        "categories": {
+          "Action Perception": {
+            "n": 2,
+            "correct": 1
+          },
+          "Attribute Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Causal Reasoning": {
+            "n": 2,
+            "correct": 1
+          },
+          "Clips Summarize": {
+            "n": 2,
+            "correct": 2
+          },
+          "Counting": {
+            "n": 2,
+            "correct": 2
+          },
+          "Event Understanding": {
+            "n": 2,
+            "correct": 2
+          },
+          "Object Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Prospective Reasoning": {
+            "n": 2,
+            "correct": 2
+          },
+          "Spatial Understanding": {
+            "n": 2,
+            "correct": 1
+          },
+          "Text-Rich Understanding": {
+            "n": 2,
+            "correct": 2
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 30.0,
+          "1": 30.0,
+          "2": 30.0,
+          "5": 85.0,
+          "10": 85.0,
+          "30": 85.0
+        },
+        "prompt_tokens_mean": 2256,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 2259
+      },
+      "direct": {
+        "n": 20,
+        "accuracy": 85.0,
+        "strict_accuracy": 85.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 2.98642212499999,
+        "latency_p95": 3.3368408232000095,
+        "latency_mean": 1.8287759855999934,
+        "usage_coverage": 20,
+        "categories": {
+          "Action Perception": {
+            "n": 2,
+            "correct": 1
+          },
+          "Attribute Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Causal Reasoning": {
+            "n": 2,
+            "correct": 1
+          },
+          "Clips Summarize": {
+            "n": 2,
+            "correct": 2
+          },
+          "Counting": {
+            "n": 2,
+            "correct": 2
+          },
+          "Event Understanding": {
+            "n": 2,
+            "correct": 2
+          },
+          "Object Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Prospective Reasoning": {
+            "n": 2,
+            "correct": 2
+          },
+          "Spatial Understanding": {
+            "n": 2,
+            "correct": 1
+          },
+          "Text-Rich Understanding": {
+            "n": 2,
+            "correct": 2
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 35.0,
+          "1": 35.0,
+          "2": 35.0,
+          "5": 85.0,
+          "10": 85.0,
+          "30": 85.0
+        },
+        "prompt_tokens_mean": 2256,
+        "completion_tokens_mean": 3,
+        "total_tokens_mean": 2259
+      },
+      "json": {
+        "n": 20,
+        "accuracy": 85.0,
+        "strict_accuracy": 85.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 0,
+        "reasoning_detected": 0,
+        "latency_p50": 3.1833523750000268,
+        "latency_p95": 3.7936673937499954,
+        "latency_mean": 3.299876883400006,
+        "usage_coverage": 20,
+        "categories": {
+          "Action Perception": {
+            "n": 2,
+            "correct": 1
+          },
+          "Attribute Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Causal Reasoning": {
+            "n": 2,
+            "correct": 1
+          },
+          "Clips Summarize": {
+            "n": 2,
+            "correct": 2
+          },
+          "Counting": {
+            "n": 2,
+            "correct": 2
+          },
+          "Event Understanding": {
+            "n": 2,
+            "correct": 2
+          },
+          "Object Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Prospective Reasoning": {
+            "n": 2,
+            "correct": 2
+          },
+          "Spatial Understanding": {
+            "n": 2,
+            "correct": 1
+          },
+          "Text-Rich Understanding": {
+            "n": 2,
+            "correct": 2
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "5": 85.0,
+          "10": 85.0,
+          "30": 85.0
+        },
+        "prompt_tokens_mean": 2263,
+        "completion_tokens_mean": 11,
+        "total_tokens_mean": 2274
+      },
+      "reasoning": {
+        "n": 20,
+        "accuracy": 85.0,
+        "strict_accuracy": 85.0,
+        "invalid": 0,
+        "errors": 0,
+        "truncated": 0,
+        "reasoning_budget_forced": 3,
+        "reasoning_detected": 20,
+        "latency_p50": 20.192321854000006,
+        "latency_p95": 124.27167175029999,
+        "latency_mean": 36.692944806250004,
+        "usage_coverage": 20,
+        "categories": {
+          "Action Perception": {
+            "n": 2,
+            "correct": 1
+          },
+          "Attribute Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Causal Reasoning": {
+            "n": 2,
+            "correct": 1
+          },
+          "Clips Summarize": {
+            "n": 2,
+            "correct": 2
+          },
+          "Counting": {
+            "n": 2,
+            "correct": 2
+          },
+          "Event Understanding": {
+            "n": 2,
+            "correct": 1
+          },
+          "Object Perception": {
+            "n": 2,
+            "correct": 2
+          },
+          "Prospective Reasoning": {
+            "n": 2,
+            "correct": 2
+          },
+          "Spatial Understanding": {
+            "n": 2,
+            "correct": 2
+          },
+          "Text-Rich Understanding": {
+            "n": 2,
+            "correct": 2
+          }
+        },
+        "timely_accuracy": {
+          "0.5": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "5": 5.0,
+          "10": 30.0,
+          "30": 60.0
+        },
+        "prompt_tokens_mean": 2256,
+        "completion_tokens_mean": 2379.1,
+        "total_tokens_mean": 4635.1
+      }
+    },
+    "comparisons": {
+      "direct": {
+        "n": 20,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -19.675967970462544,
+          19.675967970462544
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 100.0,
+        "wins": 0,
+        "losses": 0
+      },
+      "json": {
+        "n": 20,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "conservative_95_ci_pp": [
+          -19.675967970462544,
+          19.675967970462544
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 100.0,
+        "wins": 0,
+        "losses": 0
+      },
+      "reasoning": {
+        "n": 20,
+        "accuracy_difference_pp": 0,
+        "cluster_bootstrap_95_ci_pp": [
+          -15.0,
+          15.0
+        ],
+        "conservative_95_ci_pp": [
+          -27.86937488339976,
+          27.86937488339976
+        ],
+        "noninferior_at_2pp": false,
+        "agreement": 85.0,
+        "wins": 1,
+        "losses": 1
+      }
+    }
+  }
+}

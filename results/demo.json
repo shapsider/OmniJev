@@ -1,0 +1,159 @@
+{
+  "case_id": "red-conflict",
+  "mode": "letter",
+  "model": "omnijev-nemotron",
+  "choice": "A",
+  "value": "red",
+  "valid": true,
+  "latency_seconds": 1.403047667,
+  "scores": {
+    "status": "complete_candidate_set",
+    "probabilities": {
+      "A": 0.9998018192175607,
+      "B": 9.088800595256965e-07,
+      "C": 0.00015165253543884051,
+      "D": 4.5619366941031066e-05
+    },
+    "candidate_mass": 0.9999999953338821,
+    "margin": 0.9996501666821219,
+    "calibrated": false
+  },
+  "raw_text": "A",
+  "reasoning_detected": false,
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 3,
+    "total_tokens": 356,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "response": {
+    "id": "chatcmpl-tktw1f02ejmve440pkred",
+    "object": "chat.completion",
+    "created": 1789826392,
+    "model": "omnijev-nemotron",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A",
+          "reasoning_content": "",
+          "tool_calls": []
+        },
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -0.00019820508896373212,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "A",
+                  "logprob": -0.00019820508896373212,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -8.79391860961914,
+                  "bytes": [
+                    67
+                  ]
+                },
+                {
+                  "token": "D",
+                  "logprob": -9.99517822265625,
+                  "bytes": [
+                    68
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -13.911052703857422,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -16.88497543334961,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "(A",
+                  "logprob": -18.273639678955078,
+                  "bytes": [
+                    40,
+                    65
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -18.449445724487305,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -18.487022399902344,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "c",
+                  "logprob": -18.872455596923828,
+                  "bytes": [
+                    99
+                  ]
+                },
+                {
+                  "token": "E",
+                  "logprob": -18.984149932861328,
+                  "bytes": [
+                    69
+                  ]
+                }
+              ]
+            }
+          ],
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 3,
+      "total_tokens": 356,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "omnijev-nemotron"
+  },
+  "request_config": {
+    "model": "omnijev-nemotron",
+    "temperature": 0,
+    "seed": 20260919,
+    "reasoning_effort": "none",
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 10
+  },
+  "messages_sha256": "11c8d9fb7778079bf221edf25011e4b17ab7674923dfe5ef18f7ef17b60b8adc",
+  "timing_scope": "API request wall time; excludes model loading and client media base64 encoding",
+  "method": "short_label_generation_with_logprobs"
+}

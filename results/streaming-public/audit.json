@@ -1,0 +1,10 @@
+{
+  "dataset": "StreamingBench causal 8-frame pilot",
+  "requests": 80,
+  "cases": 20,
+  "duplicate_requests": false,
+  "all_expected_requests_present": true,
+  "prompt_hashes_verified": true,
+  "token_accounting_verified": true,
+  "errors": 0
+}

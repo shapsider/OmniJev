@@ -1,0 +1,1150 @@
+{
+  "dataset": "StreamingBench causal 8-frame pilot",
+  "source": "https://github.com/THUNLP-MT/StreamingBench",
+  "source_sha256": "0121417a71e1dcf367222ae97e9512e3e99725d72e60d50760a050816ccd58da",
+  "seed": 20260920,
+  "cases": [
+    {
+      "id": "Real-Time Visual Understanding_sample_53_5",
+      "question": "What did the hands do just now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 184.0. Actual frame times: [123.916667, 132.5, 141.083333, 149.625, 158.208333, 166.791667, 175.333333, 183.916667]",
+      "options": [
+        "Folded the pink paper object and pressed the glue.",
+        "Applied glue along the edges of the pink paper object.",
+        "Decorated the pink paper object with the beaded pen.",
+        "Put the pen and keychain into the pink box."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/53-7.jpg"
+      ],
+      "category": "Action Perception",
+      "image_sha256": "bb465296d5d7b37faf8fb09d3bce7c92d10cd9e8187b9c0a1b46ebe32a139f52",
+      "video_id": 53,
+      "query_timestamp": 184.0,
+      "frame_timestamps": [
+        123.9,
+        132.4714285714286,
+        141.04285714285714,
+        149.61428571428573,
+        158.18571428571428,
+        166.75714285714287,
+        175.32857142857142,
+        183.9
+      ],
+      "actual_frame_timestamps": [
+        123.916667,
+        132.5,
+        141.083333,
+        149.625,
+        158.208333,
+        166.791667,
+        175.333333,
+        183.916667
+      ],
+      "frame_sha256": [
+        "481c9108c72f13a1a2dd05cbb7179f2e3b7f1cf16fb5b028f4e873d89ed6958b",
+        "5faa04e600435a10166f11bb593df14385a7d7c0c5462caa1a926d08db15899c",
+        "ca159aa8c3100878d7ea0b942651c2749da2282adbfe4d74ba9010c8739c2605",
+        "bd787de5e50215fe8ff87fcadc72f8d206d804594a3a440eae54eec52988243b",
+        "c37f70d505c6dbe30c50727336ae59f3556a35ee80fc57444719dfb7f198fc81",
+        "f459c30a5b2baef31792dc180b68bbde1e2c2ddae7200e22a049087ca013df2e",
+        "e6da5266f9394bce3863e3915a7b6ac155cfe3372e9dc71b7d6fe8d61e6b1b58",
+        "75efe02be3beb67743ff34caf2e071b426ba688586ef0bde477dbfdcd506f5a1"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_154_2",
+      "question": "What does the person do after waking up?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 19.0. Actual frame times: [0.0, 2.72, 5.4, 8.12, 10.8, 13.52, 16.2, 18.92]",
+      "options": [
+        "Lies back down.",
+        "Walks out of the room.",
+        "Sits up on the edge of the bed.",
+        "Stands up and stretches."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/154-7.jpg"
+      ],
+      "category": "Action Perception",
+      "image_sha256": "89beb33acff2cc2c4fae437f5ecf45f5650d626258907a0611e01f7c11899e8c",
+      "video_id": 154,
+      "query_timestamp": 19.0,
+      "frame_timestamps": [
+        0.0,
+        2.6999999999999997,
+        5.3999999999999995,
+        8.1,
+        10.799999999999999,
+        13.5,
+        16.2,
+        18.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        2.72,
+        5.4,
+        8.12,
+        10.8,
+        13.52,
+        16.2,
+        18.92
+      ],
+      "frame_sha256": [
+        "7a9598e52209741988e6bd46c3a3d13774707816d77dae7116cb9adaa6a93a5c",
+        "d5c3f1e323311217a72d8fd11f697b9cee5cb85ef302367f8c1cb005a556a0d3",
+        "7b02e735070ec7cb386b9d1551590874774b3948cc14420da808351386cc8ff2",
+        "1cc6c2413dfc1b36b0a22d483eb2097ebf22a5caf3ae8d4f5bf19aae43a93367",
+        "10032052440ba4be4d745a4eda1162a2b28ca384cbb52c97d932ceb467152529",
+        "30fd1a864dbdcbdc5ad725241de5a1b31561f368723704b41df8d1b8b0370c3d",
+        "0697ad81729a1abfc109c85df2c6217a6f2d8d3b72a1619bc6a8c15ad984575f",
+        "bde050f33c16aa6c4d69f379ab1bb0e0dc4836ad88cd9a9a84c2827236226917"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_162_4",
+      "question": "What color is the man's tie?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 124.0. Actual frame times: [63.92, 72.48, 81.08, 89.64, 98.2, 106.76, 115.36, 123.92]",
+      "options": [
+        "Blue.",
+        "Green.",
+        "Yellow.",
+        "Red."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/162-7.jpg"
+      ],
+      "category": "Attribute Perception",
+      "image_sha256": "86ccd2101f82b56972dc7d4ed34a785426fa34379b2bf468cb6d075ca793860d",
+      "video_id": 162,
+      "query_timestamp": 124.0,
+      "frame_timestamps": [
+        63.900000000000006,
+        72.47142857142858,
+        81.04285714285714,
+        89.61428571428573,
+        98.18571428571428,
+        106.75714285714287,
+        115.32857142857144,
+        123.9
+      ],
+      "actual_frame_timestamps": [
+        63.92,
+        72.48,
+        81.08,
+        89.64,
+        98.2,
+        106.76,
+        115.36,
+        123.92
+      ],
+      "frame_sha256": [
+        "3d6d748b32c80ba470f1af5889676a6414ce7677bcfccd80cb8088fc23a9413d",
+        "1437ee5577554f9d858995d96395381865ff1fb6d922588a2bcdc7458ab5fce0",
+        "6598a52199a0a1bcc281e76b9d1a0394ff7b90c21d5197bd4a1d4ec3b1cda5ee",
+        "ae03ccf6a746e980586d1656b576e5a9362c1a931cdb38adc0f73ffb8872d3b5",
+        "93c97162715c824dce24142e261a23982f395a26ecc4f7dd511ffcb39b61f623",
+        "c9ebfe1c04fefa7d3c9b30c49bbcf7926e23cc5f1c1aeff645aae10801268d37",
+        "4732f04690dd3496d5c5ac77cc23eed999a74de85c8c761f0f26c9201cc0c2db",
+        "dec8684aab261391772b55b9ca74a67b9537356a750146074447c98fcbe1acf0"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_206_1",
+      "question": "What colors are the blocks used to form the helicopter rotor blades?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 2.0. Actual frame times: [0.0, 0.3, 0.566667, 0.833333, 1.1, 1.366667, 1.633333, 1.9]",
+      "options": [
+        "Blue and Green.",
+        "Yellow and Blue.",
+        "Green and Red.",
+        "Red and Orange."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/206-7.jpg"
+      ],
+      "category": "Attribute Perception",
+      "image_sha256": "ad0e35ab7306d707e39427a766d60251b6317d8463b244d762781467873a217d",
+      "video_id": 206,
+      "query_timestamp": 2.0,
+      "frame_timestamps": [
+        0.0,
+        0.2714285714285714,
+        0.5428571428571428,
+        0.8142857142857142,
+        1.0857142857142856,
+        1.3571428571428572,
+        1.6285714285714283,
+        1.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        0.3,
+        0.566667,
+        0.833333,
+        1.1,
+        1.366667,
+        1.633333,
+        1.9
+      ],
+      "frame_sha256": [
+        "7a9598e52209741988e6bd46c3a3d13774707816d77dae7116cb9adaa6a93a5c",
+        "e477de150e55010e19d56bbc3319ac0889b585854d3fe34abc1f15895cbcd7d1",
+        "c1a12b326dbd197d58d9ef5763789ce90f5046c50a1e5d163c0be35c86f0df48",
+        "9a58a6fff48bc7a86a45bbcc6c613722fb1f6586afb2bade048a516c4e7195b9",
+        "28c54a2526720d88a7aff8f79177a70f183d3d1bfd672573fa404ad3f5774b6e",
+        "33af4c542bc56f6e3e23521189af38eb3b6f503aacb8f52dd414efb0caa7f871",
+        "97c0697a052714cdcac5d8bd51596176c369066d9ebd679269aae20be2c52021",
+        "fc4ea52a6136819ee638b9ec6c3c2b866d03e0b91948f754c697d72e660dc189"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_234_4",
+      "question": "Why Mr. Bean is very shocked.",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 400.0. Actual frame times: [339.92, 348.48, 357.08, 365.64, 374.2, 382.76, 391.36, 399.92]",
+      "options": [
+        "Because his own pie just fell to the floor.",
+        "Because the opponent did a magic trick with the pie.",
+        "Because the pie suddenly exploded when the opponent touched it.",
+        "Because the opponent finished the pie in one go."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/234-7.jpg"
+      ],
+      "category": "Causal Reasoning",
+      "image_sha256": "9f6bbdedffa7d1f91b5359a7432545204e126bea8b9d5322fd02e852bb5ea161",
+      "video_id": 234,
+      "query_timestamp": 400.0,
+      "frame_timestamps": [
+        339.9,
+        348.47142857142853,
+        357.04285714285714,
+        365.6142857142857,
+        374.18571428571425,
+        382.7571428571428,
+        391.3285714285714,
+        399.9
+      ],
+      "actual_frame_timestamps": [
+        339.92,
+        348.48,
+        357.08,
+        365.64,
+        374.2,
+        382.76,
+        391.36,
+        399.92
+      ],
+      "frame_sha256": [
+        "6a989d2c9d9354add7bc5df6bd7a435a1f5bd55cbacb4173004fb491dc18e193",
+        "6cc5d631e573e8b343ab6246faf161f20c738c2ded06e3ded0108b200f3f7b7f",
+        "fde5ef09740a37f14a176fe225beb3ae0ff62f27a012ed5ff76dd1213eb53a38",
+        "e01cd12c717a1d4ff0f19d4d762312e184f45a9ec7551fab6d37419115946aeb",
+        "da9640cb9434ed91c33c752456ffb1fcccd0b46ba311568d6d62bf4d82934591",
+        "066da0f603d967b9eef4e60bc5b4a04ad4f0f1edda557d67608d42b8af91a190",
+        "42d5ff295781f0eb066638dbe46b51558ae4fa732905cefa91fddf70dc0ca6d0",
+        "8470bb36c0405e9d0d26cc8434360d890121ced609deb890e1aa100ef77edcd0"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_237_1",
+      "question": "Why is Mr. Bean constantly posing right now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 64.0. Actual frame times: [3.932031, 12.492031, 21.052031, 29.652031, 38.212031, 46.772031, 55.332031, 63.932031]",
+      "options": [
+        "Because he is trying to practice his modeling skills.",
+        "Because he is preparing for a photo shoot.",
+        "Because he is showing off his new outfit in front of a mirror.",
+        "Because he is imitating the characters on the television."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/237-7.jpg"
+      ],
+      "category": "Causal Reasoning",
+      "image_sha256": "04a4d99582589ad69c9a54e605cc439832fc7939e988ae43040110e06b1eaaf5",
+      "video_id": 237,
+      "query_timestamp": 64.0,
+      "frame_timestamps": [
+        3.8999999999999986,
+        12.47142857142857,
+        21.04285714285714,
+        29.614285714285714,
+        38.18571428571428,
+        46.75714285714285,
+        55.32857142857143,
+        63.9
+      ],
+      "actual_frame_timestamps": [
+        3.932031,
+        12.492031,
+        21.052031,
+        29.652031,
+        38.212031,
+        46.772031,
+        55.332031,
+        63.932031
+      ],
+      "frame_sha256": [
+        "23006aecb79a83691d6cbf9cc3671952b5be5bb0ac449d684ebd40bf3675b2ea",
+        "7a9598e52209741988e6bd46c3a3d13774707816d77dae7116cb9adaa6a93a5c",
+        "404439ac71b6a1af837c5423d82752ec63dbfd38da8c6c72d197dbdb45024a3b",
+        "375c9162c255b056cc430dc3217bcb336e216a504ff18d6f1a16064a7aa4aaeb",
+        "d537a4ad23d5fd0df90f1ce1afb903c1ce89bb073eab5d90ce2efe3a737d0402",
+        "db4de24f1566790da8bb2c337654d2f088fa3a8bd6267cfa486d87c37d4fe2ca",
+        "0bf6662be61de36579e7a8d15f004464f84484570741268c2048c5df2cf9759b",
+        "ba516ffb791b233a1cba48f4e1761015d59b9e573e8b34bdd572f0b30614a570"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_129_5",
+      "question": "Which of the following best summarizes the content that was just shown in the video?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 440.0. Actual frame times: [379.912867, 388.4881, 397.063333, 405.638567, 414.2138, 422.789033, 431.3309, 439.906133]",
+      "options": [
+        "The artist is setting up the studio before starting to paint.",
+        "The artist is making precise adjustments to an already detailed portrait.",
+        "The artist is selecting colors and preparing brushes for a new painting.",
+        "The artist is cleaning up the studio after completing a painting."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/129-7.jpg"
+      ],
+      "category": "Clips Summarize",
+      "image_sha256": "89b82b0c346ae7dab3aceb0986dd2aed2e4064c425b2005dfb67e12003edd0f3",
+      "video_id": 129,
+      "query_timestamp": 440.0,
+      "frame_timestamps": [
+        379.9,
+        388.47142857142853,
+        397.04285714285714,
+        405.6142857142857,
+        414.18571428571425,
+        422.7571428571428,
+        431.3285714285714,
+        439.9
+      ],
+      "actual_frame_timestamps": [
+        379.912867,
+        388.4881,
+        397.063333,
+        405.638567,
+        414.2138,
+        422.789033,
+        431.3309,
+        439.906133
+      ],
+      "frame_sha256": [
+        "58d82d551b84dd9d78e214167f3aa1989380ad765bc63ce7eccc287a861c4035",
+        "bf52796da2075e4c1e6885e7749da0ffacc6d7645cdfdbd7978038a784cb11fd",
+        "84311b5f99bfb4ac33088f870091cf78981cb7a0d55a244d8cd3499df1577c56",
+        "6ca68d466bfc546a7a746a463b47040f7901d8e7f0ecaba95f9156a3a1d103d6",
+        "397ef9efa5a9c313bb39e2fc5d61e83e2428de281e9e33bdade69b3aa1829461",
+        "d28ab51f76970f3b753018373d54f7bed463fb4e8512bf295f948a88c0e58be2",
+        "4f2b401c1a1ad8be29156e069856a0f2cb173057e284c031354b9fbceb34af58",
+        "2f425effaa42d0b8701a915e828283f9dc6b24be28a0e120224a66ff3c65f4a8"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_132_3",
+      "question": "Which of the following best summarizes the artist's activity just shown in the video?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 260.0. Actual frame times: [199.916667, 208.5, 217.083333, 225.625, 234.208333, 242.791667, 251.333333, 259.916667]",
+      "options": [
+        "Creating a landscape painting.",
+        "Working on a realistic portrait of a woman, focusing on the neck area.",
+        "Sketching a preliminary outline for a new artwork.",
+        "Mixing colors on a palette for future use."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/132-7.jpg"
+      ],
+      "category": "Clips Summarize",
+      "image_sha256": "47af9b718b24e5aeb700ad7c0b79adf3fbab37216bf1a6f6243ad907f738e7b3",
+      "video_id": 132,
+      "query_timestamp": 260.0,
+      "frame_timestamps": [
+        199.89999999999998,
+        208.47142857142856,
+        217.04285714285712,
+        225.6142857142857,
+        234.18571428571425,
+        242.75714285714284,
+        251.32857142857142,
+        259.9
+      ],
+      "actual_frame_timestamps": [
+        199.916667,
+        208.5,
+        217.083333,
+        225.625,
+        234.208333,
+        242.791667,
+        251.333333,
+        259.916667
+      ],
+      "frame_sha256": [
+        "dffa3888841d322aae67f7a85835dd836a4bb7988f1ed189ec6d45c430bd1831",
+        "d82011540887469ff9bbd331511c3bae29e944383b725d5eb4e26d75491fbd7f",
+        "8f891cf42d7c871dcdc2baa792419f8d8797643a330f2db9a4660c3096a92a3c",
+        "8e14af07744e856262c03ccf385f0eab4d245d560b0066747041dc32f97caf32",
+        "90286337396d572572554b32bd1cc03f62a67948e3efcbc6d05154539bd73ac4",
+        "2a2f2fcfc8611a82db94f790c965fa4c8a940ff17543aafe62d789b15bc999ad",
+        "750265638f8b3560d0243c3753324d468ba90bb6c630e74e7d906e4398f17101",
+        "8496f88fb4be3cbf297a4c5a0a783f2756186ecc9f19eb20f628f370524a0c16"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_100_3",
+      "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 86.0. Actual frame times: [25.900875, 34.492792, 43.043, 51.634917, 60.226833, 68.777042, 77.368958, 85.919167]",
+      "options": [
+        "3.",
+        "4.",
+        "0.",
+        "1."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/100-7.jpg"
+      ],
+      "category": "Counting",
+      "image_sha256": "4160057bc0572cde4296a2708004ae1ae4e61510753dadd70659ef83ee801d23",
+      "video_id": 100,
+      "query_timestamp": 86.0,
+      "frame_timestamps": [
+        25.900000000000006,
+        34.471428571428575,
+        43.042857142857144,
+        51.61428571428572,
+        60.18571428571429,
+        68.75714285714287,
+        77.32857142857144,
+        85.9
+      ],
+      "actual_frame_timestamps": [
+        25.900875,
+        34.492792,
+        43.043,
+        51.634917,
+        60.226833,
+        68.777042,
+        77.368958,
+        85.919167
+      ],
+      "frame_sha256": [
+        "30b5487afa61fcc81b92f4df13b327ccf040f51a8732451017606f213d3c7072",
+        "d3e249d64b5ae4237bf09bd3debf3f02cf97c572e68045778d4663d05f7df56a",
+        "11e7fdea74fde6bfcb797471b5aac4a0a942bb983629965fd11ac1ca6bf9bfbe",
+        "f8254fefe7bf7592bc111f27317de8a2707a69eb087d283fe99fb7510f0b9ffb",
+        "c6dff8969286af567bc808a4d6525c79ca8d37763b92e01dee35005cfb300da0",
+        "6d9d3e81a60fb38f8e531ea84a28183ce59de25620b9bcbac392d44fa89330d4",
+        "78c073c78aa26a25b27316d45a9a9a41823f5442edd5af958741a6723ee68b22",
+        "14522bcbb3b6f49fc0841f543b08b37a59502ae640cc69e9e9016ee294bf1a28"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_71_1",
+      "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 18.0. Actual frame times: [0.0, 2.569233, 5.138467, 7.674333, 10.243567, 12.8128, 15.348667, 17.9179]",
+      "options": [
+        "0.",
+        "1.",
+        "3.",
+        "4."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/71-7.jpg"
+      ],
+      "category": "Counting",
+      "image_sha256": "9d88840756d683071f8d851c3b5d7da1bcc6b010116706c11bcfb702cd48d07d",
+      "video_id": 71,
+      "query_timestamp": 18.0,
+      "frame_timestamps": [
+        0.0,
+        2.557142857142857,
+        5.114285714285714,
+        7.671428571428571,
+        10.228571428571428,
+        12.785714285714286,
+        15.342857142857142,
+        17.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        2.569233,
+        5.138467,
+        7.674333,
+        10.243567,
+        12.8128,
+        15.348667,
+        17.9179
+      ],
+      "frame_sha256": [
+        "7a9598e52209741988e6bd46c3a3d13774707816d77dae7116cb9adaa6a93a5c",
+        "e07a6895f95cb1ef4ce399ca1135ad2b07a657c31a8d96a324d5f3b9fc0ff02a",
+        "4b526a442aff583819ab052abf98a771d22eb906417cef2494ea16e914cf065f",
+        "7241fcc1720ff561411b7a7212caa1eb45d7bdeffb59099fcf285299adbdd51a",
+        "c8fbe6ed2a42aacddd2a4e5503529ece45437723c7aea8441fcd7bd5957cbc0c",
+        "bf3c2e6eb924db750332374d993c9c73c7a6c2063735bf85bb2db0920550f260",
+        "6326bbbbc2cd98b21a0b5dac3f4a72755020238e67044f55bd65fc42585c546d",
+        "0486a2f0b204d45cbc3b2953a8e02b84a5a7f2ba40a27c83370f7356a12bc14a"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_208_4",
+      "question": "What happens to the smaller structure after it is first moved out of view?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 171.0. Actual frame times: [110.9, 119.5, 128.066667, 136.633333, 145.2, 153.766667, 162.333333, 170.9]",
+      "options": [
+        "It is disassembled.",
+        "It is placed on top of the larger structure.",
+        "It is left in the foreground.",
+        "It is placed back beside the larger structure."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/208-7.jpg"
+      ],
+      "category": "Event Understanding",
+      "image_sha256": "59d2c4b8fb7e55bb933fd2fc681736af5c0299a0aafc3890147cbd175947cf77",
+      "video_id": 208,
+      "query_timestamp": 171.0,
+      "frame_timestamps": [
+        110.9,
+        119.47142857142858,
+        128.04285714285714,
+        136.61428571428573,
+        145.18571428571428,
+        153.75714285714287,
+        162.32857142857142,
+        170.9
+      ],
+      "actual_frame_timestamps": [
+        110.9,
+        119.5,
+        128.066667,
+        136.633333,
+        145.2,
+        153.766667,
+        162.333333,
+        170.9
+      ],
+      "frame_sha256": [
+        "f93d34f978d130a6478a0be9ff59b6aa9000919211260c5f018c71d054eb71dc",
+        "28d8849844802b98f5ec8760c61dd872cea848b0735050ccf58110e6754e2837",
+        "6b17fb07719390dae26cebb538708ae92d52f91806a2db04d9926a68dc2b2dc0",
+        "057e35601ee924ccd76e2e908d870202c05b669d91445ece84a30f1fa385bb4d",
+        "a0adbdec2491fcbe271ba95352f37c3bc99c50e5088ed1eb011e8dfd000511e0",
+        "46ca69613e3b745e84528dc330dd2e37ba98ae03bffb335b4ec7990825c39ce6",
+        "5028f6ebcff4fe6b9bbea57a1ff49e4b3e479157f29d1b0fea11a32ac7464883",
+        "683a26e966c4b1e8f7ae53b081ff8909ab154265e790538280c7428bc9983f77"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_127_5",
+      "question": "What does the painter focus on during the last strokes?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 680.0. Actual frame times: [619.9193, 628.494533, 637.069767, 645.645, 654.186867, 662.7621, 671.337333, 679.912567]",
+      "options": [
+        "The eyes and hair.",
+        "The lower face.",
+        "The background and plant.",
+        "The canvas texture."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/127-7.jpg"
+      ],
+      "category": "Event Understanding",
+      "image_sha256": "41f30c65958cee6f9f680a18704de9411333733e006ce0a7183ad41e165ef78a",
+      "video_id": 127,
+      "query_timestamp": 680.0,
+      "frame_timestamps": [
+        619.9,
+        628.4714285714285,
+        637.0428571428571,
+        645.6142857142856,
+        654.1857142857143,
+        662.7571428571429,
+        671.3285714285714,
+        679.9
+      ],
+      "actual_frame_timestamps": [
+        619.9193,
+        628.494533,
+        637.069767,
+        645.645,
+        654.186867,
+        662.7621,
+        671.337333,
+        679.912567
+      ],
+      "frame_sha256": [
+        "675dd7ea94aa3b99490d3f40b044d53c7862ede981c9b6b3afe4e6b9cd3e413a",
+        "3f4face43f9f6350ff07b36f1881f441424a1e4cde26a99721d9cbf02b90d85d",
+        "5ce9d55ee1234f68046def4e207a767808ef639c2dbb1ddb2aadf9d57ae0a71e",
+        "ee65d094ac37d30dc60a71cdf6e8bc3ab7c009e54db7c9246b1d75b681c0b4bf",
+        "20efa45b4896fc31ebf9a991c5608d683612d859f7ebe97f72e16ed4ec74e2aa",
+        "b85d86000bab6dda63e4737e04145a31c2e9829031d448d446c6ebbaa69e43d6",
+        "62e840428c82e05bded907017f6401a0e74c56b1f8bf198d31b3b5927d514e4f",
+        "0abfb89fa84eefaf86c94c1a22acaa6998adcfe82c8a9533927c6b31371ce8dc"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_24_4",
+      "question": "What is the woman holding right now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 246.0. Actual frame times: [185.93575, 194.485958, 203.077875, 211.628083, 220.22, 228.770208, 237.362125, 245.912333]",
+      "options": [
+        "A spoon.",
+        "A white bowl.",
+        "A pepper mill.",
+        "A green bottle of olive oil."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/24-7.jpg"
+      ],
+      "category": "Object Perception",
+      "image_sha256": "0e4d35eeb76251cabe3a1a355c403f606d90b8cf1c55da2a0c1edee901425786",
+      "video_id": 24,
+      "query_timestamp": 246.0,
+      "frame_timestamps": [
+        185.9,
+        194.4714285714286,
+        203.04285714285714,
+        211.61428571428573,
+        220.18571428571428,
+        228.75714285714287,
+        237.32857142857142,
+        245.9
+      ],
+      "actual_frame_timestamps": [
+        185.93575,
+        194.485958,
+        203.077875,
+        211.628083,
+        220.22,
+        228.770208,
+        237.362125,
+        245.912333
+      ],
+      "frame_sha256": [
+        "a18339f47d7f3afb6c055720f7e2ff4d2d1aac21ae428b479bc34ad5b5f96fd9",
+        "77408f056fb1c881221b5fe9a4ac154194c3c6559e267add02f983e50ffe6b0f",
+        "b31243704e1fb6c33c55b279d41c3398455c0c490d653da95aa243dc946f3190",
+        "c89677991ae1d3e03980e901be94a96d008d44a8adba584ef4793a40462d72c7",
+        "51631c6e7614976e859cdf30a246c7cd440886488a0fc78d46cebe6807ca7070",
+        "7c2f1c665198064ac809f2ab3a0192cb2dacc65472f2c4a5f362c20cafac78b5",
+        "a4ed673a69f87c1300218940aab6d1fa29c0ed5b71dfe2c5b99d965ade9f0504",
+        "bca77657187980a2207572ec96591e53dbf0f99df46e4fbbaf46dcdefc1ea0c8"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_41_1",
+      "question": "What is the man standing in front of in the initial video?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 20.0. Actual frame times: [0.0, 2.877875, 5.714042, 8.550208, 11.386375, 14.222542, 17.058708, 19.936583]",
+      "options": [
+        "A wooden cabinet.",
+        "A glass door.",
+        "A blackboard.",
+        "A stainless steel refrigerator."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/41-7.jpg"
+      ],
+      "category": "Object Perception",
+      "image_sha256": "f6f9da4f4a30abf709431b54d996c4a216029f68e652f8023d71bbd8404e2cb5",
+      "video_id": 41,
+      "query_timestamp": 20.0,
+      "frame_timestamps": [
+        0.0,
+        2.8428571428571425,
+        5.685714285714285,
+        8.528571428571428,
+        11.37142857142857,
+        14.214285714285714,
+        17.057142857142857,
+        19.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        2.877875,
+        5.714042,
+        8.550208,
+        11.386375,
+        14.222542,
+        17.058708,
+        19.936583
+      ],
+      "frame_sha256": [
+        "6f85024523750036a233fb839f871c717222e742c097bb48e10cbd08ef1c0fd9",
+        "808842070c6c96a407c8efa316e656ceb2b3ea80f6a53f180fd9ff89b7f21575",
+        "9fbd431ca3d67bb9a5b5e88779088490238864d96dafa35d1f906fb13ff06bf9",
+        "f7629678c1e5be86444d7c3a0d6d9b0e7a16da4e83360cac2399c04374c91b95",
+        "adbc35352c1c659dbb577f08cf4faeeada3ba283ffac840d7e2e4ce09c6a4d73",
+        "549aa7bad1f0702d3f92d0410819c70a69931daa8a5bcf0ef5aac1f49b044b59",
+        "1b2cbf4777d902fedd289cee15dfc92b89522cf5b2fc24a3bac65c96a5db81d4",
+        "f7d2c7eed70a6a8d8fe94a7ca9b9fa6957f7ada371b5fbb7cb3b08808872909b"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_225_3",
+      "question": "What might the speaker discuss next?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 270.0. Actual frame times: [209.9097, 218.484933, 227.060167, 235.6354, 244.210633, 252.785867, 261.3611, 269.902967]",
+      "options": [
+        "The formula for compound interest.",
+        "Why the two way get the same answer.",
+        "Solving quadratic equations.",
+        "Graphing linear equations."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/225-7.jpg"
+      ],
+      "category": "Prospective Reasoning",
+      "image_sha256": "ee4060f9091db5f3e9da83b860f9f03b6b7e1d3ee6dde58e50f9b8320b02b0ef",
+      "video_id": 225,
+      "query_timestamp": 270.0,
+      "frame_timestamps": [
+        209.89999999999998,
+        218.47142857142856,
+        227.04285714285712,
+        235.6142857142857,
+        244.18571428571425,
+        252.75714285714284,
+        261.3285714285714,
+        269.9
+      ],
+      "actual_frame_timestamps": [
+        209.9097,
+        218.484933,
+        227.060167,
+        235.6354,
+        244.210633,
+        252.785867,
+        261.3611,
+        269.902967
+      ],
+      "frame_sha256": [
+        "aeaf9b846e1c18d480d9a94fd15aae55cbf52980e11ec1b9f9697f3de35ef69e",
+        "e59d06069295ab12f91c3a7e897403b738faa53f81792a95642e994ed0467961",
+        "a0fa3c34ee790836c346dcb81b53d8ee4317539d0b9015c0a805f56670fe39ff",
+        "a55af7f1920065f5d0e0a603d88663d8d2edf88b6fc25abafa5beadaffe6071e",
+        "3a2c558476f315bc4c4170c15b304033e3addbc40bdaa334a72b3a06d40c2728",
+        "c206cb834301640bde06eecb66a66bec78177796f118788f312410134995bd14",
+        "8aec6433ce03b82b2208d8e08cb519014b52019b5d4ba7ff699a8cc6d8cda2ac",
+        "9280cbf71a8542da76734eaafe01647741596d9677760ff8d2599de527471a58"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_211_5",
+      "question": "What might the speaker discuss next?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 511.0. Actual frame times: [450.917133, 459.492367, 468.0676, 476.642833, 485.218067, 493.759933, 502.335167, 510.9104]",
+      "options": [
+        "How to plot a line graph.",
+        "The significance of the axes intersections.",
+        "How to differentiate the quadrants.",
+        "The concept of linear equations."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/211-7.jpg"
+      ],
+      "category": "Prospective Reasoning",
+      "image_sha256": "0677c2fd9c1c7a73e21b8cdede4187654b7bde425da2bc36d7d077acc55af35b",
+      "video_id": 211,
+      "query_timestamp": 511.0,
+      "frame_timestamps": [
+        450.9,
+        459.47142857142853,
+        468.04285714285714,
+        476.6142857142857,
+        485.18571428571425,
+        493.7571428571428,
+        502.3285714285714,
+        510.9
+      ],
+      "actual_frame_timestamps": [
+        450.917133,
+        459.492367,
+        468.0676,
+        476.642833,
+        485.218067,
+        493.759933,
+        502.335167,
+        510.9104
+      ],
+      "frame_sha256": [
+        "9c901dca29cb0844eb45bbe13823eba9cad47a2268922a58145208c0a820d497",
+        "069c87c0602b5190c373946c5158c822626c5b324e044d577b5145b43edd18fb",
+        "326998e8c33f013c8c091f2018ea269e4d55558c3bfa4b1f6ccccd2a1f9ece8e",
+        "0f3bd8a55d950a00d24cb358b79330fe1ae463bec0aa9f1bab586ba8cf639e50",
+        "365e75a35e84d92fa5829ac66838517760f7ba746aadd1e842463612ba480a5a",
+        "74e50d9e43779825c7257ab8560b5840f1e393508d32126c2ff3448afbfa6d67",
+        "daef0a130cb6dd4c4712aa043acbec25bb665284883d2752abc1d048daadb1b5",
+        "2643acf26575fdaedda603283ea7542f4e24e60b6284ea21ed788d8a3543e669"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_130_3",
+      "question": "Where is the artist applying pink paint on the helmet right now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 499.0. Actual frame times: [438.916667, 447.5, 456.083333, 464.625, 473.208333, 481.791667, 490.333333, 498.916667]",
+      "options": [
+        "The upper left portion.",
+        "The lower right portion.",
+        "The upper right portion.",
+        "The lower left portion."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/130-7.jpg"
+      ],
+      "category": "Spatial Understanding",
+      "image_sha256": "87007d7ae7ef1c4bcb5c5cd8e3882b36071bfd40bee8cac70a8a898ffbde0f5c",
+      "video_id": 130,
+      "query_timestamp": 499.0,
+      "frame_timestamps": [
+        438.9,
+        447.47142857142853,
+        456.04285714285714,
+        464.6142857142857,
+        473.18571428571425,
+        481.7571428571428,
+        490.3285714285714,
+        498.9
+      ],
+      "actual_frame_timestamps": [
+        438.916667,
+        447.5,
+        456.083333,
+        464.625,
+        473.208333,
+        481.791667,
+        490.333333,
+        498.916667
+      ],
+      "frame_sha256": [
+        "3a0a732cedff263bc89b0503917f46dd2ba00506ea930413a06c0ec404ad819d",
+        "19ade46ba5bfa3600e46bd280cb9ec0dd1217ea6322fbb8b02304eeb878d2404",
+        "321eded85b7fc9f015fc5bbde7f986ecb090abaf9410f0b8b120b29a9dd13cab",
+        "1bd72285276569dff36907a88f3430dc337e2fee359e67df404368670bbea004",
+        "a8400876f10ffc05a828cfdd7fcd2f25f07558fe56c3b6b70f7354061a1c74ca",
+        "37a5b8b14956804ff3b0ea246f7febe0c3fd043d3012938c482a4ad5767528a9",
+        "4563e94e4b192f3f6119d9752e24e064d6b77ecd5ee399f70c83d498b8a53e9e",
+        "fcc80cdb3438e4e51e5fbc21a328a2085c78cfafda4dcdefdb84e599bbf8d392"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_202_3",
+      "question": "How are the yellow building blocks arranged before the blue block is placed on top?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 128.0. Actual frame times: [67.9, 76.5, 85.066667, 93.633333, 102.2, 110.766667, 119.333333, 127.9]",
+      "options": [
+        "In a circle.",
+        "In a straight line.",
+        "In a random pattern.",
+        "In a triangular shape."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/202-7.jpg"
+      ],
+      "category": "Spatial Understanding",
+      "image_sha256": "cef4d37f6bc2fe533d8c3264d1f00cc47dccdf3fe92b06113150966d8acfa668",
+      "video_id": 202,
+      "query_timestamp": 128.0,
+      "frame_timestamps": [
+        67.9,
+        76.47142857142858,
+        85.04285714285714,
+        93.61428571428573,
+        102.18571428571428,
+        110.75714285714287,
+        119.32857142857144,
+        127.9
+      ],
+      "actual_frame_timestamps": [
+        67.9,
+        76.5,
+        85.066667,
+        93.633333,
+        102.2,
+        110.766667,
+        119.333333,
+        127.9
+      ],
+      "frame_sha256": [
+        "678f736a922670d380c93898f97b5a25c23fba8231f84e6be8657e5eb4b851b4",
+        "314c0d4f007e64a2e912aaaaa92a1678f33f4799450c260fe1c61bdb319fc027",
+        "a0de76bf86ae57ec44dbf5721a9274f25fa2aaf75a4be40846017d34df31c7fc",
+        "3fd9ad505ef089a3887fbbcbdfeafe2db690942d9fe3c3cebd213517b6a1a2c8",
+        "58379bf90189bb040a306038002085dcac65362468cd32eb0c3909d5b8b10326",
+        "7acee0be5c633b3790a2b76f6069d6d56f92ae24f4e35391094c8430a7ce94b4",
+        "cc783dae796770efed3b2789707f465009d251f52cd0727509988df51bafd4e9",
+        "461fe44f5ae4a53728bc38e3e69c4ee690128c12c6eabf2b2435f0b37d6d7eb3"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_122_1",
+      "question": "What text is prominently shown on the packaging of the darker graphics card right now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 15.0. Actual frame times: [0.0, 2.133333, 4.266667, 6.4, 8.533333, 10.666667, 12.8, 14.9]",
+      "options": [
+        "DESIGNED BY GAMERS, BUILT BY NVIDIA.",
+        "CREATED BY GAMERS, DEVELOPED BY NVIDIA.",
+        "INSPIRED BY GAMERS. BUILT BY NVIDIA.",
+        "ENGINEERED BY GAMERS, MADE BY NVIDIA."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/122-7.jpg"
+      ],
+      "category": "Text-Rich Understanding",
+      "image_sha256": "38b1e41815b65c6c079d84cf23fd188550473cb5082bf299930aa99e4258d959",
+      "video_id": 122,
+      "query_timestamp": 15.0,
+      "frame_timestamps": [
+        0.0,
+        2.1285714285714286,
+        4.257142857142857,
+        6.385714285714286,
+        8.514285714285714,
+        10.642857142857142,
+        12.771428571428572,
+        14.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        2.133333,
+        4.266667,
+        6.4,
+        8.533333,
+        10.666667,
+        12.8,
+        14.9
+      ],
+      "frame_sha256": [
+        "fe0cf33d1418f9e249d14cda4f776831ef4b9412e9f1964ff241182bd4f553e3",
+        "c4fd20f752373de0bf84a7b6f0b7ce3795049f2ffee16a352fccbc72b7f0aa33",
+        "487d88a14c2cd4a17b315aedd0eb91155185929f75b68c4962698ce3e8966e67",
+        "2894a9c1b2481370704a3aad5ccad5b5e7746b78ed3102c7328e1a5029a063f8",
+        "c5dadfec265ce5480a7a7eea401704190f513b8ff415b4075501df90abab1857",
+        "cbd8600fdb722df7dd292ae54f1934b3d3b5bc65dbe73f8fa4f83af3b3686681",
+        "3dd7611f0e30c3a1180dea426cd8113eae0749ce412d81a52bd5ab2526391a56",
+        "a84708bf7ad26cec9df822f07215881b8bc18a25a605b16e125d58812f609ee5"
+      ]
+    },
+    {
+      "id": "Real-Time Visual Understanding_sample_113_1",
+      "question": "What item is the person holding close to the camera right now?",
+      "state": "Frames are chronological, sampled before the question time. Question time in seconds: 7.0. Actual frame times: [0.0, 1.001, 1.985317, 2.969633, 3.95395, 4.938267, 5.922583, 6.9069]",
+      "options": [
+        "A framed picture.",
+        "A black device.",
+        "A navy blue t-shirt.",
+        "A smartphone."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-0.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-1.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-2.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-3.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-4.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-5.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-6.jpg",
+        "/Users/lukatang/Desktop/paper/OmniJev/results/streaming-public/images/113-7.jpg"
+      ],
+      "category": "Text-Rich Understanding",
+      "image_sha256": "71f39111a8116c6d3b671c57a535c6e47fc0c0474936e6315d406440267c99e0",
+      "video_id": 113,
+      "query_timestamp": 7.0,
+      "frame_timestamps": [
+        0.0,
+        0.9857142857142858,
+        1.9714285714285715,
+        2.9571428571428577,
+        3.942857142857143,
+        4.928571428571429,
+        5.9142857142857155,
+        6.9
+      ],
+      "actual_frame_timestamps": [
+        0.0,
+        1.001,
+        1.985317,
+        2.969633,
+        3.95395,
+        4.938267,
+        5.922583,
+        6.9069
+      ],
+      "frame_sha256": [
+        "467e24b72bbe3e22c960a97dcf72f2c51828852671e949e11d120e3dcf3ae926",
+        "565bc71fdabfd015e7f2f7a3a8d61aad12c252a63e718db01ac3ba73e7e92043",
+        "1b2c9c5089dcd4bceacca44368159f8588036c4673de555cb9763c5bd3488eaf",
+        "23eb5cff698f85600cf8d5d84f4d9b9d180be779885a15b1273f8f3e6ee5e755",
+        "35fa4f0bc49473e381c94fdd119a94c0046f2d042b8b94a858adf5ac2852af0b",
+        "a703d4b16428850f08a3a421e6d17cb25cf45aca598992239c5f217c082c0982",
+        "ad3e32ee53e013e1bae52ac98fcb8db9627c9d574d7f30f24417df1614e5c50e",
+        "cd98c9c7e0089d04b10887c003ba0ef654668b93564a5bb02a601343c596d830"
+      ]
+    }
+  ],
+  "protocol": {
+    "methods": [
+      "omnijev",
+      "direct",
+      "json",
+      "reasoning"
+    ],
+    "temperature": 0,
+    "thinking_max_tokens": 20480,
+    "direct_max_tokens": 4,
+    "json_max_tokens": 32,
+    "sampling": "2 questions per task type; distinct videos; restricted to videos compressed <=100 MB. 8 chronological frames over a <=60 s window ending 0.1 s before query (earliest target up to 60.1 s before query); actual decoded frame timestamps verified <= query. No audio. Offline causal replay, not official full protocol or live stream. Offline decoding excluded from inference latency.",
+    "cache": "natural cache; globally shuffled sequential requests",
+    "timing": "client encoding + HTTP + answer parsing; excludes offline media preparation and model loading",
+    "generation_seed": 20260919,
+    "thinking_temperature": 0.6,
+    "thinking_top_p": 0.95,
+    "thinking_timeout_seconds": 900,
+    "reasoning_note": "Recommended sampling and output cap from NVIDIA model card; Bionic does not expose verified vLLM reasoning_budget/grace_period control. Greedy 8192 pilot retained separately; unchanged short-answer records reused. This is protocol development, not a preregistered confirmatory test.",
+    "reasoning_effort": "medium",
+    "observed_reasoning_budget": "approximately 8192 thinking tokens; backend inserts I have to answer now.; distinct from total max_tokens=20480"
+  }
+}

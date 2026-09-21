@@ -1,0 +1,262 @@
+{
+  "dataset": "MMStar",
+  "expected_cases": 300,
+  "expected_requests": 1200,
+  "completed_requests": 1200,
+  "methods": {
+    "omnijev": {
+      "n": 300,
+      "accuracy": 66.66666666666667,
+      "strict_accuracy": 66.66666666666667,
+      "invalid": 1,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 1.166053916999772,
+      "latency_p95": 1.515384075650394,
+      "latency_mean": 1.0729871505633508,
+      "usage_coverage": 300,
+      "categories": {
+        "coarse perception": {
+          "n": 50,
+          "correct": 34
+        },
+        "fine-grained perception": {
+          "n": 50,
+          "correct": 28
+        },
+        "instance reasoning": {
+          "n": 50,
+          "correct": 42
+        },
+        "logical reasoning": {
+          "n": 50,
+          "correct": 37
+        },
+        "math": {
+          "n": 50,
+          "correct": 27
+        },
+        "science & technology": {
+          "n": 50,
+          "correct": 32
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 7.666666666666667,
+        "1": 14.333333333333334,
+        "2": 66.66666666666667,
+        "5": 66.66666666666667,
+        "10": 66.66666666666667,
+        "30": 66.66666666666667
+      },
+      "prompt_tokens_mean": 397.3833333333333,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 400.3833333333333
+    },
+    "direct": {
+      "n": 300,
+      "accuracy": 66.66666666666667,
+      "strict_accuracy": 66.66666666666667,
+      "invalid": 1,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 1.1699257289999423,
+      "latency_p95": 1.5533067951999557,
+      "latency_mean": 1.11002973651334,
+      "usage_coverage": 300,
+      "categories": {
+        "coarse perception": {
+          "n": 50,
+          "correct": 34
+        },
+        "fine-grained perception": {
+          "n": 50,
+          "correct": 28
+        },
+        "instance reasoning": {
+          "n": 50,
+          "correct": 42
+        },
+        "logical reasoning": {
+          "n": 50,
+          "correct": 37
+        },
+        "math": {
+          "n": 50,
+          "correct": 27
+        },
+        "science & technology": {
+          "n": 50,
+          "correct": 32
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 5.666666666666667,
+        "1": 15.333333333333334,
+        "2": 66.66666666666667,
+        "5": 66.66666666666667,
+        "10": 66.66666666666667,
+        "30": 66.66666666666667
+      },
+      "prompt_tokens_mean": 397.3833333333333,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 400.3833333333333
+    },
+    "json": {
+      "n": 300,
+      "accuracy": 65.33333333333333,
+      "strict_accuracy": 65.33333333333333,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 1.2860581879995152,
+      "latency_p95": 1.7596589187500513,
+      "latency_mean": 1.2949945740533002,
+      "usage_coverage": 300,
+      "categories": {
+        "coarse perception": {
+          "n": 50,
+          "correct": 34
+        },
+        "fine-grained perception": {
+          "n": 50,
+          "correct": 27
+        },
+        "instance reasoning": {
+          "n": 50,
+          "correct": 42
+        },
+        "logical reasoning": {
+          "n": 50,
+          "correct": 34
+        },
+        "math": {
+          "n": 50,
+          "correct": 25
+        },
+        "science & technology": {
+          "n": 50,
+          "correct": 34
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.3333333333333333,
+        "1": 7.666666666666667,
+        "2": 65.0,
+        "5": 65.33333333333333,
+        "10": 65.33333333333333,
+        "30": 65.33333333333333
+      },
+      "prompt_tokens_mean": 404.3833333333333,
+      "completion_tokens_mean": 10.65,
+      "total_tokens_mean": 415.03333333333336
+    },
+    "reasoning": {
+      "n": 300,
+      "accuracy": 72.33333333333333,
+      "strict_accuracy": 71.66666666666667,
+      "invalid": 4,
+      "errors": 0,
+      "truncated": 1,
+      "reasoning_budget_forced": 43,
+      "reasoning_detected": 300,
+      "latency_p50": 15.899094729000069,
+      "latency_p95": 120.99009578124996,
+      "latency_mean": 38.30326988069333,
+      "usage_coverage": 300,
+      "categories": {
+        "coarse perception": {
+          "n": 50,
+          "correct": 31
+        },
+        "fine-grained perception": {
+          "n": 50,
+          "correct": 30
+        },
+        "instance reasoning": {
+          "n": 50,
+          "correct": 39
+        },
+        "logical reasoning": {
+          "n": 50,
+          "correct": 35
+        },
+        "math": {
+          "n": 50,
+          "correct": 45
+        },
+        "science & technology": {
+          "n": 50,
+          "correct": 37
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.6666666666666666,
+        "5": 9.0,
+        "10": 29.0,
+        "30": 55.333333333333336
+      },
+      "prompt_tokens_mean": 397.3833333333333,
+      "completion_tokens_mean": 2419.4166666666665,
+      "total_tokens_mean": 2816.8
+    }
+  },
+  "comparisons": {
+    "direct": {
+      "n": 300,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "conservative_95_ci_pp": [
+        -1.4500594315008108,
+        1.4500594315008108
+      ],
+      "noninferior_at_2pp": true,
+      "agreement": 99.66666666666667,
+      "wins": 0,
+      "losses": 0
+    },
+    "json": {
+      "n": 300,
+      "accuracy_difference_pp": 1.3333333333333335,
+      "cluster_bootstrap_95_ci_pp": [
+        -1.0,
+        3.6666666666666665
+      ],
+      "conservative_95_ci_pp": [
+        -2.977254574176613,
+        5.578087486026339
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 94.0,
+      "wins": 9,
+      "losses": 5
+    },
+    "reasoning": {
+      "n": 300,
+      "accuracy_difference_pp": -5.666666666666666,
+      "cluster_bootstrap_95_ci_pp": [
+        -11.0,
+        -0.3333333333333333
+      ],
+      "conservative_95_ci_pp": [
+        -13.867645076175371,
+        2.691937173108294
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 75.0,
+      "wins": 24,
+      "losses": 41
+    }
+  }
+}

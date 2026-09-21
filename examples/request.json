@@ -1,0 +1,11 @@
+{
+  "request_id": "support-routing",
+  "question": "根据用户消息，选择合适的处理队列。",
+  "state": "我的包裹三天没有更新物流信息，请帮我查询。",
+  "options": [
+    {"id": "delivery", "description": "物流与配送问题"},
+    {"id": "refund", "description": "退款与退货问题"},
+    {"id": "technical", "description": "软件与设备技术问题"},
+    {"id": "unknown", "description": "其他类型或证据不足", "abstain": true}
+  ]
+}

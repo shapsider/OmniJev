@@ -1,0 +1,33 @@
+{
+  "task": "stack",
+  "seed": 0,
+  "provider": "omni_reasoning",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 155.56,
+  "model_calls": 13,
+  "input_tokens": 8831,
+  "output_tokens": 7631,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "1b0552ad103d3a0cc289ba6dce018a6425a8eca1c40d3a5e04cb3007ffc00b4a",
+  "message": null,
+  "model_latency_ms": [
+    18170.049707987346,
+    10424.571957963053,
+    14574.667042004876,
+    13282.500750035979,
+    4972.1657920163125,
+    16472.562749986537,
+    10064.547249989118,
+    14293.687833007425,
+    6543.015957984608,
+    14652.740208024625,
+    14089.640083024278,
+    5057.327874994371,
+    11510.239958006423
+  ],
+  "episode_file": "stack-0-omni_reasoning.json"
+}

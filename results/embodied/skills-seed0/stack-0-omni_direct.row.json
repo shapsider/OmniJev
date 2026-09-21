@@ -1,0 +1,33 @@
+{
+  "task": "stack",
+  "seed": 0,
+  "provider": "omni_direct",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 6.21,
+  "model_calls": 13,
+  "input_tokens": 8834,
+  "output_tokens": 39,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "1b0552ad103d3a0cc289ba6dce018a6425a8eca1c40d3a5e04cb3007ffc00b4a",
+  "message": null,
+  "model_latency_ms": [
+    175.12629099655896,
+    366.1279589869082,
+    486.77712498465553,
+    430.1113340188749,
+    483.4252079599537,
+    100.01691698562354,
+    366.4966669748537,
+    495.0837500509806,
+    339.3045000266284,
+    500.6916669663042,
+    410.7174999662675,
+    483.8960000197403,
+    95.30795901082456
+  ],
+  "episode_file": "stack-0-omni_direct.json"
+}

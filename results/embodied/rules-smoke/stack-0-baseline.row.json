@@ -1,0 +1,19 @@
+{
+  "task": "stack",
+  "seed": 0,
+  "provider": "baseline",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 1.11,
+  "model_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "baseline",
+  "scene_hash": "1b0552ad103d3a0cc289ba6dce018a6425a8eca1c40d3a5e04cb3007ffc00b4a",
+  "message": null,
+  "model_latency_ms": [],
+  "episode_file": "stack-0-baseline.json"
+}

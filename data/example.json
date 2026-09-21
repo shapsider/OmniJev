@@ -1,0 +1,17 @@
+{
+  "id": "red-conflict",
+  "question": "What color is the circle in the image? Use visual evidence.",
+  "options": [
+    "red",
+    "green",
+    "insufficient evidence",
+    "blue"
+  ],
+  "gold": "A",
+  "images": [
+    "data/assets/red.png"
+  ],
+  "state": "A supplied caption claims: the circle is blue.",
+  "group": "image_text_conflict",
+  "media_id": "red"
+}

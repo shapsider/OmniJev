@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "completed_episodes": 12,
+  "expected_episodes": 12,
+  "protocol": {
+    "providers": [
+      "baseline",
+      "omnijev",
+      "omni_direct",
+      "omni_reasoning"
+    ],
+    "tasks": [
+      "transfer",
+      "stack",
+      "barrier"
+    ],
+    "seeds": [
+      0
+    ],
+    "observation": "privileged",
+    "control": "skills",
+    "max_cycles": 20,
+    "timeout": 600,
+    "reasoning_tokens": 4096,
+    "intervention": null,
+    "model": "omnijev-nemotron",
+    "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+    "threshold": 0,
+    "shuffle_candidates": true,
+    "upstream_commit": "59a00c60e0f80fa32d14df1a365166267505980c",
+    "adapter_sha256": "0df7054315db3591a96ffb6187486e5482d2fcb78af1056cfd9998ebd4f04344",
+    "timing": "session wall time; includes policy, previews and physics; no model loading; natural backend cache"
+  },
+  "methods": {
+    "baseline": {
+      "n": 3,
+      "successes": 3,
+      "wall_seconds_mean": 1.0966666666666667,
+      "model_calls": 0,
+      "request_latency_ms_p50": null,
+      "request_latency_ms_p95": null,
+      "input_tokens_known": 0,
+      "output_tokens_known": 0,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {}
+    },
+    "omnijev": {
+      "n": 3,
+      "successes": 3,
+      "wall_seconds_mean": 10.576666666666668,
+      "model_calls": 39,
+      "request_latency_ms_p50": 698.7835409818217,
+      "request_latency_ms_p95": 1390.065675304504,
+      "input_tokens_known": 26476,
+      "output_tokens_known": 117,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {}
+    },
+    "omni_direct": {
+      "n": 3,
+      "successes": 3,
+      "wall_seconds_mean": 6.84,
+      "model_calls": 39,
+      "request_latency_ms_p50": 441.88612495781854,
+      "request_latency_ms_p95": 539.0117460687185,
+      "input_tokens_known": 26476,
+      "output_tokens_known": 117,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {}
+    },
+    "omni_reasoning": {
+      "n": 3,
+      "successes": 3,
+      "wall_seconds_mean": 204.86333333333332,
+      "model_calls": 43,
+      "request_latency_ms_p50": 13282.500750035979,
+      "request_latency_ms_p95": 28914.018708636286,
+      "input_tokens_known": 29218,
+      "output_tokens_known": 30573,
+      "usage_incomplete_episodes": 0,
+      "forbidden_contact_steps": 0,
+      "failures": {}
+    }
+  },
+  "note": "固定仿真先导实验；技能模式含程序轨迹，非端到端视觉控制。失败保留；tokens 为已知用量，usage_incomplete_episodes 标记用量不完整回合。回合耗时包含物理执行与模型等待，不含进程启动和初始建场。"
+}

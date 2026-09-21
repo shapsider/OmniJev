@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/FBddcz/embodied-jev",
+  "commit": "59a00c60e0f80fa32d14df1a365166267505980c",
+  "license": "MIT",
+  "integration": "Vendored workbench with OmniJev adapters and local benchmark dashboard; see docs/EMBODIED_INTEGRATION.md"
+}

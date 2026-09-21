@@ -1,0 +1,33 @@
+{
+  "task": "transfer",
+  "seed": 0,
+  "provider": "omni_reasoning",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 190.82,
+  "model_calls": 13,
+  "input_tokens": 8754,
+  "output_tokens": 9739,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
+  "message": null,
+  "model_latency_ms": [
+    17399.86358297756,
+    7442.795415990986,
+    44148.613333003595,
+    16970.064666005783,
+    2709.8292500013486,
+    20942.037290951703,
+    6765.294832992367,
+    10392.77354098158,
+    6656.614916049875,
+    18798.054499959107,
+    5892.4429579637945,
+    2244.60504099261,
+    28992.120042035822
+  ],
+  "episode_file": "transfer-0-omni_reasoning.json"
+}

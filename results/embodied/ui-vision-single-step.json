@@ -1,0 +1,3851 @@
+{
+  "format": "embodied-jev-episode-v1",
+  "id": "130e0474cfcd",
+  "task": "transfer",
+  "seed": 0,
+  "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
+  "provider": "omnijev",
+  "profile_id": null,
+  "scene_config": {
+    "name": "搬运入盘",
+    "source_xy": null,
+    "target_xy": [
+      0.43,
+      0.18
+    ],
+    "barrier_height": null
+  },
+  "observation_mode": "vision",
+  "camera_views": [
+    "external",
+    "wrist"
+  ],
+  "control_mode": "incremental",
+  "intervention": null,
+  "interventions": [],
+  "shuffle_candidates": false,
+  "perception_history": [
+    {
+      "capture_id": 1,
+      "source": "vision",
+      "status": "ready",
+      "captured_at": "2026-09-21T02:57:16.377516+00:00",
+      "sim_time": 0.0,
+      "latency_ms": 59.3,
+      "objects": [],
+      "width": 640,
+      "height": 480,
+      "calibration": {
+        "position": [
+          0.8526182770729065,
+          0.0,
+          0.941307783126831
+        ],
+        "forward": [
+          -0.4226182699203491,
+          5.1755810807271185e-17,
+          -0.9063078165054321
+        ],
+        "up": [
+          -0.9063078165054321,
+          1.1099069092822633e-16,
+          0.4226182699203491
+        ],
+        "fx": 579.4112461995371,
+        "fy": 579.4112461995371,
+        "cx": 319.5,
+        "cy": 239.5,
+        "coordinate_frame": "world",
+        "units": "metres"
+      },
+      "camera_view": "external + wrist",
+      "camera_views": [
+        "external",
+        "wrist"
+      ],
+      "primary_view": "external",
+      "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+      "depth_units": "millimetres",
+      "depth_invalid_value": 0,
+      "depth_display_range_m": [
+        0.25,
+        1.25
+      ],
+      "detector": "none; raw RGB to model",
+      "proprioception": "simulated TCP, gripper command and finger/support contacts",
+      "tracking_limits_sim_seconds": {
+        "unheld_object": 4.0,
+        "held_object": 8.0,
+        "destination": 12.0
+      },
+      "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+      "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+      "views": {
+        "external": {
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "mount": "fixed"
+        },
+        "wrist": {
+          "calibration": {
+            "position": [
+              0.42496947944164276,
+              -0.07999130338430405,
+              0.2984120845794678
+            ],
+            "forward": [
+              3.487823960313108e-06,
+              -8.10617802926572e-06,
+              -1.0
+            ],
+            "up": [
+              2.1315051981218858e-06,
+              1.0,
+              -8.106170753308106e-06
+            ],
+            "fx": 286.02085097319883,
+            "fy": 286.02085097319883,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "mount": "robot hand"
+        }
+      }
+    },
+    {
+      "capture_id": 2,
+      "source": "vision",
+      "status": "ready",
+      "captured_at": "2026-09-21T02:57:24.209842+00:00",
+      "sim_time": 0.45,
+      "latency_ms": 103.02,
+      "objects": [],
+      "width": 640,
+      "height": 480,
+      "calibration": {
+        "position": [
+          0.8526182770729065,
+          0.0,
+          0.941307783126831
+        ],
+        "forward": [
+          -0.4226182699203491,
+          5.1755810807271185e-17,
+          -0.9063078165054321
+        ],
+        "up": [
+          -0.9063078165054321,
+          1.1099069092822633e-16,
+          0.4226182699203491
+        ],
+        "fx": 579.4112461995371,
+        "fy": 579.4112461995371,
+        "cx": 319.5,
+        "cy": 239.5,
+        "coordinate_frame": "world",
+        "units": "metres"
+      },
+      "camera_view": "external + wrist",
+      "camera_views": [
+        "external",
+        "wrist"
+      ],
+      "primary_view": "external",
+      "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+      "depth_units": "millimetres",
+      "depth_invalid_value": 0,
+      "depth_display_range_m": [
+        0.25,
+        1.25
+      ],
+      "detector": "none; raw RGB to model",
+      "proprioception": "simulated TCP, gripper command and finger/support contacts",
+      "tracking_limits_sim_seconds": {
+        "unheld_object": 4.0,
+        "held_object": 8.0,
+        "destination": 12.0
+      },
+      "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+      "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+      "views": {
+        "external": {
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "mount": "fixed"
+        },
+        "wrist": {
+          "calibration": {
+            "position": [
+              0.3878061920404434,
+              -0.08009256795048714,
+              0.2984606921672821
+            ],
+            "forward": [
+              1.023099321173504e-05,
+              5.9048383263871074e-05,
+              -1.0
+            ],
+            "up": [
+              0.00014035606000106782,
+              1.0,
+              5.904981662752107e-05
+            ],
+            "fx": 286.02085097319883,
+            "fy": 286.02085097319883,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "mount": "robot hand"
+        }
+      }
+    }
+  ],
+  "camera_manifest": [
+    {
+      "capture_id": "1",
+      "view": "external",
+      "file": "captures/1-external.png",
+      "sha256": "2a6c25e65b902d8a615a12b66e989816ec250f9fc222dd8a54676d085a43b18a",
+      "byte_length": 107790
+    },
+    {
+      "capture_id": "1",
+      "view": "wrist",
+      "file": "captures/1-wrist.png",
+      "sha256": "7f90d367c4fddd9d58bd02c6391873acde458fffee6094c39f053beefc595431",
+      "byte_length": 78962
+    },
+    {
+      "capture_id": "2",
+      "view": "external",
+      "file": "captures/2-external.png",
+      "sha256": "ed97082d80d23c4aecd549d57295da60960734d33ef61bf730170cdefcb0db0c",
+      "byte_length": 103277
+    },
+    {
+      "capture_id": "2",
+      "view": "wrist",
+      "file": "captures/2-wrist.png",
+      "sha256": "a43cc5ed6e21cdfef61f173b04740e883c7fea8c25cce335ecebb72f4ca22b01",
+      "byte_length": 83231
+    }
+  ],
+  "user_context": {},
+  "preview": true,
+  "status": "stopped",
+  "success": false,
+  "model": "omnijev-nemotron",
+  "threshold": 0.0,
+  "max_cycles": 100,
+  "policy_version": "incremental-planning-v2",
+  "history": [
+    {
+      "cycle": 1,
+      "phase": "incremental",
+      "label": "X -0.040 m",
+      "intent": null,
+      "decision": {
+        "choice": "x_neg_40",
+        "probabilities": {},
+        "selected_probability": null,
+        "provider_confidence": null,
+        "latency_ms": 5976.854707987513,
+        "model_call": true,
+        "provider": "omnijev",
+        "model": "omnijev-nemotron",
+        "route": "fast",
+        "readout": "generated_label",
+        "score_status": "incomplete_top_k",
+        "calibrated": false,
+        "request_tokens": {
+          "prompt_tokens": 2614,
+          "completion_tokens": 3,
+          "total_tokens": 2617,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "messages_sha256": "8ce25c04c93b13ca855b1112b8bcc0025117df1138555a0a45c3df2bbd274f12",
+        "image_count": 2,
+        "image_views": [
+          "external",
+          "wrist"
+        ],
+        "image_sha256": "2a6c25e65b902d8a615a12b66e989816ec250f9fc222dd8a54676d085a43b18a"
+      },
+      "action": {
+        "id": "x_neg_40",
+        "label": "X -0.040 m",
+        "phase": "incremental",
+        "target": [
+          0.33997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": null,
+        "seconds": 0.45,
+        "admitted": true,
+        "rejection": null,
+        "preview": {
+          "source": "simulator_safety_filter",
+          "safe": true
+        },
+        "delta_xyz": [
+          -0.04,
+          0.0,
+          0.0
+        ]
+      },
+      "executed": true,
+      "rejection": null,
+      "before": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.0,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          }
+        }
+      },
+      "after": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.34281,
+          -0.08008,
+          0.22006
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.45,
+        "perception": {
+          "capture_id": 2,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:24.209842+00:00",
+          "sim_time": 0.45,
+          "latency_ms": 103.02,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.3878061920404434,
+                  -0.08009256795048714,
+                  0.2984606921672821
+                ],
+                "forward": [
+                  1.023099321173504e-05,
+                  5.9048383263871074e-05,
+                  -1.0
+                ],
+                "up": [
+                  0.00014035606000106782,
+                  1.0,
+                  5.904981662752107e-05
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          }
+        }
+      },
+      "candidates": [
+        {
+          "id": "x_pos_40",
+          "label": "X +0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.41996999999999995,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.04,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "x_pos_10",
+          "label": "X +0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.38997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.01,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "x_pos_2",
+          "label": "X +0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.38197,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.002,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "x_neg_40",
+          "label": "X -0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.33997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            -0.04,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "x_neg_10",
+          "label": "X -0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.36996999999999997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            -0.01,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "x_neg_2",
+          "label": "X -0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.37797,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            -0.002,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "y_pos_40",
+          "label": "Y +0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.039990000000000005,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.04,
+            0.0
+          ]
+        },
+        {
+          "id": "y_pos_10",
+          "label": "Y +0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.06999000000000001,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.01,
+            0.0
+          ]
+        },
+        {
+          "id": "y_pos_2",
+          "label": "Y +0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07799,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.002,
+            0.0
+          ]
+        },
+        {
+          "id": "y_neg_40",
+          "label": "Y -0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.11999000000000001,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            -0.04,
+            0.0
+          ]
+        },
+        {
+          "id": "y_neg_10",
+          "label": "Y -0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.08999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            -0.01,
+            0.0
+          ]
+        },
+        {
+          "id": "y_neg_2",
+          "label": "Y -0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.08199000000000001,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            -0.002,
+            0.0
+          ]
+        },
+        {
+          "id": "z_pos_40",
+          "label": "Z +0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.26001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.04
+          ]
+        },
+        {
+          "id": "z_pos_10",
+          "label": "Z +0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.23001000000000002
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.01
+          ]
+        },
+        {
+          "id": "z_pos_2",
+          "label": "Z +0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.22201
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.002
+          ]
+        },
+        {
+          "id": "z_neg_40",
+          "label": "Z -0.040 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.18001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            -0.04
+          ]
+        },
+        {
+          "id": "z_neg_10",
+          "label": "Z -0.010 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.21001
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            -0.01
+          ]
+        },
+        {
+          "id": "z_neg_2",
+          "label": "Z -0.002 m",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.21801
+          ],
+          "gripper": null,
+          "seconds": 0.45,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            -0.002
+          ]
+        },
+        {
+          "id": "open",
+          "label": "张开夹爪",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": "open",
+          "seconds": 0.65,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "close",
+          "label": "闭合夹爪",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": "close",
+          "seconds": 0.65,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "id": "hold",
+          "label": "保持当前位姿",
+          "phase": "incremental",
+          "target": [
+            0.37997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": null,
+          "seconds": 0.3,
+          "admitted": true,
+          "rejection": null,
+          "preview": null,
+          "delta_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "decision_inputs": {
+        "phase": null,
+        "action": {
+          "state": {
+            "observation": {
+              "source": "external + wrist RGB pixels + simulated proprioception",
+              "tcp": [
+                0.37997,
+                -0.07999,
+                0.22001
+              ],
+              "gripper": "open",
+              "held": false,
+              "finger_contacts": [],
+              "grasp_secured": false,
+              "support_contact": false,
+              "forbidden_contact": false,
+              "sim_seconds": 0.0,
+              "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+              "units": "metres",
+              "perception": {
+                "source": "vision",
+                "capture_id": 1,
+                "status": "ready",
+                "sim_time": 0.0,
+                "width": 640,
+                "height": 480,
+                "camera_view": "external + wrist",
+                "depth_units": "millimetres",
+                "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+                "calibration": {
+                  "position": [
+                    0.8526182770729065,
+                    0.0,
+                    0.941307783126831
+                  ],
+                  "forward": [
+                    -0.4226182699203491,
+                    5.1755810807271185e-17,
+                    -0.9063078165054321
+                  ],
+                  "up": [
+                    -0.9063078165054321,
+                    1.1099069092822633e-16,
+                    0.4226182699203491
+                  ],
+                  "fx": 579.4112461995371,
+                  "fy": 579.4112461995371,
+                  "cx": 319.5,
+                  "cy": 239.5,
+                  "coordinate_frame": "world",
+                  "units": "metres"
+                },
+                "views": {
+                  "external": {
+                    "mount": "fixed",
+                    "calibration": {
+                      "position": [
+                        0.8526182770729065,
+                        0.0,
+                        0.941307783126831
+                      ],
+                      "forward": [
+                        -0.4226182699203491,
+                        5.1755810807271185e-17,
+                        -0.9063078165054321
+                      ],
+                      "up": [
+                        -0.9063078165054321,
+                        1.1099069092822633e-16,
+                        0.4226182699203491
+                      ],
+                      "fx": 579.4112461995371,
+                      "fy": 579.4112461995371,
+                      "cx": 319.5,
+                      "cy": 239.5,
+                      "coordinate_frame": "world",
+                      "units": "metres"
+                    }
+                  },
+                  "wrist": {
+                    "mount": "robot hand",
+                    "calibration": {
+                      "position": [
+                        0.42496947944164276,
+                        -0.07999130338430405,
+                        0.2984120845794678
+                      ],
+                      "forward": [
+                        3.487823960313108e-06,
+                        -8.10617802926572e-06,
+                        -1.0
+                      ],
+                      "up": [
+                        2.1315051981218858e-06,
+                        1.0,
+                        -8.106170753308106e-06
+                      ],
+                      "fx": 286.02085097319883,
+                      "fy": 286.02085097319883,
+                      "cx": 319.5,
+                      "cy": 239.5,
+                      "coordinate_frame": "world",
+                      "units": "metres"
+                    }
+                  }
+                }
+              }
+            },
+            "goal_conditions": {
+              "object": "resting stably in/on the requested destination for at least 0.4 seconds",
+              "gripper": "open and no longer holding the object",
+              "final_tcp_z_min_m": 0.17
+            },
+            "recent_outcomes": []
+          },
+          "decision": {
+            "type": "choice",
+            "instructions": "Plan toward the stated task goal using the current sensors and recent actual outcomes. Choose exactly one offered fixed incremental robot action for this decision; the next decision receives a new observation. Coordinates and increments are in metres in the world XYZ frame, not image pixels. Use the camera calibration to interpret image directions. A translation preserves the gripper command. Closing the gripper does not prove a grasp: held means both fingers contact the object while closed. Support contact reports physical contact, not proof of correct placement. Account for obstacles, occlusion, observed movement, rejected actions and discrepancies from your intended outcome. No task phase or movement sequence is prescribed. The action IDs and step sizes are fixed; do not invent an action or assume automatic alignment. If an image is attached, use its visible evidence alongside the available sensors; missing object coordinates are unknown, not zero. You may give a brief public intent and a short visual_evidence description of what is visibly supported, not private reasoning.",
+            "criteria": {
+              "x_pos_40": "{\"delta_xyz\":[0.04,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "x_pos_10": "{\"delta_xyz\":[0.01,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "x_pos_2": "{\"delta_xyz\":[0.002,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "x_neg_40": "{\"delta_xyz\":[-0.04,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "x_neg_10": "{\"delta_xyz\":[-0.01,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "x_neg_2": "{\"delta_xyz\":[-0.002,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_pos_40": "{\"delta_xyz\":[0.0,0.04,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_pos_10": "{\"delta_xyz\":[0.0,0.01,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_pos_2": "{\"delta_xyz\":[0.0,0.002,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_neg_40": "{\"delta_xyz\":[0.0,-0.04,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_neg_10": "{\"delta_xyz\":[0.0,-0.01,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "y_neg_2": "{\"delta_xyz\":[0.0,-0.002,0.0],\"gripper\":null,\"seconds\":0.45}",
+              "z_pos_40": "{\"delta_xyz\":[0.0,0.0,0.04],\"gripper\":null,\"seconds\":0.45}",
+              "z_pos_10": "{\"delta_xyz\":[0.0,0.0,0.01],\"gripper\":null,\"seconds\":0.45}",
+              "z_pos_2": "{\"delta_xyz\":[0.0,0.0,0.002],\"gripper\":null,\"seconds\":0.45}",
+              "z_neg_40": "{\"delta_xyz\":[0.0,0.0,-0.04],\"gripper\":null,\"seconds\":0.45}",
+              "z_neg_10": "{\"delta_xyz\":[0.0,0.0,-0.01],\"gripper\":null,\"seconds\":0.45}",
+              "z_neg_2": "{\"delta_xyz\":[0.0,0.0,-0.002],\"gripper\":null,\"seconds\":0.45}",
+              "open": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":\"open\",\"seconds\":0.65}",
+              "close": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":\"close\",\"seconds\":0.65}",
+              "hold": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":null,\"seconds\":0.3}"
+            }
+          },
+          "images": [
+            {
+              "sha256": "2a6c25e65b902d8a615a12b66e989816ec250f9fc222dd8a54676d085a43b18a",
+              "byte_length": 107790,
+              "capture_id": 1,
+              "view": "external"
+            },
+            {
+              "sha256": "7f90d367c4fddd9d58bd02c6391873acde458fffee6094c39f053beefc595431",
+              "byte_length": 78962,
+              "capture_id": 1,
+              "view": "wrist"
+            }
+          ]
+        }
+      },
+      "rejected_count": 0
+    }
+  ],
+  "frames": [
+    {
+      "time": 0.5000000000000003,
+      "qpos": [
+        -0.05525537288649859,
+        -0.31743849973068866,
+        -0.15997845031445201,
+        -2.7169986965248127,
+        -0.07385054976915065,
+        2.4019977537395887,
+        0.6326346998302758,
+        0.03999999997100173,
+        0.039999999999883185,
+        0.4368480855818774,
+        -0.18151066012156228,
+        0.019875513695905556,
+        1.0,
+        -1.412227970692875e-11,
+        4.400010181052143e-12,
+        -2.1417896827049977e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.0,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0
+        }
+      },
+      "cycle": 0,
+      "phase": null,
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.5000000000000003,
+      "qpos": [
+        -0.05525537288649859,
+        -0.31743849973068866,
+        -0.15997845031445201,
+        -2.7169986965248127,
+        -0.07385054976915065,
+        2.4019977537395887,
+        0.6326346998302758,
+        0.03999999997100173,
+        0.039999999999883185,
+        0.4368480855818774,
+        -0.18151066012156228,
+        0.019875513695905556,
+        1.0,
+        -1.412227970692875e-11,
+        4.400010181052143e-12,
+        -2.1417896827049977e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.0,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0
+        }
+      },
+      "cycle": 0,
+      "phase": null,
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.5400000000000004,
+      "qpos": [
+        -0.055289114797073,
+        -0.3176083524688019,
+        -0.1599808726455039,
+        -2.7171493513636213,
+        -0.07389243390923723,
+        2.401976072393433,
+        0.6326324587814726,
+        0.040000039570376664,
+        0.039999960398857545,
+        0.43684808558110994,
+        -0.18151066012402547,
+        0.01987551369518614,
+        1.0,
+        -4.974556218471611e-11,
+        1.5498960824838004e-11,
+        -2.141737194021659e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.04,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.04
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.5800000000000004,
+      "qpos": [
+        -0.05568948314865803,
+        -0.31963822438817846,
+        -0.1600359520138041,
+        -2.718924773509879,
+        -0.07437020641711597,
+        2.4017089622683216,
+        0.6326075253594557,
+        0.04000013419277674,
+        0.039999865785839674,
+        0.43684808557982235,
+        -0.18151066012815836,
+        0.019875513694860385,
+        1.0,
+        -6.18222718406588e-11,
+        1.9261648604647652e-11,
+        -2.141713815479556e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.08,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.08
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.6200000000000004,
+      "qpos": [
+        -0.05698384043349122,
+        -0.3262039880936212,
+        -0.16024844826100826,
+        -2.7246305061349347,
+        -0.07588780741811615,
+        2.4008373527569518,
+        0.6325291443006533,
+        0.04000020380608369,
+        0.039999796180553965,
+        0.4368480855783962,
+        -0.18151066013273542,
+        0.019875513694810793,
+        1.0,
+        -6.130899625871156e-11,
+        1.910176011047715e-11,
+        -2.1417050756075994e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.12,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.12
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.6600000000000005,
+      "qpos": [
+        -0.059468862930711214,
+        -0.3388073160182952,
+        -0.16068930128058656,
+        -2.735546047139822,
+        -0.07877533684017667,
+        2.399157849115308,
+        0.6323807861866693,
+        0.04000020803320073,
+        0.03999979196589631,
+        0.4368480855768765,
+        -0.18151066013761305,
+        0.01987551369480889,
+        1.0,
+        -6.626393479083172e-11,
+        2.0645563456503062e-11,
+        -2.1417013514398756e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.16,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.16
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.7000000000000005,
+      "qpos": [
+        -0.06303318178851403,
+        -0.3568821441178493,
+        -0.16134960391857708,
+        -2.75117020807632,
+        -0.08289521670231471,
+        2.396743293316868,
+        0.6321697906764936,
+        0.04000014034206014,
+        0.039999859686518625,
+        0.4368480855752921,
+        -0.1815106601426982,
+        0.019875513694809787,
+        1.0,
+        -7.129681684781525e-11,
+        2.221364634520359e-11,
+        -2.141699917032287e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.2,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.2
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.7400000000000005,
+      "qpos": [
+        -0.06718882151979039,
+        -0.37795678464090104,
+        -0.16214101227270974,
+        -2.769368525909242,
+        -0.08768282142708547,
+        2.3939216676307336,
+        0.6319251706298223,
+        0.04000001503687105,
+        0.03999997722102968,
+        0.4368480855736637,
+        -0.18151066014792433,
+        0.019875513694810026,
+        1.0,
+        -6.932700566194581e-11,
+        2.1599942531812708e-11,
+        -2.141699407933454e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.24,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.24
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.7800000000000006,
+      "qpos": [
+        -0.07124229365627124,
+        -0.39851854415352467,
+        -0.1629278636095557,
+        -2.787117005599112,
+        -0.092343232413791,
+        2.391161823894594,
+        0.6316875080005496,
+        0.03999984204675205,
+        0.040000057725083686,
+        0.4368480855719838,
+        -0.18151066015331602,
+        0.019875513694810037,
+        1.0,
+        -6.392330141609384e-11,
+        1.9916332582200818e-11,
+        -2.1416992337034156e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.28,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.28
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.8200000000000006,
+      "qpos": [
+        -0.07455808550197571,
+        -0.4153439133174276,
+        -0.16357947421014707,
+        -2.801642238915157,
+        -0.0961521477800709,
+        2.388897443519989,
+        0.6314935607960348,
+        0.03999977486481784,
+        0.0400001403945512,
+        0.43684808557054655,
+        -0.18151066015792902,
+        0.019875513694810037,
+        1.0,
+        -5.723126630350428e-11,
+        1.783130045649623e-11,
+        -2.1416992118302578e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.32,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.32
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.8600000000000007,
+      "qpos": [
+        -0.07687748250546542,
+        -0.42711260015471075,
+        -0.16403304740923372,
+        -2.811809092956701,
+        -0.09882096203031748,
+        2.387311899108731,
+        0.631357627356978,
+        0.039999818911170104,
+        0.04000012169340864,
+        0.43684808556926547,
+        -0.18151066016204098,
+        0.019875513694810037,
+        1.0,
+        -5.5279653407333204e-11,
+        1.7223227155706632e-11,
+        -2.1416992028224584e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.36,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.36
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.9000000000000007,
+      "qpos": [
+        -0.07841805334475682,
+        -0.43492559871049935,
+        -0.164326330959072,
+        -2.8185655631235647,
+        -0.10060190260553897,
+        2.38626112876714,
+        0.6312666644489826,
+        0.03999987786760889,
+        0.040000082333862125,
+        0.43684808556798155,
+        -0.1815106601661619,
+        0.019875513694810037,
+        1.0,
+        -5.1751130624775716e-11,
+        1.6123846441433447e-11,
+        -2.1416992084799956e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.4,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.4
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.9400000000000007,
+      "qpos": [
+        -0.07944057319001607,
+        -0.4401081657635793,
+        -0.1645155944768209,
+        -2.8230510847117425,
+        -0.10178950259541757,
+        2.3855656836616377,
+        0.6312058274947923,
+        0.03999991812022924,
+        0.040000055546100685,
+        0.43684808556661336,
+        -0.18151066017055287,
+        0.019875513694810037,
+        1.0,
+        -6.09064243662033e-11,
+        1.8976324980895605e-11,
+        -2.141699183426118e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.44,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.44
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.9500000000000007,
+      "qpos": [
+        -0.07963715813308457,
+        -0.441104070161183,
+        -0.16455132052394073,
+        -2.823913458301099,
+        -0.10201850191136945,
+        2.3854322547656124,
+        0.6311940740197627,
+        0.0399999258811425,
+        0.040000050385779834,
+        0.43684808556627425,
+        -0.1815106601716414,
+        0.019875513694810037,
+        1.0,
+        -5.944288515397866e-11,
+        1.852033829203572e-11,
+        -2.1416991815776225e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.37997,
+          -0.07999,
+          0.22001
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.45,
+        "perception": {
+          "capture_id": 1,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:16.377516+00:00",
+          "sim_time": 0.0,
+          "latency_ms": 59.3,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.42496947944164276,
+                  -0.07999130338430405,
+                  0.2984120845794678
+                ],
+                "forward": [
+                  3.487823960313108e-06,
+                  -8.10617802926572e-06,
+                  -1.0
+                ],
+                "up": [
+                  2.1315051981218858e-06,
+                  1.0,
+                  -8.106170753308106e-06
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.45
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    },
+    {
+      "time": 0.9500000000000007,
+      "qpos": [
+        -0.07963715813308457,
+        -0.441104070161183,
+        -0.16455132052394073,
+        -2.823913458301099,
+        -0.10201850191136945,
+        2.3854322547656124,
+        0.6311940740197627,
+        0.0399999258811425,
+        0.040000050385779834,
+        0.43684808556627425,
+        -0.1815106601716414,
+        0.019875513694810037,
+        1.0,
+        -5.944288515397866e-11,
+        1.852033829203572e-11,
+        -2.1416991815776225e-10
+      ],
+      "observation": {
+        "task": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+        "source": "external + wrist RGB pixels + simulated proprioception",
+        "units": "metres",
+        "tcp": [
+          0.34281,
+          -0.08008,
+          0.22006
+        ],
+        "gripper": "open",
+        "finger_contacts": [],
+        "held": false,
+        "grasp_secured": false,
+        "support_contact": false,
+        "forbidden_contact": false,
+        "sim_seconds": 0.45,
+        "perception": {
+          "capture_id": 2,
+          "source": "vision",
+          "status": "ready",
+          "captured_at": "2026-09-21T02:57:24.209842+00:00",
+          "sim_time": 0.45,
+          "latency_ms": 103.02,
+          "objects": [],
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "position": [
+              0.8526182770729065,
+              0.0,
+              0.941307783126831
+            ],
+            "forward": [
+              -0.4226182699203491,
+              5.1755810807271185e-17,
+              -0.9063078165054321
+            ],
+            "up": [
+              -0.9063078165054321,
+              1.1099069092822633e-16,
+              0.4226182699203491
+            ],
+            "fx": 579.4112461995371,
+            "fy": 579.4112461995371,
+            "cx": 319.5,
+            "cy": 239.5,
+            "coordinate_frame": "world",
+            "units": "metres"
+          },
+          "camera_view": "external + wrist",
+          "camera_views": [
+            "external",
+            "wrist"
+          ],
+          "primary_view": "external",
+          "capture_schedule": "fresh synchronized views at decision/action boundaries; not a continuous video stream",
+          "depth_units": "millimetres",
+          "depth_invalid_value": 0,
+          "depth_display_range_m": [
+            0.25,
+            1.25
+          ],
+          "detector": "none; raw RGB to model",
+          "proprioception": "simulated TCP, gripper command and finger/support contacts",
+          "tracking_limits_sim_seconds": {
+            "unheld_object": 4.0,
+            "held_object": 8.0,
+            "destination": 12.0
+          },
+          "tracking_assumption": "static unheld objects; no slip while two finger contacts persist",
+          "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+          "views": {
+            "external": {
+              "calibration": {
+                "position": [
+                  0.8526182770729065,
+                  0.0,
+                  0.941307783126831
+                ],
+                "forward": [
+                  -0.4226182699203491,
+                  5.1755810807271185e-17,
+                  -0.9063078165054321
+                ],
+                "up": [
+                  -0.9063078165054321,
+                  1.1099069092822633e-16,
+                  0.4226182699203491
+                ],
+                "fx": 579.4112461995371,
+                "fy": 579.4112461995371,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "fixed"
+            },
+            "wrist": {
+              "calibration": {
+                "position": [
+                  0.3878061920404434,
+                  -0.08009256795048714,
+                  0.2984606921672821
+                ],
+                "forward": [
+                  1.023099321173504e-05,
+                  5.9048383263871074e-05,
+                  -1.0
+                ],
+                "up": [
+                  0.00014035606000106782,
+                  1.0,
+                  5.904981662752107e-05
+                ],
+                "fx": 286.02085097319883,
+                "fy": 286.02085097319883,
+                "cx": 319.5,
+                "cy": 239.5,
+                "coordinate_frame": "world",
+                "units": "metres"
+              },
+              "mount": "robot hand"
+            }
+          },
+          "age_sim_seconds": 0.0
+        }
+      },
+      "cycle": 1,
+      "phase": "incremental",
+      "evaluation_target": [
+        0.43,
+        0.18,
+        0.026
+      ]
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-09-21T02:57:16.386901+00:00",
+      "event": "created",
+      "level": "info",
+      "message": "实验已就绪",
+      "cycle": 0,
+      "episode_id": "130e0474cfcd"
+    },
+    {
+      "time": "2026-09-21T02:57:17.708532+00:00",
+      "event": "step",
+      "level": "info",
+      "message": "单步执行",
+      "cycle": 0,
+      "episode_id": "130e0474cfcd"
+    },
+    {
+      "time": "2026-09-21T02:57:17.709376+00:00",
+      "event": "deciding",
+      "level": "info",
+      "message": "正在根据当前观测规划一个短步动作",
+      "cycle": 0,
+      "episode_id": "130e0474cfcd"
+    },
+    {
+      "time": "2026-09-21T02:57:24.225770+00:00",
+      "event": "action_completed",
+      "level": "info",
+      "message": "完成短步：X -0.040 m",
+      "cycle": 1,
+      "episode_id": "130e0474cfcd"
+    },
+    {
+      "time": "2026-09-21T02:57:24.226288+00:00",
+      "event": "paused",
+      "level": "info",
+      "message": "已暂停",
+      "cycle": 1,
+      "episode_id": "130e0474cfcd"
+    },
+    {
+      "time": "2026-09-21T02:57:49.689017+00:00",
+      "event": "stopped",
+      "level": "info",
+      "message": "实验已停止",
+      "cycle": 1,
+      "episode_id": "130e0474cfcd"
+    }
+  ],
+  "model_calls": 1,
+  "input_tokens": 2614,
+  "output_tokens": 3,
+  "model_runtime": null,
+  "omnijev_requests": [
+    {
+      "route": "fast",
+      "provider": "omnijev",
+      "messages_sha256": "8ce25c04c93b13ca855b1112b8bcc0025117df1138555a0a45c3df2bbd274f12",
+      "action_ids": [
+        "x_pos_40",
+        "x_pos_10",
+        "x_pos_2",
+        "x_neg_40",
+        "x_neg_10",
+        "x_neg_2",
+        "y_pos_40",
+        "y_pos_10",
+        "y_pos_2",
+        "y_neg_40",
+        "y_neg_10",
+        "y_neg_2",
+        "z_pos_40",
+        "z_pos_10",
+        "z_pos_2",
+        "z_neg_40",
+        "z_neg_10",
+        "z_neg_2",
+        "open",
+        "close",
+        "hold"
+      ],
+      "image_count": 2,
+      "request_config": {
+        "model": "omnijev-nemotron",
+        "seed": 20260919,
+        "temperature": 0,
+        "reasoning_effort": "none",
+        "max_tokens": 4,
+        "logprobs": true,
+        "top_logprobs": 10
+      },
+      "usage": {
+        "prompt_tokens": 2614,
+        "completion_tokens": 3,
+        "total_tokens": 2617,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "response_model": "omnijev-nemotron",
+      "final_text": "D",
+      "finish_reason": "stop",
+      "reasoning_detected": false,
+      "selected_letter": "D",
+      "scores": {
+        "status": "incomplete_top_k",
+        "missing": [
+          "H",
+          "J",
+          "K",
+          "L",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U"
+        ],
+        "probabilities": null
+      },
+      "usage_complete": true,
+      "status": "ok",
+      "latency_ms": 5975.07195797516
+    }
+  ],
+  "model_latency_ms": [
+    5975.07195797516
+  ],
+  "last_decision": {
+    "choice": "x_neg_40",
+    "probabilities": {},
+    "selected_probability": null,
+    "provider_confidence": null,
+    "latency_ms": 5976.854707987513,
+    "model_call": true,
+    "provider": "omnijev",
+    "model": "omnijev-nemotron",
+    "route": "fast",
+    "readout": "generated_label",
+    "score_status": "incomplete_top_k",
+    "calibrated": false,
+    "request_tokens": {
+      "prompt_tokens": 2614,
+      "completion_tokens": 3,
+      "total_tokens": 2617,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "messages_sha256": "8ce25c04c93b13ca855b1112b8bcc0025117df1138555a0a45c3df2bbd274f12",
+    "image_count": 2,
+    "image_views": [
+      "external",
+      "wrist"
+    ],
+    "image_sha256": "2a6c25e65b902d8a615a12b66e989816ec250f9fc222dd8a54676d085a43b18a"
+  },
+  "last_intent": null,
+  "last_decision_inputs": {
+    "phase": null,
+    "action": {
+      "state": {
+        "observation": {
+          "source": "external + wrist RGB pixels + simulated proprioception",
+          "tcp": [
+            0.37997,
+            -0.07999,
+            0.22001
+          ],
+          "gripper": "open",
+          "held": false,
+          "finger_contacts": [],
+          "grasp_secured": false,
+          "support_contact": false,
+          "forbidden_contact": false,
+          "sim_seconds": 0.0,
+          "goal": "把红色方块放进蓝色托盘，松开夹爪并向上撤离。",
+          "units": "metres",
+          "perception": {
+            "source": "vision",
+            "capture_id": 1,
+            "status": "ready",
+            "sim_time": 0.0,
+            "width": 640,
+            "height": 480,
+            "camera_view": "external + wrist",
+            "depth_units": "millimetres",
+            "message": "已启用视角的 RGB 图像可用于模型输入；不含物体或目标坐标。",
+            "calibration": {
+              "position": [
+                0.8526182770729065,
+                0.0,
+                0.941307783126831
+              ],
+              "forward": [
+                -0.4226182699203491,
+                5.1755810807271185e-17,
+                -0.9063078165054321
+              ],
+              "up": [
+                -0.9063078165054321,
+                1.1099069092822633e-16,
+                0.4226182699203491
+              ],
+              "fx": 579.4112461995371,
+              "fy": 579.4112461995371,
+              "cx": 319.5,
+              "cy": 239.5,
+              "coordinate_frame": "world",
+              "units": "metres"
+            },
+            "views": {
+              "external": {
+                "mount": "fixed",
+                "calibration": {
+                  "position": [
+                    0.8526182770729065,
+                    0.0,
+                    0.941307783126831
+                  ],
+                  "forward": [
+                    -0.4226182699203491,
+                    5.1755810807271185e-17,
+                    -0.9063078165054321
+                  ],
+                  "up": [
+                    -0.9063078165054321,
+                    1.1099069092822633e-16,
+                    0.4226182699203491
+                  ],
+                  "fx": 579.4112461995371,
+                  "fy": 579.4112461995371,
+                  "cx": 319.5,
+                  "cy": 239.5,
+                  "coordinate_frame": "world",
+                  "units": "metres"
+                }
+              },
+              "wrist": {
+                "mount": "robot hand",
+                "calibration": {
+                  "position": [
+                    0.42496947944164276,
+                    -0.07999130338430405,
+                    0.2984120845794678
+                  ],
+                  "forward": [
+                    3.487823960313108e-06,
+                    -8.10617802926572e-06,
+                    -1.0
+                  ],
+                  "up": [
+                    2.1315051981218858e-06,
+                    1.0,
+                    -8.106170753308106e-06
+                  ],
+                  "fx": 286.02085097319883,
+                  "fy": 286.02085097319883,
+                  "cx": 319.5,
+                  "cy": 239.5,
+                  "coordinate_frame": "world",
+                  "units": "metres"
+                }
+              }
+            }
+          }
+        },
+        "goal_conditions": {
+          "object": "resting stably in/on the requested destination for at least 0.4 seconds",
+          "gripper": "open and no longer holding the object",
+          "final_tcp_z_min_m": 0.17
+        },
+        "recent_outcomes": []
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Plan toward the stated task goal using the current sensors and recent actual outcomes. Choose exactly one offered fixed incremental robot action for this decision; the next decision receives a new observation. Coordinates and increments are in metres in the world XYZ frame, not image pixels. Use the camera calibration to interpret image directions. A translation preserves the gripper command. Closing the gripper does not prove a grasp: held means both fingers contact the object while closed. Support contact reports physical contact, not proof of correct placement. Account for obstacles, occlusion, observed movement, rejected actions and discrepancies from your intended outcome. No task phase or movement sequence is prescribed. The action IDs and step sizes are fixed; do not invent an action or assume automatic alignment. If an image is attached, use its visible evidence alongside the available sensors; missing object coordinates are unknown, not zero. You may give a brief public intent and a short visual_evidence description of what is visibly supported, not private reasoning.",
+        "criteria": {
+          "x_pos_40": "{\"delta_xyz\":[0.04,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "x_pos_10": "{\"delta_xyz\":[0.01,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "x_pos_2": "{\"delta_xyz\":[0.002,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "x_neg_40": "{\"delta_xyz\":[-0.04,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "x_neg_10": "{\"delta_xyz\":[-0.01,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "x_neg_2": "{\"delta_xyz\":[-0.002,0.0,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_pos_40": "{\"delta_xyz\":[0.0,0.04,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_pos_10": "{\"delta_xyz\":[0.0,0.01,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_pos_2": "{\"delta_xyz\":[0.0,0.002,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_neg_40": "{\"delta_xyz\":[0.0,-0.04,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_neg_10": "{\"delta_xyz\":[0.0,-0.01,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "y_neg_2": "{\"delta_xyz\":[0.0,-0.002,0.0],\"gripper\":null,\"seconds\":0.45}",
+          "z_pos_40": "{\"delta_xyz\":[0.0,0.0,0.04],\"gripper\":null,\"seconds\":0.45}",
+          "z_pos_10": "{\"delta_xyz\":[0.0,0.0,0.01],\"gripper\":null,\"seconds\":0.45}",
+          "z_pos_2": "{\"delta_xyz\":[0.0,0.0,0.002],\"gripper\":null,\"seconds\":0.45}",
+          "z_neg_40": "{\"delta_xyz\":[0.0,0.0,-0.04],\"gripper\":null,\"seconds\":0.45}",
+          "z_neg_10": "{\"delta_xyz\":[0.0,0.0,-0.01],\"gripper\":null,\"seconds\":0.45}",
+          "z_neg_2": "{\"delta_xyz\":[0.0,0.0,-0.002],\"gripper\":null,\"seconds\":0.45}",
+          "open": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":\"open\",\"seconds\":0.65}",
+          "close": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":\"close\",\"seconds\":0.65}",
+          "hold": "{\"delta_xyz\":[0.0,0.0,0.0],\"gripper\":null,\"seconds\":0.3}"
+        }
+      },
+      "images": [
+        {
+          "sha256": "2a6c25e65b902d8a615a12b66e989816ec250f9fc222dd8a54676d085a43b18a",
+          "byte_length": 107790,
+          "capture_id": 1,
+          "view": "external"
+        },
+        {
+          "sha256": "7f90d367c4fddd9d58bd02c6391873acde458fffee6094c39f053beefc595431",
+          "byte_length": 78962,
+          "capture_id": 1,
+          "view": "wrist"
+        }
+      ]
+    }
+  },
+  "wall_seconds": 31.98,
+  "message": null,
+  "observation_source": "external + wrist RGB pixels with simulated proprioception and contacts",
+  "safety_source": "privileged simulator safety filter",
+  "evaluation_source": "privileged simulator physical success conditions"
+}

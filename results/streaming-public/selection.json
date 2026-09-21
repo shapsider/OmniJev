@@ -1,0 +1,262 @@
+[
+  [
+    53,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_53_5",
+      "task_type": "Action Perception",
+      "question": "What did the hands do just now?",
+      "time_stamp": "00:03:04",
+      "answer": "D",
+      "options": "['A. Folded the pink paper object and pressed the glue.', 'B. Applied glue along the edges of the pink paper object.', 'C. Decorated the pink paper object with the beaded pen.', 'D. Put the pen and keychain into the pink box.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    154,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_154_2",
+      "task_type": "Action Perception",
+      "question": "What does the person do after waking up?",
+      "time_stamp": "00:00:19",
+      "answer": "C",
+      "options": "['A. Lies back down.', 'B. Walks out of the room.', 'C. Sits up on the edge of the bed.', 'D. Stands up and stretches.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Prior"
+    }
+  ],
+  [
+    162,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_162_4",
+      "task_type": "Attribute Perception",
+      "question": "What color is the man's tie?",
+      "time_stamp": "00:02:04",
+      "answer": "D",
+      "options": "['A. Blue.', 'B. Green.', 'C. Yellow.', 'D. Red.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Prior"
+    }
+  ],
+  [
+    206,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_206_1",
+      "task_type": "Attribute Perception",
+      "question": "What colors are the blocks used to form the helicopter rotor blades?",
+      "time_stamp": "00:00:02",
+      "answer": "A",
+      "options": "['A. Blue and Green.', 'B. Yellow and Blue.', 'C. Green and Red.', 'D. Red and Orange.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    234,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_234_4",
+      "task_type": "Causal Reasoning",
+      "question": "Why Mr. Bean is very shocked.",
+      "time_stamp": "00:06:40",
+      "answer": "D",
+      "options": "['A. Because his own pie just fell to the floor.', 'B. Because the opponent did a magic trick with the pie.', 'C. Because the pie suddenly exploded when the opponent touched it.', 'D. Because the opponent finished the pie in one go.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    237,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_237_1",
+      "task_type": "Causal Reasoning",
+      "question": "Why is Mr. Bean constantly posing right now?",
+      "time_stamp": "00:01:04",
+      "answer": "D",
+      "options": "['A. Because he is trying to practice his modeling skills.', 'B. Because he is preparing for a photo shoot.', 'C. Because he is showing off his new outfit in front of a mirror.', 'D. Because he is imitating the characters on the television.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    129,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_129_5",
+      "task_type": "Clips Summarize",
+      "question": "Which of the following best summarizes the content that was just shown in the video?",
+      "time_stamp": "00:07:20",
+      "answer": "B",
+      "options": "['A. The artist is setting up the studio before starting to paint.', 'B. The artist is making precise adjustments to an already detailed portrait.', 'C. The artist is selecting colors and preparing brushes for a new painting.', 'D. The artist is cleaning up the studio after completing a painting.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    132,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_132_3",
+      "task_type": "Clips Summarize",
+      "question": "Which of the following best summarizes the artist's activity just shown in the video?",
+      "time_stamp": "00:04:20",
+      "answer": "B",
+      "options": "['A. Creating a landscape painting.', 'B. Working on a realistic portrait of a woman, focusing on the neck area.', 'C. Sketching a preliminary outline for a new artwork.', 'D. Mixing colors on a palette for future use.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    100,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_100_3",
+      "task_type": "Counting",
+      "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+      "time_stamp": "00:01:26",
+      "answer": "C",
+      "options": "['A. 3.', 'B. 4.', 'C. 0.', 'D. 1.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    71,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_71_1",
+      "task_type": "Counting",
+      "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+      "time_stamp": "00:00:18",
+      "answer": "A",
+      "options": "['A. 0.', 'B. 1.', 'C. 3.', 'D. 4.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    208,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_208_4",
+      "task_type": "Event Understanding",
+      "question": "What happens to the smaller structure after it is first moved out of view?",
+      "time_stamp": "00:02:51",
+      "answer": "D",
+      "options": "['A. It is disassembled.', 'B. It is placed on top of the larger structure.', 'C. It is left in the foreground.', 'D. It is placed back beside the larger structure.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    127,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_127_5",
+      "task_type": "Event Understanding",
+      "question": "What does the painter focus on during the last strokes?",
+      "time_stamp": "00:11:20",
+      "answer": "B",
+      "options": "['A. The eyes and hair.', 'B. The lower face.', 'C. The background and plant.', 'D. The canvas texture.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    24,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_24_4",
+      "task_type": "Object Perception",
+      "question": "What is the woman holding right now?",
+      "time_stamp": "00:04:06",
+      "answer": "D",
+      "options": "['A. A spoon.', 'B. A white bowl.', 'C. A pepper mill.', 'D. A green bottle of olive oil.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    41,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_41_1",
+      "task_type": "Object Perception",
+      "question": "What is the man standing in front of in the initial video?",
+      "time_stamp": "00:00:20",
+      "answer": "D",
+      "options": "['A. A wooden cabinet.', 'B. A glass door.', 'C. A blackboard.', 'D. A stainless steel refrigerator.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Prior"
+    }
+  ],
+  [
+    225,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_225_3",
+      "task_type": "Prospective Reasoning",
+      "question": "What might the speaker discuss next?",
+      "time_stamp": "00:04:30",
+      "answer": "B",
+      "options": "['A. The formula for compound interest.', 'B. Why the two way get the same answer.', 'C. Solving quadratic equations.', 'D. Graphing linear equations.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    211,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_211_5",
+      "task_type": "Prospective Reasoning",
+      "question": "What might the speaker discuss next?",
+      "time_stamp": "00:08:31",
+      "answer": "C",
+      "options": "['A. How to plot a line graph.', 'B. The significance of the axes intersections.', 'C. How to differentiate the quadrants.', 'D. The concept of linear equations.']",
+      "frames_required": "multiple",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    130,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_130_3",
+      "task_type": "Spatial Understanding",
+      "question": "Where is the artist applying pink paint on the helmet right now?",
+      "time_stamp": "00:08:19",
+      "answer": "C",
+      "options": "['A. The upper left portion.', 'B. The lower right portion.', 'C. The upper right portion.', 'D. The lower left portion.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    202,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_202_3",
+      "task_type": "Spatial Understanding",
+      "question": "How are the yellow building blocks arranged before the blue block is placed on top?",
+      "time_stamp": "00:02:08",
+      "answer": "B",
+      "options": "['A. In a circle.', 'B. In a straight line.', 'C. In a random pattern.', 'D. In a triangular shape.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Prior"
+    }
+  ],
+  [
+    122,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_122_1",
+      "task_type": "Text-Rich Understanding",
+      "question": "What text is prominently shown on the packaging of the darker graphics card right now?",
+      "time_stamp": "00:00:15",
+      "answer": "C",
+      "options": "['A. DESIGNED BY GAMERS, BUILT BY NVIDIA.', 'B. CREATED BY GAMERS, DEVELOPED BY NVIDIA.', 'C. INSPIRED BY GAMERS. BUILT BY NVIDIA.', 'D. ENGINEERED BY GAMERS, MADE BY NVIDIA.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Concurrent"
+    }
+  ],
+  [
+    113,
+    {
+      "question_id": "Real-Time Visual Understanding_sample_113_1",
+      "task_type": "Text-Rich Understanding",
+      "question": "What item is the person holding close to the camera right now?",
+      "time_stamp": "00:00:07",
+      "answer": "D",
+      "options": "['A. A framed picture.', 'B. A black device.', 'C. A navy blue t-shirt.', 'D. A smartphone.']",
+      "frames_required": "single",
+      "temporal_clue_type": "Concurrent"
+    }
+  ]
+]

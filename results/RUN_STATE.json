@@ -1,0 +1,23 @@
+{
+  "updated_utc": "2026-09-20T14:03:27.623082+00:00",
+  "main_pid": 17758,
+  "main_session": 55216,
+  "queue_pid": 19055,
+  "queue_session": 15954,
+  "caffeinate_session": 94236,
+  "datasets": [
+    "mmstar-public",
+    "mmbench-public",
+    "mmad-public",
+    "streaming-public"
+  ],
+  "expected_primary_requests": 1700,
+  "main_config": "reasoning temperature 0.6 top_p 0.95 max_tokens 20480; nonthinking unchanged; 152 short answers reused",
+  "note": "Queue generates reports, figures, audits and master report automatically. Root must inspect final results and figures before delivery.",
+  "status": "completed",
+  "completed_utc": "2026-09-20T17:49:21.031218+00:00",
+  "completed_primary_requests": 1700,
+  "tests_passed": 22,
+  "audits_passed": 4,
+  "report": "results/PUBLIC_BENCHMARK_REPORT.md"
+}

@@ -1,0 +1,10 @@
+{
+  "dataset": "MMStar",
+  "requests": 1200,
+  "cases": 300,
+  "duplicate_requests": false,
+  "all_expected_requests_present": true,
+  "prompt_hashes_verified": true,
+  "token_accounting_verified": true,
+  "errors": 0
+}

@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-19",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "hardware": "Apple M5 Pro, 48 GB unified memory",
+  "model_files": [
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/model-00002-of-00003.safetensors",
+      "bytes": 5354185100,
+      "mtime_ns": 1787640166480834323
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/tokenizer_config.json",
+      "bytes": 10404,
+      "mtime_ns": 1787317747455419686,
+      "sha256": "47a7a8371379b07650b22f3c8a78c32fed85c4e35ea88e3da0c4b7a7611e8082"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/config.json",
+      "bytes": 4932,
+      "mtime_ns": 1787317725752711383,
+      "sha256": "14b65a0ee06517060a6bbd979bb1a8ff54e7b304b1a1f01d54344b88b8285e85"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/model-00003-of-00003.safetensors",
+      "bytes": 5357087747,
+      "mtime_ns": 1787643290681931666
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/tokenizer.json",
+      "bytes": 19989325,
+      "mtime_ns": 1787317893558091142,
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/processor_config.json",
+      "bytes": 991,
+      "mtime_ns": 1787317747188240512,
+      "sha256": "45fc17c8dd2474af6b493b52483c26c0584b0082d368c480f9fa611e73070040"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/generation_config.json",
+      "bytes": 202,
+      "mtime_ns": 1787317726008449275,
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/chat_template.jinja",
+      "bytes": 8952,
+      "mtime_ns": 1787317725773604609,
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/vocab.json",
+      "bytes": 6722759,
+      "mtime_ns": 1787317748328274120,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/model.safetensors.index.json",
+      "bytes": 218281,
+      "mtime_ns": 1787317746928906568,
+      "sha256": "13b840162b4cb35c66fef7df072f7dbb4717908204364f5e5d9f9655a2758fa8"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/video_preprocessor_config.json",
+      "bytes": 385,
+      "mtime_ns": 1787317747708888780,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/preprocessor_config.json",
+      "bytes": 390,
+      "mtime_ns": 1787317747086958182,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/Qwen3.8-27B-MLX-4bit/model-00001-of-00003.safetensors",
+      "bytes": 5343268752,
+      "mtime_ns": 1787491636184408509
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/nemotron-3-nano-omni-30b-a3b-reasoning-gguf/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Q4_K_M.gguf",
+      "bytes": 24515129536,
+      "mtime_ns": 1788246924080073596
+    },
+    {
+      "path": "/Users/lukatang/.lmstudio/models/lmstudio-community/nemotron-3-nano-omni-30b-a3b-reasoning-gguf/mmproj-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16.gguf",
+      "bytes": 1589506176,
+      "mtime_ns": 1787539557758161770
+    }
+  ],
+  "notes": "Weight files identified by path/size/mtime; full weight hashes not computed. No training or downloads."
+}

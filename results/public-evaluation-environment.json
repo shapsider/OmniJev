@@ -1,0 +1,7 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "hardware": "Apple M5 Pro",
+  "memory_bytes": "51539607552",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84"
+}

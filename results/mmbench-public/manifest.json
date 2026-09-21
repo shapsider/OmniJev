@@ -1,0 +1,1040 @@
+{
+  "dataset": "MMBench DEV EN pilot",
+  "source": "https://github.com/open-compass/MMBench",
+  "source_sha256": "64baa14c5ec650302f428212a0b3efc5c88fbf9236d0d6fdea45c555f0b02d7a",
+  "seed": 20260920,
+  "cases": [
+    {
+      "id": "mmbench-1914",
+      "question": "What kind of human behavior does this picture describe?",
+      "state": "",
+      "options": [
+        "The man and woman stood at the bow of the boat, the man put his arms around the woman's waist, and the two kissed each other in an application.",
+        "An elderly man is sitting in a chair and reading a newspaper, occasionally turning the pages and adjusting his glasses.",
+        "A construction worker is building a skyscraper, operating heavy machinery and assembling steel beams high above the ground.",
+        "A man is practicing martial arts in a dojo, mastering techniques and moves to defend himself and others."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1914.jpg"
+      ],
+      "category": "action_recognition",
+      "image_sha256": "4b20a36f81b894d44a2119aea1b477b0f1d6cac0b4d10b088a7cf58a27c9d918"
+    },
+    {
+      "id": "mmbench-1918",
+      "question": "What kind of human behavior does this picture describe?",
+      "state": "",
+      "options": [
+        "A musician is performing on stage in front of a live audience, singing and playing instruments with passion and energy.",
+        "A group of artists are painting a mural on a city wall, using brushes, rollers, and cans of spray paint to bring color and vibrancy to the community.",
+        "Sun Wukong put his golden hoop rod on his shoulder, and his application was solemn, as if thinking about something",
+        "A woman is doing Pilates in a studio, using controlled movements to improve her flexibility, strength, and posture."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1918.jpg"
+      ],
+      "category": "action_recognition",
+      "image_sha256": "95144bf1d130286f51b93b88baaf1d41b734f6d1d679ba00bd9a52f955992d7c"
+    },
+    {
+      "id": "mmbench-1924",
+      "question": "What kind of human behavior does this picture describe?",
+      "state": "",
+      "options": [
+        "A man is surfing on a beach, riding the waves and feeling the rush of adrenaline while connecting with the power of the ocean.",
+        "A father in a suit takes his son overnight in the toilet, the son is already asleep while the father is secretly crying",
+        "A family is playing miniature golf on a course, putting their way through whimsical obstacles while laughing and having fun.",
+        "A family is camping in the wilderness, pitching tents, building a fire, and enjoying the serenity of nature."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1924.jpg"
+      ],
+      "category": "action_recognition",
+      "image_sha256": "15469c2e38f158a9b6ec4458d29362a56dae1a710483a87a18f255d303d62d32"
+    },
+    {
+      "id": "mmbench-1113",
+      "question": "In this comparison diagram, are the upper and lower modules the same shape?",
+      "state": "",
+      "options": [
+        "same",
+        "Not the same",
+        "Can't judge"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1113.jpg"
+      ],
+      "category": "attribute_comparison",
+      "image_sha256": "b740a201b59fbf36898f9863d625e0ac838987ac18d370d406bbcb1524a782b2"
+    },
+    {
+      "id": "mmbench-1103",
+      "question": "Are the two apples in the picture the same color?",
+      "state": "",
+      "options": [
+        "same",
+        "Not the same",
+        "Can't judge"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1103.jpg"
+      ],
+      "category": "attribute_comparison",
+      "image_sha256": "fe23a9b63b148c8c65fcc40d4bec57a18009fe7f7f694f4afe75f75b4d8a7436"
+    },
+    {
+      "id": "mmbench-1127",
+      "question": "Are the two bears in this picture the same size?",
+      "state": "",
+      "options": [
+        "same",
+        "Not the same",
+        "Can't judge"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1127.jpg"
+      ],
+      "category": "attribute_comparison",
+      "image_sha256": "9527f39ee7cd0cf3dca303a13df18903a73155b19e1be86279fccb199db080a4"
+    },
+    {
+      "id": "mmbench-1297",
+      "question": "what is the shape of this object?",
+      "state": "",
+      "options": [
+        "oval",
+        "heart",
+        "star",
+        "Hexagon"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1297.jpg"
+      ],
+      "category": "attribute_recognition",
+      "image_sha256": "ee0ef83601cb45bcb2170a36b9d8ed17066c18234d0c93e8041b990a97911aa8"
+    },
+    {
+      "id": "mmbench-626",
+      "question": "What motion this image want to convey?",
+      "state": "",
+      "options": [
+        "happy",
+        "angry",
+        "sad",
+        "terrified"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/626.jpg"
+      ],
+      "category": "attribute_recognition",
+      "image_sha256": "feacf011a8108a655729e0e53a0b3afaf328c7947b59ebb923787035f51e1ba1"
+    },
+    {
+      "id": "mmbench-236",
+      "question": "Which continent is highlighted?",
+      "state": "",
+      "options": [
+        "Africa",
+        "North America",
+        "Europe",
+        "Australia"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/236.jpg"
+      ],
+      "category": "attribute_recognition",
+      "image_sha256": "feb19e4b9b8128a93bd3daea34db5f0baa4f68be422c10edcd541b76607d3e42"
+    },
+    {
+      "id": "mmbench-987",
+      "question": "What is the name of this city?",
+      "state": "",
+      "options": [
+        "Hong Kong",
+        "Shanghai",
+        "Singapore",
+        "New York"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/987.jpg"
+      ],
+      "category": "celebrity_recognition",
+      "image_sha256": "ff868dd56d6a012faf2cce309e7fcaf764347e1b51613b75296828d9387de9c0"
+    },
+    {
+      "id": "mmbench-973",
+      "question": "What is the name of this river",
+      "state": "",
+      "options": [
+        "Huangpu River",
+        "Yangtze River",
+        "Huanghe River",
+        "Pearl River"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/973.jpg"
+      ],
+      "category": "celebrity_recognition",
+      "image_sha256": "dc85080532010ece5a7bf73f7049c12f75588e5f8426d34e25aa136a5841d3d1"
+    },
+    {
+      "id": "mmbench-506",
+      "question": "Which can be the associated text with this image posted on twitter",
+      "state": "",
+      "options": [
+        "Morning: Memeland Evening: Jay Chou 7 sold out nights in #hongkong #JayChou",
+        "We will be streaming our Mayday [ Live In the Sky ] online concert tomorrow night: http://bit.ly/YTBinMusic . We go on at 20:00 (GMT+8) May 31st. See you online then.",
+        "my little airport 🫶🏼",
+        "Run to Victoria Harbor at night😅"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/506.jpg"
+      ],
+      "category": "celebrity_recognition",
+      "image_sha256": "ad24a1e5ea28da0ecb06855d432fd7e7dca2139a58ab6fc3b08063b74fdb03ea"
+    },
+    {
+      "id": "mmbench-162",
+      "question": "In the image, what does the handshake between the two men symbolize?",
+      "state": "",
+      "options": [
+        "The completion of a business deal or an important appointment.",
+        "The exchange of personal belongings.",
+        "The start of a friendly conversation.",
+        "The celebration of a personal achievement."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/162.jpg"
+      ],
+      "category": "function_reasoning",
+      "image_sha256": "2c0b1d40fc6e229cd87bb0427d6697c6bc64cc74617ef8f15ed5cf22b9beeee6"
+    },
+    {
+      "id": "mmbench-933",
+      "question": "What's the function of the demonstrated object?",
+      "state": "",
+      "options": [
+        "entertainment and scientific research",
+        "bind papers together",
+        "hitting things",
+        "tighten or loosen screws"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/933.jpg"
+      ],
+      "category": "function_reasoning",
+      "image_sha256": "3678400dc52bb21fe799d049856dce4626acfd4667068c7f5ecc977957ee38e6"
+    },
+    {
+      "id": "mmbench-1711",
+      "question": "What's the function of the demonstrated object?",
+      "state": "",
+      "options": [
+        "clean",
+        "measurement",
+        "Bulldozing",
+        "Cutting platform"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1711.jpg"
+      ],
+      "category": "function_reasoning",
+      "image_sha256": "9f1f7e43a796299fb7c31fcb847b819a29099e27238ab706b0bcae5841d1e600"
+    },
+    {
+      "id": "mmbench-166",
+      "question": "Before the man starts surfing, what is one important step he should take to ensure his safety?",
+      "state": "",
+      "options": [
+        "The man should check the weather conditions, surf forecast, and tides to ensure that it is safe to surf.",
+        "The man should bring his phone to take pictures while surfing.",
+        "The man should apply sunscreen to get a nice tan.",
+        "The man should wear fashionable surf gear to stand out."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/166.jpg"
+      ],
+      "category": "future_prediction",
+      "image_sha256": "4337c0f5a971fd6162204f6e1c779f8578eb9c03480f8a0250d983fb3c625d44"
+    },
+    {
+      "id": "mmbench-1226",
+      "question": "What will happen next?",
+      "state": "",
+      "options": [
+        "the food is gonna fall off the spoon",
+        "the woman is gonna feed the baby",
+        "the woman is gonna eat the food herself",
+        "both A,B, and C"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1226.jpg"
+      ],
+      "category": "future_prediction",
+      "image_sha256": "174f78135c633a1c1e39a6588cd290a943e92138d9eba1c55e44db05086a3ae4"
+    },
+    {
+      "id": "mmbench-1199",
+      "question": "What will happen next?",
+      "state": "",
+      "options": [
+        "the car is gonna drive through",
+        "the car is gonna crash into the fence",
+        "the car is gonna drive backwards",
+        "both A,B, and C"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1199.jpg"
+      ],
+      "category": "future_prediction",
+      "image_sha256": "477d43bfbf680437fdadfb4252295ee6a1c8117451b56383c5c29f8c389def6a"
+    },
+    {
+      "id": "mmbench-159",
+      "question": "Based on the image, what emotions might the image of the older gentleman sitting on a bench evoke in viewers?",
+      "state": "",
+      "options": [
+        "The image might evoke feelings of nostalgia, relaxation, or contemplation for some viewers.",
+        "The image might evoke feelings of excitement and adventure.",
+        "The image might evoke feelings of fear and uncertainty.",
+        "The image might evoke feelings of anger and frustration."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/159.jpg"
+      ],
+      "category": "identity_reasoning",
+      "image_sha256": "e2e64c4044cbed2cc8ea3b6db23fb30eae94c0eecbd330e0a3652d38dc86fbd3"
+    },
+    {
+      "id": "mmbench-1377",
+      "question": "What's the profession of the people in this picture?",
+      "state": "",
+      "options": [
+        "baker",
+        "butcher",
+        "carpenter",
+        "designer"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1377.jpg"
+      ],
+      "category": "identity_reasoning",
+      "image_sha256": "c263f5c810594e0a41a02f1932d14f68830bcf48bb940f06e33cee5957f2abd3"
+    },
+    {
+      "id": "mmbench-1384",
+      "question": "What's the profession of the people in this picture?",
+      "state": "",
+      "options": [
+        "mason",
+        "nurse",
+        "hairdresser",
+        "judge"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1384.jpg"
+      ],
+      "category": "identity_reasoning",
+      "image_sha256": "d167ad697759bb9e9d460d8845ab158c2c9ef8e4be99302507be19078ab93c03"
+    },
+    {
+      "id": "mmbench-1339",
+      "question": "Which mood does this image convey?",
+      "state": "",
+      "options": [
+        "Sad",
+        "Anxious",
+        "Happy",
+        "Angry"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1339.jpg"
+      ],
+      "category": "image_emotion",
+      "image_sha256": "91fc62997e1a681f0490cc2648c6747d30656db6c84a7bcaf3ad244d00461bc2"
+    },
+    {
+      "id": "mmbench-535",
+      "question": "What feeling is represented in this image?",
+      "state": "",
+      "options": [
+        "engaged",
+        "distressed",
+        "angry",
+        "sad"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/535.jpg"
+      ],
+      "category": "image_emotion",
+      "image_sha256": "7128a2c4d4e74a3a511c4350aaab639546359a2382ea2f16dfd9a8909ef13f1f"
+    },
+    {
+      "id": "mmbench-1334",
+      "question": "Which mood does this image convey?",
+      "state": "",
+      "options": [
+        "Sad",
+        "Cozy",
+        "Happy",
+        "Angry"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1334.jpg"
+      ],
+      "category": "image_emotion",
+      "image_sha256": "8aeebfbfac44871f96b7de83fa0f12b682cee7bc0d12ad05a64647752ec44f62"
+    },
+    {
+      "id": "mmbench-768",
+      "question": "Which image is the brightest one?",
+      "state": "",
+      "options": [
+        "upper left",
+        "upper right",
+        "down left",
+        "down right"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/768.jpg"
+      ],
+      "category": "image_quality",
+      "image_sha256": "0863b0788f7961340a223f3955bcbbc6cafb2798f8ee948268680eff106b7ffb"
+    },
+    {
+      "id": "mmbench-1279",
+      "question": "which image is more colorful?",
+      "state": "",
+      "options": [
+        "The first image",
+        "The second image"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1279.jpg"
+      ],
+      "category": "image_quality",
+      "image_sha256": "c007ccdc2478b22d80637092a930d5f3ef3885c41cefbba9d300850b8d0ad13d"
+    },
+    {
+      "id": "mmbench-778",
+      "question": "Which image shows the highest colorfulness?",
+      "state": "",
+      "options": [
+        "upper left",
+        "upper right",
+        "down left",
+        "down right"
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/778.jpg"
+      ],
+      "category": "image_quality",
+      "image_sha256": "8b6cd37eef5ec385f98b717876153cc25117fe3a2eed7d93dcb1398739b02d1a"
+    },
+    {
+      "id": "mmbench-91",
+      "question": "Which one is the correct caption of this image?",
+      "state": "",
+      "options": [
+        "A drivers side rear view mirror on an auto waiting at a red traffic light.",
+        "Two horses gaze out from among the trees.",
+        "Surfer riding on decent sized wave as it breaks in ocean.",
+        "A man in a suite sits at a table."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/91.jpg"
+      ],
+      "category": "image_scene",
+      "image_sha256": "ddf20f54dab58a73780c585458fca5b5dc5533807ac2c9954cf01102bc066575"
+    },
+    {
+      "id": "mmbench-1042",
+      "question": "What type of environment is depicted in the picture?",
+      "state": "",
+      "options": [
+        "home",
+        "shopping mall",
+        "street",
+        "forest"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1042.jpg"
+      ],
+      "category": "image_scene",
+      "image_sha256": "3b2ee0cb20b6d78d7d4fbfb3bbb8510a379de3723e69446c7f05cacdcf8091a9"
+    },
+    {
+      "id": "mmbench-1814",
+      "question": "Which of the following captions best describes this image?",
+      "state": "",
+      "options": [
+        "A person swimming in a pool",
+        "A group of people sunbathing on a beach",
+        "A person skiing down a mountain",
+        "A woman doing yoga in a park"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1814.jpg"
+      ],
+      "category": "image_scene",
+      "image_sha256": "33cbebadf68c0393931473a390b9096702ea1520f4d544a3fdf59c304b024f8d"
+    },
+    {
+      "id": "mmbench-1612",
+      "question": "Which category does this image belong to?",
+      "state": "",
+      "options": [
+        "MRI image",
+        "icon",
+        "microscopic image",
+        "abstract painting"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1612.jpg"
+      ],
+      "category": "image_style",
+      "image_sha256": "30ac4e9aa96e421fb9f34f2e89d32120d839246fcfe4dff9dbdaebacaa333c22"
+    },
+    {
+      "id": "mmbench-1628",
+      "question": "what style is this painting?",
+      "state": "",
+      "options": [
+        "ink wash painting",
+        "watercolor painting",
+        "gouache painting",
+        "pen and ink"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1628.jpg"
+      ],
+      "category": "image_style",
+      "image_sha256": "9a92f9eed0a9effc26eaf7738c149a2502a3d49b60b36116cb2002fb4e4ae57d"
+    },
+    {
+      "id": "mmbench-1598",
+      "question": "what style is depicted in this image?",
+      "state": "",
+      "options": [
+        "impressionism",
+        "post-Impressionism",
+        "modernism",
+        "dadaism"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1598.jpg"
+      ],
+      "category": "image_style",
+      "image_sha256": "2d7273cf72e547dfb94300586877981840d65cf194513eec757b34d9efeb64b3"
+    },
+    {
+      "id": "mmbench-961",
+      "question": "Which is the main topic of the image",
+      "state": "",
+      "options": [
+        "Driving cars",
+        "Driving buses",
+        "A driving bus",
+        "A driving car"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/961.jpg"
+      ],
+      "category": "image_topic",
+      "image_sha256": "cf4cc8210c9056108fd3ea3391a58f5e6ff88ae608adef0dfb72e222bbb6f13e"
+    },
+    {
+      "id": "mmbench-148",
+      "question": "Based on the image, what is the primary focus of the scene?",
+      "state": "",
+      "options": [
+        "The adult and child are standing on a snowy surface, with the child wearing skis, indicating they are learning how to ski.",
+        "The adult and child are enjoying a walk in a snowy area.",
+        "The adult and child are participating in a snowball fight.",
+        "The adult and child are hiking in a mountainous region."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/148.jpg"
+      ],
+      "category": "image_topic",
+      "image_sha256": "516644baeefccef3e382007f89077d3f1638fe2efa5a75a373f7a8833171261b"
+    },
+    {
+      "id": "mmbench-959",
+      "question": "Which is the main topic of the image",
+      "state": "",
+      "options": [
+        "A woman is playing tennis",
+        "A man is playing tennis",
+        "A boy is playing soccer",
+        "A girl is playing volleyball"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/959.jpg"
+      ],
+      "category": "image_topic",
+      "image_sha256": "55021fc39e9513eae50db7ac348b65f99cc266d003acd3f70de08bc271612c73"
+    },
+    {
+      "id": "mmbench-1940",
+      "question": "In nature, what's the relationship between these two creatures?",
+      "state": "",
+      "options": [
+        "Predatory relationships",
+        "Competitive relationships",
+        "Parasitic relationships",
+        "Symbiotic relationship"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1940.jpg"
+      ],
+      "category": "nature_relation",
+      "image_sha256": "583e0be0910c01b983e6597b0d4be981389c41ecb9f8f3785b694ef56f99c09e"
+    },
+    {
+      "id": "mmbench-1969",
+      "question": "In nature, what's the relationship between these two creatures?",
+      "state": "",
+      "options": [
+        "Predatory relationships",
+        "Competitive relationships",
+        "Parasitic relationships",
+        "Symbiotic relationship"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1969.jpg"
+      ],
+      "category": "nature_relation",
+      "image_sha256": "e178227007b96eb185fc8acdccc714914d293838fd80eb39e12bd5b88c89862a"
+    },
+    {
+      "id": "mmbench-1957",
+      "question": "In nature, what's the relationship between these two creatures?",
+      "state": "",
+      "options": [
+        "Predatory relationships",
+        "Competitive relationships",
+        "Parasitic relationships",
+        "Symbiotic relationship"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1957.jpg"
+      ],
+      "category": "nature_relation",
+      "image_sha256": "893b58c81ae583ff160e9cd06c7cb9f0497566f72b2c518d2118a5fb9b321dbe"
+    },
+    {
+      "id": "mmbench-1532",
+      "question": "what direction is the person facing?",
+      "state": "",
+      "options": [
+        "front",
+        "back",
+        "left",
+        "right"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1532.jpg"
+      ],
+      "category": "object_localization",
+      "image_sha256": "57371460c0d4f7efa30d474f4ad636aa170fc2d4c584f7fd3b578ef7128d7797"
+    },
+    {
+      "id": "mmbench-642",
+      "question": "Where are the two zebras located in the picture?",
+      "state": "",
+      "options": [
+        "left",
+        "center",
+        "bottom",
+        "top"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/642.jpg"
+      ],
+      "category": "object_localization",
+      "image_sha256": "278e363db22b1721ba5837257d32161d37ebd5b5a3cc223b96e27a56e6a25118"
+    },
+    {
+      "id": "mmbench-431",
+      "question": "Complete the sentence.\nAn Indian flying fox is a ().",
+      "state": "This picture shows an Indian flying fox.",
+      "options": [
+        "bird",
+        "bat",
+        "fox"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/431.jpg"
+      ],
+      "category": "object_localization",
+      "image_sha256": "d837460e1f3291405cc58082f03c08ae91205969ae6d646e6af37c73dfc1aead"
+    },
+    {
+      "id": "mmbench-714",
+      "question": "Extract text from the image",
+      "state": "",
+      "options": [
+        "MERRELL",
+        "FERRELL",
+        "MORELLI",
+        "KENDALL"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/714.jpg"
+      ],
+      "category": "ocr",
+      "image_sha256": "ed9064d624af9379fa7be74fd6d428de8c46d18f24d2e25e7a3375a2e9f816be"
+    },
+    {
+      "id": "mmbench-1750",
+      "question": "What is the most likely purpose of this poster?",
+      "state": "",
+      "options": [
+        "To celebrate New Year.",
+        "To celebrate someone's birthday.",
+        "To celebrate Christmas.",
+        "To celebrate National Day."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1750.jpg"
+      ],
+      "category": "ocr",
+      "image_sha256": "bafaa8227218c31ff6135b2d51793161005272bc189d7bb1d7f17d6be18bfb52"
+    },
+    {
+      "id": "mmbench-1756",
+      "question": "Which special day is associated with this poster?",
+      "state": "",
+      "options": [
+        "Earth Day.",
+        "Children's Day.",
+        "Father's Day.",
+        "Mother's Day"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1756.jpg"
+      ],
+      "category": "ocr",
+      "image_sha256": "37a96f7f6266c1f57cd6423a1a8aa6af56d4d99174ba0e1d07b53121f44c6ab2"
+    },
+    {
+      "id": "mmbench-1536",
+      "question": "The object shown in this figure:",
+      "state": "",
+      "options": [
+        "Is the only metal that is liquid at room temperature.",
+        "Can be easily dissolved in water.",
+        "Has a low boiling point compared to other metals.",
+        "Is attracted to magnets."
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1536.jpg"
+      ],
+      "category": "physical_property_reasoning",
+      "image_sha256": "7640ef2ae2137685c0b714b564832dab01c6ee9fba46d649b5da4d676925f6b2"
+    },
+    {
+      "id": "mmbench-865",
+      "question": "If the liquid in the picture contains only one solute, what is it most likely to contain?",
+      "state": "",
+      "options": [
+        "Ferric hydroxide.",
+        "Sodium hydroxide.",
+        "Sodium chloride.",
+        "Copper sulfate."
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/865.jpg"
+      ],
+      "category": "physical_property_reasoning",
+      "image_sha256": "ab117ea3dcbb54bc48828c91bf4f0cddb60efdd945680f792231cc702926aa60"
+    },
+    {
+      "id": "mmbench-274",
+      "question": "Which fish's mouth is also adapted for tearing through meat?",
+      "state": "Barracudas often hunt large fish for food. The 's mouth is adapted to tear through meat.\nFigure: barracuda.",
+      "options": [
+        "copperband butterflyfish",
+        "tiger moray"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/274.jpg"
+      ],
+      "category": "physical_property_reasoning",
+      "image_sha256": "af2369ae9b3082c0ca8bdd8d191dc367f8da17a4455e7285d18a7cab5d7cdbaf"
+    },
+    {
+      "id": "mmbench-1006",
+      "question": "here is the woman?",
+      "state": "",
+      "options": [
+        "The woman is on the bottom right",
+        "The woman is on the top right",
+        "The woman is in the center",
+        "The woman is on the top left"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1006.jpg"
+      ],
+      "category": "physical_relation",
+      "image_sha256": "056f845782529bd9307058e0e6d6a6616482671f35dd8d774637ceb0539e924e"
+    },
+    {
+      "id": "mmbench-337",
+      "question": "What can Chloe and Justin trade to each get what they want?",
+      "state": "Trade happens when people agree to exchange goods and services. People give up something to get something else. Sometimes people barter, or directly exchange one good or service for another.\nChloe and Justin open their lunch boxes in the school cafeteria. Neither Chloe nor Justin got everything that they wanted. The table below shows which items they each wanted:\n\nLook at the images of their lunches. Then answer the question below.\nChloe's lunch Justin's lunch",
+      "options": [
+        "Justin can trade his broccoli for Chloe's oranges.",
+        "Chloe can trade her tomatoes for Justin's carrots.",
+        "Chloe can trade her tomatoes for Justin's broccoli.",
+        "Justin can trade his almonds for Chloe's tomatoes."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/337.jpg"
+      ],
+      "category": "physical_relation",
+      "image_sha256": "2e09b840c06e41f09cfba9c7ac067213e5c0cb74c1d7b8319956221db35e5006"
+    },
+    {
+      "id": "mmbench-335",
+      "question": "What can Austin and Victoria trade to each get what they want?",
+      "state": "Trade happens when people agree to exchange goods and services. People give up something to get something else. Sometimes people barter, or directly exchange one good or service for another.\nAustin and Victoria open their lunch boxes in the school cafeteria. Neither Austin nor Victoria got everything that they wanted. The table below shows which items they each wanted:\n\nLook at the images of their lunches. Then answer the question below.\nAustin's lunch Victoria's lunch",
+      "options": [
+        "Victoria can trade her almonds for Austin's tomatoes.",
+        "Austin can trade his tomatoes for Victoria's broccoli.",
+        "Austin can trade his tomatoes for Victoria's carrots.",
+        "Victoria can trade her broccoli for Austin's oranges."
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/335.jpg"
+      ],
+      "category": "physical_relation",
+      "image_sha256": "4dead81b6ff6320f759478e1d851886eefbb2541ac4124ebc6056deadc3134a2"
+    },
+    {
+      "id": "mmbench-1143",
+      "question": "What can be the relationship between the two persons in this image?",
+      "state": "",
+      "options": [
+        "Father and daughter",
+        "Mother and son",
+        "Brother and sister",
+        "Husband and wife"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1143.jpg"
+      ],
+      "category": "social_relation",
+      "image_sha256": "a516e10788dfe1ba440ac94238a4f28e78fd7753845ff139e7b8dea8282f7d1d"
+    },
+    {
+      "id": "mmbench-1144",
+      "question": "What can be the relationship between the two persons in this image?",
+      "state": "",
+      "options": [
+        "Father and daughter",
+        "Mother and son",
+        "Brother and sister",
+        "Husband and wife"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1144.jpg"
+      ],
+      "category": "social_relation",
+      "image_sha256": "54b01e277abcc9588fa5edacfe8060ca39467824a50e061d7fc0ad3e9e1af550"
+    },
+    {
+      "id": "mmbench-1148",
+      "question": "What can be the relationship between the two persons in this image?",
+      "state": "",
+      "options": [
+        "Father and daughter",
+        "Mother and son",
+        "Brother and sister",
+        "Husband and wife"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1148.jpg"
+      ],
+      "category": "social_relation",
+      "image_sha256": "85943f0438d776a5c20f3c7b9124d0072f126c291bd1b7cf2f1a3ff293c98d83"
+    },
+    {
+      "id": "mmbench-1850",
+      "question": "What direction is Syria in the Mediterranean Sea?",
+      "state": "",
+      "options": [
+        "east",
+        "south",
+        "west",
+        "north"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1850.jpg"
+      ],
+      "category": "spatial_relationship",
+      "image_sha256": "646032e5a1cef77b33315a64502a738d474357e3a828c56ce845db7243a14c7c"
+    },
+    {
+      "id": "mmbench-905",
+      "question": "Which option describe the object relationship in the image correctly?",
+      "state": "",
+      "options": [
+        "The sink is above the cat.",
+        "The suitcase is above the bed.",
+        "The suitcase is surrounding the cat.",
+        "The cat is on top of the suitcase."
+      ],
+      "gold": "C",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/905.jpg"
+      ],
+      "category": "spatial_relationship",
+      "image_sha256": "e617a2117d2de25b221e83ccd7ba04b1e25ed98e4881955dcd43df5de4fad461"
+    },
+    {
+      "id": "mmbench-1888",
+      "question": "What direction is DRC in Mozambique ?",
+      "state": "",
+      "options": [
+        "northeast",
+        "southwest",
+        "southeast",
+        "northwest"
+      ],
+      "gold": "D",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/1888.jpg"
+      ],
+      "category": "spatial_relationship",
+      "image_sha256": "17536265ac1ca5876fa7bb871488b05bd7f3094901b05393da33a0f9edb600bd"
+    },
+    {
+      "id": "mmbench-461",
+      "question": "After the Akkadian Empire ended, many cities and empires tried to control Mesopotamia. Around the 1790s BCE, which empire started controlling Mesopotamia?",
+      "state": "Look at the table. Then answer the question below.",
+      "options": [
+        "the Elamite Empire",
+        "the Babylonian Empire",
+        "the Akkadian Empire",
+        "the Neo-Sumerian Empire"
+      ],
+      "gold": "B",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/461.jpg"
+      ],
+      "category": "structuralized_imagetext_understanding",
+      "image_sha256": "2b4d7ccb440db4097f8b2c72c6ed4f0316cd47f03f6acbf0b8fe70463996d7ea"
+    },
+    {
+      "id": "mmbench-452",
+      "question": "Which term matches the picture?",
+      "state": "Read the text.\nThe properties of a light wave affect what we see. One property of a light wave is wavelength. Wavelength measures the distance between one crest to the next. The wavelength of light determines what color, if any, is visible to the human eye. The longest visible waves are red and the shortest visible waves are violet.\nAnother property of a light wave is amplitude. Amplitude refers to the distance between the middle of the wave and the point farthest from the center. This point is usually shown as the highest point on the wave, or the wave's crest. We perceive light waves with greater amplitude as being brighter.",
+      "options": [
+        "amplitude",
+        "wavelength"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/452.jpg"
+      ],
+      "category": "structuralized_imagetext_understanding",
+      "image_sha256": "6ff6c27ba8749a7a53ca930303367c62f9bed752fac6d5a776cf2686c3f03181"
+    },
+    {
+      "id": "mmbench-456",
+      "question": "After the Akkadian Empire ended, many cities and empires tried to control Mesopotamia. Around the 1790s BCE, which empire started controlling Mesopotamia?",
+      "state": "Look at the table. Then answer the question below.",
+      "options": [
+        "the Babylonian Empire",
+        "the Neo-Sumerian Empire",
+        "the Akkadian Empire",
+        "the Elamite Empire"
+      ],
+      "gold": "A",
+      "images": [
+        "/Users/lukatang/Desktop/paper/OmniJev/results/mmbench-public/images/456.jpg"
+      ],
+      "category": "structuralized_imagetext_understanding",
+      "image_sha256": "1fc67cf3386ab64e70bf887b1703fb75f98846aa93d3c846e5fb62755c90eead"
+    }
+  ],
+  "protocol": {
+    "methods": [
+      "omnijev",
+      "direct",
+      "json",
+      "reasoning"
+    ],
+    "temperature": 0,
+    "thinking_max_tokens": 20480,
+    "direct_max_tokens": 4,
+    "json_max_tokens": 32,
+    "sampling": "3 canonical (index < 1000000) questions per category, seed fixed; one option order only. NOT official circular evaluation.",
+    "cache": "natural cache; globally shuffled sequential requests",
+    "timing": "client encoding + HTTP + answer parsing; excludes offline media preparation and model loading",
+    "generation_seed": 20260919,
+    "thinking_temperature": 0.6,
+    "thinking_top_p": 0.95,
+    "thinking_timeout_seconds": 900,
+    "reasoning_note": "Recommended sampling and output cap from NVIDIA model card; Bionic does not expose verified vLLM reasoning_budget/grace_period control. Greedy 8192 pilot retained separately; unchanged short-answer records reused. This is protocol development, not a preregistered confirmatory test.",
+    "reasoning_effort": "medium",
+    "observed_reasoning_budget": "approximately 8192 thinking tokens; backend inserts I have to answer now.; distinct from total max_tokens=20480"
+  }
+}

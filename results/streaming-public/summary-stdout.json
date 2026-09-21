@@ -1,0 +1,326 @@
+{
+  "dataset": "StreamingBench causal 8-frame pilot",
+  "expected_cases": 20,
+  "expected_requests": 80,
+  "completed_requests": 80,
+  "methods": {
+    "omnijev": {
+      "n": 20,
+      "accuracy": 85.0,
+      "strict_accuracy": 85.0,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 2.9786384170000133,
+      "latency_p95": 3.583242022950005,
+      "latency_mean": 1.9856485604999956,
+      "usage_coverage": 20,
+      "categories": {
+        "Action Perception": {
+          "n": 2,
+          "correct": 1
+        },
+        "Attribute Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Causal Reasoning": {
+          "n": 2,
+          "correct": 1
+        },
+        "Clips Summarize": {
+          "n": 2,
+          "correct": 2
+        },
+        "Counting": {
+          "n": 2,
+          "correct": 2
+        },
+        "Event Understanding": {
+          "n": 2,
+          "correct": 2
+        },
+        "Object Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Prospective Reasoning": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spatial Understanding": {
+          "n": 2,
+          "correct": 1
+        },
+        "Text-Rich Understanding": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 30.0,
+        "1": 30.0,
+        "2": 30.0,
+        "5": 85.0,
+        "10": 85.0,
+        "30": 85.0
+      },
+      "prompt_tokens_mean": 2256,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 2259
+    },
+    "direct": {
+      "n": 20,
+      "accuracy": 85.0,
+      "strict_accuracy": 85.0,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 2.98642212499999,
+      "latency_p95": 3.3368408232000095,
+      "latency_mean": 1.8287759855999934,
+      "usage_coverage": 20,
+      "categories": {
+        "Action Perception": {
+          "n": 2,
+          "correct": 1
+        },
+        "Attribute Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Causal Reasoning": {
+          "n": 2,
+          "correct": 1
+        },
+        "Clips Summarize": {
+          "n": 2,
+          "correct": 2
+        },
+        "Counting": {
+          "n": 2,
+          "correct": 2
+        },
+        "Event Understanding": {
+          "n": 2,
+          "correct": 2
+        },
+        "Object Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Prospective Reasoning": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spatial Understanding": {
+          "n": 2,
+          "correct": 1
+        },
+        "Text-Rich Understanding": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 35.0,
+        "1": 35.0,
+        "2": 35.0,
+        "5": 85.0,
+        "10": 85.0,
+        "30": 85.0
+      },
+      "prompt_tokens_mean": 2256,
+      "completion_tokens_mean": 3,
+      "total_tokens_mean": 2259
+    },
+    "json": {
+      "n": 20,
+      "accuracy": 85.0,
+      "strict_accuracy": 85.0,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 0,
+      "reasoning_detected": 0,
+      "latency_p50": 3.1833523750000268,
+      "latency_p95": 3.7936673937499954,
+      "latency_mean": 3.299876883400006,
+      "usage_coverage": 20,
+      "categories": {
+        "Action Perception": {
+          "n": 2,
+          "correct": 1
+        },
+        "Attribute Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Causal Reasoning": {
+          "n": 2,
+          "correct": 1
+        },
+        "Clips Summarize": {
+          "n": 2,
+          "correct": 2
+        },
+        "Counting": {
+          "n": 2,
+          "correct": 2
+        },
+        "Event Understanding": {
+          "n": 2,
+          "correct": 2
+        },
+        "Object Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Prospective Reasoning": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spatial Understanding": {
+          "n": 2,
+          "correct": 1
+        },
+        "Text-Rich Understanding": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 85.0,
+        "10": 85.0,
+        "30": 85.0
+      },
+      "prompt_tokens_mean": 2263,
+      "completion_tokens_mean": 11,
+      "total_tokens_mean": 2274
+    },
+    "reasoning": {
+      "n": 20,
+      "accuracy": 85.0,
+      "strict_accuracy": 85.0,
+      "invalid": 0,
+      "errors": 0,
+      "truncated": 0,
+      "reasoning_budget_forced": 3,
+      "reasoning_detected": 20,
+      "latency_p50": 20.192321854000006,
+      "latency_p95": 124.27167175029999,
+      "latency_mean": 36.692944806250004,
+      "usage_coverage": 20,
+      "categories": {
+        "Action Perception": {
+          "n": 2,
+          "correct": 1
+        },
+        "Attribute Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Causal Reasoning": {
+          "n": 2,
+          "correct": 1
+        },
+        "Clips Summarize": {
+          "n": 2,
+          "correct": 2
+        },
+        "Counting": {
+          "n": 2,
+          "correct": 2
+        },
+        "Event Understanding": {
+          "n": 2,
+          "correct": 1
+        },
+        "Object Perception": {
+          "n": 2,
+          "correct": 2
+        },
+        "Prospective Reasoning": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spatial Understanding": {
+          "n": 2,
+          "correct": 2
+        },
+        "Text-Rich Understanding": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "timely_accuracy": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 5.0,
+        "10": 30.0,
+        "30": 60.0
+      },
+      "prompt_tokens_mean": 2256,
+      "completion_tokens_mean": 2379.1,
+      "total_tokens_mean": 4635.1
+    }
+  },
+  "comparisons": {
+    "direct": {
+      "n": 20,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "conservative_95_ci_pp": [
+        -19.675967970462544,
+        19.675967970462544
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 100.0,
+      "wins": 0,
+      "losses": 0
+    },
+    "json": {
+      "n": 20,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "conservative_95_ci_pp": [
+        -19.675967970462544,
+        19.675967970462544
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 100.0,
+      "wins": 0,
+      "losses": 0
+    },
+    "reasoning": {
+      "n": 20,
+      "accuracy_difference_pp": 0,
+      "cluster_bootstrap_95_ci_pp": [
+        -15.0,
+        15.0
+      ],
+      "conservative_95_ci_pp": [
+        -27.86937488339976,
+        27.86937488339976
+      ],
+      "noninferior_at_2pp": false,
+      "agreement": 85.0,
+      "wins": 1,
+      "losses": 1
+    }
+  }
+}

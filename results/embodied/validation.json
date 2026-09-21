@@ -1,0 +1,50 @@
+{
+  "recorded_utc": "2026-09-21T04:19:24.682908+00:00",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "execution_python": "3.12.14",
+  "upstream_commit": "59a00c60e0f80fa32d14df1a365166267505980c",
+  "sources": {
+    "omnijev/embodied_policy.py": "0df7054315db3591a96ffb6187486e5482d2fcb78af1056cfd9998ebd4f04344",
+    "omnijev/core.py": "2ccf0872412b725eb2deab3f636a041ca69378b9f9e9bcb8a025fe676633da51",
+    "scripts/benchmark_embodied.py": "9d0644741ac1edd5c3e4bb51ffc0184b23602fb72ff7305087d195992d0c7b77",
+    "embodied/src/embodied_jev/physics.py": "e6a0d2a537a9cac28f874d81e60cc53814194d00ad75f6d4648dae5bc272ddc8",
+    "embodied/src/embodied_jev/incremental.py": "18979e5354edb5f9346d986fef225db29b80845861c55ca8cb116c1ce58c79ee",
+    "embodied/src/embodied_jev/evidence.py": "e1d1d84c5b078372708fdc6e197744e2b6d511be0e6cb3f661efd0a434596197",
+    "embodied/src/embodied_jev/runtime.py": "2cdf963bd346cee75c610787e0124542a6f32441f43f23e856fe2c111969150b"
+  },
+  "tests": {
+    "passed": 432,
+    "skipped": 1,
+    "commands": [
+      ".venv-embodied/bin/python -m pytest embodied/tests tests --import-mode=importlib -q",
+      ".venv-embodied/bin/python -m pytest tests/test_server.py -q"
+    ],
+    "note": "Full suite: 429 passed, 1 skipped, 3 loopback-bind permission failures in sandbox; those exact 3 HTTP tests rerun outside restricted sandbox: all passed. No code failure."
+  },
+  "browser_checks": [
+    "Three.js MuJoCo scene rendered",
+    "real OmniJev skills transfer completed after explicit score threshold change",
+    "native dual-RGB single step executed, images and hashes exported",
+    "benchmark dashboard displays saved public and partial embodied results",
+    "two independent rule lanes completed via browser; comparison replay started",
+    "final benchmark dashboard shows 425 questions, 1700 requests and 17 recorded episodes",
+    "final clean OmniJev skills transfer completed with default zero score threshold, 8 cycles, 13 actual model calls"
+  ],
+  "benchmarks": {
+    "rules-smoke": {
+      "status": "complete",
+      "completed_episodes": 3,
+      "expected_episodes": 3
+    },
+    "skills-seed0": {
+      "status": "complete",
+      "completed_episodes": 12,
+      "expected_episodes": 12
+    },
+    "vision-seed0": {
+      "status": "complete",
+      "completed_episodes": 2,
+      "expected_episodes": 2
+    }
+  }
+}

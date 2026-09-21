@@ -1,0 +1,33 @@
+{
+  "task": "stack",
+  "seed": 0,
+  "provider": "omnijev",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 10.9,
+  "model_calls": 13,
+  "input_tokens": 8834,
+  "output_tokens": 39,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "omnijev-nemotron",
+  "scene_hash": "1b0552ad103d3a0cc289ba6dce018a6425a8eca1c40d3a5e04cb3007ffc00b4a",
+  "message": null,
+  "model_latency_ms": [
+    560.8317500445992,
+    594.554666953627,
+    765.1629580068402,
+    420.9291249862872,
+    713.6214160127565,
+    130.2603330113925,
+    665.644875029102,
+    790.0082090054639,
+    1000.3636670298874,
+    787.8593750065193,
+    810.9300829819404,
+    706.2756659579463,
+    1457.7018749550916
+  ],
+  "episode_file": "stack-0-omnijev.json"
+}

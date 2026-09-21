@@ -1,0 +1,151 @@
+[
+  {
+    "id": "perm-0",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "red",
+      "blue",
+      "green",
+      "insufficient evidence"
+    ],
+    "gold": "A",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "state": "An unreliable caption says that the circle is blue.",
+    "group": "permutation",
+    "media_id": "red"
+  },
+  {
+    "id": "perm-1",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "blue",
+      "green",
+      "insufficient evidence",
+      "red"
+    ],
+    "gold": "D",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "state": "An unreliable caption says that the circle is blue.",
+    "group": "permutation",
+    "media_id": "red"
+  },
+  {
+    "id": "perm-2",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "green",
+      "insufficient evidence",
+      "red",
+      "blue"
+    ],
+    "gold": "C",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "state": "An unreliable caption says that the circle is blue.",
+    "group": "permutation",
+    "media_id": "red"
+  },
+  {
+    "id": "perm-3",
+    "question": "What color is the circle in the image?",
+    "options": [
+      "insufficient evidence",
+      "red",
+      "blue",
+      "green"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "state": "An unreliable caption says that the circle is blue.",
+    "group": "permutation",
+    "media_id": "red"
+  },
+  {
+    "id": "out-of-candidate",
+    "question": "What color is the circle?",
+    "options": [
+      "red",
+      "blue",
+      "none of the listed colors",
+      "insufficient evidence"
+    ],
+    "gold": "C",
+    "images": [
+      "data/assets/yellow.png"
+    ],
+    "group": "out_of_candidate",
+    "media_id": "yellow"
+  },
+  {
+    "id": "blank",
+    "question": "What color is the circle?",
+    "options": [
+      "red",
+      "blue",
+      "green",
+      "insufficient evidence"
+    ],
+    "gold": "D",
+    "images": [
+      "data/assets/blank.png"
+    ],
+    "group": "blank_evidence",
+    "media_id": "blank"
+  },
+  {
+    "id": "frames-0",
+    "question": "The two images are frames in chronological order. What color change happens from the first frame to the second?",
+    "options": [
+      "red to blue",
+      "blue to red",
+      "no change",
+      "insufficient evidence"
+    ],
+    "gold": "A",
+    "images": [
+      "data/assets/red.png",
+      "data/assets/blue.png"
+    ],
+    "group": "ordered_frames",
+    "media_id": "red-blue-pair"
+  },
+  {
+    "id": "frames-1",
+    "question": "The two images are frames in chronological order. What color change happens from the first frame to the second?",
+    "options": [
+      "red to blue",
+      "blue to red",
+      "no change",
+      "insufficient evidence"
+    ],
+    "gold": "B",
+    "images": [
+      "data/assets/blue.png",
+      "data/assets/red.png"
+    ],
+    "group": "ordered_frames",
+    "media_id": "red-blue-pair"
+  },
+  {
+    "id": "hidden-audio",
+    "question": "Is the object in this image making a sound?",
+    "options": [
+      "yes",
+      "no",
+      "insufficient evidence"
+    ],
+    "gold": "C",
+    "images": [
+      "data/assets/red.png"
+    ],
+    "group": "unobservable_property",
+    "media_id": "red"
+  }
+]

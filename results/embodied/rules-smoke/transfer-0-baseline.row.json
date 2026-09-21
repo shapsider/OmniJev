@@ -1,0 +1,19 @@
+{
+  "task": "transfer",
+  "seed": 0,
+  "provider": "baseline",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 1.12,
+  "model_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "baseline",
+  "scene_hash": "4f2b9b0627efe1816a0f3ca927b7f44079588750edd89c4c46e669dca28cfc30",
+  "message": null,
+  "model_latency_ms": [],
+  "episode_file": "transfer-0-baseline.json"
+}

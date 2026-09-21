@@ -1,0 +1,19 @@
+{
+  "task": "barrier",
+  "seed": 0,
+  "provider": "baseline",
+  "status": "completed",
+  "success": true,
+  "wall_seconds": 1.1,
+  "model_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "usage_complete": true,
+  "cycles": 8,
+  "forbidden_contact_steps": 0,
+  "model": "baseline",
+  "scene_hash": "5efd2c2ba7653f509cc148132a8c8b98e9fedc5e720adf4eb86237d9b696a980",
+  "message": null,
+  "model_latency_ms": [],
+  "episode_file": "barrier-0-baseline.json"
+}

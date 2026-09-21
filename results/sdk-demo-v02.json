@@ -1,0 +1,28 @@
+{
+  "request_id": "spatial-demo",
+  "status": "decided",
+  "reason": "model_choice",
+  "action": "left",
+  "selected": "left",
+  "scores": {
+    "left": 0.9999999346696771,
+    "right": 3.126735633631621e-08,
+    "unknown": 3.406296636166996e-08
+  },
+  "score_status": "complete_candidate_set",
+  "calibrated": false,
+  "margin": 0.9999999006067107,
+  "candidate_mass": 1.0000000653303271,
+  "elapsed_ms": 1249.56575,
+  "model": "omnijev-nemotron",
+  "mode": "letter",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 3,
+    "total_tokens": 360,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "raw_text": "A"
+}

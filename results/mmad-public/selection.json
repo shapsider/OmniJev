@@ -1,0 +1,712 @@
+[
+  [
+    "DS-MVTec/toothbrush/image/defective/007.png",
+    0,
+    {
+      "Question": "Is there any defect in the object?",
+      "Answer": "A",
+      "Options": {
+        "A": "Yes.",
+        "B": "No."
+      },
+      "type": "Anomaly Detection",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/025.png",
+    0,
+    {
+      "Question": "Is there any defect in the object?",
+      "Answer": "A",
+      "Options": {
+        "A": "No.",
+        "B": "Yes."
+      },
+      "type": "Anomaly Detection",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/toothbrush/image/defective/015.png",
+    0,
+    {
+      "Question": "Is there any defect in the object?",
+      "Answer": "A",
+      "Options": {
+        "A": "Yes.",
+        "B": "No."
+      },
+      "type": "Anomaly Detection",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/cable/image/missing_cable/005.png",
+    0,
+    {
+      "Question": "Is there any defect in the object?",
+      "Answer": "B",
+      "Options": {
+        "A": "No.",
+        "B": "Yes."
+      },
+      "type": "Anomaly Detection",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/021.png",
+    0,
+    {
+      "Question": "Is there any defect in the object?",
+      "Answer": "B",
+      "Options": {
+        "A": "Yes.",
+        "B": "No."
+      },
+      "type": "Anomaly Detection",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/pill/image/scratch/005.png",
+    4,
+    {
+      "Question": "There is a defect in the object. What additional detail is present about the defect?",
+      "Answer": "A",
+      "Options": {
+        "A": "There is a smaller scratch or chip near the bottom right part.",
+        "B": "It extends the shelf life of the pill.",
+        "C": "It enhances the pill's appearance.",
+        "D": "It changes the color of the entire pill."
+      },
+      "type": "Defect Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/screw/image/scratch_neck/007.png",
+    4,
+    {
+      "Question": "There is a defect in the object. What is the effect of the defect?",
+      "Answer": "C",
+      "Options": {
+        "A": "It changes the color of the screw.",
+        "B": "It makes the screw magnetic.",
+        "C": "It may affect the structural integrity.",
+        "D": "It has no effect."
+      },
+      "type": "Defect Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/wood/image/combined/010.png",
+    4,
+    {
+      "Question": "There are some defects in the object. What could be the potential effect of these defects?",
+      "Answer": "D",
+      "Options": {
+        "A": "They could improve the durability of the wood.",
+        "B": "They could enhance the aesthetic appeal of the wood.",
+        "C": "They could make the wood more resistant to water damage.",
+        "D": "They could compromise the structural integrity or be considered aesthetically undesirable."
+      },
+      "type": "Defect Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/bent_lead/004.png",
+    4,
+    {
+      "Question": "There is a defect in the object. Does the defect affect the uniformity of the component's structure?",
+      "Answer": "B",
+      "Options": {
+        "A": "It has no effect on the component's structure.",
+        "B": "It disrupts the uniformity of the component's structure.",
+        "C": "It increases structural uniformity.",
+        "D": "It makes the component more compact."
+      },
+      "type": "Defect Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/carpet/image/color/008.png",
+    4,
+    {
+      "Question": "There is a defect in the object. What is the effect of the defect on the fabric?",
+      "Answer": "B",
+      "Options": {
+        "A": "It enhances the fabric's appearance.",
+        "B": "It disrupts the uniformity of the carpet's texture.",
+        "C": "It has no visible effect on the fabric.",
+        "D": "It changes the fabric texture."
+      },
+      "type": "Defect Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/bottle/image/broken_small/001.png",
+    1,
+    {
+      "Question": "There is a defect in the object. What is the type of the defect?",
+      "Answer": "B",
+      "Options": {
+        "A": "Stain.",
+        "B": "Breakage.",
+        "C": "Discoloration.",
+        "D": "Deformation."
+      },
+      "type": "Defect Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/screw/image/thread_side/011.png",
+    1,
+    {
+      "Question": "There is a defect in the object. What is the type of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "Color mismatch.",
+        "B": "Corrosion.",
+        "C": "Scratch.",
+        "D": "Deformation."
+      },
+      "type": "Defect Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/capsule/image/faulty_imprint/003.png",
+    1,
+    {
+      "Question": "There is a defect in the object. What is the type of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "Shape deformation.",
+        "B": "Size discrepancy.",
+        "C": "Color variation.",
+        "D": "Imprint anomaly."
+      },
+      "type": "Defect Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/carpet/image/hole/009.png",
+    1,
+    {
+      "Question": "There is a defect in the object. What is the type of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "Torn edge.",
+        "B": "Color inconsistency.",
+        "C": "Stain on the fabric.",
+        "D": "Disruption in weave pattern."
+      },
+      "type": "Defect Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/zipper/image/fabric_interior/011.png",
+    1,
+    {
+      "Question": "There is a defect in the object. What is the type of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "A missing tooth on the zipper.",
+        "B": "A tear in the fabric.",
+        "C": "A color mismatch in the fabric.",
+        "D": "An irregularity in the fabric's texture."
+      },
+      "type": "Defect Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/zipper/image/rough/011.png",
+    3,
+    {
+      "Question": "There is a defect in the object. What is the appearance of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "A missing tooth.",
+        "B": "Faded color on the zipper.",
+        "C": "A scratch on the fabric.",
+        "D": "Distorted shape of teeth."
+      },
+      "type": "Defect Description",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/carpet/image/hole/016.png",
+    3,
+    {
+      "Question": "There is a defect in the object. What is the appearance of the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "Discoloration.",
+        "B": "Burn mark.",
+        "C": "Printed label.",
+        "D": "Frayed and unraveled threads."
+      },
+      "type": "Defect Description",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/zipper/image/fabric_border/009.png",
+    3,
+    {
+      "Question": "There is a defect in the object. What is the appearance of the defect?",
+      "Answer": "B",
+      "Options": {
+        "A": "A hole in the fabric.",
+        "B": "Material appears to be unraveled.",
+        "C": "A stain on the fabric.",
+        "D": "A burn mark on the fabric."
+      },
+      "type": "Defect Description",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/metal_nut/image/scratch/000.png",
+    3,
+    {
+      "Question": "There is a defect in the object. What is the appearance of the defect?",
+      "Answer": "C",
+      "Options": {
+        "A": "A puncture.",
+        "B": "A crack.",
+        "C": "An elongated scratch.",
+        "D": "A dotted pattern."
+      },
+      "type": "Defect Description",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/tile/image/oil/002.png",
+    3,
+    {
+      "Question": "There is a defect in the object. What is the appearance of the defect?",
+      "Answer": "B",
+      "Options": {
+        "A": "It is a sharp, angular break.",
+        "B": "It is irregular and somewhat round with yellowish-brown tones.",
+        "C": "It is a clear, linear mark.",
+        "D": "It has a circular pattern."
+      },
+      "type": "Defect Description",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/tile/image/rough/001.png",
+    2,
+    {
+      "Question": "There is a defect in the object. Where is the defect?",
+      "Answer": "C",
+      "Options": {
+        "A": "On the corner of the tile.",
+        "B": "On the back of the tile.",
+        "C": "At the center of the tile.",
+        "D": "At the edge of the tile."
+      },
+      "type": "Defect Localization",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/screw/image/thread_side/009.png",
+    2,
+    {
+      "Question": "There is a defect in the object. Where is the defect?",
+      "Answer": "D",
+      "Options": {
+        "A": "Near the head of the screw.",
+        "B": "On the tip of the screw.",
+        "C": "At the base of the screw.",
+        "D": "In the center-right area of the screw's length."
+      },
+      "type": "Defect Localization",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/tile/image/crack/003.png",
+    2,
+    {
+      "Question": "There is a defect in the object. Where is the defect?",
+      "Answer": "B",
+      "Options": {
+        "A": "Along the side of the tile.",
+        "B": "Near the center of the tile.",
+        "C": "On the bottom edge of the tile.",
+        "D": "In one of the corners of the tile."
+      },
+      "type": "Defect Localization",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/wood/image/hole/004.png",
+    2,
+    {
+      "Question": "There is a defect in the object. Where is the defect?",
+      "Answer": "C",
+      "Options": {
+        "A": "Along the edges of the wood.",
+        "B": "On the backside of the wood.",
+        "C": "In the center and center-left of the wood.",
+        "D": "At the corners of the wood."
+      },
+      "type": "Defect Localization",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/tile/image/rough/007.png",
+    2,
+    {
+      "Question": "There is a defect in the object. Where is the defect?",
+      "Answer": "C",
+      "Options": {
+        "A": "Middle.",
+        "B": "Bottom left section.",
+        "C": "Top right section.",
+        "D": "Bottom right section."
+      },
+      "type": "Defect Localization",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/zipper/image/good/016.png",
+    4,
+    {
+      "Question": "How does the fabric tape of the zipper appear?",
+      "Answer": "A",
+      "Options": {
+        "A": "With a consistent texture.",
+        "B": "With tears.",
+        "C": "With disruptions in the pattern.",
+        "D": "Miswoven."
+      },
+      "type": "Object Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/toothbrush/image/good/002.png",
+    4,
+    {
+      "Question": "What shape is the toothbrush head?",
+      "Answer": "B",
+      "Options": {
+        "A": "Round with a protruding end.",
+        "B": "Oval with a narrower end.",
+        "C": "Square with a flat end.",
+        "D": "Triangular with a pointed end."
+      },
+      "type": "Object Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/capsule/image/good/014.png",
+    4,
+    {
+      "Question": "How does the capsule's outer surface appear?",
+      "Answer": "A",
+      "Options": {
+        "A": "It is smooth and intact.",
+        "B": "It is wrinkled and misshapen.",
+        "C": "It has blemishes and inconsistencies.",
+        "D": "It is cracked and deformed."
+      },
+      "type": "Object Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/grid/image/good/012.png",
+    4,
+    {
+      "Question": "What is the effect of the lighting on the object?",
+      "Answer": "A",
+      "Options": {
+        "A": "It highlights the texture's natural play with light.",
+        "B": "It creates deep shadows that disrupt the pattern.",
+        "C": "It makes the object appear multicolored.",
+        "D": "It flattens the texture, making it look two-dimensional."
+      },
+      "type": "Object Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/metal_nut/image/good/013.png",
+    4,
+    {
+      "Question": "What additional information is provided about the metal nut?",
+      "Answer": "D",
+      "Options": {
+        "A": "It has visible scratches and material inconsistencies.",
+        "B": "It shows signs of cross-threading.",
+        "C": "It is painted with multiple colors.",
+        "D": "It conforms to the expected pattern without defects."
+      },
+      "type": "Object Analysis",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/metal_nut/image/good/010.png",
+    1,
+    {
+      "Question": "What kind of product is in the image?",
+      "Answer": "C",
+      "Options": {
+        "A": "A rubber wheel.",
+        "B": "A plastic button.",
+        "C": "A metal nut.",
+        "D": "A ceramic tile."
+      },
+      "type": "Object Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/022.png",
+    1,
+    {
+      "Question": "What kind of product is in the image?",
+      "Answer": "A",
+      "Options": {
+        "A": "A transistor.",
+        "B": "A capacitor.",
+        "C": "A diode.",
+        "D": "A resistor."
+      },
+      "type": "Object Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/carpet/image/good/013.png",
+    1,
+    {
+      "Question": "What kind of product is in the image?",
+      "Answer": "A",
+      "Options": {
+        "A": "Woven fabric.",
+        "B": "Plastic sheeting.",
+        "C": "Ceramic tile.",
+        "D": "Wooden plank."
+      },
+      "type": "Object Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/leather/image/good/002.png",
+    1,
+    {
+      "Question": "What kind of product is in the image?",
+      "Answer": "A",
+      "Options": {
+        "A": "Leather surface.",
+        "B": "Wooden surface.",
+        "C": "Fabric material.",
+        "D": "Plastic surface."
+      },
+      "type": "Object Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/leather/image/good/004.png",
+    1,
+    {
+      "Question": "What kind of product is in the image?",
+      "Answer": "B",
+      "Options": {
+        "A": "Ceramic tile.",
+        "B": "Leather material.",
+        "C": "Canvas fabric.",
+        "D": "Wooden plank."
+      },
+      "type": "Object Classification",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/033.png",
+    3,
+    {
+      "Question": "How many legs does the transistor in the image have?",
+      "Answer": "C",
+      "Options": {
+        "A": "Two.",
+        "B": "Four.",
+        "C": "Three.",
+        "D": "Five."
+      },
+      "type": "Object Details",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/039.png",
+    3,
+    {
+      "Question": "What is the appearance of the object's legs?",
+      "Answer": "B",
+      "Options": {
+        "A": "They are bent at irregular angles.",
+        "B": "They are well-formed and consistently spaced.",
+        "C": "They are missing.",
+        "D": "They are intertwined."
+      },
+      "type": "Object Details",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/capsule/image/good/016.png",
+    3,
+    {
+      "Question": "What is printed on the capsule?",
+      "Answer": "A",
+      "Options": {
+        "A": "\"500\".",
+        "B": "There is no printing.",
+        "C": "A brand logo.",
+        "D": "\"250\"."
+      },
+      "type": "Object Details",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/wood/image/good/015.png",
+    3,
+    {
+      "Question": "What is the appearance of the wood surface?",
+      "Answer": "C",
+      "Options": {
+        "A": "Covered in carved designs.",
+        "B": "Polished with a high gloss finish.",
+        "C": "Textured with a distinctive grain pattern.",
+        "D": "Painted with various colors."
+      },
+      "type": "Object Details",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/transistor/image/good/004.png",
+    3,
+    {
+      "Question": "What is the appearance of the transistor's leads?",
+      "Answer": "C",
+      "Options": {
+        "A": "Bent and tarnished.",
+        "B": "Melted.",
+        "C": "Straight and untarnished.",
+        "D": "Missing one lead."
+      },
+      "type": "Object Details",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/toothbrush/image/good/000.png",
+    2,
+    {
+      "Question": "What is the pattern of the bristle arrangement?",
+      "Answer": "D",
+      "Options": {
+        "A": "Rectangular.",
+        "B": "Random.",
+        "C": "Circular.",
+        "D": "Elliptical."
+      },
+      "type": "Object Structure",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/carpet/image/good/023.png",
+    2,
+    {
+      "Question": "Where is the object located?",
+      "Answer": "D",
+      "Options": {
+        "A": "In a warehouse.",
+        "B": "In a residential setting.",
+        "C": "In an outdoor setting.",
+        "D": "The location is not specified."
+      },
+      "type": "Object Structure",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/bottle/image/good/006.png",
+    2,
+    {
+      "Question": "Where is the focus in the image?",
+      "Answer": "C",
+      "Options": {
+        "A": "On the bottom of the bottle.",
+        "B": "On the label of the bottle.",
+        "C": "On the bottle's opening.",
+        "D": "On the side of the bottle."
+      },
+      "type": "Object Structure",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/screw/image/good/031.png",
+    2,
+    {
+      "Question": "What is the location of the product?",
+      "Answer": "D",
+      "Options": {
+        "A": "Hanging on a wall.",
+        "B": "On a wood surface.",
+        "C": "In a toolbox.",
+        "D": "On a white background."
+      },
+      "type": "Object Structure",
+      "annotation": true
+    }
+  ],
+  [
+    "DS-MVTec/hazelnut/image/good/006.png",
+    2,
+    {
+      "Question": "Where is the location of the textured surface?",
+      "Answer": "B",
+      "Options": {
+        "A": "At the bottom of the nut.",
+        "B": "On the top of the nut.",
+        "C": "On the side of the nut.",
+        "D": "Inside the nut."
+      },
+      "type": "Object Structure",
+      "annotation": true
+    }
+  ]
+]

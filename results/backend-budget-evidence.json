@@ -1,0 +1,178 @@
+[
+  {
+    "case_id": "mmstar-1182",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 8202,
+      "total_tokens": 8601,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 177.72279758400003
+  },
+  {
+    "case_id": "mmstar-1338",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 8202,
+      "total_tokens": 8577,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8193
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 178.07089524999992
+  },
+  {
+    "case_id": "mmstar-927",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 8202,
+      "total_tokens": 8573,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 140.74130575000004
+  },
+  {
+    "case_id": "mmstar-480",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 8202,
+      "total_tokens": 8579,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 120.92492075000018
+  },
+  {
+    "case_id": "mmstar-1024",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 8202,
+      "total_tokens": 8606,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 120.989492875
+  },
+  {
+    "case_id": "mmstar-1370",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 8202,
+      "total_tokens": 8588,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 120.97467245899998
+  },
+  {
+    "case_id": "mmstar-1429",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 8202,
+      "total_tokens": 8656,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8198
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 120.9157648749997
+  },
+  {
+    "case_id": "mmstar-1015",
+    "method": "reasoning",
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 8663,
+      "total_tokens": 9137,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8170
+      }
+    },
+    "finish_reason": "stop",
+    "request_config": {
+      "model": "omnijev-nemotron",
+      "temperature": 0.6,
+      "seed": 20260919,
+      "reasoning_effort": "medium",
+      "max_tokens": 20480,
+      "top_p": 0.95
+    },
+    "wall_seconds": 128.05487483299976
+  }
+]

@@ -1,6 +1,5 @@
 # OmniJev Preview
 
-*Upstream: [Iron-LYK/OmniJev](https://github.com/Iron-LYK/OmniJev). This repository carries the same code plus the additions described below — an offline trajectory-media exporter, a multimodal decision-probe gallery, public benchmark panels and the walkthrough video.*
 
 OmniJev is a multimodal research project for robot decision-making, providing a finite-choice decision SDK, an HTTP service, and a MuJoCo robotic arm workbench.
 

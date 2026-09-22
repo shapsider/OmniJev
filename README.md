@@ -1,6 +1,5 @@
 # OmniJev Preview
 
-
 OmniJev is a multimodal research project for robot decision-making, providing a finite-choice decision SDK, an HTTP service, and a MuJoCo robotic arm workbench.
 
 Jev maps unstructured states to structured decisions over predefined candidates, supporting routing, classification, and finite action selection. Robot decision-making also requires camera images, wrist views, and observations of changing scenes. OmniJev brings these visual inputs into the same decision workflow and provides simulation execution, trajectory replay, and reproducible evaluation.
@@ -9,14 +8,16 @@ The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation
 
 ## Preview
 
+
+
 ### 60-second walkthrough
 
-[![OmniJev 60-second walkthrough](docs/media/omnijev-intro-60s-preview.webp)](https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-intro-60s.mp4)
+![OmniJev 60-second walkthrough](docs/media/omnijev-intro-60s-preview.webp)
 
 The animation above is the full 60 s cut re-encoded as an animated WebP (800×450, 8 fps, 4.4 MB) — GitHub strips `<video>` tags out of READMEs, so this is the version that plays inline. Clicking it downloads the real file: **1920×1080, 30 fps, H.264, 6.9 MB, no audio track** (add your own BGM if you publish it to WeChat Channels).
-[Download `omnijev-intro-60s.mp4`](https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-intro-60s.mp4) · [poster frame](promo/omnijev-transfer-poster.png)
+[Download](https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-intro-60s.mp4) `omnijev-intro-60s.mp4` · [poster frame](promo/omnijev-transfer-poster.png)
 
-Launch copy, posters and the WeChat draft live in [`promo/`](promo/README.md).
+Launch copy, posters and the WeChat draft live in `[promo/](promo/README.md)`.
 
 Eight chapters: what Jev is → the finite-choice decision interface → what "Omni" adds (image, and the audio boundary that is wired in the client but rejected by the current backend) → the dual-camera workbench → three task replays → the twelve probe families including the four abstention cases → the four public benchmark pilots → the honest limits. Every number on screen is taken from `results/`, and every robot clip is re-rendered offline from saved `qpos` rather than screen-recorded.
 
@@ -36,10 +37,12 @@ separately reported results, see [Embodied Experiments and Results Display](#emb
 
 The other two workbench tasks, from the same seed and the same skill set:
 
-| Block stacking | Transfer over barrier |
-| --- | --- |
-| ![OmniJev trajectory replay: block stacking](docs/media/omnijev-stack.gif) | ![OmniJev trajectory replay: transfer over barrier](docs/media/omnijev-barrier.gif) |
-| Stack the red block on the blue one. 13 model calls, 39 output tokens, success. | Cross the yellow wall into the tray. 13 model calls, 39 output tokens, success. |
+
+| Block stacking                                                                  | Transfer over barrier                                                               |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ![OmniJev trajectory replay: block stacking](docs/media/omnijev-stack.gif)      | ![OmniJev trajectory replay: transfer over barrier](docs/media/omnijev-barrier.gif) |
+| Stack the red block on the blue one. 13 model calls, 39 output tokens, success. | Cross the yellow wall into the tray. 13 model calls, 39 output tokens, success.     |
+
 
 MP4s: [stack](docs/media/omnijev-stack.mp4) · [barrier](docs/media/omnijev-barrier.mp4).
 
@@ -77,7 +80,7 @@ is 6.8–13.6× faster medians and 51–86% fewer total tokens. Full protocol an
 
 ## Quick Start
 
-All commands are executed in the repository root directory. Source code can be obtained via GitHub's **Code → Download ZIP**, or downloaded from the Release as a source package and extracted.
+All commands are executed in the repository root directory. Source code can be downloaded from the Release as a source package and extracted.
 
 ### 1. Install SDK
 
@@ -188,6 +191,8 @@ Run direct vision and disturbance experiments:
   --output results/embodied/my-vision-shift
 ```
 
+
+
 ### Export a trajectory as video or GIF
 
 Any saved episode can be re-rendered without the inference backend. Forward kinematics is
@@ -206,8 +211,6 @@ node shoot.mjs --data=transfer-omnijev --out=frames/transfer --orbit=8
 The exporter verifies the episode's `scene_hash` before rendering, so an episode recorded on
 a different scene is rejected instead of silently replaying the wrong motion. Encoding commands
 for MP4, GIF and WebP are in [Trajectory Media Exporter](embodied/tools/trajectory-media/README.md).
-
-
 
 ## Experiment Recording and Reproduction
 

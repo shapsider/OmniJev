@@ -8,6 +8,8 @@ The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation
 
 ## Preview
 
+### Embodied trajectory replay
+
 ![OmniJev workbench trajectory replay: transfer to tray](docs/media/omnijev-transfer.gif)
 
 Trajectory replay of a released episode (`omnijev`, task *transfer to tray*, seed 0), redrawn
@@ -19,6 +21,38 @@ This clip is **skill mode with privileged simulator state**: the model chooses a
 skills and a program executes the IK trajectory. It is not an end-to-end visual planning
 result and should not be read as one. Dual-camera vision input is a separate mode with
 separately reported results, see [Embodied Experiments and Results Display](#embodied-experiments-and-results-display).
+
+The other two workbench tasks, from the same seed and the same skill set:
+
+| Block stacking | Transfer over barrier |
+| --- | --- |
+| ![OmniJev trajectory replay: block stacking](docs/media/omnijev-stack.gif) | ![OmniJev trajectory replay: transfer over barrier](docs/media/omnijev-barrier.gif) |
+| Stack the red block on the blue one. 13 model calls, 39 output tokens, success. | Cross the yellow wall into the tray. 13 model calls, 39 output tokens, success. |
+
+MP4s: [stack](docs/media/omnijev-stack.mp4) · [barrier](docs/media/omnijev-barrier.mp4).
+
+### Multimodal decision probes
+
+![OmniJev decision probes across twelve input families](docs/media/omnijev-decision-probes.png)
+
+One record from each of the **twelve probe families** in `results/scored-records.jsonl`, using
+the actual PNGs the model received. Clean reads, counting, spatial relations, a state that
+contradicts the image, two-frame sequences, and — importantly — the abstention cases: no image,
+an unobservable property, a blank frame, a color outside the candidate set. In all four, the
+model returns **insufficient evidence** instead of guessing, which is the behavior the
+finite-choice interface is built to make explicit. 208 of 208 non-audio requests valid and
+correct; probability bars are softmax over option-letter logprobs, **not calibrated confidence**.
+
+### Public multimodal benchmark pilots
+
+![OmniJev versus baselines on four public multimodal subsets](docs/media/omnijev-benchmarks.png)
+
+Four fixed pilot subsets — MMStar (300), MMBench DEV EN (60), MMAD DS-MVTec (45),
+StreamingBench causal 8-frame (20) — with four strategies on the same frozen model. Read the
+latency and token columns, not the accuracy column: **paired accuracy with direct short answer
+on every subset**, and budgeted reasoning is 5.67 pp *higher* on MMStar. The measured advantage
+is 6.8–13.6× faster medians and 51–86% fewer total tokens. Full protocol and caveats:
+[Public Evaluation Findings](results/PUBLIC_EVALUATION_FINDINGS.md).
 
 ## Environment Requirements
 

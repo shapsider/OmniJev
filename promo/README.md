@@ -23,6 +23,7 @@
 | 文件 | 用途 | 尺寸 / 大小 |
 | --- | --- | --- |
 | `omnijev-intro-60s.mp4` | **60 秒介绍视频**，公众号 / 视频号 / B 站开场 | 1920×1080，30 fps，60 s，6.9 MB |
+| `omnijev-intro-60s-preview.webp` | 同一视频的动图版，README 内联播放用（GitHub 会过滤掉 `<video>` 标签） | 800×450，8 fps，4.4 MB |
 | `omnijev-decision-probes.png` | 十二族决策探测画廊（含弃权与音频边界） | 1500×1740，695 KB |
 | `omnijev-benchmarks.png` | 四公开基准 × 四策略对比面板 | 1600×1240，351 KB |
 | `omnijev-transfer.gif` | 主视觉动图，README 首图 | 1000×563，11.4 s，3.2 MB |

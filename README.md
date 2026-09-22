@@ -12,9 +12,10 @@ The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation
 
 ### 60-second walkthrough
 
-<video src="docs/media/omnijev-intro-60s.mp4" poster="promo/omnijev-transfer-poster.png" controls playsinline width="100%"></video>
+[![OmniJev 60-second walkthrough](docs/media/omnijev-intro-60s-preview.webp)](https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-intro-60s.mp4)
 
-If the player does not appear, [download the MP4](docs/media/omnijev-intro-60s.mp4) — 1920×1080, 30 fps, 60 s, H.264, 6.9 MB, **no audio track** (add your own BGM if you publish it to WeChat Channels).
+The animation above is the full 60 s cut re-encoded as an animated WebP (800×450, 8 fps, 4.4 MB) — GitHub strips `<video>` tags out of READMEs, so this is the version that plays inline. Click it, or use the link below, for the real file: **1920×1080, 30 fps, H.264, 6.9 MB, no audio track** (add your own BGM if you publish it to WeChat Channels).
+[Download / play `omnijev-intro-60s.mp4`](docs/media/omnijev-intro-60s.mp4) · [poster frame](promo/omnijev-transfer-poster.png)
 
 Launch copy, posters and the WeChat draft live in [`promo/`](promo/README.md).
 

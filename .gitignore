@@ -22,3 +22,9 @@ MUJOCO_LOG.TXT
 
 models/
 *.gguf
+
+# generated trajectory media intermediates
+embodied/tools/trajectory-media/data/
+embodied/tools/trajectory-media/frames/
+embodied/tools/trajectory-media/probe/
+embodied/tools/trajectory-media/probe/

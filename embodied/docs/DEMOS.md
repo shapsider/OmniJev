@@ -1,57 +1,75 @@
 # Demo and Video Export
 
-README's experiment section defaults to expanding three animated segments: Jev hierarchical XYZ, GPT dual-camera vision transfer, and tray movement followed by re-grasping. Generated from saved experiment records, no need to re-request model.
+This release ships one generated demonstration, drawn from a saved experiment record. No model
+is re-requested and no policy or physics is re-executed: the renderer replays the archived
+`qpos` stream.
 
-| Demo | Action Count | Original Experiment Time | Video / GIF |
-| --- | --- | --- | --- |
-| Jev Hierarchical XYZ with Real Probabilities | 88 | 79.71 seconds | [Download MP4](https://github.com/FBddcz/embodied-jev/raw/refs/heads/main/docs/media/jev-hierarchical.mp4) · [GIF](media/jev-hierarchical.gif) |
-| Look-and-Grasp and Transfer | 32 | 235.41 seconds | [Download MP4](https://github.com/FBddcz/embodied-jev/raw/refs/heads/main/docs/media/vision-transfer.mp4) · [GIF](media/vision-transfer.gif) |
-| Tray Movement and Re-grasp | 43 | 342.21 seconds | [Download MP4](https://github.com/FBddcz/embodied-jev/raw/refs/heads/main/docs/media/vision-recovery.mp4) · [GIF](media/vision-recovery.gif) |
+| Demo | Episode | Frames | Simulated time | Media |
+| --- | --- | ---: | ---: | --- |
+| Trajectory replay — transfer to tray | `results/embodied/skills-seed0/transfer-0-omnijev.json` | 283 | 11.198 s | [MP4](../../docs/media/omnijev-transfer.mp4) · [GIF](../../docs/media/omnijev-transfer.gif) · [WebP](../../docs/media/omnijev-transfer.webp) |
 
-MP4 can be played after download, resolution 1280 × 1080, suitable for pausing to examine decisions; Jev GIF is **8x speed**, approx 14 seconds; two visual GIFs are **5x speed**, approx 9 and 12 seconds, all displayed by default in experiment section. Full experiment setup and failure rounds see [Visual Planning Results](PLANNING_RESULTS.md).
+The MP4 is 1280 × 720 at 25 fps, suitable for pausing on a single decision. The GIF is the same
+clip at 1000 px and 12.5 fps, about 3 MB, so it can be embedded inline in the README. Both are
+rendered from the workbench's own Three.js scene — same background, lights, materials and home
+camera as `../frontend/robot-scene.js` — so the media matches what the browser shows.
 
-## Jev's Probability GIF
+## What the demonstration is, and is not
 
-Jev GIF is generated from the second round's real record: left side redraws saved poses, right side shows eight sub-goals and four action channels' real probability. Model input is coordinates and contact state, no images. Video retains the loss of grasp at step 80, followed by gripper opening and withdrawal; detailed constraints see [Jev Results Explanation](JEV_RESULTS.md). This release summary and media, hierarchical controller still under local development.
+The episode is **skill mode with privileged simulator state**. At each cycle the model receives
+structured simulator state and selects among a small set of preset skills; the selected skill's
+IK trajectory is then executed by program code. The caption reports the episode's real record:
+the chosen option, its probability where the backend supplies logprobs, the request latency, and
+the call and token totals.
 
-## How to Read the Two Visual Demonstrations?
+- It is **not** end-to-end visual planning. No image reached the model in this episode. Vision
+  episodes (dual camera, incremental control, no ground-truth object coordinates) are a separate
+  mode with separately reported results; see [Visual Observations](VISION.md).
+- The 3D scene is a visualisation of **simulator state**, not of model input.
+- Replay is not real-time playback of the robot or the model. Each frame is a saved pose; there is
+  no re-simulation, so contact and grasp events are read from the record rather than recomputed.
+- Camera originals for vision episodes are archived separately as `*.cameras.zip`, with a SHA-256
+  per image. Those PNGs — not this replay — are what the model actually received.
 
-- **Left Action Replay**: Redrawn using saved joint and object poses from experiment, no re-execution of control strategy or physical trajectory.
-- **Right Two Cameras**: PNGs actually sent to model in that step. Action proceeds with current step's input, switches to new observation only when moving to next step; final frame shows final observation.
-- **Bottom-Left Candidate Panel**: Shows actual candidate order per round, green highlights model-selected item, and displays real API call duration for that round.
-- **Scoring Source and Action Description**: Candidate probability values appear only if returned by service provider. These two rounds' GPT interface provides no probability, screen explicitly marks "This interface does not provide"; green does not indicate 100% probability. Short action descriptions come from model reply.
-- **Physical Feedback**: Marks action execution, object retention changes, and failed grasp. Opening, disturbance, and ending subtitles are additional demo explanations, not model replies.
+## How to read the panel
 
-MP4 retains all actions, each step shown for 1.2 seconds, API wait omitted, normal video approx 43 seconds, disturbance video approx 59 seconds. GIF accelerated 5x on this basis. This is not real-time speed of robot or model. Camera originals are merely scaled layouts; GIF and MP4 compression alter pixel display, original PNG and hash remain in camera ZIP.
+- **Cycle counter and phase** — position in the episode's decision sequence and the execution
+  phase selected for that cycle (`approach`, `descend`, `grasp`, `lift`, `carry`, `lower`,
+  `release`, `withdraw`).
+- **Option and probability** — the model's choice from the finite candidate set, with the
+  provider-reported probability. A missing probability means the backend returned none; it is not
+  a confidence of zero, and a high probability is not a task success rate.
+- **Request latency** — the measured model call time for that cycle, taken from the episode's
+  `model_latency_ms`.
+- **Observation, control, policy, calls, tokens, wall clock** — the episode's recorded
+  configuration and totals. These are read from the file, not re-estimated.
+- **SUCCESS badge** — shown on the final frame only when the episode's own physical final state
+  check reports success.
 
-"Xingzhi · EmbodiedJev" is the workbench name; screen will separately list actual model calls. Two dual-camera demonstrations are GPT visual experiments; single-column Jev GIF uses official Jev's real probability record.
+## Re-export from a saved record
 
-In second segment, tray moves 6 cm along X axis after step 20, this is enabled external disturbance. After step 19, dual-finger contact loss is actual execution situation; re-grasped at step 25. Video labels them separately, not synthesizing once-preset recovery animation.
-
-## Re-export from Visual Records
-
-First install optional video dependencies:
+The pipeline needs `mujoco` (already in `requirements.lock`) and `ffmpeg`; the browser side
+reuses the `vite` and `playwright` dev dependencies of `embodied/`.
 
 ```bash
-python -m pip install -e '.[video]'
+# 1. Rebuild MuJoCo forward kinematics from the episode and verify its scene hash.
+python scripts/export_trajectory_frames.py \
+  --episode results/embodied/skills-seed0/transfer-0-omnijev.json \
+  --out embodied/tools/trajectory-media/data/transfer-omnijev
+
+# 2. Serve the renderer and pick a camera.
+cd embodied/tools/trajectory-media
+npx vite --host 127.0.0.1 --port 5199     # open http://127.0.0.1:5199/?data=transfer-omnijev
+
+# 3. Dump one PNG per frame with headless Chrome.
+node shoot.mjs --data=transfer-omnijev --out=frames/transfer \
+  --cam="-56.8,27.6,2.24,0.32,0,0.24,36" --orbit=8
 ```
 
-Run from repository root directory:
+Encoding commands for MP4, GIF and WebP are in
+[Trajectory Media Exporter](../tools/trajectory-media/README.md), along with the meaning of the
+`--cam` and `--orbit` arguments.
 
-```bash
-python scripts/render_demo.py \
-  --episode docs/results/planning-vision-gpt6-v2-cameras-transfer.json.gz \
-  --cameras docs/results/planning-vision-gpt6-v2-cameras-transfer-cameras.zip \
-  --output runs/demo-transfer --title 'Use images to complete grasping and transfer'
-
-python scripts/render_demo.py \
-  --episode docs/results/planning-vision-gpt6-v2-live-target-shift-run1.json.gz \
-  --cameras docs/results/planning-vision-gpt6-v2-live-target-shift-run1-cameras.zip \
-  --output runs/demo-recovery --title 'Regrasp and adjust the route after the tray moves'
-```
-
-Requires available MuJoCo rendering environment and Chinese font. The script will attempt common system fonts, and you can specify a font file with `--font`. `--gif-speed` defaults to 5 and can be adjusted separately. Outputs MP4, GIF, cover PNG, and JSON describing the source; existing files are not overwritten unless `--overwrite` is explicitly provided.
-
-Before export, it checks scene version, experiment ID, and hash of each model input image. If the scene changes, switch back to the original experiment code version before exporting. The current script is designed for incremental visual recording of dual-camera transfer tasks, supporting annotation of target movement; other experiment types require corresponding adaptation.
-
-[Normal demonstration file information](media/vision-transfer.json) · [Disturbed demonstration file information](media/vision-recovery.json)
+Before exporting, the script compares the episode's `scene_hash` against the scene rebuilt from
+the current code. If the scene has changed, the episode is rejected rather than silently replayed
+against different geometry — switch back to the revision it was recorded on, or re-run the
+experiment.

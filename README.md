@@ -6,6 +6,20 @@ Jev maps unstructured states to structured decisions over predefined candidates,
 
 The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation API for multimodal decisions. Vision-Jev with native RLCD training is under development. Coming Soon.
 
+## Preview
+
+![OmniJev workbench trajectory replay: transfer to tray](docs/media/omnijev-transfer.gif)
+
+Trajectory replay of a released episode (`omnijev`, task *transfer to tray*, seed 0), redrawn
+in the workbench's 3D scene. The caption reports the real record: the decision for each cycle,
+its probability, the request latency, and the episode's call and token totals.
+The MP4 is 1280×720 at 25 fps and worth downloading to step through a single decision; the GIF above is the same clip at 1000 px and 12.5 fps, small enough to load inline. [Re-export any saved episode](embodied/tools/trajectory-media/README.md) without a model backend.
+
+This clip is **skill mode with privileged simulator state**: the model chooses among preset
+skills and a program executes the IK trajectory. It is not an end-to-end visual planning
+result and should not be read as one. Dual-camera vision input is a separate mode with
+separately reported results, see [Embodied Experiments and Results Display](#embodied-experiments-and-results-display).
+
 ## Environment Requirements
 
 - Core SDK and HTTP service: Python 3.9+.
@@ -127,6 +141,25 @@ Run direct vision and disturbance experiments:
   --intervention '{"kind":"target_shift","after_cycle":10,"delta_xy":[0.04,0]}' \
   --output results/embodied/my-vision-shift
 ```
+
+### Export a trajectory as video or GIF
+
+Any saved episode can be re-rendered without the inference backend. Forward kinematics is
+recomputed from the archived `qpos`, and the browser scene is redrawn headlessly:
+
+```bash
+.venv-embodied/bin/python scripts/export_trajectory_frames.py \
+  --episode results/embodied/skills-seed0/transfer-0-omnijev.json \
+  --out embodied/tools/trajectory-media/data/transfer-omnijev
+
+cd embodied/tools/trajectory-media
+npx vite --host 127.0.0.1 --port 5199          # inspect the camera: ?data=transfer-omnijev
+node shoot.mjs --data=transfer-omnijev --out=frames/transfer --orbit=8
+```
+
+The exporter verifies the episode's `scene_hash` before rendering, so an episode recorded on
+a different scene is rejected instead of silently replaying the wrong motion. Encoding commands
+for MP4, GIF and WebP are in [Trajectory Media Exporter](embodied/tools/trajectory-media/README.md).
 
 
 

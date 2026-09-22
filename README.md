@@ -14,10 +14,10 @@ The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation
 
 ![OmniJev 60-second walkthrough](docs/media/omnijev-intro-60s-preview.webp)
 
-The animation above is the full 60 s cut re-encoded as an animated WebP (800×450, 8 fps, 4.4 MB) — GitHub strips `<video>` tags out of READMEs, so this is the version that plays inline. Clicking it downloads the real file: **1920×1080, 30 fps, H.264, 6.9 MB, no audio track** (add your own BGM if you publish it to WeChat Channels).
+The animation above is the full 60 s cut re-encoded as an animated WebP (800×450, 8 fps, 4.4 MB) — GitHub strips `<video>` tags out of READMEs, so this is the version that plays inline. The full-quality original is **1920×1080, 30 fps, H.264, 6.9 MB, no audio track** (add your own BGM if you publish it to WeChat Channels).
 [Download](https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-intro-60s.mp4) `omnijev-intro-60s.mp4` · [poster frame](promo/omnijev-transfer-poster.png)
 
-Launch copy, posters and the WeChat draft live in `[promo/](promo/README.md)`.
+Launch copy, posters and the WeChat draft live in [`promo/`](promo/README.md).
 
 Eight chapters: what Jev is → the finite-choice decision interface → what "Omni" adds (image, and the audio boundary that is wired in the client but rejected by the current backend) → the dual-camera workbench → three task replays → the twelve probe families including the four abstention cases → the four public benchmark pilots → the honest limits. Every number on screen is taken from `results/`, and every robot clip is re-rendered offline from saved `qpos` rather than screen-recorded.
 

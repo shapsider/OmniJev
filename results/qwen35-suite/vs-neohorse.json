@@ -1,0 +1,1210 @@
+{
+  "summary": {
+    "n": 200,
+    "ours": 0.8,
+    "neohorse": 0.76,
+    "neo_errors": 0
+  },
+  "rows": [
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": false,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "ours": true,
+      "neo": true,
+      "error": null
+    }
+  ]
+}

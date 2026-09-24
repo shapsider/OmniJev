@@ -1,0 +1,373 @@
+{
+  "coverage": {
+    "MMStar": {
+      "parsed": 1491,
+      "skipped": 9,
+      "selected": 1491
+    },
+    "MMBench": {
+      "parsed": 4318,
+      "skipped": 11,
+      "selected": 800
+    },
+    "RealWorldQA": {
+      "parsed": 597,
+      "skipped": 168,
+      "selected": 597
+    }
+  },
+  "summary": {
+    "MMStar": {
+      "direct": {
+        "n": 1491,
+        "accuracy": 0.6666666666666666,
+        "valid_rate": 1.0,
+        "ece": 0.10823591228382129,
+        "latency_p50": 0.17418758501298726,
+        "latency_p95": 0.18434715690091252,
+        "mean_new_tokens": 4.040912139503689,
+        "by_category": {
+          "coarse perception": {
+            "n": 250,
+            "accuracy": 0.732
+          },
+          "fine-grained perception": {
+            "n": 247,
+            "accuracy": 0.6072874493927125
+          },
+          "instance reasoning": {
+            "n": 250,
+            "accuracy": 0.76
+          },
+          "logical reasoning": {
+            "n": 250,
+            "accuracy": 0.672
+          },
+          "math": {
+            "n": 247,
+            "accuracy": 0.6558704453441295
+          },
+          "science & technology": {
+            "n": 247,
+            "accuracy": 0.5708502024291497
+          }
+        }
+      },
+      "reasoning": {
+        "n": 72,
+        "accuracy": 0.5,
+        "valid_rate": 0.75,
+        "ece": null,
+        "latency_p50": 3.9686337020248175,
+        "latency_p95": 4.089479651069269,
+        "mean_new_tokens": 109.41666666666667,
+        "by_category": {
+          "coarse perception": {
+            "n": 12,
+            "accuracy": 0.5833333333333334
+          },
+          "fine-grained perception": {
+            "n": 12,
+            "accuracy": 0.8333333333333334
+          },
+          "instance reasoning": {
+            "n": 12,
+            "accuracy": 0.4166666666666667
+          },
+          "logical reasoning": {
+            "n": 12,
+            "accuracy": 0.3333333333333333
+          },
+          "math": {
+            "n": 12,
+            "accuracy": 0.3333333333333333
+          },
+          "science & technology": {
+            "n": 12,
+            "accuracy": 0.5
+          }
+        }
+      },
+      "omnijev": {
+        "n": 1491,
+        "accuracy": 0.6854460093896714,
+        "valid_rate": 1.0,
+        "ece": 0.12745930053578536,
+        "latency_p50": 0.08132746396586299,
+        "latency_p95": 0.08786017401143909,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "coarse perception": {
+            "n": 250,
+            "accuracy": 0.748
+          },
+          "fine-grained perception": {
+            "n": 247,
+            "accuracy": 0.631578947368421
+          },
+          "instance reasoning": {
+            "n": 250,
+            "accuracy": 0.756
+          },
+          "logical reasoning": {
+            "n": 250,
+            "accuracy": 0.696
+          },
+          "math": {
+            "n": 247,
+            "accuracy": 0.6437246963562753
+          },
+          "science & technology": {
+            "n": 247,
+            "accuracy": 0.6356275303643725
+          }
+        }
+      }
+    },
+    "MMBench": {
+      "direct": {
+        "n": 800,
+        "accuracy": 0.89125,
+        "valid_rate": 1.0,
+        "ece": 0.0333869645744562,
+        "latency_p50": 0.17521447292529047,
+        "latency_p95": 0.18702019890770316,
+        "mean_new_tokens": 4.005,
+        "by_category": {
+          "action_recognition": {
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "attribute_comparison": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "attribute_recognition": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "celebrity_recognition": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "function_reasoning": {
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "future_prediction": {
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "identity_reasoning": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "image_emotion": {
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "image_quality": {
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "image_scene": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "image_style": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "image_topic": {
+            "n": 40,
+            "accuracy": 0.925
+          },
+          "nature_relation": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "object_localization": {
+            "n": 40,
+            "accuracy": 0.725
+          },
+          "ocr": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "physical_property_reasoning": {
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "physical_relation": {
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "social_relation": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "spatial_relationship": {
+            "n": 40,
+            "accuracy": 0.775
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 40,
+            "accuracy": 0.875
+          }
+        }
+      },
+      "omnijev": {
+        "n": 800,
+        "accuracy": 0.89,
+        "valid_rate": 1.0,
+        "ece": 0.04327908284962172,
+        "latency_p50": 0.08118207682855427,
+        "latency_p95": 0.09193882602266967,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "action_recognition": {
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "attribute_comparison": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "attribute_recognition": {
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "celebrity_recognition": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "function_reasoning": {
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "future_prediction": {
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "identity_reasoning": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "image_emotion": {
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "image_quality": {
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "image_scene": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "image_style": {
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "image_topic": {
+            "n": 40,
+            "accuracy": 0.925
+          },
+          "nature_relation": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "object_localization": {
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "ocr": {
+            "n": 40,
+            "accuracy": 1.0
+          },
+          "physical_property_reasoning": {
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "physical_relation": {
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "social_relation": {
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "spatial_relationship": {
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "structuralized_imagetext_understanding": {
+            "n": 40,
+            "accuracy": 0.85
+          }
+        }
+      }
+    },
+    "RealWorldQA": {
+      "direct": {
+        "n": 597,
+        "accuracy": 0.6901172529313233,
+        "valid_rate": 1.0,
+        "ece": 0.09860940594569322,
+        "latency_p50": 0.1772776790894568,
+        "latency_p95": 0.18261646782048047,
+        "mean_new_tokens": 4.055276381909548,
+        "by_category": {
+          "real-world": {
+            "n": 597,
+            "accuracy": 0.6901172529313233
+          }
+        }
+      },
+      "omnijev": {
+        "n": 597,
+        "accuracy": 0.7102177554438861,
+        "valid_rate": 1.0,
+        "ece": 0.11500565859939987,
+        "latency_p50": 0.08486182801425457,
+        "latency_p95": 0.09001509682275355,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "real-world": {
+            "n": 597,
+            "accuracy": 0.7102177554438861
+          }
+        }
+      }
+    }
+  },
+  "mmbench_source_split": {
+    "scienceqa_source": {
+      "direct": {
+        "n": 76,
+        "accuracy": 0.9473684210526315
+      },
+      "omnijev": {
+        "n": 76,
+        "accuracy": 0.9342105263157895
+      }
+    },
+    "other_source": {
+      "direct": {
+        "n": 724,
+        "accuracy": 0.8853591160220995
+      },
+      "omnijev": {
+        "n": 724,
+        "accuracy": 0.8853591160220995
+      }
+    }
+  },
+  "notes": [
+    "\u51c6\u786e\u7387\u7684\u5206\u6bcd\u662f\u5168\u90e8\u8bf7\u6c42\u3002\u89e3\u6790\u4e0d\u51fa\u5019\u9009\u5b57\u6bcd\u7b97\u9519\u3002",
+    "ECE \u53ea\u7edf\u8ba1\u7ed9\u51fa\u4e86\u7f6e\u4fe1\u5ea6\u7684\u5408\u6cd5\u8f93\u51fa\u3002\u76f4\u63a5\u77ed\u7b54\u7684\u7f6e\u4fe1\u5ea6\u6765\u81ea\u9996\u4e2a\u751f\u6210\u6b65\u4e0a\u5019\u9009\u5b57\u6bcd\u7684\u5f52\u4e00\u5316\u6982\u7387\u3002\u9884\u7b97\u63a8\u7406\u4e0d\u62a5\u544a ECE\u3002",
+    "OmniJev \u7684\u7f6e\u4fe1\u5ea6\u6765\u81ea\u5019\u9009\u5b57\u6bcd\u5206\u5e03\uff0c\u8bad\u7ec3\u76ee\u6807\u662f\u5bf9\u6570\u5206\u6570\u52a0 Brier \u5206\u6570\uff0c\u4e0d\u662f\u9010\u9898\u6821\u51c6\u8bc1\u4e66\u3002",
+    "MMBench \u5206\u5c42\u62bd\u6837\u548c\u63a8\u7406\u5b50\u96c6\u4f7f\u7528\u56fa\u5b9a\u79cd\u5b50\uff0c\u6ca1\u6709\u6309\u6a21\u578b\u7ed3\u679c\u6311\u9009\u3002",
+    "\u8bad\u7ec3\u53ea\u7528\u4e86 ScienceQA \u5b98\u65b9 train \u7684\u56fe\u50cf\u9898\u548c\u684c\u9762\u653e\u7f6e\u73af\u5883\u3002\u516c\u5f00\u57fa\u51c6\u7684 test/dev/val \u6ca1\u6709\u53c2\u4e0e\u6743\u91cd\u66f4\u65b0\u3002"
+  ]
+}

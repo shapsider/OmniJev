@@ -1,0 +1,17 @@
+{
+  "MMStar": {
+    "parsed": 1409,
+    "skipped": 91,
+    "selected": 4
+  },
+  "MMBench": {
+    "parsed": 4318,
+    "skipped": 11,
+    "selected": 4
+  },
+  "RealWorldQA": {
+    "parsed": 597,
+    "skipped": 168,
+    "selected": 4
+  }
+}

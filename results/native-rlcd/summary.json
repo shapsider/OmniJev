@@ -1,0 +1,170 @@
+{
+  "scienceqa": {
+    "omnijev": {
+      "task": "scienceqa",
+      "n": 100,
+      "accuracy": 0.88,
+      "valid_rate": 1.0,
+      "ece": {
+        "ece": 0.03863329827785497,
+        "bins": [
+          {
+            "bin": 3,
+            "count": 3,
+            "confidence": 0.33056843280792236,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "bin": 5,
+            "count": 3,
+            "confidence": 0.5588227113087972,
+            "accuracy": 1.0
+          },
+          {
+            "bin": 6,
+            "count": 8,
+            "confidence": 0.6518215462565422,
+            "accuracy": 0.625
+          },
+          {
+            "bin": 7,
+            "count": 8,
+            "confidence": 0.7275897637009621,
+            "accuracy": 0.625
+          },
+          {
+            "bin": 8,
+            "count": 7,
+            "confidence": 0.8548666323934283,
+            "accuracy": 0.8571428571428571
+          },
+          {
+            "bin": 9,
+            "count": 71,
+            "confidence": 0.9785954817919664,
+            "accuracy": 0.9577464788732394
+          }
+        ]
+      },
+      "latency_p50": 0.06042172992601991,
+      "latency_p95": 0.07046558381989598,
+      "mean_new_tokens": 0.0
+    },
+    "direct": {
+      "task": "scienceqa",
+      "n": 100,
+      "accuracy": 0.75,
+      "valid_rate": 1.0,
+      "ece": {
+        "ece": 0.08602267235517498,
+        "bins": [
+          {
+            "bin": 3,
+            "count": 4,
+            "confidence": 0.3720608428120613,
+            "accuracy": 0.0
+          },
+          {
+            "bin": 4,
+            "count": 6,
+            "confidence": 0.45182297627131146,
+            "accuracy": 0.16666666666666666
+          },
+          {
+            "bin": 5,
+            "count": 11,
+            "confidence": 0.5692681561816822,
+            "accuracy": 0.6363636363636364
+          },
+          {
+            "bin": 6,
+            "count": 8,
+            "confidence": 0.6553621739149094,
+            "accuracy": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 11,
+            "confidence": 0.7469060746106234,
+            "accuracy": 0.5454545454545454
+          },
+          {
+            "bin": 8,
+            "count": 4,
+            "confidence": 0.8526964485645294,
+            "accuracy": 0.75
+          },
+          {
+            "bin": 9,
+            "count": 56,
+            "confidence": 0.9784890306847436,
+            "accuracy": 0.9642857142857143
+          }
+        ]
+      },
+      "latency_p50": 0.08728868095204234,
+      "latency_p95": 0.09836857300251722,
+      "mean_new_tokens": 2.06
+    },
+    "reasoning": {
+      "task": "scienceqa",
+      "n": 100,
+      "accuracy": 0.62,
+      "valid_rate": 0.85,
+      "ece": null,
+      "latency_p50": 0.8289342119824141,
+      "latency_p95": 2.5591769290622324,
+      "mean_new_tokens": 50.66
+    }
+  },
+  "embodied": {
+    "omnijev": {
+      "task": "embodied",
+      "n": 20,
+      "success": 0.85,
+      "blank_success": 1.0,
+      "placement_success": 0.8125,
+      "valid_rate": 1.0,
+      "latency_p50_per_decision": 0.05200169308227487,
+      "mean_new_tokens_per_episode": 0.0,
+      "mean_steps": 10.65
+    },
+    "direct": {
+      "task": "embodied",
+      "n": 20,
+      "success": 0.2,
+      "blank_success": 1.0,
+      "placement_success": 0.0,
+      "valid_rate": 1.0,
+      "latency_p50_per_decision": 0.0699264972936362,
+      "mean_new_tokens_per_episode": 38.8,
+      "mean_steps": 19.4
+    },
+    "reasoning": {
+      "task": "embodied",
+      "n": 20,
+      "success": 0.2,
+      "blank_success": 1.0,
+      "placement_success": 0.0,
+      "valid_rate": 1.0,
+      "latency_p50_per_decision": 0.12743117799982429,
+      "mean_new_tokens_per_episode": 107.15,
+      "mean_steps": 19.4
+    }
+  },
+  "config": {
+    "model": "Qwen2.5-VL-3B-Instruct",
+    "rank": 16,
+    "alpha": 32,
+    "seed": 20260923,
+    "objective": "log score + Brier, then group-relative simulator reward",
+    "stage": "temperature"
+  },
+  "notes": [
+    "监督阶段最小化对数分数和 Brier 分数。",
+    "组相对结果更新已保留。",
+    "在验证集上拟合了决策温度，测试集未参与。",
+    "随机初始化的决策头在第一轮里损失停在约 1.63，闭环成功率为 0。随后改成预训练字母 logits 加零初始化残差，仍然是一次前向、不生成答案。",
+    "第二轮监督把验证闭环从 87.5% 降到 50%。组相对的仿真奖励把闭环拉回 87.5%，这一步被保留。"
+  ]
+}

@@ -1,0 +1,923 @@
+{"benchmark": "MMStar", "category": "coarse perception", "index": 242, "correct": true, "latency": 0.3983874109108001}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 121, "correct": true, "latency": 0.11053459206596017}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 79, "correct": true, "latency": 0.0867093710694462}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 67, "correct": false, "latency": 0.09422357706353068}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 127, "correct": false, "latency": 0.08874225686304271}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 28, "correct": false, "latency": 0.09507467900402844}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 164, "correct": true, "latency": 0.08573085209354758}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 165, "correct": false, "latency": 0.09433139488101006}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 195, "correct": true, "latency": 0.06778325303457677}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 2, "correct": true, "latency": 0.09010898694396019}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 122, "correct": false, "latency": 0.08421569596976042}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 153, "correct": true, "latency": 0.07020616088993847}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 34, "correct": true, "latency": 0.0862932400777936}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 137, "correct": true, "latency": 0.09644005890004337}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 126, "correct": false, "latency": 0.08197886380366981}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 108, "correct": true, "latency": 0.08652321505360305}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 144, "correct": true, "latency": 0.10491247498430312}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 43, "correct": true, "latency": 0.097771389875561}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 65, "correct": true, "latency": 0.0832221070304513}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 142, "correct": false, "latency": 0.08894495200365782}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 152, "correct": true, "latency": 0.08343786210753024}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 70, "correct": true, "latency": 0.08459597709588706}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 159, "correct": true, "latency": 0.09277499909512699}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 57, "correct": false, "latency": 0.08339346293359995}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 174, "correct": true, "latency": 0.07689718506298959}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 6, "correct": false, "latency": 0.08486087108030915}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 92, "correct": true, "latency": 0.09215323207899928}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 12, "correct": false, "latency": 0.0847165051382035}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 146, "correct": true, "latency": 0.08322802698239684}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 163, "correct": true, "latency": 0.08601558580994606}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 98, "correct": false, "latency": 0.0831847379449755}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 236, "correct": true, "latency": 0.08745178487151861}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 69, "correct": true, "latency": 0.09094674908556044}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 227, "correct": true, "latency": 0.08767517004162073}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 11, "correct": false, "latency": 0.08388006291352212}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 240, "correct": true, "latency": 0.08328775595873594}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 42, "correct": false, "latency": 0.08350608008913696}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 94, "correct": false, "latency": 0.08457990689203143}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 38, "correct": true, "latency": 0.08332394482567906}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 37, "correct": true, "latency": 0.08295652293600142}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 466, "correct": true, "latency": 0.08326918608509004}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 423, "correct": false, "latency": 0.08310489007271826}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 420, "correct": true, "latency": 0.08479972300119698}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 272, "correct": false, "latency": 0.08767317002639174}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 283, "correct": false, "latency": 0.08384827291592956}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 368, "correct": true, "latency": 0.08258904004469514}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 263, "correct": false, "latency": 0.08164355112239718}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 404, "correct": true, "latency": 0.08345352206379175}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 284, "correct": false, "latency": 0.08720473013818264}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 456, "correct": true, "latency": 0.08744466514326632}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 362, "correct": true, "latency": 0.07265552692115307}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 447, "correct": true, "latency": 0.08295949292369187}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 431, "correct": false, "latency": 0.09161494392901659}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 372, "correct": true, "latency": 0.08708057296462357}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 412, "correct": true, "latency": 0.08399693993851542}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 467, "correct": true, "latency": 0.08383182296529412}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 250, "correct": false, "latency": 0.08101168507710099}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 253, "correct": true, "latency": 0.08654975495301187}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 488, "correct": true, "latency": 0.08422635495662689}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 478, "correct": true, "latency": 0.0836349178571254}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 480, "correct": false, "latency": 0.0833331539761275}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 396, "correct": true, "latency": 0.07518529193475842}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 443, "correct": true, "latency": 0.08810478099621832}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 373, "correct": false, "latency": 0.08546066796407104}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 411, "correct": true, "latency": 0.07365448586642742}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 260, "correct": false, "latency": 0.08207987202331424}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 345, "correct": true, "latency": 0.08603039500303566}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 469, "correct": true, "latency": 0.08254430093802512}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 468, "correct": true, "latency": 0.08337422390468419}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 422, "correct": true, "latency": 0.08244001399725676}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 394, "correct": true, "latency": 0.08355874894186854}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 255, "correct": true, "latency": 0.08338133292272687}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 476, "correct": true, "latency": 0.0812995289452374}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 257, "correct": false, "latency": 0.08667659107595682}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 482, "correct": false, "latency": 0.07523671095259488}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 385, "correct": false, "latency": 0.0813708771020174}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 264, "correct": true, "latency": 0.08320543798618019}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 376, "correct": false, "latency": 0.08327192603610456}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 437, "correct": true, "latency": 0.08410533703863621}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 320, "correct": false, "latency": 0.08587396889925003}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 656, "correct": true, "latency": 0.08341354201547801}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 728, "correct": true, "latency": 0.0759221960324794}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 686, "correct": true, "latency": 0.08310426003299654}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 652, "correct": true, "latency": 0.10240311897359788}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 558, "correct": true, "latency": 0.08290745387785137}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 684, "correct": true, "latency": 0.06817798502743244}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 670, "correct": true, "latency": 0.08219357905909419}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 660, "correct": false, "latency": 0.06821936392225325}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 532, "correct": true, "latency": 0.08651599497534335}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 513, "correct": true, "latency": 0.0781874970998615}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 723, "correct": true, "latency": 0.0837391559034586}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 543, "correct": true, "latency": 0.08630463993176818}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 574, "correct": true, "latency": 0.083292615134269}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 650, "correct": true, "latency": 0.08226840803399682}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 669, "correct": true, "latency": 0.08413999690674245}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 519, "correct": false, "latency": 0.08365004695951939}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 726, "correct": true, "latency": 0.07431007106788456}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 618, "correct": true, "latency": 0.08483623201027513}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 694, "correct": true, "latency": 0.08475304301828146}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 710, "correct": true, "latency": 0.08256087102927268}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 510, "correct": false, "latency": 0.08290387387387455}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 646, "correct": true, "latency": 0.08252754202112556}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 638, "correct": true, "latency": 0.07319638505578041}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 707, "correct": true, "latency": 0.07132300618104637}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 743, "correct": true, "latency": 0.06755245779640973}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 551, "correct": false, "latency": 0.08548354799859226}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 586, "correct": true, "latency": 0.07945297914557159}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 535, "correct": true, "latency": 0.09132759994827211}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 659, "correct": true, "latency": 0.07671955903060734}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 636, "correct": true, "latency": 0.08547138678841293}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 667, "correct": true, "latency": 0.08577898191288114}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 693, "correct": true, "latency": 0.08433202304877341}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 662, "correct": true, "latency": 0.08230900694616139}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 691, "correct": true, "latency": 0.0803376801777631}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 630, "correct": true, "latency": 0.06895944802090526}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 634, "correct": true, "latency": 0.070980423130095}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 690, "correct": true, "latency": 0.08266376913525164}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 602, "correct": true, "latency": 0.067778643919155}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 712, "correct": true, "latency": 0.08337042410857975}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 502, "correct": false, "latency": 0.08339229295961559}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 841, "correct": true, "latency": 0.08643056685104966}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 900, "correct": true, "latency": 0.08562874491326511}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 933, "correct": true, "latency": 0.08991183107718825}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 907, "correct": false, "latency": 0.07566718198359013}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 816, "correct": true, "latency": 0.07564721186645329}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 921, "correct": true, "latency": 0.08550409693270922}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 755, "correct": true, "latency": 0.07199810119345784}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 867, "correct": false, "latency": 0.06831309199333191}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 956, "correct": true, "latency": 0.09285984700545669}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 870, "correct": true, "latency": 0.08402277901768684}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 762, "correct": true, "latency": 0.08350418112240732}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 877, "correct": true, "latency": 0.0846257759258151}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 776, "correct": false, "latency": 0.08279543602839112}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 780, "correct": false, "latency": 0.07018387084826827}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 763, "correct": false, "latency": 0.08661745302379131}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 902, "correct": true, "latency": 0.06824846309609711}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 920, "correct": true, "latency": 0.08180880802683532}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 917, "correct": true, "latency": 0.08351717982441187}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 918, "correct": false, "latency": 0.07116150995716453}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 852, "correct": true, "latency": 0.08336700405925512}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 955, "correct": true, "latency": 0.08394286083057523}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 819, "correct": true, "latency": 0.08498430880717933}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 937, "correct": false, "latency": 0.08312433888204396}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 860, "correct": true, "latency": 0.08649962581694126}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 922, "correct": true, "latency": 0.0815708430018276}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 803, "correct": true, "latency": 0.0831061489880085}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 871, "correct": true, "latency": 0.08532329089939594}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 985, "correct": true, "latency": 0.08268168894574046}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 914, "correct": true, "latency": 0.0838580229319632}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 849, "correct": true, "latency": 0.08413020707666874}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 792, "correct": false, "latency": 0.0815519830211997}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 929, "correct": true, "latency": 0.0823574960231781}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 893, "correct": false, "latency": 0.08131568902172148}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 752, "correct": false, "latency": 0.08273555687628686}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 790, "correct": false, "latency": 0.08993224101141095}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 971, "correct": true, "latency": 0.08790127513930202}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 982, "correct": false, "latency": 0.08332860399968922}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 851, "correct": true, "latency": 0.07115485006943345}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 973, "correct": true, "latency": 0.06775811384432018}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 883, "correct": true, "latency": 0.08283524611033499}
+{"benchmark": "MMStar", "category": "math", "index": 1002, "correct": false, "latency": 0.0900973379611969}
+{"benchmark": "MMStar", "category": "math", "index": 1074, "correct": false, "latency": 0.07668965891934931}
+{"benchmark": "MMStar", "category": "math", "index": 1024, "correct": false, "latency": 0.08005847595632076}
+{"benchmark": "MMStar", "category": "math", "index": 1088, "correct": true, "latency": 0.07993869902566075}
+{"benchmark": "MMStar", "category": "math", "index": 1150, "correct": true, "latency": 0.08335398393683136}
+{"benchmark": "MMStar", "category": "math", "index": 1033, "correct": true, "latency": 0.07523827091790736}
+{"benchmark": "MMStar", "category": "math", "index": 1169, "correct": true, "latency": 0.07287654303945601}
+{"benchmark": "MMStar", "category": "math", "index": 1230, "correct": true, "latency": 0.0690628751181066}
+{"benchmark": "MMStar", "category": "math", "index": 1035, "correct": false, "latency": 0.07435256009921432}
+{"benchmark": "MMStar", "category": "math", "index": 1219, "correct": true, "latency": 0.09297513496130705}
+{"benchmark": "MMStar", "category": "math", "index": 1016, "correct": true, "latency": 0.07131050690077245}
+{"benchmark": "MMStar", "category": "math", "index": 1137, "correct": false, "latency": 0.07065400993451476}
+{"benchmark": "MMStar", "category": "math", "index": 1148, "correct": true, "latency": 0.08206180203706026}
+{"benchmark": "MMStar", "category": "math", "index": 1053, "correct": true, "latency": 0.08393332199193537}
+{"benchmark": "MMStar", "category": "math", "index": 1142, "correct": true, "latency": 0.08616663189604878}
+{"benchmark": "MMStar", "category": "math", "index": 1048, "correct": true, "latency": 0.07326040416955948}
+{"benchmark": "MMStar", "category": "math", "index": 1214, "correct": false, "latency": 0.0679663298651576}
+{"benchmark": "MMStar", "category": "math", "index": 1008, "correct": true, "latency": 0.07972364290617406}
+{"benchmark": "MMStar", "category": "math", "index": 1056, "correct": true, "latency": 0.08396678091958165}
+{"benchmark": "MMStar", "category": "math", "index": 1249, "correct": false, "latency": 0.08483499195426702}
+{"benchmark": "MMStar", "category": "math", "index": 1180, "correct": true, "latency": 0.08567935298196971}
+{"benchmark": "MMStar", "category": "math", "index": 1204, "correct": true, "latency": 0.06836242112331092}
+{"benchmark": "MMStar", "category": "math", "index": 1026, "correct": true, "latency": 0.0757882590405643}
+{"benchmark": "MMStar", "category": "math", "index": 1004, "correct": true, "latency": 0.11651580198667943}
+{"benchmark": "MMStar", "category": "math", "index": 1164, "correct": true, "latency": 0.06910355412401259}
+{"benchmark": "MMStar", "category": "math", "index": 1058, "correct": false, "latency": 0.10364816198125482}
+{"benchmark": "MMStar", "category": "math", "index": 1132, "correct": false, "latency": 0.07385032111778855}
+{"benchmark": "MMStar", "category": "math", "index": 1240, "correct": false, "latency": 0.08216859004460275}
+{"benchmark": "MMStar", "category": "math", "index": 1111, "correct": true, "latency": 0.08382851304486394}
+{"benchmark": "MMStar", "category": "math", "index": 1075, "correct": true, "latency": 0.08886099513620138}
+{"benchmark": "MMStar", "category": "math", "index": 1246, "correct": true, "latency": 0.0705673829652369}
+{"benchmark": "MMStar", "category": "math", "index": 1190, "correct": true, "latency": 0.07061826204881072}
+{"benchmark": "MMStar", "category": "math", "index": 1121, "correct": true, "latency": 0.0752217210829258}
+{"benchmark": "MMStar", "category": "math", "index": 1145, "correct": true, "latency": 0.08800849295221269}
+{"benchmark": "MMStar", "category": "math", "index": 1115, "correct": true, "latency": 0.06834702100604773}
+{"benchmark": "MMStar", "category": "math", "index": 1134, "correct": true, "latency": 0.0728669420350343}
+{"benchmark": "MMStar", "category": "math", "index": 1193, "correct": true, "latency": 0.08615845302119851}
+{"benchmark": "MMStar", "category": "math", "index": 1020, "correct": true, "latency": 0.09241932700388134}
+{"benchmark": "MMStar", "category": "math", "index": 1105, "correct": true, "latency": 0.10081050405278802}
+{"benchmark": "MMStar", "category": "math", "index": 1229, "correct": true, "latency": 0.08996296999976039}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1276, "correct": true, "latency": 0.07562372204847634}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1338, "correct": true, "latency": 0.06815616507083178}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1403, "correct": true, "latency": 0.08576371218077838}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1495, "correct": true, "latency": 0.07469728216528893}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1361, "correct": false, "latency": 0.07914018584415317}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1388, "correct": false, "latency": 0.08210594090633094}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1479, "correct": true, "latency": 0.07150291302241385}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1323, "correct": false, "latency": 0.09325020899996161}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1474, "correct": true, "latency": 0.07753329118713737}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1455, "correct": false, "latency": 0.0899394100997597}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1257, "correct": false, "latency": 0.06837150012142956}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1381, "correct": true, "latency": 0.08552756696008146}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1450, "correct": false, "latency": 0.08337140385992825}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1464, "correct": true, "latency": 0.08174061891622841}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1273, "correct": false, "latency": 0.07090830500237644}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1420, "correct": false, "latency": 0.09495301102288067}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1443, "correct": true, "latency": 0.0906813251785934}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1475, "correct": true, "latency": 0.07171375793404877}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1383, "correct": true, "latency": 0.0822387479711324}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1461, "correct": true, "latency": 0.08394866087473929}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1348, "correct": false, "latency": 0.11126156593672931}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1252, "correct": false, "latency": 0.09647907898761332}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1447, "correct": true, "latency": 0.07038505701348186}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1487, "correct": true, "latency": 0.07572236005216837}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1277, "correct": false, "latency": 0.1284313618671149}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1295, "correct": false, "latency": 0.07407817710191011}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1250, "correct": false, "latency": 0.08456984790973365}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1300, "correct": true, "latency": 0.07344940002076328}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1493, "correct": true, "latency": 0.08415201609022915}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1496, "correct": true, "latency": 0.08303504111245275}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1426, "correct": true, "latency": 0.08290814398787916}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1269, "correct": true, "latency": 0.06851368700154126}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1352, "correct": true, "latency": 0.08473640400916338}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1432, "correct": false, "latency": 0.07407701597549021}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1466, "correct": true, "latency": 0.07320849504321814}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1264, "correct": false, "latency": 0.0800402658060193}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1416, "correct": false, "latency": 0.0873240171931684}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1440, "correct": true, "latency": 0.08404246903955936}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1349, "correct": true, "latency": 0.07401326787658036}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1499, "correct": true, "latency": 0.06827333313412964}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 88, "correct": true, "latency": 0.08521135407499969}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 166, "correct": false, "latency": 0.08589918911457062}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 33, "correct": true, "latency": 0.0909913380164653}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 503, "correct": true, "latency": 0.08962545706890523}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 199, "correct": false, "latency": 0.08892133296467364}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 249, "correct": true, "latency": 0.08617959194816649}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 556, "correct": true, "latency": 0.08601152594201267}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 723, "correct": true, "latency": 0.09623225289396942}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 241, "correct": true, "latency": 0.0853573908098042}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 485, "correct": true, "latency": 0.08536775992251933}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 535, "correct": true, "latency": 0.09014596603810787}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 6, "correct": false, "latency": 0.08662574179470539}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 385, "correct": true, "latency": 0.0874181161634624}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 480, "correct": true, "latency": 0.08468451607041061}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 422, "correct": true, "latency": 0.08898342098109424}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 621, "correct": true, "latency": 0.0870814120862633}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 190, "correct": true, "latency": 0.08822479913942516}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 616, "correct": true, "latency": 0.08587885904125869}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 246, "correct": true, "latency": 0.087055753916502}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 277, "correct": true, "latency": 0.09530096407979727}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 172, "correct": false, "latency": 0.0858018510043621}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 381, "correct": true, "latency": 0.08675507013686001}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 565, "correct": true, "latency": 0.09048649901524186}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 703, "correct": false, "latency": 0.084990557981655}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 687, "correct": false, "latency": 0.083619937999174}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 72, "correct": true, "latency": 0.0935028928797692}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 725, "correct": true, "latency": 0.08742677583359182}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 515, "correct": false, "latency": 0.08597762719728053}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 251, "correct": false, "latency": 0.08519299398176372}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 63, "correct": true, "latency": 0.09524666494689882}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 75, "correct": false, "latency": 0.086603102972731}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 141, "correct": true, "latency": 0.08689203602261841}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 554, "correct": true, "latency": 0.08601342607289553}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 338, "correct": true, "latency": 0.08551139803603292}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 460, "correct": false, "latency": 0.08719396009109914}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 670, "correct": true, "latency": 0.08632046892307699}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 509, "correct": true, "latency": 0.08642806694842875}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 371, "correct": true, "latency": 0.08538641012273729}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 148, "correct": false, "latency": 0.09046075004152954}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 599, "correct": true, "latency": 0.08699458395130932}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 142, "correct": false, "latency": 0.08773143915459514}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 25, "correct": false, "latency": 0.08495309902355075}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 12, "correct": true, "latency": 0.08914521802216768}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 550, "correct": true, "latency": 0.09187023900449276}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 80, "correct": false, "latency": 0.08584650000557303}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 513, "correct": true, "latency": 0.08500948804430664}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 688, "correct": true, "latency": 0.09446706203743815}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 449, "correct": true, "latency": 0.08954775892198086}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 270, "correct": true, "latency": 0.08788315486162901}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 700, "correct": true, "latency": 0.09596462012268603}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 569, "correct": true, "latency": 0.09730215999297798}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 19, "correct": true, "latency": 0.09229456912726164}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 260, "correct": true, "latency": 0.09119543386623263}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 453, "correct": true, "latency": 0.0904763787984848}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 674, "correct": true, "latency": 0.09179011988453567}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 90, "correct": true, "latency": 0.08618844184093177}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 732, "correct": true, "latency": 0.08854581089690328}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 217, "correct": true, "latency": 0.08632939984090626}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 168, "correct": true, "latency": 0.08631037012673914}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 685, "correct": true, "latency": 0.0909028600435704}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 648, "correct": true, "latency": 0.09103137697093189}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 439, "correct": true, "latency": 0.08516241516917944}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 159, "correct": false, "latency": 0.08983375318348408}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 198, "correct": true, "latency": 0.09180327993817627}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 631, "correct": true, "latency": 0.08546240790747106}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 158, "correct": false, "latency": 0.08647630596533418}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 42, "correct": true, "latency": 0.08518077386543155}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 31, "correct": false, "latency": 0.08626100094988942}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 145, "correct": true, "latency": 0.0877609180752188}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 476, "correct": true, "latency": 0.08603332610800862}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 305, "correct": true, "latency": 0.08858019998297095}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 238, "correct": true, "latency": 0.08573938184417784}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 226, "correct": false, "latency": 0.08341991296038032}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 314, "correct": true, "latency": 0.08324918593280017}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 393, "correct": false, "latency": 0.08475705399177969}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 667, "correct": true, "latency": 0.08526600315235555}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 508, "correct": false, "latency": 0.08325915597379208}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 315, "correct": true, "latency": 0.08443751093000174}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 542, "correct": false, "latency": 0.08483551209792495}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 627, "correct": true, "latency": 0.0920704749878496}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 137, "correct": true, "latency": 0.08499378804117441}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 335, "correct": true, "latency": 0.08870006701909006}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 136, "correct": true, "latency": 0.0854502678848803}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 538, "correct": false, "latency": 0.08509771595709026}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 432, "correct": true, "latency": 0.0918624778278172}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 296, "correct": true, "latency": 0.09188304794952273}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 727, "correct": true, "latency": 0.08541241893544793}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 528, "correct": true, "latency": 0.08685088786296546}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 360, "correct": true, "latency": 0.08604612504132092}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 533, "correct": true, "latency": 0.0905245179310441}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 293, "correct": false, "latency": 0.08568646386265755}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 62, "correct": true, "latency": 0.08341646194458008}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 434, "correct": true, "latency": 0.08694114605896175}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 262, "correct": true, "latency": 0.08484685095027089}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 261, "correct": true, "latency": 0.08568237419240177}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 756, "correct": false, "latency": 0.08708484307862818}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 106, "correct": true, "latency": 0.08611735398881137}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 629, "correct": true, "latency": 0.08608928485773504}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 394, "correct": true, "latency": 0.08526308182626963}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 169, "correct": true, "latency": 0.08574011200107634}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 624, "correct": false, "latency": 0.08615701203234494}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 465, "correct": true, "latency": 0.08624009089544415}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 93, "correct": true, "latency": 0.08677824004553258}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 634, "correct": true, "latency": 0.08680787892080843}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 354, "correct": true, "latency": 0.0867586899548769}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 131, "correct": true, "latency": 0.095771593041718}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 696, "correct": false, "latency": 0.09285938693210483}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 447, "correct": false, "latency": 0.08662622282281518}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 626, "correct": false, "latency": 0.0895063211210072}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 459, "correct": true, "latency": 0.08542513893917203}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 379, "correct": true, "latency": 0.08571248198859394}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 677, "correct": false, "latency": 0.08504312788136303}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 545, "correct": true, "latency": 0.08834426593966782}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 120, "correct": true, "latency": 0.08655005390755832}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 655, "correct": true, "latency": 0.09019301505759358}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 108, "correct": true, "latency": 0.08522502309642732}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 757, "correct": true, "latency": 0.08808184089139104}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 647, "correct": false, "latency": 0.08320130710490048}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 561, "correct": true, "latency": 0.0847462338861078}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 134, "correct": false, "latency": 0.08652956481091678}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 182, "correct": true, "latency": 0.08969620615243912}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 82, "correct": false, "latency": 0.0848696711473167}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 197, "correct": true, "latency": 0.08674427005462348}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 490, "correct": true, "latency": 0.09022775385528803}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 549, "correct": false, "latency": 0.08479307289235294}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 235, "correct": true, "latency": 0.08532522106543183}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 2, "correct": true, "latency": 0.0849004799965769}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 96, "correct": true, "latency": 0.08520893403328955}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 97, "correct": true, "latency": 0.08937061298638582}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 659, "correct": false, "latency": 0.08604630501940846}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 468, "correct": false, "latency": 0.08404845907352865}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 236, "correct": true, "latency": 0.09020751412026584}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 436, "correct": false, "latency": 0.08587635983712971}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 368, "correct": true, "latency": 0.08343245321884751}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 121, "correct": true, "latency": 0.08477270300500095}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 728, "correct": false, "latency": 0.08494070917367935}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 175, "correct": true, "latency": 0.09186563896946609}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 606, "correct": true, "latency": 0.09534753300249577}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 114, "correct": true, "latency": 0.08676038007251918}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 234, "correct": false, "latency": 0.08784936601296067}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 213, "correct": true, "latency": 0.08632528898306191}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 702, "correct": true, "latency": 0.08599548577331007}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 156, "correct": false, "latency": 0.08475828287191689}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 351, "correct": true, "latency": 0.08505325694568455}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 135, "correct": false, "latency": 0.08951371000148356}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 369, "correct": true, "latency": 0.08706923294812441}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 23, "correct": true, "latency": 0.09145736717619002}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 600, "correct": true, "latency": 0.0892725249286741}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 403, "correct": true, "latency": 0.09115110407583416}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 320, "correct": true, "latency": 0.08761314209550619}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 564, "correct": true, "latency": 0.08557480620220304}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 418, "correct": true, "latency": 0.0845324092078954}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 658, "correct": true, "latency": 0.08726047910749912}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 54, "correct": true, "latency": 0.0861646521370858}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 673, "correct": true, "latency": 0.08705950295552611}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 457, "correct": true, "latency": 0.08520247414708138}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 567, "correct": true, "latency": 0.09114714502356946}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 500, "correct": false, "latency": 0.0848494020756334}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 24, "correct": false, "latency": 0.08993582986295223}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 43, "correct": true, "latency": 0.08523962297476828}
+{"benchmark": "AI2D", "category": "diagram", "index": 305, "correct": true, "latency": 0.08446276001632214}
+{"benchmark": "AI2D", "category": "diagram", "index": 2935, "correct": true, "latency": 0.08654399402439594}
+{"benchmark": "AI2D", "category": "diagram", "index": 2904, "correct": false, "latency": 0.0758142489939928}
+{"benchmark": "AI2D", "category": "diagram", "index": 810, "correct": true, "latency": 0.08227627701126039}
+{"benchmark": "AI2D", "category": "diagram", "index": 1775, "correct": false, "latency": 0.06826878199353814}
+{"benchmark": "AI2D", "category": "diagram", "index": 2014, "correct": true, "latency": 0.08270048815757036}
+{"benchmark": "AI2D", "category": "diagram", "index": 2146, "correct": true, "latency": 0.08741675596684217}
+{"benchmark": "AI2D", "category": "diagram", "index": 523, "correct": true, "latency": 0.0754107569810003}
+{"benchmark": "AI2D", "category": "diagram", "index": 1845, "correct": true, "latency": 0.07121643796563148}
+{"benchmark": "AI2D", "category": "diagram", "index": 2630, "correct": true, "latency": 0.08260042103938758}
+{"benchmark": "AI2D", "category": "diagram", "index": 1114, "correct": true, "latency": 0.082074502017349}
+{"benchmark": "AI2D", "category": "diagram", "index": 1130, "correct": true, "latency": 0.08292905311100185}
+{"benchmark": "AI2D", "category": "diagram", "index": 524, "correct": true, "latency": 0.0736657849047333}
+{"benchmark": "AI2D", "category": "diagram", "index": 929, "correct": true, "latency": 0.08712858194485307}
+{"benchmark": "AI2D", "category": "diagram", "index": 504, "correct": true, "latency": 0.08207587199285626}
+{"benchmark": "AI2D", "category": "diagram", "index": 2873, "correct": true, "latency": 0.07768636802211404}
+{"benchmark": "AI2D", "category": "diagram", "index": 2172, "correct": true, "latency": 0.0684444890357554}
+{"benchmark": "AI2D", "category": "diagram", "index": 302, "correct": true, "latency": 0.08408521814271808}
+{"benchmark": "AI2D", "category": "diagram", "index": 1450, "correct": true, "latency": 0.08415960590355098}
+{"benchmark": "AI2D", "category": "diagram", "index": 342, "correct": true, "latency": 0.07795740198343992}
+{"benchmark": "AI2D", "category": "diagram", "index": 2893, "correct": true, "latency": 0.08317554788663983}
+{"benchmark": "AI2D", "category": "diagram", "index": 2235, "correct": true, "latency": 0.08460950595326722}
+{"benchmark": "AI2D", "category": "diagram", "index": 289, "correct": true, "latency": 0.08403046894818544}
+{"benchmark": "AI2D", "category": "diagram", "index": 341, "correct": true, "latency": 0.07315585599280894}
+{"benchmark": "AI2D", "category": "diagram", "index": 1500, "correct": true, "latency": 0.09256904292851686}
+{"benchmark": "AI2D", "category": "diagram", "index": 2843, "correct": true, "latency": 0.08699258486740291}
+{"benchmark": "AI2D", "category": "diagram", "index": 812, "correct": true, "latency": 0.08216002001427114}
+{"benchmark": "AI2D", "category": "diagram", "index": 1860, "correct": true, "latency": 0.08278514700941741}
+{"benchmark": "AI2D", "category": "diagram", "index": 2057, "correct": true, "latency": 0.07975702290423214}
+{"benchmark": "AI2D", "category": "diagram", "index": 2644, "correct": true, "latency": 0.07067051017656922}
+{"benchmark": "AI2D", "category": "diagram", "index": 1572, "correct": false, "latency": 0.07156385108828545}
+{"benchmark": "AI2D", "category": "diagram", "index": 548, "correct": false, "latency": 0.07316446583718061}
+{"benchmark": "AI2D", "category": "diagram", "index": 2362, "correct": true, "latency": 0.07768634706735611}
+{"benchmark": "AI2D", "category": "diagram", "index": 1223, "correct": true, "latency": 0.08273034798912704}
+{"benchmark": "AI2D", "category": "diagram", "index": 1552, "correct": true, "latency": 0.08328968612477183}
+{"benchmark": "AI2D", "category": "diagram", "index": 1617, "correct": true, "latency": 0.08284770487807691}
+{"benchmark": "AI2D", "category": "diagram", "index": 1141, "correct": true, "latency": 0.08439963194541633}
+{"benchmark": "AI2D", "category": "diagram", "index": 741, "correct": true, "latency": 0.08494703005999327}
+{"benchmark": "AI2D", "category": "diagram", "index": 2732, "correct": false, "latency": 0.0752619500271976}
+{"benchmark": "AI2D", "category": "diagram", "index": 2343, "correct": true, "latency": 0.08188355597667396}
+{"benchmark": "AI2D", "category": "diagram", "index": 2506, "correct": true, "latency": 0.08525933208875358}
+{"benchmark": "AI2D", "category": "diagram", "index": 2851, "correct": true, "latency": 0.08405475784093142}
+{"benchmark": "AI2D", "category": "diagram", "index": 196, "correct": true, "latency": 0.08480526297353208}
+{"benchmark": "AI2D", "category": "diagram", "index": 1300, "correct": true, "latency": 0.08434301288798451}
+{"benchmark": "AI2D", "category": "diagram", "index": 1969, "correct": false, "latency": 0.07205138099379838}
+{"benchmark": "AI2D", "category": "diagram", "index": 2754, "correct": true, "latency": 0.08641903707757592}
+{"benchmark": "AI2D", "category": "diagram", "index": 2373, "correct": true, "latency": 0.0835031399037689}
+{"benchmark": "AI2D", "category": "diagram", "index": 2940, "correct": true, "latency": 0.0738513411488384}
+{"benchmark": "AI2D", "category": "diagram", "index": 2727, "correct": false, "latency": 0.08508738595992327}
+{"benchmark": "AI2D", "category": "diagram", "index": 1329, "correct": false, "latency": 0.08407742902636528}
+{"benchmark": "AI2D", "category": "diagram", "index": 193, "correct": false, "latency": 0.08408433897420764}
+{"benchmark": "AI2D", "category": "diagram", "index": 1414, "correct": false, "latency": 0.08222193899564445}
+{"benchmark": "AI2D", "category": "diagram", "index": 2572, "correct": true, "latency": 0.08455030806362629}
+{"benchmark": "AI2D", "category": "diagram", "index": 1697, "correct": true, "latency": 0.08234973601065576}
+{"benchmark": "AI2D", "category": "diagram", "index": 2565, "correct": true, "latency": 0.08304147096350789}
+{"benchmark": "AI2D", "category": "diagram", "index": 2211, "correct": true, "latency": 0.07215699786320329}
+{"benchmark": "AI2D", "category": "diagram", "index": 1819, "correct": true, "latency": 0.08330555516295135}
+{"benchmark": "AI2D", "category": "diagram", "index": 2272, "correct": false, "latency": 0.0854800280649215}
+{"benchmark": "AI2D", "category": "diagram", "index": 127, "correct": true, "latency": 0.08215070003643632}
+{"benchmark": "AI2D", "category": "diagram", "index": 2615, "correct": true, "latency": 0.08360859914682806}
+{"benchmark": "AI2D", "category": "diagram", "index": 857, "correct": true, "latency": 0.07210034900344908}
+{"benchmark": "AI2D", "category": "diagram", "index": 368, "correct": true, "latency": 0.0794887081719935}
+{"benchmark": "AI2D", "category": "diagram", "index": 1268, "correct": true, "latency": 0.07151350192725658}
+{"benchmark": "AI2D", "category": "diagram", "index": 1521, "correct": false, "latency": 0.0831426689401269}
+{"benchmark": "AI2D", "category": "diagram", "index": 1184, "correct": true, "latency": 0.07413315516896546}
+{"benchmark": "AI2D", "category": "diagram", "index": 404, "correct": true, "latency": 0.08500638813711703}
+{"benchmark": "AI2D", "category": "diagram", "index": 1944, "correct": true, "latency": 0.08527910220436752}
+{"benchmark": "AI2D", "category": "diagram", "index": 1859, "correct": false, "latency": 0.08302812208421528}
+{"benchmark": "AI2D", "category": "diagram", "index": 998, "correct": true, "latency": 0.06928730104118586}
+{"benchmark": "AI2D", "category": "diagram", "index": 1576, "correct": true, "latency": 0.08203036291524768}
+{"benchmark": "AI2D", "category": "diagram", "index": 883, "correct": true, "latency": 0.07189342402853072}
+{"benchmark": "AI2D", "category": "diagram", "index": 2846, "correct": true, "latency": 0.08353778999298811}
+{"benchmark": "AI2D", "category": "diagram", "index": 1847, "correct": true, "latency": 0.07193177309818566}
+{"benchmark": "AI2D", "category": "diagram", "index": 2974, "correct": true, "latency": 0.0680292269680649}
+{"benchmark": "AI2D", "category": "diagram", "index": 2158, "correct": true, "latency": 0.07138157496228814}
+{"benchmark": "AI2D", "category": "diagram", "index": 2420, "correct": true, "latency": 0.08222259883768857}
+{"benchmark": "AI2D", "category": "diagram", "index": 891, "correct": true, "latency": 0.08424306404776871}
+{"benchmark": "AI2D", "category": "diagram", "index": 1753, "correct": true, "latency": 0.07387000997550786}
+{"benchmark": "AI2D", "category": "diagram", "index": 2454, "correct": true, "latency": 0.07586833694949746}
+{"benchmark": "AI2D", "category": "diagram", "index": 2798, "correct": true, "latency": 0.08298664214089513}
+{"benchmark": "AI2D", "category": "diagram", "index": 2114, "correct": true, "latency": 0.08377077500335872}
+{"benchmark": "AI2D", "category": "diagram", "index": 2277, "correct": true, "latency": 0.08416039706207812}
+{"benchmark": "AI2D", "category": "diagram", "index": 472, "correct": true, "latency": 0.06939293816685677}
+{"benchmark": "AI2D", "category": "diagram", "index": 808, "correct": true, "latency": 0.07500112685374916}
+{"benchmark": "AI2D", "category": "diagram", "index": 2779, "correct": true, "latency": 0.08195401495322585}
+{"benchmark": "AI2D", "category": "diagram", "index": 3083, "correct": true, "latency": 0.08348169107921422}
+{"benchmark": "AI2D", "category": "diagram", "index": 2689, "correct": false, "latency": 0.08211232093162835}
+{"benchmark": "AI2D", "category": "diagram", "index": 825, "correct": true, "latency": 0.08622626191936433}
+{"benchmark": "AI2D", "category": "diagram", "index": 2960, "correct": true, "latency": 0.0737267539370805}
+{"benchmark": "AI2D", "category": "diagram", "index": 233, "correct": true, "latency": 0.08624056098051369}
+{"benchmark": "AI2D", "category": "diagram", "index": 1348, "correct": true, "latency": 0.08463402604684234}
+{"benchmark": "AI2D", "category": "diagram", "index": 1950, "correct": true, "latency": 0.08447144995443523}
+{"benchmark": "AI2D", "category": "diagram", "index": 715, "correct": false, "latency": 0.0830706600099802}
+{"benchmark": "AI2D", "category": "diagram", "index": 2668, "correct": true, "latency": 0.08347963192500174}
+{"benchmark": "AI2D", "category": "diagram", "index": 1446, "correct": true, "latency": 0.0709821640048176}
+{"benchmark": "AI2D", "category": "diagram", "index": 925, "correct": true, "latency": 0.07401536800898612}
+{"benchmark": "AI2D", "category": "diagram", "index": 527, "correct": true, "latency": 0.08226541802287102}
+{"benchmark": "AI2D", "category": "diagram", "index": 2041, "correct": true, "latency": 0.08374360599555075}
+{"benchmark": "AI2D", "category": "diagram", "index": 1156, "correct": false, "latency": 0.07298871991224587}
+{"benchmark": "AI2D", "category": "diagram", "index": 677, "correct": true, "latency": 0.07122548785991967}
+{"benchmark": "AI2D", "category": "diagram", "index": 470, "correct": true, "latency": 0.0862659600097686}
+{"benchmark": "AI2D", "category": "diagram", "index": 945, "correct": true, "latency": 0.06899613700807095}
+{"benchmark": "AI2D", "category": "diagram", "index": 102, "correct": true, "latency": 0.08681297907605767}
+{"benchmark": "AI2D", "category": "diagram", "index": 1125, "correct": true, "latency": 0.08227537712082267}
+{"benchmark": "AI2D", "category": "diagram", "index": 1566, "correct": true, "latency": 0.08721996005624533}
+{"benchmark": "AI2D", "category": "diagram", "index": 24, "correct": true, "latency": 0.09540101210586727}
+{"benchmark": "AI2D", "category": "diagram", "index": 1333, "correct": true, "latency": 0.1459881290793419}
+{"benchmark": "AI2D", "category": "diagram", "index": 1490, "correct": false, "latency": 0.06970414193347096}
+{"benchmark": "AI2D", "category": "diagram", "index": 3017, "correct": true, "latency": 0.08269178797490895}
+{"benchmark": "AI2D", "category": "diagram", "index": 2856, "correct": true, "latency": 0.08216901984997094}
+{"benchmark": "AI2D", "category": "diagram", "index": 1384, "correct": true, "latency": 0.06660182913765311}
+{"benchmark": "AI2D", "category": "diagram", "index": 1899, "correct": true, "latency": 0.0831533579621464}
+{"benchmark": "AI2D", "category": "diagram", "index": 1409, "correct": true, "latency": 0.06707228813320398}
+{"benchmark": "AI2D", "category": "diagram", "index": 2629, "correct": false, "latency": 0.0813613769132644}
+{"benchmark": "AI2D", "category": "diagram", "index": 1727, "correct": true, "latency": 0.08386271307244897}
+{"benchmark": "AI2D", "category": "diagram", "index": 1479, "correct": true, "latency": 0.08344786195084453}
+{"benchmark": "AI2D", "category": "diagram", "index": 1575, "correct": true, "latency": 0.08097564592026174}
+{"benchmark": "AI2D", "category": "diagram", "index": 1654, "correct": true, "latency": 0.07112666987814009}
+{"benchmark": "AI2D", "category": "diagram", "index": 2967, "correct": true, "latency": 0.06625362695194781}
+{"benchmark": "AI2D", "category": "diagram", "index": 1972, "correct": true, "latency": 0.06841920991428196}
+{"benchmark": "AI2D", "category": "diagram", "index": 1605, "correct": true, "latency": 0.08234712714329362}
+{"benchmark": "AI2D", "category": "diagram", "index": 2109, "correct": true, "latency": 0.08276964700780809}
+{"benchmark": "AI2D", "category": "diagram", "index": 2173, "correct": true, "latency": 0.06655422993935645}
+{"benchmark": "AI2D", "category": "diagram", "index": 1878, "correct": true, "latency": 0.0836223280057311}
+{"benchmark": "AI2D", "category": "diagram", "index": 680, "correct": true, "latency": 0.08314990904182196}
+{"benchmark": "AI2D", "category": "diagram", "index": 2920, "correct": false, "latency": 0.0682161538861692}
+{"benchmark": "AI2D", "category": "diagram", "index": 1622, "correct": true, "latency": 0.0822583578992635}
+{"benchmark": "AI2D", "category": "diagram", "index": 662, "correct": true, "latency": 0.0765027238521725}
+{"benchmark": "AI2D", "category": "diagram", "index": 1164, "correct": true, "latency": 0.0853123408742249}
+{"benchmark": "AI2D", "category": "diagram", "index": 557, "correct": false, "latency": 0.08246326399967074}
+{"benchmark": "AI2D", "category": "diagram", "index": 480, "correct": true, "latency": 0.07002933416515589}
+{"benchmark": "AI2D", "category": "diagram", "index": 1410, "correct": false, "latency": 0.06665896810591221}
+{"benchmark": "AI2D", "category": "diagram", "index": 1522, "correct": false, "latency": 0.07363145588897169}
+{"benchmark": "AI2D", "category": "diagram", "index": 2015, "correct": true, "latency": 0.08235889603383839}
+{"benchmark": "AI2D", "category": "diagram", "index": 1489, "correct": false, "latency": 0.06658595008775592}
+{"benchmark": "AI2D", "category": "diagram", "index": 894, "correct": true, "latency": 0.08185734716244042}
+{"benchmark": "AI2D", "category": "diagram", "index": 2836, "correct": false, "latency": 0.0728469230234623}
+{"benchmark": "AI2D", "category": "diagram", "index": 2197, "correct": true, "latency": 0.08455741801299155}
+{"benchmark": "AI2D", "category": "diagram", "index": 2177, "correct": true, "latency": 0.06705536902882159}
+{"benchmark": "AI2D", "category": "diagram", "index": 1451, "correct": true, "latency": 0.08449359913356602}
+{"benchmark": "AI2D", "category": "diagram", "index": 3054, "correct": true, "latency": 0.0742460920009762}
+{"benchmark": "AI2D", "category": "diagram", "index": 1217, "correct": true, "latency": 0.08810831094160676}
+{"benchmark": "AI2D", "category": "diagram", "index": 275, "correct": true, "latency": 0.07346501993015409}
+{"benchmark": "AI2D", "category": "diagram", "index": 2311, "correct": true, "latency": 0.08272343804128468}
+{"benchmark": "AI2D", "category": "diagram", "index": 2486, "correct": true, "latency": 0.0851597550790757}
+{"benchmark": "AI2D", "category": "diagram", "index": 8, "correct": true, "latency": 0.08260645996779203}
+{"benchmark": "AI2D", "category": "diagram", "index": 2599, "correct": true, "latency": 0.07326426403596997}
+{"benchmark": "AI2D", "category": "diagram", "index": 1723, "correct": true, "latency": 0.088181858882308}
+{"benchmark": "AI2D", "category": "diagram", "index": 2336, "correct": true, "latency": 0.07035220693796873}
+{"benchmark": "AI2D", "category": "diagram", "index": 1824, "correct": true, "latency": 0.07443534908816218}
+{"benchmark": "AI2D", "category": "diagram", "index": 2876, "correct": true, "latency": 0.09356362093240023}
+{"benchmark": "AI2D", "category": "diagram", "index": 851, "correct": true, "latency": 0.08269873913377523}
+{"benchmark": "AI2D", "category": "diagram", "index": 2045, "correct": true, "latency": 0.08616091310977936}
+{"benchmark": "AI2D", "category": "diagram", "index": 1172, "correct": false, "latency": 0.08822084800340235}
+{"benchmark": "AI2D", "category": "diagram", "index": 2517, "correct": true, "latency": 0.06694773188792169}
+{"benchmark": "AI2D", "category": "diagram", "index": 389, "correct": true, "latency": 0.08232061681337655}
+{"benchmark": "AI2D", "category": "diagram", "index": 1886, "correct": true, "latency": 0.0814359460491687}
+{"benchmark": "AI2D", "category": "diagram", "index": 2484, "correct": true, "latency": 0.08245662390254438}
+{"benchmark": "AI2D", "category": "diagram", "index": 707, "correct": true, "latency": 0.08258249098435044}
+{"benchmark": "AI2D", "category": "diagram", "index": 820, "correct": true, "latency": 0.08623899100348353}
+{"benchmark": "MMMU", "category": "Art", "index": 18, "correct": false, "latency": 0.08278843690641224}
+{"benchmark": "MMMU", "category": "Art", "index": 2, "correct": true, "latency": 0.08720094989985228}
+{"benchmark": "MMMU", "category": "Art", "index": 1, "correct": false, "latency": 0.08644839702174067}
+{"benchmark": "MMMU", "category": "Art", "index": 5, "correct": true, "latency": 0.0860539861023426}
+{"benchmark": "MMMU", "category": "Art", "index": 4, "correct": true, "latency": 0.0849880981259048}
+{"benchmark": "MMMU", "category": "Art", "index": 20, "correct": true, "latency": 0.09583058208227158}
+{"benchmark": "MMMU", "category": "Art", "index": 12, "correct": true, "latency": 0.0842419438995421}
+{"benchmark": "MMMU", "category": "Art", "index": 10, "correct": false, "latency": 0.084370352094993}
+{"benchmark": "MMMU", "category": "Art", "index": 23, "correct": true, "latency": 0.10979039804078639}
+{"benchmark": "MMMU", "category": "Art", "index": 13, "correct": false, "latency": 0.08516109478659928}
+{"benchmark": "MMMU", "category": "Art", "index": 11, "correct": false, "latency": 0.0833266549743712}
+{"benchmark": "MMMU", "category": "Art", "index": 27, "correct": true, "latency": 0.08370465692132711}
+{"benchmark": "MMMU", "category": "Art", "index": 15, "correct": false, "latency": 0.08278931700624526}
+{"benchmark": "MMMU", "category": "Art", "index": 22, "correct": false, "latency": 0.08380377409048378}
+{"benchmark": "MMMU", "category": "Art", "index": 26, "correct": true, "latency": 0.0886441390030086}
+{"benchmark": "MMMU", "category": "Art", "index": 29, "correct": true, "latency": 0.08816897892393172}
+{"benchmark": "MMMU", "category": "Art", "index": 21, "correct": true, "latency": 0.0952122958842665}
+{"benchmark": "MMMU", "category": "Art", "index": 24, "correct": true, "latency": 0.08424450503662229}
+{"benchmark": "MMMU", "category": "Art", "index": 7, "correct": true, "latency": 0.0862577201332897}
+{"benchmark": "MMMU", "category": "Art", "index": 28, "correct": true, "latency": 0.08326969598419964}
+{"benchmark": "MMMU", "category": "Art", "index": 9, "correct": true, "latency": 0.08398316102102399}
+{"benchmark": "MMMU", "category": "Art", "index": 19, "correct": false, "latency": 0.08561414503492415}
+{"benchmark": "MMMU", "category": "Art", "index": 16, "correct": true, "latency": 0.08716296101920307}
+{"benchmark": "MMMU", "category": "Art", "index": 17, "correct": true, "latency": 0.086611702805385}
+{"benchmark": "MMMU", "category": "Art", "index": 0, "correct": true, "latency": 0.0875385629478842}
+{"benchmark": "MMMU", "category": "Art", "index": 8, "correct": false, "latency": 0.08639030694030225}
+{"benchmark": "MMMU", "category": "Art", "index": 6, "correct": true, "latency": 0.08254429209046066}
+{"benchmark": "MMMU", "category": "Art", "index": 25, "correct": true, "latency": 0.08507439703680575}
+{"benchmark": "MMMU", "category": "Art", "index": 3, "correct": true, "latency": 0.0853054120671004}
+{"benchmark": "MMMU", "category": "Art", "index": 14, "correct": false, "latency": 0.08549418696202338}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 21, "correct": true, "latency": 0.08511918620206416}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 8, "correct": true, "latency": 0.074035266879946}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 12, "correct": true, "latency": 0.08281304500997066}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 29, "correct": true, "latency": 0.08510480588302016}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 1, "correct": true, "latency": 0.08243057411164045}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 9, "correct": true, "latency": 0.08719027996994555}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 13, "correct": true, "latency": 0.08481006207875907}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 19, "correct": true, "latency": 0.08546037808991969}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 24, "correct": true, "latency": 0.08359033917076886}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 7, "correct": true, "latency": 0.08412789809517562}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 25, "correct": true, "latency": 0.08241310506127775}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 11, "correct": true, "latency": 0.088972122175619}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 5, "correct": true, "latency": 0.08507363591343164}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 20, "correct": true, "latency": 0.08476363378576934}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 2, "correct": false, "latency": 0.08881827490404248}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 6, "correct": true, "latency": 0.08612933405674994}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 17, "correct": true, "latency": 0.09048238792456686}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 14, "correct": true, "latency": 0.0854173491243273}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 22, "correct": true, "latency": 0.08424369501881301}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 18, "correct": true, "latency": 0.0823460160754621}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 16, "correct": false, "latency": 0.08624236099421978}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 4, "correct": true, "latency": 0.09568472602404654}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 23, "correct": true, "latency": 0.0874296750407666}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 27, "correct": true, "latency": 0.0855293869972229}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 28, "correct": true, "latency": 0.08311895909719169}
+{"benchmark": "MMMU", "category": "Biology", "index": 26, "correct": false, "latency": 0.09563978714868426}
+{"benchmark": "MMMU", "category": "Biology", "index": 20, "correct": true, "latency": 0.08776322798803449}
+{"benchmark": "MMMU", "category": "Biology", "index": 16, "correct": true, "latency": 0.0745783350430429}
+{"benchmark": "MMMU", "category": "Biology", "index": 24, "correct": true, "latency": 0.09989227401092649}
+{"benchmark": "MMMU", "category": "Biology", "index": 11, "correct": true, "latency": 0.11616927897557616}
+{"benchmark": "MMMU", "category": "Biology", "index": 17, "correct": true, "latency": 0.09065124508924782}
+{"benchmark": "MMMU", "category": "Biology", "index": 15, "correct": true, "latency": 0.0858172602020204}
+{"benchmark": "MMMU", "category": "Biology", "index": 25, "correct": true, "latency": 0.11037823604419827}
+{"benchmark": "MMMU", "category": "Biology", "index": 10, "correct": true, "latency": 0.0746462841052562}
+{"benchmark": "MMMU", "category": "Biology", "index": 2, "correct": false, "latency": 0.08419229579158127}
+{"benchmark": "MMMU", "category": "Biology", "index": 19, "correct": false, "latency": 0.1047414280474186}
+{"benchmark": "MMMU", "category": "Biology", "index": 22, "correct": false, "latency": 0.08784215594641864}
+{"benchmark": "MMMU", "category": "Biology", "index": 0, "correct": false, "latency": 0.08530220086686313}
+{"benchmark": "MMMU", "category": "Biology", "index": 5, "correct": true, "latency": 0.06745532993227243}
+{"benchmark": "MMMU", "category": "Biology", "index": 12, "correct": true, "latency": 0.10887025785632432}
+{"benchmark": "MMMU", "category": "Biology", "index": 27, "correct": true, "latency": 0.08764181099832058}
+{"benchmark": "MMMU", "category": "Biology", "index": 7, "correct": false, "latency": 0.10407109279185534}
+{"benchmark": "MMMU", "category": "Biology", "index": 8, "correct": false, "latency": 0.10134127200581133}
+{"benchmark": "MMMU", "category": "Biology", "index": 3, "correct": false, "latency": 0.07040580711327493}
+{"benchmark": "MMMU", "category": "Biology", "index": 13, "correct": false, "latency": 0.08575200196355581}
+{"benchmark": "MMMU", "category": "Biology", "index": 14, "correct": true, "latency": 0.0827999459579587}
+{"benchmark": "MMMU", "category": "Biology", "index": 18, "correct": true, "latency": 0.08717385097406805}
+{"benchmark": "MMMU", "category": "Biology", "index": 4, "correct": true, "latency": 0.08244861313141882}
+{"benchmark": "MMMU", "category": "Biology", "index": 21, "correct": true, "latency": 0.08786756591871381}
+{"benchmark": "MMMU", "category": "Biology", "index": 1, "correct": true, "latency": 0.08244515396654606}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 23, "correct": false, "latency": 0.07284306292422116}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 8, "correct": false, "latency": 0.07000855496153235}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 10, "correct": false, "latency": 0.09720583306625485}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 1, "correct": true, "latency": 0.08149985503405333}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 26, "correct": false, "latency": 0.07481430983170867}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 2, "correct": true, "latency": 0.067354422993958}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 14, "correct": true, "latency": 0.1062595050316304}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 13, "correct": true, "latency": 0.06800739793106914}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 4, "correct": false, "latency": 0.06780265201814473}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 16, "correct": true, "latency": 0.0701061428990215}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 0, "correct": true, "latency": 0.07291714195162058}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 5, "correct": false, "latency": 0.08613702398724854}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 6, "correct": false, "latency": 0.0669232620857656}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 21, "correct": true, "latency": 0.09145413711667061}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 20, "correct": false, "latency": 0.08551029697991908}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 7, "correct": true, "latency": 0.06793165020644665}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 27, "correct": false, "latency": 0.07373782293871045}
+{"benchmark": "MMMU", "category": "Geography", "index": 26, "correct": false, "latency": 0.07033306802622974}
+{"benchmark": "MMMU", "category": "Geography", "index": 9, "correct": false, "latency": 0.07401576708070934}
+{"benchmark": "MMMU", "category": "Geography", "index": 17, "correct": true, "latency": 0.07531595905311406}
+{"benchmark": "MMMU", "category": "Geography", "index": 19, "correct": true, "latency": 0.06714888708665967}
+{"benchmark": "MMMU", "category": "Geography", "index": 20, "correct": true, "latency": 0.08601774601265788}
+{"benchmark": "MMMU", "category": "Geography", "index": 22, "correct": true, "latency": 0.0700894829351455}
+{"benchmark": "MMMU", "category": "Geography", "index": 27, "correct": true, "latency": 0.0932126990519464}
+{"benchmark": "MMMU", "category": "Geography", "index": 11, "correct": true, "latency": 0.07395570911467075}
+{"benchmark": "MMMU", "category": "Geography", "index": 24, "correct": false, "latency": 0.07189824408851564}
+{"benchmark": "MMMU", "category": "Geography", "index": 6, "correct": false, "latency": 0.07245490211062133}
+{"benchmark": "MMMU", "category": "Geography", "index": 23, "correct": false, "latency": 0.06915065390057862}
+{"benchmark": "MMMU", "category": "Geography", "index": 5, "correct": true, "latency": 0.06683087395504117}
+{"benchmark": "MMMU", "category": "Geography", "index": 1, "correct": false, "latency": 0.06725197494961321}
+{"benchmark": "MMMU", "category": "Geography", "index": 18, "correct": true, "latency": 0.0695589950773865}
+{"benchmark": "MMMU", "category": "Geography", "index": 12, "correct": true, "latency": 0.0746444039978087}
+{"benchmark": "MMMU", "category": "Geography", "index": 10, "correct": false, "latency": 0.08600691705942154}
+{"benchmark": "MMMU", "category": "Geography", "index": 14, "correct": true, "latency": 0.0913108610548079}
+{"benchmark": "MMMU", "category": "Geography", "index": 25, "correct": false, "latency": 0.07307016802951694}
+{"benchmark": "MMMU", "category": "Geography", "index": 8, "correct": true, "latency": 0.07374058407731354}
+{"benchmark": "MMMU", "category": "Geography", "index": 16, "correct": true, "latency": 0.0720642099622637}
+{"benchmark": "MMMU", "category": "Geography", "index": 7, "correct": false, "latency": 0.08211927115917206}
+{"benchmark": "MMMU", "category": "Geography", "index": 2, "correct": true, "latency": 0.0671897460706532}
+{"benchmark": "MMMU", "category": "Geography", "index": 28, "correct": true, "latency": 0.07158817094750702}
+{"benchmark": "MMMU", "category": "Geography", "index": 29, "correct": false, "latency": 0.08568082400597632}
+{"benchmark": "MMMU", "category": "Geography", "index": 4, "correct": true, "latency": 0.0666832469869405}
+{"benchmark": "MMMU", "category": "Math", "index": 11, "correct": true, "latency": 0.09294071514159441}
+{"benchmark": "MMMU", "category": "Math", "index": 0, "correct": true, "latency": 0.08638912811875343}
+{"benchmark": "MMMU", "category": "Math", "index": 7, "correct": false, "latency": 0.11445773602463305}
+{"benchmark": "MMMU", "category": "Math", "index": 8, "correct": false, "latency": 0.08359939814545214}
+{"benchmark": "MMMU", "category": "Math", "index": 1, "correct": false, "latency": 0.07259085797704756}
+{"benchmark": "MMMU", "category": "Math", "index": 9, "correct": true, "latency": 0.07048830413259566}
+{"benchmark": "MMMU", "category": "Math", "index": 4, "correct": false, "latency": 0.09776921011507511}
+{"benchmark": "MMMU", "category": "Math", "index": 15, "correct": true, "latency": 0.0846683350391686}
+{"benchmark": "MMMU", "category": "Math", "index": 12, "correct": false, "latency": 0.09417229914106429}
+{"benchmark": "MMMU", "category": "Math", "index": 25, "correct": false, "latency": 0.09615990612655878}
+{"benchmark": "MMMU", "category": "Math", "index": 3, "correct": true, "latency": 0.07291763182729483}
+{"benchmark": "MMMU", "category": "Math", "index": 22, "correct": false, "latency": 0.08535245014354587}
+{"benchmark": "MMMU", "category": "Math", "index": 28, "correct": false, "latency": 0.08352642110548913}
+{"benchmark": "MMMU", "category": "Math", "index": 10, "correct": true, "latency": 0.06702737999148667}
+{"benchmark": "MMMU", "category": "Math", "index": 24, "correct": false, "latency": 0.11508413287810981}
+{"benchmark": "MMMU", "category": "Math", "index": 17, "correct": false, "latency": 0.08267314918339252}
+{"benchmark": "MMMU", "category": "Math", "index": 13, "correct": true, "latency": 0.08273053704760969}
+{"benchmark": "MMMU", "category": "Math", "index": 5, "correct": true, "latency": 0.09137900895439088}
+{"benchmark": "MMMU", "category": "Math", "index": 21, "correct": false, "latency": 0.10784644004888833}
+{"benchmark": "MMMU", "category": "Math", "index": 29, "correct": true, "latency": 0.09590553096495569}
+{"benchmark": "MMMU", "category": "Math", "index": 19, "correct": false, "latency": 0.08618127298541367}
+{"benchmark": "MMMU", "category": "Math", "index": 27, "correct": true, "latency": 0.0704013870563358}
+{"benchmark": "MMMU", "category": "Math", "index": 23, "correct": true, "latency": 0.0871452009305358}
+{"benchmark": "MMMU", "category": "Math", "index": 16, "correct": false, "latency": 0.09968492900952697}
+{"benchmark": "MMMU", "category": "Math", "index": 20, "correct": false, "latency": 0.08487953105941415}
+{"benchmark": "MMMU", "category": "Math", "index": 26, "correct": false, "latency": 0.09288207697682083}
+{"benchmark": "MMMU", "category": "Math", "index": 6, "correct": false, "latency": 0.09882055688649416}
+{"benchmark": "MMMU", "category": "Physics", "index": 4, "correct": true, "latency": 0.09061887604184449}
+{"benchmark": "MMMU", "category": "Physics", "index": 29, "correct": true, "latency": 0.07060528197325766}
+{"benchmark": "MMMU", "category": "Physics", "index": 13, "correct": true, "latency": 0.07274477509781718}
+{"benchmark": "MMMU", "category": "Physics", "index": 28, "correct": true, "latency": 0.06725655496120453}
+{"benchmark": "MMMU", "category": "Physics", "index": 12, "correct": true, "latency": 0.08676517009735107}
+{"benchmark": "MMMU", "category": "Physics", "index": 25, "correct": true, "latency": 0.08266991912387311}
+{"benchmark": "MMMU", "category": "Physics", "index": 10, "correct": false, "latency": 0.08272180799394846}
+{"benchmark": "MMMU", "category": "Physics", "index": 7, "correct": false, "latency": 0.09006699803285301}
+{"benchmark": "MMMU", "category": "Physics", "index": 22, "correct": true, "latency": 0.0976350731216371}
+{"benchmark": "MMMU", "category": "Physics", "index": 5, "correct": true, "latency": 0.09218603209592402}
+{"benchmark": "MMMU", "category": "Physics", "index": 2, "correct": true, "latency": 0.0707852269988507}
+{"benchmark": "MMMU", "category": "Physics", "index": 0, "correct": true, "latency": 0.08438960206694901}
+{"benchmark": "MMMU", "category": "Physics", "index": 11, "correct": false, "latency": 0.0960991159081459}
+{"benchmark": "MMMU", "category": "Physics", "index": 24, "correct": true, "latency": 0.07309829792939126}
+{"benchmark": "MMMU", "category": "Physics", "index": 23, "correct": true, "latency": 0.06723256595432758}
+{"benchmark": "MMMU", "category": "Physics", "index": 8, "correct": true, "latency": 0.07177232601679862}
+{"benchmark": "MMMU", "category": "Physics", "index": 26, "correct": true, "latency": 0.08703800407238305}
+{"benchmark": "MMMU", "category": "Physics", "index": 19, "correct": true, "latency": 0.07285305298864841}
+{"benchmark": "MMMU", "category": "Physics", "index": 1, "correct": false, "latency": 0.09608518704771996}
+{"benchmark": "MMMU", "category": "Physics", "index": 16, "correct": false, "latency": 0.0822603281121701}
+{"benchmark": "MMMU", "category": "Physics", "index": 14, "correct": true, "latency": 0.09372742800042033}
+{"benchmark": "MMMU", "category": "Physics", "index": 3, "correct": false, "latency": 0.09288270701654255}
+{"benchmark": "MMMU", "category": "Physics", "index": 21, "correct": true, "latency": 0.07270966609939933}
+{"benchmark": "MMMU", "category": "Physics", "index": 27, "correct": true, "latency": 0.07351901894435287}
+{"benchmark": "MMMU", "category": "Physics", "index": 15, "correct": true, "latency": 0.09170717187225819}
+{"benchmark": "MMMU", "category": "Physics", "index": 18, "correct": true, "latency": 0.0863759780768305}
+{"benchmark": "MMMU", "category": "Physics", "index": 9, "correct": true, "latency": 0.10467915004119277}
+{"benchmark": "MMMU", "category": "Physics", "index": 6, "correct": true, "latency": 0.0704143459443003}
+{"benchmark": "MMMU", "category": "Physics", "index": 17, "correct": false, "latency": 0.08055516495369375}
+{"benchmark": "MMMU", "category": "Psychology", "index": 18, "correct": true, "latency": 0.10740043083205819}
+{"benchmark": "MMMU", "category": "Psychology", "index": 28, "correct": true, "latency": 0.15186812193132937}
+{"benchmark": "MMMU", "category": "Psychology", "index": 11, "correct": false, "latency": 0.15646574110724032}
+{"benchmark": "MMMU", "category": "Psychology", "index": 17, "correct": true, "latency": 0.13250883319415152}
+{"benchmark": "MMMU", "category": "Psychology", "index": 4, "correct": true, "latency": 0.0840446890797466}
+{"benchmark": "MMMU", "category": "Psychology", "index": 7, "correct": false, "latency": 0.08395974105224013}
+{"benchmark": "MMMU", "category": "Psychology", "index": 3, "correct": false, "latency": 0.08873902703635395}
+{"benchmark": "MMMU", "category": "Psychology", "index": 23, "correct": false, "latency": 0.08472956414334476}
+{"benchmark": "MMMU", "category": "Psychology", "index": 8, "correct": false, "latency": 0.08617425290867686}
+{"benchmark": "MMMU", "category": "Psychology", "index": 9, "correct": true, "latency": 0.09578844299539924}
+{"benchmark": "MMMU", "category": "Psychology", "index": 12, "correct": true, "latency": 0.08281302591785789}
+{"benchmark": "MMMU", "category": "Psychology", "index": 26, "correct": true, "latency": 0.10744360904209316}
+{"benchmark": "MMMU", "category": "Psychology", "index": 6, "correct": false, "latency": 0.08610697416588664}
+{"benchmark": "MMMU", "category": "Psychology", "index": 21, "correct": true, "latency": 0.15909554390236735}
+{"benchmark": "MMMU", "category": "Psychology", "index": 2, "correct": true, "latency": 0.10818039299920201}
+{"benchmark": "MMMU", "category": "Psychology", "index": 22, "correct": true, "latency": 0.15696951001882553}
+{"benchmark": "MMMU", "category": "Psychology", "index": 10, "correct": true, "latency": 0.17128305905498564}
+{"benchmark": "MMMU", "category": "Psychology", "index": 27, "correct": true, "latency": 0.08749981387518346}
+{"benchmark": "MMMU", "category": "Psychology", "index": 14, "correct": true, "latency": 0.08356189006008208}
+{"benchmark": "MMMU", "category": "Psychology", "index": 13, "correct": false, "latency": 0.1562261360231787}
+{"benchmark": "MMMU", "category": "Psychology", "index": 25, "correct": false, "latency": 0.13935386389493942}
+{"benchmark": "MMMU", "category": "Psychology", "index": 15, "correct": true, "latency": 0.11796236992813647}
+{"benchmark": "MMMU", "category": "Psychology", "index": 24, "correct": true, "latency": 0.13266356009989977}
+{"benchmark": "MMMU", "category": "Psychology", "index": 5, "correct": false, "latency": 0.08701072400435805}
+{"benchmark": "MMMU", "category": "Psychology", "index": 1, "correct": true, "latency": 0.10826662089675665}
+{"benchmark": "ScienceQA", "category": "science", "index": 0, "correct": true, "latency": 0.06740650092251599}
+{"benchmark": "ScienceQA", "category": "science", "index": 1, "correct": true, "latency": 0.07386117102578282}
+{"benchmark": "ScienceQA", "category": "science", "index": 2, "correct": true, "latency": 0.08289863402023911}
+{"benchmark": "ScienceQA", "category": "science", "index": 3, "correct": true, "latency": 0.06976972986012697}
+{"benchmark": "ScienceQA", "category": "science", "index": 4, "correct": true, "latency": 0.0725948391482234}
+{"benchmark": "ScienceQA", "category": "science", "index": 5, "correct": true, "latency": 0.07234152383171022}
+{"benchmark": "ScienceQA", "category": "science", "index": 6, "correct": true, "latency": 0.09481602511368692}
+{"benchmark": "ScienceQA", "category": "science", "index": 7, "correct": true, "latency": 0.08035267004743218}
+{"benchmark": "ScienceQA", "category": "science", "index": 8, "correct": true, "latency": 0.09144934802316129}
+{"benchmark": "ScienceQA", "category": "science", "index": 9, "correct": true, "latency": 0.07039175601676106}
+{"benchmark": "ScienceQA", "category": "science", "index": 10, "correct": true, "latency": 0.06720969593152404}
+{"benchmark": "ScienceQA", "category": "science", "index": 11, "correct": true, "latency": 0.06731637404300272}
+{"benchmark": "ScienceQA", "category": "science", "index": 12, "correct": true, "latency": 0.09086466091684997}
+{"benchmark": "ScienceQA", "category": "science", "index": 13, "correct": true, "latency": 0.09201991511508822}
+{"benchmark": "ScienceQA", "category": "science", "index": 14, "correct": true, "latency": 0.08199960296042264}
+{"benchmark": "ScienceQA", "category": "science", "index": 15, "correct": true, "latency": 0.06722727604210377}
+{"benchmark": "ScienceQA", "category": "science", "index": 16, "correct": true, "latency": 0.08236679597757757}
+{"benchmark": "ScienceQA", "category": "science", "index": 17, "correct": true, "latency": 0.0742360029835254}
+{"benchmark": "ScienceQA", "category": "science", "index": 18, "correct": true, "latency": 0.08194862515665591}
+{"benchmark": "ScienceQA", "category": "science", "index": 19, "correct": true, "latency": 0.08186864596791565}
+{"benchmark": "ScienceQA", "category": "science", "index": 20, "correct": true, "latency": 0.06887911888770759}
+{"benchmark": "ScienceQA", "category": "science", "index": 21, "correct": true, "latency": 0.08272181800566614}
+{"benchmark": "ScienceQA", "category": "science", "index": 22, "correct": true, "latency": 0.0725629001390189}
+{"benchmark": "ScienceQA", "category": "science", "index": 23, "correct": true, "latency": 0.07021254999563098}
+{"benchmark": "ScienceQA", "category": "science", "index": 24, "correct": true, "latency": 0.06721307593397796}
+{"benchmark": "ScienceQA", "category": "science", "index": 25, "correct": true, "latency": 0.08170290011912584}
+{"benchmark": "ScienceQA", "category": "science", "index": 26, "correct": true, "latency": 0.09313895110972226}
+{"benchmark": "ScienceQA", "category": "science", "index": 27, "correct": true, "latency": 0.07323423493653536}
+{"benchmark": "ScienceQA", "category": "science", "index": 28, "correct": true, "latency": 0.08174109901301563}
+{"benchmark": "ScienceQA", "category": "science", "index": 29, "correct": true, "latency": 0.06693088100291789}
+{"benchmark": "ScienceQA", "category": "science", "index": 30, "correct": true, "latency": 0.08626784104853868}
+{"benchmark": "ScienceQA", "category": "science", "index": 31, "correct": true, "latency": 0.07041432592086494}
+{"benchmark": "ScienceQA", "category": "science", "index": 32, "correct": true, "latency": 0.07293683104217052}
+{"benchmark": "ScienceQA", "category": "science", "index": 33, "correct": true, "latency": 0.08164870203472674}
+{"benchmark": "ScienceQA", "category": "science", "index": 34, "correct": true, "latency": 0.07480951002798975}
+{"benchmark": "ScienceQA", "category": "science", "index": 35, "correct": true, "latency": 0.08177303895354271}
+{"benchmark": "ScienceQA", "category": "science", "index": 36, "correct": true, "latency": 0.08296611299738288}
+{"benchmark": "ScienceQA", "category": "science", "index": 37, "correct": true, "latency": 0.08627286087721586}
+{"benchmark": "ScienceQA", "category": "science", "index": 38, "correct": true, "latency": 0.07347301905974746}
+{"benchmark": "ScienceQA", "category": "science", "index": 39, "correct": true, "latency": 0.07578971888870001}
+{"benchmark": "ScienceQA", "category": "science", "index": 40, "correct": true, "latency": 0.0817920290865004}
+{"benchmark": "ScienceQA", "category": "science", "index": 41, "correct": true, "latency": 0.07952192705124617}
+{"benchmark": "ScienceQA", "category": "science", "index": 42, "correct": true, "latency": 0.06724493484944105}
+{"benchmark": "ScienceQA", "category": "science", "index": 43, "correct": false, "latency": 0.07028225786052644}
+{"benchmark": "ScienceQA", "category": "science", "index": 44, "correct": true, "latency": 0.09332825592719018}
+{"benchmark": "ScienceQA", "category": "science", "index": 45, "correct": true, "latency": 0.08208657102659345}
+{"benchmark": "ScienceQA", "category": "science", "index": 46, "correct": true, "latency": 0.07535542896948755}
+{"benchmark": "ScienceQA", "category": "science", "index": 47, "correct": true, "latency": 0.08301191194914281}
+{"benchmark": "ScienceQA", "category": "science", "index": 48, "correct": true, "latency": 0.06703341891989112}
+{"benchmark": "ScienceQA", "category": "science", "index": 49, "correct": true, "latency": 0.0700122551061213}
+{"benchmark": "ScienceQA", "category": "science", "index": 50, "correct": true, "latency": 0.08178136800415814}
+{"benchmark": "ScienceQA", "category": "science", "index": 51, "correct": true, "latency": 0.08173707011155784}
+{"benchmark": "ScienceQA", "category": "science", "index": 52, "correct": true, "latency": 0.0801388539839536}
+{"benchmark": "ScienceQA", "category": "science", "index": 53, "correct": true, "latency": 0.06992964702658355}
+{"benchmark": "ScienceQA", "category": "science", "index": 54, "correct": true, "latency": 0.08447509002871811}
+{"benchmark": "ScienceQA", "category": "science", "index": 55, "correct": true, "latency": 0.08206834201700985}
+{"benchmark": "ScienceQA", "category": "science", "index": 56, "correct": true, "latency": 0.0794266490265727}
+{"benchmark": "ScienceQA", "category": "science", "index": 57, "correct": true, "latency": 0.07024049898609519}
+{"benchmark": "ScienceQA", "category": "science", "index": 58, "correct": true, "latency": 0.0675893072038889}
+{"benchmark": "ScienceQA", "category": "science", "index": 59, "correct": true, "latency": 0.08611906412988901}
+{"benchmark": "ScienceQA", "category": "science", "index": 60, "correct": true, "latency": 0.06851056800223887}
+{"benchmark": "ScienceQA", "category": "science", "index": 61, "correct": true, "latency": 0.0861386030446738}
+{"benchmark": "ScienceQA", "category": "science", "index": 62, "correct": true, "latency": 0.07270237617194653}
+{"benchmark": "ScienceQA", "category": "science", "index": 63, "correct": true, "latency": 0.08642095699906349}
+{"benchmark": "ScienceQA", "category": "science", "index": 64, "correct": true, "latency": 0.0817182098980993}
+{"benchmark": "ScienceQA", "category": "science", "index": 65, "correct": true, "latency": 0.07285240292549133}
+{"benchmark": "ScienceQA", "category": "science", "index": 66, "correct": true, "latency": 0.06709189806133509}
+{"benchmark": "ScienceQA", "category": "science", "index": 67, "correct": true, "latency": 0.08398787002079189}
+{"benchmark": "ScienceQA", "category": "science", "index": 68, "correct": true, "latency": 0.07728928606957197}
+{"benchmark": "ScienceQA", "category": "science", "index": 69, "correct": true, "latency": 0.08412632718682289}
+{"benchmark": "ScienceQA", "category": "science", "index": 70, "correct": true, "latency": 0.08415551693178713}
+{"benchmark": "ScienceQA", "category": "science", "index": 71, "correct": true, "latency": 0.07291080197319388}
+{"benchmark": "ScienceQA", "category": "science", "index": 72, "correct": true, "latency": 0.09188890783116221}
+{"benchmark": "ScienceQA", "category": "science", "index": 73, "correct": true, "latency": 0.06759195704944432}
+{"benchmark": "ScienceQA", "category": "science", "index": 74, "correct": true, "latency": 0.08036597887985408}
+{"benchmark": "ScienceQA", "category": "science", "index": 75, "correct": true, "latency": 0.06761689716950059}
+{"benchmark": "ScienceQA", "category": "science", "index": 76, "correct": true, "latency": 0.09264676203019917}
+{"benchmark": "ScienceQA", "category": "science", "index": 77, "correct": true, "latency": 0.09210148407146335}
+{"benchmark": "ScienceQA", "category": "science", "index": 78, "correct": true, "latency": 0.10665233596228063}
+{"benchmark": "ScienceQA", "category": "science", "index": 79, "correct": true, "latency": 0.06703670998103917}
+{"benchmark": "ScienceQA", "category": "science", "index": 80, "correct": true, "latency": 0.09015789604745805}
+{"benchmark": "ScienceQA", "category": "science", "index": 81, "correct": false, "latency": 0.07285812310874462}
+{"benchmark": "ScienceQA", "category": "science", "index": 82, "correct": true, "latency": 0.08646162692457438}
+{"benchmark": "ScienceQA", "category": "science", "index": 83, "correct": true, "latency": 0.0830370809417218}
+{"benchmark": "ScienceQA", "category": "science", "index": 84, "correct": true, "latency": 0.08504539704881608}
+{"benchmark": "ScienceQA", "category": "science", "index": 85, "correct": true, "latency": 0.08178769797086716}
+{"benchmark": "ScienceQA", "category": "science", "index": 86, "correct": true, "latency": 0.07026806008070707}
+{"benchmark": "ScienceQA", "category": "science", "index": 87, "correct": true, "latency": 0.08192854514345527}
+{"benchmark": "ScienceQA", "category": "science", "index": 88, "correct": true, "latency": 0.07014604192227125}
+{"benchmark": "ScienceQA", "category": "science", "index": 89, "correct": true, "latency": 0.08258529007434845}
+{"benchmark": "ScienceQA", "category": "science", "index": 90, "correct": true, "latency": 0.0828771349042654}
+{"benchmark": "ScienceQA", "category": "science", "index": 91, "correct": true, "latency": 0.0818739659152925}
+{"benchmark": "ScienceQA", "category": "science", "index": 92, "correct": true, "latency": 0.07748617208562791}
+{"benchmark": "ScienceQA", "category": "science", "index": 93, "correct": true, "latency": 0.06668667704798281}
+{"benchmark": "ScienceQA", "category": "science", "index": 94, "correct": true, "latency": 0.06912708398886025}
+{"benchmark": "ScienceQA", "category": "science", "index": 95, "correct": true, "latency": 0.0824839030392468}
+{"benchmark": "ScienceQA", "category": "science", "index": 96, "correct": true, "latency": 0.0673405728302896}
+{"benchmark": "ScienceQA", "category": "science", "index": 97, "correct": true, "latency": 0.07022541994228959}
+{"benchmark": "ScienceQA", "category": "science", "index": 98, "correct": true, "latency": 0.06701780995354056}
+{"benchmark": "ScienceQA", "category": "science", "index": 99, "correct": true, "latency": 0.06985122803598642}
+{"benchmark": "ScienceQA", "category": "science", "index": 100, "correct": true, "latency": 0.07046482502482831}
+{"benchmark": "ScienceQA", "category": "science", "index": 101, "correct": true, "latency": 0.06696628103964031}
+{"benchmark": "ScienceQA", "category": "science", "index": 102, "correct": true, "latency": 0.07018798100762069}
+{"benchmark": "ScienceQA", "category": "science", "index": 103, "correct": true, "latency": 0.09466080809943378}
+{"benchmark": "ScienceQA", "category": "science", "index": 104, "correct": true, "latency": 0.07340202108025551}
+{"benchmark": "ScienceQA", "category": "science", "index": 105, "correct": true, "latency": 0.06730626383796334}
+{"benchmark": "ScienceQA", "category": "science", "index": 106, "correct": true, "latency": 0.06737779197283089}
+{"benchmark": "ScienceQA", "category": "science", "index": 107, "correct": true, "latency": 0.0818962559569627}
+{"benchmark": "ScienceQA", "category": "science", "index": 108, "correct": true, "latency": 0.07953037787228823}
+{"benchmark": "ScienceQA", "category": "science", "index": 109, "correct": true, "latency": 0.07299551996402442}
+{"benchmark": "ScienceQA", "category": "science", "index": 110, "correct": true, "latency": 0.0751123740337789}
+{"benchmark": "ScienceQA", "category": "science", "index": 111, "correct": true, "latency": 0.07952432800084352}
+{"benchmark": "ScienceQA", "category": "science", "index": 112, "correct": true, "latency": 0.08352572005242109}
+{"benchmark": "ScienceQA", "category": "science", "index": 113, "correct": true, "latency": 0.07298180018551648}
+{"benchmark": "ScienceQA", "category": "science", "index": 114, "correct": true, "latency": 0.081897655967623}
+{"benchmark": "ScienceQA", "category": "science", "index": 115, "correct": true, "latency": 0.07050308398902416}
+{"benchmark": "ScienceQA", "category": "science", "index": 116, "correct": true, "latency": 0.07495095697231591}
+{"benchmark": "ScienceQA", "category": "science", "index": 117, "correct": true, "latency": 0.07024079002439976}
+{"benchmark": "ScienceQA", "category": "science", "index": 118, "correct": true, "latency": 0.0727886448148638}
+{"benchmark": "ScienceQA", "category": "science", "index": 119, "correct": true, "latency": 0.0670659791212529}
+{"benchmark": "ScienceQA", "category": "science", "index": 120, "correct": false, "latency": 0.08220871910452843}
+{"benchmark": "ScienceQA", "category": "science", "index": 121, "correct": true, "latency": 0.08306208089925349}
+{"benchmark": "ScienceQA", "category": "science", "index": 122, "correct": true, "latency": 0.08622344210743904}
+{"benchmark": "ScienceQA", "category": "science", "index": 123, "correct": true, "latency": 0.08214391092769802}
+{"benchmark": "ScienceQA", "category": "science", "index": 124, "correct": true, "latency": 0.08008117508143187}
+{"benchmark": "ScienceQA", "category": "science", "index": 125, "correct": true, "latency": 0.09329637698829174}
+{"benchmark": "ScienceQA", "category": "science", "index": 126, "correct": true, "latency": 0.07048186403699219}
+{"benchmark": "ScienceQA", "category": "science", "index": 127, "correct": true, "latency": 0.07386250095441937}
+{"benchmark": "ScienceQA", "category": "science", "index": 128, "correct": true, "latency": 0.08190386602655053}
+{"benchmark": "ScienceQA", "category": "science", "index": 129, "correct": true, "latency": 0.06715503707528114}
+{"benchmark": "ScienceQA", "category": "science", "index": 130, "correct": true, "latency": 0.0669534420594573}
+{"benchmark": "ScienceQA", "category": "science", "index": 131, "correct": true, "latency": 0.0731454270426184}
+{"benchmark": "ScienceQA", "category": "science", "index": 132, "correct": true, "latency": 0.07009592186659575}
+{"benchmark": "ScienceQA", "category": "science", "index": 133, "correct": true, "latency": 0.06757406797260046}
+{"benchmark": "ScienceQA", "category": "science", "index": 134, "correct": true, "latency": 0.10339126689359546}
+{"benchmark": "ScienceQA", "category": "science", "index": 135, "correct": true, "latency": 0.09151302604004741}
+{"benchmark": "ScienceQA", "category": "science", "index": 136, "correct": true, "latency": 0.07061595097184181}
+{"benchmark": "ScienceQA", "category": "science", "index": 137, "correct": false, "latency": 0.06685781315900385}
+{"benchmark": "ScienceQA", "category": "science", "index": 138, "correct": true, "latency": 0.07244877191260457}
+{"benchmark": "ScienceQA", "category": "science", "index": 139, "correct": true, "latency": 0.08036718890070915}
+{"benchmark": "ScienceQA", "category": "science", "index": 140, "correct": true, "latency": 0.08195837400853634}
+{"benchmark": "ScienceQA", "category": "science", "index": 141, "correct": true, "latency": 0.06718084588646889}
+{"benchmark": "ScienceQA", "category": "science", "index": 142, "correct": true, "latency": 0.08014009497128427}
+{"benchmark": "ScienceQA", "category": "science", "index": 143, "correct": true, "latency": 0.0926234619691968}
+{"benchmark": "ScienceQA", "category": "science", "index": 144, "correct": true, "latency": 0.07317245588637888}
+{"benchmark": "ScienceQA", "category": "science", "index": 145, "correct": false, "latency": 0.07378373201936483}
+{"benchmark": "ScienceQA", "category": "science", "index": 146, "correct": true, "latency": 0.08251071209087968}
+{"benchmark": "ScienceQA", "category": "science", "index": 147, "correct": false, "latency": 0.0705751720815897}
+{"benchmark": "ScienceQA", "category": "science", "index": 148, "correct": true, "latency": 0.07884815311990678}
+{"benchmark": "ScienceQA", "category": "science", "index": 149, "correct": true, "latency": 0.08598648686893284}
+{"benchmark": "ScienceQA", "category": "science", "index": 150, "correct": true, "latency": 0.07311963709071279}
+{"benchmark": "ScienceQA", "category": "science", "index": 151, "correct": true, "latency": 0.06682694400660694}
+{"benchmark": "ScienceQA", "category": "science", "index": 152, "correct": true, "latency": 0.0706064710393548}
+{"benchmark": "ScienceQA", "category": "science", "index": 153, "correct": true, "latency": 0.06687948293983936}
+{"benchmark": "ScienceQA", "category": "science", "index": 154, "correct": true, "latency": 0.08167860005050898}
+{"benchmark": "ScienceQA", "category": "science", "index": 155, "correct": true, "latency": 0.07292215200141072}
+{"benchmark": "ScienceQA", "category": "science", "index": 156, "correct": true, "latency": 0.07384859188459814}
+{"benchmark": "ScienceQA", "category": "science", "index": 157, "correct": true, "latency": 0.08335815416648984}
+{"benchmark": "ScienceQA", "category": "science", "index": 158, "correct": true, "latency": 0.06747537013143301}
+{"benchmark": "ScienceQA", "category": "science", "index": 159, "correct": true, "latency": 0.09292377484962344}

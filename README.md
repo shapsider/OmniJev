@@ -4,7 +4,30 @@ OmniJev is a multimodal research project for robot decision-making, providing a 
 
 Jev maps unstructured states to structured decisions over predefined candidates, supporting routing, classification, and finite action selection. Robot decision-making also requires camera images, wrist views, and observations of changing scenes. OmniJev brings these visual inputs into the same decision workflow and provides simulation execution, trajectory replay, and reproducible evaluation.
 
-The current version uses Nemotron 3 Nano Omni Q4_K_M and a compatible generation API for multimodal decisions. Vision-Jev with native RLCD training is under development. Coming Soon.
+The current decision model is **Qwen3.5-9B plus the v4 corrective head**. One forward scores the options supplied with the request and does not generate an answer token. Weights are the LoRA and residual head at [tzcfly/OmniJev-Qwen3.5-9B-v4](https://huggingface.co/tzcfly/OmniJev-Qwen3.5-9B-v4). The 9B backbone stays at [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) and is not redistributed here. The full write-up is [docs/TECHNICAL_REPORT.md](docs/TECHNICAL_REPORT.md). The project page is [shapsider.github.io/OmniJev](https://shapsider.github.io/OmniJev/).
+
+On 923 held-out image questions, three official decision interfaces, zero interface errors (`results/qwen35-suite/vs-full/`):
+
+| Benchmark | n | v4 (9B) | NeoHorse-Jev-4B | tinnel OmniJev-4B |
+|---|---:|---:|---:|---:|
+| MMStar | 240 | 70.0% | 63.3% | 62.5% |
+| RealWorldQA | 160 | 73.8% | 71.9% | 70.6% |
+| AI2D | 160 | 84.4% | 84.4% | 84.4% |
+| MMMU | 203 | 64.5% | 56.7% | 52.7% |
+| ScienceQA test | 160 | 96.2% | 93.8% | 80.6% |
+| Total | 923 | 76.5% | 72.3% | 68.7% |
+
+Discordant pairs are 96–57 against NeoHorse and 129–57 against tinnel. This is a 9B model against two 4B models, on this fixed suite only. It does not reproduce their published leaderboards, and it does not pass the same backbone after a finished thinking trace. An untrained Qwen3.5-9B letter-logit control on these 923 items has not been run. Details and the claims that stay out of the headline are in the technical report.
+
+```python
+from omnijev.paths import CHECKPOINT, MODEL
+from scripts.experiment_effective import load_native
+
+model, _, _ = load_native(str(MODEL), CHECKPOINT)
+decision = model.decide(image, question, options, state)
+```
+
+Place `Qwen/Qwen3.5-9B` at `models/Qwen3.5-9B` and the v4 files (`lora.pt`, `head.pt`, `config.json`) at `models/runs/qwen35-rlcd-v4`. `models/` is gitignored.
 
 ## Preview
 
@@ -92,7 +115,9 @@ python -m pip install -e .
 
 
 
-### 2. Download Model
+### 2. Download the earlier preview model
+
+Steps 2–4 start the earlier Nemotron GGUF HTTP service. They do not load the Qwen3.5-9B v4 head described above.
 
 Download the Q4_K_M main model and BF16 vision projection files to `models/Nemotron-Omni-GGUF/`:
 

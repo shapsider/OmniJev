@@ -1,0 +1,38 @@
+{
+  "ours": {
+    "n": 923,
+    "accuracy": 0.7648970747562297,
+    "errors": 0,
+    "by": {
+      "MMStar": 0.7,
+      "RealWorldQA": 0.7375,
+      "AI2D": 0.84375,
+      "MMMU": 0.645320197044335,
+      "ScienceQA": 0.9625
+    }
+  },
+  "neohorse": {
+    "n": 923,
+    "accuracy": 0.7226435536294691,
+    "errors": 0,
+    "by": {
+      "MMStar": 0.6333333333333333,
+      "RealWorldQA": 0.71875,
+      "AI2D": 0.84375,
+      "MMMU": 0.5665024630541872,
+      "ScienceQA": 0.9375
+    }
+  },
+  "tinnel": {
+    "n": 923,
+    "accuracy": 0.6868905742145178,
+    "errors": 0,
+    "by": {
+      "MMStar": 0.625,
+      "RealWorldQA": 0.70625,
+      "AI2D": 0.84375,
+      "MMMU": 0.5270935960591133,
+      "ScienceQA": 0.80625
+    }
+  }
+}

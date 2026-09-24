@@ -1,0 +1,1009 @@
+{
+  "summary": {
+    "n": 200,
+    "tinnel": 0.7,
+    "errors": 0
+  },
+  "rows": [
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMStar",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "RealWorldQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "AI2D",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "MMMU",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": false,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    },
+    {
+      "benchmark": "ScienceQA",
+      "tinnel": true,
+      "error": null
+    }
+  ]
+}

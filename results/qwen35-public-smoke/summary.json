@@ -1,0 +1,272 @@
+{
+  "coverage": {
+    "MMStar": {
+      "parsed": 1409,
+      "skipped": 91,
+      "selected": 4
+    },
+    "MMBench": {
+      "parsed": 4318,
+      "skipped": 11,
+      "selected": 4
+    },
+    "RealWorldQA": {
+      "parsed": 597,
+      "skipped": 168,
+      "selected": 4
+    }
+  },
+  "summary": {
+    "MMStar": {
+      "direct": {
+        "n": 4,
+        "accuracy": 0.0,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.7371579259634018,
+          "bins": [
+            {
+              "bin": 5,
+              "count": 1,
+              "confidence": 0.5733498930931091,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 6,
+              "count": 1,
+              "confidence": 0.6614490747451782,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 1,
+              "confidence": 0.7285872101783752,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 9,
+              "count": 1,
+              "confidence": 0.9852455258369446,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "latency_p50": 0.18867133487947285,
+        "latency_p95": 0.6416377120185643,
+        "mean_new_tokens": 4.0,
+        "by_category": {
+          "coarse perception": {
+            "n": 4,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "reasoning": {
+        "n": 4,
+        "accuracy": 0.25,
+        "valid_rate": 1.0,
+        "ece": null,
+        "latency_p50": 3.236013001995161,
+        "latency_p95": 3.9707847661338747,
+        "mean_new_tokens": 100.0,
+        "by_category": {
+          "coarse perception": {
+            "n": 4,
+            "accuracy": 0.25
+          }
+        }
+      },
+      "omnijev": {
+        "n": 4,
+        "accuracy": 0.0,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.7481421604752541,
+          "bins": [
+            {
+              "bin": 4,
+              "count": 1,
+              "confidence": 0.4888502061367035,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 1,
+              "confidence": 0.5678877234458923,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 9,
+              "count": 2,
+              "confidence": 0.9679153561592102,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "latency_p50": 0.08738427609205246,
+        "latency_p95": 0.1008611370343715,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "coarse perception": {
+            "n": 4,
+            "accuracy": 0.0
+          }
+        }
+      }
+    },
+    "MMBench": {
+      "direct": {
+        "n": 4,
+        "accuracy": 1.0,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.001937776803970337,
+          "bins": [
+            {
+              "bin": 9,
+              "count": 4,
+              "confidence": 0.9980622231960297,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "latency_p50": 0.1895460661035031,
+        "latency_p95": 0.19790492602624,
+        "mean_new_tokens": 4.0,
+        "by_category": {
+          "action_recognition": {
+            "n": 4,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "omnijev": {
+        "n": 4,
+        "accuracy": 1.0,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.004630982875823975,
+          "bins": [
+            {
+              "bin": 9,
+              "count": 4,
+              "confidence": 0.995369017124176,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "latency_p50": 0.10115690110251307,
+        "latency_p95": 0.11188395111821592,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "action_recognition": {
+            "n": 4,
+            "accuracy": 1.0
+          }
+        }
+      }
+    },
+    "RealWorldQA": {
+      "direct": {
+        "n": 4,
+        "accuracy": 0.75,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.26832588016986847,
+          "bins": [
+            {
+              "bin": 4,
+              "count": 1,
+              "confidence": 0.4192289710044861,
+              "accuracy": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 1,
+              "confidence": 0.5926666259765625,
+              "accuracy": 1.0
+            },
+            {
+              "bin": 7,
+              "count": 1,
+              "confidence": 0.7549149990081787,
+              "accuracy": 1.0
+            },
+            {
+              "bin": 9,
+              "count": 1,
+              "confidence": 0.998343825340271,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "latency_p50": 0.17943667201325297,
+        "latency_p95": 0.1855578210670501,
+        "mean_new_tokens": 4.0,
+        "by_category": {
+          "real-world": {
+            "n": 4,
+            "accuracy": 0.75
+          }
+        }
+      },
+      "omnijev": {
+        "n": 4,
+        "accuracy": 0.75,
+        "valid_rate": 1.0,
+        "ece": {
+          "ece": 0.11609241366386414,
+          "bins": [
+            {
+              "bin": 6,
+              "count": 2,
+              "confidence": 0.6353253722190857,
+              "accuracy": 0.5
+            },
+            {
+              "bin": 8,
+              "count": 1,
+              "confidence": 0.8080672025680542,
+              "accuracy": 1.0
+            },
+            {
+              "bin": 9,
+              "count": 1,
+              "confidence": 0.9982138872146606,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "latency_p50": 0.08928136504255235,
+        "latency_p95": 0.0917317729908973,
+        "mean_new_tokens": 0.0,
+        "by_category": {
+          "real-world": {
+            "n": 4,
+            "accuracy": 0.75
+          }
+        }
+      }
+    }
+  },
+  "mmbench_source_split": {
+    "scienceqa_source": {},
+    "other_source": {
+      "direct": {
+        "n": 4,
+        "accuracy": 1.0
+      },
+      "omnijev": {
+        "n": 4,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "notes": [
+    "\u51c6\u786e\u7387\u7684\u5206\u6bcd\u662f\u5168\u90e8\u8bf7\u6c42\u3002\u89e3\u6790\u4e0d\u51fa\u5019\u9009\u5b57\u6bcd\u7b97\u9519\u3002",
+    "ECE \u53ea\u7edf\u8ba1\u7ed9\u51fa\u4e86\u7f6e\u4fe1\u5ea6\u7684\u5408\u6cd5\u8f93\u51fa\u3002\u76f4\u63a5\u77ed\u7b54\u7684\u7f6e\u4fe1\u5ea6\u6765\u81ea\u9996\u4e2a\u751f\u6210\u6b65\u4e0a\u5019\u9009\u5b57\u6bcd\u7684\u5f52\u4e00\u5316\u6982\u7387\u3002\u9884\u7b97\u63a8\u7406\u4e0d\u62a5\u544a ECE\u3002",
+    "OmniJev \u7684\u7f6e\u4fe1\u5ea6\u6765\u81ea\u5019\u9009\u5b57\u6bcd\u5206\u5e03\uff0c\u8bad\u7ec3\u76ee\u6807\u662f\u5bf9\u6570\u5206\u6570\u52a0 Brier \u5206\u6570\uff0c\u4e0d\u662f\u9010\u9898\u6821\u51c6\u8bc1\u4e66\u3002",
+    "MMBench \u5206\u5c42\u62bd\u6837\u548c\u63a8\u7406\u5b50\u96c6\u4f7f\u7528\u56fa\u5b9a\u79cd\u5b50\uff0c\u6ca1\u6709\u6309\u6a21\u578b\u7ed3\u679c\u6311\u9009\u3002",
+    "\u8bad\u7ec3\u53ea\u7528\u4e86 ScienceQA \u5b98\u65b9 train \u7684\u56fe\u50cf\u9898\u548c\u684c\u9762\u653e\u7f6e\u73af\u5883\u3002\u516c\u5f00\u57fa\u51c6\u7684 test/dev/val \u6ca1\u6709\u53c2\u4e0e\u6743\u91cd\u66f4\u65b0\u3002"
+  ]
+}

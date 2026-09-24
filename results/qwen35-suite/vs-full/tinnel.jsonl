@@ -1,0 +1,923 @@
+{"benchmark": "MMStar", "category": "coarse perception", "index": 242, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 121, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 79, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 67, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 127, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 28, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 164, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 165, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 195, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 2, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 122, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 153, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 34, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 137, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 126, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 108, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 144, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 43, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 65, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 142, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 152, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 70, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 159, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 57, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 174, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 6, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 92, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 12, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 146, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 163, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 98, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 236, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 69, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 227, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 11, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 240, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 42, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 94, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 38, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "coarse perception", "index": 37, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 466, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 423, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 420, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 272, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 283, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 368, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 263, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 404, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 284, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 456, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 362, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 447, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 431, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 372, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 412, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 467, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 250, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 253, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 488, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 478, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 480, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 396, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 443, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 373, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 411, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 260, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 345, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 469, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 468, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 422, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 394, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 255, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 476, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 257, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 482, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 385, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 264, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 376, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 437, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "fine-grained perception", "index": 320, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 656, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 728, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 686, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 652, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 558, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 684, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 670, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 660, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 532, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 513, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 723, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 543, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 574, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 650, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 669, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 519, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 726, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 618, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 694, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 710, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 510, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 646, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 638, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 707, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 743, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 551, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 586, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 535, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 659, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 636, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 667, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 693, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 662, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 691, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 630, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 634, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 690, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 602, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 712, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "instance reasoning", "index": 502, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 841, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 900, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 933, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 907, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 816, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 921, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 755, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 867, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 956, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 870, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 762, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 877, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 776, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 780, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 763, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 902, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 920, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 917, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 918, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 852, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 955, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 819, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 937, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 860, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 922, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 803, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 871, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 985, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 914, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 849, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 792, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 929, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 893, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 752, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 790, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 971, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 982, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 851, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 973, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "logical reasoning", "index": 883, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1002, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1074, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1024, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1088, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1150, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1033, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1169, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1230, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1035, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1219, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1016, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1137, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1148, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1053, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1142, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1048, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1214, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1008, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1056, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1249, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1180, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1204, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1026, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1004, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1164, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1058, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1132, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1240, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1111, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1075, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1246, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1190, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1121, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1145, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1115, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1134, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1193, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1020, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1105, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "math", "index": 1229, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1276, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1338, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1403, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1495, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1361, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1388, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1479, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1323, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1474, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1455, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1257, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1381, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1450, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1464, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1273, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1420, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1443, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1475, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1383, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1461, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1348, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1252, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1447, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1487, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1277, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1295, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1250, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1300, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1493, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1496, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1426, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1269, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1352, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1432, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1466, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1264, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1416, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1440, "correct": true, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1349, "correct": false, "error": null}
+{"benchmark": "MMStar", "category": "science & technology", "index": 1499, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 88, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 166, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 33, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 503, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 199, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 249, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 556, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 723, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 241, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 485, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 535, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 6, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 385, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 480, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 422, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 621, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 190, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 616, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 246, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 277, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 172, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 381, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 565, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 703, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 687, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 72, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 725, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 515, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 251, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 63, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 75, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 141, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 554, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 338, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 460, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 670, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 509, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 371, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 148, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 599, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 142, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 25, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 12, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 550, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 80, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 513, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 688, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 449, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 270, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 700, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 569, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 19, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 260, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 453, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 674, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 90, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 732, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 217, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 168, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 685, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 648, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 439, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 159, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 198, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 631, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 158, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 42, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 31, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 145, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 476, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 305, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 238, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 226, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 314, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 393, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 667, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 508, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 315, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 542, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 627, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 137, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 335, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 136, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 538, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 432, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 296, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 727, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 528, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 360, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 533, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 293, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 62, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 434, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 262, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 261, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 756, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 106, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 629, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 394, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 169, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 624, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 465, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 93, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 634, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 354, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 131, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 696, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 447, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 626, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 459, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 379, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 677, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 545, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 120, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 655, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 108, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 757, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 647, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 561, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 134, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 182, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 82, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 197, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 490, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 549, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 235, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 2, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 96, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 97, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 659, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 468, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 236, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 436, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 368, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 121, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 728, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 175, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 606, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 114, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 234, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 213, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 702, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 156, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 351, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 135, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 369, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 23, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 600, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 403, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 320, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 564, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 418, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 658, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 54, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 673, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 457, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 567, "correct": true, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 500, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 24, "correct": false, "error": null}
+{"benchmark": "RealWorldQA", "category": "real-world", "index": 43, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 305, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2935, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2904, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 810, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1775, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2014, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2146, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 523, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1845, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2630, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1114, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1130, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 524, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 929, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 504, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2873, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2172, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 302, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1450, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 342, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2893, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2235, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 289, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 341, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1500, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2843, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 812, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1860, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2057, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2644, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1572, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 548, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2362, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1223, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1552, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1617, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1141, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 741, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2732, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2343, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2506, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2851, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 196, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1300, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1969, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2754, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2373, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2940, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2727, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1329, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 193, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1414, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2572, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1697, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2565, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2211, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1819, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2272, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 127, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2615, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 857, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 368, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1268, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1521, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1184, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 404, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1944, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1859, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 998, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1576, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 883, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2846, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1847, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2974, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2158, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2420, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 891, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1753, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2454, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2798, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2114, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2277, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 472, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 808, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2779, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 3083, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2689, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 825, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2960, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 233, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1348, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1950, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 715, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2668, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1446, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 925, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 527, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2041, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1156, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 677, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 470, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 945, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 102, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1125, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1566, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 24, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1333, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1490, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 3017, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2856, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1384, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1899, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1409, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2629, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1727, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1479, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1575, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1654, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2967, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1972, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1605, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2109, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2173, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1878, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 680, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2920, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1622, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 662, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1164, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 557, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 480, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1410, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1522, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2015, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1489, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 894, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2836, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2197, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2177, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1451, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 3054, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1217, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 275, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2311, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2486, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 8, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2599, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1723, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2336, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1824, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2876, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 851, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2045, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1172, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2517, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 389, "correct": false, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 1886, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 2484, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 707, "correct": true, "error": null}
+{"benchmark": "AI2D", "category": "diagram", "index": 820, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 18, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 2, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 1, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 5, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 4, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 20, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 12, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 10, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 23, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 13, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 11, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 15, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 22, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 26, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 29, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 21, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 24, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 28, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 9, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 19, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 16, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 17, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 0, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 8, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 6, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 25, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 3, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art", "index": 14, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 21, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 12, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 29, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 1, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 9, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 13, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 19, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 24, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 25, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 11, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 5, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 20, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 2, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 6, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 17, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 14, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 22, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 18, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 16, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 4, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 23, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Art_Theory", "index": 28, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 26, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 20, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 16, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 24, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 11, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 17, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 15, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 25, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 10, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 2, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 19, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 22, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 0, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 5, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 12, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 3, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 13, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 14, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 18, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 4, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 21, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Biology", "index": 1, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 23, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 10, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 1, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 26, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 2, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 14, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 13, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 4, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 16, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 0, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 5, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 6, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 21, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 20, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 7, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Chemistry", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 26, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 9, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 17, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 19, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 20, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 22, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 11, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 24, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 6, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 23, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 5, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 1, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 18, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 12, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 10, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 14, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 25, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 16, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 2, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 28, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 29, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Geography", "index": 4, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 11, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 0, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 1, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 9, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 4, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 15, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 12, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 25, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 3, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 22, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 28, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 10, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 24, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 17, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 13, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 5, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 21, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 29, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 19, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 23, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 16, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 20, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 26, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Math", "index": 6, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 4, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 29, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 13, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 28, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 12, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 25, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 10, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 7, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 22, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 5, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 2, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 0, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 11, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 24, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 23, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 8, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 26, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 19, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 1, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 16, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 14, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 3, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 21, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 15, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 18, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 9, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 6, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Physics", "index": 17, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 18, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 28, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 11, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 17, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 4, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 7, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 3, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 23, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 8, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 9, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 12, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 26, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 6, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 21, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 2, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 22, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 10, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 27, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 14, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 13, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 25, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 15, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 24, "correct": true, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 5, "correct": false, "error": null}
+{"benchmark": "MMMU", "category": "Psychology", "index": 1, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 0, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 1, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 2, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 3, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 4, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 5, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 6, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 7, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 8, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 9, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 10, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 11, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 12, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 13, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 14, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 15, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 16, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 17, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 18, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 19, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 20, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 21, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 22, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 23, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 24, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 25, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 26, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 27, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 28, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 29, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 30, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 31, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 32, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 33, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 34, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 35, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 36, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 37, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 38, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 39, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 40, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 41, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 42, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 43, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 44, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 45, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 46, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 47, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 48, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 49, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 50, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 51, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 52, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 53, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 54, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 55, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 56, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 57, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 58, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 59, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 60, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 61, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 62, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 63, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 64, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 65, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 66, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 67, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 68, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 69, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 70, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 71, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 72, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 73, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 74, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 75, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 76, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 77, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 78, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 79, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 80, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 81, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 82, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 83, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 84, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 85, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 86, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 87, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 88, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 89, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 90, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 91, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 92, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 93, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 94, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 95, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 96, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 97, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 98, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 99, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 100, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 101, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 102, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 103, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 104, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 105, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 106, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 107, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 108, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 109, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 110, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 111, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 112, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 113, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 114, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 115, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 116, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 117, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 118, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 119, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 120, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 121, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 122, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 123, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 124, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 125, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 126, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 127, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 128, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 129, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 130, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 131, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 132, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 133, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 134, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 135, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 136, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 137, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 138, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 139, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 140, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 141, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 142, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 143, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 144, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 145, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 146, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 147, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 148, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 149, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 150, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 151, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 152, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 153, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 154, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 155, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 156, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 157, "correct": false, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 158, "correct": true, "error": null}
+{"benchmark": "ScienceQA", "category": "science", "index": 159, "correct": true, "error": null}
